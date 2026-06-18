@@ -105,15 +105,18 @@ wiki/
 
 ## Update Workflow (run via `/update-wiki` skill)
 
-1. List transcript files in `transcripts/` that have not yet been processed (check `wiki/log.md` for processed filenames)
-2. For each unprocessed transcript:
-   - Identify meeting type (standup / 1:1 / advisor demo) from filename or content
-   - Identify participants
+Transcripts arrive automatically via email. After each meeting, Tactiq emails the transcript to ctenney@paretoagent.ai.
+
+1. Search Gmail for emails from Tactiq not yet in `wiki/log.md`
+2. For each new email:
+   - Identify meeting type from content (standup / 1:1 / advisor demo)
+   - Identify participants and date from content
    - Extract signal per the rules above
    - Update all relevant wiki pages (create pages that don't exist yet using the templates above)
+   - Save raw transcript to `transcripts/` for archival
    - Append an entry to `wiki/log.md`
 3. Update `wiki/index.md` if new pages were created
-4. Commit all changes with message: `wiki: update from <transcript filename>`
+4. Commit all changes with message: `wiki: update from <date> <meeting type>`
 
 ---
 
