@@ -1,43 +1,55 @@
 # Update Wiki from Transcripts
 
-Process any new transcripts in the `transcripts/` folder and update the wiki.
+Fetch new transcripts from the Fireflies API and update the wiki.
 
 ## Steps
 
-1. Read `wiki/log.md` to get the list of already-processed transcript filenames.
+1. Read `wiki/log.md` to extract the list of already-processed Fireflies transcript IDs (look for lines like `fireflies-id: <id>`).
 
-2. List all files in `transcripts/` (any `.txt` or `.md` file). Identify which have NOT yet been processed (filename not in `wiki/log.md`).
+2. Fetch transcripts from the Fireflies GraphQL API:
+
+   ```bash
+   curl -s -X POST https://api.fireflies.ai/graphql \
+     -H "Content-Type: application/json" \
+     -H "Authorization: Bearer $FIREFLIES_API_KEY" \
+     -d '{"query": "{ transcripts { id title date duration organizer_email participants { displayName email } sentences { speaker_name raw_text } } }"}'
+   ```
+
+   Identify which transcripts have NOT yet been processed (ID not in `wiki/log.md`). Process oldest first (by `date`).
 
 3. If there are no unprocessed transcripts, report "No new transcripts to process." and stop.
 
-4. For each unprocessed transcript (oldest file date first):
+4. For each unprocessed transcript (oldest first):
 
-   a. Read the full transcript.
+   a. Reconstruct the full transcript text from `sentences[].speaker_name` + `sentences[].raw_text`.
 
    b. Identify the meeting type from content:
       - **Standup**: multiple participants each giving short updates, blockers, what they're working on
       - **1:1**: two participants in a check-in format
       - **Advisor demo**: includes an external advisor, product demo or feedback discussion
 
-   c. Extract the meeting date from the transcript content (Tactiq includes it in the header). If not found, use the file's modification date.
+   c. Use the `date` field from the API response as the meeting date (Unix timestamp → YYYY-MM-DD).
 
-   d. Identify all participants by name.
+   d. Identify all participants from `participants[].displayName`.
 
    e. Extract signal per the rules in `CLAUDE.md`.
 
-   f. For each relevant wiki page (people, advisors, projects):
+   f. Save the reconstructed transcript to `transcripts/<YYYY-MM-DD>-<slug>.txt` for archival (slug = lowercase title, spaces → hyphens, max 40 chars).
+
+   g. For each relevant wiki page (people, advisors, projects):
       - If the page doesn't exist, create it using the template in `CLAUDE.md`
       - If it exists, update it — do NOT duplicate existing content, only add new information
       - Set "Last updated" to the meeting date
 
-   g. Append a new entry to `wiki/log.md`:
+   h. Append a new entry to `wiki/log.md`:
       ```
-      ## <YYYY-MM-DD> — <filename>
+      ## <YYYY-MM-DD> — <title>
+      - fireflies-id: <id>
       - Pages updated: <comma-separated list>
       - Summary: <one sentence>
       ```
 
-   h. Update `wiki/index.md` if any new pages were created.
+   i. Update `wiki/index.md` if any new pages were created.
 
 5. Commit all changes:
    ```
@@ -48,11 +60,6 @@ Process any new transcripts in the `transcripts/` folder and update the wiki.
 
 6. Summarize what was updated.
 
-## How to add a transcript
+## API key
 
-After a meeting:
-1. Open Tactiq → export transcript as `.txt`
-2. Drag the file into the `transcripts/` folder
-3. Run `/update-wiki` in Claude Code
-
-No renaming needed — meeting type and date are inferred from content.
+Stored in `.claude/settings.local.json` as `FIREFLIES_API_KEY` (env var, not committed). Rotate at app.fireflies.ai if compromised.

@@ -105,16 +105,16 @@ wiki/
 
 ## Update Workflow (run via `/update-wiki` skill)
 
-Transcripts arrive automatically via email. After each meeting, Tactiq emails the transcript to ctenney@paretoagent.ai.
+Transcripts are fetched via the Fireflies GraphQL API (`https://api.fireflies.ai/graphql`). The API key is stored in `.claude/settings.local.json` as `FIREFLIES_API_KEY`. Processed transcripts are archived to `transcripts/` and tracked by Fireflies transcript ID in `wiki/log.md`.
 
-1. Search Gmail for emails from Tactiq not yet in `wiki/log.md`
-2. For each new email:
+1. Fetch new transcripts from Fireflies API (by ID, not yet in `wiki/log.md`)
+2. For each new transcript:
    - Identify meeting type from content (standup / 1:1 / advisor demo)
-   - Identify participants and date from content
+   - Identify participants and date from API metadata
    - Extract signal per the rules above
    - Update all relevant wiki pages (create pages that don't exist yet using the templates above)
    - Save raw transcript to `transcripts/` for archival
-   - Append an entry to `wiki/log.md`
+   - Append an entry to `wiki/log.md` with the Fireflies transcript ID
 3. Update `wiki/index.md` if new pages were created
 4. Commit all changes with message: `wiki: update from <date> <meeting type>`
 
