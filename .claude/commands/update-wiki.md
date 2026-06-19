@@ -12,7 +12,7 @@ Fetch new transcripts from the Fireflies API and update the wiki.
    curl -s -X POST https://api.fireflies.ai/graphql \
      -H "Content-Type: application/json" \
      -H "Authorization: Bearer $FIREFLIES_API_KEY" \
-     -d '{"query": "{ transcripts { id title date duration organizer_email participants { displayName email } sentences { speaker_name raw_text } } }"}'
+     -d '{"query": "{ transcripts { id title date duration organizer_email participants sentences { speaker_name raw_text } } }"}'
    ```
 
    Identify which transcripts have NOT yet been processed (ID not in `wiki/log.md`). Process oldest first (by `date`).
@@ -30,7 +30,7 @@ Fetch new transcripts from the Fireflies API and update the wiki.
 
    c. Use the `date` field from the API response as the meeting date (Unix timestamp → YYYY-MM-DD).
 
-   d. Identify all participants from `participants[].displayName`.
+   d. Identify all participants from `participants` (flat list of email addresses).
 
    e. Extract signal per the rules in `CLAUDE.md`.
 
