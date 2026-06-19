@@ -1,31 +1,25 @@
-# Update Wiki from Tactiq Transcripts
+# Update Wiki from Transcripts
 
-Fetch new meeting transcripts from Gmail (sent by Tactiq after each meeting) and update the wiki.
-
-## How transcripts arrive
-
-Tactiq is configured to auto-email the transcript to ctenney@paretoagent.ai after every meeting.
-Emails come from Tactiq (search: `from:tactiq.io`) with the transcript in the body.
+Process any new transcripts in the `transcripts/` folder and update the wiki.
 
 ## Steps
 
-1. Read `wiki/log.md` to get the list of already-processed email subjects/dates.
+1. Read `wiki/log.md` to get the list of already-processed transcript filenames.
 
-2. Search Gmail for Tactiq transcript emails:
-   - Query: `from:tactiq.io` (or `subject:transcript from:tactiq` if needed)
-   - Look for emails not yet recorded in `wiki/log.md`
-   - If no new emails found, report "No new transcripts." and stop.
+2. List all files in `transcripts/` (any `.txt` or `.md` file). Identify which have NOT yet been processed (filename not in `wiki/log.md`).
 
-3. For each new email (oldest first):
+3. If there are no unprocessed transcripts, report "No new transcripts to process." and stop.
 
-   a. Fetch the full email body — this is the meeting transcript.
+4. For each unprocessed transcript (oldest file date first):
+
+   a. Read the full transcript.
 
    b. Identify the meeting type from content:
-      - **Standup**: multiple participants, each giving short status updates, blockers
-      - **1:1**: exactly two participants in a check-in format
+      - **Standup**: multiple participants each giving short updates, blockers, what they're working on
+      - **1:1**: two participants in a check-in format
       - **Advisor demo**: includes an external advisor, product demo or feedback discussion
 
-   c. Extract the meeting date from the email date header or transcript content.
+   c. Extract the meeting date from the transcript content (Tactiq includes it in the header). If not found, use the file's modification date.
 
    d. Identify all participants by name.
 
@@ -36,23 +30,29 @@ Emails come from Tactiq (search: `from:tactiq.io`) with the transcript in the bo
       - If it exists, update it — do NOT duplicate existing content, only add new information
       - Set "Last updated" to the meeting date
 
-   g. Save the raw transcript text to `transcripts/<YYYY-MM-DD>_<meeting-type>_<participants>.txt`
-      (use the meeting date and type inferred from content — this is for archival only)
-
-   h. Append a new entry to `wiki/log.md`:
+   g. Append a new entry to `wiki/log.md`:
       ```
-      ## <YYYY-MM-DD> — <email subject>
+      ## <YYYY-MM-DD> — <filename>
       - Pages updated: <comma-separated list>
       - Summary: <one sentence>
       ```
 
-   i. Update `wiki/index.md` if any new pages were created.
+   h. Update `wiki/index.md` if any new pages were created.
 
-4. Commit all changes with message: `wiki: update from <meeting date> <meeting type>`
+5. Commit all changes:
+   ```
+   git add -A
+   git commit -m "wiki: update from <meeting date> <meeting type>"
+   git push origin main
+   ```
 
-5. Summarize what was updated.
+6. Summarize what was updated.
 
-## Tactiq email setup (one-time)
+## How to add a transcript
 
-In Tactiq settings, enable: **Integrations → Email → Send transcript to my email after each meeting**.
-The email will go to ctenney@paretoagent.ai automatically after every call.
+After a meeting:
+1. Open Tactiq → export transcript as `.txt`
+2. Drag the file into the `transcripts/` folder
+3. Run `/update-wiki` in Claude Code
+
+No renaming needed — meeting type and date are inferred from content.
