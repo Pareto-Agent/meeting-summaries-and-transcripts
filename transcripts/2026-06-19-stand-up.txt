@@ -1,0 +1,1032 @@
+Title: stand up
+Date: 2026-06-19 17:00:00 UTC
+Fireflies ID: 01KVEPVF5M6NPRKQ95HPNQMP8Y
+Duration: 74.5 minutes
+Organizer: ctenney@paretoagent.ai
+Participants: arose@paretoagent.ai, ctenney@paretoagent.ai, dliang@paretoagent.ai, eliang@paretoagent.ai, pgodarajesh@paretoagent.ai
+
+---
+
+(Note: Fireflies attributed all speech to Evan Liang due to single audio account. Actual speakers inferred from context.)
+
+Evan Liang: Right, well we'll see if this works.
+Evan Liang: Do we have to have our accounts on still or like do we have to.
+Evan Liang: What do we have to have?
+Evan Liang: It does a track voice by account.
+Evan Liang: Like by account talking or like it should.
+Evan Liang: But we're only on one account.
+Evan Liang: Well then okay.
+Evan Liang: No.
+Evan Liang: So you're not going to join audio.
+Evan Liang: Yeah.
+Evan Liang: You're not an audio.
+Evan Liang: So we'll see what it does.
+Evan Liang: Yeah, no, there's like, if you ever join like webinars these days everyone has their note taker meeting thing.
+Evan Liang: I was just seeing like new take a nick or you're like a one on one when people's meetings and you're like there'd be two people meeting like three note takers coming in like dude.
+Evan Liang: So it's kind of.
+Evan Liang: Yeah, everyone's got these balls.
+Evan Liang: Oh great.
+Evan Liang: Stand up.
+Evan Liang: I have some, some stuff that I can go over that's a little bit more meaty on some takeaways.
+Evan Liang: But let's go around and say like, hey, actually this is like the first one where we don't have like a deadline.
+Evan Liang: Right.
+Evan Liang: So go around just say like not so much updates but like hey, is there anything you need that you're blocking or anything that you need from other folks so that you can kind of get to your next Sprint?
+Evan Liang: So just go around this way.
+Evan Liang: Sure, yeah.
+Evan Liang: So I've kind of integrated some of the feedback from Scott into the admin dashboard, including with this snapshot of all the accounts, sort of similar to what Aaron had in his thing.
+Evan Liang: I guess what I'm interested to see is like okay, how do I progress it from a just a by coded local dashboard to like something that can actually ingest his data, this the proposal and like feed it in like I don't know how to connect it really, rather than having a standalone thing.
+Evan Liang: So here, do you guys have any ideas?
+Evan Liang: I think yeah, we can talk about that.
+Evan Liang: I think that's probably originally on the timeline that was a little bit later on.
+Evan Liang: But it's good to have those discussions now.
+Evan Liang: And this is actually probably where like getting like more like experienced dev help will be helpful in terms of the connection connecting stuff.
+Evan Liang: Yeah, I mean I have some stuff on that that kind of ties into what I've been doing.
+Evan Liang: So I get, I could just like answer that and maybe go.
+Evan Liang: Um.
+Evan Liang: But from my understanding like from a security standpoint when we call the mcp, we don't want to be like it doesn't make sense to, to have me normalize it and call it and store all that data like in our own database or whatever.
+Evan Liang: Because then we have to be up on security compliance and all this stuff.
+Evan Liang: Yeah.
+Evan Liang: So yeah, so if we instead, if I still normalize it and then I basically come up with the MCP call that is normalized.
+Evan Liang: Yeah.
+Evan Liang: So all on your end, instead of the synthetic data or whatever you had saying like, you know, 6800 is the Uber's ARR, you would call my command that just says get ARR for.
+Evan Liang: And then you'd pass in like the Uber id.
+Evan Liang: And then on my end that would be run through something that calls the MCP but normalizes it.
+Evan Liang: So like all you see is yeah, call or get ARR.
+Evan Liang: But it might be ARRC on Lean Data's end and it could be monthly, but that would have been things that I already normalized.
+Evan Liang: So that call still gets that value but then multiplies by 12 and knows that it is.
+Evan Liang: I'm going to put a little bit of pin in this one because I think we're still in the phase of doing product definition.
+Evan Liang: I don't want to stitch things together too quick.
+Evan Liang: I know we need to give an overall thing and I will discuss that.
+Evan Liang: But if we start trying to spend all this time stitching together the data and passing it, it's actually going to distract from actually figuring out what each of these steps does pretty well, you know what I'm saying?
+Evan Liang: Then it makes it harder to change because you're so focused on passing the data that you're not thinking about what should the module do for now, I still say for at least another week, use dummy data.
+Evan Liang: Then let's revisit this once we're very clear around what each module does.
+Evan Liang: That's actually what I want to talk about in my section.
+Evan Liang: Based on yesterday's comment feedback and just me going through the demo itself, I've redone the entire thing, really focused on my six micro agents profile.
+Evan Liang: And right now they're all working, they're all good, but I'm just refining them even more.
+Evan Liang: Okay, so for an example for my language model, I'm kind of building the workflows.
+Evan Liang: Like how do you do introduce a new profile like Evan so his emails put it into the system and then how does that work?
+Evan Liang: How does that look like?
+Evan Liang: And then once it's inside, you can test it on like coming up with fixed scenarios and once you like the way the system works and then how would the entire now agent work with.
+Evan Liang: This new voice profile?
+Evan Liang: So I'm working on these nuances of all by six.
+Evan Liang: Do you want to share real quickly.
+Evan Liang: Just because it'll be.
+Evan Liang: I'll save us time just because in the session it's probably worth just coming.
+Evan Liang: Up with a new demo.
+Evan Liang: Are you ingesting dummy files or no?
+Evan Liang: What does that mean?
+Evan Liang: Yeah, of course everything is dummy.
+Evan Liang: There's nothing.
+Evan Liang: Wait, no, but are you like ingesting?
+Evan Liang: Because there's no way you can actually run an agent without the API key, so.
+Evan Liang: No, no, no, it's okay.
+Evan Liang: I'm building the workflow in a logic.
+Evan Liang: The only thing that's left is the API key.
+Evan Liang: What I meant by that was.
+Evan Liang: Like here's the.
+Evan Liang: Right now it's Emily Christina.
+Evan Liang: And then what I did was unmuted.
+Evan Liang: But that was me.
+Evan Liang: But okay, I can go into settings.
+Evan Liang: I can.
+Evan Liang: I can give this one.
+Evan Liang: I can import a file.
+Evan Liang: So I create this files, all of Evan's emails.
+Evan Liang: Okay.
+Evan Liang: Put it together.
+Evan Liang: It.
+Evan Liang: It kind of took.
+Evan Liang: And then this is just random stuff.
+Evan Liang: And then it kind of built this a little bit.
+Evan Liang: Renewals process Pareto market.
+Evan Liang: Because you were talking about all these things in the emails.
+Evan Liang: I can adjust more of these if I want to and then I'm going to save it first.
+Evan Liang: So now everything has no profile.
+Evan Liang: And then at the bottom here, this is not real though.
+Evan Liang: But I can be like C situation where we are renewing a high churn client and then it like generates some sample outputs here.
+Evan Liang: These are not real.
+Evan Liang: Yeah.
+Evan Liang: Okay.
+Evan Liang: And once that is, that is done.
+Evan Liang: So then I'm gonna save it.
+Evan Liang: So basically what I am is I'm logged in as Evan and then as a dashboard, all of this would change to evidence accounts and then it will show also like when you want to generate something new, it will kind of create a new recommended follow up in Evan's voice because of all the profiles I've built.
+Evan Liang: Got it.
+Evan Liang: Okay.
+Evan Liang: Yeah.
+Evan Liang: So that's what I'm like working on this Tiny, tiny nuances for all of my six agents which are I can talk about later.
+Evan Liang: What are your six agents?
+Evan Liang: My six agents are ingestion agent from Aaron proposal agent output for Dean.
+Evan Liang: And then the four in the middle is language style which I just showed you drafter.
+Evan Liang: So how to based on the improve based on the scenario context.
+Evan Liang: How to use a language income at good output response agent.
+Evan Liang: This is real already.
+Evan Liang: I can show you guys this now.
+Evan Liang: Basically analyzer, analyzer of my sentiment, the customer sentiment putting scores on it recommendation how to approach it.
+Evan Liang: Okay, fair enough.
+Evan Liang: Yeah.
+Evan Liang: So if you guys want to see the other agents, I'm going to share my screen again.
+Evan Liang: So the first two, the input output, those are hidden agents, but something like this, this is the agent called response agent.
+Evan Liang: So every time there's a response, it kind of comes up with the analysis.
+Evan Liang: Positive buy signals detect the intent.
+Evan Liang: So, yeah, that's one of the agents.
+Evan Liang: And then the champion finder.
+Evan Liang: What I've built is this kind of thing, so.
+Evan Liang: Or chart Champion research.
+Evan Liang: Okay.
+Evan Liang: Who's a stakeholder map right now there's a champion.
+Evan Liang: There's no need to look for another one.
+Evan Liang: If there is a need for look for another one.
+Evan Liang: Let me see what I can find.
+Evan Liang: Departed reengage like this where the champion has left.
+Evan Liang: So we've moved on to Marcus Hill, and there's two options.
+Evan Liang: Marcus is a Diana.
+Evan Liang: So between these two, the champion research shows that Marcus is better.
+Evan Liang: For now, it doesn't.
+Evan Liang: Okay.
+Evan Liang: Okay.
+Evan Liang: And that's the fourth agent and then drafter agent I already talked about.
+Evan Liang: Yeah, cool.
+Evan Liang: These are all.
+Evan Liang: I'm basically making this more real itself prototypes as of now.
+Evan Liang: Okay, that's helpful.
+Evan Liang: Got it.
+Evan Liang: That's helpful, Condo.
+Evan Liang: Cool.
+Evan Liang: Then the ask you had yesterday that I think is worth it is like, hey, for you, you like to see the overall context of the whole thing.
+Evan Liang: Yeah.
+Evan Liang: Yeah, that was an ask you made yesterday.
+Evan Liang: I think it's worth calling out.
+Evan Liang: Yeah, correct.
+Evan Liang: So the overall context would come from him also.
+Evan Liang: And also from the emails that are back and forth.
+Evan Liang: Well, no, no, he's like, hey, how does it.
+Evan Liang: Where does this.
+Evan Liang: Where do all the agents sit within an overall thing?
+Evan Liang: That's an important part for you?
+Evan Liang: Yeah.
+Evan Liang: This dashboard, or like what I built is the overall portal of the Reno agent.
+Evan Liang: I think that what I'm laying is the foundation for how all of these bots would come back coming to this particular thing, except for his ones, because his are different portals.
+Evan Liang: Okay, well, let's talk about that.
+Evan Liang: But that was a good ask that you made, so I just want to leave that there.
+Evan Liang: Okay, cool.
+Evan Liang: Yeah.
+Evan Liang: Mind the things.
+Evan Liang: I'm just basically starting to actually, like, try to see if I can, like, build the whole thing, like, with the proper ingestion, all that.
+Evan Liang: So, like, also, like taking account security concerns, everything.
+Evan Liang: That's why I just spent some time moving the API key from a shared folder to not shared folder.
+Evan Liang: But yeah, that's.
+Evan Liang: I hadn't done much work on that yet, so I'm just gonna start.
+Evan Liang: Start probably all today.
+Evan Liang: My goal is probably to finish it by today is get a fully, like, fleshed out, a secure way of doing things.
+Evan Liang: I have to figure out how to transfer the data from each steps in a way that keeps the context but doesn't bring any security concerns.
+Evan Liang: Obviously going to use dummy data, but try to get the pipeline from each step together, which steps it's going to be.
+Evan Liang: Obviously I have to ingest data from part.
+Evan Liang: I also have to ingest data from Aaron to fill.
+Evan Liang: There's the part of filling in the data like each slide.
+Evan Liang: Right.
+Evan Liang: Getting the ARR correctly, getting all that correctly.
+Evan Liang: But there's also the part of getting those slides templates through and making sure that they're divided into the correct blocks.
+Evan Liang: And then there's finally understand the context to like build the story.
+Evan Liang: So those three sort of segments of making sure all of that is.
+Evan Liang: I have at least basic architecture on how to do that for like a potential design partner than what I had previously.
+Evan Liang: Okay, fair enough.
+Evan Liang: Yeah.
+Evan Liang: And then for me, I've just been like.
+Evan Liang: I incorporated some of Scott's changes, which is looking at it quarterly or also.
+Evan Liang: Yes.
+Evan Liang: Simplifying the dropdowns, all that.
+Evan Liang: And then been thinking a lot on the security side.
+Evan Liang: How do we like, yes.
+Evan Liang: Store the data because we probably don't want to be storing it all at once.
+Evan Liang: But then that also means do you want to call it every single time that you open a menu?
+Evan Liang: And so been looking into that and I think that will be one of like the main things at least before, like also trying to make all the parts real so like it can actually search the news.
+Evan Liang: Trying to calibrate that make sure it works.
+Evan Liang: But I think at least for my part, I kind of need the real data for to like calibrate the things that are actually making sure that we know if it.
+Evan Liang: If we want to upsell seats on this one or downsell or whatever.
+Evan Liang: Right.
+Evan Liang: So I've been.
+Evan Liang: Yeah.
+Evan Liang: Trying to work with the mcp, get that working.
+Evan Liang: And hopefully just by getting it working, eventually everyone will be able to query it.
+Evan Liang: Okay.
+Evan Liang: Easily makes sense.
+Evan Liang: Also, I stepped over my design scheme.
+Evan Liang: Yeah.
+Evan Liang: Yes.
+Evan Liang: You guys want to start?
+Evan Liang: That was great.
+Evan Liang: Yeah, so I already did that.
+Evan Liang: This is a design scheme.
+Evan Liang: I mean, it's not.
+Evan Liang: It's like Frankenstein, but it still looks closer to yours than yours.
+Evan Liang: Implementing as we speak.
+Evan Liang: Fair enough.
+Evan Liang: Comments?
+Evan Liang: Let's see.
+Evan Liang: We'll stay on the product stuff.
+Evan Liang: Yeah.
+Evan Liang: So I do think one of the things your comment parth about giving you guys the overall design and how everything fits in, I think we're at a stage where we should spend some time making sure that happens because I think each product is.
+Evan Liang: And how people are approaching it are going in slightly different Directions, and that's going to be a little bit chaotic right around it.
+Evan Liang: So that's a worthwhile exercise.
+Evan Liang: It's good to have that.
+Evan Liang: Now, part of the reason we didn't have it coming in is we wanted to design the stages and validate them.
+Evan Liang: By looking at the stages and how you guys build it, it's going to give us ideas around how to stitch it together.
+Evan Liang: So that's what I want to talk about is I do have a hypothesis of how to stitch it together and it does that impact each of your products slightly?
+Evan Liang: Right.
+Evan Liang: It doesn't change things things, but it's a good exercise to get through because if not, if we don't add that layer of context, you guys are going to go in slightly different directions and we're not going to show how this all fits together.
+Evan Liang: So that's important.
+Evan Liang: That's my one takeaway.
+Evan Liang: The fact that we're here right now is a good thing, and it's a credit to you guys moving quickly on each of your individual areas because watching you guys iterate and absorb the information how you guys build helps us understand.
+Evan Liang: Understand the overall picture better.
+Evan Liang: And also some of the customer calls around it.
+Evan Liang: So let me spend some time giving you guys the hypothesis.
+Evan Liang: We may take some time to be like, hey, let's question the overall hypothesis.
+Evan Liang: Does it work?
+Evan Liang: Juliet will work on a deck around, like, honing the value proposition.
+Evan Liang: And then once we look at that, then we can have a little bit more.
+Evan Liang: Give you guys more clear definition around the priorities of each of your products.
+Evan Liang: Some of your products actually may be closer together.
+Evan Liang: Some of your products may be slightly different.
+Evan Liang: And then that could determine like.
+Evan Liang: Like how much we spent.
+Evan Liang: Like, there's.
+Evan Liang: There's a part of me that wanted you to get the mcp.
+Evan Liang: But then now I'm just like, wait a second, maybe, like, is that a good thing or a bad thing?
+Evan Liang: Depending on how we prioritize certain things.
+Evan Liang: Because then brings in security concerns and stuff like that.
+Evan Liang: So here's my hypothesis, both from watching your demos and going through Scott, as well as some of the customer calls, but maybe first giving you guys a little bit more context.
+Evan Liang: Awesome.
+Evan Liang: So in order to successfully sell into a a client, there's key folks, generally that you have.
+Evan Liang: It's like you have the budget owner.
+Evan Liang: Right.
+Evan Liang: Whose budget this comes from.
+Evan Liang: Right.
+Evan Liang: And then you have like the champion.
+Evan Liang: I didn't know I switch.
+Evan Liang: Switch and sorry, is this selling?
+Evan Liang: And don't worry, my handwriting's so bad.
+Evan Liang: I just need you guys to give the check.
+Evan Liang: It's a little bit better.
+Evan Liang: This is a, this is a problem that vexes all just like you ran into it Problem scooper.
+Evan Liang: The whiteboard markers actually working is a unsolved problem inside.
+Evan Liang: I can't believe how simple that issue is.
+Evan Liang: Both of these issues should be a big one.
+Evan Liang: Okay, so when you think okay, so actually most companies think of something called their icp.
+Evan Liang: So as part of the ICP ideal customer profile, it's like who do we sell to?
+Evan Liang: So the, the three steps we had to figure out is like who are the companies that would actually value our product, what types of companies, what industry, what size, blah blah blah.
+Evan Liang: So the first thing we had a theory that we pretty validated is we believe our ICP is companies that are like $10 million plus in revenue or ARR because if you're smaller than that, you're just focused on new business, you don't need a lot of renewal.
+Evan Liang: So a lot of the calls people were talking about, yeah, like yeah, we're not going after like YC companies, we're going to go after a little bit more mature companies.
+Evan Liang: Right.
+Evan Liang: We also did validate that like hey, if we can get to like PE backed companies that would be pretty interesting as well because they care about both cost and revenue side.
+Evan Liang: So that's the first part of ICP is what types of companies.
+Evan Liang: Then the second question we spent a lot of time trying to answer is who are we selling to?
+Evan Liang: So there was a period in which we listened to the calls, we were talking to pricing experts, CFO, CROs, Chief Customer Officer, and then finally we landed on that.
+Evan Liang: We think that this the budget holder or decision maker, that's how you call this was actually the CRO.
+Evan Liang: Right.
+Evan Liang: And then the sales pitch you guys are practicing for next week is well, how do we pitch the CRO?
+Evan Liang: That's not actually initially what I thought it would be.
+Evan Liang: I actually thought CROs don't give a shit about some of this renewals and that would be harder.
+Evan Liang: But we ended up doing the research and coming up with CROs.
+Evan Liang: And then we had a, a value proposition for the CRO Right, which is what you're practicing for next week.
+Evan Liang: It's like that they care about the scalability thing now.
+Evan Liang: That's the CRO.
+Evan Liang: So we're pretty confident we can get a CRO to care.
+Evan Liang: But then the CRO doesn't do this.
+Evan Liang: The guy who days to day manages Pareto would probably be the account manager leader.
+Evan Liang: So AJ he is not the rep, he is actually the leader of it.
+Evan Liang: So then that's who and that's who we would be demoing.
+Evan Liang: So the CR is going to be like, this is good.
+Evan Liang: Then he's going to put us in touch with an AJ or someone like that.
+Evan Liang: And then that's when we have to.
+Evan Liang: What you guys are building is to demo a product that would appeal to them.
+Evan Liang: Right.
+Evan Liang: We pitched to the CRO, but the AM actually uses it.
+Evan Liang: Correct.
+Evan Liang: The AM leader.
+Evan Liang: The AM leader puts the mandate and the AM uses it.
+Evan Liang: No, we're pitching the AM leader.
+Evan Liang: Yeah.
+Evan Liang: So this is the one that we get the buying from.
+Evan Liang: Because once they say okay, then they're underlining.
+Evan Liang: So here's one that we should talk about and make sure we're very, very clear on.
+Evan Liang: Our long term goal is to replace ams.
+Evan Liang: So we are not going to be.
+Evan Liang: Again, this is autonomous versus co pilot.
+Evan Liang: We are not trying to be a co pilot to the amount a.
+Evan Liang: We are trying to build an agent that the AM leader will use in place of their ams.
+Evan Liang: Got it.
+Evan Liang: Right.
+Evan Liang: So that's really like things like one of the other things like key design principles is this should be autonomous, not a co pilot.
+Evan Liang: Yeah.
+Evan Liang: So, and so in your demo I can see some of the, like you're like, hey, the voice of the ams, I'm mimicking them.
+Evan Liang: Like if it's autonomous agent, why do I care about the voice?
+Evan Liang: Something right.
+Evan Liang: Like I don't want.
+Evan Liang: Emily was using it and those are real people.
+Evan Liang: I know she's a very good am.
+Evan Liang: But our goal is especially in the long tail.
+Evan Liang: The problem with the long tail is they don't have enough amps.
+Evan Liang: Yeah.
+Evan Liang: Now one theory you could have is that, hey, if this stuff automates enough a thing, a single AM can manage 400 accounts instead of managing like 100 accounts.
+Evan Liang: But if you take that to a little bit extreme that managing like a thousand account, you're an AM leader, you're not an al.
+Evan Liang: You don't have enough time to do anything yourself.
+Evan Liang: Yeah.
+Evan Liang: Okay.
+Evan Liang: So the question is, what's the AM leader?
+Evan Liang: We have not answered and why we were building the prototypes.
+Evan Liang: We have not answered what the value prop is for the AM Leader.
+Evan Liang: The value prop, the AM leader is not the same as the CRO for as well.
+Evan Liang: The AM leader may not be like jumping up and down being like, oh yeah, I can scale my revenue infinitely and I don't have to bring on people and hire.
+Evan Liang: That's not necessarily as appealing to them.
+Evan Liang: One, they don't think that far ahead.
+Evan Liang: They probably don't care about budgets.
+Evan Liang: And some of the stuff they're just like I'm just focused day to day on my accounts.
+Evan Liang: So the ballot prop there was a little bit different.
+Evan Liang: Having you guys demo and demonstrate in the stages is helping us understand what they care about.
+Evan Liang: So my.
+Evan Liang: So again I just want to highlight.
+Evan Liang: We know what this is, we know these things is what we spent the last couple months understanding.
+Evan Liang: We feel pretty good about it, right?
+Evan Liang: For the champion watching you guys demo, looking at Scott looking at thing I believe what one of the their biggest pain point is in the long tail as an AM leader.
+Evan Liang: Let's say you manage like 400 accounts today.
+Evan Liang: You don't have a very good sense of what's happening in those accounts because you have all these accounts and this is a very.
+Evan Liang: These processes are.
+Evan Liang: You kind of are very reactive.
+Evan Liang: Your ams go after is so you just kind of have a.
+Evan Liang: You don't.
+Evan Liang: It's not very methodical the process steps and it's not very trackable or measurable as well.
+Evan Liang: They kind of guesstimate a little bit around it.
+Evan Liang: So I believe the value proposition we can really deliver and what you guys in your products is this concrete visibility into each step of your process and actually tell them so.
+Evan Liang: And that's going to vary by AM leader.
+Evan Liang: So my example is on some of our calls, the ones who are just like they started a new job, stuff like that, they don't even know Aaron's step.
+Evan Liang: The idea of like my 400 accounts and what is the status of those 400 accounts that's befuddling them.
+Evan Liang: They're just like I got 400 accounts.
+Evan Liang: I can't get a sense of what's going on.
+Evan Liang: So all I want to know is just which ones are going to turn, which ones are upsell and stuff.
+Evan Liang: They're kind of stuck there.
+Evan Liang: Some of those are like I got that.
+Evan Liang: Then their question is like who should I contact?
+Evan Liang: And I get stuck around those.
+Evan Liang: Right?
+Evan Liang: Then someone like Scott who's really well organized why he was very intrigued with your demo was he's like, I know I have that stuff down.
+Evan Liang: I said, but I don't.
+Evan Liang: My buyers go dark.
+Evan Liang: So that invariably in their steps there is something because they have so many accounts where they just.
+Evan Liang: There's a dark space that they don't understand and that's very valuable to them.
+Evan Liang: Filling in that dark space gives them more confidence that they understand their accounts and that they can review proactively.
+Evan Liang: Does that shine with what you guys are seeing or something like that?
+Evan Liang: And then why what we're providing them that they haven't had beforehand is each of your demos is a very concrete step.
+Evan Liang: It's like a manufacturing plan.
+Evan Liang: Like, if you want to go automate how to build chairs, each machine has to be very, very calibrated, very precise, very simplistic, right?
+Evan Liang: Like a chair has legs.
+Evan Liang: If you look at the leg, it's kind of stupid.
+Evan Liang: You're not going to be like, that's amazing.
+Evan Liang: But the machines, if you're watching a factory floor, what they produce, you're like, you got to be kidding me.
+Evan Liang: That's all this huge machine does is produce this little tiny thing, but it's just very precise around and it's very measurable and calibrated around that little, little thing, right?
+Evan Liang: So that's why you guys are demoing.
+Evan Liang: You're like, I don't see how great.
+Evan Liang: And what I do see is scope creep from each of you because you're trying to make your demo more impressive.
+Evan Liang: So you got to scope creep and add things.
+Evan Liang: That's why we keep on reigning you guys back in being like, no, no, don't go do all that.
+Evan Liang: Just focus on building a great leg, right?
+Evan Liang: Because we will stitch it all together.
+Evan Liang: So if you build a great leg, you create a great seat, right?
+Evan Liang: The seat, not the.
+Evan Liang: Like, you know, instead of the whole chair, the seat itself, you go to the great backstop.
+Evan Liang: We'll stitch it together with screws.
+Evan Liang: But you need to be great at your process and make it very measurable.
+Evan Liang: Many of your steps today are not measurable.
+Evan Liang: Because with the AM leaders is he.
+Evan Liang: He's like.
+Evan Liang: He may not know his accounts.
+Evan Liang: He hands it over to an AM person.
+Evan Liang: He just expects them to figure this out.
+Evan Liang: And they aren't very methodical, unlike a factory floor.
+Evan Liang: They're like an artisan.
+Evan Liang: They're not very methodical about what they're doing.
+Evan Liang: And so for us, making each step extremely measurable, concrete and deliverable is valuable because then we can overall actually build a manufacturing process that gives visibility to the AM at any point in time.
+Evan Liang: They should be able to, in our system, pull up and know exactly where something is and have much more granular detail than they do today.
+Evan Liang: And that is valuable for the long tail.
+Evan Liang: A leader.
+Evan Liang: That's what we would pitch to them, is, hey, you got this black box.
+Evan Liang: You got too many deals, you're always firefighting.
+Evan Liang: You don't know what's going on.
+Evan Liang: We're going to give you all this visibility into what it.
+Evan Liang: Now some of this sounds like workflow and just process engineering.
+Evan Liang: It's like, why is AI well, because in order to make each of these steps measurable, you actually do need AI.
+Evan Liang: Right.
+Evan Liang: Like in order to actually produce email.
+Evan Liang: That's actually really like auto producing.
+Evan Liang: That's really hard without basic AI.
+Evan Liang: Right.
+Evan Liang: In order to access all these signals, AI makes that a lot easier.
+Evan Liang: Right.
+Evan Liang: That's why this, this stuff hadn't been previously automated.
+Evan Liang: But we don't need.
+Evan Liang: This is the opposite of how some people are building AI, which is like an LLM is like you can prompt it anything and I'll spit back an answer.
+Evan Liang: Right.
+Evan Liang: But it doesn't actually break down the steps.
+Evan Liang: So we're doing the opposite of that.
+Evan Liang: That's where our value is going to be around visibility.
+Evan Liang: We pause there, see if there's questions, agreement, disagreement.
+Evan Liang: And this would point to what you're looking for is like that overall dashboard is going to be.
+Evan Liang: We have to be very clear around each step and how to measure it.
+Evan Liang: Yeah, that's my question.
+Evan Liang: Also, you kept missing the word measurable.
+Evan Liang: Measurable.
+Evan Liang: Are you looking at just like the how well the outputs are doing or how well it's affecting the champion's ability to that job?
+Evan Liang: What do you mean by measurable?
+Evan Liang: Measurable in the sense that there's one of the things that I liked about what you guys did was each of the steps is the deliverable.
+Evan Liang: Okay.
+Evan Liang: So yours says like the deliverable is an action plan.
+Evan Liang: Deliverable is a story or a deck.
+Evan Liang: Deliverable is an actual email.
+Evan Liang: Deliverable was a buyer hub.
+Evan Liang: That was kind of a little bit of test.
+Evan Liang: I actually like that a lot today.
+Evan Liang: These people aren't, they aren't that as process oriented.
+Evan Liang: Most of them don't create a renewal stack.
+Evan Liang: Majority of the time they don't create a renewal deck.
+Evan Liang: But if you think about it, it's actually a good exercise that everything has goes through that process, the renewal that what the renewal deck really is the why of how I'm justifying my process price.
+Evan Liang: Yeah, you should do that for every deal.
+Evan Liang: At least think through it.
+Evan Liang: You may not have to deliver the deck.
+Evan Liang: Right.
+Evan Liang: But you, someone should think through that.
+Evan Liang: They often don't.
+Evan Liang: Right.
+Evan Liang: They're often just sending it and just like without.
+Evan Liang: So like a lot of times yeah, they send them.
+Evan Liang: They're just like, they're really busy.
+Evan Liang: There's like I'll just send them renewal, see if they renew.
+Evan Liang: Yeah, what you should do is research the company, research the people, justify it and then find out if they answer their questions for them.
+Evan Liang: Yeah, they just skip all that.
+Evan Liang: It's just this is what I'm saying it's a very haphazard process.
+Evan Liang: It's like, oh, I'll just send the renewals for enterprise deals.
+Evan Liang: They do think through all these steps very careful, the good ones.
+Evan Liang: So.
+Evan Liang: But that's why.
+Evan Liang: That's why what we want you guys to do is very much focused on what is that delivery deliverable at each of these steps for each of you.
+Evan Liang: And if we actually deliver that thing in a Verify, verify, someone can verify that we deliver that.
+Evan Liang: We actually built the rationale of that.
+Evan Liang: That then makes it a lot more.
+Evan Liang: This process a lot better.
+Evan Liang: Yeah, understood.
+Evan Liang: So don't worry about switching it together.
+Evan Liang: Get the delivery right, and then we'll figure out stitching.
+Evan Liang: But we.
+Evan Liang: We will start talking about the stitching.
+Evan Liang: Yeah, that's why it's really important.
+Evan Liang: The value prop to the AM is really important because that determines how we're stitching.
+Evan Liang: So if we believe it's visibility.
+Evan Liang: Right.
+Evan Liang: I'm giving you visibility that actually changes something.
+Evan Liang: So, for example, Dean's deck, right.
+Evan Liang: He delivers a deck.
+Evan Liang: That's good enough.
+Evan Liang: It would be better if we could track if someone actually looked at the deck.
+Evan Liang: Yeah.
+Evan Liang: So this is where your two things may actually slightly merge.
+Evan Liang: Because actually, have you guys heard of a program called SlideShare?
+Evan Liang: There was a period in when people were delivering programs called something called SlideShare that was actually a bunch of HTML pages for the slide.
+Evan Liang: But what was good for the people who were delivering SlideShare is they could see how many times the buyers, whoever they sent it to, saw the deck, who they shared it with, how many times they viewed it, which pages they viewed it, how much time they spent on the deck.
+Evan Liang: You know, so you could imagine where, like, I want to really measure engagement with the deck that Dean does.
+Evan Liang: Maybe that sits on the.
+Evan Liang: That's the beginning of the buyer portal.
+Evan Liang: Right.
+Evan Liang: You click through it and then there's more information than that.
+Evan Liang: But we would want to give the seller total visibility until I do.
+Evan Liang: They even open it.
+Evan Liang: They didn't open it.
+Evan Liang: That's one thing.
+Evan Liang: Oh, they opened it five times.
+Evan Liang: They sent it to seven people.
+Evan Liang: Okay.
+Evan Liang: Right.
+Evan Liang: And then where else they go, well, they need their contrast and need some other things.
+Evan Liang: Right.
+Evan Liang: That.
+Evan Liang: That.
+Evan Liang: That becomes that.
+Evan Liang: That.
+Evan Liang: That gives us a value proposition to.
+Evan Liang: To the buyer, clarify it's visibility.
+Evan Liang: But everything's automated.
+Evan Liang: So it's like, not.
+Evan Liang: Not like I'm waiting to send it.
+Evan Liang: It's like, no, they can see it was sent or they can see it was generated.
+Evan Liang: Correct.
+Evan Liang: See what it was.
+Evan Liang: Okay.
+Evan Liang: Yes.
+Evan Liang: We want to move them along and stitching it together is actually part of the value.
+Evan Liang: Right.
+Evan Liang: Now, I could see this scenario.
+Evan Liang: I thought about this.
+Evan Liang: We really offer visibility and like, you guys build this great buyer hub.
+Evan Liang: I could see like one of the enterprise sellers being like, hey, I want to send that.
+Evan Liang: I'm going to control it and all the commission.
+Evan Liang: I've already done all my research.
+Evan Liang: Can I send that buyer hub link?
+Evan Liang: Yeah.
+Evan Liang: So we may have to make it a little bit flat.
+Evan Liang: I don't think we would stop them.
+Evan Liang: They would lose the value of the outcome because you're not getting it.
+Evan Liang: But embedding it so that they do it, it's not a bad thing because then if we actually can measure the enterprise, we.
+Evan Liang: It's easier for us to then go own the rest of the business.
+Evan Liang: So we like, hey, look, you actually like these tools.
+Evan Liang: We measure.
+Evan Liang: You don't actually need someone person to be jumping between it.
+Evan Liang: Yeah.
+Evan Liang: So this is.
+Evan Liang: Go ahead, Quick question.
+Evan Liang: This is less of a big picture thing, but I think you just said that you want the buyer hub to start with his slides.
+Evan Liang: Is that correct or is that just an idea?
+Evan Liang: That's an idea.
+Evan Liang: That's one idea of, hey, it would be interesting to measure the deck, right?
+Evan Liang: Yeah.
+Evan Liang: Now, the flip side is depending on the buyer, what we really care about in your thing is delivering the story sometimes.
+Evan Liang: And this is where sometimes the story is like, hey, they don't need a deck.
+Evan Liang: Just send the quotes.
+Evan Liang: Right.
+Evan Liang: It could be, don't send.
+Evan Liang: Don't send a deck.
+Evan Liang: Right.
+Evan Liang: But if you are sending a deck, it would be nice to be able to measure the deck.
+Evan Liang: But it's an idea.
+Evan Liang: It's an idea towards measuring the.
+Evan Liang: Measuring visibility.
+Evan Liang: But it doesn't have to necessarily be that way.
+Evan Liang: Helpful.
+Evan Liang: Yes.
+Evan Liang: Okay.
+Evan Liang: So this is the hypothesis and theory and what I noticed.
+Evan Liang: Yeah.
+Evan Liang: I'm willing to bet every customer we engage with if we pitch.
+Evan Liang: So Julia's going to turn this into a deck that we can test with customers and test like, hey, just like the top.
+Evan Liang: Does visibility matter to them?
+Evan Liang: So far, my calls have just been market research.
+Evan Liang: I didn't have anything to pitch them.
+Evan Liang: So then they would turn to like, hey, Mr. AM Leader, we give you a visibility.
+Evan Liang: Let's see how you react.
+Evan Liang: I stages.
+Evan Liang: Right.
+Evan Liang: And my guess is different leaders will.
+Evan Liang: Will gravitate to whatever stage their pain is.
+Evan Liang: Right.
+Evan Liang: And then what we want to do is get them to be like, oh, yeah, we'll solve that pain point for you.
+Evan Liang: Is that pain point worth engaging with us on a design partnership?
+Evan Liang: But by the way we are subject to wheel.
+Evan Liang: I'm going to solve these other pain points that you don't know you have yet.
+Evan Liang: Right.
+Evan Liang: And move you along into it.
+Evan Liang: And you actually want us to do it all.
+Evan Liang: There's a flipping in the software where enterprise sales, where you go from like, hey, I'm learning from you to like, I'm the expert and you should learn from me.
+Evan Liang: That's a key point in which you kind of can close the deals with.
+Evan Liang: With folks.
+Evan Liang: Like, I remember there was like a relatively big company.
+Evan Liang: I leaned out in the early days.
+Evan Liang: Their CTO was like, I need you to like, like, I have this complex flowchart, blah, blah, blah, blah, blah.
+Evan Liang: Can your product ingest that flowchart and make that happen?
+Evan Liang: And then, and then it was a big.
+Evan Liang: It's a pretty big account for us.
+Evan Liang: And then Calvin was like, yeah, we can do that, but your flowchart's kind of funk.
+Evan Liang: I can make the flowchart just look much more simpler like that and it'll do exactly what you did.
+Evan Liang: And I was like, awesome, you're hired.
+Evan Liang: Do that.
+Evan Liang: Right.
+Evan Liang: Like, you can flip it on their heads and there are a lot of trouble that's around.
+Evan Liang: So I think it's worth.
+Evan Liang: For us.
+Evan Liang: What I'll do is, like I said, that's why Julian and I will put together the deck home, this value proposition.
+Evan Liang: Right.
+Evan Liang: So we'll look at the overall dashboard.
+Evan Liang: But then if we're going to try to validate that.
+Evan Liang: But then that's where I'm going to try to simplify each of your products in this area.
+Evan Liang: So I kind of like, I think, Aaron, your step is you're basically giving us account intelligence.
+Evan Liang: Right?
+Evan Liang: Like, hey, what is going on with the company?
+Evan Liang: Right.
+Evan Liang: Part where I really want you to focus.
+Evan Liang: I like the thing is you're going to try to focus on the people.
+Evan Liang: So I understand the account now.
+Evan Liang: I need to understand the people I'm going after.
+Evan Liang: Who, what, when, my who.
+Evan Liang: Right.
+Evan Liang: I need to figure out who.
+Evan Liang: I just think that part of your demo, it's like, hey, who is this person?
+Evan Liang: And then I need to get them to engage with us.
+Evan Liang: Yeah, that's the what.
+Evan Liang: And then when it's like, when do we trigger it?
+Evan Liang: Sure.
+Evan Liang: Yep.
+Evan Liang: And then how is like the tone and this and that.
+Evan Liang: So like.
+Evan Liang: Yeah, but I, I don't think that I. I like what you're doing.
+Evan Liang: Right.
+Evan Liang: But you're gonna probably find out when you're just engaging with them.
+Evan Liang: It's actually.
+Evan Liang: The tone is easier than you think.
+Evan Liang: Yeah, it's just it's going to be like, hey, your renewal is coming due.
+Evan Liang: Yeah, that's it.
+Evan Liang: Hey, are.
+Evan Liang: Should we get.
+Evan Liang: Should we.
+Evan Liang: Should.
+Evan Liang: Are you the right person to like.
+Evan Liang: Hey, the renewal is doing.
+Evan Liang: Do you want to get this process started?
+Evan Liang: Got it.
+Evan Liang: So the rules are quite difficult because most of you come from external sources.
+Evan Liang: Like most companies have sub.
+Evan Liang: Yes.
+Evan Liang: They have some information.
+Evan Liang: So.
+Evan Liang: So there's a.
+Evan Liang: There's a theory called buying groups.
+Evan Liang: Yeah.
+Evan Liang: So.
+Evan Liang: Deep laugh.
+Evan Liang: He's lean down.
+Evan Liang: I spent a whole bunch of time doing this.
+Evan Liang: Mostly knocked on it.
+Evan Liang: It's been difficult.
+Evan Liang: So inside the company database.
+Evan Liang: Yeah.
+Evan Liang: Mcp.
+Evan Liang: For each account they have a list of contacts so that.
+Evan Liang: That you would start with.
+Evan Liang: Most of them are dead or useless.
+Evan Liang: But actually this is where being long tail is really helpful.
+Evan Liang: Enterprise account.
+Evan Liang: You could have 400 contacts in there.
+Evan Liang: It's massive.
+Evan Liang: Long tail.
+Evan Liang: They usually only have a few.
+Evan Liang: And that actually benefits us.
+Evan Liang: Yeah.
+Evan Liang: So they only have a few.
+Evan Liang: Some of them are no longer at the company.
+Evan Liang: Blah, blah, blah.
+Evan Liang: But you're just trying to cycle through the people.
+Evan Liang: Yeah.
+Evan Liang: To figure out who it is.
+Evan Liang: You would do the internal cycling first and then you would go external.
+Evan Liang: Sounds good.
+Evan Liang: You know what I'm saying Around it there's a small data sets and I liked how you thought it was.
+Evan Liang: You made an org chart.
+Evan Liang: Sometimes we can't figure that out.
+Evan Liang: Yeah, exactly.
+Evan Liang: Yeah.
+Evan Liang: You know it's going to be a little bit.
+Evan Liang: So who Dean is like kind of the like why like this ability to tell the story and you will need to knowing the account data and who will help you tell your story.
+Evan Liang: Right.
+Evan Liang: Why?
+Evan Liang: And that's the storytelling part of the art again, it becomes the deliverable of some sort of like story deck.
+Evan Liang: Makes it a little bit easier.
+Evan Liang: And then for you, Cooper, it's just like it's a little bit of how they're going to buy like what information they need.
+Evan Liang: You are actually.
+Evan Liang: Actually once he engages a key part of yours is who else they remember Scott said who else they send it to.
+Evan Liang: Did they engage the cfo, procurement, all this other stuff.
+Evan Liang: You want them to share that information and all this other stuff because that tells us how we close of a deal.
+Evan Liang: So we know the champions.
+Evan Liang: The champions ready to engage.
+Evan Liang: But we also know other people have to engage now.
+Evan Liang: Right.
+Evan Liang: And they need more different types of information and all this other stuff, how they get engaged and all this stuff.
+Evan Liang: And then once you do that, then we can negotiate.
+Evan Liang: And if you think about it, if I know all these other steps.
+Evan Liang: Yeah.
+Evan Liang: My hand is really bad what does it say about my thing?
+Evan Liang: How this is why.
+Evan Liang: That's why you get like project managers with good handwriting.
+Evan Liang: Less people are better.
+Evan Liang: I was gonna say the negotiation.
+Evan Liang: If you imagine like negotiating when you know all the account details, who the details, who else is involved in the company, what your own story is, you're going to be much better prepared to negotiate than if you just jump in there and do that.
+Evan Liang: And then if you negotiate well, the closing process should be very, very simple.
+Evan Liang: Especially because in here you're gathering data around who are the signers, who are the people who get involved.
+Evan Liang: Capturing all that information makes it a lot easier to close.
+Evan Liang: And sometimes people, like I said, they don't do this methodically.
+Evan Liang: Especially when you throw hundreds of accounts at someone they would like to, but they just don't have the time.
+Evan Liang: And that's where AI agents would really help.
+Evan Liang: Imagine if we could make everything true process because we're not constrained by the time of the people.
+Evan Liang: Okay, so that helpful then let's look at each of your processes around that.
+Evan Liang: I believe this weaves the story in line with what Scott did in our latest calls.
+Evan Liang: So we'll work with you all to like hone your thing.
+Evan Liang: This is why I'm just like, hey, don't worry about the MCP and data and security.
+Evan Liang: I want to.
+Evan Liang: We're still trying to tell the whole story first, get the features done.
+Evan Liang: Once we have the whole stories and we have a deck, Julia's hopefully having a deck by next week, then I can take that deck and start validating with account managers.
+Evan Liang: And we'll do that.
+Evan Liang: And then once we feel good about the whole story, then trying to actually stitch together data and all this other stuff.
+Evan Liang: So we will definitely run this by AJ on Thursday.
+Evan Liang: I, I want to see what his reaction is around the stuff.
+Evan Liang: Again, he's not going to be.
+Evan Liang: He'll be nice, but not.
+Evan Liang: He might be a little bit critical as well, just because around it.
+Evan Liang: And then, well, he's going to claim that he does all this, but.
+Evan Liang: And then, and then we, we can then show him, hey, how and then what we're trying to impress them upon.
+Evan Liang: How you impress people around this is, let's say visibility is you want to impress them on each step what the output they're going to get, right?
+Evan Liang: Like, hey, I'm going to definitively tell you what stage they're at.
+Evan Liang: Someone who's struggling here would be like, that would be valuable to me.
+Evan Liang: I'm going to deliver a renewals auto generate and a renewals deck for you that explain it.
+Evan Liang: So when we struggling there we'll be like oh, that's why we're want.
+Evan Liang: That's that John leg guy from Site Tracker.
+Evan Liang: That's what he really wanted, right?
+Evan Liang: Hey, I. I'm having trouble getting in touch with people.
+Evan Liang: Right.
+Evan Liang: You, you, you find the right person for me that's really, really valuable.
+Evan Liang: And then folks who are very sophisticated be like oh yeah, the buyer's go dark on me.
+Evan Liang: If I could actually see like what they're actually doing then who else is.
+Evan Liang: I need to get involved.
+Evan Liang: That's extremely valuable.
+Evan Liang: So we'll just like kind of the demo is again output and then the back end how to stitch it together.
+Evan Liang: Very important.
+Evan Liang: But probably later on sips.
+Evan Liang: Cool.
+Evan Liang: Sounds great.
+Evan Liang: Yes.
+Evan Liang: No, but also watching you guys build and demo makes it.
+Evan Liang: Makes it a lot helpful.
+Evan Liang: And it's like I said we're doing manufacturing process for those guys that might go into Ms. And E. This is like breaking it down into we're trying to build a factory here instead of from a skills craft artisanal trade.
+Evan Liang: AJ is very much an artisanal trade guy.
+Evan Liang: Finds himself on how good he is at negotiation.
+Evan Liang: But he does all this in his head.
+Evan Liang: To be clear.
+Evan Liang: Like all of those like in terms of action items for us which do it.
+Evan Liang: You're just saying Lizzie do.
+Evan Liang: Yeah, we're gonna, we're gonna.
+Evan Liang: Let's.
+Evan Liang: Let's be very clear around what you are delivering.
+Evan Liang: Right?
+Evan Liang: Yeah.
+Evan Liang: It's like especially Parth.
+Evan Liang: I think you, you because you want to see the whole story.
+Evan Liang: You're thinking actually both of you have Sculpt Creek.
+Evan Liang: Which two Aaron and Part.
+Evan Liang: Right.
+Evan Liang: So I think you stopped focusing on the ingestion and the output agent.
+Evan Liang: Just really, really focus on the Champion agent and the language.
+Evan Liang: Yes, that's it.
+Evan Liang: Just don't do those two things.
+Evan Liang: What?
+Evan Liang: Yeah, yeah.
+Evan Liang: Make sure that like and then exactly.
+Evan Liang: Let's be very clear on what that, what that does first.
+Evan Liang: Yeah.
+Evan Liang: The Champion agent I think would be very helpful for the.
+Evan Liang: For them to see that is something that.
+Evan Liang: But they don't.
+Evan Liang: Outreach and Sales Loft are very like I sent mass emails.
+Evan Liang: They don't spend a lot of time thinking through who they send it to.
+Evan Liang: Yeah.
+Evan Liang: On and off.
+Evan Liang: Do you think the Champion agent might be difficult because you can't scrape LinkedIn?
+Evan Liang: Yeah, the champion is going to be very difficult because I will have to see what he does.
+Evan Liang: The bot was like the database of what were the one or two people they're talking to.
+Evan Liang: They said everybody has this BG thing.
+Evan Liang: So The Champion is purely data driven.
+Evan Liang: Then the other three agents, like the language agent, which is how it drafts in the response and it just.
+Evan Liang: That's quite simple.
+Evan Liang: So.
+Evan Liang: And I think that the nice way to do that is in any given contact, I'm going to assume you will be given at least one person to contact initially.
+Evan Liang: It's very unlikely you have a renewal that you have no one to contact.
+Evan Liang: Right.
+Evan Liang: So if you think about it, the way you.
+Evan Liang: I would see yours is on the.
+Evan Liang: Who is like, start with the initial Champion, just like you did.
+Evan Liang: And then you are going to, first thing send them an email.
+Evan Liang: Yeah.
+Evan Liang: And then you're going to find out are they engaged?
+Evan Liang: Yes or no.
+Evan Liang: Right.
+Evan Liang: And then for your point, like, here are the backups from your database.
+Evan Liang: Yes.
+Evan Liang: And you're just going to cycle through them.
+Evan Liang: Right.
+Evan Liang: It's like I'm trying to.
+Evan Liang: This person doesn't engage.
+Evan Liang: I'm going to tell you that they're not engaged.
+Evan Liang: Right.
+Evan Liang: That's the visibility.
+Evan Liang: Then I'm going to number two and then I'm going to number three.
+Evan Liang: Right.
+Evan Liang: And then it's like, if these don't work, then I'm going to escalate or hit LinkedIn or something of that sort.
+Evan Liang: Yeah, that's.
+Evan Liang: That's the plan.
+Evan Liang: But I think most companies that, I mean, I'm digital accounts.
+Evan Liang: I mean, when we kind of put this on top of their systems, it's going to take all information.
+Evan Liang: Their CRM mostly, most likely.
+Evan Liang: Right, yeah.
+Evan Liang: So CRM.
+Evan Liang: I mean, hopefully they all have executive structure.
+Evan Liang: You mentioned where they have.
+Evan Liang: No, it's very messy.
+Evan Liang: It's probably going to be very messy.
+Evan Liang: But like.
+Evan Liang: So then I'll do.
+Evan Liang: I mean, so there's so on.
+Evan Liang: You don't have to scrape LinkedIn.
+Evan Liang: There's a company called Clay that's doing very, very well.
+Evan Liang: Yeah.
+Evan Liang: Gtn.
+Evan Liang: Yeah.
+Evan Liang: So all they do is they do a enrichment waterfall.
+Evan Liang: Yeah.
+Evan Liang: So what you would do is like, hey, I don't have anyone.
+Evan Liang: Hit Clay and ask Clay.
+Evan Liang: I need so and so person, go crawl, zoom info, blah, blah, blah, and find me this person.
+Evan Liang: Yeah.
+Evan Liang: And then we'll try to hit that person.
+Evan Liang: And then if it fails, then the next step is like escalate to the manager.
+Evan Liang: We can't find anyone.
+Evan Liang: You may need to escalate to csm.
+Evan Liang: Someone needs to know that we are failing to this.
+Evan Liang: This deal is stuck at who.
+Evan Liang: We can't identify who.
+Evan Liang: Yeah.
+Evan Liang: Right.
+Evan Liang: And so there's no point in doing anything else if you can't deliver the message.
+Evan Liang: I guess this one Though if it's so data driven, what does he do right now?
+Evan Liang: Like in building like you can't build much.
+Evan Liang: I think, I think it's important to validate this, this, this who waterfall be able to show to clients that this is, this is what this module.
+Evan Liang: Show the different scenarios and show how the system would work, I guess and pretend like the data is there.
+Evan Liang: And then once it actually goes into production, like whatever a year or when you get a first client in like three or four months, we have to recalibrate the test to show how it might work now.
+Evan Liang: Okay, I guess my one thing is if I were building that, my concern would be how is the data currently structured?
+Evan Liang: Like what assumptions can I make about the data to show this chart?
+Evan Liang: Like do they have the name, do they have the email or do they at least have those two things?
+Evan Liang: Yes.
+Evan Liang: So inside the database there's an object called contacts that has name email.
+Evan Liang: You probably have tasks and stuff like that.
+Evan Liang: So there's a way for you to show which.
+Evan Liang: Who's engaged in and around that.
+Evan Liang: So I can play with the MCP also and see whether it's not doing the.
+Evan Liang: We can pull a few.
+Evan Liang: Yeah, we can feel a few accounts and we can see what it's around.
+Evan Liang: So yeah, so I wouldn't worry about hooking it up.
+Evan Liang: But yes, it's probably worth hitting the MCP and just seeing like some of the smaller accounts.
+Evan Liang: What Like I said, there is a person you can talk to.
+Evan Liang: It's either someone who you've seen the most engagements with or blah, blah, blah, blah.
+Evan Liang: Yeah.
+Evan Liang: Okay, cool.
+Evan Liang: So I'll this, I'll work with you guys on parallel around this area, but I think, I think I'm kind of excited to test that out so in.
+Evan Liang: The next week or so.
+Evan Liang: First of all, of course you have to see a switch next week.
+Evan Liang: That's going to be.
+Evan Liang: So that's probably a priority.
+Evan Liang: Also number second is the AJ demo is happening next week.
+Evan Liang: So for the AJS demo I think it'd be good to have some expectation of that.
+Evan Liang: Like I know we did something yesterday.
+Evan Liang: We've already moved on from that.
+Evan Liang: We already built something a lot more progressive than that.
+Evan Liang: So it'll be great to understand like get a one on one next week, early next week to understand what are you looking at to show the AJ in terms of.
+Evan Liang: Yeah, so I want to validate aj.
+Evan Liang: I want to validate the stages, the visibility.
+Evan Liang: Yeah.
+Evan Liang: Around it.
+Evan Liang: And I would love to be able to demo like, hey, this is what we're thinking about.
+Evan Liang: For deliverables.
+Evan Liang: At each of these, I'll set the context and lead it.
+Evan Liang: I'm happy to have you guys demo the individual things.
+Evan Liang: Yeah.
+Evan Liang: So that you guys.
+Evan Liang: But then let's.
+Evan Liang: This time we'll be a little bit tighter in terms of the story.
+Evan Liang: Sounds good.
+Evan Liang: So I think we'll just do one on one.
+Evan Liang: Yeah.
+Evan Liang: But AJ is again, he is friendly.
+Evan Liang: Right.
+Evan Liang: So we're still.
+Evan Liang: So this is why these type of meetings and calls are still valuable.
+Evan Liang: Yeah.
+Evan Liang: Or else we're just in a.
+Evan Liang: The second part I wanted to spend the last 10 minutes around is just talk a little bit about working style, you know, like working cadence and all this other stuff.
+Evan Liang: We've.
+Evan Liang: You guys got into day four.
+Evan Liang: Congratulations.
+Evan Liang: Love the speed that we're going at.
+Evan Liang: Right.
+Evan Liang: So just curious, like, what have what in the first week?
+Evan Liang: Because this is a show.
+Evan Liang: What.
+Evan Liang: What's working well?
+Evan Liang: What's not working well in terms of operating cadences?
+Evan Liang: I mean, it could be anything.
+Evan Liang: Like, man, doing two standups a day is just exhausting for me.
+Evan Liang: Or like, hey, hey, this is actually good because I'm getting constant feedback and stuff like that.
+Evan Liang: Being together is like, just like, let's open it up so that we can try to maximize and figure out going forward.
+Evan Liang: So I don't know.
+Evan Liang: The two standups are the best thing that happens every day.
+Evan Liang: 100% Agree.
+Evan Liang: Okay, close.
+Evan Liang: Yeah.
+Evan Liang: Just to like refocus, clarify, get a big picture, talk to each other.
+Evan Liang: I think it's been perfect.
+Evan Liang: Anyone disagree or.
+Evan Liang: I kind of disagree.
+Evan Liang: I like it.
+Evan Liang: Like, me personally, I think like one on ones are more helpful just because especially as we get into the weeds, like, it's going to be like a lot of like small.
+Evan Liang: Like I like need this kind of data.
+Evan Liang: I need this kind of question that are specific that like, I don't feel like it's appropriate to ask you to stand up.
+Evan Liang: Like if I have a specific, like, I need this data issue, maybe we need to talk about it for like five minutes on whether I can get this data or not.
+Evan Liang: Right.
+Evan Liang: For example, like the whole like renewals.
+Evan Liang: Like, like figuring out.
+Evan Liang: Okay, 40.
+Evan Liang: No, now it's five.
+Evan Liang: What does those five look like?
+Evan Liang: Can I get more examples of the five?
+Evan Liang: Because I need to build a grammar surgery.
+Evan Liang: Like all of that.
+Evan Liang: I can't raise it a stand up.
+Evan Liang: At least I think that.
+Evan Liang: Well there.
+Evan Liang: Because there are going to be questions later on that are like 15 minutes long on.
+Evan Liang: Like, this is the one issue that I needed.
+Evan Liang: Need to understand.
+Evan Liang: So I don't know.
+Evan Liang: My thought process was like one stand up and one and one.
+Evan Liang: 101 Would be my preference.
+Evan Liang: But also it's like that's not.
+Evan Liang: Yeah, that's fine.
+Evan Liang: I think there's some like repeated information that like I kind of zone out when we're talking about like your stage specifically because it's like I know as long as I get data to you and you will ask me for something specific but like I don't need to know the exact weeds of what you're doing.
+Evan Liang: I think it's interesting but again just on an efficiency level I don't know how we would.
+Evan Liang: I think I like the two keeping it tight around what we, what we're asking.
+Evan Liang: The standup is key.
+Evan Liang: There's some things that belong in stand up, some things that actually belong more in one on ones.
+Evan Liang: This AI speed thing is interesting.
+Evan Liang: The idea that you have one on ones with every single person every day the corporate way is actually the best practice is one on one once a week.
+Evan Liang: But I also realized if we were to meet once a week on one on one like we'd be stuck all the time.
+Evan Liang: Back from that place.
+Evan Liang: I mean I love the speed we're moving but it does actually point to some really interesting dynamics.
+Evan Liang: So so and then there's gonna be.
+Evan Liang: We will have to figure out how you guys can answer some of the questions from yourself.
+Evan Liang: Even starting next week there are going to be days that like I'm out of the office for meetings, like I'm having lunch or coffee with like folks.
+Evan Liang: So we'll just have to figure that out.
+Evan Liang: But for now I hear you Dean.
+Evan Liang: Let's try to, let's keep the two standups beginning and end but we'll, let's strive to try to make them efficient.
+Evan Liang: So if ideally we can get the stand ups down a few 30 minutes that would be ideal.
+Evan Liang: Unless we have topics now.
+Evan Liang: Some of the standups are topic driven.
+Evan Liang: We're presenting to someone.
+Evan Liang: Julia's presenting.
+Evan Liang: I was presenting an idea.
+Evan Liang: Those should be longer.
+Evan Liang: Right.
+Evan Liang: But then we'll try to figure out like let's play around with what each person asks and says.
+Evan Liang: So corporate standups get really boring because what people go to their corporate they want to almost tell you how busy I am.
+Evan Liang: Let me update you on all the stuff.
+Evan Liang: And then my goal is to convince everyone at the table how busy it pray and point's boring as hell and they start repeating the same thing over and over again.
+Evan Liang: So we'll try to make that efficient.
+Evan Liang: Okay, just one last note on that.
+Evan Liang: Is it is nice to have A set time where like I need to have something ready which yeah, we haven't always been doing because we'll have something running mid meeting or whatever.
+Evan Liang: But like to know that by five people I should have something together that I can at least share a bit about as opposed to like yeah, I, you know, hoping to get to it later today or something.
+Evan Liang: Yeah, I think the, the, the, the driving towards deadlines and everything of that sort has been good.
+Evan Liang: So we'll try to keep, keep that going.
+Evan Liang: What about anything else in terms of working together, sitting together, quiet space?
+Evan Liang: Do people feel like that's working or do you like there are some people like hey, I need like two hours in a more quiet space away from folks, stuff like that.
+Evan Liang: Is anything around that?
+Evan Liang: I mean if sometimes I do like to sit down and focus on myself and so I just walk away and come back, that's fine.
+Evan Liang: Yeah.
+Evan Liang: Okay, so let's, we'll play around with like the amount of like hey, concentration time versus together time.
+Evan Liang: I know you guys were figuring out for this week.
+Evan Liang: I think being all together was helpful so you can answer your questions.
+Evan Liang: Really helpful.
+Evan Liang: But then that may change over time around itself, opening to structures around some of that stuff around.
+Evan Liang: If people need blocks of time, it'd probably be better if everyone had the block of time together.
+Evan Liang: Right.
+Evan Liang: So that's all the thing.
+Evan Liang: One thing that I've just been thinking about like I'm good to go either way is that post 5pm stand up, if it's like 6 we've been kind of like some days we leave at 6:40, some days we leave at like it.
+Evan Liang: It's a pretty small block to like get work done.
+Evan Liang: And I'm wondering if it would just be better where we leave post that final standup under the assumption that like you go home and then once you're ready then you like could have a two hour block where you do it versus the like.
+Evan Liang: Yeah, 30 minutes, then you're up, you drive, then you're back.
+Evan Liang: It's like that's a good point.
+Evan Liang: I mean.
+Evan Liang: Yeah.
+Evan Liang: Love folks thoughts on that?
+Evan Liang: If you do that, I'd say move the stand up to like 5:30 then.
+Evan Liang: Yeah, yeah, okay.
+Evan Liang: I'd rather go straight to dinner.
+Evan Liang: So it's like move at 5:30 ends if we're tighter, 6 if we have stuff to talk about like 6:15 and then you go home, eat and then.
+Evan Liang: Yeah.
+Evan Liang: So there's some differences in working styles around that.
+Evan Liang: Right.
+Evan Liang: Some people are like hey, after I finish here I want to have dinner and then maybe I'll jump online later on in your case.
+Evan Liang: Some people eat dinner later.
+Evan Liang: It's like, no, I want to finish.
+Evan Liang: I want to do two hours and then I'm gonna have dinner.
+Evan Liang: So I think I would actually, I prefer that style in the having D. I think it's just that like, yeah, there's an awkward block post 5pm standup where you have to almost stay like for a longer time in order.
+Evan Liang: Order to get something done.
+Evan Liang: But if we're all like, yeah, so we're gonna move the stand ups to 5:30 then.
+Evan Liang: Okay, I like that.
+Evan Liang: Okay.
+Evan Liang: Lunchtime, 30 minutes breaking around that time.
+Evan Liang: That's working for folks.
+Evan Liang: Yep.
+Evan Liang: Yep.
+Evan Liang: Good.
+Evan Liang: Your lunch.
+Evan Liang: Oh, yeah.
+Evan Liang: Where are we having.
+Evan Liang: To vote.
