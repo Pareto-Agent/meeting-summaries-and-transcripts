@@ -16,3 +16,8 @@
 - fireflies-id: 01KVGCKEMYJHSY068V0FEYKXBH
 - Pages updated: wiki/people/cooper-tenney.md
 - Summary: Second solo test recording by Cooper; no substantive content.
+
+## 2026-06-19 — Cooper X Dean
+- fireflies-id: 01KVGY6TPQNKT4XRKKWD19QJBD
+- Pages updated: none
+- Summary: Playful 1:1 between Cooper and Dean with clearly fabricated action items (DoorDash deliveries, rocks, car); no substantive signal extracted.
