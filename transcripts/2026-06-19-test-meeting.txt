@@ -1,0 +1,11 @@
+Title: Test meeting
+Date: 2026-06-19 16:30:00 UTC
+Fireflies ID: 01KVGB9VXY47XKTD7NVYPZ0DDT
+Duration: 11.18 minutes
+Organizer: ctenney@paretoagent.ai
+Participants: ctenney@paretoagent.ai
+
+---
+
+Cooper Tenney: Get this note taker to work.
+Cooper Tenney: Testing, testing.

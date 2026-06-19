@@ -3,7 +3,7 @@
 Auto-maintained from meeting transcripts. See `CLAUDE.md` for conventions.
 
 ## People
-<!-- Pages in wiki/people/ — one per team member -->
+- [Cooper Tenney](people/cooper-tenney.md)
 
 ## Advisors
 <!-- Pages in wiki/advisors/ — one per advisor -->
