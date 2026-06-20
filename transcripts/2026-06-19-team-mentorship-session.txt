@@ -1,0 +1,241 @@
+# ctenney@paretoagent.ai - Fri, 19 Jun 2026 16:20:43 PDT - Untitled
+Fireflies ID: 01KVH2ZJA9VPJGJSX5N8Q2HZBQ
+Date: 2026-06-19
+Participants (per Fireflies): ctenney@paretoagent.ai
+NOTE: Fireflies attributed all speech to a single speaker (Evan Liang); content indicates a group session. Attribution is unreliable.
+
+Evan Liang: No, no, no, I'm audio.
+Evan Liang: Pretty sure.
+Evan Liang: Right.
+Evan Liang: Microphone now.
+Evan Liang: Yeah, this is us.
+Evan Liang: So first of all that's been great.
+Evan Liang: How does it.
+Evan Liang: I think Parth said this has been forced him to work harder than at Kellogg.
+Evan Liang: How does it compare to being a Stanford student?
+Evan Liang: And the reason I say this is I actually think you guys work pretty hard at Stanford if you count the time you do stuff studies and your clubs and your networking.
+Evan Liang: It's like a full more than a full time job.
+Evan Liang: Right.
+Evan Liang: So how does that compare for you all?
+Evan Liang: Or is it like this is having to sit at a desk is harder than.
+Evan Liang: It's probably the same amount of time.
+Evan Liang: It's just different timeline.
+Evan Liang: Like Cooper knows I've never gone up and like been functioning at 9am so whoever to you, like I just say that's been hard and then.
+Evan Liang: So bad.
+Evan Liang: And then on top of that I guess like is weird not having a break but like.
+Evan Liang: Yeah, when I think about it like the hours are the same.
+Evan Liang: This is like normally it's like I have a lot of classes and I have like a one hour break before I hit dinner and then I do my work and then I do my work till like 2am so like it's just like all of that there's normally a break in the middle and I'm getting used to.
+Evan Liang: But otherwise.
+Evan Liang: Yeah, I mean yeah, time and everything is kind of the same actually it's technically less if I add it up.
+Evan Liang: Yeah.
+Evan Liang: Can I ask a question here?
+Evan Liang: Has anybody else have never worked 90596 before?
+Evan Liang: You've never worked 964?
+Evan Liang: I've never worked like officially that.
+Evan Liang: Oh, this is like the first 96 experiences following.
+Evan Liang: Yeah.
+Evan Liang: My last address but like it was so many meetings that it wasn't really worth.
+Evan Liang: Oh it was just showing up and being present.
+Evan Liang: Well I mean like being a pm just have a lot of meetings.
+Evan Liang: That was all I was doing.
+Evan Liang: Like half my time was just in meetings.
+Evan Liang: Yeah.
+Evan Liang: And the other half was.
+Evan Liang: Did you make it to five?
+Evan Liang: I don't remember.
+Evan Liang: I don't know how many people I leaned out.
+Evan Liang: I even make it to five anymore.
+Evan Liang: Yeah.
+Evan Liang: I kid you not.
+Evan Liang: And then I get on.
+Evan Liang: Yeah.
+Evan Liang: It was literally.
+Evan Liang: Yeah.
+Evan Liang: I just had a lot of meetings and then I would do work and then I'd have to wait for the design team so I just couldn't get anything done.
+Evan Liang: That was like my life.
+Evan Liang: Yeah.
+Evan Liang: Usually I.
+Evan Liang: Part of the thing that slows down is you're waiting for folks and you have like dependencies or like if you guys were like even if you guys were coding and what started for Cooper's question, you had an existing code base.
+Evan Liang: You need to wait for someone to allow you to like touch it or explain, explain how it works.
+Evan Liang: And that would take time.
+Evan Liang: And so there's a lot more downtime.
+Evan Liang: And then meetings take up.
+Evan Liang: Even though we're doing two twice a day standups, those are like your only two real meetings.
+Evan Liang: Usually you're just going from to a series of meetings into meetings and it just, it just, it's a lot of time.
+Evan Liang: So I think there's.
+Evan Liang: Stuart Butterfield had to coined this term called fake work.
+Evan Liang: So as companies scale, they do a lot of what they looks like.
+Evan Liang: They're really, really busy, but it's not, not actually driving the business forward.
+Evan Liang: So fake work would be examples of like if someone's like, hey, I'm preparing for board meeting, I'm spending six months preparing a presentation for the board meeting.
+Evan Liang: That could be a lot of hours.
+Evan Liang: But it could not.
+Evan Liang: It could actually be fake work because actually oftentimes the board meetings they may barely touch upon that subject.
+Evan Liang: Right.
+Evan Liang: That's not actually productive.
+Evan Liang: So.
+Evan Liang: So there's a lot of work like or the funniest ones, like we need a meeting to prepare for the meeting.
+Evan Liang: Yeah, that happens all the time at like bigger companies.
+Evan Liang: Right.
+Evan Liang: And you're like really like that.
+Evan Liang: Just as you add that up multiplied by the entire company and like how much time is actually spent like helping customers driving revenue versus just internal coordination could be quite a bit.
+Evan Liang: Yeah.
+Evan Liang: And that's why you see these startups really trying to drive towards future fewer people.
+Evan Liang: Because that seems to be the only solution.
+Evan Liang: If you have fewer people, you have less coordination.
+Evan Liang: More people, more coordination.
+Evan Liang: And it doesn't actually solve.
+Evan Liang: So there's definitely axiom where people at mid sized companies think the answer to every solution is to hire more.
+Evan Liang: Yeah, I'm very busy.
+Evan Liang: I will hire more.
+Evan Liang: And they keep on trying to hire more.
+Evan Liang: And the irony is the more the organization hires the slow less gets done.
+Evan Liang: It's just that that's what, that's part of the reason people are saying it's AI, but part of the reason people just want an excuse to not hire.
+Evan Liang: Yeah.
+Evan Liang: So that was my conclusion even before AI was your bureaucracy is a function of the number of employees, not your own processes.
+Evan Liang: And once you cross a certain number then, I mean Google fought this so hard.
+Evan Liang: I cannot tell you.
+Evan Liang: Google did everything possible when they went IPO not to become a bureaucracy.
+Evan Liang: Y founders interviewing every single employee up until they were like A thousand.
+Evan Liang: Every employee got interviewed by the founders.
+Evan Liang: That's crazy to like all that.
+Evan Liang: They.
+Evan Liang: They did all this market research, they did all this thing on teams.
+Evan Liang: They spent all this money.
+Evan Liang: They were trying not to become a bureaucracy.
+Evan Liang: And I think when they hit like 2000, the.
+Evan Liang: The organization, the beast feeds itself.
+Evan Liang: That's specifically middle management.
+Evan Liang: The way that middle management thinks about accruing power is it's the number of people who are under you.
+Evan Liang: Number of times you go to a big company and they're just like, how powerful?
+Evan Liang: Someone's like, I have 400 reports, I have 300 reports.
+Evan Liang: And when you start talking that language, what's the message?
+Evan Liang: Your power is equated to number of people who are poured into you.
+Evan Liang: So what do you do?
+Evan Liang: You hire more people.
+Evan Liang: And you're so far away from the budgets at these big companies.
+Evan Liang: Like, the idea of expenses is so far away from you, so there's no cost to you, just requesting more headcount.
+Evan Liang: Yes.
+Evan Liang: Right.
+Evan Liang: As a founders, founders tend not to be that way because we always think about the bottom line.
+Evan Liang: So for us, like, more people equates to more expenses.
+Evan Liang: And we see that.
+Evan Liang: So that hurts us.
+Evan Liang: But even when I started hiring VPs, they could give a fuck about, like, I tried to explain Runway to them.
+Evan Liang: I couldn't care less.
+Evan Liang: This was just like talking over them.
+Evan Liang: It was like, whatever, I want more people.
+Evan Liang: Budget's your problem, right.
+Evan Liang: And if you don't like it, you can fire me.
+Evan Liang: But all you're ever gonna hear from me is, I want more people.
+Evan Liang: So it just becomes fun.
+Evan Liang: Okay, so that's a little bit about the bureaucracy that's for you guys is as you guys think through and you guys are pursuing your project.
+Evan Liang: If you guys need anything from us.
+Evan Liang: Yeah.
+Evan Liang: Feel free to reach out.
+Evan Liang: Like I said, I'm always available.
+Evan Liang: Right.
+Evan Liang: You'll probably get a response from me within an hour or two hours.
+Evan Liang: Just wanna make sure you guys aren't blocked on whatever you're working on.
+Evan Liang: So that our goal for the.
+Evan Liang: For the.
+Evan Liang: For next week is keep up the momentum.
+Evan Liang: Right now that we have stuff, how do we maintain the momentum?
+Evan Liang: How do we continue to iterate quickly but yet start coordinating more?
+Evan Liang: And so that may require us to change some of our processes or try to innovate around some things, but that would be our goal.
+Evan Liang: And if we can stitch together the amount of productivity and innovation for 10 weeks at the rate we are at and we're doing it correctly.
+Evan Liang: So we'll also find people to tell us whether or not we're building things correctly because I actually can't tell you what you checked into CL to GitHub is right or wrong.
+Evan Liang: So.
+Evan Liang: So I need to go.
+Evan Liang: My goal is to find people who can tell us if they.
+Evan Liang: So we're going to find people who will evaluated.
+Evan Liang: I'm trying things some sessions we will not be doing demos instead of code reviews but.
+Evan Liang: So let's figure that out.
+Evan Liang: But my point is if we could do that.
+Evan Liang: I hope you guys get the sense that you'll probably what you've probably done more in one week of this internship than probably some people do in like a whole internship.
+Evan Liang: Certainly like some of your colleagues.
+Evan Liang: I can talk about that for a moment.
+Evan Liang: There's like I've worked in.
+Evan Liang: In two internships.
+Evan Liang: Ones are two years.
+Evan Liang: Like another company for about two years is a small enterprise and delight per year.
+Evan Liang: I think that the way you guys are working is.
+Evan Liang: It's completely different.
+Evan Liang: I'm not sure this is what startups are doing as of now, but if this is the new AI native way, like I understand why we say that consulting is dying or, or your stats is dying because the way we're doing things like.
+Evan Liang: And I feel very slow compared to you guys because I'm still like changing the way I'm working from all these biases I brought in.
+Evan Liang: But you guys don't even have that kind of biases of how old work.
+Evan Liang: So like this is like breakneck and I, I'm scared for most companies that are not doing this and I, I think that's.
+Evan Liang: Even if like I'm not sure where this goes and stuff like that.
+Evan Liang: But just this, the way the working style, this culture that you guys have built is already going to disrupt a lot of things.
+Evan Liang: Like what did you do last summer?
+Evan Liang: What was, what was your deliverables?
+Evan Liang: What I do.
+Evan Liang: I mean I technically did a lot of.
+Evan Liang: Did a lot of work but like I think it was just like relative to what they did, like what they were already doing.
+Evan Liang: Like what was your actual deliverables at the end of the summer I did what I do.
+Evan Liang: I like did like three.
+Evan Liang: No, I did six sort of feature launches.
+Evan Liang: Like I gave like a presentation to the sales team or whatever.
+Evan Liang: But like that took no time.
+Evan Liang: I scoped out two features and I built it like a pure D AI pipeline thing.
+Evan Liang: But like when I think about like the actual work that I did, like most of that was just like being the one on the meetings who could like know what was going on.
+Evan Liang: Yeah, the actual work itself, like I could have finished in A week.
+Evan Liang: Like, I mean, I was doing the churn analysis with Aaron for half my time during the job instead of my actual job because my actual job didn't have, like, things for me to do.
+Evan Liang: Yeah.
+Evan Liang: And I was helping the product marketing team because the product management team didn't have much to do.
+Evan Liang: Yeah.
+Evan Liang: Cool.
+Evan Liang: Awesome.
+Evan Liang: I really want to get the meeting summary and figured out that they're honestly so helpful.
+Evan Liang: Like, if you take the time to like go into the email and take the transcript, like, I mean, it's not that long, but like, it's an extra like couple minutes that if it just goes right into the Dropbox, right into the notion, you have to like, do that.
+Evan Liang: It's just automatic.
+Evan Liang: So it is really helpful.
+Evan Liang: Maybe it doesn't even.
+Evan Liang: I'm trying to get that meeting with Jesse on hopefully next Thursday.
+Evan Liang: That's.
+Evan Liang: Should I pause on trying to figure out.
+Evan Liang: No, just keep on going.
+Evan Liang: No, I, I, I mean, ideally when you go to that meeting, you could have said what you've tried.
+Evan Liang: Right.
+Evan Liang: Versus us going there.
+Evan Liang: Yeah, yeah.
+Evan Liang: But to the extent the more you figure it out, the more you're informed and maybe we, we teach him something, you know, that'd be even better.
+Evan Liang: So even though like a side project was working on, like, let's like.
+Evan Liang: Yeah, because they token max one thing.
+Evan Liang: I'm now also running multiple screens and I would like, I want to like, focus on one thing now.
+Evan Liang: Like, they're like, oh yeah, this is running.
+Evan Liang: It's like, okay, fine, let's what's good?
+Evan Liang: What else can I build?
+Evan Liang: So I started building the sales thing and like, this is what they're on about.
+Evan Liang: I mean, you better like, watch out before.
+Evan Liang: Is that something you want to let up to?
+Evan Liang: No, that's, that, that, that'd be a good result around it.
+Evan Liang: So if you want to be like one of those factors around it.
+Evan Liang: So yeah, one quick call out for everyone is that there are some slash commands for the getting the spec.
+Evan Liang: Yeah.
+Evan Liang: So slash spec just creates the specific.
+Evan Liang: No, no, no, no, no.
+Evan Liang: I've almost got the digest pulse thing working.
+Evan Liang: What's the thing we're working on?
+Evan Liang: There's also slash code review.
+Evan Liang: Yeah.
+Evan Liang: And there's like slash simplify that simplifies your stuff.
+Evan Liang: And slash security, like it goes through all your code and just sees are there redundant parts.
+Evan Liang: Is.
+Evan Liang: Yeah.
+Evan Liang: Did it code something wrong or like, did it code something inefficiently?
+Evan Liang: And also slash security, which like, yeah, we haven't really talked about yet, but just if you need something to run, just run those if you need something to run.
+Evan Liang: Yeah run those things just to use the to.
+Evan Liang: Yeah.
+Evan Liang: And are you guys all you guys are all on cloud code now and building it.
+Evan Liang: Oh, hello.
+Evan Liang: I'm sorry I tried.
+Evan Liang: No, no, no, no, no no the better with visualization but yeah call this thing I really like about COD is that you can prototype and going from prototype to production, it's a lot faster than rep, I think.
+Evan Liang: Okay.
+Evan Liang: Yeah My takeaway actually for what I want to do is make sure I get the terminal set up and so I'll try to start reading some of the specs over the weekend.
+Evan Liang: So that's my goal is to go through the GitHub and start looking at the various specs that folks have put together.
+Evan Liang: We've got a great specs for him.
+Evan Liang: Building a spec alongside everything.
+Evan Liang: Yeah we can, we can, we can work on anyone.
+Evan Liang: Take a look at the spec from the previous cto.
+Evan Liang: I was going to.
+Evan Liang: I will.

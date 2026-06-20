@@ -1,3 +1,10 @@
 .DS_Store
 *.pdf
 *.PDF
+
+# Raw recording artifacts (large media / Zoom/Dropbox drops) — not for git
+*.mp4
+*.m4a
+*.mov
+*.vtt
+Meeting Transcription.txt

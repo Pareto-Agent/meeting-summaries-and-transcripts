@@ -41,6 +41,7 @@ Five-person team building individual modules with dummy data. No live CRM integr
 - **Rationale:** AM leaders with 400+ accounts are reactive and don't have a methodical process. Giving them visibility into each step is the differentiated value vs. generic LLM tools.
 
 ## Notes
+- **Process direction (2026-06-19 working session):** goal for the coming week is to maintain velocity while starting to coordinate more across modules; Evan expects to change/innovate on process to enable this. Plan to bring in external people to evaluate whether the team is building things correctly, and to trial some sessions as **demos instead of code reviews**.
 - **Working cadence** (as of 2026-06-19): two standups per day (morning + afternoon); afternoon standup moving to 5:30pm
 - MCP = external CRM data source (e.g. Lean Data); used to query account/contact data without storing it centrally
 - Clay discussed as contact enrichment waterfall for champion identification
