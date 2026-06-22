@@ -1,14 +1,15 @@
 # Evan Liang
 **Role:** Co-founder / CEO, Pareto Agent (standup leader, product strategy)
-**Last updated:** 2026-06-19
+**Last updated:** 2026-06-22
 
 ## Current Focus
-Leading product strategy and overall agent architecture. Building 6 micro-agents for the renewal platform. Coordinating external advisor calls and customer research.
+Leading product strategy and overall agent architecture. Drove the 2026-06-22 pivot to a single unified dashboard + centralized account page for the [Renewal Platform](../projects/renewal-platform.md). Coordinating external advisor calls and customer research.
 
 ## Open Tasks
+- [ ] Set up a call with the LeanData (LD) team about their data dictionary, as reference for the proposed data dictionary module (2026-06-22)
 - [ ] Work with Julia on value proposition deck for AM Leader — due week of 2026-06-23
-- [ ] Schedule 1:1s with each team member early week of 2026-06-23 to prep for AJ demo
-- [ ] Run overall hypothesis by AJ on Thursday 2026-06-25
+- [ ] Schedule 1:1s with each team member early week of 2026-06-23 to prep for AJ demo (at least Cooper's done by 2026-06-22)
+- [ ] Run overall hypothesis by AJ on Thursday 2026-06-25 — now also demoing the unified dashboard
 - [ ] Continue calibrating 6 micro-agents (language style, drafter, response agent, champion finder, ingestion, proposal)
 - [ ] Set up terminal and read through the specs on GitHub over the weekend of 2026-06-20/21 (incl. the spec from the previous CTO)
 - [ ] (Tentative) Set up a meeting with Jesse — hoping for Thursday next week (~2026-06-25)
@@ -28,3 +29,4 @@ Leading product strategy and overall agent architecture. Building 6 micro-agents
   - Sees the team's AI-native working style as genuinely faster than how he worked before; thinks it will disrupt consulting/traditional roles.
 - **Next-week goal:** maintain momentum and keep iterating fast, but start coordinating more — may change/innovate on processes to do so.
 - **Availability:** told the team he's always reachable and will typically respond within 1–2 hours; wants to make sure no one is blocked.
+- **2026-06-22 standup:** Pitched the unified dashboard vision (single dashboard across the book of business + centralized account page); proposed a cross-functional split (Parth on the dashboard piece, Cooper on the account page). Argued the agentic CRM needs far less manual input than Salesforce-style CRMs because automations move deals between stages. Held a stance (while calling it a "fair risk factor") that the product should not be designed assuming a human AM in the loop — the forward-deployed engineer is the human who onboards/tunes. Floated once-a-day weekend standups (~1pm, opt-in).

@@ -1,13 +1,14 @@
 # Parth Godarajesh
 **Role:** Team Member, Pareto Agent
-**Last updated:** 2026-06-19
+**Last updated:** 2026-06-22
 
 ## Current Focus
-Agent orchestration: refining 6 micro-agents (language style, drafter, response agent, champion finder, ingestion, proposal output). Also working on secure data pipeline architecture between pipeline steps.
+Language/voice agent and agent orchestration. Proposed (per Evan, 2026-06-22) to take the **unified dashboard** top-level + per-stage views as part of the dashboard consolidation. Moving the product away from a co-pilot / human-in-the-loop interaction model toward showing what the AI is doing autonomously.
 
 ## Open Tasks
-- [ ] Focus narrowed (per Evan, 2026-06-19): concentrate on **champion agent** and **language agent** only — stop working on ingestion/output agents for now
-- [ ] Build secure dummy-data pipeline architecture showing data flow between steps — goal was today 2026-06-19
+- [ ] Today (2026-06-22): wire up the API key and connect to Haiku or Sonnet so the voice agent + outreach generation work live
+- [ ] Build a single-page "new agent" creation/onboarding flow (upload emails → detected characteristics → pick from ~3 voice options → adjust settings → create)
+- [ ] (Proposed 2026-06-22) Take the unified dashboard top-level + per-stage views in the dashboard consolidation
 - [ ] Prepare agent demos for AJ call on 2026-06-25
 
 ## Notes
@@ -16,4 +17,5 @@ Agent orchestration: refining 6 micro-agents (language style, drafter, response 
 - Champion finder demo: builds stakeholder map, identifies best contact among champion options, handles "departed champion" re-engagement scenarios
 - Moved API key from shared folder to secure location (2026-06-19)
 - Pipeline concern: how to transfer data between steps while maintaining context and avoiding security issues
+- **2026-06-22 standup:** Consolidating to **one agent per company** (a single company voice built from uploaded emails/CSV/Word), with settings to adjust tone — the earlier 4–5 distinct agents were just for demo purposes. Plans to guardrail the LLM against giveaway terms/phrasing (e.g. em-dashes, "let me tell you about your usage"). Added a "what AI is doing" widget to the main dashboard and an outreach-lifecycle view (not started / draft / sent / waiting / engaged). Onboarding insight (echoing AJ): customers won't self-configure; the forward-deployed engineer does it. Idea: present a client three email versions with different tones and have them pick (like a personality test) to infer voice settings fast.
 - Email: pgodarajesh@paretoagent.ai

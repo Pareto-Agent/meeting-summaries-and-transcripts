@@ -1,0 +1,1016 @@
+Evan Liang - Pareto Agent: Sam Firefly, actually.
+Evan Liang - Pareto Agent: Firefly joined faster.
+Evan Liang - Pareto Agent: Zoom.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: Yeah, but it was his.
+Evan Liang - Pareto Agent: It wasn't even mine.
+Evan Liang - Pareto Agent: Yeah, I don't know how that happened.
+Evan Liang - Pareto Agent: Did you set that up?
+Evan Liang - Pareto Agent: You sent me an invite, so I did sign up.
+Evan Liang - Pareto Agent: This meeting is being recorded.
+Evan Liang - Pareto Agent: Okay.
+Evan Liang - Pareto Agent: So then it just records it.
+Evan Liang - Pareto Agent: Cool.
+Evan Liang - Pareto Agent: All right, let's go around and talk a little bit about, like, hey, any updates on stuff that you've worked on or that it.
+Evan Liang - Pareto Agent: It also, if you felt like there was anything that was like, blocking you from.
+Evan Liang - Pareto Agent: From the weekend and stuff like that, like what could you have used help on and stuff like that.
+Evan Liang - Pareto Agent: So I can go first to kick this off.
+Evan Liang - Pareto Agent: So for me, I spent most of the weekend thinking a lot about like the dashboarding and the unified dashboarding and thinking about how to do that.
+Evan Liang - Pareto Agent: And I can show you guys a little bit of a.
+Evan Liang - Pareto Agent: Like a replay of kind of roughly what I was thinking about and what we could take as next steps from it.
+Evan Liang - Pareto Agent: So that was my first takeaway.
+Evan Liang - Pareto Agent: And I'll show you that.
+Evan Liang - Pareto Agent: And then I also.
+Evan Liang - Pareto Agent: So I.
+Evan Liang - Pareto Agent: One takeaway is like per discussion on Friday visibility.
+Evan Liang - Pareto Agent: I do think that this dashboarding and these.
+Evan Liang - Pareto Agent: These metrics are really, really key.
+Evan Liang - Pareto Agent: So kind of.
+Evan Liang - Pareto Agent: And I do think it's an opportunity for us to unify that.
+Evan Liang - Pareto Agent: And then the second part was in terms of like blocking and stuff like that didn't feel like blocked, generally speaking, from like the broader team, but it was nice to.
+Evan Liang - Pareto Agent: And this is an unfair advantage to just like.
+Evan Liang - Pareto Agent: Like be able to tap Dean on the shoulder and just get feedback on various times around it.
+Evan Liang - Pareto Agent: That was helpful just to make sure that I was going in the right way.
+Evan Liang - Pareto Agent: And he actually did have some good input around.
+Evan Liang - Pareto Agent: I think we can break the project into two.
+Evan Liang - Pareto Agent: And he did have some good input around that.
+Evan Liang - Pareto Agent: That I hadn't thought of that.
+Evan Liang - Pareto Agent: That was useful around it.
+Evan Liang - Pareto Agent: So let me share a little bit of kind of roughly what we're thinking about.
+Evan Liang - Pareto Agent: And then I do have.
+Evan Liang - Pareto Agent: I do think there's two people who are probably aligned to kind at the project to take it a little bit further.
+Evan Liang - Pareto Agent: So let me see, where is my third tab.
+Evan Liang - Pareto Agent: Third window?
+Evan Liang - Pareto Agent: Sorry, That's not it.
+Evan Liang - Pareto Agent: Now you guys are seeing that make that better.
+Evan Liang - Pareto Agent: Okay.
+Evan Liang - Pareto Agent: So basically at the high level, it's a lot like what you.
+Evan Liang - Pareto Agent: You had shown far.
+Evan Liang - Pareto Agent: Remember the funnel?
+Evan Liang - Pareto Agent: No, no, no.
+Evan Liang - Pareto Agent: Exactly.
+Evan Liang - Pareto Agent: So I think.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: So basically the idea is a single dashboard for all the business that Pareto is managing.
+Evan Liang - Pareto Agent: Okay.
+Evan Liang - Pareto Agent: So like whatever.
+Evan Liang - Pareto Agent: The book of business.
+Evan Liang - Pareto Agent: So in this case, I made it 100 accounts.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: So high Level, just some quick level metrics.
+Evan Liang - Pareto Agent: And then similar to you, the pipeline funnel around the different stages.
+Evan Liang - Pareto Agent: I'm still playing around with the name.
+Evan Liang - Pareto Agent: I called it monitoring for like the deals that are.
+Evan Liang - Pareto Agent: I like monitoring that are not in the stages that we had.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: And so it's basically here are the stages of it and here are all the deals that are underneath it.
+Evan Liang - Pareto Agent: And then the big thing is just that I don't love where this is at, but you could just see it by quarter.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: So in Q, let's say today is Q2.
+Evan Liang - Pareto Agent: So in Q2 you're not going to have any monitoring qualification because we're halfway.
+Evan Liang - Pareto Agent: We're almost done with the quarter.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: Versus like Q3, which is next quarter, there's going to be more in qualification.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: And then if you look at Q4, this should be all in monitoring.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: So it's just a quick way to kind of look at by stage and see what's going on.
+Evan Liang - Pareto Agent: And so this idea is, is that this level of visibility is something that I don't think renewals managers have today.
+Evan Liang - Pareto Agent: That and then within each stage, then if you got kind of go to Q3 and then you go to qualification, then within there, this is where I think you would work closely with someone like Aaron, like yourself around.
+Evan Liang - Pareto Agent: Hey, like what are the key status breakdowns and what are the accounts that are underne each of these.
+Evan Liang - Pareto Agent: So it allows someone to uniformly go across the different stages really easily.
+Evan Liang - Pareto Agent: Similarly, like outreach.
+Evan Liang - Pareto Agent: Right?
+Evan Liang - Pareto Agent: What is it?
+Evan Liang - Pareto Agent: How many are engaged, sent, draft?
+Evan Liang - Pareto Agent: I said dra.
+Evan Liang - Pareto Agent: Oh, not started.
+Evan Liang - Pareto Agent: They changed the words.
+Evan Liang - Pareto Agent: I had like draft, sent, engaged what?
+Evan Liang - Pareto Agent: Whatever the statuses are, right.
+Evan Liang - Pareto Agent: Is this chronical?
+Evan Liang - Pareto Agent: Like it should be drafted.
+Evan Liang - Pareto Agent: I agree.
+Evan Liang - Pareto Agent: This is.
+Evan Liang - Pareto Agent: Yeah, yeah, this is, this is.
+Evan Liang - Pareto Agent: This is where like I was just putting the hybrid thing and I put enough into replit and then replit starts changing things.
+Evan Liang - Pareto Agent: So that's replit is not the best ways to do that for.
+Evan Liang - Pareto Agent: But then you can see in within here for each account who are the key contacts, right around all the things.
+Evan Liang - Pareto Agent: Now what Dean said was that I thought was really smart is he's like at the end of the day when you click on account, it should be the account page regardless of where they are.
+Evan Liang - Pareto Agent: Like it's a single centralized account page, right?
+Evan Liang - Pareto Agent: And an account page will have like what status stage they're at.
+Evan Liang - Pareto Agent: So I do like this like buyer's journey across the top and then there's just tabs around it depending on where they are.
+Evan Liang - Pareto Agent: So you can see like your buyer and evaluation this again is where you would work with each of the folks who are.
+Evan Liang - Pareto Agent: Who are going deep in it to figure out what is initially things.
+Evan Liang - Pareto Agent: But in some respects, at the end of the day this is replacing.
+Evan Liang - Pareto Agent: This is kind of a quick snapshot of how they're doing.
+Evan Liang - Pareto Agent: And an audit log is just all the steps that they've done on it.
+Evan Liang - Pareto Agent: The interesting thing about this is if you.
+Evan Liang - Pareto Agent: For the accounts that you shift over here, what you end up doing is you're kind of replacing the CRM.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: Because we've automated all the steps.
+Evan Liang - Pareto Agent: Why do we need the CRM?
+Evan Liang - Pareto Agent: We can have it all here, but we will sync with the CRM to start.
+Evan Liang - Pareto Agent: But.
+Evan Liang - Pareto Agent: But over time you can see this is actually a better potential format than what the CRM did.
+Evan Liang - Pareto Agent: So what a CRM is a customer relationship management.
+Evan Liang - Pareto Agent: CRM is all built around helping track the status for a person.
+Evan Liang - Pareto Agent: So you're assuming the person.
+Evan Liang - Pareto Agent: That's what Salesforce is.
+Evan Liang - Pareto Agent: It's a CRM that's first product, main product.
+Evan Liang - Pareto Agent: But in an agentic world the CRM is just different.
+Evan Liang - Pareto Agent: This is just more metrics, less around any sort of input because the automation is taking care of a lot of it.
+Evan Liang - Pareto Agent: So what I was thinking was this would be nice to cross functionally work on it, maybe have Parth work on the dashboard piece of it and then Cooper work on the accounts.
+Evan Liang - Pareto Agent: Okay.
+Evan Liang - Pareto Agent: The account tab.
+Evan Liang - Pareto Agent: And just kind of working with each of the team members to kind of build this out around some stuff, bring it together.
+Evan Liang - Pareto Agent: Unified dashboard.
+Evan Liang - Pareto Agent: And then in some respects this kind of drives the automations of the various pieces.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: What do you mean the accounts?
+Evan Liang - Pareto Agent: So, so this page right here.
+Evan Liang - Pareto Agent: Granted system like you would like you were pro.
+Evan Liang - Pareto Agent: Each of you were building like.
+Evan Liang - Pareto Agent: Like you were building a buyer engagement piece for.
+Evan Liang - Pareto Agent: So the buyer evaluation key point, that was your thing.
+Evan Liang - Pareto Agent: I was saying there should be a single account page that has tabs for each of your thing and then this aggregates it all.
+Evan Liang - Pareto Agent: But it's on the admin side, not the buyer side, correct?
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: Yes.
+Evan Liang - Pareto Agent: So your admin side migrates over here.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: And then.
+Evan Liang - Pareto Agent: But then you'd go also get the admin side for each of each of their other things and then it becomes a single like, you know.
+Evan Liang - Pareto Agent: So like Aaron's qualification comes here.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: All that stuff for.
+Evan Liang - Pareto Agent: For the single account migrates here around this.
+Evan Liang - Pareto Agent: Different statistics.
+Evan Liang - Pareto Agent: All the signals are in this.
+Evan Liang - Pareto Agent: They put it reptile, put it in monitoring.
+Evan Liang - Pareto Agent: Okay.
+Evan Liang - Pareto Agent: Signals going to monitor.
+Evan Liang - Pareto Agent: Okay, cool.
+Evan Liang - Pareto Agent: Yes.
+Evan Liang - Pareto Agent: We could argue whether or not that's the right thing.
+Evan Liang - Pareto Agent: The interesting thing you had A dashboard that was showing deals that weren't in qualification.
+Evan Liang - Pareto Agent: That's monitoring.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: So that anything that's early signaled or something.
+Evan Liang - Pareto Agent: Monitoring qualification is something that we've actually qualified.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: Outreach your data statistics around stuff would come here.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: And then you would.
+Evan Liang - Pareto Agent: Your main automation is focused on the actual like email generation.
+Evan Liang - Pareto Agent: Yep.
+Evan Liang - Pareto Agent: Does this make sense for questions or.
+Evan Liang - Pareto Agent: Okay.
+Evan Liang - Pareto Agent: And not that we can have follow ups, but I have.
+Evan Liang - Pareto Agent: How.
+Evan Liang - Pareto Agent: How do you guys envision the next steps for this?
+Evan Liang - Pareto Agent: Because.
+Evan Liang - Pareto Agent: Because I've already built my own dashboard.
+Evan Liang - Pareto Agent: You've already built on dashboard.
+Evan Liang - Pareto Agent: I think most of our code is linked to that dashboard.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: So then we have to figure out how to detach those two things.
+Evan Liang - Pareto Agent: And then this is on replace.
+Evan Liang - Pareto Agent: So this is mostly placeholder stuff.
+Evan Liang - Pareto Agent: So I would say this.
+Evan Liang - Pareto Agent: I was just showing this to just id.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: I think you would build it back from scratch and cloud code then.
+Evan Liang - Pareto Agent: Actually it's not that difficult.
+Evan Liang - Pareto Agent: Like if we download this as a zip file.
+Evan Liang - Pareto Agent: Okay.
+Evan Liang - Pareto Agent: We could give it to Clark Code to centralize.
+Evan Liang - Pareto Agent: I think it's.
+Evan Liang - Pareto Agent: If the four of us centralize our agents then we can give Clark code this and be like, okay, attach those agents to this dashboard.
+Evan Liang - Pareto Agent: It might be slightly more complicated than that.
+Evan Liang - Pareto Agent: Yeah, yeah.
+Evan Liang - Pareto Agent: Generally.
+Evan Liang - Pareto Agent: Yeah, yeah.
+Evan Liang - Pareto Agent: Yes.
+Evan Liang - Pareto Agent: I think you could try to centralize it at the same time.
+Evan Liang - Pareto Agent: I do think the iteration here will be key.
+Evan Liang - Pareto Agent: Ideally if we could have this built is demoable for Thursday with AJ that's something I think would be interesting to test that value proposition with him.
+Evan Liang - Pareto Agent: And he had mentioned in one of his early calls getting full visibility into his deals was key.
+Evan Liang - Pareto Agent: Was one of the things he was looking forward to it.
+Evan Liang - Pareto Agent: And I think there's an opportunity to present that in an agentic world you can have far more into your deals than what you did in the human.
+Evan Liang - Pareto Agent: The rep world.
+Evan Liang - Pareto Agent: Got it.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: So from a building perspective, I think it's.
+Evan Liang - Pareto Agent: You could smash them together.
+Evan Liang - Pareto Agent: But I'm guessing whether you smash them together or not, you probably have to go do quite a bit.
+Evan Liang - Pareto Agent: You probably have to iterate on this.
+Evan Liang - Pareto Agent: Yeah, yeah, yeah, yeah.
+Evan Liang - Pareto Agent: So that was my thought process on there.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: I think this provides kind of a.
+Evan Liang - Pareto Agent: And I think you guys, you guys were all struggling with this around your dashboards.
+Evan Liang - Pareto Agent: So let's try.
+Evan Liang - Pareto Agent: Let's.
+Evan Liang - Pareto Agent: I think this might be a way to kind of solve.
+Evan Liang - Pareto Agent: Solve both problems.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: Okay.
+Evan Liang - Pareto Agent: The other thought process around the.
+Evan Liang - Pareto Agent: So one idea around kind of the weekend stuff and things like that.
+Evan Liang - Pareto Agent: So I guess that is one idea around.
+Evan Liang - Pareto Agent: Hey, how do we work together?
+Evan Liang - Pareto Agent: Is potentially it Might be worth it to have like once a day standups on the weekends just for folks to come to come get get together and see if there's anything that other folks could help with.
+Evan Liang - Pareto Agent: We can try to schedule it like 30 minutes sometime where you know, it's not as if people have activities or stuff like that.
+Evan Liang - Pareto Agent: So I don't know if it's like.
+Evan Liang - Pareto Agent: So it's not 9am in the morning because I know some people like to sleep in on weekends.
+Evan Liang - Pareto Agent: Probably 10:00am probably not there.
+Evan Liang - Pareto Agent: But is it like 1:00 o' clock is when people have more downtime or is it like five o' clock is an impact with your dinners or something of that sort of.
+Evan Liang - Pareto Agent: But it might be worth trying out like hey, just doing a once a day stand up that that useful folks is not useful.
+Evan Liang - Pareto Agent: For someone's got something big that they're going on, that's fine.
+Evan Liang - Pareto Agent: You know, not a big deal.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: But for other folks, would it be helpful for our folks to just kind of be able to touch base really quickly run an idea or two off of folks.
+Evan Liang - Pareto Agent: So.
+Evan Liang - Pareto Agent: Yep.
+Evan Liang - Pareto Agent: Okay.
+Evan Liang - Pareto Agent: That might be an idea.
+Evan Liang - Pareto Agent: Awesome.
+Evan Liang - Pareto Agent: Cool.
+Evan Liang - Pareto Agent: So that was my stand up.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: Wants to go next.
+Evan Liang - Pareto Agent: You can go.
+Evan Liang - Pareto Agent: Sure.
+Evan Liang - Pareto Agent: Let me.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: So most of my stuff was just refining based on Scott's feedback and various discussions.
+Evan Liang - Pareto Agent: Mostly just the.
+Evan Liang - Pareto Agent: The visuals.
+Evan Liang - Pareto Agent: So like it's cleaner now when you open, you know you can view each account.
+Evan Liang - Pareto Agent: When you view the plan, it's in a cleaner format.
+Evan Liang - Pareto Agent: That is cleaner.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: Told it be like Apple and it did pretty well.
+Evan Liang - Pareto Agent: I mean I like that.
+Evan Liang - Pareto Agent: And I was like yeah, when you press this.
+Evan Liang - Pareto Agent: I mean I'm still working on how we display these numbers up here because you obviously want to like show the total amount that is expiring that month.
+Evan Liang - Pareto Agent: But also the projected ARR.
+Evan Liang - Pareto Agent: Do you subtract all the churn from the projection?
+Evan Liang - Pareto Agent: Yeah, but.
+Evan Liang - Pareto Agent: But they might not churn is the problem.
+Evan Liang - Pareto Agent: Right?
+Evan Liang - Pareto Agent: Like they might.
+Evan Liang - Pareto Agent: It's still forecast.
+Evan Liang - Pareto Agent: Okay.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: I mean, I mean you could.
+Evan Liang - Pareto Agent: Some people apply percentage.
+Evan Liang - Pareto Agent: So if something's forecasted.
+Evan Liang - Pareto Agent: Churn, you presented a 20.
+Evan Liang - Pareto Agent: So there's ways to actually the forecasting.
+Evan Liang - Pareto Agent: You're right.
+Evan Liang - Pareto Agent: The forecasting in itself is a methodology.
+Evan Liang - Pareto Agent: Okay.
+Evan Liang - Pareto Agent: But yeah, I can.
+Evan Liang - Pareto Agent: I think that that makes sense.
+Evan Liang - Pareto Agent: I'll try to add that.
+Evan Liang - Pareto Agent: And I also I played around with.
+Evan Liang - Pareto Agent: Because Scott was saying you've got this like waterfall looking thing.
+Evan Liang - Pareto Agent: I didn't really know if it.
+Evan Liang - Pareto Agent: It's a little confusing having NRR at the top and then these are like you're subtracting churn Adding upsell.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: So what he was talking about is waterfall part that you've seen probably this in business school.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: Y is like this.
+Evan Liang - Pareto Agent: And then you go up, and then potentially down.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: And then up.
+Evan Liang - Pareto Agent: Oh, that.
+Evan Liang - Pareto Agent: That's funny.
+Evan Liang - Pareto Agent: That's what the AI.
+Evan Liang - Pareto Agent: That's what Claude did.
+Evan Liang - Pareto Agent: And it was.
+Evan Liang - Pareto Agent: I thought it was so ugly, I didn't, like, understand.
+Evan Liang - Pareto Agent: It's a very, Like a consulting thing.
+Evan Liang - Pareto Agent: It's a very consulting.
+Evan Liang - Pareto Agent: I'm learned about this a lot.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: Specifically to confuse people and like.
+Evan Liang - Pareto Agent: Like, if you know.
+Evan Liang - Pareto Agent: You know, kind of a thing, you're like, you don't know, like, what the hell is this?
+Evan Liang - Pareto Agent: You're seeing it by the components.
+Evan Liang - Pareto Agent: That's literally what I mean.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: I don't know what's happening.
+Evan Liang - Pareto Agent: So I might.
+Evan Liang - Pareto Agent: I'll ask you to, like, revert, and I can at least know it.
+Evan Liang - Pareto Agent: But you.
+Evan Liang - Pareto Agent: You could talk to some of us and we can try to.
+Evan Liang - Pareto Agent: I mean, sometimes the order in which you put things and stuff like that can make the chart more eas.
+Evan Liang - Pareto Agent: Understand or more difficult to understand.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: It's like, why is it going up?
+Evan Liang - Pareto Agent: And then it's going down, and then it's going up again?
+Evan Liang - Pareto Agent: Like, why can't we just show all the down And.
+Evan Liang - Pareto Agent: I don't know.
+Evan Liang - Pareto Agent: It was.
+Evan Liang - Pareto Agent: It was very.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: So.
+Evan Liang - Pareto Agent: So.
+Evan Liang - Pareto Agent: So, yeah.
+Evan Liang - Pareto Agent: So you might want to, like.
+Evan Liang - Pareto Agent: You could do, like, it might be.
+Evan Liang - Pareto Agent: Go up.
+Evan Liang - Pareto Agent: You'd want to do the downs either together or ups.
+Evan Liang - Pareto Agent: Like up and down is the confusion.
+Evan Liang - Pareto Agent: Like, the way I drew this.
+Evan Liang - Pareto Agent: But instead, you might want to go, like, down and then come back up.
+Evan Liang - Pareto Agent: That might make it easier to understand.
+Evan Liang - Pareto Agent: I will play around with that.
+Evan Liang - Pareto Agent: But, yeah, that.
+Evan Liang - Pareto Agent: That was a confusing thing.
+Evan Liang - Pareto Agent: And then also, I was working on.
+Evan Liang - Pareto Agent: You're not.
+Evan Liang - Pareto Agent: Like, you wouldn't see this dashboard at the top.
+Evan Liang - Pareto Agent: Yep.
+Evan Liang - Pareto Agent: This is just for me, clicking around things.
+Evan Liang - Pareto Agent: But this was like, reworking the rules stuff.
+Evan Liang - Pareto Agent: Yep.
+Evan Liang - Pareto Agent: So I. I also had it, like, in a more simple way where it's just the signals, the rules and the plans.
+Evan Liang - Pareto Agent: And you can write a rule yourself, or you can change the plan, change the projection.
+Evan Liang - Pareto Agent: Just trying to make it easy.
+Evan Liang - Pareto Agent: And then this was, like, taking that to another level.
+Evan Liang - Pareto Agent: So it just made it even more clean.
+Evan Liang - Pareto Agent: And you can write out rules in English and it will code it itself.
+Evan Liang - Pareto Agent: Got it.
+Evan Liang - Pareto Agent: Again, that's just more demo, so I'll probably all be set.
+Evan Liang - Pareto Agent: No, no, that makes sense.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: Okay.
+Evan Liang - Pareto Agent: And then it was.
+Evan Liang - Pareto Agent: The rest of it was just working on, like, getting it ready to be ported with your stuff or with anyone else's.
+Evan Liang - Pareto Agent: Stuff.
+Evan Liang - Pareto Agent: So like this doesn't currently do anything but it's a one line change to hook it up where it actually sends data to another thing.
+Evan Liang - Pareto Agent: And yeah, that was, that's a main.
+Evan Liang - Pareto Agent: Good work.
+Evan Liang - Pareto Agent: Let's.
+Evan Liang - Pareto Agent: Let's unpack it a little bit more and just make sure it hooks up correctly.
+Evan Liang - Pareto Agent: The other part that I thought like, like the other part that I thought you could take a stab at a little bit is the data integration has to come through you.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: So for example, at some point in time in order for Coopers to work, you need contracts.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: So we have to make sure we pull in all the contracts up front in order to actually make the buyer engagement module work.
+Evan Liang - Pareto Agent: That's non trivial and then we, you might as well read the contracts because those are potential signals.
+Evan Liang - Pareto Agent: Some people may use them, some people won't, but we'll need it anyway.
+Evan Liang - Pareto Agent: So one of the things I was thinking about from an integration perspective is what you might want to start building out is a data dictionary.
+Evan Liang - Pareto Agent: There's elements of that, but it's still more.
+Evan Liang - Pareto Agent: So I think that could be in and of itself a module.
+Evan Liang - Pareto Agent: I know the LD internal folks built a data dictionary so I could set up a call with them to see what that looks like and we could use that as potentially thing.
+Evan Liang - Pareto Agent: But I think that's something that's cool core to a lot of things.
+Evan Liang - Pareto Agent: I was actually kind of going on an LD call.
+Evan Liang - Pareto Agent: I was looking at the lean data call in which they're looking at their model.
+Evan Liang - Pareto Agent: I was kind of annoyed because I told them they should do a data dictionary module for everyone and instead they're doing a dedupe module.
+Evan Liang - Pareto Agent: And I'm like so anyways, because I actually think every agentic company is going to have a data dictionary problem.
+Evan Liang - Pareto Agent: A data dictionary is basically say arrow which field and what is the definition of AR inside the company?
+Evan Liang - Pareto Agent: Because we said there's like six different AR fields.
+Evan Liang - Pareto Agent: So data dictionary says we as a company have agreed and it would be nice to hand to an objective provider to be like, when we say ar, you reference this field and every agentic person would understand that if, if they don't do that, that means every agent coming in has to go figure out the same thing over and over again.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: Or when we say the word renewal we mean this and it's this field and it's calculated this way.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: So for absence of centralized vendor or counting on the customer having done it, what I'm saying is we need to build a data dictionary for every customer and just Go like we, these are the terms we need.
+Evan Liang - Pareto Agent: Where is it?
+Evan Liang - Pareto Agent: And then how do we figure out, claw through and figure it out and be like, just like, he's like, hey, validating signals.
+Evan Liang - Pareto Agent: You have to say like we said, renewal.
+Evan Liang - Pareto Agent: This is the field.
+Evan Liang - Pareto Agent: Yes.
+Evan Liang - Pareto Agent: No.
+Evan Liang - Pareto Agent: And if they're like, if there's an error we could be like, well this is the wrong field.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: That's just like a key module and stuff.
+Evan Liang - Pareto Agent: It's, it's kind of configuration but I think.
+Evan Liang - Pareto Agent: Yeah, you don't want to hide that too much, just get that wrong or something.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: Okay, cool.
+Evan Liang - Pareto Agent: Like it sounds like you were doing anything that we could have helped with more that you needed help with or you felt blocked on or anything or.
+Evan Liang - Pareto Agent: I think it was good for this weekend.
+Evan Liang - Pareto Agent: But it is just like there's a, it's pretty quick to make these visual refinements and then.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: And at the like end of the weekend I was just like, okay, I don't really have anything to, to do at this point like that I know I can do now.
+Evan Liang - Pareto Agent: So yeah, I don't know if there's like a next step.
+Evan Liang - Pareto Agent: I mean it seems like building, getting everyone's thing integrated is a big step.
+Evan Liang - Pareto Agent: Yep.
+Evan Liang - Pareto Agent: So that's a good project.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: Integrated from the point of view, right?
+Evan Liang - Pareto Agent: Sure.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: But that changes a lot of the product requirements as well.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: So.
+Evan Liang - Pareto Agent: And I realize that's like a really big change.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: Like the line of how we're doing it because like we're all separate then it's all going to be all over the place and take charge of that.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: Well so luckily you guys have been in a week.
+Evan Liang - Pareto Agent: So making this change now is not like you're throwing away.
+Evan Liang - Pareto Agent: And this is part of the reason why we, we want to have the agile and flexible and not have like all this data flowing and stitching because then when you get in bigger companies and there's like they'll tell you a gazillion reasons why you can't do it anymore.
+Evan Liang - Pareto Agent: Yeah, yeah.
+Evan Liang - Pareto Agent: I can go next I guess on my side.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: So based on the last conversation, Evan, one thing I did was overall overarching summary is move away from co pilot or human based interaction.
+Evan Liang - Pareto Agent: So one thing on the main dashboard is we have this thing where what AI is doing.
+Evan Liang - Pareto Agent: I think your dashboard did not have this, I think to show any kind of demo as of the next few weeks.
+Evan Liang - Pareto Agent: It be great to see show them how much AI is doing and how automated it is.
+Evan Liang - Pareto Agent: So it'll be great like to put like this Kind of quick updates about what has AI handled on its own.
+Evan Liang - Pareto Agent: The second big thing is I think all of this added one more dashboard here about where it is in the outreach life cycle.
+Evan Liang - Pareto Agent: And all the accounts, how many are waiting, how many engaged, unreasonable and.
+Evan Liang - Pareto Agent: And then that's the second one.
+Evan Liang - Pareto Agent: And then yeah that.
+Evan Liang - Pareto Agent: That's exactly what I was saying would go into that tab.
+Evan Liang - Pareto Agent: I think I have the, the negative five version of yours.
+Evan Liang - Pareto Agent: Yours will get zero.
+Evan Liang - Pareto Agent: So we'll iterate to one and two after this.
+Evan Liang - Pareto Agent: Another one we did was.
+Evan Liang - Pareto Agent: I did was to remove all the people here and come up with different agents that, that the company can use.
+Evan Liang - Pareto Agent: I think this was like just me like on top of my head like have a happy empathic negotiation or a diet closing agent.
+Evan Liang - Pareto Agent: I think this is, it's.
+Evan Liang - Pareto Agent: This is going to be refined to just one agent per company.
+Evan Liang - Pareto Agent: Got it.
+Evan Liang - Pareto Agent: So it's going to be like okay, it's going to be all like that company voice.
+Evan Liang - Pareto Agent: And then when they go in it's figuring out how, how they can change it, how they can manage it.
+Evan Liang - Pareto Agent: So all this is about the same.
+Evan Liang - Pareto Agent: The generate sample emails.
+Evan Liang - Pareto Agent: What I'm going to work on today is getting the API key and connecting to Haiku or Sonnet to.
+Evan Liang - Pareto Agent: To make sure this is working today.
+Evan Liang - Pareto Agent: And then the feedback we've gotten specifically from AJ is they do not want to go in and configure their agents.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: So they, they were like you tell us how our voice is through analysis.
+Evan Liang - Pareto Agent: Yeah, because and we've tried this like being able to be like well I want to be my personality want to be this casual versus it.
+Evan Liang - Pareto Agent: Like no one knows what they are.
+Evan Liang - Pareto Agent: Yes.
+Evan Liang - Pareto Agent: You know and like drawing these things and then watching the outputs is.
+Evan Liang - Pareto Agent: It's a little bit frustrating.
+Evan Liang - Pareto Agent: And then you're like take it or, or this way the forward deployed engineer is going to do it.
+Evan Liang - Pareto Agent: The customer I do not think is going to do it.
+Evan Liang - Pareto Agent: 100 Agree.
+Evan Liang - Pareto Agent: I think it's as, as I thought about it when you create a new agent it's going to be mostly from like data in, data out.
+Evan Liang - Pareto Agent: Makes sense.
+Evan Liang - Pareto Agent: So you could import a massive CSV or Word document, any kind of a text based file into this and it will pick it up from there and just emulate it.
+Evan Liang - Pareto Agent: So there's not going to be any dashes from Claud or OpenAI.
+Evan Liang - Pareto Agent: And then if during in operation like they're going through a different kind of phase they want to like start being a little bit more casual.
+Evan Liang - Pareto Agent: They want to start being a little bit more formal or you Know they see that, that, that the new commission is taking place.
+Evan Liang - Pareto Agent: They definitely want to avoid some word like don't use conscious slides.
+Evan Liang - Pareto Agent: So then they could kind of edit it instead of uploading 500 other emails and then starting from scratch again.
+Evan Liang - Pareto Agent: So giving them flexibility to do both.
+Evan Liang - Pareto Agent: I can simplify this if that's what's required but I think it's like just ability for them to.
+Evan Liang - Pareto Agent: No, I think the main thing is just to note that this would be done by the forward deployed engineer.
+Evan Liang - Pareto Agent: Yeah, so, so, so, so, so, so complexity is okay, but it's not client facing if it's on the forward.
+Evan Liang - Pareto Agent: But then we would want complexity because we want to be able to tune it.
+Evan Liang - Pareto Agent: The client's like not happy with their email output.
+Evan Liang - Pareto Agent: We'd want to tune it.
+Evan Liang - Pareto Agent: But it's I think certainly initially it's the US doing it internally, not them doing it.
+Evan Liang - Pareto Agent: Yeah, and, but I do like the, I do think telling the LLMs not to have certain terms is really important because they'll be like, let me tell you about your usage.
+Evan Liang - Pareto Agent: You have low usage so congratulations.
+Evan Liang - Pareto Agent: Like there are certain terms you have to like put the guardrails in there and then that seems to be the only way is to tell it not to do certain things.
+Evan Liang - Pareto Agent: But again just, just want to make sure who, who is it going to be used by but cool.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: Two things to clarify.
+Evan Liang - Pareto Agent: One, these different agents, like it's not like the AM is selecting which agent to use for each account.
+Evan Liang - Pareto Agent: No, no, it's.
+Evan Liang - Pareto Agent: I came up with a few different things here to show the flexibility of, of how we can manage each agent.
+Evan Liang - Pareto Agent: Like if they want to.
+Evan Liang - Pareto Agent: This is a company watch.
+Evan Liang - Pareto Agent: It's going to be the generic company watch as he said.
+Evan Liang - Pareto Agent: It's going to be.
+Evan Liang - Pareto Agent: Every other team was going to be very simple.
+Evan Liang - Pareto Agent: It's like hey, everybody was coming up, should we talk?
+Evan Liang - Pareto Agent: It's going to be very straightforward, very comfortable.
+Evan Liang - Pareto Agent: And then some of these, there's going to be nuances for every company but at the same time what I have this four or five agents here to show how within each of these nuances how that might look like here.
+Evan Liang - Pareto Agent: So like I said, if I say a company is very much, a little bit more happy, going a little bit more casual, a little more positive, this is how a settings will look like and this is how an output would look like.
+Evan Liang - Pareto Agent: If you want to generate something random, if they're very empathetic or very negotiating kind of a company, this is what that kind of settings will look like.
+Evan Liang - Pareto Agent: This is why we have five agents here.
+Evan Liang - Pareto Agent: And I'm not the expert.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: But like from an architecture standpoint, is that how you do it?
+Evan Liang - Pareto Agent: Do you divide it?
+Evan Liang - Pareto Agent: Do you have an agent that choose which sub agent to go with?
+Evan Liang - Pareto Agent: Or is the idea supposed to be you just like as if you were just a prompted overall something and just be like, these are the signals going in.
+Evan Liang - Pareto Agent: You choose it from here.
+Evan Liang - Pareto Agent: Rather than like, I feel like there's an extra step now of then you choose a different kind of sub agent that then works on it.
+Evan Liang - Pareto Agent: Oh, I think so, yeah.
+Evan Liang - Pareto Agent: I think maybe I wasn't very clear about this.
+Evan Liang - Pareto Agent: This is very devo purpose about why there are four or five ages to show, to show someone like if there's different companies that have a different kind of voice.
+Evan Liang - Pareto Agent: Your original assumption where it's like this is the additional step and this business complexity is extremely.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: It's going to be one agent that kind of encompasses the entire company's voice, which is built from the emails.
+Evan Liang - Pareto Agent: And then they can adjust this to one agent using the settings.
+Evan Liang - Pareto Agent: That's it.
+Evan Liang - Pareto Agent: If they do want to add new agents because they want to keep, let's say they have multiple profiles of customers and they want to use a particular agent for a particular kind of customer, they have the flexibility to add a new agent and start from scratch with the emails and adjust it.
+Evan Liang - Pareto Agent: I'm giving them flexibility.
+Evan Liang - Pareto Agent: But my assumptions at the start, the first three or four customers that we get, it's going to be one single agent.
+Evan Liang - Pareto Agent: So it'll be single agent.
+Evan Liang - Pareto Agent: I do think as part of the implementation process this is ways down a little.
+Evan Liang - Pareto Agent: I do see like one way to quickly get client feedback is to give them three versions of the same email with different characteristics.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: Just be like.
+Evan Liang - Pareto Agent: So the easier way to get the feedback instead of like you give them an email, they're gonna, they're gonna tell you it's not right.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: But you could give them like three different versions, right.
+Evan Liang - Pareto Agent: With different tones and be like, which one do you like the most?
+Evan Liang - Pareto Agent: Pick that, you know, it's like one of these like market research studies, like or personality tests.
+Evan Liang - Pareto Agent: Which one of these do you like most?
+Evan Liang - Pareto Agent: Like this one.
+Evan Liang - Pareto Agent: This one, this one.
+Evan Liang - Pareto Agent: And it just does the settings.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: And you're like, okay, based on this, here's the.
+Evan Liang - Pareto Agent: Is this, is this final email better?
+Evan Liang - Pareto Agent: Oh yeah, that's great.
+Evan Liang - Pareto Agent: That might be a faster way to your answer rather than being like email by email.
+Evan Liang - Pareto Agent: We did consider that early on.
+Evan Liang - Pareto Agent: Like, what's the fastest way to get information from your client?
+Evan Liang - Pareto Agent: Okay, great.
+Evan Liang - Pareto Agent: So I think on that note, what I'll do is instead of just having like a one single page onboarding new voice, I'll make a whole one single page new agent creation screen.
+Evan Liang - Pareto Agent: If they create new agent, it'll go through the, it will go, it will make them go through an onboarding like a few steps or emails.
+Evan Liang - Pareto Agent: Based on these emails, these are characteristics we found.
+Evan Liang - Pareto Agent: Here's the three options.
+Evan Liang - Pareto Agent: Which voice do you want?
+Evan Liang - Pareto Agent: Here's the settings.
+Evan Liang - Pareto Agent: Do you want to adjust anything?
+Evan Liang - Pareto Agent: And then you create, then it comes into this.
+Evan Liang - Pareto Agent: So I'll probably create a flow out of this itself, keeping it so simple.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: And then again the best way is like human in the loop for the onboarding is have the forward deployed engineer do all that.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: Like again, if we force our customers to go through like hey, you're onboarding go through this flow, they may never do it.
+Evan Liang - Pareto Agent: Versus the FD can be like, hey, let me help you get on board.
+Evan Liang - Pareto Agent: Let me present things to you and see what you say.
+Evan Liang - Pareto Agent: Yes, I have a question about that.
+Evan Liang - Pareto Agent: Like I think you, you mentioned that the FD being very pivotal in getting customers, especially on point.
+Evan Liang - Pareto Agent: I think for the first, first two or three customers, that's going to be the way you're thinking about.
+Evan Liang - Pareto Agent: My question is down the road, like are you thinking about this being a very much a SaaS tool where people will just log in, buy the tool, set it up on your own and kind of their system.
+Evan Liang - Pareto Agent: So it's much, very much led by the customers itself, especially for customers that are not that big.
+Evan Liang - Pareto Agent: Like they have maybe not 10 million SR as you said.
+Evan Liang - Pareto Agent: Maybe like they're working on a 100k, 250k.
+Evan Liang - Pareto Agent: They still need a renewals agent.
+Evan Liang - Pareto Agent: At that point it'll be more like do it on your own.
+Evan Liang - Pareto Agent: I don't know yet.
+Evan Liang - Pareto Agent: Okay, cool.
+Evan Liang - Pareto Agent: You know what I'm saying?
+Evan Liang - Pareto Agent: Like the nature of agents may not be as conducive to the old SaaS world.
+Evan Liang - Pareto Agent: The old SaaS world where we just like give you a tool, you have humans who are actually using the tool because the agent's acting on your behalf.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: Would you feel, I don't know if configurability by yourself is necessarily is something that may be possible in the short term.
+Evan Liang - Pareto Agent: Understood.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: So I, yeah, I get what you said like in the old SaaS world.
+Evan Liang - Pareto Agent: Absolutely right.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: I just don't know what that new world will look like with agents.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: I mean my question is asking is because how configurable do I make the system to be if we are building the entire model around FTEs.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: So I think initially, and that's why we're picking larger customers who can scale more and stuff like that so that FTEs are possible.
+Evan Liang - Pareto Agent: We aren't going after like really, really small clients, like sub 10 million where we're like, like.
+Evan Liang - Pareto Agent: Yeah, I don't know if we have to figure out because I do think this work.
+Evan Liang - Pareto Agent: The overall workflow, even in your section, the overall workflow is pretty complex.
+Evan Liang - Pareto Agent: Yes.
+Evan Liang - Pareto Agent: You know, to make it work.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: I think a couple of times I'll kind of keep it short, but like some visual changes where when you go into a singular client, we have like the outreach life cycle, which will probably go into your stuff, have a quick history of what's been going on over the last few weeks.
+Evan Liang - Pareto Agent: I think this one we have seen a few times kind of moved everything down.
+Evan Liang - Pareto Agent: So signal style, style guide might move up a little bit to how.
+Evan Liang - Pareto Agent: How the agent is managing both the customer and what the company voices.
+Evan Liang - Pareto Agent: This is redundant.
+Evan Liang - Pareto Agent: So we'll remove this and then proposes and slides.
+Evan Liang - Pareto Agent: I think once the FT comes together, all of this will be live.
+Evan Liang - Pareto Agent: But the most important thing is this.
+Evan Liang - Pareto Agent: After five cycle where we are in the current outreach, you have to take them to build that up.
+Evan Liang - Pareto Agent: So that's about it.
+Evan Liang - Pareto Agent: Draft set.
+Evan Liang - Pareto Agent: I like waiting engaged.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: Okay.
+Evan Liang - Pareto Agent: Those four steps make sense.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: So that's about it.
+Evan Liang - Pareto Agent: So today is mostly for me is the just API.
+Evan Liang - Pareto Agent: API connection and making the voice and the outreach thing come to life.
+Evan Liang - Pareto Agent: Okay, makes sense.
+Evan Liang - Pareto Agent: All right, that's about it.
+Evan Liang - Pareto Agent: Heading over to the ghc.
+Evan Liang - Pareto Agent: So mainly what I was working on was completely redoing the slides and also rebuilding the way I was organizing the slides in terms of before.
+Evan Liang - Pareto Agent: And while I was doing this, I was just taking the slides and then just like wiping them and creating template.
+Evan Liang - Pareto Agent: This time I had AI have the original slides.
+Evan Liang - Pareto Agent: There are only six of them.
+Evan Liang - Pareto Agent: Take that template and then synthesize 14 on top of that.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: Whether that can be completely automated without human input, I don't know.
+Evan Liang - Pareto Agent: Like, I had to like go really back and forth on every single slide just to make sure everything was right.
+Evan Liang - Pareto Agent: But I would say that overall, at the end of the day, when I Look at the PowerPoint of these new slide blocks, most of this is completely like synthesized and like, like I work with AI to create it.
+Evan Liang - Pareto Agent: I'd say it all looks really, really good.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: So this is something that maybe down the line I think about how to automate this better rather than me like just sitting in front of Claude and telling it to completely redo this and this this.
+Evan Liang - Pareto Agent: But overall, honestly, I actually think it looks better than the original six slides.
+Evan Liang - Pareto Agent: That were some tweaks with the results that were consistent, but I could tell AI to make everything consistent across the board.
+Evan Liang - Pareto Agent: So did this and then I guess I could share my screen for.
+Evan Liang - Pareto Agent: So you, you were using Claude to improve slides?
+Evan Liang - Pareto Agent: Yeah, basically I was using CLAUDE to like improve it.
+Evan Liang - Pareto Agent: Like build them from scratch using a template though, which I think is the important part.
+Evan Liang - Pareto Agent: Done.
+Evan Liang - Pareto Agent: And then we're slowly moving into here switch Depends on what you just chose to share initially.
+Evan Liang - Pareto Agent: Okay.
+Evan Liang - Pareto Agent: That's not a whole.
+Evan Liang - Pareto Agent: Okay.
+Evan Liang - Pareto Agent: And then I was just like basically building out.
+Evan Liang - Pareto Agent: Hey, we can do different scenarios right now.
+Evan Liang - Pareto Agent: Flat renewal just might increase too.
+Evan Liang - Pareto Agent: We do like say play executive competitive threat.
+Evan Liang - Pareto Agent: Right?
+Evan Liang - Pareto Agent: Just some different decks to build.
+Evan Liang - Pareto Agent: All of them are around six slide big slides.
+Evan Liang - Pareto Agent: Because what Scott said right now ultimately when I was building this, then I was thinking about what else to do and I realized I'm probably going to scrap all of this.
+Evan Liang - Pareto Agent: And the reason why is because I want to build out a sort of drag and drop configurable feature where it's like, not only do I give you the deck, but you can edit the deck within it.
+Evan Liang - Pareto Agent: Like because we have a block library.
+Evan Liang - Pareto Agent: Well, I can just give you the option to drag and drop these different blocks into your slide presentation and edit it in real time.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: Because my part still is at some point probably going to have a bit of AM touch find it.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: Especially if they're giving that zoom meeting.
+Evan Liang - Pareto Agent: Unless we decide to switch to a voice voice sort of level kind of thing.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: So I'm going to try to build probably today a drag and drop feature and they can edit it within the sort of centralized browser.
+Evan Liang - Pareto Agent: So that's kind of where I'm moving.
+Evan Liang - Pareto Agent: I mean, similar to parse feedback, I don't think we will have an am, but I think what will happen is the AM leader, the initial decks they will review and stuff like that.
+Evan Liang - Pareto Agent: But over time, once they get comfortable with the decks, the decks just get sent.
+Evan Liang - Pareto Agent: So I can see two scenarios.
+Evan Liang - Pareto Agent: One where people just get comfortable just emailing the deck and that's the story.
+Evan Liang - Pareto Agent: The second thing is, per your point, you could build out the voice AI, which has gotten a whole lot better.
+Evan Liang - Pareto Agent: And then with the deck, you a have script, right.
+Evan Liang - Pareto Agent: And you can just have it deliver the script potentially.
+Evan Liang - Pareto Agent: Or the third scenario is whether the roles start consolidating if a csm, a human CSM may be able to deliver the deck without doing the negotiation.
+Evan Liang - Pareto Agent: So that's kind of like the person demoing giving you the test drive of the car.
+Evan Liang - Pareto Agent: Although they have automated now now like Teslas you don't even need the person to go with you.
+Evan Liang - Pareto Agent: You actually show up at a Tesla dealership and they're just like here's the key.
+Evan Liang - Pareto Agent: See you in 30 minutes.
+Evan Liang - Pareto Agent: Yeah, they don't even have the person sit in the car with you anymore so but originally they would have a non commission person sit and do the car driving with you but he was in a sales rep, he was just an expert.
+Evan Liang - Pareto Agent: So I could see also like another person if you build the deck and I make everything have someone else deliver it and just be like well here's the thing.
+Evan Liang - Pareto Agent: They deliver all the features and then the price and here's the pricing.
+Evan Liang - Pareto Agent: I don't really deal with pricing.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: Why don't you look at like someone can like kind of like the manager thing.
+Evan Liang - Pareto Agent: So But I, I do think we have to assume it does not go to an al.
+Evan Liang - Pareto Agent: So should I build it or no?
+Evan Liang - Pareto Agent: Yeah, no, I think that's fine.
+Evan Liang - Pareto Agent: No, no, I think having the drag and drop features is also good for thing.
+Evan Liang - Pareto Agent: What do you want me to do it or not?
+Evan Liang - Pareto Agent: I would just say don't have the assumption that it's, it's, it's that there's an AM in the loop.
+Evan Liang - Pareto Agent: I would like to ask a question about that.
+Evan Liang - Pareto Agent: I know when we're thinking like end goal as a functioning company we're trying to like our em man is going to be a champion.
+Evan Liang - Pareto Agent: He's going to be like getting all the ages to run all these things for ourselves.
+Evan Liang - Pareto Agent: But the reality is going to be very different once we hit the market with cool.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: It's not going to be like we hit the market and everybody's going to fire their amps.
+Evan Liang - Pareto Agent: Like it's probably the champions.
+Evan Liang - Pareto Agent: What we're gonna give it to the ams first like okay, use it for a while, let me know how you get it or something like that.
+Evan Liang - Pareto Agent: It's going to be quite a slow progression to get like so do we not build a system and this is all Based on all 15 different assumptions that we all have?
+Evan Liang - Pareto Agent: Sure.
+Evan Liang - Pareto Agent: All the way from here to here.
+Evan Liang - Pareto Agent: So should we not build a system that's more like at this point where, where.
+Evan Liang - Pareto Agent: And then once we are able to get a few customers and we're able to be part of the ecosystem then we start pushing towards this point or should we build a system towards.
+Evan Liang - Pareto Agent: So I, I'd say it's not.
+Evan Liang - Pareto Agent: The assumption is not that there's no human in the loop at each of these steps.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: But we're trying to not build a system, assuming there needs to be a human in the loop.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: And then I also think that a lot of the accounts they're going to give to us, there isn't an AM assigned to it.
+Evan Liang - Pareto Agent: So that, so it's not like, hey, we're taking accounts away from an existing am they're like, these are accounts I just don't have time to get, get to.
+Evan Liang - Pareto Agent: So.
+Evan Liang - Pareto Agent: And if you're like, hey, you need to sign an AM with the AI agents, like, well, the whole point is I'm giving you accounts that I can't get to.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: So that's probably the bland part.
+Evan Liang - Pareto Agent: So of your questions, like, how much human knowledge.
+Evan Liang - Pareto Agent: Yeah, yeah.
+Evan Liang - Pareto Agent: And then I, I, I do think per, this is a good discussion point, by the way.
+Evan Liang - Pareto Agent: And while I'm being a little bit stubborn about this discussion point from a design perspective, I'm also realizing that there's a reality of when you get clusters.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: Y, you got to get them onboarded.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: So, so the other part of it, this is also where the person, the, the other human that's in the loop that might be reviewing all this stuff is the fd.
+Evan Liang - Pareto Agent: Like, the FD is the person who's like, hey, I'm going to try to figure this out and help you close deals.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: That's the other purpose of the fd is to give that leverage to the thing.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: But it's, it's, it's a, it's a big, it's a fair risk factor.
+Evan Liang - Pareto Agent: Let me be very clear about that.
+Evan Liang - Pareto Agent: I don't want to be like, yeah, I, I, you're, I welcome the, the back and forth around it, but, so, yeah, no, no, it's fine.
+Evan Liang - Pareto Agent: Like, because when you ask the question you've been building or not, it's very simple.
+Evan Liang - Pareto Agent: The question is coming from like, okay, what direction are we genuinely going into?
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: So, yeah.
+Evan Liang - Pareto Agent: So similarly, Dean, maybe build your, your slide thing.
+Evan Liang - Pareto Agent: You're building it because it will make it easier for, let's say, yourself as the fd, to configure the, adjust the slides in order to make it to get to a point where the AM leader is like, this looks good.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: If you don't do it, then you have to be going to cloud code to adjust.
+Evan Liang - Pareto Agent: And the question is, do we, is that the interface we want or can we make it simpler and faster and more conducive for the emulator?
+Evan Liang - Pareto Agent: They won't do the adjustment for the FDE to make the adjustment.
+Evan Liang - Pareto Agent: All right, Sure.
+Evan Liang - Pareto Agent: Yep.
+Evan Liang - Pareto Agent: So my update this weekend is that I, after talking with Evan in our one on one, got some good feedback about what the dashboard should look like, realized that some of it was extraneous and that it needed to be focused on activity and engagement as well as days to renew.
+Evan Liang - Pareto Agent: And so right now it's literally just a list of accounts and recent activity.
+Evan Liang - Pareto Agent: Not sure what you think about this recent activity list, but we can get into that.
+Evan Liang - Pareto Agent: Oh, it's a recent activity just across all accounts.
+Evan Liang - Pareto Agent: Oh, it's kind of.
+Evan Liang - Pareto Agent: No, I mean, I, I definitely.
+Evan Liang - Pareto Agent: People definitely do things like that.
+Evan Liang - Pareto Agent: They want to know who's.
+Evan Liang - Pareto Agent: Who's been hitting what very recently.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: So like, for example, added a stakeholder.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: Okay.
+Evan Liang - Pareto Agent: And then if you want to drill, drill down into the account.
+Evan Liang - Pareto Agent: And so just for clarification, like, this page would sit in that tab.
+Evan Liang - Pareto Agent: Yes, yes.
+Evan Liang - Pareto Agent: So let's say you click into the account, it shows, okay, what's the status of the buying team?
+Evan Liang - Pareto Agent: Like, who did they add?
+Evan Liang - Pareto Agent: And then there's more configuration stuff in here, I guess.
+Evan Liang - Pareto Agent: So for this page, where.
+Evan Liang - Pareto Agent: Where does this live?
+Evan Liang - Pareto Agent: So, okay, so.
+Evan Liang - Pareto Agent: So the, the high level of what's going on would sit into the dashboard piece of it, right?
+Evan Liang - Pareto Agent: This account dashboard would sit in on the account page on that individual tab.
+Evan Liang - Pareto Agent: You know, the timeline of qualification to outreach, etc.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: If you were at the buyer engagement stage and you clicked that circle, whatever in that timeline, it gets rid of this.
+Evan Liang - Pareto Agent: Okay, so that's a split up.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: So the high level, what everything is going would be like when you click down the buyer engagement across all accounts, right?
+Evan Liang - Pareto Agent: Yes.
+Evan Liang - Pareto Agent: So that would be like, hey, do you want to see buyer engagement of all your accounts in Q2, Q3 at the buyer engagement site?
+Evan Liang - Pareto Agent: That would be this.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: And then when you, when you click into the account, it ends up at the sub tab of your overall account page.
+Evan Liang - Pareto Agent: No, no, no, no, no.
+Evan Liang - Pareto Agent: No problem at all.
+Evan Liang - Pareto Agent: So when you click in, you end up being here.
+Evan Liang - Pareto Agent: Of Granite Systems.
+Evan Liang - Pareto Agent: Okay.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: So.
+Evan Liang - Pareto Agent: So one piece ends up here.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: And then the dashboard ends up being part of this.
+Evan Liang - Pareto Agent: But clicking on this could get you also there.
+Evan Liang - Pareto Agent: I see.
+Evan Liang - Pareto Agent: Okay.
+Evan Liang - Pareto Agent: Does that architecture make sense?
+Evan Liang - Pareto Agent: We can.
+Evan Liang - Pareto Agent: Because we could.
+Evan Liang - Pareto Agent: We wouldn't know, but we.
+Evan Liang - Pareto Agent: We should.
+Evan Liang - Pareto Agent: It's worth sussing out to make sure that that makes sense.
+Evan Liang - Pareto Agent: Okay.
+Evan Liang - Pareto Agent: That work for you, Dean?
+Evan Liang - Pareto Agent: Or wait, I'm trying to figure out, like.
+Evan Liang - Pareto Agent: Yeah, yes.
+Evan Liang - Pareto Agent: But I'm trying to think about how to visually, like, show it better.
+Evan Liang - Pareto Agent: There's like just two routes and everything ends up at the account.
+Evan Liang - Pareto Agent: But see the organization level that then breaks it down into the different accounts and you click into one of those accounts, it goes to that account page that is then further broken up at a stage is that we should spend some time to sketch it out today.
+Evan Liang - Pareto Agent: There's like multiple paths.
+Evan Liang - Pareto Agent: Yes, there are multiple paths now.
+Evan Liang - Pareto Agent: Yeah, yeah.
+Evan Liang - Pareto Agent: Any feedback or.
+Evan Liang - Pareto Agent: No, I. I like.
+Evan Liang - Pareto Agent: Sorry, where is the zoom?
+Evan Liang - Pareto Agent: I like your.
+Evan Liang - Pareto Agent: Your.
+Evan Liang - Pareto Agent: Your account dashboard page is actually really simple.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: And then coming through the dashboarding page because it'll naturally constrain it.
+Evan Liang - Pareto Agent: Well, it'll actually naturally constrain itself anyway because you would really only be looking at in quarter companies that you would send this to.
+Evan Liang - Pareto Agent: Maybe.
+Evan Liang - Pareto Agent: Maybe a few from later quarters.
+Evan Liang - Pareto Agent: I think that will.
+Evan Liang - Pareto Agent: No, I think like my quick glance is.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: This is when someone just looks at it, this is what they would want to see.
+Evan Liang - Pareto Agent: It's like where are my accounts?
+Evan Liang - Pareto Agent: How close are they to renewal at this stage?
+Evan Liang - Pareto Agent: And what have they done?
+Evan Liang - Pareto Agent: It may be good to like.
+Evan Liang - Pareto Agent: Like one of the things that I had Claude do is when you click the column header like for example Engagement, you can.
+Evan Liang - Pareto Agent: It's sort of.
+Evan Liang - Pareto Agent: You can sort it.
+Evan Liang - Pareto Agent: Or for something like Engagement, it could be a.
+Evan Liang - Pareto Agent: A checkbox list.
+Evan Liang - Pareto Agent: So if I could I share real quick.
+Evan Liang - Pareto Agent: Yeah, I just thought Claude did it really cleanly.
+Evan Liang - Pareto Agent: Well actually that may be the one thing in the dashboard view.
+Evan Liang - Pareto Agent: Oh, you show.
+Evan Liang - Pareto Agent: Okay.
+Evan Liang - Pareto Agent: So like when you click these, it sorts by this and then we click action plan.
+Evan Liang - Pareto Agent: You just have a.
+Evan Liang - Pareto Agent: You can choose which ones you're seeing.
+Evan Liang - Pareto Agent: So if you only want to see the tier upgrades, you can unclick those.
+Evan Liang - Pareto Agent: And now these are only the tier upgrade ones.
+Evan Liang - Pareto Agent: And this is in a.
+Evan Liang - Pareto Agent: What's this thing called?
+Evan Liang - Pareto Agent: A layover or it's a pop up.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: So I think that that's where we'll have to unify the UI as to like there's two things on yours is one, you have different stages.
+Evan Liang - Pareto Agent: Do we provide a funnel on the different stages at the top.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: Just to be consistent across all the different things from what type of stages you had engaged.
+Evan Liang - Pareto Agent: I have renews last activity Engage.
+Evan Liang - Pareto Agent: Yes.
+Evan Liang - Pareto Agent: So do you actually break it clustered by those three?
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: So at the top level before you do that, is that one way of controlling it?
+Evan Liang - Pareto Agent: And then the second question is when you click into it, is it a pop up that shows up like what's the.
+Evan Liang - Pareto Agent: The UI should be the same across the different dashboarding.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: So there should be something similar.
+Evan Liang - Pareto Agent: Yes, this is how I was so Dashboard, you have the overall breakdown and here's where.
+Evan Liang - Pareto Agent: Here are the each stages.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: And then if you click into the stage, you get a dashboard of that stage, so of the qualified stage of the hour, stage, proposal, buyer, engagement.
+Evan Liang - Pareto Agent: Then if you click into the individual account for each of these stages, it goes to the same account level.
+Evan Liang - Pareto Agent: Dashboard.
+Evan Liang - Pareto Agent: The same dashboard, exactly.
+Evan Liang - Pareto Agent: So if it's the account is Uber, if I made Uber here, over here, then it all goes down to this and this is Uber overall.
+Evan Liang - Pareto Agent: And then you have that little timeline, like where is Uber count at?
+Evan Liang - Pareto Agent: Is that qualified stage?
+Evan Liang - Pareto Agent: Is that the outreach stage?
+Evan Liang - Pareto Agent: Is that the oral stage, etc?
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: Then when you click into that, then it's the account level view of what this stage set right now.
+Evan Liang - Pareto Agent: Okay, wait, what?
+Evan Liang - Pareto Agent: I don't get the last part.
+Evan Liang - Pareto Agent: So, so your, your buyer engagement stage.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: What you showed us is this.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: It would sit here.
+Evan Liang - Pareto Agent: Oh, does that make sense?
+Evan Liang - Pareto Agent: But it only goes there like depending which part of the process there is.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: But you can see them all.
+Evan Liang - Pareto Agent: Like you, if you're at proposal, you can click into qualified to see what happened.
+Evan Liang - Pareto Agent: But if you're not, if you're proposing, you're not our engagement, there's nothing there.
+Evan Liang - Pareto Agent: It's just like, it's like grayed out.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: You get there, which replace it.
+Evan Liang - Pareto Agent: Yeah, makes sense.
+Evan Liang - Pareto Agent: So that's, that's what we're like.
+Evan Liang - Pareto Agent: This is the truth level thing.
+Evan Liang - Pareto Agent: And so it's always saying you build this and this always links in and then PARF is going to build all the different things around it and you can like focus on the outreach, right?
+Evan Liang - Pareto Agent: Yeah, but you're going to get qualified proposals.
+Evan Liang - Pareto Agent: So a lot of, actually a lot of Aaron's stuff will end up here that he was building and that's where we start unifying across it.
+Evan Liang - Pareto Agent: Yeah, we think this is a way.
+Evan Liang - Pareto Agent: And so for the, the manager, he can come up here, he can go down through this, see what's going on.
+Evan Liang - Pareto Agent: He wants to go to an account, he also see the full detail of the account.
+Evan Liang - Pareto Agent: So this is actually kind of drives the, this is the primary interface for the account manager lead.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: And then meanwhile all the automations.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: Are, are, are happening and clicked off here for each of these.
+Evan Liang - Pareto Agent: And the reason this overall thing, this is sort of like a CRM.
+Evan Liang - Pareto Agent: This is what a CRM moves people around.
+Evan Liang - Pareto Agent: The big difference in a CRM, it's people that move everything and it's people that are doing everything.
+Evan Liang - Pareto Agent: You don't have visibility into the people, what they're doing and how they're doing unless they methodically update everything.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: And things move here based on the automations like there's no person coming here moving something from qualified to go if the agents complete their tasks and allow us to move things around.
+Evan Liang - Pareto Agent: And that's very, very important because that's the flaw in a CRM is the CRM requires a person to do it and people don't.
+Evan Liang - Pareto Agent: So what ends up happening is most sales reps will enter a deal like a new business deal and they'll just do a whole bunch of work in the other world and then.
+Evan Liang - Pareto Agent: Oh yeah, when it's about to close they'll like update the deal and put in information so they can.
+Evan Liang - Pareto Agent: So all this information is just like it's garbage in the middle.
+Evan Liang - Pareto Agent: And so that's why we're saying a value proposition for the the renewals leader is oh my God, you can actually pull up any deal and see exactly what's happening.
+Evan Liang - Pareto Agent: That's something they do not have today.
+Evan Liang - Pareto Agent: So what they do is they constantly be with the reps and the reps have to like explain to them where it is.
+Evan Liang - Pareto Agent: For actually implementing this.
+Evan Liang - Pareto Agent: We might want to each make a copy of our current dashboards just so we can like play with changes while you're integrating everything.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: Can also have each of our quads.
+Evan Liang - Pareto Agent: Right.
+Evan Liang - Pareto Agent: Like a integration markdown file just with you know, what is necessary, what isn't or like have it just point to, you know, the, the connections and what buttons are required in that.
+Evan Liang - Pareto Agent: And so then when you run your agent to combine everything it can just read those and very quickly understand, you know, we need those files.
+Evan Liang - Pareto Agent: We don't need those files.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: So the way I envision the integration on the over parking dashboard is first like me, step by step.
+Evan Liang - Pareto Agent: Step one is going to be.
+Evan Liang - Pareto Agent: It's gonna, I'm gonna create the fake.
+Evan Liang - Pareto Agent: So I'm gonna create a fake dashboard and number two is like you guys save all your works.
+Evan Liang - Pareto Agent: Like we have, we still have, we have always have frozen the point where before the great migration happens.
+Evan Liang - Pareto Agent: So let's say we can always go back to this and then we can try again another time.
+Evan Liang - Pareto Agent: And then the third point is that we have to detach the your dashboards from your functionalities or your agents.
+Evan Liang - Pareto Agent: And then so I mean that's what you said by your files or how that works is like you got to detach and give me just a functionality so I can then direct.
+Evan Liang - Pareto Agent: Now direct this dashboard and your codes to come together.
+Evan Liang - Pareto Agent: And you say it's not going to be as simple as that.
+Evan Liang - Pareto Agent: So that's going to take like.
+Evan Liang - Pareto Agent: Okay, we will do.
+Evan Liang - Pareto Agent: We'll do one by one.
+Evan Liang - Pareto Agent: So we'll figure out.
+Evan Liang - Pareto Agent: Okay.
+Evan Liang - Pareto Agent: Qualification.
+Evan Liang - Pareto Agent: Okay, are the signals coming in?
+Evan Liang - Pareto Agent: Are they live?
+Evan Liang - Pareto Agent: Are they working well and I'm not sure how you're doing an mcp.
+Evan Liang - Pareto Agent: Are you doing a fake data?
+Evan Liang - Pareto Agent: Are you doing the pointer?
+Evan Liang - Pareto Agent: Let me know how that works for outreach.
+Evan Liang - Pareto Agent: Is okay.
+Evan Liang - Pareto Agent: Is.
+Evan Liang - Pareto Agent: Is my generation model coming up with those sample.
+Evan Liang - Pareto Agent: Sample emails?
+Evan Liang - Pareto Agent: Is it all that stuff?
+Evan Liang - Pareto Agent: So this is the plan I have for now.
+Evan Liang - Pareto Agent: The question is like, what at which stage are you guys at in terms of functionality?
+Evan Liang - Pareto Agent: Like would you say like it's like working if some of your data comes to life with your systems, you work and then yours is the most.
+Evan Liang - Pareto Agent: Your dashboard.
+Evan Liang - Pareto Agent: So yours should be fine.
+Evan Liang - Pareto Agent: Your slides are being generated so it should be okay.
+Evan Liang - Pareto Agent: How's the data ingestion going?
+Evan Liang - Pareto Agent: Normalization.
+Evan Liang - Pareto Agent: So we.
+Evan Liang - Pareto Agent: There are two ways we can run it.
+Evan Liang - Pareto Agent: Like it currently is set up to there's a dog.
+Evan Liang - Pareto Agent: It's.
+Evan Liang - Pareto Agent: Where are they coming from?
+Evan Liang - Pareto Agent: Is there are people.
+Evan Liang - Pareto Agent: I'm not sure what the rules are about DEP heads in here, but I think people are just going to assume they can bring their dogs in.
+Evan Liang - Pareto Agent: That's all.
+Evan Liang - Pareto Agent: Otherwise, I mean there's insurance building insurance issues.
+Evan Liang - Pareto Agent: So we got that request that leaned out all the time and we looked it up and the lease specifically forbade us.
+Evan Liang - Pareto Agent: Sorry.
+Evan Liang - Pareto Agent: Yes, sorry.
+Evan Liang - Pareto Agent: So it currently is set up so it can take in the real data and the fake data.
+Evan Liang - Pareto Agent: The problem with like I could have it where it just says simplify that whole thing for the integration and just take in the real data.
+Evan Liang - Pareto Agent: But the real data, like isn't as nice because we don't have like every category a bunch of things.
+Evan Liang - Pareto Agent: Whereas in the fake data everything's very even.
+Evan Liang - Pareto Agent: So we can actually test a whole bunch of things.
+Evan Liang - Pareto Agent: So I might just have it for now in the markdown file that I passed to you just use the fake data pipeline and stuff.
+Evan Liang - Pareto Agent: And it was.
+Evan Liang - Pareto Agent: It would be really easy to reintegrate the real data because that's just like what feeds into the whole thing.
+Evan Liang - Pareto Agent: Shouldn't we do not have the like security or anything?
+Evan Liang - Pareto Agent: Yeah, yeah, sure.
+Evan Liang - Pareto Agent: Not.
+Evan Liang - Pareto Agent: Yeah, I think that's the bigger.
+Evan Liang - Pareto Agent: Well, but I mean everything gets pulled.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: When you call.
+Evan Liang - Pareto Agent: Which would also just make.
+Evan Liang - Pareto Agent: I mean for now, for now it's easier to use fake data because you can see the gaps and of your design and everything of that sort.
+Evan Liang - Pareto Agent: Because if you use real data, the gaps are going to be the data gaps and you're going to spend all day being like, oh, I got to go fix the.
+Evan Liang - Pareto Agent: The data gaps without actually understanding the insights of it.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: So I'll extract the fake data layer for you to just.
+Evan Liang - Pareto Agent: Okay.
+Evan Liang - Pareto Agent: So, yeah.
+Evan Liang - Pareto Agent: So I think other thing is hopefully for this afternoon standup, let's also look at the.
+Evan Liang - Pareto Agent: The.
+Evan Liang - Pareto Agent: The competitive stuff I. I had you guys do because that will help you also design your dashboards as well as your account page.
+Evan Liang - Pareto Agent: I just want to see if that exercise was helpful as well.
+Evan Liang - Pareto Agent: It was like I said really quickly, just off the top of my head, I was like, oh, yeah, there is like a competitor in each.
+Evan Liang - Pareto Agent: For example, the one I sent you, Ice Spot.
+Evan Liang - Pareto Agent: The.
+Evan Liang - Pareto Agent: Then it turned on my Apple Music.
+Evan Liang - Pareto Agent: Going to get rid of that.
+Evan Liang - Pareto Agent: I was like, is that a new ringtone that they can.
+Evan Liang - Pareto Agent: I was like, what the.
+Evan Liang - Pareto Agent: So, yeah, so let's look through that.
+Evan Liang - Pareto Agent: So for example, yours.
+Evan Liang - Pareto Agent: I Actually, the company I thought of was ancillary.
+Evan Liang - Pareto Agent: I didn't realize they actually built a buyer engagement module, which they.
+Evan Liang - Pareto Agent: So you're.
+Evan Liang - Pareto Agent: That company now has built something even more relevant for you.
+Evan Liang - Pareto Agent: I'm not worried.
+Evan Liang - Pareto Agent: But it's called High sp.
+Evan Liang - Pareto Agent: Oh.
+Evan Liang - Pareto Agent: So on the intern.
+Evan Liang - Pareto Agent: On the intern sheet, I have the.
+Evan Liang - Pareto Agent: The company that is in sales and engagement space.
+Evan Liang - Pareto Agent: Enablement space called High Spot.
+Evan Liang - Pareto Agent: Yeah.
+Evan Liang - Pareto Agent: And so they're very on the seller side, but they built a module for buyer engagement.
+Evan Liang - Pareto Agent: So you can actually literally see someone who tried to do it from a very different perspective.
+Evan Liang - Pareto Agent: So.
+Evan Liang - Pareto Agent: Okay, cool.
+Evan Liang - Pareto Agent: But I think this is.
+Evan Liang - Pareto Agent: This is exciting.
+Evan Liang - Pareto Agent: Moving fast.
+Evan Liang - Pareto Agent: Yeah, yeah, yeah, yeah.
+Evan Liang - Pareto Agent: And this is.
+Evan Liang - Pareto Agent: I kind of knew that we had to do this, but it was more helpful to see it like seeing your individual modules help me is.
+Evan Liang - Pareto Agent: Is it makes it easier to envision this and think through the stages.
+Evan Liang - Pareto Agent: So.
+Evan Liang - Pareto Agent: Cool.
+Evan Liang - Pareto Agent: Awesome.
+Evan Liang - Pareto Agent: Nice.
+Evan Liang - Pareto Agent: All right.
+Evan Liang - Pareto Agent: Moment of pure theme.

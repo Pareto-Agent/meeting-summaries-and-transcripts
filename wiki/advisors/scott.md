@@ -1,6 +1,6 @@
 # Scott
 **Background:** Account management leader; well-organized, sophisticated renewal process. (Last name not yet captured.)
-**Last contact:** 2026-06-19 (feedback referenced in standup)
+**Last contact:** 2026-06-22 (feedback referenced in standup)
 
 ## Relationship Summary
 Design partner / early advisor. Has given product feedback on the admin dashboard and participated in a prior demo. Evan uses Scott as a validation reference for product direction.
@@ -11,6 +11,10 @@ Design partner / early advisor. Has given product feedback on the admin dashboar
 - Requested simplified dropdowns on admin dashboard (implemented)
 - Key pain point: "buyers go dark" — Scott knows his accounts well but loses track of buyer engagement mid-process
 - Response to buyer hub concept: interested in visibility into buyer engagement (who opens, who it's shared with)
+
+### 2026-06-22 — Team Standup (Scott's prior feedback referenced by the team)
+- Suggested an **NRR waterfall chart** for the renewal-plan view (NRR at top, then subtracting churn / adding upsell). Team noted the up-then-down-then-up ordering is confusing and is exploring grouping the "down" movements together.
+- General visual feedback being incorporated into a cleaner per-account plan layout.
 
 ## Open Commitments
 <!-- None recorded yet -->

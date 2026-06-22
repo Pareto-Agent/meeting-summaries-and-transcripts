@@ -6,10 +6,13 @@
 Upcoming design partner / advisor. Evan describes him as friendly but potentially critical. Demo is an opportunity to validate the renewal stages and visibility value proposition.
 
 ## Feedback Log
-<!-- No feedback yet — first call on 2026-06-25 -->
+<!-- First scheduled call is 2026-06-25; items below are prior feedback recalled by the team in earlier meetings -->
+### Prior calls (recalled in 2026-06-22 standup)
+- Does **not** want to go in and configure their own agents — "you tell us how our voice is through analysis." Drove the decision to have the forward-deployed engineer (not the customer) do voice/agent onboarding.
+- Said getting **full visibility into his deals** was one of the things he was most looking forward to — reinforces the unified-dashboard direction.
 
 ## Open Commitments
-- [ ] Pareto Agent team to demo individual modules and overall hypothesis to AJ on 2026-06-25
+- [ ] Pareto Agent team to demo individual modules and overall hypothesis to AJ on 2026-06-25 — now also aiming to demo the new unified dashboard (AJ had said full visibility into his deals was a key thing he was looking forward to)
 - [ ] Evan to set overall context and lead the AJ session; team members to demo individual modules
 
 ## Key Signals
