@@ -51,3 +51,10 @@
 - fireflies-id: 01KVRY3SMMBFK45TWH9AW5GFFF
 - Pages updated: none
 - Summary: Cooper's solo recording of the **evening** standup above (01KVGJHWTACHX74Q4WV7TRQ44P) — same date (17:30), duration (~38.7 min) and content; not a duplicate of the morning standup as an automated run had logged. Logged to prevent reprocessing; no separate updates and no separate transcript archived.
+
+## 2026-06-23 — Pitch Contest
+- fireflies-id: 01KVEPX2QGS6XE0T92RP8NRZSY
+- Pages updated: wiki/people/cooper-tenney.md, wiki/people/evan-liang.md, wiki/people/dean-liang.md, wiki/people/parth-godarajesh.md, wiki/people/aaron-rose.md, wiki/people/juliet-lo.md (new), wiki/people/h-fong.md (new)
+- Transcript: transcripts/2026-06-23-pitch-contest.txt
+- Note: This is the "sales pitch instead of standup" session referenced in the 06-22 evening standup. Format: 30-sec elevator + 5-min pitch, order by spin wheel (Cooper → Parth → Dean → Aaron; Juliet Lo and H. Fong were remote and set to go after but the recording ended before their turns). Parth gave his pitch using his own AI-generated slides instead of the shared team deck; plans to redo.
+- Summary: Internal pitch-practice session (~39 min); all four in-room team members pitched Pareto Agent; introduced two new remote team members (Juliet Lo, H. Fong) whose pitches were not captured before the recording ended.

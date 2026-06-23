@@ -8,6 +8,8 @@ Auto-maintained from meeting transcripts. See `CLAUDE.md` for conventions.
 - [Aaron Rose](people/aaron-rose.md)
 - [Dean Liang](people/dean-liang.md)
 - [Parth Godarajesh](people/parth-godarajesh.md)
+- [Juliet Lo](people/juliet-lo.md)
+- [H. Fong](people/h-fong.md)
 
 ## Advisors
 - [Scott](advisors/scott.md)

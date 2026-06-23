@@ -1,6 +1,6 @@
 # Evan Liang
 **Role:** Co-founder / CEO, Pareto Agent (standup leader, product strategy)
-**Last updated:** 2026-06-22
+**Last updated:** 2026-06-23
 
 ## Current Focus
 Leading product strategy and overall agent architecture. Drove the 2026-06-22 pivot to a single unified dashboard + centralized account page for the [Renewal Platform](../projects/renewal-platform.md). Coordinating external advisor calls and customer research.
@@ -31,4 +31,5 @@ Leading product strategy and overall agent architecture. Drove the 2026-06-22 pi
 - **Next-week goal:** maintain momentum and keep iterating fast, but start coordinating more — may change/innovate on processes to do so.
 - **Availability:** told the team he's always reachable and will typically respond within 1–2 hours; wants to make sure no one is blocked.
 - **2026-06-22 standup (evening):** Executed the first merge — stitched all four builds into one working Combined Dashboard ("DD"/"Daddy Dashboard"/"Frankenstein"); his agents (outreach, language, champion models) run live against the API, though the merged UI is ~35–40% there. Laid out the git-branch collaboration model (pull `main`, generate a diff to push individual work in, then decentralized commit/push with GitHub resolving conflicts; "I don't hold the master — it's in GitHub"). Cited an information-systems degree while diagramming the branch flow. Acknowledged a future break point where shared data would force a harder rework, and endorsed the parallel clean-sheet rebuild.
+- **2026-06-23 Pitch Contest:** Organized and facilitated an internal pitch contest (30-sec elevator + 5-min sales pitch, order by spin wheel) for the full team including remote participants Juliet Lo and H. Fong. This is the "sales pitch instead of standup" day referenced in the 06-22 evening standup.
 - **2026-06-22 standup:** Pitched the unified dashboard vision (single dashboard across the book of business + centralized account page); proposed a cross-functional split (Parth on the dashboard piece, Cooper on the account page). Argued the agentic CRM needs far less manual input than Salesforce-style CRMs because automations move deals between stages. Held a stance (while calling it a "fair risk factor") that the product should not be designed assuming a human AM in the loop — the forward-deployed engineer is the human who onboards/tunes. Floated once-a-day weekend standups (~1pm, opt-in).

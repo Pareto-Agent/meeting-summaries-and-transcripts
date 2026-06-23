@@ -1,6 +1,6 @@
 # Cooper Tenney
 **Role:** Co-founder / Team Member, Pareto Agent
-**Last updated:** 2026-06-22
+**Last updated:** 2026-06-23
 
 ## Current Focus
 Buyer hub module: tracking how buyers engage with renewal materials, identifying who else gets involved in the buying process (CFO, procurement, etc.), and gathering engagement signals for the AM leader. As of the 2026-06-22 evening standup, **leading the centralized account-page integration** for the merged Combined Dashboard.
@@ -27,4 +27,5 @@ Owning the **account page** within the new unified dashboard (per Evan's propose
 - **2026-06-22 standup:** Added column-header sort and a checkbox filter popover to the dashboard (e.g. filter to only tier-upgrade accounts) — built cleanly with Claude. Proposed the migration approach of each person copying their current dashboard and writing integration markdown files so the centralizing agent can quickly tell which files/connections are needed.
 - **2026-06-22 standup (evening):** Demoed his account page (buyer-evaluation stage). Argued repeatedly that per-module folder separation is workable — a module can read/call data from another folder when needed — and that the team was over-complicating the merge. Endorsed the git-branch workflow and pushed to merge now ("I'm ready... it opens up more opportunities and doesn't take away"). Supported the parallel clean-sheet idea and suggested Dean draft the combined spec since he "has the best vision."
 - **Competitor to study (Evan, 2026-06-22):** **High Spot** — a seller-side sales-enablement company that has built a buyer-engagement module — flagged as a relevant reference for the buyer hub (see [Renewal Platform](../projects/renewal-platform.md) competitive notes).
+- **2026-06-23 Pitch Contest:** Went first (order determined by spin wheel). Gave a 30-sec elevator + 5-min sales pitch — ran over the elevator-pitch limit ("I'm running one minute" — Parth). This is the "sales pitch instead of standup" session referenced in the 06-22 evening standup.
 - Email: ctenney@paretoagent.ai

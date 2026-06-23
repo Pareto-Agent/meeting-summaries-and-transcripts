@@ -1,0 +1,223 @@
+Pitch Contest
+Date: 2026-06-23
+Fireflies ID: 01KVEPX2QGS6XE0T92RP8NRZSY
+Duration: ~39 min
+Participants: Cooper Tenney, Evan Liang, Dean Liang, Parth Godarajesh, Aaron Rose, Juliet Lo, H. Fong (hfong@paretoagent.ai)
+
+--- Reconstructed Transcript ---
+
+Cooper Tenney: Time. No pressure.
+
+Evan Liang - Pareto Agent: Hey, well, let me kind of get off.
+
+Parth Goda: Remote thing isn't going to work. So it's not wearing.
+
+Cooper Tenney: What we do know is that that room, the TV does work in there. If we did one it.
+
+Juliet Lo: I hear no sound. I don't know if that's just me or no one's talking. Yeah, there's no sound coming through.
+
+Parth Goda: And do that. So.
+
+Evan Liang - Pareto Agent: Hey, Juliet. We were.
+
+Cooper Tenney: We.
+
+Evan Liang - Pareto Agent: We knew we couldn't hear you in audio because we're trying to figure out who is going to go first because we want speaker to go so everything works. We're just trying to figure out.
+
+Cooper Tenney: So no problem. Spin.
+
+Evan Liang - Pareto Agent: Okay.
+
+Parth Goda: Spinning wheel.
+
+Evan Liang - Pareto Agent: Spinning it is going to first Cooper. There we go. Excellent. Cooper is going to go first so you can go ahead and join your computer audio and everything. So I will leave.
+
+Dean Liang: I in my.
+
+Cooper Tenney: Mouth so I can.
+
+Evan Liang - Pareto Agent: Sort of.
+
+Cooper Tenney: He's in the bathroom. You want me to share the slides? Yeah.
+
+Evan Liang - Pareto Agent: So I think yeah. So we spun the wheel. Er. Cooper's going first.
+
+Cooper Tenney: Okay. I forget how to share just a tab on this. So just going to show this. Can everyone see this kind of. There we go. Never seen those slides.
+
+Evan Liang - Pareto Agent: Cooper's going first. So. And then what we'll do is when you go turn on, keep audio off until it's your turn. Then when it's your turn, turn audio on so that. Yeah, yeah, we're good. So again the. The format is the first. We'll do a 30 second elevator pitch and then five minutes for the. You're gonna time it. Okay, five minutes for the sales pitch. So yeah, the first question for Cooper is just like. Yeah, tell me what Pareto agent does.
+
+Cooper Tenney: Yeah. So welcome. So what is Pareto agent? Let's start with the problem. Problem is that B2B sales is focused on the. It's divided into 20% of big accounts that the sales reps are able to focus on. And then 80% of the bottom accounts, sales reps just don't have the time or the bandwidth to deal with. And so what does that mean? That means that those accounts just aren't getting the attention they deserve. And so we are building the first autonomous B2B sales end to end renewals agent that deals with the long tail of renewals so that your sales reps can focus on the large accounts while still giving this white glove service to the bottom 80% of accounts that allows for millions of dollars in recurring revenue to stay within the business and not just walk out the door every single year. Cool. Cool works. God. Should I go into the five minute Pitch.
+
+Parth Goda: Yep.
+
+Cooper Tenney: Okay, let me restart. All right. Welcome to Pareto Agent. Hit your number. Do more with. Look at. I'm not going to read that. All right, so how do we, how do we increase our growth? Right. It's in the world of AI and consolidated stacks and budget cuts because AI is the prominent software spending. That means that software companies are spending less on their software service or companies are spending less on software services. And so the biggest lever that we have is to retain our companies. And that's how we increase our revenue growth. So we're going to start with the 8020 rule. So what is the 8020 rule? That means that the top 20% of accounts are dedicated, are full of dedicated account managers, While the bottom 80% of accounts just don't get any attention. They're neglected, which leads to bleeding revenue every single year. And let's.
+
+Aaron Rose: Oh, let me keep talking about that.
+
+Cooper Tenney: It bleeds revenue in four ways. So what are the four ways? Oh, actually it's on this slide. Sorry, I forgot. Preventable churn. There are signals that our agent can. There are signals that our reps are missing. Your reps are missing just because they're not looking at the accounts. They're missing expansion opportunities because the usage data shows that these companies are ready to expand. But no rep is even noticing it. They're mispricing their contracts. So let's say there's two accounts worth $20,000 in ARR, but one account has five to five usages per week and the other account has 50. Like uses it 50 times per week but they're charging the same price. That makes no sense. So the agent will understand that, okay, we need to up their pricing. And if you move them to just the next tier, you're getting an extra $10,000 of ARR. And then finally rep variance. Let's say your top rep is closing deals at 98% and your median rep is closing it at 75%. You're getting a 25% delta in your closing. And so on. A $5 million in long tail ARR, that's over a million dollars you're letting walk out the door. So what would you do if you could capture 5 to 10 points of extra revenue growth without adding hand count, budget and ramp time? Introducing Pareto Agent, the world's first autonomous B2B renewals agent. It goes end to end through the pipeline focused on your long tailed renewals, delivering white glove service without human ever in the loop. Your reps are free to focus on the top 20% of accounts that actually matter while your agent handles the bottom 80% and still delivers them that same white glove service. It works along your existing team and merges seamlessly with your existing accounts. And what differentiates us? Well, our team has go to market expertise and our forward deployed engineers will embed with your team to ensure that your deals are closed exactly as you wish. And the best part about it is that the agent is like a little kid. It will start and it'll understand the fundamentals, but every day it grows up and gets a little bit better. And by the end it's a fully formed adult and it is closing deals like never before. So why us? We offer outcomes based pricing at a tenth of the cost. You don't have to hire a sales rep for 150 grand and you never even have to ramp them up. Our agent is ready in weeks and it scales infinitely. You can cover hundreds of account with no extra headcount. Yeah, many ways to start with Pareto, you can target your underutilized accounts, you can carve out a book of business or you can replace attrition naturally without growing headcount ever. Yeah, just same same thing I just said. We're, we're operational in weeks and our agent will be ready for your business before it even goes live. Thank you.
+
+Juliet Lo: Nice elevator.
+
+Parth Goda: Was one minute.
+
+Aaron Rose: Oh, it's long.
+
+Cooper Tenney: Sorry. Who goes next?
+
+Parth Goda: And then on camera and then share screen. Hello?
+
+Cooper Tenney: Yeah, I think we can hear you. No, no.
+
+Parth Goda: Yeah, I'm trying to figure out this. Okay, there you go.
+
+Evan Liang - Pareto Agent: So, yeah, what does, what does Pareto agent do?
+
+Parth Goda: I come from a lot of years of experience in SaaS and sales. And what I've understood is salespeople just love walking away from money, which is contrary Interactive. But that's what's happening when we look at renewals every year. What happens is sales guys just don't have the time to look at the smaller accounts and really focus on the. Bigger accounts that require a lot of attention. And this is what Pareto Agents does. It comes in, it soups up this account, it understands what's going on, it reaches out to them when appropriately to the right person, it talks in the way that the company wants to sound. Like it sends them a perfectly branded proposal deck or a quotation, wraps it all up in this beautiful gift and gives to the sales manager to just. Go out and knock you out of the park. That's exactly what Pareto Agent does. And it helps you uplift your revenue and automate the tiny parts of the. Accounts that you have not been paying attention to thank you. It's difficult to do it in 30 seconds. Actually, I've tried. That was good. Imagine doing that in 30 seconds. What does Pearl do? Nothing. Thank you. Have a great day. Let's do the five minute version. All right, Let me know when I can start. I think you just stop. So, yeah, my name is Part and I come from a few years of experience in the sales and B2B space. And with all my time here, I've recognized a big gap in the day. To day of, of sas. And, and what's specifically, it's renewals, where. People are literally walking away from money. So what we have done is we've built an AI agent that really focuses on this. So let me start with a little. Bit of background and what the problem is. Hello. Okay. So in any sales manager's revenue pipeline, there's a leak, there's money just flowing up. And that is a leak that's kind of hidden like, like carbon monoxide. Nobody can smell it. And that's because it's, it's something that's so obvious and the most under tooled people not focusing on it. There's three reasons why renewals is under tool and it's also one of these silent killers. First of all, it's too late. The reps and the sales people work on their own timelines and the buyers have their own timelines. And this, they don't match up together. Secondly is by the time the salesperson wakes up, it's already too late. The person you're supposed to talk to has left the chat. They have to go and find someone else. And that's already, they already behind on schedule. And the last thing is because it's so much of a rush and frenzy, the branding and the tone is not always on point or it's just a very canned, hey, you want to renew? That's not what they're looking for. They're looking for a little bit more attention. So why is attention a big gap in a renewal cycle? Because sales reps, they have like all of us, a little bit of, not a little bit of time in the. Day, just 24 hours. We all have 24 hours. And within these 24 hours, over a year or a quarter, we can't do everything. And a sales rep can't monitor each. Account to adapt and understand what's going on. They can't figure out and understand where all the champions have gone or not gone. They don't have the time to put all this together and come up with an email that's in line with the branding, in line with what is the situation like. And do this for every single account. They probably want to do it for their biggest accounts. So this is. Let me show you what that means. So they will probably focus on the 80. Oh, this slide is definitely an issue. They probably only focus on the 20% of accounts that bring in most of the revenue and Forget about the 80%. Of accounts that are kind of more day to day. So this is where Pareto agent comes in. It is the agent that sits on top of all of your data. It monitors every signal, keeps the context of what's going on and prepares itself. For when renewal is going to occur. It doesn't wait till it's too late at the 12th hour. It builds its own timelines. It triggers at either the 90 days, 120 days, whatever your relationship with that client is, it catches any red flags early and puts that into its branding and messaging and writes in the voice. That the company wants to use when it's talking to its clients. So. There's also the idea of, oh, what if we just give the entire book to the agent? Will it just go crazy? No, it will automate on the accounts that have the easiest renewal. It has the flatness. And it will also give some level. Of control to the rep if they want to. And when there are those red flags that require some escalation, like finding a new champion or coming up with a. Instead of a proposal or slight deck, coming up with a phone call or something, it does escalate when required to. So the outcome that we expect from PR agent is, of course, all the accounts will be engaged now in the entire book will hopefully be more on target. And also, last thing is, we will give back drs their time to focus. On the bigger accounts. So I feel like we will. Will help any company uplift their GDR by, I don't know, a few points there. And some of the slides that make sense. And the last thing is, the call to action is give us. Give us small part of your books and we'll prove to you. And then we prove to you why. We can take over the entire book. Thank you so much.
+
+Cooper Tenney: All right,.
+
+Parth Goda: I should stop sharing.
+
+Cooper Tenney: Oh, hopefully that's all good. Hold on, I have this part. Really?
+
+Dean Liang: Just made his own slides, huh?
+
+Evan Liang - Pareto Agent: What?
+
+Cooper Tenney: You really just went ahead and made your own slides? Had to be a bit extra.
+
+Dean Liang: Sorry, Claude.
+
+Cooper Tenney: Made your own slides.
+
+Parth Goda: Made everybody's slides.
+
+Evan Liang - Pareto Agent: Okay, I think you're all set. Do you want to try sharing just in case?
+
+Cooper Tenney: Good point. There we go, there's the AI generated man.
+
+Dean Liang: No, no part that we, we were.
+
+Evan Liang - Pareto Agent: All given the slide deck to like present this one.
+
+Parth Goda: Oh, present this one. I know that.
+
+Evan Liang - Pareto Agent: We talk about this multiple times.
+
+Parth Goda: I'm so sorry guys.
+
+Dean Liang: That's why we were all talking about.
+
+Evan Liang - Pareto Agent: You making your own slides.
+
+Dean Liang: You're like, oh, okay.
+
+Parth Goda: Oh, I can improve this. Let me go again. Oh, so embarrassing.
+
+Cooper Tenney: Let's go.
+
+Evan Liang - Pareto Agent: What does Parader Asia do?
+
+Parth Goda: Elevator pitch.
+
+Dean Liang: Yeah. So every year companies sell hundreds of billions of dollars worth of software through a subscription model to various clients. And every year or two, those clients have to decide whether to renew or not. Now for those bigger accounts, they typically get this kind of white glove service. They have a dedicated sales rep that walks them through the process. But as companies sell to thousands of clients, they don't have the time to service each one. So those other companies that are typically that 80% of smaller accounts typically just get an automated email that causes them to either not renew or causes them to underpay. What Pareto Agent is, is it uses AI to help deliver that personalized fuel to the rest of those accounts, making it so that they feel personal, a personalized touc and they stay with you or they increase how much they're buying from you. This allows you to increase your revenue without having to hire a whole lot more employees.
+
+Cooper Tenney: I don't know where it's all going. Oh, cool. Can I get rid of this window?
+
+Parth Goda: Okay, cool.
+
+Cooper Tenney: That's a short time. Sounds good. Ready?
+
+Dean Liang: Hi, my name is Dean and today I'm going to sell to you Pareto Agent, a method of increasing revenue bought through a renewals agent and really focusing on that segment of your business as a lever to grow. Now the current reality is that in the world of AI disruption and tech stack consolidation, instead of moving towards new customers, there's been an increasing focus on finding growth with the accounts that you currently have have. And that's why we feel like it's very important to focus on these renewal cycles to really figure out how can you lever growth within your current account book. Now, especially as companies get bigger and bigger, most renewal cycle typically follow this kind of 8020 rule where they give that sort of personalized field to those top 20% of accounts. But as companies grow and as they get more and more clients, they don't have the bandwidth to spread around to the other accounts. And what we typically find is there is a bottom 80% of accounts where within the S and P or mid market segment that typically start moving into this automation category that is less personalized but more efficient, leading to this trade off of results for efficiency. Now why are you trading off results? Well, because as you move into this automation, what you find is that you leave significant money off the table. You run into issues of preventable churn, you run into issues of missed expansion opportunity opportunities, and you run into issues of both pricing missteps and just everyday rep variants. Now what if you could capture those five to 10 points of hidden growth by closing that coverage gap without adding headcount, budget and ramp time? That's where Pareto Agent comes into Play. The autonomous B2B renewals agent. Pareto gives you that end to end optimization, intelligently driving your full renewals process with still that personalized touch without needing a human in the loop, freeing up your team to focus on those high value accounts while Pareto effectively handles the rest. It's designed to work seamlessly alongside your existing account team, operating under the sales leader and working side by side with your CSM and your support agent. Now what makes Parano different is that we combine textbook industry standards of GTM experience with process engineering, using our forward deployed engineers to train agents on your deal history, customer signals and rep behaviors. And as agents process more and more deals, they learn about your business context and improve on their own. So what does this look like in levels? Well, on the first level we have that foundational standard where we train the agent on the gold standard of best practices in the industry. Then we tailor it with our forward deployed engineers to your exact practice training the agent on all your past deals and reps to replicate the judgment of your single best performer at scale. Finally, once the agent is actually live and in use, it is able to use AB testing and reinforcement learning to iteratively improve and continuously improve its performance gains over time. This leads to absolute superior outcomes at a radically lower cost. We're proposing outcome based pricing because we believe that you should pay for your results and we're confident that our product will deliver and help you capture more revenue. This will come at a tenth of the cost compared to a fully loaded sales rep or fully loaded sales team because you don't need to worry about recruiting, hiring or ramping. And this has infinite scale and scalability as time goes on. Now there are three ways you can start with Pareto. First, you can deploy Pareto on accounts currently receiving zero human coverage, just incrementing your your revenue directly. You can also carve out a book of business within your existing managed accounts to help to trust Pareto to run that A B testing and see what new insights it can g. Finally, Pareto can be used to sort of as a future staffing strategy, replacing attrition naturally and growing that coverage without growing headcount. As you think about the future.
+
+Juliet Lo: Now,.
+
+Dean Liang: One of the best things about Pareto is because of the way we've built in because of the system with Thor deployed engineers, we believe that we can have it fully operational within weeks, not within quarters. Moving on from establishing the baseline all the way to playbook formalization, actually deploying it live, we each step iteratively builds upon itself leading to a seamless implementation system that then will run full time once it's live for the rest of your time as you need it. Looking on to next steps, I would love to answer any questions you might have. At the same time would love to book a demo and show you more what it might look like from the cell leaders perspective. And we could also run over examples on how we could personalize it to however your current renewal cycle works.
+
+Cooper Tenney: Thank.
+
+Parth Goda: You.
+
+Cooper Tenney: Cooper lost us a lot of money. Your fault. I tried.
+
+Evan Liang - Pareto Agent: Tell us that you have it.
+
+Cooper Tenney: Okay.
+
+Evan Liang - Pareto Agent: Everything's good.
+
+Cooper Tenney: Cool. Awesome.
+
+Evan Liang - Pareto Agent: So yeah, Aaron, what does Pareto agent do?
+
+Aaron Rose: Yeah, I think the problem that Pareto agent solves in the B2B SaaS renewal space is really this push and pull between every second of your reps time. If they want to spend one more second working their high end accounts, which they should because the ROI is better, that's a second that they're not spending on the low end accounts. So what we're offering is to handle all the low end accounts autonomously with maximum visibility. The reps never have to think about it again and all the effort can be put where it is needed.
+
+Parth Goda: 15 Seconds.
+
+Aaron Rose: Everyone was so, so overshooting.
+
+Parth Goda: Give me 20 seconds. I mean, hey,.
+
+Cooper Tenney: Thank you.
+
+Evan Liang - Pareto Agent: Dive into that.
+
+Cooper Tenney: Okay.
+
+Aaron Rose: Hi, I'm Aaron and I will be presenting on what I think could be the next disruptor in the B2B SaaS renewal space and that is Pareto agent. And to give a bit of a preview, the whole idea is that you should be able to do more with your accounts than you are renewing. With fewer humans and with less resources to go into. The big problem that B2B SaaS renewal faces is the problem of retention. In a world with AI that is rapidly expanding, you can't afford to be losing accounts, you can't afford to be inefficient. If an account is not being properly tended to, they may try to build their own software, they may try to do something Else you need to still attend to these accounts but you still have this push and pull where every second that you are spending on the low accounts, that rep who gets paid, who is valuable is not spending their time on the high end accounts leading to poor return on investment. So we really need to improve retention. And, and the great thing about retention is that, is that every percent that we retain is an extra percent that you will grow that you are not losing. And to explain where Pareto would ideally target. We're not going after the enterprise accounts which are very difficult to or like which already have, you know, entrenched interests. They already have their salespeople who know each other. The white glove service that we've been talking about, that's not what we're targeting. We're targeting the low accounts that every second that you know a rep is spending on these low accounts, they're not spending on the high end accounts. They only want to look at the high accounts. We'll, we'll cover the low accounts. And there's so many low accounts that.
+
+Dean Liang: Oh.
+
+Aaron Rose: Yeah, yeah. I'll just, I'll just say that the bottom 80% of accounts may only drive 20 of revenue but they're 80% of the time. If accounts are being treated equally, obviously they're not being treated equally but if we can. But these 80% of accounts are small, they're pretty easy to renew. If we can go in and automate that whole renewals process then you may, yeah, it's only targeting that 20 of revenue but that's still revenue that you are getting. The fastest dollar earned is a dollar saved. So if we can save that money from churning from missing upsell opportunities etc, then your company will be doing better. And again this just ties into. We don't want to be trading off results for efficiency. We want to be and going. The big problem again with the people putting no time into the bottom 80% of accounts is that you are going to be missing these expansion opportunities. You're going to be missing your, the optimal pricing. If we can essentially have a rep for every single account, every single small account, we're never going to miss a single signal that comes up.
+
+Cooper Tenney: Right.
+
+Aaron Rose: You're giving that white glove treatment that has preserved your enterprise accounts for so long to the smallest account for just a fraction of the cost. The solution isn't to hire more engineers, it's how can we automate this process. And again, if this all goes according to plan, if we are able to save this bottom 20% from churning, if we're able to cause some of them to grow. If we're able to sell add ons, etc. We can capture growth that otherwise has been hidden from the market. And that is exactly what Pareto is designed to do. We want to offer that white glove service to the humans without requiring their intervention. We want to free up your team to focus on the enterprise accounts. These are still the big deals that you need to have absolutely solid and you can't let them churn. But if, and if you spend more time looking at them, then that will reduce their chance of churning. One of the big design philosophies is that this is not supposed to be a copilot. We're not trying to put in Pareto into the sales leader's job, into the support agent's job. It is acting as an autonomous, autonomous employee if you want to consider it, that that doesn't require human intervention if needed, but it's also extremely auditable and interacts with the rest of your company. And again, what, what makes Pareto different? Because in a world where software can be created so quickly with AI, what, what is the benefit of choosing us? Why couldn't you build it on your own? I think one of the big things is that a, we have the experience in our team, two actually deploy this. And a big problem with companies that don't have experience is that they don't have the trust. If someone else wants to build this product, it interacts with all of your company's data. That is going to be very difficult to get access to. That is going to be difficult to have the trust that we're going to manage it correctly. And once we're able to take all the data in, we, we will have better insights. We will be able to do things that a single company with no design partners, with no data coming in is able to do. And, and again this goes into our idea of refining the model over time we want to take in. We're already, we will already have a zero shot model. It will be able to solve a lot of your easy problems and over time it'll be learning. It will be constantly ab testing when it comes to individual accounts. We will be, you know, always going in and out for feedback and improving our model, our plans, the rules of the model over time and again. The, the whole idea is that you should not have to pay for a rep to handle this low ROI business. An extra rep. While they could in theory spend more time looking at all these small accounts, it is a small return on investment. But that's exactly Why a broad approach that handles all of the bottom 80% of accounts is the right way to go. And also because it's outcome pricing. You are literally any money that we make use money you would have lost otherwise. So it is essentially a no brainer. And then also just additional benefits. We're able to look at untapped accounts if you're not picking up on signals. We can use proprietary models and just a broad view to capture these signals. We're also able to bring huge visibility to this small end of accounts which are currently ignored. Your sales rep doesn't want to have to explain every single thing that they did for this small account, but it will all be automated. You'll be able to see into every account, you'll be able to see what's going on, etc and we'll be able to slowly replace staff if you have to deal with people leaving or something. And yeah, we'll implement it with this.
+
+Evan Liang - Pareto Agent: Thank you guys.
+
+Juliet Lo: You can't hear. Are we muted on purpose? Because I can't hear anything.
+
+Parth Goda: She was like, sorry, sorry. We're back, we're back. All right.
+
+Cooper Tenney: Yeah.
+
+Evan Liang - Pareto Agent: So I was just saying. Yeah, good job guys. This is something that.
+
+Cooper Tenney: Like sales wrestling. They're asked to kind of give these demos as well as like start. So asking you guys to do in a week is. Is. Is pretty quickly. So.
+
+Evan Liang - Pareto Agent: But hopefully you guys also get an appreciation for like.
+
+Cooper Tenney: Yeah, pitching in front of customers is. Is not easy.
+
+Evan Liang - Pareto Agent: But I don't know, maybe we'll. It's a good baseline and you know,.
+
+Parth Goda: I think we'll do it again.
+
+Cooper Tenney: Yeah,.
+
+Parth Goda: Hopefully I use the right slide. When was this point mentioned? How come I missed it?
+
+Evan Liang - Pareto Agent: I'm pretty sure I mentioned it a few times that we had. We already built this line that you just have to give or we also went in the onboarding like we were like, hey, Juliet's giving a give go through this.
+
+Cooper Tenney: You will be giving the same point.
+
+Parth Goda: I see. Don't take a road trip. Yeah, yeah.
+
+Evan Liang - Pareto Agent: So why don't we give you guys. Why don't three of us just get together. We'll give you guys five to 10.
+
+Cooper Tenney: Minutes.
+
+Parth Goda: And then we'll call you back in.
+
+Evan Liang - Pareto Agent: You're gonna need the.
+
+Parth Goda: Mute.
+
+Juliet Lo: There it is.
+
+Evan Liang - Pareto Agent: Okay, so I'm on audio hopefully and.
+
+Juliet Lo: Then I'll do we need to get rid of. Should we pause Firefly?
+
+Evan Liang - Pareto Agent: I'll remove pause.
