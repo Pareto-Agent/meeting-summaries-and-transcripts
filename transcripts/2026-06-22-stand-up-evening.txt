@@ -1,0 +1,752 @@
+Cooper Tenney: 10 Years you should have it charging, it makes.
+Evan Liang: Okay, so what it has done is first of all it has literally stitched all four of our builds together so we can finally visualize how it looks like that we forward looking at a building, we can see each other's work and this is help us first of all like as we iterate to have the perspective of what all the other systems look like and we can start having that perception.
+Evan Liang: Okay.
+Evan Liang: Number two is all the tiny functionalities on the agent part of it's no longer just a demo, it's not a dashboard, it's not a prototype.
+Evan Liang: It's literally working right now.
+Evan Liang: So that's great.
+Evan Liang: So all the small things that we have built into our systems are working for me.
+Evan Liang: My outreach, all of my language models and my champion models are literally using API key, creating ideas, creating emails, creating profiles.
+Evan Liang: I think for qualification.
+Evan Liang: Aaron said some things are working.
+Evan Liang: I don't know what he.
+Cooper Tenney: The API key I think is like connected to mine which you don't have access to.
+Evan Liang: Yes.
+Dean Liang: Oh, so that's going to be broken.
+Dean Liang: Yeah, that makes sense.
+Cooper Tenney: Yeah, that's an easy like one side, you know, later today I'll just have it add that.
+Dean Liang: Okay, so where's the main dashboard?
+Dean Liang: So this is just combining the four dashes we don't have.
+Evan Liang: So, so what I have is I do have another dashboard that looks exactly like and in the morning look really nice.
+Evan Liang: And then what I did was I, I created loan that dashboard and I gave that dashboard to Claude and the three, the four builds and then this is the Frankenstein monster it came up with.
+Evan Liang: So what I'm gonna do now is I'm gonna point this dashboard to your dashboard and say clean up.
+Evan Liang: Like let's, let's get it together.
+Cooper Tenney: Okay.
+Evan Liang: Okay.
+Evan Liang: What's.
+Evan Liang: I think what's gonna be, what we're gonna work on for the rest of the week is all this like small, small things like, like Dean point on that.
+Evan Liang: Okay, it does, it has the dashboard, it has this but it's clearly not what, what he, what he was looking at.
+Evan Liang: Like I think it doesn't make any sense and this was shocking to him because I feel like I butchered his song or something like that, which he thought offended, but I felt like it's.
+Evan Liang: That's a good step and there's a lot of things to work on.
+Evan Liang: So does the, the merge went as expected, so it's still together but not, not even 40%.
+Evan Liang: I think maybe 35% there.
+Dean Liang: And so, so, so we have single merge.
+Dean Liang: So where do we.
+Dean Liang: Where do we go from here?
+Dean Liang: Like how do we make sure that like how do people work?
+Dean Liang: Is it like.
+Dean Liang: Yeah, how do we make sure I.
+Evan Liang: Can give a high level strategy that you guys can feel about it.
+Evan Liang: What I want to do is I think we go ahead and make sure the functionality works.
+Evan Liang: Like there's two things, function and form.
+Evan Liang: One is the functionality.
+Evan Liang: Like your proposal builder, my outreach agents, my language models, whatever API key you are building in.
+Evan Liang: And I think yours is mostly form.
+Evan Liang: Right.
+Evan Liang: There's not a lot of functionality.
+Cooper Tenney: Yeah, well, yeah, there's like one piece that like I created.
+Cooper Tenney: Like the account page that I showed Evan 101.
+Evan Liang: Yeah.
+Cooper Tenney: Doesn't exist in here right now.
+Cooper Tenney: Yeah, yeah, that's like the main thing because going like drilling into like if you go to the proposal stage, for example, like and then you click on, I don't know, random account, like that part needs to be embedded into my account page which I created.
+Evan Liang: Okay.
+Cooper Tenney: That's like not even close to working 100%.
+Evan Liang: So.
+Evan Liang: Yeah.
+Evan Liang: So as long as individual functionalities are okay, even though there is going to be duplicate across all four tabs and this and that, once I get the functionality fixed, then I want to we all start pushing our UI fixes to this.
+Evan Liang: That's my idea.
+Evan Liang: I would love to hear what your thoughts are.
+Cooper Tenney: Yeah, I think because everything is separated, like we can make our own edits to our individual parts.
+Cooper Tenney: So like, yeah, get our things working and all that.
+Cooper Tenney: Or if Cooper, you want to add a new thing, like we can add that.
+Cooper Tenney: We don't need to be coordinating when who pushes when and all that.
+Cooper Tenney: No, but we need like yeah, the main dashboard.
+Cooper Tenney: And then one thing that's maybe later in the week is let's standardize the data we're passing in to see if we can actually get to work.
+Cooper Tenney: Because like Kubrick uses real companies and then my fake companies are different than your fake companies are different than deans.
+Dean Liang: You know, that's a good point.
+Dean Liang: Using real companies.
+Cooper Tenney: Yeah, like that's like my.
+Dean Liang: That's a good point.
+Dean Liang: That's a good point.
+Dean Liang: That now that they're combined that you have to have one standard corpus of companies.
+Cooper Tenney: Right.
+Cooper Tenney: Just so we can make sure the path tackle that.
+Cooper Tenney: If you guys just send me email.
+Evan Liang: Info that you need for each one.
+Dean Liang: I think we're all doing different.
+Cooper Tenney: We all have different.
+Dean Liang: Well maybe just agreed on maybe you.
+Cooper Tenney: Should do it like create like a JSON of like Uber and then there could be any.
+Cooper Tenney: And just like send it to us and we'll Just have our cloud.
+Cooper Tenney: Okay, I can.
+Dean Liang: Let's do that as a step.
+Dean Liang: It's just, I, I don't really care about that.
+Dean Liang: It's.
+Dean Liang: It's fake data.
+Dean Liang: But let's pick 100 companies and then, and then have them be.
+Dean Liang: Or 200 companies and have them be 10,000 or less.
+Cooper Tenney: Okay.
+Cooper Tenney: Yeah.
+Cooper Tenney: So I was working on trying to develop a strategy for like when we're these like sub portions, like how it gets the bush and then up for his.
+Cooper Tenney: I didn't really get a grasp on what to do, but I was having like Claude, like write an MD to give to each one of them.
+Cooper Tenney: Hopefully that's somewhat helpful.
+Cooper Tenney: But I think an overall strategy like, okay, so it's going to live under the main dashboard.
+Cooper Tenney: So just edit that folder.
+Cooper Tenney: Hopefully that works.
+Cooper Tenney: Is that the correct.
+Dean Liang: Yeah, I think that there's got to be a way.
+Dean Liang: I mean this is like main development is not this way.
+Evan Liang: Right.
+Dean Liang: There's like branches.
+Dean Liang: Understood.
+Dean Liang: Yeah.
+Dean Liang: Okay.
+Dean Liang: So I think the goal is by hopefully for tomorrow we have gotten a way where folks can work independently and remove the blockage of like, you know.
+Cooper Tenney: Yeah.
+Dean Liang: So we got to get the data.
+Dean Liang: So what is that?
+Dean Liang: You want to be cto, right?
+Evan Liang: Can you give me an example again?
+Cooper Tenney: So like, okay, so you've got this dashboard.
+Cooper Tenney: It lives.
+Cooper Tenney: Where does it live?
+Evan Liang: I don't even know this dashboard.
+Evan Liang: Where does it live in.
+Evan Liang: Okay.
+Evan Liang: Under GitHub, it looks like it lives.
+Cooper Tenney: Under Share the screen so you can see it.
+Evan Liang: Okay, thank you.
+Evan Liang: Sharing my screen.
+Dean Liang: There's got to be a way to.
+Dean Liang: So there's got to be a way that like you have like your overall.
+Dean Liang: You can have your overall page.
+Dean Liang: Right.
+Dean Liang: But people should be able to work on individual sub pages without it like impacting everyone else.
+Cooper Tenney: The question is whether do we work on them locally, push it to GitHub and then his updates, or do we work on it directly in the GitHub work on it directly?
+Evan Liang: Yes.
+Evan Liang: So, okay, so this screen shows you where the current dashboard lives.
+Evan Liang: It lives under combined Dashboard is where all the, the files and the MDs and all the things are.
+Evan Liang: I'm guessing.
+Evan Liang: Sorry.
+Cooper Tenney: It actually doesn't look like Menu doesn't look like there's much in there.
+Cooper Tenney: So how do I update, like if I update my thing like the buyer hub, it's not going to update it here.
+Cooper Tenney: It's updating.
+Evan Liang: You're updating your stuff in.
+Evan Liang: Not this dashboard module thing where you're updating your stuff.
+Cooper Tenney: It's in Renewals Hub.
+Evan Liang: Okay.
+Evan Liang: Renewals Hub.
+Evan Liang: Okay, so first Things first, like main rank is this.
+Evan Liang: Okay, maybe there's a polar somewhere else.
+Evan Liang: But cardboard modules is where we are really starting from our point.
+Cooper Tenney: I was gonna say we should draw this out.
+Evan Liang: Yeah,.
+Cooper Tenney: I was gonna say square on that and then I would, but I didn't want to.
+Dean Liang: I was like the least.
+Dean Liang: No, like I just don't know what's going on.
+Dean Liang: I was.
+Dean Liang: Because I was working on my thing.
+Evan Liang: Yeah.
+Dean Liang: The whole day and then I come back to see this mess.
+Dean Liang: I'm like, okay, something's happening.
+Cooper Tenney: You all figured out how is yours coming?
+Dean Liang: I don't know if you saw it.
+Dean Liang: It looks like genuinely like it is a huge improvement from where it was last night which was not existent.
+Dean Liang: Yeah, I'm actually pretty happy with it.
+Cooper Tenney: So these are the current folders where everyone has been working in their own stuff.
+Cooper Tenney: Why do you pick up circles?
+Evan Liang: Because like in GitHub they have branches of branches.
+Evan Liang: These are leak notes.
+Evan Liang: So we went into one which is the current dashboard module.
+Evan Liang: Combined of this we I made the Frankenstein's monster.
+Evan Liang: I call it Daddy Dashboard.
+Evan Liang: I don't know whatever you guys want to call it.
+Evan Liang: So this is where the current build is at.
+Evan Liang: Now you guys also carried on building stuff while I was merging.
+Evan Liang: So now there is one file with the days of past lives and there's new files.
+Evan Liang: So first thing we do is that make sure this is working as correctly as possible.
+Evan Liang: So like you guys should download this maybe like voice door or something or like get caught to compare this with your current build and come up with a file MD something that it takes in all the information and re updates it.
+Evan Liang: So then we have a new good looking dashboard.
+Evan Liang: So that's the first thing.
+Evan Liang: So just catch up with this once from this.
+Evan Liang: I need you guys to like once we get to the point where whatever you've done today is as possible dashboard looks good, then you guys clone it.
+Evan Liang: So now we all have a, a starting point of this amazing new dashboard.
+Evan Liang: This is the main branch.
+Evan Liang: You guys, we all start from the same point.
+Evan Liang: You guys change, change, change, change.
+Evan Liang: Whatever happens, it gets it.
+Evan Liang: Whatever happens, it all updates into this one.
+Evan Liang: So pull new point.
+Evan Liang: Then you guys commit push and then it, whatever happens, it goes into this.
+Evan Liang: This is what my plan is.
+Cooper Tenney: I agree perfectly with this plan.
+Cooper Tenney: I feel like the diagram is a little confusing.
+Evan Liang: Well, I don't have.
+Evan Liang: I have a degree in information system.
+Dean Liang: That's pretty relevant for this though.
+Evan Liang: So this is what they taught me 10 years ago.
+Cooper Tenney: Okay, these are the folders that we were all working in prior to today.
+Cooper Tenney: We agree.
+Cooper Tenney: Yeah, we're still working.
+Evan Liang: What.
+Cooper Tenney: What part has been doing is.
+Cooper Tenney: He pulled.
+Cooper Tenney: We pulled a bunch of stuff from these folders and we basically made one dashboard.
+Cooper Tenney: This marker is getting bad.
+Cooper Tenney: It was so good before we made one dashboard.
+Cooper Tenney: And in this dashboard there are four sub folders.
+Cooper Tenney: Okay.
+Cooper Tenney: And these are.
+Cooper Tenney: I didn't see them in this.
+Cooper Tenney: Well, they're not like expressly.
+Cooper Tenney: They're not explicitly put.
+Cooper Tenney: That's the Dropbox we're talking about GitHub.
+Dean Liang: No, this is.
+Cooper Tenney: No, that's.
+Dean Liang: That's right.
+Cooper Tenney: This is GitHub.
+Cooper Tenney: That actually looks great.
+Cooper Tenney: What do you mean that's.
+Cooper Tenney: This is how it works.
+Cooper Tenney: You have GitHub on your computer.
+Cooper Tenney: Yes.
+Evan Liang: Yeah.
+Dean Liang: Everyone does.
+Evan Liang: When you're pulling it, where are you putting it?
+Evan Liang: You're pulling it to your.
+Dean Liang: I don't have either.
+Dean Liang: Supposed to come to your local files.
+Dean Liang: That's how the whole point of GitHub is you interact with your local files.
+Dean Liang: You push to like the cloud and you pull back to your local file.
+Dean Liang: So your computer is the same as the cloud, which is the same as everyone else's computer.
+Cooper Tenney: I like have been doing that.
+Cooper Tenney: Just like GitHub Desktop would be helpful, but.
+Cooper Tenney: So that's what you mean when you're coding in GitHub.
+Evan Liang: Yeah.
+Cooper Tenney: I thought you meant coding in GitHub online.
+Cooper Tenney: I was like.
+Cooper Tenney: But excellent.
+Evan Liang: We should have spent more time online without coding.
+Dean Liang: No, this is great.
+Dean Liang: We're learning.
+Cooper Tenney: So Parth has made a dashboard.
+Cooper Tenney: Thank you.
+Cooper Tenney: That each has like a version from earlier today of each of our projects.
+Cooper Tenney: Right.
+Cooper Tenney: So Brown is actually brow.
+Cooper Tenney: Yes.
+Cooper Tenney: But these are.
+Cooper Tenney: Yes.
+Cooper Tenney: So when you guys have been editing stuff, this hasn't changed.
+Dean Liang: Correct.
+Cooper Tenney: That's why it's still an old view.
+Cooper Tenney: What part is suggesting we do, which I agree with, is that when we edit this, this doesn't change.
+Cooper Tenney: If Parth is making a dashboard, us editing this isn't going to change the overall dashboard.
+Cooper Tenney: It's just editing our one section in it.
+Cooper Tenney: So we can edit these.
+Cooper Tenney: Fine.
+Cooper Tenney: And we can pull and push to these and it won't mess up the overall thing because we're all editing our own part of this.
+Cooper Tenney: So I am going to take all the changes I made today.
+Evan Liang: I think he has a question.
+Dean Liang: Yes.
+Dean Liang: So you're very much assuming that's what part of the thing is doing.
+Cooper Tenney: Well, I don't.
+Dean Liang: I'm be honest.
+Cooper Tenney: No.
+Dean Liang: The fact.
+Dean Liang: The fact that his.
+Cooper Tenney: It couldn't possibly be the fact that.
+Dean Liang: His outreach thing is still a zip file.
+Dean Liang: Because I don't think this is going correctly.
+Cooper Tenney: No, it definitely.
+Dean Liang: I don't think, like, no, everything is Combined Dashboard.
+Evan Liang: It's not that zip file.
+Evan Liang: Huh?
+Evan Liang: All the code that was taken, this is already in Combined Dashboard.
+Evan Liang: These were the start.
+Dean Liang: Is it directly referencing this or no?
+Evan Liang: No, it is.
+Dean Liang: If it's not direct referencing the folders, it doesn't matter what we change to the folders.
+Dean Liang: All that's going to happen is here.
+Cooper Tenney: Yeah, that's why we're not changing the folders.
+Cooper Tenney: We're changing the actual code.
+Cooper Tenney: But the code is set like there is not.
+Cooper Tenney: If I change a line that is built that is part of the UI for my thing, that's not going to change a line in your thing that does a proposal.
+Dean Liang: So what's your prompt to Claude?
+Dean Liang: You can't say, stay out of this folder.
+Dean Liang: You're just saying, stay out of this part of the.
+Cooper Tenney: We could do a prompt that first says put everything into separate folders.
+Cooper Tenney: But yes, you would say it has to.
+Cooper Tenney: It, it has to in the code.
+Cooper Tenney: Separate things somehow.
+Cooper Tenney: I don't know how it is happening, but it is separate.
+Cooper Tenney: Like, you agree, Dean, that if I change a line of code that is in my section, if they are like, yeah, okay, fine.
+Cooper Tenney: I'm saying yes, then we have to code.
+Cooper Tenney: I'm gonna tell it.
+Cooper Tenney: Okay, as long as you do that, don't edit.
+Cooper Tenney: It's gonna be in there somewhere.
+Cooper Tenney: Like, they didn't, they didn't just code it with.
+Cooper Tenney: One line is my thing.
+Cooper Tenney: One line is Dean's thing.
+Cooper Tenney: One line is like, it's, it all makes sense in there.
+Cooper Tenney: Okay.
+Cooper Tenney: And I, I, I just, I know.
+Cooper Tenney: I just want to make sure you're.
+Dean Liang: Doing the separate folders because it sounded like you're like, we can use the existing folders.
+Cooper Tenney: We can't use those.
+Cooper Tenney: Right.
+Dean Liang: We need, we need more folders in this folder.
+Cooper Tenney: So continuing very quickly, just all you ask is you say, okay, only editing my thing.
+Cooper Tenney: It might not be in a folder.
+Cooper Tenney: It might be explicitly somewhere else or just it's combining a folder, but it's labeled somewhere.
+Cooper Tenney: You say, update my stuff with the stuff that I did today.
+Cooper Tenney: Claude does that.
+Cooper Tenney: We all push and pull whenever we want.
+Cooper Tenney: Everything is now updated.
+Cooper Tenney: And from now on, we work in our individual things that are in the main dashboard.
+Dean Liang: Well, the creative issue is someone updated their dashboard.
+Dean Liang: That's outside the combined dashboard.
+Cooper Tenney: If they update this, nothing happens.
+Cooper Tenney: Yeah, it'll just be a combined dashboard.
+Cooper Tenney: Right.
+Cooper Tenney: So we could keep.
+Cooper Tenney: You could keep experimenting up here and treat this as the final.
+Cooper Tenney: Once I'm done Experimenting.
+Cooper Tenney: I adjust this.
+Cooper Tenney: But like, what I'm saying is we can edit these just like we were editing our own things.
+Evan Liang: Yeah, I'm visualizing.
+Dean Liang: Okay.
+Evan Liang: Okay.
+Cooper Tenney: I think that makes sense.
+Evan Liang: All right, give that next could.
+Evan Liang: Here's the next step.
+Cooper Tenney: You know, can't possibly.
+Evan Liang: Again.
+Evan Liang: All right, we're.
+Evan Liang: We can do a sidebar on this.
+Dean Liang: We need four.
+Dean Liang: We need four.
+Cooper Tenney: Four of those.
+Evan Liang: Yes.
+Evan Liang: So, okay, so let's make.
+Dean Liang: So.
+Cooper Tenney: Push harder.
+Cooper Tenney: Question.
+Dean Liang: Why do you hold a marker like that?
+Dean Liang: Like, hold it the other way.
+Dean Liang: Hold it the other way so you can push more like you're doing.
+Evan Liang: I'm pushing more.
+Dean Liang: That's just how he writes.
+Dean Liang: Okay.
+Evan Liang: Do you want me to write like this?
+Dean Liang: Yeah, you can put a slide like that.
+Cooper Tenney: I don't know.
+Evan Liang: I've been a short guy.
+Evan Liang: So, like this, this doesn't work sometimes we're not going to get to edit.
+Dean Liang: I think what we need to do is get to a situation where we have four different folders that people can push into.
+Evan Liang: Okay.
+Cooper Tenney: Yeah.
+Evan Liang: Now this is dd.
+Evan Liang: This is.
+Cooper Tenney: Swap.
+Dean Liang: I told you this was.
+Dean Liang: I told you this is a problem.
+Evan Liang: All right, we have all the individuals.
+Evan Liang: So what we do is I need you guys on your local computers.
+Evan Liang: Spec one, pull, pull my.
+Evan Liang: Keep yours and then this is yours.
+Evan Liang: So this is all yours.
+Evan Liang: I need you guys to Claude and come up with a file that can.
+Evan Liang: That you can to push.
+Evan Liang: Push into this.
+Evan Liang: So push all of your individual changes into this.
+Evan Liang: So we come with a new DD as a starting point.
+Evan Liang: Can we start with that first?
+Evan Liang: So as of now, you guys have individual work.
+Evan Liang: There's a dd.
+Evan Liang: Put DD into your computer.
+Evan Liang: Get clock to compare it.
+Evan Liang: Come up with a list of instructions on how I can improve dd.
+Evan Liang: And then tomorrow, and then I'll try to merge that tonight.
+Evan Liang: So we have updated dd.
+Evan Liang: I don't know the big one, right.
+Evan Liang: You have a child dashboard.
+Evan Liang: This is the parent dashboard.
+Dean Liang: So pull his code down onto your local GitHub.
+Evan Liang: Okay, so then tomorrow morning, once we have the big, the new DDB2, then from then onwards we'll use this as the main.
+Evan Liang: And then you guys can do whatever you guys want and just, just keep doing it and just keep pushing to the main.
+Evan Liang: There'll be merge conflicts, there's going to be pool that's pushing.
+Evan Liang: But this is the point where we start from an in now we'll branch out again then it's like typical software engineering where there's going to be conflicts, there's going to be individual proportionalities, this and that, and then is going to be the main and GitHub's problem to merge those conflicts as they make changes.
+Dean Liang: To the dashboard for their individual tabs.
+Dean Liang: Should they work with you because you're coding?
+Dean Liang: You hold the master there or should they.
+Dean Liang: Or the folder.
+Evan Liang: I don't hold the master.
+Evan Liang: The Master is in GitHub.
+Dean Liang: It's in Cloud.
+Dean Liang: Him specifically.
+Dean Liang: It doesn't matter.
+Evan Liang: I don't hold anything now.
+Evan Liang: We just have enough star.
+Evan Liang: And now they can do as much of their server as one.
+Evan Liang: And whenever they push or they commit.
+Dean Liang: Got it.
+Evan Liang: GitHub will flag out where there's.
+Evan Liang: There's going to be merging issues and like, the cloud will decide what to keep or not to keep.
+Evan Liang: But we'll have a mean that keeps going.
+Cooper Tenney: Okay.
+Evan Liang: Does that now alleviate all the questions that we have?
+Evan Liang: No, I haven't convinced Dean.
+Evan Liang: I feel bad, man.
+Cooper Tenney: Come on.
+Evan Liang: I'm trying my best here.
+Cooper Tenney: Come on.
+Dean Liang: Wait.
+Dean Liang: I've been fine with it from the beginning.
+Evan Liang: All right, cool.
+Dean Liang: I'm just like.
+Dean Liang: You have to just make sure it's able to be separated.
+Evan Liang: I mean, what do you mean?
+Cooper Tenney: Two dashboards have the same line of code.
+Cooper Tenney: Then sure, there would be a problem problem if like one line of code did something in both dashboards.
+Cooper Tenney: But that's not what works.
+Dean Liang: Because my worry is once we get to like, data.
+Cooper Tenney: Data mode.
+Evan Liang: But data is something that we share, right?
+Dean Liang: Like if we just have to flush that out.
+Evan Liang: Yeah, sure.
+Dean Liang: At some point they're not as separate as we think, so the folders might break and.
+Evan Liang: Yeah, so, I mean, there's going to be a point in time where all of this is going to break and will yield help from the CEO too.
+Dean Liang: You guys are going to learn a lot.
+Dean Liang: This is.
+Evan Liang: Oh, we appreciate the.
+Evan Liang: The trust.
+Evan Liang: So I think we're good for now.
+Evan Liang: So.
+Evan Liang: Yeah, just pull my dashboard, come up with a file to update my dashboard with your latest stuff, and we'll work.
+Evan Liang: We'll fight every battle as we get across it.
+Dean Liang: Okay.
+Evan Liang: But we'll work from there.
+Dean Liang: Okay.
+Dean Liang: Thank you for pulling this together.
+Dean Liang: Keep us posted if you run into any problems or anything.
+Evan Liang: I don't know.
+Evan Liang: My job is done.
+Evan Liang: I made the DD now.
+Dean Liang: But you said you're gonna.
+Dean Liang: After they pull down, you're gonna help us build a version 2.0, right?
+Evan Liang: Yeah.
+Evan Liang: No, once they pull up and they all.
+Evan Liang: They'll all commit to.
+Evan Liang: To this, then.
+Evan Liang: Then once they all come in, there's going to be one point.
+Evan Liang: And I mean, this individual is nothing I have to do.
+Dean Liang: Oh, God.
+Evan Liang: Okay, so even.
+Evan Liang: Let's Say I am.
+Evan Liang: I am.
+Evan Liang: I'm Dean.
+Evan Liang: Right.
+Evan Liang: I'll pull down the.
+Evan Liang: I'll pull down.
+Evan Liang: Yeah.
+Cooper Tenney: Australians get.
+Evan Liang: So I will pull down Didi.
+Evan Liang: I'm Dean.
+Evan Liang: I'll make my changes.
+Evan Liang: I'll update Didi.
+Evan Liang: And then what if.
+Evan Liang: Let's say I start first and then Cooper does it at like 10pm today, Google will see the DD Dean.
+Evan Liang: Yeah.
+Evan Liang: So we're all now working on daily.
+Evan Liang: So now there's no ownership anymore.
+Evan Liang: It's completely decentralized.
+Dean Liang: Okay.
+Cooper Tenney: And is that pushed?
+Evan Liang: This, this is pushed already.
+Evan Liang: I. I can double check, but I think it's pushed already.
+Evan Liang: I. I'll.
+Evan Liang: I'll do one more connect by before you go at six o'.
+Cooper Tenney: Clock.
+Evan Liang: Okay, cool.
+Evan Liang: Okay, cool.
+Dean Liang: Awesome.
+Dean Liang: Any other questions, moving on other topics?
+Dean Liang: Any other questions around the sales pitch for tomorrow or anything of that sort?
+Cooper Tenney: Awesome.
+Dean Liang: Okay.
+Dean Liang: So there's that.
+Dean Liang: And then on the, on the off site we did pick paintball and so Hannah's looking at various paintball places.
+Dean Liang: Apparently the paintball place in Santa Clara, Stasho and Jose closed.
+Dean Liang: So I think we have to go to Livermore to play paintball.
+Dean Liang: So you want to send a picture.
+Cooper Tenney: Of those tickets when you get to chat.
+Dean Liang: Where was the paintball place you had?
+Dean Liang: We have no, they just set up a stand at Stanford every single week and like give out these free tickets or something.
+Cooper Tenney: Okay, sure.
+Dean Liang: These like discount tickets.
+Dean Liang: Yeah, send it to Hannah and I look awesome.
+Dean Liang: God.
+Dean Liang: What do you want?
+Dean Liang: I was going to present my thing.
+Dean Liang: Sure, go for it.
+Dean Liang: Yes.
+Dean Liang: While you guys were dealing with that, I was working on my proposal dashboard which is very, very different than what it was at 9am today.
+Dean Liang: So basically went through and tried to make it as similar to your things just so when we like rectify UI differences, it's not as bad.
+Dean Liang: So it's on account level.
+Dean Liang: You have sort of the general labels and everything with renewal ar renew in until time period.
+Cooper Tenney: Right.
+Dean Liang: And then if we click into account, what we see is it shows you the deck that was sent.
+Dean Liang: Right.
+Dean Liang: You can see all this.
+Dean Liang: There's a bit of a rationale, so I just saying why, why was this deck chosen?
+Dean Liang: This price?
+Dean Liang: I've actually built in a price configurator.
+Dean Liang: Now I just have to make it more serviceable.
+Dean Liang: But yeah.
+Dean Liang: And then you see here what you can do is you can edit the deck directly.
+Dean Liang: So this is the part where you can add blocks, you can choose things, you can directly edit the text within each block too.
+Dean Liang: So basically made Google Slides on here.
+Dean Liang: Right.
+Dean Liang: And you could change all of these things.
+Dean Liang: So yeah, that's not bad.
+Dean Liang: And then another thing too, and this is the more important thing is when it comes to automation settings, right.
+Dean Liang: Just I said it automatically right now it auto sends all the proposals if there's no issues.
+Dean Liang: We have the scenario rules.
+Dean Liang: These are sort of the different scenarios.
+Dean Liang: The save play executive competitive threat just find increased flat renewal.
+Dean Liang: These are the scenarios we're playing out that generate different customizable sort of block options as defaults.
+Dean Liang: Also have different pricing policies, guardrails in case we want escalation.
+Dean Liang: And then these templates are sort of what are the guidelines for each of the scenarios?
+Dean Liang: Right.
+Dean Liang: So if we go to Executive Deck, right, it's automatically going to have a cover executive slide value delivered, benchmarking, pricing and next steps with each of these slides is kind of how it looks.
+Dean Liang: Right.
+Dean Liang: And then what you can do is you can directly edit this spot.
+Dean Liang: Right.
+Dean Liang: So if we think that for all executive decks maybe we want to add a widely data slide in there, right.
+Dean Liang: Maybe that slide number three where you could have that in there and it will sort of be saved and then for going forward that will be part of the new Executive Deck.
+Dean Liang: So yeah, that is what I've been working on for most of today because the slide automation is generally one of.
+Cooper Tenney: The most annoying things I've ever worked.
+Dean Liang: On because everything just keeps on breaking.
+Cooper Tenney: But we're at the stage now.
+Dean Liang: Why?
+Dean Liang: Why is it just because the way it handles, the way like AI handles images just really sucks.
+Dean Liang: And then like I have to choose which kind of image like PDFs and JPEGs render the best on the, on the website.
+Dean Liang: But then if I wanted to edit feature I convert them to HTML but then convert it back to JPEG when it's.
+Dean Liang: When it's showing itself and make sure those two things are linked and don't look on.
+Cooper Tenney: Yeah, work.
+Dean Liang: Okay, well let's see.
+Dean Liang: I think tomorrow then the goal is to see if you can.
+Dean Liang: How do you figure out your current version with your old version?
+Dean Liang: Yeah, part you might want to work on theirs first.
+Dean Liang: I have to take some time to still refine my version before I send it through to the combined dashboard.
+Evan Liang: Can you send it through and then work on it?
+Dean Liang: Wait, but I already have an old version in there anyway, so it's like the same thing.
+Evan Liang: Okay, yeah.
+Dean Liang: As long as you have a version of mine, it's not going to make.
+Evan Liang: That because the more you work on, the bigger the builder is going to be and then that merging is going to be more complex.
+Evan Liang: If you do it now.
+Evan Liang: You're merging bite size, and then you can continue iterating on the dd, if that's what I know.
+Evan Liang: I don't know.
+Evan Liang: I'm not sure.
+Cooper Tenney: Because you can put like, you should push as soon as you can and then just start iterating on that version.
+Cooper Tenney: What's the difference between iterating under the dashboard versus iterating outside of it?
+Dean Liang: I want to see if the separating comes as clean as it is right now.
+Cooper Tenney: But, like, you'll still have your outside version.
+Cooper Tenney: I guess I can.
+Cooper Tenney: Yeah, sure.
+Dean Liang: It's just a buggy version right now.
+Dean Liang: Like, the other version technically works.
+Dean Liang: This new version, like, I'm in the middle of, like, making it work.
+Dean Liang: So, like, I don't know if I want to push buggy version in and they just have it, like, jam everything up.
+Dean Liang: Okay, cool.
+Dean Liang: Anything else, folks?
+Cooper Tenney: Yeah, I'd like to share really quick.
+Dean Liang: Sure, yeah, please.
+Cooper Tenney: So I am working on the accounts page.
+Cooper Tenney: This is obviously the buyer evaluation stage of the accounts page.
+Cooper Tenney: But see, let's get over here.
+Cooper Tenney: This is the page that I'm working on.
+Cooper Tenney: On.
+Cooper Tenney: And so right here, we're in the fire evaluation stage.
+Cooper Tenney: This is all of my stuff.
+Dean Liang: Yep.
+Cooper Tenney: And so what we need to align on is how Dean, yours shows up here.
+Cooper Tenney: I assume that's the page that you showed that was, like, kind of similar to this one.
+Cooper Tenney: To the.
+Cooper Tenney: This, I think.
+Dean Liang: No, yours.
+Dean Liang: Because on that page, the one he showed at the top, that's the overall dash.
+Cooper Tenney: Yeah, yeah.
+Cooper Tenney: When you click into it.
+Dean Liang: When you click into.
+Dean Liang: Okay.
+Dean Liang: Yep.
+Dean Liang: Yeah, yeah.
+Cooper Tenney: That one goes correct for outreach.
+Cooper Tenney: I can't remember what yours looks like.
+Dean Liang: Yeah.
+Cooper Tenney: And then yours is similar.
+Dean Liang: You have to.
+Evan Liang: Yeah.
+Dean Liang: So what's the individual account?
+Dean Liang: So, yeah.
+Cooper Tenney: But somehow the big daddy dashboard has to incorporate this because this is the account page that, like, you.
+Cooper Tenney: No matter how you get there, you land here.
+Dean Liang: Correct.
+Dean Liang: Yes.
+Cooper Tenney: That's going to be slightly complicated.
+Dean Liang: Yes.
+Cooper Tenney: Does anybody have any thoughts previously?
+Cooper Tenney: Okay.
+Cooper Tenney: There's, like, some strategy involved.
+Dean Liang: Like, what order?
+Dean Liang: Yeah.
+Cooper Tenney: How do we link it up in here?
+Cooper Tenney: Maybe it'll just work.
+Cooper Tenney: I don't know.
+Dean Liang: One of my issues is, like, okay, if we separate to a folder, that one folder has to somehow have the list of accounts UI and this individual ui.
+Cooper Tenney: Yeah.
+Dean Liang: For everything.
+Dean Liang: I'm just like, I don't know if you could separate that cleanly because the account information has to sync all across the folders.
+Cooper Tenney: I don't know if we're doing it properly.
+Cooper Tenney: That's the thing.
+Cooper Tenney: Like, you definitely can do it.
+Cooper Tenney: I just think it's definitely more difficult than we're imagining.
+Cooper Tenney: So yeah, I don't see where all this challenges.
+Cooper Tenney: Like it can look at other folders too.
+Dean Liang: It could.
+Cooper Tenney: It knows what's happening in other folders.
+Cooper Tenney: You're just.
+Cooper Tenney: You can just.
+Cooper Tenney: If something in the other folder is going to send info or has info, you can just call it in your own folder.
+Cooper Tenney: I just don't.
+Cooper Tenney: Yeah, exactly.
+Cooper Tenney: I don't.
+Cooper Tenney: I feel like we're making an issue where there.
+Cooper Tenney: It's not maybe, but I just wanted to put that out there.
+Cooper Tenney: So, yeah, this is what the account page will look like and once it's populated, it should look similar to this.
+Cooper Tenney: I'll probably clean up this like header area.
+Cooper Tenney: It feels really big right now.
+Dean Liang: Right.
+Cooper Tenney: Other than that, I've just been looking.
+Dean Liang: Do we feel this is the right time to merge all the different demos or do we feel it's like premature.
+Cooper Tenney: I'm ready.
+Dean Liang: I'm fine.
+Evan Liang: Thing.
+Cooper Tenney: Okay.
+Dean Liang: Yeah.
+Cooper Tenney: Okay.
+Cooper Tenney: Are you ready to merge?
+Dean Liang: He already merged in his mind.
+Cooper Tenney: These guys are really antsy, so they really need to merse.
+Cooper Tenney: I just feel like.
+Cooper Tenney: Because we could do the downside.
+Cooper Tenney: You think there is.
+Evan Liang: No, I don't have to.
+Cooper Tenney: I don't think there's downside because we.
+Cooper Tenney: We could literally just not even connect everything, but everything's still just in the centralized dashboard and then we're just on the same page.
+Cooper Tenney: So it opens up more opportunities and doesn't take away.
+Dean Liang: So I think maybe tomorrow try to do the diffs for all your things and then tomorrow I think, Cooper, I think that you'll lead in terms of trying to figure out how to create that account page and how do you take from each of the different elements.
+Dean Liang: This is an interesting test for Claude to be like, okay, take this piece of code, put it here, this piece of code, this functionality over here to build.
+Dean Liang: You're basically, we're merging four apps to build a single one.
+Cooper Tenney: How do you feel about it?
+Dean Liang: No, I think it's.
+Dean Liang: I think this is.
+Dean Liang: I think like, I think Parth said like the first day I was like, I expected us to just be a little bit like more chaotic.
+Dean Liang: I think we're starting to reach that point.
+Dean Liang: I mean, look, let's merge the code.
+Dean Liang: Let's figure it out.
+Dean Liang: There's a point at which, hey, like I said, there's going to be a lot of throwaway code in terms of this process.
+Dean Liang: There is a point if it slows down or it gets really, really hectic.
+Dean Liang: Right?
+Dean Liang: This is why it's important that you guys Understood what went into.
+Dean Liang: May be better to start with a clean sheet and write, like, understand your requirements.
+Dean Liang: And that's the only part of that I'm thinking.
+Cooper Tenney: The back one head.
+Dean Liang: Right.
+Dean Liang: If the merging of the code gets too complicated, it's probably better to clean sheet it again.
+Dean Liang: And while that sounds painful, remember you built it pretty quickly and you made a lot of iterations and what you first built is actually not that good.
+Dean Liang: And then I think, Claude, the AI stuff, what it has is context, so it's actually a little inefficient because of the versions you built.
+Dean Liang: If you were to actually go to your end goal, you'd probably get there faster with a lot less code.
+Dean Liang: No, exactly right.
+Dean Liang: If you guys run into too many problems, my only thing would be like, okay, we know what we want the dashboard to say.
+Dean Liang: We know what the data models we want.
+Dean Liang: Let's just sketch it out again from our product requirements.
+Evan Liang: Yeah, it's only me that has to go through the migrations.
+Evan Liang: Honestly, I do believe it.
+Evan Liang: Like, we.
+Evan Liang: Even if we do Frankenstein and everything does not look great, we have an idea of how it all flows through.
+Evan Liang: Yeah.
+Evan Liang: So we can like, literally just take it.
+Evan Liang: Like, you know, like when you.
+Evan Liang: When you were a kid, you had an image, you'll put like a translucent paper and then straw on top of it and then sketch it out.
+Evan Liang: We can do exactly that, but we don't have to go through the pain of how bloated or messy or disgusting the backend is for what we're merging right now, so we can start from scratch, which, honestly, would be very clean.
+Dean Liang: Honestly, I have a feeling once you try to do yours, this is going to blow up.
+Dean Liang: And it'd be better to just, like, each of you still have your merge and just be like, hey, if I was designing a combined app from scratch, where we'd have a single data model, let me specify the requirements.
+Dean Liang: That might be faster.
+Cooper Tenney: At what point do we just make that switch?
+Dean Liang: I think sometime tomorrow.
+Dean Liang: In the name of going fast.
+Dean Liang: Today's day one, day two.
+Dean Liang: Oh, you're right.
+Dean Liang: That's not a bad idea.
+Cooper Tenney: I seem to want competitions good in the market.
+Dean Liang: No, no, that's a good.
+Dean Liang: That's a good idea, actually.
+Dean Liang: I mean, should we try that?
+Dean Liang: Like, hey, tomorrow, like, hey, let's start a new version with a combined dashboard and have people.
+Cooper Tenney: As long as they get like, how each person creates a spec.
+Dean Liang: Yeah.
+Cooper Tenney: Honestly, you could create like a spec from your.
+Cooper Tenney: Or one of them.
+Dean Liang: Sure.
+Dean Liang: Yeah.
+Cooper Tenney: Just because I feel like you have the best vision.
+Evan Liang: Okay.
+Cooper Tenney: At minimum, you just have it running in the background.
+Cooper Tenney: Yeah, yeah, exactly.
+Dean Liang: Okay, let's.
+Dean Liang: No, so I like that.
+Dean Liang: I like the suggestion a lot.
+Dean Liang: Let's try parallel pathing and let's see if one code works faster or, you know, looks better than the other one.
+Dean Liang: It's great.
+Cooper Tenney: So by the stand up tomorrow, will everyone have a spec of their own individual.
+Dean Liang: Stand up?
+Dean Liang: We don't have a stand up tomorrow.
+Dean Liang: No.
+Dean Liang: So tomorrow we have the sales pitch.
+Dean Liang: Right.
+Dean Liang: So what I'd say tomorrow is.
+Dean Liang: So Aaron, you want to work with me on maybe let's build a clean sheet one.
+Dean Liang: Let's work on the clean sheet one where, hey, I can help you specify the big one.
+Dean Liang: Let's start with four different.
+Dean Liang: It's actually not four folders.
+Dean Liang: Maybe let's start with all the stages so it's like six, seven folders.
+Dean Liang: Because one of the problems is we still don't have negotiation or close.
+Dean Liang: So let's have Claude be like, hey, these are individual modules.
+Cooper Tenney: This is.
+Dean Liang: Is how the app's going to work.
+Dean Liang: We'll build the scaffolding of it and then maybe we'll have it like feed one one spec at a time into it to fill it out.
+Cooper Tenney: Yeah, we could do it at the same time maybe even.
+Cooper Tenney: And like we both just in the morning or whenever we meet, kick that off and at noon we'll check in on it.
+Dean Liang: Yeah.
+Cooper Tenney: You want me to do it too?
+Cooper Tenney: Oh, I thought.
+Cooper Tenney: I thought you wanted to, but I knew the accounts.
+Dean Liang: Yeah.
+Evan Liang: Okay.
+Cooper Tenney: I think it is probably.
+Dean Liang: I think so.
+Cooper Tenney: It was working so well, like day two.
+Dean Liang: Well, it was so simple back then.
+Dean Liang: Like I'm actually making it like generated and like now it's like, oh, how.
+Cooper Tenney: Long does it take to like once you click generate.
+Dean Liang: Oh, it's like instantaneous though.
+Dean Liang: Like I've created a different.
+Dean Liang: There's a completely different way of doing it now.
+Cooper Tenney: But yeah, it's.
+Cooper Tenney: It's a little.
+Cooper Tenney: Sounds good.
+Dean Liang: I can't wait for Fireflies to try.
+Cooper Tenney: To ingest what just happened.
+Cooper Tenney: That is.

@@ -38,3 +38,16 @@
 - fireflies-id: 01KVR0XTG5DEBBH9FTWH1CYJMB
 - Pages updated: none
 - Summary: Cooper's own recording of the same Monday standup captured by 01KVEPX2QG4AVYFRGBDAT1W5TF (identical content/ending). Logged to prevent reprocessing; no separate updates and no separate transcript archived.
+
+## 2026-06-22 — Stand Up (evening)
+- fireflies-id: 01KVGJHWTACHX74Q4WV7TRQ44P
+- Pages updated: wiki/projects/renewal-platform.md, wiki/people/cooper-tenney.md, wiki/people/dean-liang.md, wiki/people/evan-liang.md, wiki/people/aaron-rose.md, wiki/people/parth-godarajesh.md
+- Transcript: transcripts/2026-06-22-stand-up-evening.txt
+- Correction: An automated run on 2026-06-23 wrongly logged this as a DUPLICATE of the morning standup (01KVEPX2QG4AVYFRGBDAT1W5TF). It is a distinct **evening** standup — the API `date` (1782174600000 = 17:30) differs from the morning standup's (1782144000000), and the content is entirely different (the four-build merge had already happened). Reprocessed in full.
+- Caveat: Fireflies labeled speakers only as Cooper/Evan/Dean and diarization is unreliable; Aaron + Parth attended (per the participants list) but are largely unattributed in the text, so only items explicitly tied to them were recorded. Some lines attributed to "Cooper" are clearly other speakers.
+- Summary: Evening standup after day one of the unified-dashboard build — Parth/Evan had merged all four builds into a working "Combined Dashboard" (~35–40% on UI); team adopted a git-branch collaboration model, decided to standardize on one fake-company corpus (Cooper to produce a JSON), and spun up a parallel clean-sheet rebuild (Dean + Aaron). Also: no standup tomorrow (sales pitch instead) and the off-site will be paintball.
+
+## 2026-06-22 — Untitled (17:29 PDT) [DUPLICATE]
+- fireflies-id: 01KVRY3SMMBFK45TWH9AW5GFFF
+- Pages updated: none
+- Summary: Cooper's solo recording of the **evening** standup above (01KVGJHWTACHX74Q4WV7TRQ44P) — same date (17:30), duration (~38.7 min) and content; not a duplicate of the morning standup as an automated run had logged. Logged to prevent reprocessing; no separate updates and no separate transcript archived.
