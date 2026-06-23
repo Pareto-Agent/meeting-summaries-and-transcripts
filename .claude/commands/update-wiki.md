@@ -21,6 +21,8 @@ Fetch new transcripts from the Fireflies API and update the wiki.
 
 4. For each unprocessed transcript (oldest first):
 
+   **Duplicate handling — be conservative.** A transcript is a duplicate ONLY when its actual content matches an already-processed one (e.g. the same meeting captured by two recorders). A shared title and calendar day are NOT sufficient — the same team can hold a morning and an evening standup on the same date. Before marking anything `[DUPLICATE]`, compare the API `date` timestamp (down to the time, not just the day) AND skim the reconstructed text against the candidate. When in doubt, process it as a real meeting — silently dropping a genuine meeting is far worse than a redundant entry. Only when you are confident it is a true duplicate, log it as `[DUPLICATE]` with `Pages updated: none` and skip archiving a second transcript.
+
    a. Reconstruct the full transcript text from `sentences[].speaker_name` + `sentences[].raw_text`.
 
    b. Identify the meeting type from content:
@@ -34,7 +36,7 @@ Fetch new transcripts from the Fireflies API and update the wiki.
 
    e. Extract signal per the rules in `CLAUDE.md`.
 
-   f. Save the reconstructed transcript to `transcripts/<YYYY-MM-DD>-<slug>.txt` for archival (slug = lowercase title, spaces → hyphens, max 40 chars).
+   f. Save the reconstructed transcript to `transcripts/<YYYY-MM-DD>-<slug>.txt` for archival (slug = lowercase title, spaces → hyphens, max 40 chars). If that path already exists for a *different* transcript (e.g. two meetings the same day share a title), add a disambiguating suffix (e.g. `-evening`, `-2`) — NEVER overwrite an existing transcript file.
 
    g. For each relevant wiki page (people, advisors, projects):
       - If the page doesn't exist, create it using the template in `CLAUDE.md`
