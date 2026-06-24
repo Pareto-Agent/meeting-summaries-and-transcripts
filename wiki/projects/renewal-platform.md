@@ -1,7 +1,7 @@
 # Renewal Platform
 **Status:** Active
 **Owner:** Evan Liang
-**Last updated:** 2026-06-22
+**Last updated:** 2026-06-23
 
 ## Goal
 Build an autonomous AI agent system that replaces Account Managers for long-tail renewals — giving AM leaders full visibility into each step of the renewal process.
@@ -10,6 +10,8 @@ Build an autonomous AI agent system that replaces Account Managers for long-tail
 Five-person team building individual modules with dummy data. No live CRM integration yet. **Pivoting (2026-06-22) to a single unified dashboard** that consolidates each person's separate dashboard, with a centralized per-account page (buyer-journey tabs). Migration to the unified dashboard is the near-term focus, targeting a demoable version for the AJ demo on 2026-06-25.
 
 By the **2026-06-22 evening standup**, Parth/Evan had executed a first merge — all four builds stitched into one **Combined Dashboard** (informally "DD" / "Daddy Dashboard" / the "Frankenstein"), living in GitHub under a `combined-dashboard` / dashboard-modules folder. The individual agent functionality is working live (Evan's outreach/language/champion models call the API), but the merged UI is judged only ~35–40% there. Team aligned on a git-branch collaboration model (everyone pulls the combined dashboard as `main`, generates a diff to push their individual work into it, then iterates decentralized with GitHub handling merge conflicts) and decided to also spin up a **parallel clean-sheet rebuild** in case the merge gets too messy.
+
+By the **2026-06-23 evening standup**, Aaron had overnight rebuilt his parallel "Frankenstein" dashboard into a fully unified dashboard with its own data model — using the same 28-account fake corpus spanning all stages from Qualify to Buyer — and merged all conflicts (including Dean's latest proposal work) into `main`. The team agreed to go with **Cooper's "parents" architecture** as the primary codebase going forward (over Aaron's approach); Aaron himself advocated this, citing easier conflict management and cleaner backend design. The next forcing function is the **AJ demo on 2026-06-25**: Evan will lead the voiceover, one team member drives navigation, and the full team gathers in a single conference room.
 
 ## Module Architecture
 | Module | Owner | Deliverable |
@@ -22,23 +24,34 @@ By the **2026-06-22 evening standup**, Parth/Evan had executed a first merge —
 | Data dictionary (proposed) | TBD | Per-customer canonical field definitions — what "ARR"/"renewal" means and which field maps to it (new module idea floated by Evan, 2026-06-22) |
 
 ## Open Items
-- [ ] **Everyone (by tomorrow's work, 2026-06-22 evening):** pull the Combined Dashboard, run a diff of your current module against it, and use Claude to generate a file that pushes your individual changes into it
-- [ ] **Evan:** merge the team's individual diffs into the Combined Dashboard tonight and produce an updated version ("DD v2") as the new `main` starting point by tomorrow morning; do one more commit/push by 6pm
-- [ ] **Cooper:** create the canonical fake-company JSON corpus (~100–200 companies, each <$10k) and send to the team; lead the centralized **account page** integration (taking the right code/functionality from each module into the single per-account page everyone lands on)
-- [ ] **Dean + Aaron:** start the parallel clean-sheet combined dashboard from a spec — scaffold all renewal stages (~6–7 modules, incl. negotiation + close), then fill one spec at a time
-- [ ] **Each person:** write a spec for their individual module (Dean to draft the combined/clean-sheet spec — Cooper noted Dean "has the best vision")
-- [ ] **Unified dashboard migration plan** (team, 2026-06-22): (1) build a fake/placeholder unified dashboard, (2) everyone freezes & saves their current work as a fallback before the migration, (3) detach each person's dashboard from their underlying agents/functionality, (4) integrate agents into the unified dashboard one stage at a time (qualification → outreach → …). Use the fake-data pipeline for the integration.
-- [ ] Each person: keep a copy of their current dashboard to iterate on during the migration; create an integration markdown file documenting connections / required components so the centralizing agent can read them
+- [ ] **Each team member (by 2026-06-24 evening standup):** hook your stage module into the adjacent stage — e.g., pressing "Approve Plan" in qualification auto-navigates to the next stage's view — so the demo has a narrative flow from stage 1 to 4 (2026-06-23 standup)
+- [ ] **Evan:** add a time-frame dropdown (Q2/Q3/Q4/All) to the top-level overview dashboard before AJ demo; send calendar invite for the AJ demo conference-room gathering (2026-06-23 standup)
+- [ ] **Team:** run through the full integrated demo narrative at the 2026-06-24 evening standup; give feedback on missing functionality (2026-06-23 standup)
+- [ ] **AJ demo (2026-06-25):** Evan leads voiceover; one team member drives navigation; all team in one conference room. Demo narrative: account at monitoring → qualify → outreach (draft from signals) → response → proposal (Dean's deck) → buyer hub → admin view
+- [ ] Ask Claude to (a) assess which codebase architecture is better, (b) generate a product architecture diagram as an artifact, (c) count lines of code per dashboard (2026-06-23 standup)
+- [ ] **Cooper:** create the canonical fake-company JSON corpus (~100–200 companies, each <$10k) and send to the team — still open from 2026-06-22
 - [ ] Pull customer contracts in up front — required for the buyer-engagement module to work, and contracts double as renewal signals
 - [ ] Evan: set up a call with the LeanData (LD) team who built a data dictionary, as reference for the proposed data dictionary module
-- [ ] AJ demo: validate stages + visibility hypothesis, now with the unified dashboard demoable — 2026-06-25
 - [ ] (Tentative) Weekend standups: ~once/day, ~30 min, around 1pm, opt-in — proposed by Evan 2026-06-22
 - [ ] Julia + Evan: value proposition deck targeting AM leaders — due week of 2026-06-23
 - [ ] MCP integration: Cooper + Aaron working on real CRM data connection — deferred until module deliverables are stable
 - [x] ~~Team: 1:1s with Evan early week of 2026-06-23 to align on AJ demo plan~~ — at least Cooper's 1:1 with Evan happened by 2026-06-22 (referenced in standup)
 - [ ] ~~Parth: scope down to champion agent + language agent only~~ — superseded 2026-06-22: Evan proposed Parth take the unified dashboard (top-level + per-stage) piece; language/voice agent remains active
+- [x] ~~Dean + Aaron: start the parallel clean-sheet combined dashboard~~ — superseded 2026-06-23: team went with Cooper's "parents" architecture as the primary codebase; Aaron's parallel build was a valuable prototype but not the path forward
 
 ## Decision Log
+### 2026-06-23 — Team Standup (evening)
+- **Decision:** Adopt **Cooper's "parents" architecture** as the primary unified dashboard codebase going forward. Aaron's overnight rebuild (the parallel approach) is acknowledged as valuable but not the path forward.
+- **Rationale:** Aaron himself advocated this — each merge of other team members' work into his build required substantial conflict management; Cooper's build was designed with the backend in mind and has a cleaner, more scalable structure. Each team member's module lives in its own folder, making it easy to edit independently.
+
+### 2026-06-23 — Team Standup (evening)
+- **Decision:** AJ demo format: Evan leads voiceover/narration; one team member drives screen navigation. All team gathers in a single conference room (not separate remote sessions). Demo will not bounce between views — tighter, structured narrative flow.
+- **Rationale:** Cleaner for the audience; Evan has the context and relationship. Mirrors the format of the earlier Franco (Lean Data RevOps) call.
+
+### 2026-06-23 — Team Standup (evening)
+- **Decision:** Each team member to hook their stage module into the adjacent stage before the 2026-06-24 evening run-through, enabling a continuous demo narrative from qualification through buyer hub.
+- **Rationale:** A disjointed demo that can't flow naturally between stages undermines the product story. The demo narrative: monitoring → qualify → outreach (AI-drafted from signals) → response received → proposal (Dean's deck) → buyer hub → admin view.
+
 ### 2026-06-22 — Team Standup (evening)
 - **Decision:** Adopt a standard git-branch collaboration model on the Combined Dashboard. Everyone pulls the combined dashboard as the `main` starting point; each person uses Claude to generate a file/diff that pushes their individual module's latest work into it; from then on everyone works decentralized off `main`, committing/pushing and letting GitHub flag/resolve merge conflicts. No single person "holds the master" — it lives in GitHub.
 - **Rationale:** Modules were diverging in separate folders; a single shared `main` removes the bottleneck of coordinating who pushes when and lets people work on their own sub-sections without blocking each other. Evan: "this is the point where we start from one, then branch out again — typical software engineering."
@@ -84,6 +97,9 @@ By the **2026-06-22 evening standup**, Parth/Evan had executed a first merge —
 - "John from Site Tracker" mentioned as a prospect who wanted champion-finding help
 - **Competitive exercise (2026-06-22):** Evan had the team map a competitor to each module (tracked on an "intern sheet") to inform dashboard/account-page design. Called out for the **buyer hub: High Spot** — a sales-enablement (seller-side) company that has built a buyer-engagement module — as a relevant reference to study ("someone who tried to do it from a very different perspective"). Evan said he's "not worried" about it competitively.
 - Julia (role unclear — possibly a team member or contractor) working on value prop deck
+- **June 23 evening standup — Aaron's overnight rebuild:** Aaron rebuilt his parallel "Frankenstein" dashboard overnight into a fully unified dashboard using the same 28-account fake corpus spanning all stages (Qualify to Buyer). Key functional features working: top-level overview (accounts by stage, at-risk count), clickable stage → account-list view, individual account page with Qualify/Outreach/Proposal/Buyer tabs, live signals + next steps + drafts, voice agent (generates renewal emails with tone matching — tested with "Maldives vacation" scenario), email generation via API, Dean's proposal work integrated (per-account ARR, account-specific deck data), search functional, flag-for-review. Not yet complete: buyer hub schema not updated with replacement stream, proposal "generate" button not wired up, time-frame dropdown (Q2/Q3/Q4) for overview. Cooper's dashboard has a middle layer (stage overview before account list), Overview + Monitoring structure, all TypeScript.
+- **AJ context (2026-06-23):** AJ = renewals manager at Lean Data, reports to Brian Burkett (CSO/CRO). Manages commercial accounts (smaller, long-tail renewals). AJ persona: skeptical — "what's in it for me to risk my neck to do this?" The CRO (Brian) will buy on headcount/ROI ("you're helping me take out headcount, deliver outcomes, great") and defer to the renewals leader for product validation. Franco = Head of RevOps at Lean Data; advises CRO on technology decisions; not the decision-maker but can advocate. Call with Franco + Parth happened 2026-06-23 (day of standup).
+- **Juliet's pitch outline (read by Evan in 2026-06-23 standup):** Targets renewal leaders at B2B SaaS. Pain: "There's nothing worse than sitting in churn reviews... tracking the renewal pipeline week over week only to have deals that look green fall apart at end of quarter." Problem: long-tail SMB/mid-market accounts (20–50% of revenue) get less visibility as rep span grows. Hook: "enterprise-grade renewal motion at commercial scale without additional headcount." Positioning: sub-agents specialize in each renewal step (qualify → outreach → proposal → buyer eval → negotiate → close) with clearly defined inputs/outputs per stage.
 
 ## Related Pages
 - [Evan Liang](../people/evan-liang.md)

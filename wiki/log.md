@@ -52,6 +52,18 @@
 - Pages updated: none
 - Summary: Cooper's solo recording of the **evening** standup above (01KVGJHWTACHX74Q4WV7TRQ44P) — same date (17:30), duration (~38.7 min) and content; not a duplicate of the morning standup as an automated run had logged. Logged to prevent reprocessing; no separate updates and no separate transcript archived.
 
+## 2026-06-23 — Stand up (evening)
+- fireflies-id: 01KVGJHWTKHCN4PX5JYHFBCZV6
+- Pages updated: wiki/projects/renewal-platform.md, wiki/people/evan-liang.md, wiki/people/cooper-tenney.md, wiki/people/aaron-rose.md, wiki/people/dean-liang.md, wiki/people/parth-godarajesh.md, wiki/advisors/aj.md
+- Transcript: transcripts/2026-06-23-stand-up.txt
+- Caveat: Fireflies attributed ALL speech to "Evan Liang"; the conversation is clearly multi-speaker. Attribution re-assessed from content and known module ownership. Aaron's voice is reliably identifiable from context (he was the one demoing his own build and advocating for Cooper's architecture). Other lines (Cooper/Dean/Parth questions) are preserved at project level without individual attribution.
+- Summary: Evening standup; Aaron demoed his overnight rebuilt combined dashboard (voice agent live, Dean's proposal work integrated, pushed to `main`); team decided to go with Cooper's "parents" architecture as the primary codebase; AJ demo format locked (Evan voiceover + one driver + all team in one conference room on 2026-06-25); Evan read Juliet's pitch outline to the team; detailed context on Lean Data org (AJ → Brian Burkett; Franco = RevOps advisor).
+
+## 2026-06-23 — ctenney Untitled (17:38 PDT) [DUPLICATE]
+- fireflies-id: 01KVVH0ESE7XVC9Z1QCT21HHM1
+- Pages updated: none
+- Summary: Cooper's solo recording of the same evening standup (01KVGJHWTKHCN4PX5JYHFBCZV6) — starts ~8 minutes in (17:38 vs 17:30), duration 28.88 min vs 31.15 min; content matches. Logged to prevent reprocessing; no separate updates and no separate transcript archived.
+
 ## 2026-06-23 — Pitch Contest
 - fireflies-id: 01KVEPX2QGS6XE0T92RP8NRZSY
 - Pages updated: wiki/people/cooper-tenney.md, wiki/people/evan-liang.md, wiki/people/dean-liang.md, wiki/people/parth-godarajesh.md, wiki/people/aaron-rose.md, wiki/people/juliet-lo.md (new), wiki/people/h-fong.md (new)
