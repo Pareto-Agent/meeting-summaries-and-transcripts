@@ -1,0 +1,797 @@
+﻿Jun 24, 2026
+Stand Up  - Transcript
+00:00:00
+
+
+Evan Liang: how to tell this demo story uh that it it's very clear that it's uh differentiated from how you typically do enterprise software. So uh if I just uh click through the demo, it's going to look like most enterprise software. So today it looks like a dashboard. And the difference is it's got to be more nuanced at how we tell that. So uh as I think through like how I would pitch it to AJ, I would say like hey AJ last time we chatted we went through the different stages and we talked about how we can have measurable stages with clear output that is measurable and then by bringing it all together into a centralized dashboard you can have control and visibility in a far better way than you could ever do it previously. Uh so the delta difference is today um CRM have these dashboards but you're relying on humans to put people put things into that stage and to know what's happening in that stage. Right. Right.
+Juliet Lo: Right.
+Evan Liang: Ours is differentiated in the sense that it's pure automation and when you're looking at the stage you're just seeing exactly what's happening but it's not that anything has to happen in order to uh to move it into that stage or it's automatically there and what's happening in the stage is
+
+
+
+
+00:01:18
+
+
+Evan Liang: uh is happening u kind of in real time. So it's more telemetry than a dashboard if you will telemetry.
+Juliet Lo: telemetry. Oh, telemetry.
+Evan Liang: So it's just like you're Okay.
+Juliet Lo: Telemetry. Yeah, I thought you lemon tree.
+Evan Liang: Whatever it is. Oh, no. No.
+Juliet Lo: This Google uh
+Evan Liang: Yes. Yes. Yes. We call these lemon trees and our dashboards are called daddy dashboards. So, so
+Juliet Lo: Um yeah, I think um I mean get the concern.
+Evan Liang: sorry.
+Juliet Lo: I think honestly the wow factor.
+Evan Liang: You're you you you you um Yeah.
+Juliet Lo: Can you hear me?
+Evan Liang: You cut out.
+Juliet Lo: Yeah. Okay. Let me know if you can hear me.
+Evan Liang: Yeah.
+Juliet Lo: I was saying that I get why you're a little worried that it's not going to feel very cutting edge right now just with the UI, but I think where the magic will happen is when we start to show like the automation happen especially I think so many of the folks have been fixated on the email messages but I think as like the automation right is the magic not sort of like the dashboard that shows everything.
+
+
+
+
+00:02:35
+
+
+Juliet Lo: This is just sort of like the user experience. So yeah, I mean we won't get it all right now up front, but I think it's right place to start to actually show and like have the frame for where the experience
+Evan Liang: Correct. Okay. So,
+Juliet Lo: happens.
+Evan Liang: uh just want to yeah set that up and we are thinking of ways to maybe show the outputs maybe even a PowerPoint of the outputs or something other slider of it may be a better way to kind of showcase
+Juliet Lo: Yeah.
+Evan Liang: that. But let me show you let so with that context,
+Juliet Lo: Yeah.
+Evan Liang: let me show you the dashboard uh that they've put together, which is actually, like I said, pretty impressive uh given where we're at.
+Juliet Lo: Yeah,
+Evan Liang: So hopefully
+Juliet Lo: daddy dashboard.
+Evan Liang: uh I also don't think he's so updating. Okay, it's not pulling. Okay, so that's fine. Okay. Uh does someone else have the recent poll you want to share? pulls it.
+
+
+
+
+00:03:30
+
+
+Evan Liang: It will it will update. Go to GitHub. Go to GitHub. Press forward at the top. Oh, yeah. He doesn't have any diffs. So, it'll just happen. Yeah. There you go. I reload the page. I think it already worked. I already see the change. No, it's still Well,
+Juliet Lo: Mhm.
+Evan Liang: I I haven't mostly the funnel, right? So, um So, yeah. So high level overview it's the idea that you saw in replet that you could kind of pull up see all the periods where every single thing is real time from a thing and then you can go drill into any period and it will uh this is fake data it will actually show like hey what what is at what
+Juliet Lo: Yep.
+Evan Liang: stage right so this is a real-time visibility how everything is by stage and these stages
+Juliet Lo: Mhm.
+Evan Liang: are actually uh automated stages versus like human uh determined stages so we believe these stages are much more accurate.
+
+
+
+
+00:04:29
+
+
+Juliet Lo: Mhm.
+Evan Liang: Uh as you kind of move through it, uh it allows you to kind of see drill down into each stage. So monitoring, you can see how you're doing by in this case usage, high usage, healthy, low at risk. Uh and so the first piece of automation is really stating that like we're gathering all your signals and uh automatically classifying your deals and alerting you of future turn risk or opportunities for upsell that are out of out of cycle. Oh, that's better. out of cycle versus monitoring out of window. That's somewhat similar to what you're saying. Yeah. Uh on the qualification side, it's like, hey, here's how once a deal is 120 days, this is how we're automatically classifying them into either upsell, flat, or churn risk. Um and so that uh you can e actually easily see uh how the signals are being used uh using a rulesbased system in order to figure out hey what's the summary and why we're we're doing this. So stripe we're using kind of AI intelligence to summarize what are all trend lines
+
+
+
+
+00:05:31
+
+
+Juliet Lo: Mhm.
+Evan Liang: and all the signals that lead us to believe that this is an upsell opportunity. Okay.
+Juliet Lo: Mhm.
+Evan Liang: uh outreach. Um again the emails are autogenerated. Uh so for anything the emails based on the scenario autogenerated and you can see where it started like hey how many are in draft sent waiting or ex engaged. Uh and we would be able to show also that hey this thing is automatically figuring out who's the right person to so is it uh is is the person there have they departed? How do we find like automatically figure out uh who are other candidates that they need or we can reach out to like Zoom info or Clay or whatever to find additional contacts. So we're the the this point of the automation is really figuring out the right person to engage with at that point in time in that renewal.
+Juliet Lo: Is there one for sort of like uh not just departed but just like no response?
+Evan Liang: Okay.
+Juliet Lo: We hear that a
+Evan Liang: Yeah.
+
+
+
+
+00:06:33
+
+
+Evan Liang: No response. Um Go to the company.
+Juliet Lo: lot.
+Evan Liang: Go to company. Oh, sorry. Uh, it see you can see unreachable. Yeah. Yeah. Unreachable. So, yeah, I think I think this is it says unreachable. There's no we don't have uh examples of why they're unreachable, but I guess what you'll have is you'll have a tab or like a a data drop here where it shows that an email was sent out. what the email said, nobody responded yet and it has been there's been a few particular notes. Yep. So I think yeah for uh that that is a scenario absolutely Juliet that we need to we will cover.
+Juliet Lo: Yeah,
+Evan Liang: So
+Juliet Lo: I think it should be at the other level along with the other like departed like along the at the contact level and
+Evan Liang: got it makes
+Juliet Lo: it just like hey I haven't responded in 30 whatever like x number of days let's just say
+Evan Liang: sense. Okay.
+
+
+
+
+00:07:28
+
+
+Juliet Lo: unreachable.
+Evan Liang: Um I think yeah I reach Yeah. Okay. Yep. So you're right when
+Juliet Lo: Yeah,
+Evan Liang: you
+Juliet Lo: you would send another one if you don't hear back and after x number of attempts and x number of days you would just classify them as unreachable.
+Evan Liang: Yep. So yeah. So I think in the outreach stage the whole point here is the automation keeps on going until uh until we find someone. We find someone Yep.
+Juliet Lo: Yeah.
+Evan Liang: to get engaged from from there it goes into the proposal phase uh which is basically showing that like hey we then drafted auto auto create a proposal that's drafted uh for the specific renewal and I think the best way to show that is to show kind
+Juliet Lo: Mhm.
+Evan Liang: of like hey a deck is autocreated um behalf that you can actually click
+Juliet Lo: Yeah.
+Evan Liang: through um and so for every single account this just happens in the back
+Juliet Lo: I love how like yeah good good response to feedback.
+
+
+
+
+00:08:27
+
+
+Juliet Lo: It feels much
+Evan Liang: Yeah,
+Juliet Lo: better.
+Evan Liang: it kind of this kind of feels like hey you you built PowerPoint or slides share into this deck easily, right? Impressive. Okay. Uh and so that's hey, we can send this out and we can auto send this out email. they can review it or you know I I like you can imagine us also doing speaker notes here and then you could just have a voice AI talk through the speaker notes. So you could actually deliver this in any media you want uh yeah and this kind of becomes that
+Juliet Lo: Yeah. Yeah. What?
+Evan Liang: level of automation and then from there this is uh directly integrated into buyer evaluation. So we have this kind of buyer portal that we can send them via link and the buyer portal would have all the key information they need to kind of automatically updated. So it's like from a documents perspective you can have the MSAs legal compliance have all the contract history. Uh and the key thing here is really the telemetry that we have on on this.
+
+
+
+
+00:09:25
+
+
+Juliet Lo: Yeah.
+Evan Liang: So we have an level of expertise on like hey who has engaged with your form what's the uh what's the best way to show this buyer cockpit is that yeah cockpit okay so for each deal you can see exactly who on the buying team when did they view it uh what did they actually interact with uh all the telemetry around like what what are the things that they're looking at etc so the idea is it's almost like you can see real time how the buyer is engaging with that
+Juliet Lo: Uh yeah, this is great. Okay. So,
+Evan Liang: page.
+Juliet Lo: at the individual account level, there's obviously a buyer hub, but then the cockpit is sort of the telemetry around who's engaged and then the seller hub and oh,
+Evan Liang: Yep.
+Juliet Lo: sorry, who engaged and when and what do they look at and if there's a chat history with the the agent and then overall there's a seller dash across your deals, right? I saw cuz I saw a siller dashboard and I saw a cockpit but I Okay.
+
+
+
+
+00:10:35
+
+
+Evan Liang: Correct. Yes,
+Juliet Lo: Yeah. Okay.
+Evan Liang: we we'll explain that, but it's it's it's like on the buyer evaluation side,
+Juliet Lo: Cool.
+Evan Liang: you can see like if they're engaged or not engaged, right, with your uh thing, right? But then if you click in, you can actually really drill in and this is that level of visibility that no one ever has, right?
+Juliet Lo: Yeah.
+Evan Liang: So like, yeah. So you can be like, "Okay, let me see. This is okay. Buyer hub preview is what they see. Cockpit is, hey, here's all the information on what they're doing." Okay.
+Juliet Lo: Mhm.
+Evan Liang: And then from there obviously we will then work on negotiation and closing but similarly automation. So, so again the idea is that hey this will uh we are moving everything to the gent autonomous process but for the renewals leader you will also by doing this you have an amazing sense of telemetry and visibility that you never had in your existing process.
+Juliet Lo: All right, guys. I have to give you massive kudos.
+
+
+
+
+00:11:44
+
+
+Juliet Lo: This feels so good. It all hangs together. I feel like we've really hit all the highlights of what customers have been asking for. Like, we really listen. And I I mean obviously haven't dug into all the details, but I feel like it it feels real. It feels like robust. I think actually Evan, you are like selling it short. I don't think it feels like what's out there because you're not just tracking. I mean, yes, the dashboard and the stages, but then if each one, you're seeing like I guess the work product like you're seeing the full experience of what the buyers get and not just on our end.
+Evan Liang: No.
+Juliet Lo: I mean, this looks amazing and I'm so glad you did the work to rebuild it into one cohesive experience. So yeah, I'm totally impressed and amazed at how much has taken place um just over the last few days and how it's all kind of coming together. I think this is like massive progress and like will be good fodder for with AJ and others and I think yeah it's the vision is starting to come together right like when we're just seeing bits and pieces it was a little bit hard to imagine like what the experience would be for our target persona which is the renewals leader but just putting it all in that like one seamless flow and experience the ability to zoom out and see like the impact quarter over quarter or overall and then zoom
+
+
+
+
+00:13:17
+
+
+Juliet Lo: in to like specific accounts and then zoom in again into like um the buyer portal or the deck that the the proposal that you presented. I don't know if we have emails but like this is really this feels really good.
+Evan Liang: Nice.
+Juliet Lo: So yeah.
+Evan Liang: There we go. Here. Yeah.
+Juliet Lo: Wow. Amazing.
+Evan Liang: Ideas on how to like demonstrate the automation or should we say that? Sure. Go for it. Cooper's question is, "Hey, do you have ideas on what's the best way to demonstrate the automation side of it? Because like right now it feels like okay you have to go through and approve it and then you have to draft the email and it's like a voice and then you have to like send it like you know there's there's a lot of buttons that we still have that are you know and so for the demo idea
+Juliet Lo: Yeah, I Yeah. Yeah.
+Evan Liang: that Erin had and this is just like a I don't know halfbaked idea, but it sounded good to me is like have like a slider that just like represents the time and so like it would start at I don't know 15 monitoring and you just slide the slider and one account progresses through the stages.
+
+
+
+
+00:14:26
+
+
+Evan Liang: I don't know if that's something but just just to demonstrate that it's not just like a click and drag and all that stuff.
+Juliet Lo: Yeah, I actually think I I I'm not as worried about that because I don't think our customers are ready for it to completely run on its own. I think they actually want to be able to see what's happening and to like play around with it and drill down and zoom out. I think the automation is sort of like the emails or the proposals or the buyer hub that's already generated without any help from them, right? Or the account plan,
+Evan Liang: Yeah,
+Juliet Lo: renewal plan.
+Evan Liang: thank
+Juliet Lo: I don't think the demo run its own like a like an animation or like a time progression
+Evan Liang: you.
+Juliet Lo: thing. I think it's really just if we show it here like like knowing AJ, he's going to have like an account of mine. He's going to be like, "All right, show me what you did here." Oh, okay. This is like the what is that?
+
+
+
+
+00:15:17
+
+
+Evan Liang: No.
+Juliet Lo: The onepage summary of like where the account stands. Yep, that tracks what I think. And like, oh, yeah. Yeah, that's exactly scenario I would pick. Like I think showing them just like the decisions that were made like as captured and the um reasoning and then the output I think that is more than enough right because yeah I that's more than enough and then obviously we
+Evan Liang: It's fine.
+Juliet Lo: have you don't have to review it we're giving you the option because that's you know what some customers want but if you wanted it you know if you you know after a trial period if you feel comfortable this whole thing you can like set certain steps to automate on its own without approval. So the whole
+Evan Liang: you want to share something D. Yeah.
+Juliet Lo: thing.
+Evan Liang: So the thing that Cooper was talking about uh would be more like this kind of viewpoint where Okay. So we have like if we want to show dynamically a bit more what's going on, right?
+
+
+
+
+00:16:15
+
+
+Evan Liang: We have like okay let's say I click this like this is just like trying to like a bit more to life.
+Juliet Lo: Okay.
+Evan Liang: We already have this slider, right? So say I'm in the outreach stage, right? and say that this outreach was this email was generated. I could click here and like show the email more directly, right? So it's like whether we want something that's like this where like okay agent can kind of track across the account what's going
+Juliet Lo: Okay.
+Evan Liang: on. So qualified it generate a qualification forecast generate these numbers then we move into outreach and validation and that
+Juliet Lo: Um,
+Evan Liang: this is the email that generates etc. Like whether that which will not be
+Juliet Lo: yeah. Okay, that's actually really cool.
+Evan Liang: surfaced.
+Juliet Lo: I didn't realize, but that makes sense. Instead of assuming the deal's already done all the way through,
+Evan Liang: Yep. Yes. A single deal.
+Juliet Lo: show how the dashboard right how a single deal with more information.
+
+
+
+
+00:16:58
+
+
+Evan Liang: Yeah.
+Juliet Lo: All right. This is
+Evan Liang: Yeah.
+Juliet Lo: Yeah.
+Evan Liang: Started when you mentioned it. Yes. So I think it's there's this dashboard view, but it's also like, hey, one, you want the buyer experience view is just like, hey, what does the buyer actually see at these outputs? Like let's just show there. You kind of have a mix of both, right? And then I think the demo our our side we can demo uh it is helpful to demo in the daddy uh the the the current dashboard uh how a deal moves through because uh what what it's nice to be like well if you wanted to do this you can jump here that flexibility with the real demo is better than a slideshow but the slideshow of the output is better because it's just smooth and uh and then someone can like quibble here but then he's like oh but you can go in and change that if you don't like the email change that you don't like the deck, change that. And there's like I can do all that here and I have control.
+
+
+
+
+00:17:57
+
+
+Evan Liang: That that that's a powerful combination between the two. And then the third track is probably not shown in the initial demo, but then you you sometimes uh on these deals then like people like RevOps get involved, right? And they'll be like, well, what if I want to change my signals and I want to change the rules for what a signal? That's a third level demo where you're just like, yeah, we can do that. Taken care of, blah blah blah blah. But you wouldn't show that on an initial sales call demo because that's too much in the week, right? So it's got like three layers of it. But what you want to do is whichever persona comes to you, you can answer their questions. Really cool. But that is
+Juliet Lo: It's also depends on how we define our like initial version of product the MVP right that we want partner a lot of times like versions like that backend
+Evan Liang: no.
+Juliet Lo: configuration isn't expect deployed engineers or historically CSMS would do And that would be amazing if you had it and that would probably be there in future versions, but maybe that wouldn't be the first area of focus, right?
+
+
+
+
+00:18:57
+
+
+Juliet Lo: Because you can we can do all that in the back
+Evan Liang: Yep. So, should we have toggles for each stage of being like,
+Juliet Lo: end.
+Evan Liang: okay, if you want, you can have this flow all the way through or if you're not if not you can edit it or whatever. Uh, for now, I think let's just break it out into the way you have like a PowerPoint just just the the the hypothetical buyer experience with each stage, right? And then, uh, I think the dashboard as you guys have built provides that next layer. Okay. It's more just like there's still this conflict between okay buyers are not ready that are going to want to like say oh you can edit this edit this versus like automation and you came off flip-flopping a bit. So for the dashboard for the demo yeah do we want to have it so they have to approve steps they can stop and approve the PowerPoint and the email before it gets sent like what are we showing you this demo? Yeah.
+
+
+
+
+00:19:47
+
+
+Evan Liang: So in the demo, we're showing that, hey, here's the email. Like it's almost I have it like the approval step is almost like the draft stage. Okay. So when it's in the draft stage, you can go in and go see the drafts, right? You want you want to have that like it pauses and waits for approval for the demo. No, no. When it's in the draft stage, people can approve it. How it moves from draft to sent, right? Does it require a human being to do that? Our assumption is no. If you do not do anything, by default, it will get sent on a timeline perspective. So what are you editing? You can't edit the email because the email is going to get generated to send immediately unless it pauses and waits for a human being. It can pause and like so uh both the deck and the email can get drafted before the sent date. Okay. Yeah. Based on the signal document.
+
+
+
+
+00:20:33
+
+
+Evan Liang: Okay. So it just it drafts and then it waits according to some timeline in that waiting period. Okay. Got that's how that's cool. And that that that's this will that's what the that's why we have those stages and that's what will give the manager uh thing. He's like hey I and ideally what a manager will do is he's like I know the emails get sent 30 days before renewals but I can check the emails get generated like 60 days before is not flagged or for review. The wording is drafted ready to be sent. Correct. Okay. Okay. Okay. This is Yeah. So, so, so the, so the system is automated on a time frame based on the thing. Uh, and you as the manager can come in and make edits during these time frame, but yeah, but once it's sent, it's sent. Yeah. And we're not going to wait and nor do they want us to wait to gate it because maybe that's a good way to think about it.
+
+
+
+
+00:21:27
+
+
+Evan Liang: Yeah. So, cool.
+Juliet Lo: Right. I mean, I could see that, you know, maybe for the for the most part our our customers would want to review the account plan and approve it, right? And then like just let it run automatically. But maybe from the beginning, based on what AJ said, he's probably going to want to review everything that touches the customer, right, until he gets comfortable. So, we should have the ability to review at every stage, but then obviously not require that, right? You can pull it backstage by stage as you get comfortable with
+Evan Liang: Yeah. Yeah. And and that's the expectation is uh like upfront people are going to want to review every email,
+Juliet Lo: it.
+Evan Liang: every deck, and then by like the fifth or 10th they're going to be like whatever, this looks good. And then it'll just start automatically going. But then uh this audibility uh these drafts and what is actually sent is really really key because uh what happens is something eventually goes wrong, right?
+
+
+
+
+00:22:23
+
+
+Evan Liang: And they'll just be like why did it go wrong? And today that is a very painful process. You got to go hunt through emails. You got to do that stuff. And that was actually ironically one of the biggest value propositions for lean data was auditability. We we just built it because we're trying to debug things. And so we built it and then it became like the one of the defining features later on because people were like oh I can see why this lead didn't go to the right place and boom I can answer that question and beforehand it was a complete black box or they would spend hours doing it right so in this case that's how we're going to dis discover the edge cases is going to automate or discover edge cases and be like this is an edge case how do we fix for that then you do that and then the next time it's through you don't have to worry about it and that's where like some of the learnings between customers will be helpful.
+
+
+
+
+00:23:11
+
+
+Evan Liang: or the reinforcement learning the system eventually when the system has every edge case you don't need people at all
+Juliet Lo: I didn't see uh in the demo,
+Evan Liang: that's
+Juliet Lo: but is there that escalations
+Evan Liang: yeah so uh good point uh we have not built that yet uh but yes there are
+Juliet Lo: inbox?
+Evan Liang: escalations and uh I will okay that's a great what she's talking I have like just on mine if I flag it it goes into like a new thing. Okay. Uh so she's saying like uh like the on the main dashboard there may be like like an inbox like you see like most products that's just like hey here are escalations across all the different stages task or like notifications. Yes. Yeah. That's a that you see. Yeah. Yeah. Okay. Okay. Cool. That's a great call, Julia,
+Juliet Lo: Yeah.
+Evan Liang: that you could escalate at any stage to notification.
+Juliet Lo: Okay.
+Evan Liang: Uh,
+Juliet Lo: Okay. Cool.
+
+
+
+
+00:24:12
+
+
+Evan Liang: I have a quick question.
+Juliet Lo: Um
+Evan Liang: So, I uh Yeah, go. Uh, sure. Go for it, Cooper. Um, so this is what it looks on my Okay. I remember you said like okay certain people are more or certain companies customers are more like I guess competent or like they have their stuff figured out more so maybe they don't want the like the first three stages. Do we want to add toggles? No no no no no I it's uh they don't have pain points at those stages but they absolutely need still have these stages. So those are those are always in their non correct. Yes. you like and in fact here's a here's a little bit of a like theory stuff and I'll try to keep it simple uh uh actually the the value in our system again isn't in each the just the automations it's having the context across everything so one system having context across the whole deal makes it more powerful and that's why we've been holding off on negotiation because if I do all the four steps really well this negotiation will go far better because I have so much context and to to that point one of the problems I've seen with the sales and marketing processes is is they keep on trying to automate that 65% and they take rob context from the central person which is the human.
+
+
+
+
+00:25:33
+
+
+Evan Liang: So sales reps today don't have as much context as they did 25 years ago which is why I don't feel that they're as effective and quotas haven't gone up. Does that make sense? It's like uh it's just like um today if you think about a student who's trying to answer questions and relies 100% on chat GBT. They don't have enough knowledge to be able to really understand what's going on. That's sales reps today. And that's how everyone else is approaching it. They keep on trying to make it easier and easier for the sales rep, but the sales rep keeps on lacking more and more. He can't demo anymore. He didn't do the research. He didn't like follow like look up the right person's. He didn't have to find the right person. what is he doing? Right? He's not as effective because he doesn't have all that context. And what we're trying to reverse is like, hey, if our agents have the context, we're going to crush.
+
+
+
+
+00:26:24
+
+
+Evan Liang: That's the value is the context and knowing what's happening at every stage. anyone can automate each stage like like that's why you guys saw there's products automating each stage but without stitching it together you're actually missing uh uh the the the true power of and that's where we can actually tackle negotiations whereas most people can't because if you're just like the fire hub you can't negotiate you don't know if you just do the research up front you can't negotiate if you know everything of what's happening then negotiations isn't as scary because you're like I understand this guy's highly engaged. He's done all this. All the people are there. We've got leverage. Let's not discount the pricing. Or like, hey, this is going to be a tough negotiation. They haven't looked at the damn contract. They haven't they haven't sent anything. Yeah, this thing's a turn risk, right? There's something weird going on here. And it's five days from renewal. Yeah. Awesome.
+Juliet Lo: Come on.
+
+
+
+
+00:27:22
+
+
+Evan Liang: Cool. Lots of progress, guys. Um, want to put it push it to
+Juliet Lo: Is there a way to Is there a way to make deals since we're getting paid since we're getting paid?
+Evan Liang: Jul.
+Juliet Lo: Are we getting paid on the deals we close or the amount of renewals we handle or have we not decided that it's outcome based, right? the deals that
+Evan Liang: Yeah, it feels that close. That's where we really want to move towards.
+Juliet Lo: Okay. Yeah. And I know there's a closing stage, right? So you can Is that the Is that a headline number on the daddy dashboard?
+Evan Liang: Yes. The headline number is the deals that we actually closed.
+Juliet Lo: Okay.
+Evan Liang: Yeah.
+Juliet Lo: Okay, good. Yeah, because that is how we're getting
+Evan Liang: Closed launch here today. Yeah.
+Juliet Lo: paid.
+Evan Liang: So, this dashboard is only for the book of business you gave us.
+Juliet Lo: Yeah. Yeah, for
+Evan Liang: Yeah. It's not your total business.
+
+
+
+
+00:28:10
+
+
+Juliet Lo: sure.
+Evan Liang: But that's where that's where we see the the the dream is like if you really love the way we manage all this, why would you not give us more and more and then that's that's where it
+Juliet Lo: Right, right, right.
+Evan Liang: takes over the CRM,
+Juliet Lo: Cool.
+Evan Liang: right? If if if all the business is rolling through this, you don't need a CRM. But in a world where it's partial,
+Juliet Lo: Right.
+Evan Liang: we will continue to work through the CRM because we have to sync all the data back and forth and we're just a piece of your overall p puzzle. But in a in a in a truly autonomous world, then yes, why would you pay Salesforce? Because and it's far easier than the CRM because like I said, the CRM has to make the uh has to hold the proposition of people and all this other stuff.
+Juliet Lo: Mhm. Yeah.
+Evan Liang: Yeah.
+Juliet Lo: No. Cool. Yeah. No,
+Evan Liang: Cool.
+Juliet Lo: I think um it feels like a very I mean like more or less complete flow and experience.
+
+
+
+
+00:29:08
+
+
+Juliet Lo: I mean obviously as we build out more of the stage the last two stages and down the line the configuration but it and then obviously as we populated with work product or outputs but it feels like we've got the the right workflow right to drive renewals end to end here which is amazing and it's cohesive and again it's just detailed enough where it feels like we're credible and we've listened and we understand the process right which is like what we want at this stage. Obviously, we're going to do more refinement and research and I know I know but you know just at that level that so
+Evan Liang: again. That's what I'm pitching. And Cooper in his pitch,
+Juliet Lo: yeah
+Evan Liang: when Cooper gave his pitch in the in the presentation, he explicitly said, "We have go to go to market expertise." And I was thinking like, "We do not." This is where as an entrepreneur,
+Juliet Lo: we do not
+Evan Liang: fake it until you make it. Confidence can say a lot. Okay. Awesome.
+
+
+
+
+00:30:19
+
+
+Evan Liang: Cool.
+Juliet Lo: Yeah.
+Evan Liang: Uh yeah, hopefully. So, I think what we'll do is uh looks like Dean's working on we'll stitch together that output stuff. So, we'll make sure to get that over to you, Juliet, because that kind of will be uh tied in a little bit with the sales pitch deck. Uh because I could see your slides showing like the outputs and then describing what we're trying to
+Juliet Lo: Yeah, I already have slides. I already have placeholder.
+Evan Liang: do.
+Juliet Lo: I I can actually switch over. I won't give you the full pitch.
+Evan Liang: Yeah,
+Juliet Lo: It's most but um let me share my screen.
+Evan Liang: go for it.
+Juliet Lo: Sorry. I always have trouble with my technology. Okay. Window. Yes. Screen. This screen. Okay. Tell me if you're seeing the right screen.
+Evan Liang: Not
+Juliet Lo: should be.
+Evan Liang: yet.
+Juliet Lo: Oh god, that's not the right share. Okay, here we go.
+
+
+
+
+00:31:07
+
+
+Juliet Lo: Um,
+Evan Liang: There we go. Yep.
+Juliet Lo: yeah.
+Evan Liang: Yep.
+Juliet Lo: Okay, so um, so this is going to be the pitch deck we're going to go out to as we start to look for design partners and the audience here. We already have sort of the ultimate decision pitch deck.
+Evan Liang: Not looking.
+Juliet Lo: um this is to renewals leaders right because we are they're going to be our day-to-day like point of contact the ones who's giving us feedback and helping us implement it in their org. So um basically it's view it as a pitch deck to renewals leaders right to get them to buy it and the solution we're selling is the design is this design partnership and so um you know what we really want to do based on having multiple conversations with these folks is we realize that renewals leaders tend to be pretty riskadverse and um not particularly like forward-looking and they're actually really motivated by sort of like um like a desire for respect by like sales leaders and their sales manager like peers just because they're not really viewed, you know, like new business gets all the respect and all the glamour and all the glory and they don't handle that.
+
+
+
+
+00:32:19
+
+
+Juliet Lo: And so really like unless they have, you know, good oversight over view um oversight over upsells, they're kind of just like um it's kind of a thankless job, right? You're just trying to save people from leaving. And so um when you think about, you know, so basically with that in mind, um the one thing that we know renewals leaders, you know, what they hate the most is churn. Um but beyond that, they hate being blindsided, right? And so if you put yourself in their sit in their shoes, you know, they're sitting in these, you know, regular weekly churn review meetings and the feeling they get when, you know, they've sort of forecasted deals to close and then these deals that seem on track to close turn at the very end of the quarter and they have no idea why and they're not prepared to answer questions that come in at them from execs. So bunch of these questions are really just sort of like ways of assigning blame like did you start early enough? You know why didn't we build a strong enough case?
+
+
+
+
+00:33:23
+
+
+Juliet Lo: Were you like multi-threaded through the or you know were you ready when your champion left and why didn't we like get more relationships built in? And of course ultimately like why didn't we slash you see this coming and what could you have done to save this? So that's sort of like the the pain point they have that we're trying to solve for. And it's only getting worse in this environment where retention is really primary metric for B2B SAS companies um that that measures their health and that their valuations are based off of. And so with that in mind, it's not just the big deals that matter, but every single deal matters. And that becomes exceedingly hard to execute against in, you know, the long tale of mid-market and SMB accounts where they basically have little to no visibility um into where these deals stand. And the irony is even though there's a ton of smaller accounts here, together they comprise up to 50% of the revenue. And so they do matter. It's just how do you get a handle on it?
+
+
+
+
+00:34:36
+
+
+Juliet Lo: And so the promise, right, that the ideal world that they could be in is the ability to run sort of this rigorous, thorough, diligent process that we've laid out in our renewals uh slides or renewals uh demo about how can we run an enterprisegrade renewals process but at commercial scale. And that would mean flawlessly executing across every stage of the renewals deal. So everything's on time, all the boxes are checked, um all the eyes are dotted, and then they have full visibility into where every deal stands so that they don't have that unpleasant, horrible last minute surprise at the end of the quarter. And as a result of sort of being diligent about running through the process and executing and knowing how things stand, they'll be able to drive better outcomes and actually capture growth potential um in these smaller accounts and to do all this obviously without having to throw bodies at the problem. So this is the promise of Pareto. We talked about this, you guys have heard that Parto works alongside existing team and really what makes us different is the fact that we combine our go to market expertise with advanced process engineering and this then um helps us break down renewals into these very discrete measurable stages.
+
+
+
+
+00:36:03
+
+
+Juliet Lo: Um, and we train our sub agents on each stage using your deal history, your customer data, and rep behaviors so that they can be accurate and reliable at scale. And so like we might kind of walk through a couple of these stages just to help people understand what they are. And these are the placeholders I've put in um as sort of like screen for spots from your demos. So the timing inputs that might go in and then the outputs that we create.
+Evan Liang: What?
+Juliet Lo: So it kind of goes through stages and then finally showing that um you're always in control. I don't know if this if you be a person or the dashboard, right? That shows that they have full visibility into everything. not only the decisions that were made but also sort of the reasoning behind it and then the impact it has on your forecast. So yeah, if you're excited about that, come join our design program. Um you'll have input, early access, and of course dedicated support from our team to make sure you're successful.
+
+
+
+
+00:37:10
+
+
+Juliet Lo: And it really takes place in two phases. First phase is really feedback on prototypes and then moving with the goal toward a pilot where we roll it out against a segment of your renewals and um have it execute live.
+Evan Liang: thoughts seems good. Uh small thing uh if you want we can send our color template
+Juliet Lo: Yeah.
+Evan Liang: for like dashboard to you if you want like I don't know if you're willing to like change the code type temp of your slides to match up like very small thing but I was like we've like developed like color template now that like if it's consistent across might be good we still
+Juliet Lo: Yeah.
+Evan Liang: don't have a logo uh that's probably something we have but uh but uh Cooper has signed up to try to his side project is to make a logo for paro
+Juliet Lo: Oh, okay. Well, and then do we like you were saying, do you have a design kind of a design? Yeah. I don't love the black and neon blue,
+Evan Liang: Yeah.
+
+
+
+
+00:38:09
+
+
+Juliet Lo: but we have a design like colors.
+Evan Liang: Yeah. We have a The nice thing is if use claw design to make the slides now
+Juliet Lo: Let's Yeah.
+Evan Liang: like if that all should be linked. I don't know. Yeah. You want to do that shift but it it would all be like the team linked up.
+Juliet Lo: Yeah. So,
+Evan Liang: Um
+Juliet Lo: I can just upload Google slide deck into claude and apply.
+Evan Liang: Cool.
+Juliet Lo: It's somewhere. Let me know where it is, where I can find it in claw and apply that design template.
+Evan Liang: Yeah. The one thing I was thinking through is um I I like the flow.
+Juliet Lo: Yeah,
+Evan Liang: I don't want to d uh quite disturb it because I want to actually test it, but uh it's there's different types of churn that people fear uh especially the renewals later. There's the type of churn where the product never got adopted and the renewal that's not on the renewal leader.
+Juliet Lo: great.
+
+
+
+
+00:39:00
+
+
+Evan Liang: That's kind of like yeah like the and then there's and then there's a type of churn that's created because you didn't run a good
+Juliet Lo: See you.
+Evan Liang: process and that's the one they uh I don't know if we have to explain that up front or that may be too long
+Juliet Lo: Yeah,
+Evan Liang: but to the broader point is yes. Yeah.
+Juliet Lo: it's a good point.
+Evan Liang: But I I did like when you talked about it you were like the churn that happens that you forecasted end of the quarter that's really bad right? the turn that you knew you would take at the beginning like because of
+Juliet Lo: Yeah, the term that Rachel used green churn,
+Evan Liang: you.
+Juliet Lo: we can probably use some like you know like like the way we kind of use we can use that term and like that
+Evan Liang: Yeah.
+Juliet Lo: kind of implies that it's supposed to be healthy and then hopefully the questions that came in are the ones that kind of get out more
+Evan Liang: Yes.
+Juliet Lo: ex Yeah.
+
+
+
+
+00:39:41
+
+
+Evan Liang: The questions were great that narrowed it down because it wasn't like why aren't they using it was like hey did you run
+Juliet Lo: Yeah.
+Evan Liang: the right process? You talk to the right people and
+Juliet Lo: in some of the questions.
+Evan Liang: Yeah.
+Juliet Lo: Have you asked the same question?
+Evan Liang: Yeah. Absolutely. So, yeah. So, I I think it's Yeah,
+Juliet Lo: Yeah.
+Evan Liang: people are like Yeah, you're you're right. The renewals leader just takes a lot of blame. Uh the CSMS and the renewals leader both take a lot of blame um on the stuff and it's just Yeah,
+Juliet Lo: Yeah.
+Evan Liang: it's it's a painful meeting to be in.
+Juliet Lo: Okay. Yeah, I think
+Evan Liang: And and the sad part is the really sad part is honestly is they just can't even answer any of the questions. that these questions pile up and they have no answers.
+Juliet Lo: Yeah, have hundreds thousands hundreds and thousands of accounts,
+Evan Liang: Yes,
+Juliet Lo: guys. Like, how's that possible?
+
+
+
+
+00:40:27
+
+
+Evan Liang: no.
+Juliet Lo: And it's all in people's heads and incomplete CRM records. There's no
+Evan Liang: No. It's it's really embar It's awkward for everyone.
+Juliet Lo: way
+Evan Liang: It sucks for the CSM and AM and it sucks for be the leaders being like, "What the hell? You don't know what's going on in my accounts." And it's just it's just a bad. So,
+Juliet Lo: But does that happen long tail with like the smaller accounts? That's the
+Evan Liang: uh they don't do it regularly.
+Juliet Lo: question.
+Evan Liang: So it's only when the when like in the like during Saskcopolis like three months ago, every company was doing this all the time, which is just awful. Uh and yeah, I went to a few of them and I was just like, "Oh god." And now that things have died down again, like like things aren't so bad, they're probably not running the meetings again. But doesn't mean that that there's not the fear that these meetings will pop up again. But yes,
+Juliet Lo: Uh
+Evan Liang: the renewals leader is supposed to go through all this stuff.
+
+
+
+
+00:41:22
+
+
+Evan Liang: That's why AJ uh I I will probably leave with Agent like, "Hey, one of the first calls he told me about, you wish you had visibility into everything." That's what we're trying to solve, right?
+Juliet Lo: Mhm.
+Evan Liang: Because he he he's he knows that he doesn't have to do it every day, but it does rear its ugly head whenever there's problems. And then trying to rec deconstruct it at that point in time is extremely painful.
+Juliet Lo: No.
+Evan Liang: Yeah. Yeah. Because you have to go rep by rep. So, okay.
+Juliet Lo: Imagine
+Evan Liang: You have a light blue slide. I remember there was a light blue slide for the pitch we gave. I'm not sure if there was like that same kind of call to action like what if slide for this case. It seemed like you went directly to the introducing paro
+Juliet Lo: Yeah. What if you Yeah.
+Evan Liang: agent.
+Juliet Lo: Oh, like make it more like that design.
+Evan Liang: Yeah. Well, I was like thinking about because obviously that was the thing I I had to practice yesterday,
+
+
+
+
+00:42:06
+
+
+Juliet Lo: The same
+Evan Liang: but like thing to like there's two parts,
+Juliet Lo: Yeah.
+Evan Liang: right? It's like one, you want to have a process that you can stand by and then two, you want to have be able to have like that visibility execution. Not sure if that funnels into a nice punch line, but I think a process you can stand by at least sounds a bit more punchy, right? With full visibility and being able to explain every as well could be
+Juliet Lo: I like that. Nice.
+Evan Liang: like Yeah. Yeah.
+Juliet Lo: I
+Evan Liang: The other side I had for you as well that we're thinking about was that not only is the renewals leader uh not viewed as a salesperson, but they often get more blame because there's somehow this feel that new business is magical. You sign that million-dollar deal and you're like you invented it.
+Juliet Lo: Yeah.
+Evan Liang: Whereas the renewals they do think should be a process. Does that make sense? It feels like you should have the data.
+
+
+
+
+00:42:56
+
+
+Juliet Lo: Right.
+Evan Liang: You should be able to process procitize a renewal where they don't apply that judgment to new business like the new business you're the hero. The renewals you're the goat and because and you should it should be something that you can make scientific. They like the the the the rest of the company feels you should be able to do that like it should be a prophecy but it's not.
+Juliet Lo: Right.
+Evan Liang: But our argument is it can be.
+Juliet Lo: I wonder if we should lean into that. Like there's something there about like everyone thinks your job should be so easy like you know and like
+Evan Liang: Yes.
+Juliet Lo: as we dug in and it might be in the um the advanced process engineering but we really kind like look it's renewable sounds straightforward on a
+Evan Liang: Yes.
+Juliet Lo: surface but really dig in like it breaks down into a number of
+Evan Liang: Yeah.
+Juliet Lo: stages each of which requires a delicate orchestration like timing and outreach and the right context like Maybe like that.
+Evan Liang: I like that.
+
+
+
+
+00:44:00
+
+
+Juliet Lo: Like we get your pain. We get how hard your job is. And that's what you need is like it's
+Evan Liang: Yeah. Yeah. Yeah. We're going to turn this into a process that you have control and visibility into.
+Juliet Lo: not
+Evan Liang: And then god damn it, we do have go to market expertise. We have a bunch of aspiring MSN from Stanford. That is process engineering.
+Juliet Lo: look you're not less qualified than like a McKenzie management consultant that they hire right out of seriously having done management you all in a job and it's all client specific though.
+Evan Liang: No, it's all clients. I have a question and Kellogg MBAs that they're supposed to be good at processing
+Juliet Lo: Yes.
+Evan Liang: MBAs MSN consultants. That's what they people hire. Question. Go ahead. Yeah. Um, can I see the design again? I have a question. Sure. Julia, can you pull up the design partner
+Juliet Lo: Um, let me Yeah.
+
+
+
+
+00:44:58
+
+
+Evan Liang: slide?
+Juliet Lo: Yes. Is your screen share entire screen? Okay. Sorry.
+Evan Liang: So, you're on you're sharing your cla
+Juliet Lo: Um
+Evan Liang: Guys,
+Juliet Lo: Perfect.
+Evan Liang: so this should be So do you just call claw design or what do you I I emailed Juliet and it should hopefully
+Juliet Lo: Extreme
+Evan Liang: work if she has a call. Yes, it's in the desk. I think they relaunch it. Do you know what your question is around um the call to action?
+Juliet Lo: share with you all.
+Evan Liang: Um I I saw two slides which was uh weeks eight weeks and then what we want from you.
+Juliet Lo: Yeah.
+Evan Liang: I remember that slide. I don't remember the what was the other slide about. But uh I think my question was more about what do they stand probably from our design partner.
+Juliet Lo: Yeah.
+Evan Liang: It should be like either they'll see okay you know we'll help your renewals we'll do all these things to you but as a low hanging fruit or immediate mh uh validation of both you know solving the problem and how product is there should be more like a before and after like a 2Bs it's like right now you know if you become a design partner this is what you are doing this is what you will be Mhm.
+
+
+
+
+00:46:47
+
+
+Evan Liang: That makes sense. No, I mean to be uh to be from uh makes sense. Uh I think you were
+Juliet Lo: Sorry, I I missed the audio was a little bit fuzzy for me.
+Evan Liang: saying he uh his point was
+Juliet Lo: Can you repeat
+Evan Liang: like, hey,
+Juliet Lo: that?
+Evan Liang: what is the benefit for a design partner immediately from working with us? So, you know, before the software is ready or stuff like that, what's what can we be helping them do? Is that Yeah. I think the long term will definitely they'll be they coming in early and they have early access as you said and they'll be the first to solve this problem across the industry but in the next what four and eight weeks what can they expect? Yeah. So I I two thoughts on that one is uh we do need to make our value problem positions strong enough that the the people who want to be design partners want to solve it badly enough that they're willing to just get in early.
+
+
+
+
+00:47:36
+
+
+Evan Liang: Yeah. So, so one that's a little bit about product market fit, right? Is if you're talking to a bunch of people who are like, yeah, I'll wait eight weeks. Maybe your value proposition is not quite strong enough. So, that's one macro one. The other one is I do think as we go through each of these gates steps, right? We will be automating various force of your functions and that may be some value you get immediately. Yes. So, for example, like step one, we're going to analyze all your accounts and tell you which accounts are in which levels. we will deliver that like in week one and for some people that's enormously valuable. Yeah. So the last slide that we have timeline yeah uh this time we have a four week something like that. Okay that that's a fair point.
+Juliet Lo: Sorry. Can you can you repeat
+Evan Liang: I don't this his point is in the last one we had an implementation timeline showing all the
+
+
+
+
+00:48:32
+
+
+Juliet Lo: that?
+Evan Liang: steps and what they get at what happens at each stage. This one we just say four to eight weeks he's worried that people aren't going to be willing to wait four to eight weeks in order to get some
+Juliet Lo: Yeah.
+Evan Liang: value. Uh and if we were to show that like in week one you get the research done in week qualification done week two you get this done in week three you get this done it may show people how they're going to actually get value at each step at each step. That was his suggestion.
+Juliet Lo: Okay, got it. Are we are we back to the valley assessment,
+Evan Liang: Uh no it's not a value set but I I think what it is is by doing it by stages Julia
+Juliet Lo: Evan?
+Evan Liang: even if you work with us as a design partner in week one we'll probably solve the qualification step like we're going to gather your data we're do and we will show you the output of that. So even if you don't get full autonomous in week one you'll at least get the qualification stuff done for you.
+
+
+
+
+00:49:26
+
+
+Evan Liang: In week two we'll get the outreach stuff done for you and you can like have the emails done. So it's almost like as you go through the design partnership with us you will be getting value at every single
+Juliet Lo: Okay. So then you're saying that the uh design partnership isn't like it's not purely broken up into like
+Evan Liang: step.
+Juliet Lo: here's some like generic prototypes we want your feedback on and then like in phase two we're going to actually tailor it to you. You're saying that as we show the prototype we're also going to do discovery and tailor the prototype to
+Evan Liang: Yeah, I think so.
+Juliet Lo: them.
+Evan Liang: The design part I can see like like I can see working with someone like uh AJ was like, "Hey AJ, like when we kick this thing off, you start giving us data immediately. Uh the first deliverable we're going to give it to you is the qualification of all your accounts, right? Then we're going to start working on how to make sure all your emails are like uh loaded up and uh outreach templated.
+
+
+
+
+00:50:16
+
+
+Evan Liang: We'll deliver that for you and you'll feel good about that. Then after that's done, hey, we're going to automate your uh your your proposal decks and we're going to deliver that for you. So, it's almost like each stage as we're going, the customer is actually getting more automated, right? But they're still using their humans and then but they're getting value at each stage. That's one way of saying like that's why you want to work with us as a design partner. And then we're earning your trust to get to the next stage. Our goal is to get all the way to the end, but you're gonna you're you don't need to get to the end. Like you don't have to spend like 12 weeks with us and wait for all the automation before you get any value.
+Juliet Lo: Oh yeah. Well, I thought the pilot Yeah. I thought the pilot is when we start to like implement it and tailor it to them. confident that the prototypes we have right now are like pretty final because if we're going to spend a lot of time trying to tailor it, you're not going to get as much feedback on the actual funality and usability.
+
+
+
+
+00:51:18
+
+
+Evan Liang: Good point.
+Juliet Lo: You're going to change you're going to change the focus.
+Evan Liang: So
+Juliet Lo: I I mean I think it's a fair ask. Four weeks is not a big again with Right.
+Evan Liang: yeah.
+Juliet Lo: Yeah.
+Evan Liang: Yeah.
+Juliet Lo: May but with a
+Evan Liang: So, so you're saying for now for now the design partners is validate the overall process and then when we actually do the implementation then it's it's a little bit different.
+Juliet Lo: Yeah, the the um yeah, phase one is really just like did we get the stages right? Like are these the right things that you look at and need to do at each stage?
+Evan Liang: Go.
+Juliet Lo: Um are these kind of like in line with like how you reason through and actions you take? So sort of like are the output do the outputs generally look right? Are these the right fe dashboard right?
+Evan Liang: Yeah.
+Juliet Lo: Are we measuring? Like it's just sort of like just making sure we're building the right core product, right?
+
+
+
+
+00:52:05
+
+
+Juliet Lo: Because we don't want like to do a custom custom solution every time, right? It's got
+Evan Liang: So there's like there's like two different design partnerships in summers,
+Juliet Lo: to%
+Evan Liang: right? There's the hey designing the overall system and all they're doing is giving us feedback, right? And then there's like hey once you start and give us data and we're implementing, right? Then it's different. Yes. Yes. Design partner uh versus a pilot. Yeah. But we will say that you're a pilot. we just say you already do that by then uh for now what we're looking for is feedback on the overall structure and then uh that's why we're saying and then maybe in the second half of the summer that's when we actually get like we like for ling and I we would actually feed Linda all the 200 accounts and then what we're doing is validating that we can do qualification so that would be like two to three weeks of just doing that stuff right parallel pathing you got to give us all their emails so we can do all that other stuff so I think when the people start giving us data.
+
+
+
+
+00:53:03
+
+
+Evan Liang: You're right. We have to be delivering stuff. Yeah. Value,
+Juliet Lo: Hey. I think um I think because we don't have a product like
+Evan Liang: right?
+Juliet Lo: actual functionally functional product yet like like you know the way we've done beta programs is like we've actually had the MVP and we were just sort of um like we demoed it to get them into
+Evan Liang: Mhm.
+Juliet Lo: the beta pro or the charter program whatever you want to call it and then they would agree and it was a pretty known process you know like performance reviews but automated so it was sort of like we got them to implement it right away but given that we haven't built it. I feel like it'd be very like I think they're going to be more we're going to have more credibility and they're going to be more bought in if they're part of the process of validating that what we're building is right.
+Evan Liang: Okay, that makes sense. Okay, cool. A good point, Bar.
+Juliet Lo: And realiz the pilot the pilot doesn't make any sense like shouldn't be at least 120 days like plus implementation. I just realized like eight weeks doesn't even get through the full cycle of um of renewal.
+Evan Liang: f***
+Juliet Lo: She should be like one quarter or something like that.
+Evan Liang: probably.
+Juliet Lo: 12 weeks.
+Evan Liang: Yeah.
+Juliet Lo: Okay.
+Evan Liang: Cool. All right, we covered a lot. It's Thanks, guys. All right.
+Juliet Lo: Yeah.
+Evan Liang: Thank you too. Bye.
+Juliet Lo: Thank you. Oh, one thing guys. Um I will send you
+
+
+
+
+Transcription ended after 00:56:43
+
+
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.

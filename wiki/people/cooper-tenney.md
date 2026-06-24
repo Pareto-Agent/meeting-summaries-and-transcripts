@@ -1,6 +1,6 @@
 # Cooper Tenney
 **Role:** Co-founder / Team Member, Pareto Agent
-**Last updated:** 2026-06-23
+**Last updated:** 2026-06-24
 
 ## Current Focus
 Buyer hub module: tracking how buyers engage with renewal materials, identifying who else gets involved in the buying process (CFO, procurement, etc.), and gathering engagement signals for the AM leader. As of the 2026-06-22 evening standup, **leading the centralized account-page integration** for the merged Combined Dashboard.
@@ -8,6 +8,7 @@ Buyer hub module: tracking how buyers engage with renewal materials, identifying
 Owning the **account page** within the new unified dashboard (per Evan's proposed split, 2026-06-22). After his 1:1 with Evan, refocused the dashboard on activity/engagement and days-to-renew; it's now a list of accounts plus a recent-activity feed across all accounts (e.g. "added a stakeholder"). Still working on MCP integration for real CRM data.
 
 ## Open Tasks
+- [ ] Design a Pareto Agent logo (side project mentioned by Evan, 2026-06-24 standup)
 - [ ] Hook qualification-stage module into adjacent stage for AJ demo narrative flow (2026-06-23 standup)
 - [ ] Merge dashboard into main once out of Claude usage jail (2026-06-23 standup)
 - [ ] Create the canonical fake-company JSON corpus (~100–200 companies, each <$10k) and send it to the team so everyone's dummy data matches (evening standup, 2026-06-22)

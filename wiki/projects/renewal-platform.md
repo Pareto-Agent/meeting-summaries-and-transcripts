@@ -1,7 +1,7 @@
 # Renewal Platform
 **Status:** Active
 **Owner:** Evan Liang
-**Last updated:** 2026-06-23
+**Last updated:** 2026-06-24
 
 ## Goal
 Build an autonomous AI agent system that replaces Account Managers for long-tail renewals — giving AM leaders full visibility into each step of the renewal process.
@@ -12,6 +12,8 @@ Five-person team building individual modules with dummy data. No live CRM integr
 By the **2026-06-22 evening standup**, Parth/Evan had executed a first merge — all four builds stitched into one **Combined Dashboard** (informally "DD" / "Daddy Dashboard" / the "Frankenstein"), living in GitHub under a `combined-dashboard` / dashboard-modules folder. The individual agent functionality is working live (Evan's outreach/language/champion models call the API), but the merged UI is judged only ~35–40% there. Team aligned on a git-branch collaboration model (everyone pulls the combined dashboard as `main`, generates a diff to push their individual work into it, then iterates decentralized with GitHub handling merge conflicts) and decided to also spin up a **parallel clean-sheet rebuild** in case the merge gets too messy.
 
 By the **2026-06-23 evening standup**, Aaron had overnight rebuilt his parallel "Frankenstein" dashboard into a fully unified dashboard with its own data model — using the same 28-account fake corpus spanning all stages from Qualify to Buyer — and merged all conflicts (including Dean's latest proposal work) into `main`. The team agreed to go with **Cooper's "parents" architecture** as the primary codebase going forward (over Aaron's approach); Aaron himself advocated this, citing easier conflict management and cleaner backend design. The next forcing function is the **AJ demo on 2026-06-25**: Evan will lead the voiceover, one team member drives navigation, and the full team gathers in a single conference room.
+
+On the morning of **2026-06-24**, Evan ran a full end-to-end demo of the Combined Dashboard for **Juliet Lo** (remote). Juliet gave strong positive feedback — "massive kudos", "feels real", "feels robust", "totally impressed at how much has taken place over the last few days." The team is now ~24 hours from the AJ demo. Key clarifications from the session: (1) "telemetry" is a better framing than "dashboard" — stages are populated automatically by agents, not by humans entering CRM data; (2) the best demo approach is walking through a **single deal progressing through all stages**, showing actual automation outputs (email drafts, proposal deck, buyer hub engagement telemetry) — not a time-slider animation; (3) email/proposal **auto-send flow**: drafts are created in advance and sent automatically on a timeline by default; the manager can review/edit during the draft window but approval is not required; (4) a **escalations/notifications inbox** is missing and should be added; (5) **unreachable contacts** should be surfaced at the contact level alongside departed contacts.
 
 ## Module Architecture
 | Module | Owner | Deliverable |
@@ -24,6 +26,11 @@ By the **2026-06-23 evening standup**, Aaron had overnight rebuilt his parallel 
 | Data dictionary (proposed) | TBD | Per-customer canonical field definitions — what "ARR"/"renewal" means and which field maps to it (new module idea floated by Evan, 2026-06-22) |
 
 ## Open Items
+- [ ] **Engineering:** Add escalations / notifications inbox — dashboard-level feed showing flagged items and escalations across all stages; callable from any stage (Juliet feedback, 2026-06-24)
+- [ ] **Engineering:** Show "unreachable" contact status at the contact level alongside departed contacts — after X attempts over Y days with no response, auto-classify as unreachable (Juliet feedback, 2026-06-24)
+- [ ] **Evan / Dean:** Send "output stuff" (stage automation outputs showcase) to Juliet for use as placeholder slides in the design partner pitch deck (2026-06-24 standup)
+- [ ] **Juliet:** Apply Pareto Agent color/design template to pitch deck slides using Claude (2026-06-24 standup)
+- [ ] **Cooper:** Design a Pareto Agent logo (side project mentioned by Evan, 2026-06-24 standup)
 - [ ] **Each team member (by 2026-06-24 evening standup):** hook your stage module into the adjacent stage — e.g., pressing "Approve Plan" in qualification auto-navigates to the next stage's view — so the demo has a narrative flow from stage 1 to 4 (2026-06-23 standup)
 - [ ] **Evan:** add a time-frame dropdown (Q2/Q3/Q4/All) to the top-level overview dashboard before AJ demo; send calendar invite for the AJ demo conference-room gathering (2026-06-23 standup)
 - [ ] **Team:** run through the full integrated demo narrative at the 2026-06-24 evening standup; give feedback on missing functionality (2026-06-23 standup)
@@ -40,6 +47,26 @@ By the **2026-06-23 evening standup**, Aaron had overnight rebuilt his parallel 
 - [x] ~~Dean + Aaron: start the parallel clean-sheet combined dashboard~~ — superseded 2026-06-23: team went with Cooper's "parents" architecture as the primary codebase; Aaron's parallel build was a valuable prototype but not the path forward
 
 ## Decision Log
+### 2026-06-24 — Product Demo / Strategy Session (Juliet Lo)
+- **Decision:** Frame the product as **"telemetry"** rather than a "dashboard." Stages are populated automatically by agents, not by humans manually entering data into a CRM.
+- **Rationale:** The dashboard UI risks looking like any other enterprise software. "Telemetry" captures that the system reflects real-time deal state driven by automation, not by human entry — which is the core differentiation.
+
+### 2026-06-24 — Product Demo / Strategy Session (Juliet Lo)
+- **Decision:** Demo strategy: walk through a **single deal progressing through all stages** to show automation outputs (qualification forecast, outreach emails, proposal deck, buyer hub cockpit telemetry). Do NOT use a time-slider / animation showing deals auto-progressing.
+- **Rationale:** Juliet: customers are not ready for the system to run fully autonomously without oversight — they want to see what's happening and drill in. The automation is demonstrated by showing outputs generated without human input. AJ will likely say "show me one of my accounts" — a concrete single-deal walkthrough handles this naturally.
+
+### 2026-06-24 — Product Demo / Strategy Session (Juliet Lo)
+- **Decision:** Clarified approval / auto-send flow: emails and proposals are drafted in advance of the send date and sent **automatically on a timeline** by default. The manager can review/edit during the draft window; approval is optional. Nothing requires a human to click "send."
+- **Rationale:** Prevents demo confusion between "we're autonomous" and "you can approve before it goes." Managers who want to review everything can; after 5–10 cycles they'll let it run. The draft window gives visibility without requiring a gatekeeper.
+
+### 2026-06-24 — Strategy Session (Juliet Lo)
+- **Decision:** Design partnership Phase 1 goal = **validate the core product** (are the stages right? outputs look right? is the dashboard right?) — NOT tailored implementation per customer.
+- **Rationale:** Juliet: tailoring to each customer during Phase 1 changes the focus from product validation to implementation, meaning the team won't get generalizable feedback on usability and functionality. The product should work for all customers, not be custom-built each time.
+
+### 2026-06-24 — Strategy Session (Juliet Lo)
+- **Decision:** Pilot timeline should be at least **12 weeks (one quarter)**, not 8 weeks.
+- **Rationale:** Renewal cycles are 120+ days. An 8-week pilot doesn't cover a full renewal cycle, so the team can't measure outcomes. One quarter gives a full cycle to validate end-to-end.
+
 ### 2026-06-23 — Team Standup (evening)
 - **Decision:** Adopt **Cooper's "parents" architecture** as the primary unified dashboard codebase going forward. Aaron's overnight rebuild (the parallel approach) is acknowledged as valuable but not the path forward.
 - **Rationale:** Aaron himself advocated this — each merge of other team members' work into his build required substantial conflict management; Cooper's build was designed with the backend in mind and has a cleaner, more scalable structure. Each team member's module lives in its own folder, making it easy to edit independently.
@@ -81,6 +108,11 @@ By the **2026-06-23 evening standup**, Aaron had overnight rebuilt his parallel 
 - **Rationale:** AM leaders with 400+ accounts are reactive and don't have a methodical process. Giving them visibility into each step is the differentiated value vs. generic LLM tools.
 
 ## Notes
+- **2026-06-24 morning session — demo + pitch deck review with Juliet Lo:** Evan walked Juliet through the Combined Dashboard (monitoring → qualification → outreach → proposal deck → buyer hub cockpit). The "cockpit" gives per-account visibility into who on the buying team engaged, when, and what they looked at — "a level of visibility that no one ever has." Juliet proposed a **three-layer demo framework**: (1) renewals leader dashboard overview (book-of-business funnel, stage drill-down); (2) single-deal walkthrough showing automation outputs; (3) RevOps configuration layer (rules engine, signal changes) — only surface layer 3 if the audience includes RevOps/forward-deployed engineers. Cooper asked (via text chat, relayed by Evan) how to best demonstrate the automation side; Juliet answered: show the outputs themselves (emails, decks, buyer hub), not an animation. Evan and Juliet discussed staged value delivery during a design partnership: week 1 = qualification outputs for all accounts; week 2 = outreach templates drafted; week 3 = proposal decks — so customers get tangible value at each step rather than waiting for the full system. Juliet also presented her pitch deck to the team and took feedback from Evan (add a "process you can stand by" punch line, incorporate "green churn," add a before/after or staged-timeline slide).
+- **Business model (confirmed 2026-06-24):** Pareto gets paid on **closed deals** (outcomes-based, not on number of renewals handled). The headline metric on the dashboard is deals Pareto actually closed. Dashboard covers only Pareto's assigned book of business — but the long-term vision is expansion until the CRM is no longer needed.
+- **Auditability parallel (Evan, 2026-06-24):** Auditability (what email was sent, why, at what decision point) became one of Lean Data's defining features because teams needed to reconstruct what happened when deals went wrong. The draft history and auto-send audit trail in this system should serve the same role — and will be how teams discover and fix edge cases over time ("automate → discover edge case → fix → next time you don't have to worry about it").
+- **Context-as-moat (Evan, 2026-06-24):** The differentiator vs. point solutions is having context across all stages in one system. Competitors automating individual stages actually degrade the sales rep (reps no longer do research, find contacts, etc. — they lose context). Pareto's system retains full context, making negotiation tractable — you know exactly how engaged the buyer is, what they've looked at, whether they've even opened the contract.
+- **Renewals leader persona deepened (Juliet, 2026-06-24):** Risk-averse; motivated by respect from sales peers (new business gets the glory; renewals is often "thankless"). Company thinks renewals "should be scientific," making the renewals leader disproportionately blamed when deals fall apart. They can't answer exec questions in churn reviews because they have hundreds of accounts with no visibility into most of them. "Green churn" (Rachel's term): churn in deals that looked on track — the type that blindsides them and triggers the painful churn review. Distinct from churn caused by product never being adopted (not the renewals leader's fault).
 - **Combined Dashboard merge (2026-06-22 evening):** Parth built the scaffolding dashboard holding an earlier-today version of each of the four projects; Evan cloned a clean-looking dashboard, fed it the four builds, and Claude produced the merged "Frankenstein"/DD. Open question debated at length: whether modules can be cleanly separated into per-folder ownership when shared account data has to sync across folders — Dean skeptical it separates cleanly; Cooper argued one module can simply read/call data from another folder. Working assumption: each person edits only their own section/folder and pushes; if it gets too tangled, fall back to the clean-sheet rebuild.
 - **Dean's proposal/deck dashboard (2026-06-22 evening):** rebuilt to match the others' UI for easier reconciliation. Account-level view shows the deck that was sent plus a rationale (why this deck, why this price) and a built-in **price configurator**. Decks are directly editable in-browser (add/choose blocks, edit text per block — "Google Slides on here"). **Automation settings** auto-send proposals when there are no issues, gated by **scenario rules** (save play, executive, competitive threat, flat renewal, increase) that generate customizable default block options, plus pricing policies/guardrails for escalation, and per-scenario **templates** (e.g. an Executive Deck: cover → value delivered → benchmarking → pricing → next steps) that are editable and persist as the new default. Slide automation remains the most painful part (AI image handling; juggling PDF/JPEG/HTML render-vs-edit conversions).
 - **Schedule (2026-06-22 evening):** No standup tomorrow (2026-06-23) — the team has a **sales pitch** instead. Dean + Aaron to use the day for the clean-sheet build.
@@ -107,5 +139,6 @@ By the **2026-06-23 evening standup**, Aaron had overnight rebuilt his parallel 
 - [Dean Liang](../people/dean-liang.md)
 - [Parth Godarajesh](../people/parth-godarajesh.md)
 - [Cooper Tenney](../people/cooper-tenney.md)
+- [Juliet Lo](../people/juliet-lo.md)
 - [Scott](../advisors/scott.md)
 - [AJ](../advisors/aj.md)

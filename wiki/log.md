@@ -70,3 +70,10 @@
 - Transcript: transcripts/2026-06-23-pitch-contest.txt
 - Note: This is the "sales pitch instead of standup" session referenced in the 06-22 evening standup. Format: 30-sec elevator + 5-min pitch, order by spin wheel (Cooper → Parth → Dean → Aaron; Juliet Lo and H. Fong were remote and set to go after but the recording ended before their turns). Parth gave his pitch using his own AI-generated slides instead of the shared team deck; plans to redo.
 - Summary: Internal pitch-practice session (~39 min); all four in-room team members pitched Pareto Agent; introduced two new remote team members (Juliet Lo, H. Fong) whose pitches were not captured before the recording ended.
+
+## 2026-06-24 — Stand Up (morning, product demo + pitch deck review with Juliet Lo)
+- fireflies-id: 01KVGD1E8SSW4C7FD85R3D3BCW
+- Pages updated: wiki/projects/renewal-platform.md, wiki/people/juliet-lo.md, wiki/people/evan-liang.md, wiki/people/cooper-tenney.md
+- Transcript: transcripts/Stand Up  - 2026_06_24 09_59 PDT - Notes by Gemini.txt
+- Note: Fireflies returned null sentences for this transcript; content sourced from the Gemini notes file already present in transcripts/. Participants per Fireflies API: arose, ctenney, dliang, eliang, jlo, pgodarajesh — though the transcript only captures Evan and Juliet as active speakers; Cooper asked a question via text chat (relayed by Evan). Meeting classified as a product demo / strategy session rather than a traditional standup: Evan demoed the Combined Dashboard end-to-end for Juliet, then Juliet presented her design partner pitch deck.
+- Summary: Evan demoed the full Combined Dashboard to Juliet Lo (~57 min); Juliet gave strong positive feedback and surfaced several product gaps (escalations inbox, unreachable contacts at contact level); key decisions on demo strategy (single-deal walkthrough > time-slider animation), auto-send approval flow, design partnership scope (validate core product, not tailored implementation), and pilot timeline (≥12 weeks / one quarter). Juliet also reviewed her design partner pitch deck targeting renewals leaders with the team.
