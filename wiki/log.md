@@ -91,3 +91,21 @@
 - Transcript: transcripts/Stand Up  - 2026_06_24 09_59 PDT - Notes by Gemini.txt
 - Note: Fireflies returned null sentences for this transcript; content sourced from the Gemini notes file already present in transcripts/. Participants per Fireflies API: arose, ctenney, dliang, eliang, jlo, pgodarajesh — though the transcript only captures Evan and Juliet as active speakers; Cooper asked a question via text chat (relayed by Evan). Meeting classified as a product demo / strategy session rather than a traditional standup: Evan demoed the Combined Dashboard end-to-end for Juliet, then Juliet presented her design partner pitch deck.
 - Summary: Evan demoed the full Combined Dashboard to Juliet Lo (~57 min); Juliet gave strong positive feedback and surfaced several product gaps (escalations inbox, unreachable contacts at contact level); key decisions on demo strategy (single-deal walkthrough > time-slider animation), auto-send approval flow, design partnership scope (validate core product, not tailored implementation), and pilot timeline (≥12 weeks / one quarter). Juliet also reviewed her design partner pitch deck targeting renewals leaders with the team.
+
+## 2026-06-16 — 10.16 morning stand up (module assignments + tooling)
+- source: granola — transcripts/10.16 morning stand up.html
+- Note: Pre-Fireflies transcript (Fireflies set up June 19); sourced from Granola HTML export. No fireflies-id.
+- Pages updated: wiki/projects/renewal-platform.md, wiki/people/evan-liang.md, wiki/people/aaron-rose.md, wiki/people/parth-godarajesh.md, wiki/people/dean-liang.md, wiki/people/cooper-tenney.md, wiki/people/h-fong.md, wiki/advisors/scott.md
+- Summary: First substantive recorded standup (pre-Fireflies); module assignments made (Aaron→Qualification, Parth→Outreach, Dean→Proposal, Cooper→Buyer Evaluation; Negotiation out of scope); Aaron led a Claude Code best practices walkthrough; Replit vs. Claude Code tooling discussion; MCP vs. API tradeoffs; Scott Golden named as informal advisor for a Thursday prototype review (June 19).
+
+## 2026-06-16 — Stand up 10.16 afternoon (work-life balance + time-off policy)
+- source: granola — transcripts/Stand up 10.16 afternoon.html
+- Note: Granola metadata shows creation date June 17; title reads "10.16 afternoon" — title treated as authoritative for meeting date (June 16). Pre-Fireflies; no fireflies-id.
+- Pages updated: wiki/people/evan-liang.md
+- Summary: Evan set work-life balance expectations (responsiveness baseline, performance gradient C/B/A, culture of unblocking quickly) and company time-off policy (July 6–10 fully off company-wide; Christmas–New Year's off; Juneteenth June 19 = working; random federal holidays not observed).
+
+## 2026-06-17 — Stand up 10.17 (morning, research review + Juliet feedback)
+- source: granola — transcripts/Stand up 10.17.html
+- Note: Pre-Fireflies; no fireflies-id.
+- Pages updated: wiki/projects/renewal-platform.md, wiki/people/juliet-lo.md, wiki/people/aaron-rose.md, wiki/people/parth-godarajesh.md, wiki/people/dean-liang.md, wiki/people/cooper-tenney.md, wiki/people/evan-liang.md
+- Summary: Team presented per-module research to Juliet Lo; Juliet gave structured feedback on Qualification (expand signals, flexible churn model), Outreach (liked branching logic + language profiling), Proposal (value story critical, modular slides), and Buyer Portal (hub + deck connectivity, ROI calculator scope); strategic principles confirmed (keep v1 simple, work within seller systems, variance is the enemy of multi-step automation); Rol at Guard Square cited as long-term pricing direction.

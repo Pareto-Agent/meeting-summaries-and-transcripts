@@ -135,6 +135,29 @@ On the morning of **2026-06-24**, Evan ran a full end-to-end demo of the Combine
 ### 2026-06-19 — Team Standup
 - **Decision:** Core value proposition to AM leader = **visibility** — concrete, measurable deliverables at each renewal step, like a manufacturing floor.
 - **Rationale:** AM leaders with 400+ accounts are reactive and don't have a methodical process. Giving them visibility into each step is the differentiated value vs. generic LLM tools.
+### 2026-06-17 — Morning Standup (research review + Juliet feedback)
+- **Decision:** Keep v1 simple — get client buy-in on a basic model before adding edge cases. Complexity introduced too early creates too many failure points.
+- **Rationale:** Juliet: a 7-step process with 5% variance per step compounds into an unworkable output. Prove the pipeline works end-to-end before optimizing individual modules.
+
+### 2026-06-17 — Morning Standup (research review + Juliet feedback)
+- **Decision:** Work within seller systems first — don't try to change how renewals work; make it easy for sellers to do things their way.
+- **Rationale:** Evan, citing a call with Rol at Guard Square: radical pricing/usage transparency → high NRR and a small renewals team. Worth keeping as a long-term direction signal; not something to impose on day one.
+
+### 2026-06-17 — Morning Standup (research review + Juliet feedback)
+- **Decision:** "High sell potential" signal from the qualification module is a **binary flag** passed downstream — not a hard price recommendation. Pricing logic lives in the proposal module.
+- **Rationale:** Keeps module scope clean; qualification signals the opportunity, proposal owns the pricing.
+
+### 2026-06-17 — Morning Standup (research review + Juliet feedback)
+- **Decision:** Buyer portal ROI calculator: buyer inputs (headcount, usage assumptions, etc.) are configurable; proposed pricing is fixed. No self-serve pricing exploration.
+- **Rationale:** Buyers need to stress-test the value story; pricing decisions remain the seller's domain.
+
+### 2026-06-16 — Morning Standup
+- **Decision:** Assign pipeline modules: Aaron → Qualification, Parth → Outreach, Dean → Proposal, Cooper → Buyer Evaluation. Negotiation stage excluded from scope.
+- **Rationale:** Each team member owns one renewal stage end-to-end. Negotiation excluded — too many edge cases for v1.
+
+### 2026-06-16 — Morning Standup
+- **Decision:** Use Replit for fast prototyping; use Claude Code for spec writing and the real build. The two are separate environments.
+- **Rationale:** Replit spins up a live site + database quickly but is hard to redirect once set on an approach; Claude Code is easier to iterate and change direction in, and feeds into GitHub.
 
 ## Notes
 - **LeanData data pipeline (2026-06-25):** LeanData has already sent their company-specific data dictionary. Next step: identify the bottom 200 accounts by rep ownership (Cooper to provide two rep names), review the data dictionary to select the right fields, then pull data locally via script (not in GitHub). Goal: begin data analysis by start of next week.
@@ -165,6 +188,9 @@ On the morning of **2026-06-24**, Evan ran a full end-to-end demo of the Combine
 - **June 23 evening standup — Aaron's overnight rebuild:** Aaron rebuilt his parallel "Frankenstein" dashboard overnight into a fully unified dashboard using the same 28-account fake corpus spanning all stages (Qualify to Buyer). Key functional features working: top-level overview (accounts by stage, at-risk count), clickable stage → account-list view, individual account page with Qualify/Outreach/Proposal/Buyer tabs, live signals + next steps + drafts, voice agent (generates renewal emails with tone matching — tested with "Maldives vacation" scenario), email generation via API, Dean's proposal work integrated (per-account ARR, account-specific deck data), search functional, flag-for-review. Not yet complete: buyer hub schema not updated with replacement stream, proposal "generate" button not wired up, time-frame dropdown (Q2/Q3/Q4) for overview. Cooper's dashboard has a middle layer (stage overview before account list), Overview + Monitoring structure, all TypeScript.
 - **AJ context (2026-06-23):** AJ = renewals manager at Lean Data, reports to Brian Burkett (CSO/CRO). Manages commercial accounts (smaller, long-tail renewals). AJ persona: skeptical — "what's in it for me to risk my neck to do this?" The CRO (Brian) will buy on headcount/ROI ("you're helping me take out headcount, deliver outcomes, great") and defer to the renewals leader for product validation. Franco = Head of RevOps at Lean Data; advises CRO on technology decisions; not the decision-maker but can advocate. Call with Franco + Parth happened 2026-06-23 (day of standup).
 - **Juliet's pitch outline (read by Evan in 2026-06-23 standup):** Targets renewal leaders at B2B SaaS. Pain: "There's nothing worse than sitting in churn reviews... tracking the renewal pipeline week over week only to have deals that look green fall apart at end of quarter." Problem: long-tail SMB/mid-market accounts (20–50% of revenue) get less visibility as rep span grows. Hook: "enterprise-grade renewal motion at commercial scale without additional headcount." Positioning: sub-agents specialize in each renewal step (qualify → outreach → proposal → buyer eval → negotiate → close) with clearly defined inputs/outputs per stage.
+- **Rol at Guard Square (Evan reference, 2026-06-17):** Evan described a call with Rol at Guard Square where radical pricing and usage transparency led to high NRR, minimal negotiation overhead, and a small renewals team. Cited as a long-term direction for where the product could lead customers — not a day-one requirement.
+- **June 17 research review session (Granola notes; pre-Fireflies):** All four team members presented module research; Juliet Lo gave structured feedback on each. First substantive external feedback session on the module designs (before Fireflies was set up June 19 and before the June 24 dashboard demo). Per-module feedback detail is captured in each module owner's wiki page and in the June 17 Decision Log entries above.
+- **Original module assignments (2026-06-16):** Aaron → Qualification, Parth → Outreach, Dean → Proposal, Cooper → Buyer Evaluation. Negotiation stage excluded from scope (too many edge cases for v1). These assignments are the origin of the current module ownership table above.
 
 ## Related Pages
 - [Evan Liang](../people/evan-liang.md)

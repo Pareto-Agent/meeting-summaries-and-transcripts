@@ -10,5 +10,6 @@ Not yet established from transcripts.
 
 ## Notes
 - Email: hfong@paretoagent.ai
-- First name unknown from available transcripts. Possibly "Hannah" — Cooper's 2026-06-22 task list mentions sending "Hannah" the off-site paintball tickets — but this is unconfirmed; do not treat as established fact.
+- First name unknown from available transcripts. Possibly "Hannah" — a June 16 standup note lists onboarding tasks for "Hannah" (passport/ID verification, Rippling documentation) and Cooper's 2026-06-22 task list mentions sending "Hannah" the off-site paintball tickets — but this is unconfirmed; do not treat as established fact.
+- **2026-06-16 morning standup (Granola notes; pre-Fireflies):** A team member named "Hannah" was listed under next steps with an onboarding task: passport/ID verification (in ~5 minutes or reschedule within 3 days) and documentation requirements via Rippling. This is the earliest record of a "Hannah" on the team; likely H. Fong given the email pattern and subsequent references, but not confirmed.
 - **2026-06-23 Pitch Contest:** Listed as a participant but did not speak in the recording. Attended remotely alongside Juliet Lo. Was set to give a pitch after the in-room team finished, but the recording ended before her turn.

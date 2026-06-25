@@ -1,11 +1,15 @@
-# Scott
-**Background:** Account management leader; well-organized, sophisticated renewal process. (Last name not yet captured.)
+# Scott Golden
+**Background:** Account management leader; well-organized, sophisticated renewal process.
 **Last contact:** 2026-06-22 (feedback referenced in standup)
 
 ## Relationship Summary
 Design partner / early advisor. Has given product feedback on the admin dashboard and participated in a prior demo. Evan uses Scott as a validation reference for product direction.
 
 ## Feedback Log
+### 2026-06-16 — Morning Standup (Granola notes; pre-Fireflies)
+- Referenced as "Scott Golden (informal advisor)" in the June 16 standup next steps: team planned to present prototypes to Scott on the following Thursday (June 19). Past calls with Scott were available in the Dropbox folder for team research at the time.
+- No direct feedback captured from this entry — cited as a planned meeting.
+
 ### 2026-06-19 — Team Standup
 - Requested quarterly view on admin dashboard (implemented)
 - Requested simplified dropdowns on admin dashboard (implemented)
