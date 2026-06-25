@@ -78,6 +78,13 @@
 - Note: Fireflies API returned null sentences; no companion Gemini notes file found. This was the pre-AJ-demo run-through standup (all five core team members, ~50 min). No wiki signal could be extracted — stub archived to prevent reprocessing.
 - Summary: Evening standup the night before the AJ demo (2026-06-25); transcript content unavailable from Fireflies API.
 
+## 2026-06-25 — Standup - Juliet 2nd pitch
+- fireflies-id: 01KVX0MGXE44DPABCMFFZQTYYE
+- Pages updated: wiki/projects/renewal-platform.md, wiki/people/cooper-tenney.md, wiki/advisors/aj.md
+- Transcript: transcripts/2026-06-25-standup-juliet-2nd-pitch.txt
+- Note: Fireflies returned null sentences; content sourced from Gemini notes PDF in transcripts/. Gemini attributed all speech to "Cooper Tenney" — conversation is clearly multi-speaker; attribution kept thin. All 7 team members listed as participants (jlo, eliang, arose, ctenney, dliang, hfong, pgodarajesh). Title references "Juliet 2nd pitch" but the captured content is a post-AJ-demo standup focused on LeanData data pipeline and outreach email strategy.
+- Summary: Morning standup on AJ demo day (~14 min); key items: pull LeanData bottom-200 accounts by rep ownership (by end of week), LeanData has already sent their data dictionary, use AJ's accounts to train outreach emails, qualification is rule-based with AJ dictating rules, Cooper's email-generation design (analyze existing emails → scenario corpus → reverse tone classification for tweaking), contact-sequencing rules (weekly follow-up, escalate after 3 weeks MIA), data to be stored locally not on GitHub, improve outreach demo to show champion journey UI before next demo.
+
 ## 2026-06-24 — Stand Up (morning, product demo + pitch deck review with Juliet Lo)
 - fireflies-id: 01KVGD1E8SSW4C7FD85R3D3BCW
 - Pages updated: wiki/projects/renewal-platform.md, wiki/people/juliet-lo.md, wiki/people/evan-liang.md, wiki/people/cooper-tenney.md

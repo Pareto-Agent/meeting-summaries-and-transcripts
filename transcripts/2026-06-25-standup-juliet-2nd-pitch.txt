@@ -1,0 +1,86 @@
+Meeting: Standup - Juliet 2nd pitch
+Date: 2026-06-25 at 10:13 PDT
+Duration: ~14.5 min (transcript ends at 14:21)
+Fireflies ID: 01KVX0MGXE44DPABCMFFZQTYYE
+Source: Gemini notes PDF (Fireflies sentences null)
+Participants: jlo@paretoagent.ai, eliang@paretoagent.ai, arose@paretoagent.ai, ctenney@paretoagent.ai, dliang@paretoagent.ai, hfong@paretoagent.ai, pgodarajesh@paretoagent.ai
+
+NOTE: Gemini attributed all speech to "Cooper Tenney." Conversation is clearly multi-speaker;
+responses from at least one other participant are unlabeled. Attribution kept thin — only
+items clearly attributable to Cooper are assigned to him; the rest are logged at project level.
+
+---
+
+[00:00:00] Cooper Tenney: So there's a little bit of the UI stuff uh and just like hey what do we think through the flow? What do we like? Like do we have the slider from Dean but what do we show in that slider right? Uh and then um so I'll give that some thought as well. Then we will task doesn't have to be today.
+
+[00:00:19] Cooper Tenney: Let's task off a task to pull the bottom 200 accounts from data. First tell me what you want to pull. Yep. Yeah. So the first outline there is like, hey, we how are we going to figure out the bottom 200, right? Uh and there's two ways to do that. There's looking at who owns the accounts.
+
+[00:00:35] Cooper Tenney: So I can tell you who the reps are. So that that's one filter. Uh another filter is certain size. So um around their accounts, actually probably the reps is probably it would pull 500, but that would probably be easier. Reps would be easier. Yeah. So probably the easiest is I'll tell you who the two reps are.
+
+[00:00:53] Cooper Tenney: Okay. And we just pull the reps accounts. Okay. that will be securities then we won't then the question is look through the data dictionary and figure out what are the fields that we want to pull right and how we get the email or so that would be a step that we'd want to do kind of by the end of the week so that we can start next week analyzing the data has the data dictionary been built yes they they sent us their data dictionary oh so it's company specific yes so uh so yeah we we have now built our own internal data dictionary.
+
+[00:01:27] Cooper Tenney: Uh, fortunately, Link Data has built a data dictionary. I see. So, we would build one for the company if they didn't have one already. Yes. Because, uh, yeah, and I think like three months from now, someone will will solve this problem. There's people trying to solve every single sack of the problem.
+
+[00:01:45] Cooper Tenney: Someone will solve it because none of the agents can go live without it. And actually that's the well that's the one of the biggest stumbling blocks to agents going live right now is pulling the wrong data. So uh so so that's on that stuff. Uh yeah, we can clean up the demo a little bit, but I don't think it's that much because I will probably uh that's just an ongoing stream because like I said, I I'll hit up some more folks and then like I said,
+
+[00:02:14] Cooper Tenney: this multiple tabs demo, this is the old way of doing it. So we we always fearful of live demos. Uh, and so we always open up multiple tabs just in case so that we can bounce to things in case the internet blows out or something of that sort that you maybe can have a screenshot. So work through that and then um yeah, did I miss anything or not really figure out like okay we'll use AJ's accounts to train the emails.
+
+[00:02:49] Cooper Tenney: I think it's very important that we make those emails actually good visible for the next demos past that like are we doing anything what's the timeline on like when do we actually like potentially go live with a like I I didn't there was a clear time that goal uh I think it's the gates are you have to prove qualification and outreach right uh when we prove that then we can talk about something going live right yeah I think right now it's just still proof of concept a question on outreach or qualification which maybe we'll figure out later
+
+[00:03:25] Cooper Tenney: but are we keeping it as like strictly rulebased and you will dictate the rules in the beginning because you know the accounts decently. Okay. Yeah. And Okay. So then yeah that should be fine as opposed to like we try to pull everything. We try to see what the most impactful stuff is and yeah no I I think the key test here is what we're trying to prove here is how do we get AJ to know that we have done it correctly.
+
+[00:03:55] Cooper Tenney: Yes. Is that are those scenarios how he thinks of that? Like like I think like the idea of accountification like I don't know how counts. He really only I think that's roughly how he thinks about it. Just increase but yeah sure I don't and then I mean once we classify them to the point where we feel good he'll tell us what the edges are.
+
+[00:04:19] Cooper Tenney: Sure. you know, he'd be like, "Oh, I think but he really he's very focused on the upsell opportunities, uh, generally speaking." So, cool. So, should we just keep refining our own individual stuff or should we start helping with outreach? Like, move to outreach. Uh, I think one you should still like as you see things still refine yourself.
+
+[00:04:44] Cooper Tenney: I I I don't think like every single customer call every single thing. It's a good thing that you kind of because we will get there, right? Uh but then I think maybe the data analysis will be helpful uh around some of the some of the email stuff and then um I don't think having like three people work on a single module is a good idea because then I think there's too many we're allowed to like part
+
+[00:05:09] Cooper Tenney: is part purely doing the deck. So like we need for the sake of like who's changing what? Yeah. So I think part like this is your area you want to work on the deck but what part of the outreach stuff do you want to absolutely own and which parts do you want help on? Okay.
+
+[00:05:25] Cooper Tenney: Um so when data SP will have the emails right I mean this is the outreach but if we are able to come up with the the emails that we get like some kind of rules some kind of ideation or like not guard rails but like a baseline foundation for like kind of comes up into a prompt that the agent can use every time coming a new email that would be great um within the actual system itself I mean what would be good would be
+
+[00:05:54] Cooper Tenney: how like SNF FDE does set up the system and he's going to end up at the company site. How do we get from zero to one where when he shows up it does this few steps and then he has the perfect orange mail. So those are two tracks I'm looking at for now is this is demo and the second one is is how lay it system settings foundation.
+
+[00:06:18] Cooper Tenney: Yeah. Yeah. So I think from a system survey, I think with all customers, we are likely going to be analyzing their existing emails. Yeah. So it's not going to be like press five buttons and spit on email. Uh I actually truly believe from most of the customers we talk to, it's got to be in their tone and voice and only way to do that is start with their emails.
+
+[00:06:37] Cooper Tenney: Yeah. Yeah. So so I think so the configuration for systems is going to be analyze your emails, derive emails by scenario. So the one difference uh with today's technology what people do is they have templated emails right and they just send them to all people. The first thing is going to be like hey we have a corpus of emails that are configured for the scenarios.
+
+[00:07:04] Cooper Tenney: So if it's this type of scenario, we're going to send this email. This type of scenario, send this email, this type of it may be similar content, but the tone may just be different, right? So that there's that piece of it. Uh and I think getting to the point where we've uh delivered pretty good emails.
+
+[00:07:20] Cooper Tenney: And then I think what you could do is analyze tone. So it might be reversed like you analyze the emails to come up with what's the tone of this email. And that allows you to then tweak emails later on afterwards with different charts. So, so, so the way I think about this is you look at their existing emails, you come up with uh an email based on their existing emails that matches the scenario.
+
+[00:07:47] Cooper Tenney: Then you reverse it and say, "Claude or LM, understand this email. How would you classify the tone of this email that we've created is?" And then give me a scale. And what if I wanted to change the scale of the email, right, to be more aggressive or something of that sort. You use it to tweak the email, not to create it.
+
+[00:08:08] Cooper Tenney: Okay. See, that that's the opposite of what I've seen how uh how everyone else how most folks have approached it. They like try to create like uh sliders around tone and stuff like that and they use that as inputs and prompts. It has LM create media. Yeah. I'm saying reverse it. create the email from the data analysis, analyze it, and then tweak slightly tweak that that base email based on some other factors.
+
+[00:08:35] Cooper Tenney: Okay. Um, so I think there there's creating the initial email. The other piece of work that outreaches have that we just kind of demoed but didn't actually do is how do you actually step through and find the right person? Yes, that's actually that seems extremely challenging. Uh well, it's there there's there's some rules to it.
+
+[00:08:56] Cooper Tenney: There is like the first person's going to be on the account anyway. The rules are going to be like when you send the email to the first person, how long do you wait? Like there's there's one scenario where it's like it bounces. That doesn't work. There's another scenario which like AJ what he's most fearful of is the person just doesn't get back to you for 20 days, 30 days, whatever.
+
+[00:09:19] Cooper Tenney: So it's just a rules counter to be like when it reaches this send another email right like and he's relying on his people to do this but we don't know if the people are actually following the rigorous this is where like the moving time is actually better than a person because the person will be like oh I'm busy because like what's going on with that account and the guy would be like oh yeah I should email him again but you may have lost like lost a lot of time it could be like hey wait a week send another email
+
+[00:09:47] Cooper Tenney: wait another week send Now, after three weeks, you'll be like, "Dude, this person's MIA. Let's go and find another person." Or we could also have it like just go find the other people, but don't ping them. Yeah. Every account we have three people. So, typically for the demos purpose, all we need to do is have a UI that shows how they can access that journey and configure it.
+
+[00:10:15] Cooper Tenney: we don't need to actually like trigger try to figure out a zoom info or that s*** like it's just literally just think about a UI that allows them to change instead of the time. So I do think we need to improve the outreach demo right just to to show this path right so that's one that we can do immediately uh and then I think with once we have the lean data data then we also need to actually build the product that can actually do that as
+
+[00:10:40] Cooper Tenney: well uh lean data the first proof point is that he likes the initial draft email right after he does that that later on the summer we would have to actually make it when we go live that you have to go find the NFL. Do you want to show that champion journey for the next demo of them? Yes.
+
+[00:10:59] Cooper Tenney: Yeah. Yeah. Okay. Got it. Yeah. So, scope now because if someone edits that reach demo, it will make one person editing that. Okay. So, is that going to par or is that if he's doing like it should go to like someone else like up to up to par?
+
+[00:11:14] Cooper Tenney: They're doing the they're doing the data stuff. The first thing you mentioned, right? the the make the email look at it then adjust the settings. Uh you want to I can work on a deck. Do you want to work on that? That's just this settings tab within the tab. Sure.
+
+[00:11:30] Cooper Tenney: So I mean just combine one, two, three into just a settings icon and then have everything inside. I'll figure it out. Yeah, maybe I'll I'll see. I'll play around with it because I might want to ask questions to be separate still. Okay. Yeah. As long as you give me permission to like edit it because I don't want to do any merge complex.
+
+[00:11:48] Cooper Tenney: That's fine. Uh, no, it's fine. Okay, cool. Sounds good. And then I'm focused on the the email thing like ingesting the email. So I have to wait for Yeah. So for now I should just refine and once you focus on like unblock me you also focus on like how you're test how I'm going to test it.
+
+[00:12:06] Cooper Tenney: Yeah. Yeah. So the email has Okay. So I'll I'll talk with Claude about creating an approach to it. You have to run emails and stuff. Yeah. I think we that's the part we have been doing building evals and stuff like that. That'll probably be important for both you and him is building evals.
+
+[00:12:20] Cooper Tenney: What does that mean? It means having the LLM see how good your output is. Okay. And like so like like the judgment LLM to like write the email like come up with some the whole idea of emails is how you write tests to test. Yeah. So it's like a doc test in your code.
+
+[00:12:39] Cooper Tenney: Yeah. And for pooling the data is it secure enough do you think if each of us pulls like I'll write some script that everyone is then able to run and it pulls the data onto their machine. So it will never be like in the GitHub. It will just be on everyone's local machine which like can only get access if you someone steals your laptop.
+
+[00:13:06] Cooper Tenney: Um, what do you guys think is more secure? What are the options? GitHub or locally? Yeah. Well, one is more like would you say local is way more secure than G, right? It's just I'll look into if that's even like does that make sense for everyone to store it. We don't need it.
+
+[00:13:26] Cooper Tenney: Yeah, that's a good point. Okay, that might be a good idea. Google, how do you get it to me? I I'll give Yeah, I'll give you I'll I'll have Cloud write some code that then when you run that code, it will pull all the data into your local machine and it will like know how to Okay, I believe. Yeah, that makes sense. I like that security. Yeah, because usually people um prefer having the data on the contractor's laptop then I know some you guys have to wipe it or computers not your computer data set. Okay. I don't know how security permissions work. Oh, we can
+
+[Transcription ended after 00:14:21]

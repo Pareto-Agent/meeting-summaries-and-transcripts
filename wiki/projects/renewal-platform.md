@@ -1,7 +1,7 @@
 # Renewal Platform
 **Status:** Active
 **Owner:** Evan Liang
-**Last updated:** 2026-06-24
+**Last updated:** 2026-06-25
 
 ## Goal
 Build an autonomous AI agent system that replaces Account Managers for long-tail renewals — giving AM leaders full visibility into each step of the renewal process.
@@ -34,11 +34,16 @@ On the morning of **2026-06-24**, Evan ran a full end-to-end demo of the Combine
 - [ ] **Each team member (by 2026-06-24 evening standup):** hook your stage module into the adjacent stage — e.g., pressing "Approve Plan" in qualification auto-navigates to the next stage's view — so the demo has a narrative flow from stage 1 to 4 (2026-06-23 standup)
 - [ ] **Evan:** add a time-frame dropdown (Q2/Q3/Q4/All) to the top-level overview dashboard before AJ demo; send calendar invite for the AJ demo conference-room gathering (2026-06-23 standup)
 - [ ] **Team:** run through the full integrated demo narrative at the 2026-06-24 evening standup; give feedback on missing functionality (2026-06-23 standup)
-- [ ] **AJ demo (2026-06-25):** Evan leads voiceover; one team member drives navigation; all team in one conference room. Demo narrative: account at monitoring → qualify → outreach (draft from signals) → response → proposal (Dean's deck) → buyer hub → admin view
+- [x] ~~**AJ demo (2026-06-25):** Evan leads voiceover; one team member drives navigation; all team in one conference room. Demo narrative: account at monitoring → qualify → outreach (draft from signals) → response → proposal (Dean's deck) → buyer hub → admin view~~ — demo day arrived; format set
+- [ ] **Team (by end of week 2026-06-25):** Pull LeanData bottom 200 accounts filtered by rep ownership — Cooper to provide the two rep names; review data dictionary fields to determine what to pull (2026-06-25 standup)
+- [ ] **Outreach demo (before next demo):** Improve to show champion journey / contact-sequencing UI with configurable follow-up timers — no ZoomInfo integration needed for demo; focus on the UI path (2026-06-25 standup)
+- [ ] **Cooper (outreach module):** Consolidate settings — combine current tabs 1, 2, 3 into a single settings icon (2026-06-25 standup)
+- [ ] **Cooper:** Write script for each team member to pull LeanData data onto their local machine; data must NOT be stored on GitHub (2026-06-25 standup)
+- [ ] **Team:** Build LLM evals for outreach email quality — judgment LLM assesses generated email output; analogous to a doctest (2026-06-25 standup)
 - [ ] Ask Claude to (a) assess which codebase architecture is better, (b) generate a product architecture diagram as an artifact, (c) count lines of code per dashboard (2026-06-23 standup)
 - [ ] **Cooper:** create the canonical fake-company JSON corpus (~100–200 companies, each <$10k) and send to the team — still open from 2026-06-22
 - [ ] Pull customer contracts in up front — required for the buyer-engagement module to work, and contracts double as renewal signals
-- [ ] Evan: set up a call with the LeanData (LD) team who built a data dictionary, as reference for the proposed data dictionary module
+- [x] ~~Evan: set up a call with the LeanData (LD) team who built a data dictionary~~ — LeanData has already sent their company-specific data dictionary to the team (2026-06-25 standup)
 - [ ] (Tentative) Weekend standups: ~once/day, ~30 min, around 1pm, opt-in — proposed by Evan 2026-06-22
 - [ ] Julia + Evan: value proposition deck targeting AM leaders — due week of 2026-06-23
 - [ ] MCP integration: Cooper + Aaron working on real CRM data connection — deferred until module deliverables are stable
@@ -47,6 +52,30 @@ On the morning of **2026-06-24**, Evan ran a full end-to-end demo of the Combine
 - [x] ~~Dean + Aaron: start the parallel clean-sheet combined dashboard~~ — superseded 2026-06-23: team went with Cooper's "parents" architecture as the primary codebase; Aaron's parallel build was a valuable prototype but not the path forward
 
 ## Decision Log
+### 2026-06-25 — Standup
+- **Decision:** Use AJ's LeanData accounts as the training corpus for outreach email generation.
+- **Rationale:** AJ's accounts are the first real-data test case; emails trained on his book of business will surface what the modules need to prove before going live.
+
+### 2026-06-25 — Standup
+- **Decision:** Gate to go live = must prove qualification AND outreach modules work; currently still proof of concept. No fixed timeline.
+- **Rationale:** Going live depends on demonstrating these two modules work correctly rather than on a fixed date.
+
+### 2026-06-25 — Standup
+- **Decision:** Qualification is rule-based initially; AJ will dictate the rules because he knows the accounts. Focus is on upsell opportunities.
+- **Rationale:** Starting with simple, human-defined rules lets the team prove the qualification loop works before adding ML-derived complexity. AJ will refine the edges once the team's classification feels right.
+
+### 2026-06-25 — Standup
+- **Decision:** Outreach email generation approach (Cooper's design): (1) analyze customer's existing emails and generate a scenario-based email corpus; (2) reverse: use LLM to classify the tone of the generated email; (3) use tone classification to *tweak* the email, not to generate it. This inverts the common "tone sliders → LLM generates" approach.
+- **Rationale:** Customers want emails in their own tone and voice — starting from their existing emails is the only way to achieve that. The reverse approach generates from real data first, then makes small adjustments based on a tone scale.
+
+### 2026-06-25 — Standup
+- **Decision:** LeanData data to be pulled locally via script; NOT stored on GitHub. Cooper will write a script each team member can run to pull data onto their own machine.
+- **Rationale:** Customer data should not live in the shared GitHub repo. Local storage restricts access to physical possession of the laptop.
+
+### 2026-06-25 — Standup
+- **Decision:** Outreach contact sequencing is rule-based: send to first account contact → if no response after 1 week, send follow-up → after ~3 weeks MIA, escalate to find alternate contact. Every account has ~3 contacts. For demo purposes, only need a UI showing this journey with configurable timers — no ZoomInfo integration yet.
+- **Rationale:** AJ's biggest fear is a contact going MIA for 20–30 days with no structured follow-up. Rule-based timers are more consistent than relying on AMs to manually remember. The agent is more reliable than a human who gets distracted.
+
 ### 2026-06-24 — Product Demo / Strategy Session (Juliet Lo)
 - **Decision:** Frame the product as **"telemetry"** rather than a "dashboard." Stages are populated automatically by agents, not by humans manually entering data into a CRM.
 - **Rationale:** The dashboard UI risks looking like any other enterprise software. "Telemetry" captures that the system reflects real-time deal state driven by automation, not by human entry — which is the core differentiation.
@@ -108,6 +137,10 @@ On the morning of **2026-06-24**, Evan ran a full end-to-end demo of the Combine
 - **Rationale:** AM leaders with 400+ accounts are reactive and don't have a methodical process. Giving them visibility into each step is the differentiated value vs. generic LLM tools.
 
 ## Notes
+- **LeanData data pipeline (2026-06-25):** LeanData has already sent their company-specific data dictionary. Next step: identify the bottom 200 accounts by rep ownership (Cooper to provide two rep names), review the data dictionary to select the right fields, then pull data locally via script (not in GitHub). Goal: begin data analysis by start of next week.
+- **Outreach email system — two tracks (2026-06-25):** (1) Demo track: improve outreach demo to show champion journey / contact-sequencing UI with configurable timers (immediate); (2) Product track: build actual email generation and contact sequencing product once LeanData data is available. First proof point with AJ: he likes the initial draft email.
+- **Data dictionary is a live blocker for agents (Cooper, 2026-06-25):** One of the biggest stumbling blocks to agents going live right now is pulling the wrong data. Without a data dictionary, every agent re-derives field meanings. LeanData having one pre-built is a significant advantage. Cooper expects someone in the market will solve this problem broadly within ~3 months.
+- **Demo multi-tab safety (ongoing):** Team continues to keep multiple browser tabs open during live demos as a fallback in case of internet/system issues; screenshots prepared as a further backup.
 - **2026-06-24 morning session — demo + pitch deck review with Juliet Lo:** Evan walked Juliet through the Combined Dashboard (monitoring → qualification → outreach → proposal deck → buyer hub cockpit). The "cockpit" gives per-account visibility into who on the buying team engaged, when, and what they looked at — "a level of visibility that no one ever has." Juliet proposed a **three-layer demo framework**: (1) renewals leader dashboard overview (book-of-business funnel, stage drill-down); (2) single-deal walkthrough showing automation outputs; (3) RevOps configuration layer (rules engine, signal changes) — only surface layer 3 if the audience includes RevOps/forward-deployed engineers. Cooper asked (via text chat, relayed by Evan) how to best demonstrate the automation side; Juliet answered: show the outputs themselves (emails, decks, buyer hub), not an animation. Evan and Juliet discussed staged value delivery during a design partnership: week 1 = qualification outputs for all accounts; week 2 = outreach templates drafted; week 3 = proposal decks — so customers get tangible value at each step rather than waiting for the full system. Juliet also presented her pitch deck to the team and took feedback from Evan (add a "process you can stand by" punch line, incorporate "green churn," add a before/after or staged-timeline slide).
 - **Business model (confirmed 2026-06-24):** Pareto gets paid on **closed deals** (outcomes-based, not on number of renewals handled). The headline metric on the dashboard is deals Pareto actually closed. Dashboard covers only Pareto's assigned book of business — but the long-term vision is expansion until the CRM is no longer needed.
 - **Auditability parallel (Evan, 2026-06-24):** Auditability (what email was sent, why, at what decision point) became one of Lean Data's defining features because teams needed to reconstruct what happened when deals went wrong. The draft history and auto-send audit trail in this system should serve the same role — and will be how teams discover and fix edge cases over time ("automate → discover edge case → fix → next time you don't have to worry about it").

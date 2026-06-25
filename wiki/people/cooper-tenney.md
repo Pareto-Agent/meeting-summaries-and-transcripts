@@ -1,6 +1,6 @@
 # Cooper Tenney
 **Role:** Co-founder / Team Member, Pareto Agent
-**Last updated:** 2026-06-24
+**Last updated:** 2026-06-25
 
 ## Current Focus
 Buyer hub module: tracking how buyers engage with renewal materials, identifying who else gets involved in the buying process (CFO, procurement, etc.), and gathering engagement signals for the AM leader. As of the 2026-06-22 evening standup, **leading the centralized account-page integration** for the merged Combined Dashboard.
@@ -15,7 +15,11 @@ Owning the **account page** within the new unified dashboard (per Evan's propose
 - [ ] Send Hannah the discount/free paintball tickets for the off-site (2026-06-22)
 - [ ] Build the centralized account page for the unified dashboard (the per-account view the various stage dashboards drill into)
 - [ ] Continue MCP integration for real data querying
-- [ ] Prepare buyer hub + account page demo for AJ call on 2026-06-25
+- [x] ~~Prepare buyer hub + account page demo for AJ call on 2026-06-25~~ — demo day
+- [ ] Pull LeanData bottom 200 accounts by rep ownership (provide the two rep names); review data dictionary fields — by end of week 2026-06-25
+- [ ] Write script for each team member to pull LeanData data locally (data must not be stored on GitHub)
+- [ ] Consolidate outreach module settings: combine tabs 1, 2, 3 into a single settings icon
+- [ ] Email ingestion module: ingest and analyze existing customer emails to derive scenario-based email corpus (waiting to be unblocked; working with Claude on approach)
 
 ## Notes
 - Module deliverable: buyer hub — once champion engages, track who else gets involved, what information they need, buyer engagement signals
