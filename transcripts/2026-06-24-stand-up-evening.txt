@@ -1,0 +1,9 @@
+Stand up (Evening)
+Date: 2026-06-24 17:30 PDT
+Fireflies ID: 01KVGJHWTCTYAYBVRR05DYBR6Y
+Organizer: ctenney@paretoagent.ai
+Participants: arose@paretoagent.ai, ctenney@paretoagent.ai, dliang@paretoagent.ai, eliang@paretoagent.ai, pgodarajesh@paretoagent.ai
+Duration: ~50.6 minutes
+
+NOTE: Fireflies API returned null sentences for this transcript. No speech-to-text content available.
+This stub is archived to prevent reprocessing. No wiki signal could be extracted.

@@ -71,6 +71,13 @@
 - Note: This is the "sales pitch instead of standup" session referenced in the 06-22 evening standup. Format: 30-sec elevator + 5-min pitch, order by spin wheel (Cooper → Parth → Dean → Aaron; Juliet Lo and H. Fong were remote and set to go after but the recording ended before their turns). Parth gave his pitch using his own AI-generated slides instead of the shared team deck; plans to redo.
 - Summary: Internal pitch-practice session (~39 min); all four in-room team members pitched Pareto Agent; introduced two new remote team members (Juliet Lo, H. Fong) whose pitches were not captured before the recording ended.
 
+## 2026-06-24 — Stand Up (evening)
+- fireflies-id: 01KVGJHWTCTYAYBVRR05DYBR6Y
+- Pages updated: none
+- Transcript: transcripts/2026-06-24-stand-up-evening.txt
+- Note: Fireflies API returned null sentences; no companion Gemini notes file found. This was the pre-AJ-demo run-through standup (all five core team members, ~50 min). No wiki signal could be extracted — stub archived to prevent reprocessing.
+- Summary: Evening standup the night before the AJ demo (2026-06-25); transcript content unavailable from Fireflies API.
+
 ## 2026-06-24 — Stand Up (morning, product demo + pitch deck review with Juliet Lo)
 - fireflies-id: 01KVGD1E8SSW4C7FD85R3D3BCW
 - Pages updated: wiki/projects/renewal-platform.md, wiki/people/juliet-lo.md, wiki/people/evan-liang.md, wiki/people/cooper-tenney.md
