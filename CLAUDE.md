@@ -107,6 +107,12 @@ wiki/
 
 Transcripts are fetched via the Fireflies GraphQL API (`https://api.fireflies.ai/graphql`). The API key is stored in `.claude/settings.local.json` as `FIREFLIES_API_KEY`. Processed transcripts are archived to `transcripts/` and tracked by Fireflies transcript ID in `wiki/log.md`.
 
+**Native-transcript fallback.** Fireflies auto-join/transcription is unreliable — sometimes the bot joins but returns null `sentences`, sometimes it never joins a meeting at all (e.g. ad-hoc calls with no calendar invite). So Fireflies is NOT the only capture path. When a Fireflies meeting has no usable transcript, or a meeting was never captured by Fireflies, the pipeline falls back to native platform transcripts dropped into `transcripts/`:
+- **Google Meet** — "Notes by Gemini" exports (`*Notes by Gemini*` / `*- Transcript*`, `.txt` or `.pdf`).
+- **Zoom** — cloud-recording WebVTT (`*.transcript.vtt`; the `GMTYYYYMMDD` filename prefix is UTC).
+
+These are Google Docs / Zoom cloud files, so they must be exported and placed into `transcripts/` (manual *Download → txt/pdf* for Gemini; *Download* for Zoom VTT). A pure file-copy from the Google Drive mount does NOT work — Gemini notes appear there only as `.gdoc` pointer stubs, not readable text. True auto-fetch requires the Google Drive/Docs API (Meet) or Zoom API. The `/update-wiki` skill consumes whatever native files are present and tracks them by filename (`gemini-file:` / `zoom-file:`) so they aren't reprocessed.
+
 1. Fetch new transcripts from Fireflies API (by ID, not yet in `wiki/log.md`)
 2. For each new transcript:
    - Identify meeting type from content (standup / 1:1 / advisor demo)

@@ -8,3 +8,6 @@
 *.mov
 *.vtt
 Meeting Transcription.txt
+
+# Gemini-fetcher machine state (which Drive docs were already pulled)
+transcripts/.drive-fetch-state.json

@@ -4,7 +4,10 @@ Fetch new transcripts from the Fireflies API and update the wiki.
 
 ## Steps
 
-1. Read `wiki/log.md` to extract the list of already-processed Fireflies transcript IDs (look for lines like `fireflies-id: <id>`).
+1. Read `wiki/log.md` to extract what has already been processed:
+   - Fireflies transcript IDs (lines like `fireflies-id: <id>`)
+   - Native-fallback files already consumed (lines like `gemini-file: <filename>` or `zoom-file: <filename>`)
+   so neither a Fireflies meeting nor a native-only (Gemini/Zoom) meeting is processed twice.
 
 2. Fetch transcripts from the Fireflies GraphQL API:
 
@@ -25,6 +28,26 @@ Fetch new transcripts from the Fireflies API and update the wiki.
 
    a. Reconstruct the full transcript text from `sentences[].speaker_name` + `sentences[].raw_text`.
 
+      **Native fallback (when `sentences` is null or empty).** Fireflies sometimes joins a
+      meeting (non-zero `duration`) but returns no transcript. When that happens, look in
+      `transcripts/` for a native companion transcript of the SAME meeting and use it instead.
+      Match by date — the date embedded in the companion filename must equal the meeting's API
+      `date` — and, if several share a date, by the closest time. Recognized native sources:
+      - **Google Meet** — files named `*Notes by Gemini*` or `*- Transcript*` (`.txt` or `.pdf`).
+        Filename date is `YYYY_MM_DD` (manual downloads) or `YYYY-MM-DD` (auto-fetched
+        from Drive — the fetcher names files after the Doc title). Treat `_` and `-` as
+        equivalent date separators when matching. Fully speaker-attributed; the file header
+        reads `Meeting records Transcript` when a transcript exists (vs `Recording`/notes-only).
+      - **Zoom** — files named `*.transcript.vtt` (WebVTT). Filename date is the `GMTYYYYMMDD`
+        prefix (this is UTC — convert to the local meeting day before matching). Parse the VTT:
+        strip `WEBVTT`, cue numbers, and `HH:MM:SS.mmm --> ...` timing lines; keep the spoken
+        text (Zoom VTT lines are often `Speaker Name: text`).
+
+      Read the companion via the Read tool (it handles `.txt`, `.pdf`, and `.vtt`). Prefer a
+      complete native transcript over a partial Fireflies pull. In the log entry record
+      `source: fireflies+<gemini|zoom>-fallback`. If NO companion file exists, log the meeting
+      as a stub (`Pages updated: none`, note "transcript unavailable") so it isn't reprocessed.
+
    b. Identify the meeting type from content:
       - **Standup**: multiple participants each giving short updates, blockers, what they're working on
       - **1:1**: two participants in a check-in format
@@ -43,22 +66,54 @@ Fetch new transcripts from the Fireflies API and update the wiki.
       - If it exists, update it — do NOT duplicate existing content, only add new information
       - Set "Last updated" to the meeting date
 
-   h. Append a new entry to `wiki/log.md`:
+   h. Append a new entry to `wiki/log.md`. Include the line that identifies the source so it is
+      never reprocessed — a `fireflies-id:` for API meetings, a `gemini-file:`/`zoom-file:` for
+      native-only meetings — plus a `source:` tag:
       ```
       ## <YYYY-MM-DD> — <title>
-      - fireflies-id: <id>
+      - fireflies-id: <id>          # OR: gemini-file: <name> / zoom-file: <name>
+      - source: <fireflies | fireflies+gemini-fallback | fireflies+zoom-fallback | gemini | zoom>
       - Pages updated: <comma-separated list>
       - Summary: <one sentence>
       ```
 
    i. Update `wiki/index.md` if any new pages were created.
 
-5. Commit all changes:
+4B. **Native-only meetings (Fireflies never captured them).** After the Fireflies list is done,
+    scan `transcripts/` for native transcript files — `*Notes by Gemini*`, `*- Transcript*`
+    (`.txt`/`.pdf`), and `*.transcript.vtt` (Zoom) — whose meeting is NOT yet in `wiki/log.md`.
+    Track these by filename (`gemini-file:` / `zoom-file:` lines), since they have no
+    fireflies-id. These are real meetings Fireflies missed entirely (e.g. an ad-hoc call with no
+    calendar invite, or a join the bot was never admitted to). Process each exactly like a
+    Fireflies meeting (steps 4b–4i): derive the date from the filename (Zoom `GMT` prefix is UTC —
+    convert to local), read content via the Read tool, extract signal, update wiki pages, and
+    append a log entry with `source: gemini` or `source: zoom` and a `gemini-file:`/`zoom-file:`
+    line naming the source file (no `fireflies-id`). This is what makes native transcripts a true
+    fallback path rather than a manual rescue — a missed/empty Fireflies capture no longer means a
+    lost meeting, as long as the native transcript file has landed in `transcripts/`.
+
+    **Dedup against already-covered meetings (critical — the auto-fetcher pulls a backlog).**
+    A native file is "not yet processed" only if no log entry covers its MEETING — not merely if
+    its filename is new. The same meeting can arrive as a manual `YYYY_MM_DD` drop, an auto-fetched
+    `YYYY-MM-DD` Doc, AND a Fireflies capture. Before processing a native-only file, find any
+    log entry with the SAME date (treat `_`/`-` as equal) and a compatible title/time, then:
+      - **Already covered with real content** (the entry has `Pages updated: <pages>`): do NOT
+        re-extract or duplicate wiki content. Just append a `gemini-file:`/`zoom-file:` line to
+        that existing entry recording this file as an additional archival source, and move on.
+      - **Existing entry is a stub** (`Pages updated: none`, "transcript unavailable"): the native
+        file is exactly the missing content — process it now and UPDATE that entry in place
+        (set its source and pages), rather than adding a second entry for the same meeting.
+      - **No matching entry**: it's a genuinely new meeting — process it fresh (4b–4i).
+    When unsure whether two are the same meeting, compare the reconstructed text, not just the
+    title. Prefer one entry per real meeting with multiple source lines over duplicate entries.
+
+5. Commit all changes locally (do NOT push):
    ```
    git add -A
    git commit -m "wiki: update from <meeting date> <meeting type>"
-   git push origin main
    ```
+   The commit is a local-only rollback safety net. Sync to the team happens via
+   Dropbox, not GitHub — there is intentionally no `git push` step. Do not push.
 
 6. Summarize what was updated.
 
