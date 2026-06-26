@@ -36,6 +36,7 @@
 
 ## 2026-06-22 — Stand up
 - fireflies-id: 01KVEPX2QG4AVYFRGBDAT1W5TF
+- Transcript: transcripts/morning/2026-06-22-standup-morning.txt
 - Pages updated: wiki/projects/renewal-platform.md, wiki/people/evan-liang.md, wiki/people/cooper-tenney.md, wiki/people/parth-godarajesh.md, wiki/people/dean-liang.md, wiki/people/aaron-rose.md, wiki/advisors/aj.md, wiki/advisors/scott.md
 - Caveat: Fireflies attributed ALL speech to a single speaker (Evan Liang); segments were re-attributed by content + documented module ownership. Clearly identifiable: Evan (vision), Dean (slides/deck), Parth (voice agent / API / Haiku-Sonnet), Cooper (dashboard, "after our 1:1"). The renewal-plan / NRR-waterfall / rules-engine segment could not be reliably attributed and was kept project-level and neutral.
 - Summary: Monday standup; Evan pivoted the product to a single unified dashboard + centralized account page (over time replacing the CRM), proposed a Parth-dashboard / Cooper-account-page split, set a migration plan, floated a data dictionary module (LeanData reference) and once-a-day weekend standups, and reaffirmed designing for the forward-deployed-engineer model rather than a human-AM-in-the-loop. Target: unified dashboard demoable for the AJ demo 2026-06-25.
@@ -108,20 +109,20 @@
 - Summary: Evan demoed the full Combined Dashboard to Juliet Lo (~57 min); Juliet gave strong positive feedback and surfaced several product gaps (escalations inbox, unreachable contacts at contact level); key decisions on demo strategy (single-deal walkthrough > time-slider animation), auto-send approval flow, design partnership scope (validate core product, not tailored implementation), and pilot timeline (≥12 weeks / one quarter). Juliet also reviewed her design partner pitch deck targeting renewals leaders with the team.
 
 ## 2026-06-16 — 10.16 morning stand up (module assignments + tooling)
-- source: granola — transcripts/10.16 morning stand up.html
+- source: granola — transcripts/morning/2026-06-16-standup-morning.granola.html
 - gemini-file: morning/2026-06-16-standup-morning.gemini.txt
 - Note: Pre-Fireflies transcript (Fireflies set up June 19); sourced from Granola HTML export. No fireflies-id.
 - Pages updated: wiki/projects/renewal-platform.md, wiki/people/evan-liang.md, wiki/people/aaron-rose.md, wiki/people/parth-godarajesh.md, wiki/people/dean-liang.md, wiki/people/cooper-tenney.md, wiki/people/h-fong.md, wiki/advisors/scott.md
 - Summary: First substantive recorded standup (pre-Fireflies); module assignments made (Aaron→Qualification, Parth→Outreach, Dean→Proposal, Cooper→Buyer Evaluation; Negotiation out of scope); Aaron led a Claude Code best practices walkthrough; Replit vs. Claude Code tooling discussion; MCP vs. API tradeoffs; Scott Golden named as informal advisor for a Thursday prototype review (June 19).
 
 ## 2026-06-16 — Stand up 10.16 afternoon (work-life balance + time-off policy)
-- source: granola — transcripts/Stand up 10.16 afternoon.html
+- source: granola — transcripts/evening/2026-06-16-standup-evening.granola.html
 - Note: Granola metadata shows creation date June 17; title reads "10.16 afternoon" — title treated as authoritative for meeting date (June 16). Pre-Fireflies; no fireflies-id.
 - Pages updated: wiki/people/evan-liang.md
 - Summary: Evan set work-life balance expectations (responsiveness baseline, performance gradient C/B/A, culture of unblocking quickly) and company time-off policy (July 6–10 fully off company-wide; Christmas–New Year's off; Juneteenth June 19 = working; random federal holidays not observed).
 
 ## 2026-06-17 — Stand up 10.17 (morning, research review + Juliet feedback)
-- source: granola — transcripts/Stand up 10.17.html
+- source: granola — transcripts/morning/2026-06-17-standup-morning.granola.html
 - Note: Pre-Fireflies; no fireflies-id.
 - Pages updated: wiki/projects/renewal-platform.md, wiki/people/juliet-lo.md, wiki/people/aaron-rose.md, wiki/people/parth-godarajesh.md, wiki/people/dean-liang.md, wiki/people/cooper-tenney.md, wiki/people/evan-liang.md
 - Summary: Team presented per-module research to Juliet Lo; Juliet gave structured feedback on Qualification (expand signals, flexible churn model), Outreach (liked branching logic + language profiling), Proposal (value story critical, modular slides), and Buyer Portal (hub + deck connectivity, ROI calculator scope); strategic principles confirmed (keep v1 simple, work within seller systems, variance is the enemy of multi-step automation); Rol at Guard Square cited as long-term pricing direction.
