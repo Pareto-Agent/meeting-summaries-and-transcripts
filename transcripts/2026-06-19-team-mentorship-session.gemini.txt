@@ -1,0 +1,199 @@
+﻿📝 Notes
+Jun 19, 2026
+stand up
+Invited Aaron Rose Cooper Tenney Dean Liang Evan Liang Parth Goda Rajesh
+Attachments stand up
+Meeting records Transcript 
+
+
+
+
+Summary
+Workflow intensity and productivity strategies were analyzed alongside plans for sales presentation improvements and development tool optimization.
+
+Workflow Intensity and Culture
+Participants contrasted current high-speed startup intensity against traditional corporate bureaucracy. Discussion centered on minimizing fake work to prioritize genuine business output over administrative tasks.
+
+Sales Strategy Focus
+Future efforts will shift from architecture toward improving sales pitches and demo slide generation. Focus remains on avoiding robotic delivery to clearly explain the company functions.
+
+Technical Development Plans
+Optimization of the development environment will utilize specific slash commands and cloud prototyping for faster iteration. External code reviews will be sought to maintain quality standards.
+
+
+
+
+Next steps
+* [Evan Liang] Focus Sales Pitch: Develop the sales pitch to refine communication strategy. Focus on the pitch structure and verbal delivery next week.
+* [Evan Liang] Find Evaluators: Identify individuals capable of evaluating code and technical implementation. Ensure the work is reviewed for accuracy and efficiency.
+* [The participant] Complete Demo Slides: Complete the slide generation for the upcoming demo. Finalize the slides by the end of the weekend.
+* [Evan Liang] Organize Code Reviews: Organize dedicated code review sessions instead of standard demos. Evaluate current development work for accuracy.
+* [Evan Liang] Schedule Jesse Meeting: Schedule a meeting with Jesse for next Thursday. Prepare findings on previous attempts to demonstrate progress.
+* [The participant] Configure Terminal: Configure the terminal environment. Prepare the system for development tasks.
+* [The participant] Read Specifications: Read the project specifications from the GitHub repository. Complete this review process over the weekend.
+* [The participant] Review CTO Spec: Review the specification document created by the previous chief technology officer. Analyze the content for relevant insights.
+
+
+
+
+Details
+* Personal and Technical Focus: Evan Liang discusses their personal adjustment to the workflow, noting that the past four days have been the most intense in nine months. Evan Liang observes that their professional focus has narrowed to a singular goal, with a plan to simplify their technical output by reviewing every pixel on the screen (00:00:01).
+* Upcoming Work and Sales Pitches: Evan Liang expresses an intention to focus on sales pitches during the upcoming week, noting that coding has made them feel nonverbal. The interlocutor discusses a shift from focusing on architecture to working on slide generation for demo purposes. Evan Liang addresses the need to improve pitching skills to avoid robotic deliveries and offers to help the team practice their pitches to better explain their company's function when asked (00:01:08).
+* Team Culture and Onboarding: Evan Liang expresses satisfaction with how the team has embraced a culture of speed and experimentation during the first week. The conversation includes the admission of a guest named Firefight into the meeting (00:03:00).
+* Work-Life Balance and Intensity: The team compares the intensity of their current workload to their experiences as students at Stanford, noting that while the hours are similar, the structure of the work is different. Participants discuss their first experiences with a 9-to-6 schedule, noting that previous internships involved excessive meetings and downtime, which significantly reduced actual productivity (00:03:57).
+* The Concept of "Fake Work" and Organizational Bureaucracy: Evan Liang introduces Stuart Butterfield's term "fake work" to describe tasks that appear busy but do not drive business objectives, such as excessive meeting preparation. Evan Liang explains that large companies often struggle with bureaucracy as they grow, noting that hiring more people often increases coordination costs rather than output. Evan Liang contrasts this with the founders' perspective, where they remain mindful of expenses and bottom-line impact, unlike employees at larger organizations who may prioritize headcounts to signal power (00:05:46).
+* Future Goals and Code Quality: Evan Liang sets a goal for the next week to maintain momentum and iterate quickly while improving coordination. They express an intention to find external individuals to evaluate their code quality, as they cannot personally verify all commits to the GitHub changelist (00:10:29).
+* Workflow Comparisons and Industry Disruption: Evan Liang reflects on the speed of the current work style, suggesting it is significantly faster than past internships at other companies. They speculate that this "artificial intelligence native" approach to working is fundamentally different from traditional corporate methods and could be disruptive to the industry (00:11:35).
+* Internship Deliverables and Process Automation: The participants discuss their previous internship experiences, noting that many tasks involved sitting in meetings rather than executing substantive work. Evan Liang highlights the efficiency of automating meeting summaries and pushing them directly to Notion or Dropbox. They discuss a pending meeting with Jesse scheduled for the following Thursday, emphasizing the importance of demonstrating progress and what has been tried (00:12:34).
+* Tools and Development Environment: The team discusses ongoing development projects, including building sales tools and working on the Max One project. Evan Liang outlines specific slash commands available for the workflow, such as slashspec, slashcode review, slashsimplify, and slashsecurity, to optimize code and development. The team confirms they are using cloud code for prototyping and moving to production, and Evan Liang commits to setting up the terminal and reading specifications on GitHub over the weekend (00:14:23).
+
+
+
+
+You should review Gemini's notes to make sure they're accurate. Get tips and learn how Gemini takes notes
+How is the quality of these specific notes? Take a short survey to let us know your feedback, including how helpful the notes were for your needs.
+📖 Transcript
+Jun 19, 2026
+stand up - Transcript
+00:00:01
+
+
+Evan Liang: the focus Gemini is saying I don't see like your it's not asking to join it's very frustrating too someone invited who else was invited uh you guys are not online but okay no no yeah what about on your side so far um I think this four days have been be hard as I booked in the last nine months. Uh NBA has made me very different person and I'm like who I am again because I'm working again. Cool. Um that's on a personal note. On a technical note, um thanks for talking through me because I think the scope creep for the two of us has really narrowed down and we have just a singular focus two single two focus. I think I don't know what's going on with you but it's great. Um, so what I've been doing is like just taking all that information, the meeting notes, what I'm thinking, going through every every single pixel on my screen and trying to get it as simplified as possible and as focused as possible to what he said.
+
+
+
+
+00:01:08
+
+
+Evan Liang: So I'm looking forward to the work I'm going to do over the weekend. And I think next week I'm like like I think Monday morning when we get to this point, I think I would like to focus on the sales pitch again. Uh, I think coding a lot has made me nonverbal and I'm a very verbal person. So I want to get back and start focusing on the pitches and what happens next. Awesome. Cool. What do you do? Uh yeah, I mean I don't know. I think that uh I definitely had a bit of scope creep where I really wanted to get ahead on the architecture slowing it down a bit to work on just slide generation for the sake of the demo. Um so yeah, I'll do that. I'm just reviewing the slides right now and then it should be easily done by the weekend. So I'll get that out of the way. Um and then after that, I don't know. I guess we'll see if I move back to architecture or maybe I start to work on that pitch thing that we have on Tuesday that I don't think any of us have like looked at too busy coding.
+
+
+
+
+00:02:03
+
+
+Evan Liang: I just told like God to like build me a one minute fish bas. It was the most robotic thing ever is like today I fired someone and this is what I learned from like that's not how you know you see LinkedIn they have this crazy like this is what I learned from classic and some goes into it. Yeah. Yeah. Yeah. So, we'll we'll work on that. If you guys need some help with like pitching with me, you know, of course, you can talk. Yeah, you guys you guys are welcome. If you guys want to go off in pairs and practice pitches and stuff like that, you guys are welcome to do that. Yeah. So, uh yeah. No, I think it's it's it's one of those skills that's uh good to have is uh because as Parthra when you run into people especially, they think they're going to ask you like what does your company do? Uh I was second year. I was like, "We're building it." So,
+
+
+
+
+00:03:00
+
+
+Evan Liang: uh, if you can get to to to do this, that saves you a little bit of awkward moments like that kind of come and go. Well, cool. Uh, from my perspective, yeah, low, I think this first week has been, uh, great. I think you guys have really kind of embraced kind of the the speed and the culture of just kind of trying things out and that's awesome. Uh, so, uh, now now the challenge for, uh, for us is okay, now Firefight wants to join us. Oh my gosh, it took so long.
+Cooper Tenney: resolution. So I say guest waiting probably a
+Evan Liang: It's admit entry. Okay, there we go. So now you catch this up. Uh yes, I believe so. Make sure you muted. No, no, no. I'm audio. Uh pretty sure, right? So microphone now. Yeah, this is us. So first of all, uh that's been great. Uh how does it um I think part said uh this has been uh forced him to work harder than at Kellogg.
+
+
+
+
+00:03:57
+
+
+Evan Liang: How does it compare to being a Stanford student? Uh and the reason I say this is I actually think you guys work pretty hard at Stanford. If you count the time you do studies and your clubs and your networking, it's like a full more than a full-time job, right? So how does that compare for you all? Or is it like this is having to sit at a desk is harder than I agree with that one. Yeah, it's probably the same amount of time. It's just different timeline. Like Cooper knows I've never gotten up and like been functioning at 9:00 a.m. who was in my room for a year. So like I just say that it's been hard. And then so bad. Um, and then on top of that, I guess like it's weird not having a break, but like yeah, when I think about it, like the hours are the same. It's just like normally it's like I have a lot of classes and I have like a 1 hour break before I hit dinner and then I do my work and then I do my work till like 2 a.m. So like there just like all of that.
+
+
+
+
+00:04:58
+
+
+Evan Liang: There's normally a break in the middle that I'm getting used to, but otherwise Yeah. I mean, the Yeah, the time and everything is kind of the same. Actually, it's technically less if I add it up. Yeah. Can I ask a question here? Has anybody else have never worked 95 96 before? You've never worked 96 before. I've never worked like officially that. No, this is like the first 9 to6 experiences. Yeah, we did count. But it was just very my my last day counted. But like it was so many meetings that it wasn't really work. Oh, it was just showing up and being present. Well, I mean like being a P PM just have a lot of meetings. So that was all I was doing. Like half my time was just in meetings. Yeah. And the other half was Did you make it to five? I don't remember. I don't know how many people I leaned out even make it to five anymore.
+
+
+
+
+00:05:46
+
+
+Evan Liang: Yeah. I did you not? Yeah, it was literally Yeah, I just had a lot of meetings and then I would do work and then I'd have to wait for the design team. So, I just couldn't get anything done and that was like my life. Yeah, usually I part part of thing that slows down is you're waiting for folks and you have uh like dependencies or like uh if you guys were like even if you guys were coding in voice and for Cooper's question, you had an existing codebase, you need to wait for someone to allow you to like touch it or explain how it works and that would take time. Uh and so there's a lot more downtime. Uh and then meetings take up even though we're doing two twice a day standups, those are like your only two real meetings. Usually you're just going from to a series of meetings into meetings and they just it just it's it's a lot of time. So I think there's Stuart Butterfield had coined this term called fake work.
+
+
+
+
+00:06:43
+
+
+Evan Liang: So as companies scale they do a lot of what they looks like they're really really busy but it's not actually driving the business forward. So fake work would be examples of like um if uh someone's like hey uh I'm preparing for board meeting. and I'm spending six months preparing a presentation for the board meeting. That could be a lot of hours, but it could not it could actually be fake work because actually and oftentimes the board meetings they may barely touch upon that subject. Yeah. Right. That's not actually productive. So So there's a lot of work like or the funniest one is like we need a meeting to prepare for that meeting. Yeah. That happens all the time at like bigger companies, right? And you're like really like that just and you add that up multiplied by the entire company and like how much time is actually spent like helping customers, driving revenue versus just internal coordination could be quite a bit. Yeah. Um and that's why you see these startups really trying to drive towards fewer people.
+
+
+
+
+00:07:46
+
+
+Evan Liang: Yeah. Because that seems to be the only solution. If you have fewer people, you have less coordination. More people, more coordination. uh and it doesn't actually uh solve. So there's definitely an axiom where people at mid-size companies think the answer to every solution is to hire more. Yeah, I'm very busy. I will hire more and they keep on trying to hire more. And the irony is is a the more the organization hires, the slow less gets done. It's just that and that's what that's part of the reason people are saying it's AI, but part of the reason people just want an excuse to not hire. Yeah. Uh so that that that was my conclusion even before AI was uh your bureaucracy is a function of the number of employees not your own processes and once you cross a certain number then I mean Google fought this so hard I cannot tell you Google did everything possible when they went IPO not to become a bureaucracy. Yes. From the founders interviewing every single employee up until they were like a thousand.
+
+
+
+
+00:08:48
+
+
+Evan Liang: Every employee got interviewed by the founders. That's crazy. to like all that they they did all this market research, they did all this thing on teams, they spent all this money, they were trying not to become a bureaucracy and I think when they hit like 20,000 the the the organization the beast feeds itself that's uh specifically uh middle management the way that middle management thinks about crewing power is it's the number of people who are under you number of times you go to a big company and they're just like how powerful someone's like I have 400 reports I have 300 reports. And when you start talking that language and what's the message, your power is equated to the number of people who report into you. So what do you do? You hire more people. Yeah. And you're so far away from the budgets at these big company. Like the idea of expenses is so far away from you. So there's no cost to you just requesting more headcount. Yes.
+
+
+
+
+00:09:42
+
+
+Evan Liang: Right. As a founders, founders tend not to be that way because we always think about the bottom line. So for us like more people equates to more expenses and we see that. So that hurts us. But even when I started hiring VPs, they could give a f*** about like I tried to explain Runway to them. I couldn't care less. This was just like talking over them. It was like whatever. I want more people. Budget's your problem, right? And if you don't like it, you can fire me, but I I'm all you're ever going to hear from me is I want more people. Yeah. So it's just becomes fight. Okay. Uh so that's a little bit about the bureaucracy. Uh that's for you guys as uh as you guys think through and you guys are pursuing your project. Uh if you guys need anything from us, uh yeah, feel free to reach out. Uh like I said, I'm always available, right?
+
+
+
+
+00:10:29
+
+
+Evan Liang: Uh you'll probably get a response from me within an hour or two hours. Just want to make sure you guys aren't blocked on whatever you're working on. So that uh our goal for the for next week is keep up the momentum, right? Uh now that we have stuff, how do we maintain the momentum? How do we continue to iterate quickly? uh but yet start coordinating more. And so uh that may require us to change some of our processes or try to innovate around some things. But that would be our goal. And if we can stitch together the amount of productivity and innovation for 10 weeks uh at the rate we are at and we're we're doing it correctly. So we'll we'll also find people to tell us whether or not we're building things correctly. uh because I actually can't tell you what you checked into CL to GitHub is right or wrong. So So I need to go my goal is to find people who can tell us if they so we're gonna find people who will evaluate it.
+
+
+
+
+00:11:35
+
+
+Evan Liang: I'm going to try to think some sessions we will not be doing demos instead of code reviews but uh so um let's figure that out but my point is if we could do that I hope you guys get the sense that you'll probably well you've probably done more in one week of this internship than probably some people do in like a whole internship uh certainly like some of your colleagues I can talk about that for a moment like I've worked in in two internships one two years like another company for about two years as a small media enterprise and deote for a year. I think that the way you guys are working is it's completely different. I'm not sure if this is what startups are doing as of now, but if this is the new AI native way like I understand why we say like consulting is dying or or your SAS is dying because the way we're doing things like and I'm feel very slow compared to you guys because I'm still like changing the way I'm working from all these biases I brought in but you guys don't even have that kind of biases how old companies work.
+
+
+
+
+00:12:34
+
+
+Evan Liang: So like this is like break neck and I'm I'm scared for most companies that are not doing this and I I think that's even if like I'm not sure where this goes and stuff like that but just this the way the working style this culture that you guys have built is already going to disrupt a lot of things. Like what did you do last summer? What was what was your deliverables? What did I do? I mean I technically did a lot did a lot of work but like I think it was just like relative to what they did like what they were already doing. Like what was your actual deliverables at the end of the summer? Um I did what I do I like did like three no I did six sort of feature launches like I gave like a presentation to the sales team or whatever but like that took no time. Um I scoped out two features and I built like a pure AI pipeline thing but like when I think about like the actual work that I did like most of that was just like being the one on the meetings who could like know what was going on.
+
+
+
+
+00:13:27
+
+
+Evan Liang: Yeah. The actual work itself like I could have finished in a week. Like I mean I was doing the churn analysis with Aaron for half my time during during the job instead of my actual job because my actual job didn't have like things for me to do. Yeah. And I was helping the product marketing team because the product management team didn't have much to do. Yeah. Cool. Awesome. Thanks. I really want to get the meeting summary figured out. Fair enough. Yeah. They're honestly so helpful. Like if you take the time to like go into the email and take the transcript be in quad like I mean it's not that long but like it's an extra like couple minutes that if it just goes right into the Dropbox right into the notion you have to like do that it's just automatic. So it is really helpful but maybe it doesn't see I'm trying I'm trying to get that meeting with Jesse on hopefully next Thursday.
+
+
+
+
+00:14:23
+
+
+Evan Liang: That's Should I pause on trying to figure out No, just keep on going. No, I I mean ideally when you go to that meeting, you could have said what you've tried. Yeah. Right. Versus us going there. Yeah. Yeah. But to the extent the more you figure it out, the more you're informed and maybe we we teach him something, you know, that that'd be even better. So even like a side project that was working on like that's pretty fun like the max one thing. I'm I'm now also running multiple screens and I would like I want to like focus on one thing but now like oh yeah they're just running it's like okay fine let's what's what else can I build? So I started building the sales thing and like this is what they're all about. So for the win I mean you better like watch out before they start spitting your own slaps. No that's uh that that that'd be a good result uh around it. So you want to be like one of those factories around it.
+
+
+
+
+00:15:23
+
+
+Evan Liang: So yeah, one quick call out for everyone is that there are some slash commands for the getting the spec. Yeah. So slashspec just creates the spec. No, no, no, no, no. I' I've almost got the digest poll then working. What's the thing we're working on? Um there's also slashcode review. Yeah. And there's like slashsimplify that simplifies your stuff and slash secure like it goes through all your code and just sees are there redundant parts is you know did it code something wrong or like did it code something inefficiently and also slash uh security which like yeah we haven't really talked about yet but just if you need something to run just run those if you need something to run yeah those just to use the tokens. Yeah. And are you guys all you guys are all on cloud code now and building it? Well, I'm sorry I tried it first but no no no the value visualizations but yeah cloud is the thing I think thing I really about is like you can protype and going from protap to production is go faster than I think. Okay. Yeah. that my my takeaway actually for what I want to do is uh make sure I get the uh terminal set up and so I'll try to start reading some of the specs over the weekend. So that's that's my goal is to go through the GitHub and start looking at the various specs that folks have put together. Thanks. Cool. We got a great specs. You didn't mention it alongside somewhere. Yeah, we can work on anyone take a look at the uh spec from the previous CTO. I was going to and I
+
+
+
+
+Transcription ended after 00:30:36
+
+
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.

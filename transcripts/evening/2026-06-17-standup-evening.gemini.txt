@@ -1,0 +1,75 @@
+﻿📝 Notes
+Jun 18, 2026
+stand up - initial prototype
+Invited Aaron Rose Cooper Tenney Dean Liang Evan Liang Parth Goda Rajesh
+Attachments stand up - initial prototype
+Meeting records Recording 
+
+
+
+
+Summary
+Meeting focused on account dashboard infrastructure and slide generation automation through integrated buyer-facing renewal hub strategy sessions.
+
+Renewal Dashboard and Automation
+The team established data accessibility standards and reached a decision to simplify account pages by removing complex renewal stages. This enables clearer user focus on essential outreach tasks.
+
+Slide Generation Workflow Optimization
+Performance concerns led to prioritizing API-connected templates while keeping inputs accessible for manual verification. This ensures automated proposals maintain human oversight for enterprise-grade consistency.
+
+Buyer Hub Design Strategy
+Enhancements include prominent chat placement and refined product labeling for improved client engagement. These UI changes require further validation to balance layout density with functional accessibility.
+
+
+
+
+Decisions
+Aligned
+* Dashboard inputs moved to main view The dashboard design is updated to move user inputs to the main view and shift content information to the sidebar to prioritize user control.
+* Demo presentation flow prioritized to PowerPoint The demo presentation flow will start by showcasing the generated PowerPoint first, followed by an explanation of the blocks and customization logic.
+* Product terminology updated to SKUs/Modules The term 'utilization' is replaced with 'products' or 'SKUs' in the buyer hub to more accurately reflect customer usage.
+* Lunch tool project deprioritized for demo Development of the 'Luncher' tool is discontinued to maintain focus on the core renewals project demo.
+
+
+We've updated the Decisions section using your feedback.
+Let us know what you think: Helpful or Not Helpful
+
+
+
+
+Next steps
+* [Aaron Rose] Simplify Renewals View: Refine the view presented to the renewals manager to improve clarity.
+* [The group] Use Low Annual Recurring Revenue Values: Set dummy Annual Recurring Revenue values below 10,000 for all demo data to avoid customer confusion.
+* [The group] Simplify Account Page: Remove unnecessary elements like renewal stages from the account page.
+* [The group] Reorganize Account Page UI: Move input fields to the main view and shift additional information to the sidebar.
+* [The group] Use Claude Design: Generate the demo presentation using Claude design to ensure high quality visuals.
+* [The group] Demonstrate Input Changes: Structure the presentation to display a consistent slide template while highlighting how content updates when inputs change.
+* [Evan Liang] Determine Presentation Context: Decide whether to provide initial context before the team presents the demo to Scott.
+* [The group] Prepare Demo: Continue iterating on the demo projects to prepare for the presentation to Scott tomorrow morning.
+
+
+
+
+Details
+* Account Data Management: Evan Liang discussed the need to store raw data for accounts, including previous contracts, in a location accessible to all agents. The team confirmed that the code for handling this data has been pushed to GitHub for shared access, ensuring consistency across different development environments.
+* Renewal Dashboard Orientation: The team debated whether the renewal dashboard should be task-oriented or account-oriented. Evan Liang noted that while some tasks require manual approval or intervention, particularly before the proposal stage, it is necessary to determine if users prefer managing specific tasks or viewing broader account information to establish priority, such as ticket size or urgent issues.
+* Account History and Strategy: Evan Liang presented a renewal dashboard view that includes account history, identifying champions, and tracking communications to inform strategy. They noted that for accounts with multiple contacts, the system allows for secondary or tertiary communication paths if the primary contact is unresponsive.
+* Email and Signal Ingestion: Discussion regarding email integration revealed that while some platforms like Lean Data store email threads inside CRM tasks, the team does not yet have a standardized way to process and ingest these emails into the current dashboard.
+* Demo Data and Simplification: Evan Liang advised keeping dummy ARR (Annual Recurring Revenue) values low, around $10,000, rather than high figures like $500,000, to prevent skewing user expectations during demos. Furthermore, the team agreed to simplify the account page by removing unnecessary renewal stages to prevent confusing users who are currently in the outreach phase.
+* Slide Generation Logic: Evan Liang demonstrated an automated slide generation tool that uses signals—such as account posture (flat, up-sell, down-sell), tenure, and health metrics—to construct slide decks. This system utilizes "blocks," which are categorized slide types treated as puzzle pieces to be assembled based on the specific scenario.
+* Slide Generation Performance: The team discussed technical performance, with Evan Liang noting that using a lower-tier AI model for generation is faster (approx. 20 seconds) compared to higher-end models, though they may have higher error rates. They agreed to stick with the API-connected template and possibly refine the model selection for the final demo.
+* UI/UX Reorganization: The team discussed flipping the user interface of the slide generator, moving input controls to the sidebar and centering the content preview. This design change aims to give users more control over managing the inputs and rationale behind the generated proposals.
+* Workflow and Agent Involvement: Evan Liang and the team debated the level of automation in the slide generation process, exploring whether the workflow should be fully agentic or involve an Account Manager (AM) who reviews and makes adjustments to the generated output before finalizing. It was agreed that even in an automated process, inputs should remain accessible for user verification and modification.
+* Demo Presentation Strategy: To ensure engagement, the team planned to restructure the demo to show the generated PowerPoint output first, followed by an explanation of the underlying blocks and customization. Evan Liang emphasized that for enterprise clients, the core requirement is consistency and structure across slide decks, rather than showing every possible variation.
+* Buyer-Facing Renewals Hub: Evan Liang introduced a revamped, buyer-facing renewal dashboard that includes a contract history tab, an ROI calculator, and a progress bar to track engagement. The team clarified that the "utilization" metrics should be labeled as "products" or "SKUs" to accurately reflect what the client is using.
+* Buyer Hub Enhancements: Feedback on the buyer hub included moving the chat box to a more prominent position and adding a summary or "pitch" section at the top of the page. This summary would serve to market new features or upsell opportunities to the buyer while they review their contract status.
+* Design Concerns for Buyer Hub: The team discussed the visibility of the order form, with suggestions to potentially use a dropdown menu for address and quote details to reduce clutter, as the current layout takes up significant space. They agreed that this design choice requires validation with actual buyers to confirm the frequency of interaction.
+* Preparation for Scott Golden: The team discussed the upcoming presentation for Scott Golden, an advisor with experience at Service Source and Gainsight, who focuses on sales solutions. They planned to stage the demo to show the flow across the four distinct sections they have been developing, acknowledging that the siloed nature of their work needs to be unified for a coherent presentation.
+* Internal Tool Discussion (Luncher): The team briefly pivoted to discuss "Luncher," an internal app for managing group lunch orders. They debated its utility, noting that while it is a common pain point for teams of over 20 people, it is secondary to their primary sales-related projects.
+* Code Management and Advisor Role: Regarding technical infrastructure, the team addressed the need for better code centralization, acknowledging that currently, some work remains local or split between GitHub and Replit. They clarified that Scott Golden acts as a part-time advisor for sales pitch validation and solutions consulting, providing weekly or bi-weekly feedback, which will be utilized to refine their approach moving forward.
+
+
+
+
+You should review Gemini's notes to make sure they're accurate. Get tips and learn how Gemini takes notes
+How is the quality of these specific notes? Take a short survey to let us know your feedback, including how helpful the notes were for your needs.

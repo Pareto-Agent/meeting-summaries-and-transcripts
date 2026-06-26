@@ -11,3 +11,6 @@ Meeting Transcription.txt
 
 # Gemini-fetcher machine state (which Drive docs were already pulled)
 transcripts/.drive-fetch-state.json
+
+# Raw auto-fetched files awaiting canonicalization by /update-wiki
+transcripts/_inbox/

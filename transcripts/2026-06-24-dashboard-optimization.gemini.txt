@@ -1,0 +1,292 @@
+﻿📝 Notes
+Jun 24, 2026
+Meeting Jun 24, 2026 at 13:32 PDT
+Meeting records Transcript 
+
+
+
+
+Summary
+Dashboard optimization session established consistent data hierarchy and design standards through collaborative interface refinement and cleanup.
+
+Dashboard Data Optimization
+The team decided to audit and remove redundant high-level metrics from sub-pages. This initiative improves clarity by relying on the central dashboard superstructure for context.
+
+UI Consistency Improvements
+Participants agreed to standardize plotting, fonts, and box schemes across the platform. This effort streamlines the visual display by consolidating metrics and removing repetitive labels.
+
+Standardizing Display Logic
+The team aligned on a process-first status-second navigation standard for all dashboard pages. This decision resolves inconsistencies between process stages and outcome stages to reduce user confusion.
+
+
+
+
+Decisions
+Aligned
+* Dashboard filter persistence requirement The dashboard must maintain the selected period and filter context when users navigate between different workflow stages.
+* Dashboard UI cleanup and styling The team will remove the "Overview" header, format GDR in brackets, and standardize fonts across all dashboard plots.
+* Dashboard information hierarchy strategy The dashboard design will adopt a "process first, status second" hierarchy for all stage views.
+
+
+We've updated the Decisions section using your feedback.
+Let us know what you think: Helpful or Not Helpful
+
+
+
+
+Next steps
+* [The group] Clean Dashboard Context: Ensure all dashboard pages and account pages maintain filter context across different stages. Implement persistent filter adherence when navigating between views.
+* [The group] Remove Redundant Data: Delete repetitive blocks displaying forecasted ARR and other account information that already appear in the overview sections. Eliminate duplicate content from stage specific account pages.
+* [The group] Remove Overview Header: Delete the overview section title from the dashboard. Reposition elements to ensure proper alignment after removal.
+* [The group] Format Revenue Metrics: Update revenue metrics by placing GDR in brackets. Apply this formatting consistently across all reports.
+* [The group] Standardize Dashboard Fonts: Eliminate font inconsistencies by applying a uniform typeface across all dashboard pages. Use a single consistent font family throughout the application.
+* [The group] Standardize Layout: Apply consistent plots and box schemes across all pages. Ensure uniform visual presentation for every stage.
+* [The group] Reorganize Dashboard Hierarchy: Update dashboard layouts to prioritize process stage followed by status. Display process related information at the top and outcome related information at the bottom.
+
+
+
+
+Details
+* Meeting Logistics: Cooper Tenney initiates the discussion regarding technical setup, specifically confirming that the session is being recorded and debating the most effective way to share the screen for viewing the dashboard (00:00:14) (00:05:30). The participants agree that sharing the screen to facilitate recording is appropriate, while individual viewing remains an option for the team members (00:00:27).
+* Dashboard Context Filters: Cooper Tenney emphasizes the need to maintain context as users navigate between the main renewals dashboard and specific account pages (00:00:42). They explain that filters, such as selecting a specific time period like Q2 or Q3, should remain active and be adhered to as the user moves through different stages of the application (00:01:29).
+* Eliminating Redundant Data: Cooper Tenney points out that the team is currently repeating high-level metrics—such as forecasted Annual Recurring Revenue (ARR)—on sub-pages where it is unnecessary and repetitive (00:02:34). Using the Stripe account page as an example, they note that the system redundantly displays information like the "5,500 account" size at the bottom of the page when it is already visible at the top (00:03:50). The team agrees to perform an audit to remove this repetitive data, relying on the dashboard's "superstructure" to provide the necessary context instead (00:04:36).
+* UI and Aesthetic Cleanup: The team discusses specific interface improvements for the main dashboard to enhance clarity. Cooper Tenney suggests removing the redundant "overview" label, consolidating revenue metrics, and grouping "GDR" within brackets to declutter the display (00:04:56). Furthermore, they agree to address font inconsistencies across the platform and to standardize the plotting and box scheme across all pages to ensure a unified visual design (00:05:54).
+* Aligning Display Logic Across Pages: Cooper Tenney highlights an inconsistency in how data is organized across different stages, specifically contrasting the "Qualification" view with the "Outreach" view (00:06:19). There is a discussion regarding whether these pages should display process stages—such as "not started," "draft," or "sent"—versus outcome stages, such as "unreachable" or "engaged" (00:06:38) (00:07:53). The participants recognize that current approaches are mixing these metaphors, leading to confusion, and they identify a need to standardize how this data is presented (00:07:34) (00:08:29).
+* Establishing Dashboard Hierarchy Standard: To resolve the inconsistencies in dashboard navigation, Cooper Tenney proposes a consistent standard of "process first, status second" (00:11:07). The consensus is that when a user arrives at a dashboard page, the primary view should focus on the process stage (e.g., identifying unapproved deals in the qualification stage or drafted emails in outreach), while the secondary view should allow for a drill-down into specific outcomes or statuses (00:09:44).
+
+
+
+
+You should review Gemini's notes to make sure they're accurate. Get tips and learn how Gemini takes notes
+How is the quality of these specific notes? Take a short survey to let us know your feedback, including how helpful the notes were for your needs.
+📖 Transcript
+Jun 24, 2026
+Meeting Jun 24, 2026 at 13:32 PDT - Transcript
+00:00:14
+
+
+Cooper Tenney: Oh, it went back to the page. Was it what you said in chat? Oh, you sent the Brazil app. Uh, where's the Google Meet link? Oh, do we all want to join it? Oh, well, do we only need one? That's fine. I can also Well, it depends if we want to sh I don't know how we want to do this.
+
+
+
+
+00:00:27
+
+
+Cooper Tenney: Do we want to share up there and just look at it or do we want to like have someone sharing their meat screen and share it like uh the the meat is to record? Yeah. Yeah. Yeah. So, uh we I'm fine looking at on just my own personal screen. Okay. Yeah.
+
+
+
+
+00:00:42
+
+
+Cooper Tenney: But we could also share it up there. I think it might be helpful. So, we like to hold Oh, you're using a PC. Oh, it shift. Okay. So, the first part if you go to the main renewals dashboard. Okay. So the first thing so the thing on both of your dashboard pages and your account pages we uh we need to understand that there's context for the person coming to the page.
+
+
+
+
+00:01:29
+
+
+Cooper Tenney: So uh and this is a natural broadpark. The best example I have of this is when uh and maybe you could when you ch change the period like all periods uh go to the top it says a scroll that's why it's missing. So when you go to like Q2 they're going to expect that if there's data and they click on here that the Q2 filter is uh is adhered to when you go through the different stages.
+
+
+
+
+00:01:59
+
+
+Cooper Tenney: Does that make sense? Because especially if I click on this, if I click on closing in Q2, right, and I go to the closing page or whatever page or go click on qualificate. Go to Q2, find Q3 or go to Q4. Yeah. Go to Well, there's nothing there. So, go to Q3.
+
+
+
+
+00:02:15
+
+
+Cooper Tenney: Okay. Click on qualification. My expectation is when I land here, I'm looking at the Q3. Okay. So, that that works. Um, but I would expect this for outreach for all of them. So this context is really really important. Uh and that's one of the things that we we'll have to clean up here.
+
+
+
+
+00:02:34
+
+
+Cooper Tenney: Uh and that I use that an example because that seems obvious, right? It does seem obvious. But here's the other one that uh uh is as you guys click through. Each of you are repeating the uh overview like the forecasted ARR and everything as if someone doesn't already has already seen that. But it's like you're saying those four blocks.
+
+
+
+
+00:02:53
+
+
+Cooper Tenney: Yeah. like you know saying each one assumes like hey I got to like qualify let me tell you the expiring AR the Q3 forecast the forecasted NR like there's a reason there's an overview dashboard right you don't need to pass that all the way through right and this this is a function of just like hey you quoted you were siloed and you were like hey I need to show this but in the context of an overall dashboard that's that's
+
+
+
+
+00:03:17
+
+
+Cooper Tenney: repetitive information right so I think that's part of the uh the cleanup that we have to do is just like in the qualification case I only care about the maybe I care about the dollars am not my qualification stage but all qualifications I already got that information so that that and I see that in multiple stages proposal and stuff like like uh the clearest example is if you go to uh actually uh well actually when you get to the account pages you're going to see it uh it's even more yeah uh if you go to like go to go to
+
+
+
+
+00:03:50
+
+
+Cooper Tenney: um go to doesn't reach far enough go Stripe. Oh, no, no, no, no. Right. Yeah. Yeah. Go to the Stripe uh or go to the Stripe account. Yeah. Just no problem. Google's crashing. Okay. So, I'll show you where this is very Stripe, right?
+
+
+
+
+00:04:16
+
+
+Cooper Tenney: Uh scroll down. Okay. This one's not too bad. Go to proposal. So, you know, at the top of the Stripe account, you already have the information how big the account's going to be, what it's doing. Then, scroll down and see how often we repeat what the like we're literally repeating. This is a 5,500 account again, blah blah blah blah.
+
+
+
+
+00:04:36
+
+
+Cooper Tenney: It's already up there. You don't need any of that down there. They're also different. Sure. That's later. But uh uh my point is like hey we should look at each of these pages and really figure out like when someone comes to this page what are they looking for and the the the the superructure takes care of everything else.
+
+
+
+
+00:04:56
+
+
+Cooper Tenney: Okay so anyways let's go back to the main dashboard again. So okay decision we have to make is okay so if you go to like uh as you go through this page I think is pretty clean right so you're clicking through it now if you go to uh actually go to uh go to qualify I I have a point before we say it's very clean uh can we scroll up do we need the word overview this whole thing yeah we can take that whole thing off sure it's off I want to move this then that dropped out right all periods in the
+
+
+
+
+00:05:30
+
+
+Cooper Tenney: is that should just be here I think. Yeah, sure. That makes sense. Yeah. Then everything moves up. Sure. Uh is this being recorded or should we I'm recording right now. Also like you see ur that revenue GDR. Yeah. We don't we just keep GDR in a bracket.
+
+
+
+
+00:05:54
+
+
+Cooper Tenney: Yeah, sure. That makes sense. Uh uh let me see also like the font is inconsistent across the whole thing. Are you consistent by keeping it? We should consistent just Yeah, sure. Yeah. And then uh yeah, sorry. Across the font these are inconsistent amongst each other or uh uh I mean there's like five different fonts across Vietnam.
+
+
+
+
+00:06:19
+
+
+Cooper Tenney: No no no 100% I agree with that. So I was going to get to that later like but yeah if we if we like these four plots let's use these plots and the box scheme across everything. Yes. Yeah. So okay uh the bigger decision we have to make is qualified. If you go like a qualify versus outreach.
+
+
+
+
+00:06:38
+
+
+Cooper Tenney: So the qualify screen here there there we are we are going back and forth when we dig in on whether or not we're showing like the outcomes of the of the uh that stage versus if you go to outreach or there's some changes here but or like the status the current state of the process. Yeah. So when you look at like draft uh when you're looking at not started draft sent waiting engaged that's a process stage like are we dividing by process stage versus qualifies like outcome stage.
+
+
+
+
+00:07:12
+
+
+Cooper Tenney: Yeah. So we should we should agree like when we click in what do we think people are interested in seeing? I mean yeah so I think problem like I don't know if Oh yeah. Well I don't think we can standardize that because like with qualify it doesn't make sense to have the stages because it's all going to be like I don't everything runs and after 30 minutes it's set.
+
+
+
+
+00:07:34
+
+
+Cooper Tenney: No. So so here would be the example of qualify. You have you have approved not approved. Yes. That is a process step. That's a good point. Versus what what type it is. Okay. And then what type of upsell we also do repeat that across the different stages. That's true.
+
+
+
+
+00:07:53
+
+
+Cooper Tenney: So there's like hey what kind of renewal it is? What's the forecast status of the outcome of it and what's the process? We mix those three metaphors across this these tabs. Right. So like uh outreach is very much well at the Yeah. Uh yeah. So on the top he is inflight engaged unreachable and forecast those are outcomes outreach life cycle I'm looking at an older version non-started draft sent waiting engaged that's a process right uh and then so we should just decide what does and let's think about when someone's coming here what do you
+
+
+
+
+00:08:29
+
+
+Cooper Tenney: think they're interested are they interested in understanding where we are in the process or they interested in understanding the outcome of it and then go to proposal deans is very much like big hit. Yes. He's kind of got like the posture. He doesn't have the process at all. Like there's no like hey draft sent and or or Okay.
+
+
+
+
+00:08:54
+
+
+Cooper Tenney: the status I think status but that's like Yeah. Yeah. So so that's what I'm saying. Each person is approaching it from a different thing. So it should be consistent around which one we I mean we can have the multiple but it's like it should be consistent around what you see the top bottom or middle.
+
+
+
+
+00:09:13
+
+
+Cooper Tenney: So let's see if I'm on a dashboard uh I come here I'm interested so one by changing the periods I'm interested in looking at all the deals in Q3 in qualification uh my first step is is my first step to say what type of qualific like how do I bucket it or is my first step to understand uh so is it more visibility or control that's what we should discuss here.
+
+
+
+
+00:09:44
+
+
+Cooper Tenney: So visibility uh is like hey what is the outcomes control is like hey I want to know like like in qualification it's like which ones I need to approve right I mean I try I mean yeah this needs to get cleaned up by you got a couple versions yeah all that but I did add this thing that lets you only look at the unapproved ones.
+
+
+
+
+00:10:08
+
+
+Cooper Tenney: Um, but yeah, we need to needs to be cleaned up and we need to figure out from a demo perspective. I'm guessing if someone's seeing this for the first time, my guess is they'll probably be interested in the process first, you know? So, so like show me the process and then on the lower show me the outcomes once I do that process.
+
+
+
+
+00:10:32
+
+
+Cooper Tenney: So like if I need a qualification it would be show me all the ones that you've teed up but are unapproved and then for the ones that are approved show me like if they're upsell flat or sh right so similarly like outreach would be like hey show me everything like yeah when I go to the outreach screen I want to see every drafted email how many drafted emails there are right where they are on their stages and then I would from there be more interested in hey what's the results of these uh emails how many of
+
+
+
+
+00:11:07
+
+
+Cooper Tenney: those how many of the ones that so again okay okay yes so processes not started draft sent waiting gauge of the ones I'm uh waiting right then I would click into waiting to be like of those that I'm waiting what do I think they are are they unreachable are they just like you know few days waiting or you know wrong contact like what is the what is the status status second.
+
+
+
+
+00:11:33
+
+
+Cooper Tenney: So it's process first, status second. That worked for us. Feel free to push back. Process first status second. So you're saying like could you go back to the main page like overview? Yeah. Yeah. Yeah. So you're saying those top four boxes should be the status. Below it should
+
+
+
+
+Transcription ended after 00:11:58
+
+
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.

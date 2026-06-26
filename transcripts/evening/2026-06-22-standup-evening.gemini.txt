@@ -1,0 +1,895 @@
+﻿📝 Notes
+Jun 23, 2026
+Stand Up
+Invited arose@paretoagent.ai ctenney@paretoagent.ai dliang@paretoagent.ai eliang@paretoagent.ai pgodarajesh@paretoagent.ai
+Attachments Stand Up
+Meeting records Transcript Recording 
+
+
+
+
+Summary
+Integration progress and standardization efforts were reviewed alongside a decision to pursue a dual-path development strategy.
+
+Current Merge and Standardization
+System integration reached 40 percent completion with the successful creation of a unified dashboard. The team agreed to standardize testing data using a consistent file of 100 to 200 companies.
+
+Development Workflow and Challenges
+Team members will utilize a centralized baseline to decentralize module updates and minimize bottlenecks. Technical difficulties regarding image rendering and file format conversion remain a persistent concern.
+
+Strategic Future Planning
+The group decided to employ parallel pathing to simultaneously refine the current dashboard and draft a clean-sheet specification for the next version.
+
+
+
+
+Decisions
+Aligned
+* Standardized company testing dataset set The company testing dataset is standardized to a selection of 100 to 200 companies with values of 10,000 or less.
+* Combined dashboard development workflow established The development workflow is established to use the combined dashboard as the main branch, where team members pull the code, integrate individual changes, and push back to maintain a decentralized process.
+* Parallel clean sheet development approach adopted A parallel development strategy is adopted to maintain the current dashboard merge while simultaneously creating a new, clean sheet version to compare performance and efficiency.
+
+
+We've updated the Decisions section using your feedback.
+Let us know what you think: Helpful or Not Helpful
+
+
+
+
+Next steps
+* [Evan] Fix API Connection: Update the API key configuration to resolve broken connections. Ensure all language models and champion models function correctly.
+* [Evan] Create Data JSON: Generate a JSON file containing a standard corpus of 200 companies. Provide this data to the team to standardize input.
+* [The group] Update Dashboard Modules: Pull the current combined dashboard code and use Claude to compare it with individual versions. Generate instructions to integrate local changes into the parent dashboard.
+* [Evan] Merge Dashboard Code: Integrate the updated individual modules into the parent dashboard tonight. Finalize version 2 of the combined dashboard.
+* [Cooper] Update Proposal Version: Refine the local proposal dashboard version to prepare for integration. Perform these updates before pushing to the combined system.
+* [Evan, Aaron] Build Clean Sheet: Create a new version of the dashboard from scratch using a clean sheet approach. Specify the module stages to improve architectural efficiency.
+
+
+
+
+Details
+* Current Merge Status: Evan Liang notes that individual code utilization has reached 41% (00:00:35). The team has successfully stitched four separate builds into a single "Frankenstein" dashboard, enabling them to visualize the integrated systems (00:02:20) (00:11:28). While this creates a unified view of the work, the merge is estimated to be approximately 35% to 40% complete, as the team still needs to integrate specific outreach and qualification functionalities (00:03:04) (00:04:29).
+* Standardization of Data: The team identifies an inconsistency in the data being used for testing, as participants are utilizing different sets of real and fake company information (00:06:33). To improve system performance and consistency, the group agrees to standardize their data corpus (00:07:01). The consensus is to create a JavaScript Object Notation (JSON) file containing a unified set of 100 to 200 companies to serve as a consistent testing dataset for the dashboard (00:07:21).
+* Version Control and Workflow: To resolve bottlenecks in development, Evan Liang proposes using the current combined dashboard as a "Daddy Dashboard" (DD) baseline (00:11:28) (00:21:06). The established workflow is for team members to pull this master code onto their local machines, use Artificial Intelligence to update their individual modules, and then push the integrated changes back to the main branch (00:12:01) (00:20:42). This strategy aims to decentralize the development process, allowing individual members to work independently on their respective sections without requiring constant coordination for every update (00:06:09) (00:22:06).
+* GitHub Development Clarification: There is a discussion regarding the mechanics of working with the GitHub repository. Evan Liang clarifies that the development approach involves interacting with local files, which are then synced with the cloud repository (00:14:48). The intention is to ensure that edits to individual modules within the combined dashboard do not interfere with other components, maintaining project stability (00:15:49) (00:16:57).
+* Team Offsite Planning: The group selects paintball as the activity for the upcoming team offsite. Due to the closure of a previously considered facility in Santa Clara and San Jose, the team plans to visit a location in Livermore for the event (00:25:11).
+* Proposal Dashboard Functionality: During a demo, Evan Liang presents updates to the proposal dashboard, which now includes a price configurator and automated scenario rules for handling renewal proposals (00:26:16) (00:27:13). The system allows for the direct editing of slide blocks and text content (00:26:37). However, the developer reports technical challenges with how Artificial Intelligence handles images, specifically regarding the conversion and rendering processes between Portable Document Format (PDF) files, Joint Photographic Experts Group (JPEG) files, and HyperText Markup Language (HTML) (00:28:18).
+* Integration of Account Evaluation Page: The team discusses the integration of the account evaluation page into the main dashboard architecture (00:30:29) (00:31:12). Concerns are raised about whether the current folder-based modular structure can cleanly separate the account evaluation user interface from the rest of the dashboard (00:31:31) (00:32:14). The team agrees to proceed with testing to determine if this integration functions as expected (00:32:38).
+* Clean Sheet Strategy: Evan Liang suggests a "clean sheet" strategy as an alternative or parallel path to the current "Frankenstein" merge approach, noting that redesigning the application from scratch might be more efficient and avoid the complications of merging bloated or messy code (00:34:34) (00:36:28). The group reaches a consensus to employ parallel pathing: they will attempt to refine the current merged dashboard by the next day, while simultaneously drafting a clean-sheet specification for version 2.0 to improve future scalability (00:36:47) (00:37:50).
+
+
+
+
+You should review Gemini's notes to make sure they're accurate. Get tips and learn how Gemini takes notes
+How is the quality of these specific notes? Take a short survey to let us know your feedback, including how helpful the notes were for your needs.
+📖 Transcript
+Jun 23, 2026
+Stand Up - Transcript
+00:00:00
+
+
+Evan Liang: meeting transcription Gemini is cool. Yeah. So maybe let's talk about the thing that uh everyone's uh focused on. So how do we feel the merge is going and then do what do we think our next steps to or let's talk through the process. All right. Um I should join the group. I'm closer.
+
+
+
+
+00:00:35
+
+
+Evan Liang: I'm so like engrossed with this that I'm losing social norms. I I didn't even notice it. I was like, "Okay." Um, okay. Can you guys see my screen? Yeah. Okay. Let me start with what went well. Uh what went well was al code apparently finally made me utilize more than um% I felt like I was not that not much of a utilization but now I'm at 41% so I feel great about myself.
+
+
+
+
+00:01:14
+
+
+Evan Liang: Good job math. Number two is um really great alignment on strategy before we just started merging everything with Aaron saying okay he made a prompt that prompt did not work for all of us but it was a great attempt to like use this prompt copy paste it into yours and take it out. Um, some of us just blindly copy things.
+
+
+
+
+00:01:39
+
+
+Evan Liang: Some of us like changed the names and then it still did not understand what was going like you're trying to do outreach or qualification. I don't get it. And some of us use claw to really reflect the entire thing. I gave up on that prompt and just said, "Hey, I want to I'm preparing a great inception. Give me a prompt." Um,
+
+
+
+
+00:01:57
+
+
+Evan Liang: our codes were in one folder. Very good. Um and then after it was just going letting my clock run crazy and that's what it's been doing since the afternoon. Um it seems like it has made good progress. The dash um the dashboard is working. Okay. One thing is while I'm sharing my screen, it's so slow.
+
+
+
+
+00:02:20
+
+
+Evan Liang: It feels like my laptop's age 10 years. You should you should have it charging. It makes a lot. Okay. Um so what it has done is first of all it has literally stitched all four of our builds together so we can finally visualize how it looks like um that we four of us look at building we can see each other's work and this is help us first of all like as we iterate through to have a
+
+
+
+
+00:02:44
+
+
+Evan Liang: perspective what all the other systems look like and we can start having that perception. Okay. Um number two is all the tiny functionalities or the agentic part of it's no longer just a demo. It's not a dashboard. It's not a prototype. It's literally working right now. So that's great. So all the small small things that we have built into our systems are working.
+
+
+
+
+00:03:04
+
+
+Evan Liang: But what uh for me my outreach, all of my language models and my champion models are like like literally using API key, creating ideas, creating emails, creating profiles. I think for qualification, Erin said some things are working. I don't I don't know what he the the API key I think is like connected to mine which you don't have access to because it's Okay.
+
+
+
+
+00:03:26
+
+
+Evan Liang: So that's going to be broken. Yeah, that makes sense. But that's an easy like once I, you know, later today I'll just have it that. Okay. So where's the main dashboard? So this is just combining the four dashes. We don't have So So what I have is I do have another dashboard that looks exactly like and in the morning look really nice.
+
+
+
+
+00:03:44
+
+
+Evan Liang: And then what I did was I I cloned that dashboard and I gave that dashboard to Claude and the three the four builds. And then this is the Frankenstein monster he came up with. No, what I'm gonna do now is I'm gonna point this dashboard to your dashboard. Say clean it up. Like let's let's get it together.
+
+
+
+
+00:04:03
+
+
+Evan Liang: Okay. Um what's I think what's going to be what we're going to work on for the rest of the week is all this like small small things like like Dean point out. Okay. It does it has the dashboard, it has this, but it's clearly not what what he what he was looking at. like I think it doesn't make any sense and this was shocking to him because I feel like I butchered his like the drama of his song or something like that.
+
+
+
+
+00:04:29
+
+
+Evan Liang: He felt offended but I felt like it's that's a good step and there's a lot of things to work on. Um so this the the the merge went as as expected as expected. So they're still together but not not even 40%. I think maybe 35% there and that's so so so we have a single merge.
+
+
+
+
+00:04:50
+
+
+Evan Liang: So where do we where do we go from here? Like how do we make sure that like how do people work? Is it like Yeah. How do we make sure I can give a high level strategy then you guys can you know you guys feel about it. What I want to do is I think we go ahead and make sure the functionality works like there's two things function and form.
+
+
+
+
+00:05:11
+
+
+Evan Liang: One is the functionality like your proposal builder my outreach agents my language models um whatever API key you're building in and I think yours is mostly form right there's not a lot of functionality around it. Well, yeah. There's like one piece that like I created like the account page that I showed Evan one. Yeah. Doesn't exist in here right now.
+
+
+
+
+00:05:32
+
+
+Evan Liang: Yeah. Um that's like the main thing because going like drilling into like if you go to the proposal stage for example like and then you click on I don't know random account like that part needs to be embedded into my account page which I created and that's like not even close to working 100%. So yeah, so as long as um individual functionalities are okay, even though data is going to be like duplicate across all four tabs and this and that, once I get the functionality fixed, then I want to we all start pushing our UI fixes to this.
+
+
+
+
+00:06:09
+
+
+Evan Liang: That's my idea. I would love to hear what your thoughts are. Yeah, I think um because everything is separated like we we can make our own edits to our individual parts to like get get our things working and and all that or if Cooper you want to add a new thing like we can add that.
+
+
+
+
+00:06:33
+
+
+Evan Liang: We don't need to be coordinating when who pushes when and all that. No, but we need like Yeah. the main dashboard. Um, and then one thing that's maybe later in the week is let's standardize the data we're passing in to see if we can actually get it to work because like Cooper uses real companies. Um, and then my fake companies are different than your fake companies are different than Dean's, you know, real using real companies.
+
+
+
+
+00:07:01
+
+
+Evan Liang: Yeah. Like that's like my That's a good point. And that's a good point that now that they're combined that you have to have one standard corpus of companies, right? Just so we can make sure to pass tackle that. If you guys just send me the info that you need from each one, I can try.
+
+
+
+
+00:07:21
+
+
+Evan Liang: I think we're all doing it differently. We all have different or maybe just agreed on. Maybe you should do it like create like a JSON of like Uber and then I think there could be any and just like send it to us and we'll just have our cloud. Okay, I can let's do that as a step.
+
+
+
+
+00:07:42
+
+
+Evan Liang: It's just I I don't really care about that. It's it's fake data, but let's pick a 100 companies and then uh and then have them be uh or 200 companies and have them be uh 10,000 or less. Okay. Yeah. So, I was working on trying to develop a strategy for um like when we're these like sub portions like how it gets published and then up for his uh I didn't really get a grasp on like what to do but I was having like Claude like write an MD to give to each one of them.
+
+
+
+
+00:08:21
+
+
+Evan Liang: Hopefully that's somewhat helpful, but I think an overall strategy like Okay, so it's going to live under the main dashboard. So just edit that folder. Don't mess around. Hopefully that works. Is that the Yeah, I think that there's got to be a way. I mean, this is like main development is not this way, right?
+
+
+
+
+00:08:36
+
+
+Evan Liang: There's like branches. Understood. Yeah. Hold on. So I think the goal is by hopefully for tomorrow we have gotten a way where folks can work independently and uh remove the blockage of like you know so we got to get the data so that you want to be CTO right um will you give me an example again so like okay so you've got this dashboard It lives where does it live?
+
+
+
+
+00:09:14
+
+
+Evan Liang: I need to know this dashboard where does live in okay under GitHub. It looks it lives under share the screen so we can see it. Okay, thank you. Sharing my screen. There's got to be a way to So there's got to be a way that like you have like your overall you can have your overall page, right?
+
+
+
+
+00:09:34
+
+
+Evan Liang: But people should be able to work on individual subpages. Yeah. Without it like impacting everyone else. So the question is whether do we work on them locally push it to GitHub and then his updates or do we work on it directly in the G work on it directly. Yes. So okay so this screen shows you where the current dashboard lives.
+
+
+
+
+00:09:56
+
+
+Evan Liang: It lives on the combined dashboard is where all the the files and the MDs and all the things are, I'm guessing. Sorry. It actually doesn't look like many. Doesn't look like there's much in there. So, how do I update like if I update my thing like the fire hub? It's not going to it's updating like the logo.
+
+
+
+
+00:10:23
+
+
+Evan Liang: Okay. You are okay. You're updating your stuff in not this dashboard module thing, right? Where are you updating your stuff? It's in renewals hub. Okay, renewals hub. Okay, so first things first like main is this. Okay, maybe there's a folder somewhere else, but cardboard modules is where we are really starting from our I was going to say we should draw this out.
+
+
+
+
+00:10:45
+
+
+Evan Liang: Use the I was gonna say square on that and then I would but I didn't want to I was like the least. No, like I just don't know what's going on. I was because I was working on my thing. Yeah. The whole day and then I come back to see this mess. I'm like, "Okay, something's happening. You all figure it out." How is yours coming?
+
+
+
+
+00:11:13
+
+
+Evan Liang: Is it I don't know if you saw it. It looks like I think generally like it is a huge improvement from where it was last night which was non-existent. Um yeah I'm actually pretty happy with it. So these are the current folders where everyone has been working in their own stuff. Why do you pick up circles?
+
+
+
+
+00:11:28
+
+
+Evan Liang: Uh because like in GitHub they have brand. So we went into one which is the current dashboard modules combined this we I I made the Frankenstein's monster. Oh or I I call it daddy dashboard. I don't whatever you guys want to call it. Um so this is where the current build is at. Now you guys also carried on building stuff while I was merging.
+
+
+
+
+00:12:01
+
+
+Evan Liang: So now there is one file with the the days of past lives and there's new files. So first thing we do is that uh make sure this is working as correctly as possible. So like you guys should download this maybe like voice store or something or like get cloud to compare this with your current build and come up with a file MD something that that it takes in all the information and re-updates it.
+
+
+
+
+00:12:35
+
+
+Evan Liang: So then we have a new good-looking dashboard. So that's the first thing. So it's just catch up with this. Once from this I need you guys to uh like I once we get to the point where whatever we've done today is as update as possible dashboard looks good then you guys clone it. So now we all have a a starting point of this amazing new dashboard.
+
+
+
+
+00:13:01
+
+
+Evan Liang: This is the main branch. You guys we all start from the same point. You guys change change whatever happens it gets it whatever happens it all updates into this one. So pull new point then you guys commit push and then it whatever happens it goes into this. This is what live my plan is.
+
+
+
+
+00:13:23
+
+
+Evan Liang: I I agree perfectly with this plan. I feel like the diagram is a little confusing. Well I First of all, I don't have a I have a degree in information systems. That's pretty relevant for this. So, this is what they taught me uh 10 years ago. Okay. These are the folders that we were all working in prior to today.
+
+
+
+
+00:13:53
+
+
+Evan Liang: We agree? Yeah. We're still working. What what Parth has been doing is he pulled we pulled a bunch of stuff from these folders and we basically made one dashboard. This marker is getting bad. It was so good. We made one dashboard and in this dashboard there are four subfolders. Okay.
+
+
+
+
+00:14:21
+
+
+Evan Liang: And these are I didn't see them. Well, they're not like expressly they're not externly but um that's the Dropbox. We're talking about GitHub. No, this is No, that's that's right. This is actually What do you mean? That's this is how it works. You have GitHub on your computer. Yeah, everyone does.
+
+
+
+
+00:14:48
+
+
+Evan Liang: When you're Where are you pulling it? You're pulling it too hard. I've never I don't have either. It's supposed to come to your local files. That's how the whole point of GitHub is you interact with your local files. You push to like the cloud and then you pull back to your local file.
+
+
+
+
+00:15:05
+
+
+Evan Liang: So your computer is the same as the cloud which is same as everyone else's computer. I like have been doing that just like on GitHub desktop would be ide. So that's what you mean when you're coding in GitHub. Yeah. I thought you meant coding in GitHub online. But excellent. We should have spent more time aligning without quoting.
+
+
+
+
+00:15:25
+
+
+Evan Liang: No, no, this is great. We're learning. But so Arth has made a dashboard. Thank you. That each has like a version from earlier today of each of our projects. Right. So brown is actually those Yes. But these are these are Yes. So when when you guys have been editing stuff, this hasn't changed.
+
+
+
+
+00:15:49
+
+
+Evan Liang: That's why it's still the old view. Y what Parth is suggesting we do, which I agree with, is that like when we edit this, this doesn't change like if parth is making a dashboard, us editing this isn't going to change the overall dashboard, right? It's just editing our one section in it. So we can we can edit these fine and we can pull and push to these and it won't mess up the overall thing because we're all editing our own part of this.
+
+
+
+
+00:16:19
+
+
+Evan Liang: So like I am going to take all the changes I made today. I think he has a question. Yes. So you're very much assuming that's what part of thing is doing. Well, I don't I'm be honest. No, the fact the fact that his it couldn't possibly be the fact that his outreach thing is still a zip file means I don't think this is right.
+
+
+
+
+00:16:39
+
+
+Evan Liang: No, it definitely I don't think like no everything. It's not that zip file. Huh? All the code that was taken in this is already in combined dashboard. These were the start. Is it directly referencing this or no? No, it is. If it's not directly referencing the folders, it doesn't matter what we change to the folders.
+
+
+
+
+00:16:57
+
+
+Evan Liang: All that's going to happen is here. Yeah, that's why we're not changing the folders. I'm changing the actual code, but the code is set like there is not if I change a line that is built that is part of the UI for my thing that's not going to change a line in your thing that does a proposal.
+
+
+
+
+00:17:13
+
+
+Evan Liang: So what's your prompt to claude? You can't say stay out of this folder. You're just saying stay out of this part of the We could we could do a prompt that first says put everything into separate folders. But yes, you would say I'm it has to it it has to in the code separate things somehow.
+
+
+
+
+00:17:30
+
+
+Evan Liang: I don't know how it is happening but it is separate like you agree Dean that if I change a line of code that is in my section if they are like yeah but okay fine I'm saying yes then we have to I'm going to tell I'm gonna do that don't edit it's going to be in there somewhere like they they didn't they didn't just code it with one line is my thing one line is Dean's thing one line is like it's it all makes sense in there okay and I I just I know I just want to make sure you're doing the separate
+
+
+
+
+00:17:59
+
+
+Evan Liang: folders because sounding like you're like we can use the existing folders. We don't use those, right? We need we need more folders in this folder. So, continuing very quickly, just all you ask is you say, "Okay, only editing my thing. It might not be in a folder. It might be explicitly somewhere else or just it's combined in a folder, but it's labeled somewhere." You say,
+
+
+
+
+00:18:21
+
+
+Evan Liang: "Update my stuff with the stuff that I did today." Claude does that. We all push and pull whenever we want. Everything is now updated and from now on we work in our individual things that are in the main dashboard. Will it create an issue if someone updated their dashboard that's outside the combined dashboard? If they update this nothing happens combined dashboard, right?
+
+
+
+
+00:18:48
+
+
+Evan Liang: So we could keep you could keep experimenting up here and treat this as the final. Once I'm done experimenting, I adjust this. But like what I'm saying is we can edit these just like we were editing our own things. It's not like Yeah, I'm I'm visualizing. Okay. Okay. I think that makes sense.
+
+
+
+
+00:19:16
+
+
+Evan Liang: All right. So, here's that next can't possib. All right. We can we can we can do a sidebar on this. We need four We need four fours. Yeah. So, okay. So, um let's make So, push harder question. Why do you hold a marker like that? I love that.
+
+
+
+
+00:19:41
+
+
+Evan Liang: Like, hold it the Wait, hold it the other way. You can push more like you're doing. I'm pushing more. You That's just how he writes that. Okay. Yeah. Do you want me to write like this? What do you want? Yeah, you go slow like that. I don't know.
+
+
+
+
+00:19:53
+
+
+Evan Liang: I've been a short guy, so like this. This doesn't work sometime. All right, we're not going to get at I think what we need to do is get to situation where we have four different folders that people can push into. Okay. Yeah. Um, now this is DD. This is Okay.
+
+
+
+
+00:20:17
+
+
+Evan Liang: swap. I told you this was I told you this was a problem. All right, we have all the individuals. So, what we need to do is I need you guys on your local computers. Um one pull pull my keep yours. Got it. And then um this is yours. So, this is all yours.
+
+
+
+
+00:20:42
+
+
+Evan Liang: I need you guys to claw and come up with a file that can that you can to push push into this. So push all of your individual changes into this. So we come up with a new DD as a starting point. Can we start with that first? Yes. So as as of now you guys have individual work.
+
+
+
+
+00:21:06
+
+
+Evan Liang: There's a DD. Put put DD into your computer. Get thought to compare it. come up with a list of instruction how I can improve DD and then tomorrow and then I'll try to merge that tonight. So we have updated media daddy dash I don't know the big one. All right we have a child dash.
+
+
+
+
+00:21:25
+
+
+Evan Liang: This is this is the parent dash. So pull his code down. Yeah. Yeah. Onto your local GitHub. All right. Okay. So then tomorrow morning once we have the big the the new DD DD v2 then um from then onwards we'll use this as the main and then you guys can do whatever you guys want and just uh just keep doing it and just keep pushing to
+
+
+
+
+00:21:49
+
+
+Evan Liang: the main. There'll be merge conflicts there going to be pull that's pushing but this is the point where we start from and then now we'll branch out again. Then it's like typical software engineering where there's going to be conflicts, there's going to be individual proportionalities this and that and then it's going to be the main and GitHub's problem to to merge those conflicts in this.
+
+
+
+
+00:22:06
+
+
+Evan Liang: So as they make changes to the dashboard uh for their individual tabs should they work with you because you're coding you hold the master there or should they or the folder? I don't hold the master. The master is in it's in cloud him specifically doesn't matter. Yeah. So I don't hold anything now. just have a a northstar and now they they can do as much of their stuff as want they push or they commit.
+
+
+
+
+00:22:30
+
+
+Evan Liang: Got it. GitHub will flag out where there's there's going to be merging issues and like the cloud will decide what to keep or not to keep. But we'll have a main that keeps going. Okay. Does that now alleviate all the questions that we have? I haven't convinced Dean. I feel bad, man.
+
+
+
+
+00:22:44
+
+
+Evan Liang: Come on. I'm trying my best here. Come on. Wait. I've been fine with it from the beginning. All right. Cool. I'm just like you have to just make sure it's able to be separated. I mean what if two dashboards had the same line of code then sure there would be a problem if like one line of code did something in both dashboards but that's not how it works because my worry is once we get to like data data move but data
+
+
+
+
+00:23:11
+
+
+Evan Liang: data is something that we share right like if we just have to flush that at some point they're not as separate as we think so the folders might break and yeah so I mean there's going to be a point in time where All of this is going to break and we'll need help from the CEO to you guys are going to learn a lot.
+
+
+
+
+00:23:28
+
+
+Evan Liang: This is we appreciate the the trust your become system. So I think we're good for now. Um, so yeah, just pull my dashboard, come up with a file to update my dashboard with your latest stuff and we'll work we'll we'll fight every battle as we get across it. But we'll work from there. Okay.
+
+
+
+
+00:24:01
+
+
+Evan Liang: Thank you for pulling this guy. Keep us posted if you run into any problems or anything. Uh, I don't know. My job is done. I made the D now. But now we No, but you said you're gonna uh after they pull down, you're going to help us build a version 2.0, right?
+
+
+
+
+00:24:16
+
+
+Evan Liang: Yeah. No once they pull out and they all they'll all commit to to to this. Yeah. Then then once they all commit there's going to be one point and I mean this individual it's nothing I have to do. Oh god. Okay. So even let's say I am I am uh I'm deem right.
+
+
+
+
+00:24:32
+
+
+Evan Liang: I'll pull down the I I'll pull down. Yeah. I I was I think part of GitHub. Yeah. Yeah. So I will pull down DD. I'll I'm I'm Dean. I'll make my changes. I'll update DD and then what if they let's say I start first and then um Cooper does it at like 10 p.m.
+
+
+
+
+00:24:53
+
+
+Evan Liang: today. Cooper will see the DD plus Dean. Got it. Yeah. So, we're all now working on daily. So, now there's no ownership anymore. It's it's completely decentralized. Okay. And is that pushed? This this is pushed already. I I can double check, but I think it's pushed already.
+
+
+
+
+00:25:11
+
+
+Evan Liang: I I'll I'll do one more connect by before you at six o'clock. Okay, cool. Okay, cool. Awesome. Any other questions? Uh, moving on other topics, any other questions around the sales pitch for tomorrow or anything of that sort. Awesome. Okay, so there's that. And then on the uh on the offsite, uh we did pick paintball and so Hannah's looking at various paintball places.
+
+
+
+
+00:25:35
+
+
+Evan Liang: Apparently the paintball place in Santa Clara San Jose closed. So I think we have to go to Liverour to uh to play paintball. So, you want set a picture of those tickets? Where was the paintball place you had at? We have no They just set up a stand at Stanford every single week and like give out these free tickets or something.
+
+
+
+
+00:25:53
+
+
+Evan Liang: Okay, sure. Like discount tickets. Yeah, send it to Hannah and I look awesome. Uh, got it. Uh, what do you want? I was going to present my thing. Sure. Go for it. Yes. while you guys were dealing with that. Um, I was working on my proposal dashboard which is very very different than what it was at 900 a.m. today.
+
+
+
+
+00:26:16
+
+
+Evan Liang: So, basically went through and tried to make it as similar to your things just so when we like rectify any UI differences. It's not as bad. So, it's at account level you have sort of the general labels and everything with um renewal AR renewal in uh until time period, right? And then if we click into account, what we see is it shows you the deck that was sent, right?
+
+
+
+
+00:26:37
+
+
+Evan Liang: You can see all this. There's a bit of a rational saying why why was this deck chosen this price? I've actually built in a price configurator now. I just have to make it more surfaceable. Um but yeah, and then you see here what you can do is you can edit the deck directly. So this is the part where you can add blocks, you can choose things, you can um directly edit the text within each block too.
+
+
+
+
+00:26:56
+
+
+Evan Liang: So basically made Google slides on here, right? And you could change all of these things. So yeah, that's not bad. And then another thing too, and this is the more important things when it comes to automation settings, right? Just I set it automatically right now. Um, it auto sends all the proposals if there's no issues.
+
+
+
+
+00:27:13
+
+
+Evan Liang: We have the scenario rules. These are sort of the different scenarios. The save play executive competitive threat just find increase renewal. These are the scenarios we're playing out that generate different customizable sort of block options as defaults. also have different pricing policies, guard rails in case we want escalation and then these templates are sort of what are the guidelines for each of the scenarios.
+
+
+
+
+00:27:34
+
+
+Evan Liang: Right? So if we go to executive deck, right, it's automatically going to have a cover executive slide value delivered benchmarking pricing and next steps with each of these slides is kind of how it looks, right? And then what you can do is you can directly edit this spot, right? So if if we think that for all executive decks, maybe we want to add a wing data slide in there, right?
+
+
+
+
+00:27:56
+
+
+Evan Liang: Maybe that's slide number three. Well, you could have that in there and it will it will sort of be saved and then for going forward it that will be part of the new executive deck. So yeah, that is what I've been working on for most of today because the slide automation is genuinely one of the most annoying things I've ever worked on because everything just keeps on breaking.
+
+
+
+
+00:28:18
+
+
+Evan Liang: But we're at the stage now. Why? Why is it? Just because the way it handles the way like AI handles images just really sucks. And then like I have to choose which kind of image. Like PDFs and JPEGs render the best on the on the website. But then if I wanted the edit feature, I had to convert them to HTML, but then convert it back to JPEG when it's when it's showing itself and make sure those two things are linked and don't look.
+
+
+
+
+00:28:43
+
+
+Evan Liang: Okay. So, yeah. Will that work? Okay. Well, let's see. I think tomorrow then the the goal is to see if you can uh how do you figure out you uh that your current version with your old version? Yeah, Mark, you might want to work on theirs first. I have to take some time just to reply my version before I send it through to the combined dashboard.
+
+
+
+
+00:29:03
+
+
+Evan Liang: Can you send it through and then work on it? Wait, but I already have a old version in there anyways. So, it's like the same thing. Okay. Yeah. as as if you have a person of mine, it's not going to make that because the more you work on the bigger the pillow's going to be and then that merging is going to be more complex.
+
+
+
+
+00:29:21
+
+
+Evan Liang: If you do it now, you're merging by size and then then you can continue iterating on the the the DG if that's that's what I know. I don't know. I'm not because you can push like you should push as soon as you can and then just start iterating on that version. Like what's the difference between iterating under the dashboard versus iterating outside of it?
+
+
+
+
+00:29:44
+
+
+Evan Liang: The same. I want to see if the separating comes as clean as the right now. But like you'll still have your outside version. I guess I can. Yeah, sure. It's just a buggy version right now. Like the other version technically works. This new version like I'm in the middle of like making it work.
+
+
+
+
+00:30:03
+
+
+Evan Liang: So like I don't know if I want to push buggy version in and like just have it like jam everything up. Okay, cool. Anything else, folks? Yeah, I'd like to share really quickly so we're all live. Yeah, please. Um, so I am working on the accounts page. This is obviously the buyer uh evaluation stage of the accounts page, but um get over here.
+
+
+
+
+00:30:29
+
+
+Evan Liang: So, okay. So, this is the page that I'm working on. And so, right here, we're in the buyer evaluation stage. This is all of my stuff. Yep. And so what we need to align on is how Dean yours shows up here. I assume that's the page that you showed that was like kind of similar to to this one uh to the this I think.
+
+
+
+
+00:30:52
+
+
+Evan Liang: Uh no yours because on that page uh the one he showed at the top that's the overall dash. The overall dash. Yeah. Yeah. But when you click into it when you click into Y. Yeah. Yeah. That one goes correct. For outreach. Can't remember what yours looks like.
+
+
+
+
+00:31:12
+
+
+Evan Liang: Yeah. And then yours is similar. You have to Yeah. So what's the individual account? So but somehow the big daddy dashboard has to incorporate this because this is the account page that like you no matter how you get there, you land here into an account. Yes. That's going to be slightly complicated.
+
+
+
+
+00:31:31
+
+
+Evan Liang: Yes. Um, does anybody have any thoughts immediately? Okay, there's like some strategy involved like what order? Yeah. How do we link it up in here? Maybe it'll just work. I don't know. See, this is one of my issues is like, okay, if we separate to a folder, that one folder has to somehow have the um list of accounts UI and this individual UI.
+
+
+
+
+00:31:56
+
+
+Evan Liang: Yeah. And for every like I'm just like I don't know if you could separate that cleanly. Does the account information have the same across the folders? I don't know if we're doing it properly. That's the thing. Like you definitely can do it. I just think it's more difficult than we're imagining.
+
+
+
+
+00:32:14
+
+
+Evan Liang: So yeah, I don't see where all this this challenge is. Like it can look at other folders too. It can it knows what's happening in other folders. You're just you can just if something in the other folder is gonna send info or has info, you can just call it in your own folder. I kind Yeah, exactly.
+
+
+
+
+00:32:38
+
+
+Evan Liang: I don't I feel like we're making an issue where there it's not but I just wanted to put that out there. Um so this is what the account page will look like and once it's populated it should look similar to this. I'll probably clean up this like header area. It feels really big right now, right?
+
+
+
+
+00:32:55
+
+
+Evan Liang: Other than that, I've just been looking. Do we feel this is the right time to merge all the the different demos or do we feel it's like premature? I'm ready. Dean feels like I'm fine. Yeah. Are you ready to merge? He already merged in his mind. These guys are really dancing to merge.
+
+
+
+
+00:33:17
+
+
+Evan Liang: I just feel like I don't see a downside because we could downside. You think there is? No, I don't have I don't think there's Yeah. Yeah. Because we we could literally just not even connect to everything. Everything's still just in the centralized dashboard and then we're just on the same page. So it it opens up more opportunities and it doesn't take away.
+
+
+
+
+00:33:39
+
+
+Evan Liang: Okay. So I think maybe tomorrow uh try to mer try to do the diffs for all your things and then tomorrow I think uh Cooper I think that you you you'll lead in terms of trying to figure out how to like create that account page and how do you take from each of the different elements. Um yeah, this is a interesting test for for Claude to be like, okay, take this piece of code, put it here, this piece of code, uh this functionality over here to build you're basically we're merging four apps to build a single
+
+
+
+
+00:34:10
+
+
+Evan Liang: one. How do you feel about it? Uh, no. I think it's uh I think this is I think like uh I think part said like uh the first thing I was like I expected us to just be a little bit like more chaotic. I think we're starting to reach that point. I mean look I look let's mergeical.
+
+
+
+
+00:34:34
+
+
+Evan Liang: Let's figure it out. uh there's a point at which hey like I said there's going to be a lot of throw throwaway code in terms of this process uh there's a point if it slows down or it gets really really hectic right this is why it's important that you guys understood what went into it may be better to start with a clean sheet and write like you know understand your requirements and that's the only part of that I'm thinking in the back of my head right if
+
+
+
+
+00:34:59
+
+
+Evan Liang: the merging of the code gets too complicated it's probably better to clean sheet it And while that sounds painful, remember you you you built it pretty quickly and you made a lot of iterations. So what you first built is actually not that good. So uh and then and then I think cloud the AI stuff what it has is context.
+
+
+
+
+00:35:21
+
+
+Evan Liang: So it actually it's actually a little inefficient because of the versions you built. If you were to actually go to your end goal, you'd probably get there faster without with a lot less code. No, exactly. Right. So, yeah. Yeah. So, don't don't don't like if you guys run into too many problems, my my only thing would be like, okay, we know what we want the dashboards to say.
+
+
+
+
+00:35:47
+
+
+Evan Liang: We want we know what the data models we want. Let's just sketch it out again from our product requirements. Yeah. It's only me that had to go through all the migrations. No, I honestly I do believe it like we even if we do Frankenstein and everything does not look great, we have an idea of how it all flows through.
+
+
+
+
+00:36:09
+
+
+Evan Liang: Yeah. So, we can like literally just take it like you know like when you when you were a kid, you had an image, you put like a a translucent paper and then draw on top of it and sketch it out. We we can do exactly that, but we don't have to go through the pain of of how bloated or messy or disgusting the back end is for what we're merging right now.
+
+
+
+
+00:36:28
+
+
+Evan Liang: So you can start from scratch with honestly very clean and stuff like that. I Yeah, I honestly I have a feeling once you try to do yours this is going to blow up. Uh and it'd be it'd be better to just like each of you still have your version and just be like hey if I was designing a combined app from scratch where we'd have a single data model let me specify the requirements that might be
+
+
+
+
+00:36:47
+
+
+Evan Liang: faster. At what point do we just make that switch? I think sometime tomorrow in the name of going fast today is day one day two. Yeah, that's what I was saying. Oh, you're right. That's not a bad idea. I seem to want like competition's good in the market. Like why?
+
+
+
+
+00:37:08
+
+
+Evan Liang: No, no, that's a good that's a good idea. I actually I mean, should we try that? Like, hey, tomorrow like, hey, let's start a new version with a combined dashboard and have people as long as they give like have each person creates a spec. Yeah. Honestly, you could create like a spec from your or one of us.
+
+
+
+
+00:37:26
+
+
+Evan Liang: Sure. Yeah. Just cuz I feel like you have the best vision. Okay. Okay. At minimum, you just have it running in the background. Yeah. Yeah. Exactly. No. So, I like that. I like the suggestion a lot. Let's try parallel pathing and let's see if one code works faster or, you know, uh, looks better than the other one.
+
+
+
+
+00:37:50
+
+
+Evan Liang: It's great. So by the stand up tomorrow, will everyone have a speck of their own individual the stand up? We don't have a stand up tomorrow. No. Uh so uh tomorrow we have the sales pitch, right? Uh so so what I'd say tomorrow is um let's so uh Erin, you want to work with me on like maybe uh let's build like a clean sheet one?
+
+
+
+
+00:38:13
+
+
+Evan Liang: Okay. Sure. Yep. So let's work on the clean sheet one where hey, I can help you specify the big one. Let's start with four different like start with actually it's actually not four f folders maybe let's start with like all the stages so it's like six seven folders right because one of the problems is we still don't have negotiation or close so let's hey have clause be like hey these are individual modules this is how the app's going to work we'll build the scaffolding of it and then maybe we'll have it like feed one um one spec at a time into it to fill it out yeah we we could do it at the same
+
+
+
+
+00:38:47
+
+
+Evan Liang: time maybe even like we both just in the morning or whenever we meet. Yeah. Kick that off and at noon we'll check in on Yeah. You want me to do it too? Oh, well I thought I thought you wanted to but I'm doing the account. Yeah. Okay. I think it is the I think so.
+
+
+
+
+00:39:13
+
+
+Evan Liang: It was working so well like day two. Well, it was so simple back then. Like I'm actually making it like generate it and like now it's like oh my god to like once you click generate oh it's like in data like I've I've created a different there's a completely different way of doing it now but yeah it's it's sounds good. I can't wait for fireflies to try to ingest and go a snackfish.
+
+
+
+
+Transcription ended after 00:42:18
+
+
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.

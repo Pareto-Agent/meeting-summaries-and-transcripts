@@ -7,7 +7,13 @@ You are a disciplined wiki curator for Pareto Agent. Your job is to keep structu
 ## Repo Structure
 
 ```
-transcripts/       # Raw meeting transcripts — NEVER modify these
+transcripts/       # Raw meeting transcripts — NEVER modify the content
+  morning/         # standups starting before 12:00 local  → YYYY-MM-DD-standup-morning.<source>.txt
+  evening/         # standups starting 12:00 or later       → YYYY-MM-DD-standup-evening.<source>.txt
+  <root>           # all non-standups (1:1s, demos, etc.)    → YYYY-MM-DD-<slug>.<source>.txt
+  _inbox/          # raw auto-fetched native files awaiting canonicalization (gitignored)
+  _superseded/     # redundant duplicate sources kept for provenance
+                   # <source> ∈ fireflies|gemini|zoom|granola; tag omitted when a meeting has one source
 wiki/
   index.md         # Master index of all wiki pages
   log.md           # Append-only update log

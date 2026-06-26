@@ -1,0 +1,609 @@
+﻿📝 Notes
+Jun 16, 2026
+Pareto Agent Onboarding: Tooling Deep Dive (Peer-led)
+Invited aaronspraguerose@gmail.com coopertenney7@gmail.com deansliang@gmail.com Evan Liang parth.godarajesh@kellogg.northwestern.edu Aaron Rose Cooper Tenney Dean Liang Parth Goda Rajesh
+Attachments Pareto Agent Onboarding: Tooling Deep Dive (Peer-led)
+Meeting records Transcript Recording 
+
+
+
+
+Summary
+Team aligned on account renewal strategies and finalized project assignments alongside establishing technical development and prototyping workflows.
+
+Project Role Assignment Decision
+The team decided to distribute account renewal project roles covering qualification, outreach, proposal, and buyer evaluation. This strategy prioritizes automating flat renewals to demonstrate product value.
+
+Claude Prototyping Workflows Established
+Development workflows were established utilizing parallel prototyping paths via Replit and Claude Code. Standards were set for managing token usage and context retention through markdown file updates.
+
+Infrastructure Capability Review
+Discussions focused on evaluating Model Context Protocol versus application programming interfaces for system data access. The team reviewed security trade-offs and browser-based tool capabilities for product research.
+
+
+
+
+Decisions
+Aligned
+* Project assignments finalized Team members are assigned to specific project focus areas: Aeron to qualification, Dean to proposal, Cooper to buyer evaluation, and Parth to outreach.
+* Prototyping and specification development strategy The team will utilize Replet for rapid prototyping while simultaneously using Claude Code to develop detailed product specifications.
+* Product development and meeting schedule The team will present research findings at 5:00 PM today and hold a standup meeting tomorrow at 10:00 AM to pitch product features.
+
+
+We've updated the Decisions section using your feedback.
+Let us know what you think: Helpful or Not Helpful
+
+
+
+
+Next steps
+* [The team] Hook Database: Connect to the customer database and initiate product research.
+* [The team] Present Findings: Present key clips and quotes from calls at 5:00 PM to support proposed feature development.
+* [The team] Present Briefing: Deliver a presentation of project briefings at 10:00 AM tomorrow morning.
+* [The team] Access Dropbox: Integrate Dropbox with AI tools to query and analyze call logs.
+* [The team] Prototype: Develop application prototypes by utilizing the Replet platform.
+* [The team] Write Specs: Generate comprehensive product specifications using Claude Code.
+* [The team] Update Documentation: Update the Claude MD file and produce handoff documentation after every coding execution session.
+* [Evan Liang] Identify Calls: Provide a curated list of relevant calls to team members to facilitate product research.
+* [Cooper] Research Buying Experience: Identify calls referencing B2B buying experience and pain points regarding legal contracts. Compile a list for further research.
+* [Dean] Summarize Call: Review the John Lei call to extract requirements for the renewals deck. Document the specific data needed for the agent to research.
+* [The group] Share Research Findings: Synthesize insights gathered from the database and prepare a summary of findings. Submit these results by the end of today.
+* [The group] Present to Juliet: Outline research ideas and insights developed during the review process. Deliver the presentation to Juliet tomorrow morning.
+* [The group] Present to Scott: Showcase prototypes during the scheduled meeting on Thursday afternoon. Utilize previous call transcripts to inform the presentation for Scott Golden.
+
+
+
+
+Details
+* Meeting Setup: Evan Liang ensured all participants were connected to Google Meets, instructing attendees to join without audio to avoid feedback issues during the session (00:00:01).
+* Meeting Goals: The primary objective is for all participants to select their respective projects by the end of the meeting. Following project selection, the team is tasked with accessing the customer database this afternoon to begin conducting research on product specifications using internal call recordings and external web research (00:01:31).
+* Project Selection Strategy: To ensure an efficient selection process, Evan Liang implemented a random number generator system to handle any potential overlaps or conflicts in project preferences (00:02:19).
+* Account Management Process Stages: Evan Liang outlined four distinct stages for the account management renewal process: Qualification, which involves researching buyer signals and churn risk; Outreach, involving email communication with stakeholders; Proposal, which requires creating a templated pricing proposal; and Buyer Evaluation, which focuses on building a renewals hub portal for customers to streamline the process (00:03:25).
+* Scope of Work: Negotiation will be handled separately, as previous attempts to prototype negotiation tools proved too convoluted due to the complexity of various scenarios (00:05:39).
+* Tooling for Meetings: Evan Liang introduced the use of Granola, an iPhone application, to generate meeting transcripts, noting it was preferred over alternative options after comparing it with other startup tools (00:06:36).
+* Task Distribution: The team finalized project assignments: Aeron will manage Qualification, Dean will handle Proposal, Cooper will focus on Buyer Evaluation, and Parth will lead Outreach (00:07:34).
+* Research and Presentation Schedule: The team must hook up their Dropboxes to utilize AI for querying calls throughout the day, and by 5:00 p.m., they are expected to present clips or quotes supporting their proposed features (00:07:34). A follow-up standup is scheduled for 10:00 a.m. tomorrow to present briefings to Juliet (00:08:28).
+* Prototyping Strategy: The team will use two parallel paths: Replit for rapid prototyping of demos due to its speed in building functional websites, and Claude Code to develop detailed specifications that are easier to modify than Replit-generated code (00:08:28).
+* Data Infrastructure and Scalability: Evan Liang noted that while Replit is useful for rapid prototyping, they are uncertain if it is scalable for enterprise applications (00:11:37). The team plans to focus on product definitions first and intends to feed real customer data into the system during the second half of the summer, provided sufficient progress is made (00:12:41).
+* Claude Code Best Practices: Aeron presented a strategy for using Claude Code, emphasizing the importance of maintaining good habits to avoid excessive token usage. They highlighted that while Claude is powerful for iterations, the team should avoid "token maxing" to manage costs (00:13:47).
+* Application Distinctions: The team clarified that Chat, Co-work, and Code are separate applications within Claude that do not inherently access or communicate with each other. Co-work is intended for personal productivity, while Code is for building products (00:16:04).
+* Workflow Automation: The team discussed automating routine tasks, such as scheduling slide deck generation using Claude Design at specific times, which could streamline productivity (00:17:05).
+* Claude Code Command Usage: Fundamental commands include slash model for switching models, slash plan to force the agent to plan before executing, and slash effort to adjust the level of effort (00:18:13) (00:20:20). Users should avoid the "dangerously permit" setting for permissions and instead cycle through settings using Shift-Tab in the terminal (00:21:26).
+* Advanced Claude Features: Additional helpful commands include slash ultra plan for extended planning, slash advisor to have an Opus model review Sonnet's work for accuracy, and slash compact to summarize previous steps and save tokens when reaching context limits (00:22:23).
+* Context Management: It is recommended to use an `init` command to create a `Claude.md` reference sheet for each repository. This file should contain layout information and important rules to ensure agents do not need to rescan the entire codebase, thereby saving tokens (00:24:23).
+* Replit Utility: Hannah Fong and Dean shared that they used Replit to build a functional website in twenty minutes, which was necessary to satisfy banking requirements for expense accounts (00:27:38).
+* Automated Handoffs: To improve token efficiency and context retention, the team discussed having Claude automatically update a "handoff" markdown file at the end of every prompt, which the next agent can then read (00:28:33).
+* MCP and API Considerations: The team discussed the Model Context Protocol (MCP) versus APIs. MCP allows for broader data access without needing to know specific database fields, but it is more prone to hallucinations compared to APIs, which are more precise and auditable (00:30:45).
+* Security Concerns: There are security trade-offs regarding access; MCP access is potentially more dangerous because it can expose entire databases, whereas APIs can be scoped to specific functions, such as sending Slack messages without being able to read them (00:31:44).
+* Browser Tools: The team discussed installing browser-based tools that allow agents to interact with websites, take screenshots, and execute repo cleanup commands (00:33:27).
+* Remote Control Capability: Evan Liang highlighted the slash remote control command, which allows users to scan a QR code with their phone to send prompts and review agent output from the Claude app, enabling 24/7 progress (00:36:47).
+* Querying Call Data: Evan Liang demonstrated how to use Co-work to query the marketing research database for specific call data, such as finding instances where customers discussed pain points regarding legal contracts (00:45:04).
+* Advisory Call: The team has a call scheduled for Thursday afternoon with Scott Golden, an informal advisor who has experience in the industry, to present prototypes (00:47:27).
+* Trojan Horse Strategy: The team discussed a "Trojan Horse" strategy for product adoption, which involves automating the "long tail" of flat renewals to demonstrate value and effectiveness before attempting to displace humans on larger, more complex contracts (00:49:16) (00:51:07).
+* Renewal Scenarios: Flat renewals are identified as a primary target because they are time-consuming for human sellers, who often lack the incentive to prioritize them over larger deals (00:50:10). Upsells are considered much more complex and political, making them less ideal for the initial implementation phase (00:54:48).
+* Documentation Verification: Hannah Fong informed the team that passport or relevant documentation verification will take place in approximately five minutes, and those who did not bring documentation should reschedule within the next three days (00:56:48).
+
+
+
+
+You should review Gemini's notes to make sure they're accurate. Get tips and learn how Gemini takes notes
+How is the quality of these specific notes? Take a short survey to let us know your feedback, including how helpful the notes were for your needs.
+📖 Transcript
+Jun 16, 2026
+Pareto Agent Onboarding: Tooling Deep Dive (Peer-led) - Transcript
+00:00:01
+
+
+Evan Liang: Okay, so Hannah is on the thing.
+Hannah Fong: I'm here.
+Evan Liang: Hello Hannah. Okay, so uh and Aaron,
+Hannah Fong: Hi.
+Evan Liang: you might want to join Google Meets without audio because you want to share your slides later. Sure. So um to
+Hannah Fong: Oh,
+Evan Liang: join
+Hannah Fong: you're have slides. Impressive.
+Evan Liang: uh probably individually join, but see if you can do it with that audio. the feedback would kill us.
+Hannah Fong: Sorry, I'm the one the one oddball out making you all jump
+Evan Liang: No, no, no, no. But we the uh uh we'd have to share.
+Hannah Fong: on.
+Evan Liang: So, stand up on 10.
+Hannah Fong: We have Cooper. Hey, Cooper.
+Evan Liang: Uh you got to get off audio.
+Hannah Fong: Hey, Park. Oh, I can hear myself talking in the background.
+Evan Liang: Park. Apparently, I feel like an old man in this group right now. I do. I do. I'm gonna dress you tomorrow in a t-shirt like a rock t-shirt or like a or just that.
+
+
+
+
+00:01:31
+
+
+Evan Liang: All right, cool. So, in terms of the agenda, what we want to do accomplish this time. Uh so, the goal is if we can end this meeting with everyone picking their project, that'd be a win, right? so that we can uh because we want you guys to pick your projects because what we want this afternoon for you guys to do is hook up to the customer database and there's debates about how to access that uh and start doing the research. Uh and what I want to be available for you all is to be like hey here are the calls that are relevant uh for your specific thing so you can can draw the research so you can start understanding the product specs around what you want to what how to build that. uh we have some rough ideas but uh I want you to hear directly and then you can also do external web research as well. So that's goal number one is to pick the projects. I saw Parth and Cooper already entered theirs in into that spreadsheet.
+
+
+
+
+00:02:19
+
+
+Evan Liang: Uh it's interest uh fascinating or order is interesting. So we're going to see if there's like if people have differences then it'll be simple. Uh if they're very similar then we'll do like uh that's why I added the random number generator or that thing refreshes every time someone enter things in. We'll just basically it's basically like flipping a coin uh or rolling dice and then we'll do an NFL draft, right? Uh so based on how things are. So that's that's goal number one. And then uh goal number two of the standup is to uh I think Aeron's volunteered he put together some slides to kind of talk through like Claude uh exactly how he uses some of the claude code features and everything of that sort. So let's learn a little bit from that and then we can also talk to like replet versus claude. um how how to use each of those services and what we want to kind of put put through across it. So um let's see um yeah from Evan's perspective uh like the first part is just questions around the stages like from um anyone have any questions so that we can figure out if folks want to make any changes to their uh things.
+
+
+
+
+00:03:25
+
+
+Evan Liang: So qualification, outreach, proposal, buyer evaluation. These are the stages that we've kind of uh encapsulated around the account management like renewals process. So Dean, Erin, any questions or Cooper part anything that you guys uh had around that and I one means your highest priority, right? Yeah. Okay. Erin, you mentioned that you wanted some explanation around it or Yeah. All right. Yeah. So if we uh so the west way to think about this Aaron is like uh when you go through a renewals process they're like uh the stages of how people get to the end product. So qualification is like uh doing a lot of research around like buyer signals or whatever else usage contracts or whatever else and coming up with like hey is this going to be an upsell a downell flat renewal is this going to be hard turn risk yes or no. So like churn modeling and stuff like that would kind of go into qualification and then what you end up with in the qualification phase is basically like a plan that gets approved by the account manager who will be a person right so we're like hey we know how to take a hundred accounts and show you what how they're doing which ones are high churn risk or low.
+
+
+
+
+00:04:40
+
+
+Evan Liang: Uh outreach is actually sending out an email usually uh to to the person being like hey your renewal is coming due blah blah blah. email is fairly templated, but one of the pain points we hear in there is like what if the person's no longer at the company or is not the right person anymore? How do you find the right person and get someone to engage? Right. Okay. proposal is actually delivering the pricing proposal. Uh and oftentimes this is done phone or or it could be via email. What we thought the output that would simplify is like hey build a PowerPoint deck templize fill it in that you can deliver to the customer. Uh and then buyer evaluation is actually something that doesn't really exist uh but we've uh it's uh out there and buyer evaluation is building a renewals hub portal for the customer to be like hey here's all the information you need to do to in order to renew like all your previous contracts all this other stuff in there uh because theory is that can shorten uh the cycle.
+
+
+
+
+00:05:39
+
+
+Evan Liang: Usually our customers our sellers don't think about that. They're like the customer goes away. But from the buyers, there's a lot of pain points that we we've uncovered and we think that would be a cool way to like make that an easier process. Yeah. So that's kind of the four. After that, there's negotiation. Uh we're not putting negotiation on here. I will handle negotiation partly because it depends on the four skills here, right? If you qualify well, you have the right pricing proposal, negotiation can be done. If you don't do that then negotiation uh we did try to build negotiation prototyping and ran into a lot of problems we were like oh what about all the scenarios and all the other thing uh there was just too it just became a convoluted thing okay cool so let's see we got a c d c okay so this is oh part one I'll take the okay there we go okay so that make can you see
+Hannah Fong: You change after explanation. Did you want this recorded, Evan?
+
+
+
+
+00:06:36
+
+
+Evan Liang: this Uh oh shoot the Google Meets is not
+Hannah Fong: It's taking It's taking notes,
+Evan Liang: recording.
+Hannah Fong: but it's not recording. I can start the recording now.
+Evan Liang: Sure. Start the recording.
+Hannah Fong: There you go.
+Evan Liang: Ranola has been taking notes.
+Hannah Fong: What is granola?
+Evan Liang: So uh Ranola is an iPhone app that is uh one of the
+Hannah Fong: Oh,
+Evan Liang: top note takers and it basically uh allows me to that this was the
+Hannah Fong: I see.
+Evan Liang: suggestion. It was either granola or plaude were the two suggestions from startups and how to do in-person things. I compare the two.
+Hannah Fong: Oh,
+Evan Liang: I like granola better. So,
+Hannah Fong: okay.
+Evan Liang: so I'm g try to have granola on my phone and create the it creates a call transcript.
+Hannah Fong: Nice.
+Evan Liang: So, it's not a recording. Well, you need that's that's part of the other reason.
+Hannah Fong: Yeah,
+Evan Liang: Yeah. So um according to chat GBT comparing our use cases without granola and granola seems more popular.
+
+
+
+
+00:07:34
+
+
+Evan Liang: So that's why I went with it. Okay. So ACDB.
+Hannah Fong: I think
+Evan Liang: All right. That that makes it easy. So Aeron's going to do the qualification part. Dean's going to do proposal. Cooper Okay. Cooper will do buyer evaluation. Parth will do outreach. Okay. That that works actually. Uh well so we don't have to do any of the scoring. Okay. Awesome. Um so on good uh and then uh what what we want this afternoon is like I said hook up your Dropboxes uh access your Dropbox use AI around it and query all the calls and then come back to me throughout the day and then uh so at like five o'clock today that's what I want is you guys each to present clips or quotes from the calls supporting what you think you're going to what's the most important features to build for your section. And then tomorrow morning, uh, at 10:00 a.m., we're going to have another standup.
+
+
+
+
+00:08:28
+
+
+Evan Liang: You guys will present your briefing of what you think your product features are. Uh, and then Juliet will join and she and I did all the calls and I want you to kind of pitch us like, hey, here's what I want to think it does. And then from there, we can release you guys and you guys can start uh doing two paths. One is I want you to use Replet to prototype. Like I said, Replet requires very little um prompting. It's not It actually doesn't do well with a lot of specs. So, uh Replet, if you said, "Build me a website for B2B renewals," it'll build you a live website. It'll just fill in everything that's missing, including your company name, your logo. It just it's really good at it actually prefers to hallucinate or or make things up. So, so replet is uh think of that as the modern day like because it can create so fast. In the old days, you would create something called a PRD. So, as a product manager, you would create like a document specifying everything.
+
+
+
+
+00:09:27
+
+
+Evan Liang: These days, people are saying, well, forget that. use something like via coding replet or lovable and just show a demo to the engineers like build this. Yeah, I see that's so so what we want you to do is use replet to prototype and see what your ideas look like and you can test it and you could quickly find out my ideas are crap or I like this or not. And then on a parallel path you use clawed code to write a spec. So that's more detailed specification. So you can parallel path it so you can see what it looks like. You can write cloud code. The reason you want to write a spec is when you want to make changes the spec is more um what's it more more substantial or it's easier to understand the changes whereas replet will go down its route once it's decided what your app is. It's really hard to get it to change its mind. That's where I found limitations around it. Right? So the spec will be there and then we'll use the spec on cloud code to actually generate the the coding and the stuff like that and put it into like GitHub and the repository and everything.
+
+
+
+
+00:10:31
+
+
+Evan Liang: That's this is also where the limits of uh uh of non-engineers that's where engineers to make sure it all fits together and to scale it. But we can if we understand our product definitions really really well that's uh the goal then is to like be able to prototype and all that stuff. Uh okay question. Yes, Cooper is talking. Um so link up with claw code like when you're saying like okay so we have the spec over here and prototype here. Yeah. How do they talk to each other? You could uh you could write the spec and claude code and then give it to the spec to replet and replet could code it for you. Okay. So that's one way. So, so Replet actually like automatically spins up databases, all the backend stuff to make something live. So, it's actually a bigger prototyping environment. Uh, this versus cloud code is just coding it for you and then you still have to set up the database and you have to like uh actually deploy the code and everything of that sort.
+
+
+
+
+00:11:37
+
+
+Evan Liang: Okay. So they're slightly different from if I'm understanding this correctly, the workflow is okay, you figure out what you want, you tell replet, I want a data database or dashboard or whatever and then you go retrospectively tell claude I want you to build a dashboard with all these features. Is that it? There's no like Claude puts it into replet and replet feels okay. No, not for now. Some people have used Replet like um if you read like Jason Lmin who's big out there doing AI agents. Uh he's this um he's kind of a thought leader and stuff like that. He's mostly building his agents in Replet but he's running like a it's a $10 million business but he's running like an embeds business. I don't think Replet is my personal take. I'm not sure Replet is scalable for like enterprise applications. I could be wrong about that.
+Hannah Fong: Mhm.
+Evan Liang: But those are all the things I'm open to figuring out and everyone and by the way the infrastructure on how you access stuff is all all changing quite quickly.
+
+
+
+
+00:12:41
+
+
+Evan Liang: Yeah. The things that we are trying to understand is the product definitions uh the hard stuff from enterprise is hooking up to their actual data sucking it in making sure it's secure and everything of that sort and scale. Now, second half of the summer, if we make enough progress on the product, then I want to start feeding in real customer data into it to see how it works. Um, and not sure if that's through something that's actually scalable or we're just going to dump data in, right? So, that's depends on how we're doing. Awesome. Cool. So, we will lock these in. Okay. Um, so yeah, on the tooling stuff, uh, yeah, actually Erin, do you want to share your thing? And Sure. And actually, I think it'd be great for you to answer some of the questions around anything around RepLIP versus Claude versus anything else. Sure. So I So we're gonna have Aaron share kind of. Yes. So, I just put together a brief thing from like using how to best use claude code specifically.
+
+
+
+
+00:13:47
+
+
+Evan Liang: Oh, I'm muted. Oh, I guess cheating. Um, and yeah, I don't know if like this because I didn't realize that we'd be using replic for prototyping and all that, but I think it's still like yeah, as you said, claw is really good for getting the thing to work and you can just keep hitting it with iteration after iteration. You can make sure that it's doing things correctly. And you know, while it's yeah, super powerful, you still need to be like have good habits while doing it. um just to save time and also the tokens. We don't want to just blow everything and going into that. So yeah, we we're not token maxing. We will your goal is not to use as many tokens and you're not going to get a reward for that. Uh the new term, by the way, is token panic. Uh is that the CFO is realizing that how much money they're spending on tokens and really really freaking out about it. That seems to have been invented this week.
+
+
+
+
+00:14:49
+
+
+Evan Liang: Okay. So, go ahead. And this is uh Okay. So, it's not just Okay. Yeah. So, this is this is mostly just um for using cloud code and just some of the important things. Actually, go back to it. Let's Sorry. Um Okay. So, this is this is describing the claude chat. This is so this one is like the general using cloud desktop, but it sounds like you guys have had experience with that. Um, but like using like at least last summer when D and I were doing a lot of spreadsheet stuff, you can now just hook up the spreadsheet, it writes the spreadsheets. Um, same with the slides like I did this in a couple minutes, make all these slides. Um, is really good and yeah, as we discussed, we'll be querying the Dropbox through cloud and all that. So, just you can also set up. Yeah, dude. But yeah, just question from Dave. um when we're creating these files for Dropbox like still like it seems like the only way to do is either codework access it but can't really like move that to chat so I don't have to ask the questions through code is that correct um I was trying to I was trying to figure out how to do it so it it um goes to chat the only why do you want it to go to chat why does she she co-work all the way through all the way through is the same as
+
+
+
+
+00:16:04
+
+
+Evan Liang: chat so so yes so so from my understanding co-work chat and code are separate applications that do not access and talk to each other. This is what I meant that that that anthropic release thing so fast that that these things uh don't access each other's projects. So you're you're either in chat co-work or code. Co-work is co-work. It just does everything like you can access your files and you can talk to it. I don't know why you never use chat. Yeah. I I I think I think chat may be the one that's doesn't make much sense. Chad's more like competes with like open AI. So it's generic like web searches. That's what you use. Jas co-work is probably anything your personal productivity and then claude code is actually building the product. So that maybe um so yeah just general stuff as in yeah we should try to be automating a bunch of stuff. We try to be pulling everything together. And there's also there's some features.
+
+
+
+
+00:17:05
+
+
+Evan Liang: I don't know if I can pull them up um immediately, but you can um here you can schedule tasks to go. So if we are doing our standups at a set time every day, you can say at 7:30 a.m. build me a slide deck using cloud design um and give me a you know brief set of speaker notes on the recent commits that I was doing to the to the GitHub or something. Okay. Um, so we yeah, we can think about how we do that. I'm sure that could also be with like the food ordering bot or something like we can put in Yep. stuff there. So now for using cloud code. Um, just I just broke it down into a couple levels. So the first is like what we should all absolutely be doing. Second is kind of what we'll hopefully learn pretty quickly on. And then the third is what I think like that would be my proposal for how we run the rest of the summer which is completely handsoff pretty much like we don't need to be even at the laptop but I'll explain what that means.
+
+
+
+
+00:18:13
+
+
+Evan Liang: Okay. Um so as for the fundamentals using claude code you can do it in the cloud code thing on the desktop app or you can open up the terminal session. Apparently Dean you were looking into it a bit and it's better to do it to better in the terminal. Um and you can like actually then click through the actual code if you run it in a coding um application but it I don't think it matters so much and yeah just some basic commands. So slashmodel you can change the model although I think in claw code you can do that. Yeah you can do that automatically. So you can just press that to change it but but it feels like once you do a session or a project you're you're on the same model right? So, I don't know if you can change that with this, but you can always do this slash plan. Oh, okay. You can do it in in the in the terminal. So, like slash plan and then it comes up and you can do a bunch of stuff.
+
+
+
+
+00:19:12
+
+
+Evan Liang: Um, how much coding experience does various people have kos? Uh, I have like no I mean I was fine at high school coding, but I don't have like formal coding. I've just done a bunch with clock. 46. Yeah, but that's like that's entry level class. The second class in coding is what we we've taken it as well. Entry. What about I'm just curious about yourself. I have a degree in information systems. We did a little coding Python, HTML. Um, and I've been doing a lot of coding on cloud code, the terminal side, like a few websites and an app. But uh I'm starting to get used to Replet now. It's gonna be fun. Oh. Uh I took CS16B 25 years ago. Uh so you're the one who's just ready to go. Yeah. I've been able to do like coding projects and coding work. Okay. Completely writing the whole thing. Never reading a line of code, never writing the line of code.
+
+
+
+
+00:20:20
+
+
+Evan Liang: So Okay. Yeah. It's good. you still have to be conscious of what you're doing. But yeah, um Oh, I skipped. So then there's also the effort level. So if you do slasheffort, you can change the effort. Um and I think as a general rule, like sonnet is really all we need on medium or high effort. Um, we use Opus to like initially plan out the thing, but I found I was on a max plan using Sonnet at high effort like basically all day every day. And I would basically fill the plan out by the end of the month if I was doing that all day every day sonnet medium effort or high effort. It's obviously fable but which is banned currently. So, right. the odds are that it will come back. So to market um another big thing is planning. So using the plan mode again I don't know if how that works on you can just you can just assume we're getting out of trouble I don't think.
+
+
+
+
+00:21:26
+
+
+Evan Liang: Okay. Yeah. So then yeah I don't I don't know how you even would plan on this. Um, in that case, if you just type slash plan and then put your prompt in, it basically claw just plans before it starts. So, instead of Yeah. Yeah. just running trying things, it fails. It runs a whole thing, fails. Um, I basically always use slash plan and that always works um pretty well. And then you can also cycle permissions. So like I don't know if you guys have used in the terminal but you always have to press like you know allow that edit allow that to run all this you can you can dangerous like there there's one setting called dangerously permit or something which probably don't want to do u but you can do it so it basically auto accepts all the general things you just in the terminal you just press shift tab and it cycles through you see like what permission setting you're on. Okay. Uh so those are just some basics.
+
+
+
+
+00:22:23
+
+
+Evan Liang: Now getting more into it. Um one of the things is using ultraink and ultra plan. So these they send the plan up to uh up to the web. Um and then they it plans for a lot longer. It extends how long and large the plan can be.
+Hannah Fong: Jesus.
+Evan Liang: And so that's good again for like initial prototyping a big thing. But we don't you would never do it for like asking a question or something. That's again you just press slash ultra plan. Um there's also this thing called an advisor. So I found this really helpful. If you're on sonnet if you do slash advisor at any point it turns on the advisor. You never have to press slashadvisor again. And what it does is after sonnet runs, it will call the advisor and the advisor will check its work. So, and it the advisor is opus 4.8. So, it always like yeah, it will find stuff wrong. Um, it uses more tokens, but it I find that it saves tokens and that sonnet doesn't do it wrong.
+
+
+
+
+00:23:22
+
+
+Evan Liang: You ask it what went wrong and figure it all out. So, that's been really useful. Another thing are research agents. of you just in your prompt say spin up a research agent anywhere in the prompt. It will like deploy a bunch of agents that then can search the web. Um if you're yeah need to look things up if you want to see how other people have done a certain section of the project and you can also have it explore the codebase but it usually does that automatically when you use slash plan um for slashcompact. This is really useful when you're getting towards your token window limit. Uh I run this like even if I'm not at the limit just pretty often. It basically summarizes all its previous things steps and just only the things it needs for your future prompts. So that is really helpful in yeah saving tokens. It keeps the model fresh. Um yeah just a couple things on that because I was running into this this weekend.
+
+
+
+
+00:24:23
+
+
+Evan Liang: like things that I at least took away was like typically I think we have a one million context like limit while I was looking up is you typically want to be like once you're at 400k you probably want to reset it at that point. Anything past that you just run into a lot more hallucinations it's just going to forget all of your previous context. Um good way to make sure you keep context though is like have a sort of read me file that it consistently updates with what's doing never mind. Um, yes, but exactly what Dean was saying. I think also Sonnet only has 300K context, so you can't even get as much. Um, and you should be compacting more. Um, now for Dean was saying this, if you initially when you have your repo, if you do slashinit, it's going to make this cloud MD file. And what this is is just a reference sheet. Um, it's like, yeah, an onboarding material for whenever you spin up a new agent, it reads that Claude MD and that's going to contain the layout of the repo, some important things to keep in mind, etc. Instead of having Claude have to scan the repo itself, reread every single line of code.
+
+
+
+
+00:25:36
+
+
+Evan Liang: Um because also in there it can say like yeah this these three folders are never to be touched if you are doing I don't know analysis as opposed to the web design or something and so it just saves more tokens. It's all about saving tokens. And on that note, you can also what I have it frequently do is say make a new markdown file is what they're called. Um that contains a prompt. Like if the model's getting close to its context window and I've compacted a bunch of times and still at its compact window, I'll say just put all your thoughts into a prompt that I can then give to a new agent. Um, and when you do the at symbol, you can type in what that file's name is and the next cloud will read that file to start off and it will do this. So, like it's stuff to just get used to, but keep in mind that yeah, we can we can be really smart about the context you use. Actually, I'll pause there. I think it's actually kind of good that you guys have been using Claude on your personal plans.
+
+
+
+
+00:26:39
+
+
+Evan Liang: So you guys are much more conscious about tokens than enterprise users who are like what the f*** like my my my boss told me to use as many tokens as possible. So So that's so that's one that's an observation if true that's great because maybe actually ahead of the game because I was like okay uh but let's take a pause here. Are any other interesting commands that part you've run into or Cooper like I just want to make sure that we're we're capturing things. I'm kind of more of that guy like just there's a lot of slash plan stuff and then go through every line of mobile. I've been using it a lot on my own directory to build the website and the app and I've this thing is even new for me to be honest like I've just been like because I have not ever hit my maximum. I'm pretty chill with it. So, I don't know what you guys are doing outside, but but yeah, I think my experience has just been like using the chat instead of the terminal.
+
+
+
+
+00:27:38
+
+
+Evan Liang: So, okay, good. Uh, I'm I'm I'm co-working it mostly for Excel files because my background is more financials. So, I've been trying to play around with it that and then Replet uh our current website is hosted on Replet that I built in like seven prompts that Hannah edited. So, uh, what? Yeah. Yeah. So, yeah, that was like 20 minutes of work. And we needed the website. What did we need the website for, Hannah? Like, we had to apply to something and our banked
+Hannah Fong: Oh, it it was for our bank so that we could set up reimbursements for the SVB
+Evan Liang: us.
+Hannah Fong: like T& thing. Yeah, we needed to be they needed a website to make sure that we were like legit.
+Evan Liang: Yeah. So, we had $3.5 million in the bank. They would not give us a expense account until they showed them a website. So we we coded the like like what?
+Hannah Fong: like
+Evan Liang: So we have to v code the website because the bank fraud system rejected us saying like what company doesn't have a website and
+
+
+
+
+00:28:33
+
+
+Hannah Fong: me
+Evan Liang: we're just like like 90%.
+Hannah Fong: a new one like I don't
+Evan Liang: So but okay. No. So so far uh very cool. Keep on going. Yeah. So all this stuff I don't expect anyone to be like yeah fluent in it immediately and I I'm still like learning this stuff but these are things definitely to keep in mind and the managing the tokens with these markdown files is a big thing like always telling it update the cla MD once you've done anything with the most important new new additions and then just always have it read the cloud MD when it starts the next okay fair enough um really yeah so this seems like quite important Because if you're saving tokens, you go to a new cloud. Absolutely. And it seems like it's very repetitive. You do every time. So is there a way to like have claude like always do that like Yeah. automate it like maybe it's live updating the markdown file in the markdown you would put or you would tell it to put as the first line after every prompt update the claude MD and write a handoff document.
+
+
+
+
+00:29:43
+
+
+Evan Liang: And now every single time quad automatically reads the quad.mmd file. And so it will do that at the end. It will update and you never have to like manually write it but you have to explicitly tell it in the markdown make sure that after every run you update the quad. Um yeah it is like that's definitely the most important thing for token saving that I found. Um and then do some things that I honestly don't have much experience with but I think we should learn how to do it. Um yeah all the connections that you can do you can for especially these demos although I guess with replet we'll be doing more the like yeah prototyping things we'll be seeing it so in replet you guys are not hooking it up to any databases uh external databases it's just to show the functionality and the product specs which uh uh is very very important and it actually is for us to get access to client data we have to show it in the prototype so that they believe that we can add value.
+
+
+
+
+00:30:45
+
+
+Evan Liang: Uh the thing about MCP versus API. So we did start hooking some of the stuff up previously with the previous CTO. Uh there is a there is a trade-off here. So the nice thing about MCP is MCP gives you don't have to specify what fields you're looking for inside of a database. So MCP like gives you broader access. But the bad thing about MCP is its best efforts. So today, if the MCP like you told it to go get like ARR from a client or a contract and it fails, it just it just fails. It just it just says it doesn't exist versus API will actually hit the right document and then says yes or no. Does that make sense? So MCP is more prone to hallucination because you're like, "Oh, give me your top 10 clients." And it'll just go get you 10 clients. Uh it may be the top 10, it may not be. API will be like here's all the clients, right? And then rank order them or something of that sort.
+
+
+
+
+00:31:44
+
+
+Evan Liang: So, but the problem with API is you have to know what you're asking for. MCP, you don't need to know what's in their database. So, that is a trade-off. Now, from a security perspective, what will you have access to? It's unclear in the marketplace today. So MCP is in some respects more dangerous because if you give someone MCP access they can query your whole database. API you only give them access to certain things. So uh lean data recently had a security incident because the API uh and I had learned this a little bit at MCP API. I was like I quickly asked like what did the API actually do? And they were like, "Oh, it could just send Slack messages." And I was like, "So someone hacked in so that all they can do is send Slack. Can they receive Slack messages, read them?" And they were like, "No." I was like, "Well, how dangerous is that?" So basically the only scam they could do is send a Slack message,
+
+
+
+
+00:32:35
+
+
+Evan Liang: get you onto someone's cell phone, and then use a thing. But they couldn't even tell if you responded to that Slack message. So I was like, "Okay, this is a not a huge security incident versus if it had been MCP access, you have no idea what they could have queried." So that's a trade-off. So anyways, that's why data hubbing is is probably uh is a problem that we don't aren't going to necessarily solve here, but is a key part of the infrastructure is how do you access to uh different parts of it. Now what was interesting, I did talk to another vendor uh partner vendor yesterday and he was like, "Oh, we already hooked up to the CRM have all this access and everything and that sort uh because they're uh they're in the close process. they automated the close process. I was like, "Wait a second, you got all the data sources. So, if we had a joint client, I can just plug into you. You've done all the data organization. That could be really, really simple." So,
+
+
+
+
+00:33:27
+
+
+Evan Liang: there are different ways to solve that problem. But yes, I didn't know that. So, yeah, we definitely need to look into this. Um, but as for like yes, skills in the browser tools. So, you can have it clawed. If you download the ski or install the skill then it can interact with your browser so it can take a screenshot of a website that it makes for example and you know actually give you that feedback whereas otherwise it's just like looking at the code and trying to assume what it will look like and skills there are so many online like I know Gary Tan the Y cominator guy has this whole list um he's sorry he's a Gary Tan is a Icy Carter. Yeah, these guys are in the same bride. Oh, that's Yeah, Gary Ted was in our so that's all there was to it. Sorry. Nice. We have friends. So I was like, damn that one. I try to start one. Where do you like is there like a list of skills that are out there?
+
+
+
+
+00:34:38
+
+
+Evan Liang: There's so many like you can look there. There are tons of lists online. Um, but definitely do it because like just some off the top of my head, there are ones where you literally just put in the command and it'll clean up your repo. So like, yeah, you have random markdowns everywhere. It'll clean it all. There are ones that are the review command, the review skills, and then it will launch a bunch of agents to review the whole thing. Um, and so there are a ton that definitely and these are just available on the web or other. Yeah. So, a bunch anthropic has made themselves, but then a bunch are like open source. It's just a prompt that someone has crafted to do these things. Um, so there shouldn't shouldn't be any risks with that security-wise, but I would look into it. I haven't used many of them. I just know they're useful. The prog management ones have some good ones about like basically making specs and all that.
+
+
+
+
+00:35:30
+
+
+Evan Liang: You just literally type slash as long as it has the right context. So I'd probably do is make sure you guys fill out your context memory for the overall co-work and then let you claim the files for whatever your specific task is. So just drive up a spec. Some very useful things we should all between the between all of us. We may actually have like a repository of knowledge as one. Yeah. Cool. Browser tools. Um and then finally, so last little bit is I there's tons of stuff that you could put in here. Like there are various things where you can spawn I think it's called like a work tree or work below. It's one of these where yeah you have one main agent that calls a bunch of makes its own agents that makes its own agents but it's like that just burns tokens. It's unclear if that's actually better. Um but you can you can manage your agents with like slash agents. And the big thing that has caught my attention is this slash remote control command.
+
+
+
+
+00:36:47
+
+
+Evan Liang: And basically if you have your laptop open you can you don't even have to have your laptop open you can have things run in the cloud but you can in your terminal you do slash remote control scan it with your phone and now in the cloud app you can be sending prompts and be reviewing things and so just like an idea for the summer is we're basically most of our time is planning mentally and then you get the notification from your laptop or your phone and you're just okay now I send the next prompt and you need to really be plann because it's you can do things so quickly you can also you can spin up tons of terminals have tons of agents running at the same time they have to if you're doing it manually like that you have to be telling them to look in different things you don't want them editing the same file but really like yeah you can do it so so fast and so efficiently and like even at lunch you know if we don't want to be interrupted at But you can get a notification on your phone and the you know the PR that you've you would already planned you know what the hopeful output is you see you get the message it says oh this was successful and you say great do the next thing in the plan you know and now it just is
+
+
+
+
+00:38:02
+
+
+Evan Liang: off and doing it and so you can basically like 247 when you're sleeping uh maybe align something that takes a long time to run while you're sleeping but just constantly running these things and like even if we end up not working on the weekend or something. It's like if you just every, you know, hour you get a notification that the agent is done, you just send your next prompt and it's like, yeah, you're you're doing it, you're doing things like that very quickly. Yeah, sometimes you have to review things and then that's more like the replet side of thing. But at least if it's just the logic working and does the website look good, all that, it could almost all be done on your phone or just Yeah, you don't have to be sitting there watching the um terminal build. So that that's just yeah the stuff that I was okay looking at. Nice. Very cool. Have you actually deployed an agent with like a full database or anything of that sort or what what have you actually uh done on the side?
+
+
+
+
+00:39:06
+
+
+Evan Liang: So I haven't done like I haven't built I mean it depends on what you define or or like an app correct. So I was doing past three weeks I've been I was working at this like startup that my friend's friend runs and just building like massive data ingestion and then processing and can we find findings in that and that was just yeah like nonstop like I barely even worked um while doing that. I could have been much fat. Like I could have done more if I was spinning up multiple terminals and all this stuff and it would have taken more of my time, but it was like an hour or two a day where I just I'd read the output, I'd send the next prompt and I'd let it sit back and study for finals or whatever. So, a lot of that was Yeah. And it was great. Like it all I was Yeah. So, awesome. Uh that was really really helpful. Uh hopefully uh everyone had few uh takeaways but uh that we can uh use at least probably similar to Cooper my first takeaways I probably have to start using terminal more that might be so it's easy I have two questions um one how do you use MCP like how do you like utilize it and two like I think you skipped over browser tools thing yeah I So I both of those I am not the most uh well well versed in
+
+
+
+
+00:40:43
+
+
+Evan Liang: but I think as like a general idea um the MCPS I'm pretty sure just like it's all automatic. So if once you install it which in like claude uh there there was some place where you can install um it's here there are places where you can install it. There's there's two ways to use MCP from my understanding. One is you put the MCP on top of a data repository you want to give people access to. So for example, what Dean was talking about is like our Dropbox folder, put an MCP on top of it. Different applications could then access that f folder structure externally. So that's one way. The other way, the way we'll probably use it on our enterprise side is for example, lean data put an MCP on top of their Salesforce instance and they made that widely available internally to everyone in the company. So I actually had with the previous CTO uh someone there granted me MCP access to lean data CRM. It's a little bit past their security thing. So we didn't talk about it.
+
+
+
+
+00:41:53
+
+
+Evan Liang: So it was just it was like a mid-level manager. And so with that we query their CRM and that will probably be our when we want to feed real data into our agents it will probably through be through that link and it just was like a link code that we could click on and it it would authenticate us and then we would have access. Now the way they restricted that was uh uh and this will be a only people with lean data domains could go access that link. So I could access it but then once I clicked the link the CTO who didn't have access to my email could access it too. So the security complications of this were pretty were a little bit dicey. But yes, once you have the link in authentication, then you could just start using Claude to just be like just interrogating and asking questions like pull up what were we? We were pulling up like pull me up like the smallest 20 accounts by ARR. Give me all these details on those accounts and it would just start.
+
+
+
+
+00:42:48
+
+
+Evan Liang: It could be wrong. Yeah, it could be. But it it is it is it is feeding you back. It's not as um it's not auditable. That's one of the things. But it would be pulling back data for you. I think in general, Cooper, I don't know if this is exactly what you meant, but like how when you open up quad um like in the web or something, you can add you can tell it to use search like you can add that tool. Um it's kind of just like that in terms of the using side. So you would after you install it or you get the link or whatever, you just tell Claude query it um or you uh if you have the browser tool, you say use the browser and take screenshots and just if it has that tool enabled, it will know to use it then. And so that that's same thing with like yeah spinning up the research agents like that that's a separate thing. You can't just manually do it, but if you just tell it spin up a couple research agents, it'll do it.
+
+
+
+
+00:43:53
+
+
+Evan Liang: Um, Cooper, the reason MCPs are uh so popular for agents is in the traditional world, what you'd have to do is you'd actually have to understand the database schema to run the API. You'd have to know what fields, what objects, what specifically I'm looking to do in order to query it. Uh, and so that takes a long time. Whereas once I get access to MCP, I can just start going. And uh so because we don't know what agents want access to, that's why people love the like MCP is cool because agents can just be more creative. But great question others. Okay. Uh in terms of next steps, what we want to do is like I said, uh unless someone has a better idea, figure out how to get Dropbox. Uh I don't care if co-work to use it, but hook it up to the project. Uh I can show you like I ran co-work really quickly. I I used a different um system prior to it, but I just right before I got in here, I tested it on Co-work.
+
+
+
+
+00:45:04
+
+
+Evan Liang: So I can share my screen real quick. So basically uh no I want window. So basically this is uh hopefully you're seeing this. Yes. Okay. So basically I set up cowork. I just pointed at the file uh specifically the uh marketing what was the file called? Uh market research PMM database file. Uh, so then and I just said like, "Hey, for who's doing the buying experience, Cooper, for your one, I just tested find me a list of all calls that reference B2B buying experience, the pain points around finding legal contracts, right? So, uh, here's one who was like, here are the calls. I think I missed a few, but anyways, here was like some calls that you might want to look into more research, right? So, that's what we want you to do this afternoon." uh for the one on um oh the uh the the deck one I think that's you Dean right so I was like I need this one specific call John Lei spends he spent a bunch of time he hated our overall project but he spent a bunch of time he's like I don't believe agents can do everything the only thing I want an agent to do is build me a renewals deck and he spent he went adnauseium talking about that and so I was just like summarize the call on what you he would want agent to research for his reps.
+
+
+
+
+00:46:29
+
+
+Evan Liang: And then you can see the answer below that. This is definitely like a clip that you'd want to go listen to, Dean. Uh, and so he's like, "Hey, the core ass is to do this. Here's specifically the data I wanted in there." So we spent a bunch of like five minutes with him talking about like, okay, this guy's not a good design partner, but I was like, at least I'm going to get some useful knowledge from him, right? And that's what these calls are. Various calls. uh we were just trying to gather as much data and give you uh as we as soon as we realized hey this is an interesting repository and normally how companies would do this is it's like Julia and me would sit down you'd have to do the interviews yourself and we're saying like let's skip all that you can listen to it gather it and so that's what I'm uh what I'm trying to have is you guys interrogate the database understand it and then come back to me with questions right and then summarize your findings later today and then like I said tomorrow morning, present your ideas to Juliet.
+
+
+
+
+00:47:27
+
+
+Evan Liang: Once we say go, then you can start prototyping. And then on Thursday afternoon, uh we're gonna we have a call set up with this guy named Scott Golden. He's an informal adviser. He's worked in the space a long time. And so what we'd love to do is present prototypes uh around it. And actually all our calls with Scott are also in one of the folders. So you can see everything we've ever talked to him about uh including this. My last call with him was the stages. I was like, "Hey, I'm thinking of truncating to the stages. What do you think?" Uh, he also had some he was kind of intrigued by the uh by the buyer uh research thing as well. So, which is like again a product does not exist today. So, uh anyway, so yeah. So, hopefully that's kind of clear and uh I will say uh the gauntlet has been th Julia does not think you guys could research and get up to speed in 24 hours.
+
+
+
+
+00:48:19
+
+
+Evan Liang: She's like that's nuts. we have to give it all a week. I was like, let's try to go faster. Good question. Um, not on the cloud, but like your research that you've done, all the people you talk to, I'll find out and answer this in like an hour or so, but I just want to get on top. I was thinking about what I was driving over. Um, when you're talking to potential sellers and especially the 80% there. Yeah. Um, and I think this guy also mentioned it. It's like his customers want to deal with humans. That line there, right? Those 80% what we're trying to do is we're trying to get AI to deal with 80% to improve the churn rate. Um, what has the general consensus been from the 80% customers on dealing with AI when they're already going to on a short end and then throw an AI on top of that? Are they pro? Was that work in their favor or against?
+
+
+
+
+00:49:16
+
+
+Evan Liang: Yeah. So um and this is a so one of the things that we here by the way gota own that comment. Uh no no uh so that's a good question. So a lot of what we've spent a lot of time Juliana is on this positioning of the product and how to overcome potentially those objections. And for us the best way to do it is if we say we're going to go in and replace a human being we're going to face a lot of resistance. Well, we're in instead of saying it with the longtail, it's like, hey, you don't have enough time to deal with these small accounts. Yeah. You can't hire enough people because you turn it. So, you you're going to have to find a way to automate and digitize it. Might as well have an agent go give it a go rather than dropping them on the floor. Right. I got it. So, it's basically equipping them with another tool or getting them hooked up so that like they don't have to spend so much time on 80%.
+
+
+
+
+00:50:10
+
+
+Evan Liang: They just have to look, okay, this is one client. It's in 80%. Help me save it. And then it turns out just turns out a a tool like a saving grace, a hailmary, picks it up, and then it goes with it. The seller goes with it. Actually, the the best accounts uh to actually initially have agents do are not the ones that you think you're going to lose. They're the ones who are going to renew flat and shut up. So, no, no, just renew flat. So, so this it's a perfectly okay client. Let's say it's a $1,000 client, right? They're they're okay usage, but you can't really upsell them a lot. They're not going to turn. You just need to send them paperwork and have them renew. So, how if they're going to go flat, how will our product? Because today they have a human being processing that and that's very very costly and wasteful for the human being to go spend their time to get a flat renewal.
+
+
+
+
+00:51:07
+
+
+Evan Liang: and the incentive success in the commissions plans aren't set up to incentivize someone to even bother going to do that. So, you're like, uh, sales reps are like, why should I waste any of my time dealing with this customer? I don't get paid to do this. So, it's a waste of my effort. I should be spending time over here. So, they don't want to do it, right? Then you hire other people to do it, and they're just going to do paperwork, but then you realize how much it costs you to have that person just go get a flat renewal is really, really costly. So, if the agent can handle that for them, they're like, "Wait, I don't lose the money. I get my renewal done and I don't have to spend all this time spending human resources because human resources are somewhat precious." That's a win-win. Okay. So, so, so it's about like taking care of that long tail. The Trojan hood strategy is once we can take care of that long tail and we can show you work, we'll be like, well, we can take these bigger contracts, we can do this other thing and we'll just eat our way up uh and eventually take over a lot of the stuff that human beings can do.
+
+
+
+
+00:52:06
+
+
+Evan Liang: So, that's the Troj. In the case of this John Lei, part of the reason uh he doesn't believe in agents ever doing it, he may not be a good fit for our ICP, our ideal customer profile. He only really sells large contracts. They're like a hund00 million dollar company with like I don't know 400 contracts. So his contracts are quite big. So they're very white glove service. They don't really have that long tail. No, no, no problem. I um also super aligned with the Trojan thing. Like I think we talked about that in the cafe. Yeah. Um for the flat renewal rate, so I'm going to strategy. No, no. Yeah. And this is what NBA does to you. Like when you say like this is what um well these guys want to be well I mean uh do you guys well he he's going to be a Mckenzie management consultant. So he's basically like all your other MBA friends. Oh already logged in. Yeah.
+
+
+
+
+00:53:03
+
+
+Evan Liang: Oh so early in the second year. That's crazy. Getting younger and younger. Uh you're probably a startup guy, right? Yeah. I don't know. Oh, or hedge fund. Okay. It's one of the two. You're still figuring it out, but like uh you're more like traditionally like you you've done like finance and VC or stuff like that, right? So they're more business. Okay. All right. Cool. Perfect. Uh but I'm not that cloud that much cloud. So it's okay. Great. Um but um so on that flat renewal rate, the pain point that you mentioned was time that the seller has to spend on renewing a flat one doesn't make a lot of sense. They not motivated to work on it and they'll use an agent. Um which part of our product fixes that? Because it's if it's a flat one, it's basically just paperwork where they just have to turn up another documentation and that's not any of the agents we're working.
+
+
+
+
+00:54:01
+
+
+Evan Liang: Yeah. So I mean in order to do a flat renewal right one you have to identify the scenario that it is flat. So you have to like like you get an account first you have to diagnose that it's flat. Okay. So that's step one. Step two someone has to send an email to the person. Yes. Right. So it's be like and and they have to actually get in touch with the right person to make the decision. All right. That's step two. Step three is send the price. Even a flat renewal is you still have to send a price proposal, right? And it could be and then uh then the interesting thing is you may not have a negotiation that the person just signs but then you have to close. Yeah. Uh the buyer portal part is even a flat they you just have to highlight. You got to know which ones who have the profile book all that stuff. Yeah.
+
+
+
+
+00:54:48
+
+
+Evan Liang: Um so it actually it actually goes through the whole that's a really straightforward. The hardest one ironically is upsell. Oh 100%. Yeah. Yeah. because it's like I'm adding seats and then there's a negotiation I want a discount blah blah upsell is very very complicated and actually in a lot of organizations that's when the sellers get really interested yeah they're like oh I can get paid for just upselling the contract then they then there's like political downell and churn aren't political either no one wants that either because that's just it's a revenue hit so they would love to watch that like oh I that wasn't on my quot of plan commissions Perfect. Perfect. So, I understood that. All right. So, then the the most fascinating call if you guys Well, we just took one yesterday and uploaded. Yeah. H I didn't know this until yesterday. Apparently, Nvidia doesn't play sales commissions to anyone. So, we're talking to a CSM lady and she was just like she was like, "We figured out quickly that the we wouldn't be a good fit for Nvidia." And I kind of knew
+
+
+
+
+00:55:49
+
+
+Evan Liang: Nvidia is too big and kind of wonky, but she was like, "Yeah, we don't get paid on that in the company." We're like, "No one. No sales reps. No." They're like, "No one. Everyone gets paid on a corporate bonus based on how well the company does." Now, the company's done pretty well for the last 15 years. So, they just get a So, they're like, "Yeah, end of quarter, end of year. There's no rush. We don't we don't run around trying to close deals because it doesn't matter to any of our individual bonuses." No. Now, the flip side is then the They're not but but they're also not uh so they don't spike their revenue but then it actually makes it more consistent. Yeah. Yeah. Because what most businesses do is spike their revenue and then they go straight back down and then they have to they're on this weird cycle curve. And Nvidia is now now flip side is Nvidia has massive product market fit. What they do at Nvidia is like not something I'd recommend for most companies because well yeah if you have a product that's in that high demand you get away with it.
+
+
+
+
+00:56:48
+
+
+Evan Liang: But yeah, they had they that's why I've always uh they were a longtime client, but I always learned that they were like like they would tell me things and I'm supposed like marketing and sales don't even talk to each other in videos like like your sales people don't bother to pick up marketing leads because they're just like whatever. Um but anyways, all right. Thank you. Cool. No problem. But uh any of those other questions? Awesome. So anything Hannah, anything else that we need to cover? Uh when are you doing the uh verification for the passports and stuff like that?
+Hannah Fong: in about five minutes. So, you'll have calendar invites if you did not bring your passport with you or whatever
+Evan Liang: Awesome.
+Hannah Fong: documentation that you had listed um and uploaded in your in the Ripley account. Um we can reschedule. I just need to get this in within three days of today. So,
+Evan Liang: Okay,
+Hannah Fong: but otherwise,
+Evan Liang: awesome.
+Hannah Fong: if you did bring it,
+Evan Liang: Awesome.
+Hannah Fong: meet me at your uh a lot of time and we'll quickly go through this.
+Evan Liang: So, let's Yeah. So, we'll get let's get that done and then um Yeah.
+Hannah Fong: We'll be we'll be done before 11:30, Evan, for lunchtime.
+Evan Liang: Okay.
+Hannah Fong: I was I planned that on
+Evan Liang: Perfect.
+Hannah Fong: purpose.
+Evan Liang: Sounds good. Sounds good. Thanks,
+Hannah Fong: Cool.
+Evan Liang: guys.
+Hannah Fong: Bye, everyone.
+Evan Liang: All right. But
+
+
+
+
+Transcription ended after 00:58:30
+
+
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.

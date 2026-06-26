@@ -1,0 +1,517 @@
+﻿📝 Notes
+Jun 19, 2026
+stand up
+Invited Aaron Rose Cooper Tenney Dean Liang Evan Liang Parth Goda Rajesh
+Attachments stand up
+Meeting records Transcript 
+
+
+
+
+Summary
+Meeting focused on architecture alignment and product positioning with shifts made to daily stand-up scheduling.
+
+Architecture and Development Strategy
+Development focuses on core logic using dummy data to avoid premature complexity. System architecture prioritization prevents product module divergence.
+
+Product Positioning and ICP
+The product strategy targets autonomous account management for leaders at companies exceeding 10 million dollars in revenue. Value proposition centers on providing visibility and measurable deliverables for renewals.
+
+Operational Adjustments
+Team agreed to schedule the final daily stand-up at 5:30 PM to optimize workflow efficiency. This adjustment ensures a continuous block of focused work.
+
+
+
+
+Decisions
+Aligned
+* Development restricted to dummy data The team will continue to use dummy data for at least one week to ensure module definitions are clear before integrating data pipelines.
+* Autonomous agent product strategy The product strategy is established as building an autonomous agent to replace AMs rather than acting as a co-pilot.
+* Development scope focused on two agents Development efforts are restricted to the champion and language agents, while work on the injection and output agents is paused.
+
+
+We've updated the Decisions section using your feedback.
+Let us know what you think: Helpful or Not Helpful
+
+
+
+
+Next steps
+* [Juliet] Create Value Deck: Develop a presentation deck to refine the overall product value proposition. Use the deck for customer validation research.
+* [Evan Liang, Juliet] Present Deck: Present the value proposition deck to AJ on Thursday. Gather feedback during the session to assess the proposed product strategy.
+* [Cooper] Secure API Data: Build a secure pipeline for data transfers between steps. Maintain context while eliminating security risks associated with shared API keys.
+* [Evan Liang] Validate Hypothesis: Validate the product hypothesis with customers using the new value proposition deck. Incorporate findings to refine product direction.
+* [Aaron and Unnamed colleague] Narrow project focus: Focus specifically on the champion agent and the language agent. Cease development on the injection and output agent.
+* [The group] Validate waterfall module: Demonstrate different scenarios using simulated data to confirm system functionality. Prepare the module for client presentations.
+* [The group] Analyze MCP data: Investigate small accounts using the Multi Channel Platform to assess contact engagement and task data. Determine availability of required information.
+* [The group] Coordinate AJ demo: Schedule a one on one meeting early next week to discuss presentation goals and content. Align on individual demonstration responsibilities.
+* [The group] Reschedule standup: Move the end of day standup meeting to 5:30 PM. Ensure all meetings remain under 30 minutes to improve efficiency.
+
+
+
+
+Details
+* Meeting Logistics and Note-taking Bots: The participants discussed the use of automated meeting assistants, noting that certain security settings currently prevent external bots from joining their sessions. There was a general observation that many business meetings are now attended by multiple notetaking bots simultaneously (00:00:01).
+* Product Development Status and Blockers: Evan Liang initiated the meeting by shifting the focus from standard status updates to identifying blockers. The goal is to move from a locally coded dashboard to a system that can ingest and process actual data, though Evan Liang advised against focusing on complex data stitching for now to allow for better definition of module functionality (00:01:15).
+* Data Architecture and Security: Evan Liang emphasized that for the next week, the team should continue using dummy data. This approach prevents premature integration of security and compliance complexities, allowing the team to focus on validating the core logic of each product module before building the data pipeline (00:03:19).
+* Micro-Agent Development and Workflow: The team discussed the development of six specific micro-agents, including injection, proposal, output, language style, drafter, and champion finder agents. Currently, these are being refined using dummy profiles and email workflows to test system logic and ensure that each agent functions correctly in isolation before wider integration (00:04:33).
+* Agent Demonstrations: Participants reviewed the functionality of specific agents, including the Response Agent, which performs sentiment analysis and detects buyer intent, and the Champion Finder, which researches stakeholders and manages organizational charts to identify the best person to contact (00:08:23).
+* Security Infrastructure: The team is working on establishing a secure environment, which includes moving API keys from shared to non-shared folders and developing a pipeline to transfer data between product stages while maintaining necessary security protocols (00:10:22).
+* Strategic Design Alignment: Evan Liang noted that the individual product modules are at risk of diverging into different directions. To prevent this, the team must prioritize defining the overall system architecture to ensure all parts fit together cohesively, rather than focusing solely on individual feature sets (00:13:25).
+* Ideal Customer Profile (ICP) Definition: The team confirmed that the ideal customer profile consists of companies with at least $10 million in revenue or Annual Recurring Revenue (ARR), with a particular interest in Private Equity-backed firms. The primary budget decision-maker is identified as the Chief Revenue Officer (CRO), while the primary users of the software will be Account Manager (AM) leaders (00:17:49).
+* Autonomous vs. Co-pilot Positioning: The long-term product objective is to build an autonomous agent that assists AM leaders in managing high volumes of accounts, rather than acting as a co-pilot for individual Account Managers. The product aims to enable a single leader to manage significantly more accounts than current manual processes allow (00:19:39).
+* Value Proposition for AM Leaders: The value proposition for AM leaders is to resolve the "black box" of account management. By providing concrete visibility into account health, proactive tracking, and specific deliverable milestones, the system will allow leaders to move away from reactive, haphazard processes toward a structured, manufacturing-like approach to renewals (00:22:22).
+* AI-Driven Process Measurement: The team determined that AI is essential for making the renewal process measurable. Every step of the process must result in a concrete, verifiable deliverable—such as an email, a deck, or an action plan—which allows leaders to monitor progress and identify where deals may be stalling (00:26:29).
+* Engagement Tracking: There was a discussion regarding the implementation of tracking metrics for deliverables, such as renewal decks. Similar to "SlideShare" functionality, this would provide sellers with visibility into whether stakeholders have opened, viewed, or shared documents, providing actionable insights into buyer engagement (00:30:20).
+* Value Proposition Deck Development: Juliet is assigned to create a deck that outlines the overall value proposition. This deck will be used to test the team's hypothesis with customers next week, specifically focusing on whether the promise of visibility resonates with AM leaders (00:33:32) (00:39:41).
+* Account Intelligence Strategy: The team discussed the strategy for identifying key stakeholders. When initial internal CRM data is insufficient, the process will involve an "enrichment waterfall," using tools like Clay to crawl data sources such as ZoomInfo to find the correct contacts. If identification fails, the system will prompt the user to escalate to the CSM (00:35:41) (00:45:30).
+* Upcoming Client Demonstrations: The team is preparing for a demo with AJ, an AM leader, scheduled for Thursday. The goal is to validate the stages and visibility features, ensuring the demo illustrates clear, measurable deliverables rather than just showcasing the backend technical implementation (00:40:49) (00:48:12).
+* Working Cadence and Meeting Frequency: The team evaluated their daily meeting structure. While some participants preferred one-on-ones, the group agreed to maintain two stand-ups per day to ensure alignment, provided they remain efficient and focused on operational tasks rather than deep-dive troubleshooting (00:49:26).
+* Schedule Optimization: To address concerns about efficiency and work-life balance, the team agreed to shift the final daily stand-up to 5:30 PM. This adjustment allows for a more continuous block of focused work before the meeting and provides a clearer end point for the day (00:54:31).
+
+
+
+
+You should review Gemini's notes to make sure they're accurate. Get tips and learn how Gemini takes notes
+How is the quality of these specific notes? Take a short survey to let us know your feedback, including how helpful the notes were for your needs.
+📖 Transcript
+Jun 19, 2026
+stand up - Transcript
+00:00:01
+
+
+Evan Liang: But it's it doesn't like pop up as a side panel like Gemini or like Tactic or whatever, but it joins the meeting as like a bot. Yeah, there's a lot of those. Yeah. But um there's like some admin like setting that we have turned off that doesn't allow bots. Okay. Oh, so so Firefly is trying to join so I can emit entry. Yeah. All right. Well, we'll see if this works. Do we have to have our accounts on still or like what do we have to have does it track voice by account like by account talking or like it should we're only on one account. Well then you're not going to join audio yet. You're not on audio. So we'll see what it does. Um, yeah. No, there's uh like if you ever join like webinars these days, uh, everyone has their noteaker meeting thing and just seeing like noteaker not or you're like a one-on-one with people's meetings and you're like there'd be two people meeting like three notetakers coming in like dude, so it's kind of Yeah, everyone's got these balls.
+
+
+
+
+00:01:15
+
+
+Evan Liang: Okay, great. Um, stand up. Uh I have some um some stuff that I can go over that's a little bit uh more meaty on some takeaways, but let's go around and say like, "Hey, um actually, yeah, this is like the first one where we don't have like a deadline, right? So go around just say like um not so much updates, but like hey, are there anything you need that that you're blocking or anything that you need from other folks so that uh you can kind of get to your uh next?" So just go around this way. Sure. Um yeah, so I've kind of integrated some of the feedback from Scott into the um the admin dashboard, including like this snapshot um of all the accounts, sort of similar to what Aaron had in his um thing. I guess what I'm interested to see is like, okay, how do I progress it from a just a bcoded local dashboard to like something that can actually ingest his data this the proposal and like feed it in like I don't know how to connect it really rather than having stand.
+
+
+
+
+00:02:17
+
+
+Evan Liang: So curious if you guys have any ideas um I think uh yeah we can talk about that. I think that's probably originally on the timeline that was a little bit later on, but it's good to have those discussions now. And this is actually probably where like getting like uh more like experienced dev help will be helpful in terms of the connection connecting stuff. Yeah, I mean I have some stuff on that that kind of ties into what I've been doing. Um so I guess I can just like answer that and maybe go. Um, but from my understanding like from a security standpoint when we call the MCP, we don't want to be like it doesn't make sense to to have me normalize it and call it and store all that data like in our own database or whatever because then we have to be up on security compliance and all this stuff. Yeah. Don't do that. So yeah. So if we instead if I still normalize it and then I basically come up with the MCP call that is normalized.
+
+
+
+
+00:03:19
+
+
+Evan Liang: Yeah. So all on your end instead of the synthetic data or whatever you had saying like you know 6800 is the Uber's ARR you would call my command that just says get ARR for and then you'd pass in like the Uber ID. Um, and then on my end that would be run through something that calls the MCP but normalizes it. So like all you see is yet call or get ARR but it might be ARRC on lean data's end and it could be monthly but that would have been things that I already normalized. So that call still gets that value but then multiplies it by 12 and knows that it is um yeah so I'm going to put a little bit of a pin in this one because uh I think we're still in the uh phase of doing product definition. I don't want to stitch things together too quick. I I know we need to give an overall thing and I I will discuss that. But if we start uh trying to spend all this time stitching together the data and passing it, it's actually going to distract from actually figuring out what each of these steps does pretty well.
+
+
+
+
+00:04:33
+
+
+Evan Liang: You know what I'm saying? And then it makes it harder to change because you're so focused on like passing the data that you're not thinking about what should the module do. Okay. So for now, I still say uh for for at least another week, use dummy data. And then let's uh revisit this once we're very clear around what each module does. And that that's actually what I want to talk about in my section. All right. my end um based on yesterday's comment feedback and just me going through the demo itself, I've redone the entire thing really focused on my six micro agents profile and right now um they're all working. They're all good. Um but I'm just refining them even more. Okay, so for an example for my language model, I'm kind of building the workflows like how do you in introduce a new profile like Evan? So I choose emails, put it into the system and then how does that work? How does that look like and then once it's inside you can test it on like coming up with fake scenarios and once you like the way the system works and then um how the entire now uh agent work with this new voice profile.
+
+
+
+
+00:05:43
+
+
+Evan Liang: So working on these nuances of do you want to share real quickly just because it'll be I'll save us time just because in the session it's probably worth just come up with a new demo. Are you ingesting dummy files or no? What does that mean? Yeah, of course. Everything is dummy. There's nothing. Wait, no. But are you like ingesting a because there's no way you can actually run an agent without the API key. So I'm No, no, no. It's I'm building the workflow and the logic behind it. It's like the only thing that's left is the API key. What I meant by that was um like here's the right now it's Emily Christina and then what I did was um I can go into I'm muted that was
+Aaron Rose: Go
+Evan Liang: me but okay I can go into settings I can I can delete this one I can import a file so I create this files all of um Evans email he okay put it together it it kind of took and then this is just random stuff okay and then it kind of built this a little bit renewals process market because you were talking about all these things in the emails uh I can adjust more of these if I want to and then um I'm going to save it first so now Evan
+
+
+
+
+00:07:08
+
+
+Evan Liang: has no profile and then at the bottom here this is not real go back and be like see a situation where we are renewing a high churn line and then it like generates some sample outputs here. These are not real. Yeah. Okay. And once that is that is done. So then um I'm going to save it. So basically what I is I'm logged in as Evan and then um as a dashboard all of this would change to Evans accounts and then it will show also like when you want to generate something new it will kind of create a new recommended followup in Evans voice because of all the profiles I've built. Got it. Okay. Yeah. So that's what I'm like working on this tiny tiny nuances for all of my six agents which are I can talk about later. What are your six agents? Uh my six agents are injection agent from Aaron proposal agent output for dean and then the four in the middle is language style which I just showed you drafter.
+
+
+
+
+00:08:23
+
+
+Evan Liang: So how to based on the improve based on the scenario context how to use a language and come with good output. Correct. Response agent. This is real already. I can show you guys this now. Basically, analyzer analyzer of my sentiment, the customer sentiment, putting scores on it, recommendations, how to how to approach it in your champion finder. Okay, fair enough. Yeah. So, um if you guys want to see the other agents, yeah, I'm going to share my screen again. So, the first two, the input output, those are hidden agents, but something like this. This is the um agent called um response agent. So every time there's a response, it kind of comes up with the analysis positive buy signals detected intent. Um so yeah, that's one of the agents and then the champion finder. What I've built is this kind of thing. So or chart champion research. Okay, who's a stakeholder map? Right now there's a champion. There's no need to look for another one.
+
+
+
+
+00:09:23
+
+
+Evan Liang: If there is a need for look for another one, um, let me see what I can find. Uh, departed, re-engaged like this where the champion has left. So, we've moved on to Marcus Hill. And there's two options, Marcus or Diana. So, between these two, the champion research shows that Marcus is better for now. It doesn't. Okay. And that's the fourth agent. And then, um, drafter agent I already talked about. Yeah. Cool. These are all I'm basically making this more real prototypes as of now. Okay, that's helpful. Uh, got it. That's helpful contest. Okay, cool. Uh, and then the the ask you had yesterday that I think is worth is like, hey, for you, you like to see the overall context of the whole thing. Yeah. Yeah. Uh, that was an ask you made yesterday. I think it's worth calling out. Um, yeah, correct. So, the overall context would come from him also and also from the emails that I back and forth.
+
+
+
+
+00:10:22
+
+
+Evan Liang: Well, no, no. He's like, hey, how does it where does this a where do all the agents sit within an overall thing? That's an important part for for you. Yeah, this dashboard or like what I've built is the overall portal of the Reno agent. I think that what I'm laying is the foundation for how all of these bots would come back come into this particular thing except for his ones because his are different portals. Okay. Well, let's talk about that. Uh but that that that was a good ask that you made. So, I just want to leave that there. Okay. Cool. D cool. Yeah. Um, mind the things I'm just basically starting to actually like try to see if I can like build the whole thing like with the proper ingestion and all of that. So like also like taking into account security concerns everything. That's why I just spent some time moving the API key from a shared folder to not shared folder.
+
+
+
+
+00:11:10
+
+
+Evan Liang: Um, yeah, that's I hadn't done much work on that yet. So I'm just going to start start probably all today. My goal is probably to finish it by today is get a fully like fleshed out secure way of doing things. I have to figure out how to transfer the data from each steps in a way that that keeps the context but doesn't like bring any security concerns, right? So obviously going to use W data but try to get the pipeline from each step together. Which steps it's going to be like obviously I have to ingest data from par. I also have to ingest data from Aaron, right? To fill like there's the part of filling in the data in each slide, right? Getting the AR correctly, getting them all back correctly. Then there's also the part of getting those slides templates through and making sure that they're divided into their correct blocks. And then there's finally understand the context to like build the story. So those three sort of segments of making sure all of that is I have at least basic architecture on how to do that for like a potential design partner which is different than what I had previously.
+
+
+
+
+00:12:11
+
+
+Evan Liang: Uh, fair enough. Yeah. And then for me, I've just been like I I incorporated some of Scott's changes, which is looking at it quarterly also. Yeah. Simplifying the dropdowns, um, all that. And then been thinking a lot on the security side. How do we like, yes, store the data? Because we probably don't want to be storing it all at once, but then that also means do you want to call it every single time that you open uh a menu? And so been looking into that. Um and I think that will be one of like the main things at least before like also trying to make all the parts real so like it can actually search the news trying to calibrate that make sure works. Um, but I think at least from my part, I kind of need the real data for to like calibrate the things that are actually making sure that we know if it if we want to upsell seats on this one or downell or whatever, right? So, I've been yeah trying to work with the MCP, get that working and hopefully just by getting it working eventually everyone will be able to query it.
+
+
+
+
+00:13:25
+
+
+Evan Liang: Okay. Easily. Makes sense. Also, I said over my design scheme. Yeah. Yes, you guys want to start. That was great. Yeah. So, I already did that. This is this is a design scheme version of I mean it's not it's like so it still looks close to your than yours. I don't mind implementing it as we speak. Yeah. Okay. Fair enough. Uh comments. Uh so let's see. Okay. We'll stay on the product stuff. Yeah. So I do think uh one of the things uh your comment par about giving you guys the overall design and how everything fits in. I think we're at a stage where we should spend some time making sure that happens uh because uh I think each product is and how people are approaching it are going in slightly different directions and that's going to be a little bit chaotic right uh around it. Um so that that's a worthwhile exercise.
+
+
+
+
+00:14:18
+
+
+Evan Liang: Uh I uh it's and it's good to have that now. Uh part of the reason we didn't have it coming in is we wanted to design the stages and validate them. Uh by looking at the stages and how you guys build it, it's going to give us ideas around how to stitch it together. So that's what I want to talk about is I do have a hypothesis of how to stitch it together and it does then impact each of your products slightly, right? It doesn't change things. But it's it's a good exercise to get through. Um because uh if not if we don't add that layer of context, you guys are going to go in slightly different directions and we're not going to show h how this all fits together. So that that that's important. That's my one takeaway. Um, the fact that we're here right now is a good thing and it's a uh it's a credit to you guys moving quickly on each of your individual areas because watching you guys iterate and uh absorb the information how you guys build helps us understand uh understand the overall picture better and also some of the customer calls around it.
+
+
+
+
+00:15:22
+
+
+Evan Liang: So let me spend some time giving you guys the hypothesis. We may take some time to be like, hey, let's question the overall hypothesis. Does it work? Uh Juliet will work on a deck uh around like honing the value proposition. Uh and then once we look at that, then we can uh have a little bit more give you guys more clear definition around the priorities of each of your products. Uh some of your products actually may be closer together. Some of your products may be slightly different. Uh, and then that could determine like uh like how much we spent. Like there's there's a part of me that wanted you to get the MCP, but then now I'm just like, wait a second, maybe like is that a good thing or a bad thing depending on how we prioritize certain things because then brings in security concerns and stuff like that. So, all right. So, here's my hypothesis uh both from watching your demos and going through Scott as well as um as well as some of the customer calls.
+
+
+
+
+00:16:21
+
+
+Evan Liang: But maybe first uh giving you guys a little bit more context. Awesome. So, in order to successfully sell into a a client, uh there's there's two key folks generally that you have, it's like you have the budget owner, right? Whose budget this comes from, right? And then you have like the champion. I want to switch. Switch. I'm sorry. Is this selling paro or is this selling parados? No. So, look at the other room computer. And don't worry, my handwriting is so bad. I just need you guys to get the not uh it's a little bit better. This is the this is a problem that Beex is all just like you ran into it problem. super uh the uh the white whiteboard markers actually working is a unsolved problem inside I can't believe how that issue is both of these issues should be really simple the big one big one okay so when you think okay so actually most companies think of something called their ICP so as part of the ICP ideal customer profile it's like who do we sell to.
+
+
+
+
+00:17:49
+
+
+Evan Liang: So the the three steps we had to figure out is like who are the companies that would actually value our product? What types of companies, what industry, what size, blah blah blah. So the first thing we uh had a theory that we pretty uh validated is we believe our ICP is companies that are like $10 million plus in revenue or ARR, right? Uh because if you're smaller than that, you're just focused on new business. You don't need a lot of renewable. A lot of the calls people were talking about, yeah, like yeah, we're not going after like YC companies, we're going to go after a little bit more mature companies, right? Uh we also did validate that like, hey, if we can get to like PE back companies, that would be pretty interesting as well because they care about both cost and revenue side. So that's the first part of ICP is what types of companies. Then the second question we spent a lot of time trying to answer is who are we selling to? So there was a period in which you listen to the calls.
+
+
+
+
+00:18:41
+
+
+Evan Liang: We were talking to pricing experts, CFOs, CRO's, chief customer officer and then finally we landed on that we think that this uh the budget holder or decision maker depends on how you call this was actually the CRO, right? And then the sales pitch you guys are practicing for next week is what how do we pitch the CRO? That's not actually initially what I thought it would be. I actually thought CRO's don't give a s*** about some of the renewals and they would be harder, but we ended up doing the research and coming up with CRO's and then we had a a value proposition for the CRO, right? Which is what you're practicing for next week. It's like that they care about the scalability thing. Now, that's the CRO. So, we're pretty confident we can get a CRO to care. But then the CRO doesn't do this. The guy who days today manages paro would probably be the account manager leader. So AJ, he is not the rep, he is actually the leader of it.
+
+
+
+
+00:19:39
+
+
+Evan Liang: So then uh that's who and that's who we would be demoing. So the CR is going to be like this is good. Then he's going to put us in touch with an AJ or someone like that and then that's when we have to what you guys are building is to demo a product that would appeal to them. Right? Right. So, we pitch the CRO, but the AM actually uses it. Correct. The AM leader leader. The AM leader puts the the mandate and the AM uses it. No, we're pitching the AM leader. Yeah. Yeah. So, this is the one that we get the buying from because once they say okay, then they're under use it. Uh, so here's one that we should talk about and make sure we're very very clear on. Our long-term goal is to replace ams. So we are not going to be uh uh again this is this autonomous versus co-pilot. We are not trying to be a co-pilot to the AMs.
+
+
+
+
+00:20:32
+
+
+Evan Liang: We are trying to build an agent that the AM leader will use in place of their AMs. Got it. Right. So that's really like things like one of the other things like key design principles is this should be autonomous not a co-pilot. Yeah. So, uh, and so in your demo, I can see some of the like you're like, "Hey, the voice of the AMs, I'm mimicking them." Like, if it's an autonomous agent, why do I care about the voice of the AM? Yeah. Right. Like, I don't want Emily West using it. And those are real people I know. She's a very good AM, but uh, our goal is especially in the long tail. The problem with the long tail is they don't have enough AMs. Yeah. Now one theory you could have is that hey if this stuff automates enough a thing a single AM can manage 400 accounts instead of managing like 100 accounts but if you take that to a little bit extreme if you're managing like a thousand account you're an AM leader you're not an AM you don't have enough time to do anything yourself.
+
+
+
+
+00:21:29
+
+
+Evan Liang: Yeah. Okay. So the question is what's the AM leader? Uh we have not answered and why we were building the prototypes we have not answered what the value prop is for the AM leader. The value prop the AM leader is not the same as the CRO for what uh the the AM leader may not be like jumping up and down being like oh yeah I can scale my revenue infinitely and I don't have to bring on people and hire that's not necessarily as appealing to them one they don't think that far ahead they probably don't care about budgets and some of stuff they're just like I'm just focused dayto day on my accounts so the ballet prop there was a little bit different having you guys demo and demonstrate in the stages is helping us understand what they care about. So my So again, I just want to highlight we know what this is. We know this these things is what we spent the last couple months understanding. We feel pretty good about it, right?
+
+
+
+
+00:22:22
+
+
+Evan Liang: uh for the champion watching you guys demo looking at Scott looking at thing I believe what one of the their biggest pain point is in the long tail as an AM leader let's say you manage like 400 accounts today you don't have a very good sense of what's happening in those accounts because you have all these accounts and this is a very these processes are you kind of are very reactive your AM's going after is so you just kind of have a you don't it's not very u methodical the process steps and it's not very um trackable or measurable as well they they they kind of guesstimate a little bit around it so our I believe the value proposition we can really deliver and what you guys in your products is this concrete visibility into each step of your process and actually tell them so uh and that's going to vary by AM leaders. So, so my example is on some of our calls, the ones who are just like just started a new job and stuff like that. They don't even know Aaron stuff.
+
+
+
+
+00:23:31
+
+
+Evan Liang: The idea of like my 400 accounts and what is the status of those 400 accounts? That's befunding them. They're just like, I got 400 accounts. I can't get a sense of what's going on. So, all I want to know is just which ones are going to turn, which ones are upsell and sell. They're kind of stuck there. Some of those are like, I got that. Then their question is like, who should I contact and I get stuck around those, right? Then someone like Scott who's really well organized, why he was very intrigued with your demo was he's like, I know I have that stuff down. I said, why don't my my buy buyers go dark? So there and invariably in their steps, there is something because they have so many accounts where they just there's a dark space that they don't understand and that's very valuable to them. Filling in that dark space gives them more confidence that they understand their accounts and that they can review proactively. Does that chive with what you guys is seeing or so like that?
+
+
+
+
+00:24:31
+
+
+Evan Liang: And then why what we're providing them that they haven't had beforehand is each of your demos is a very concrete step. It's like a manufacturing plant. Like if you want to go automate how to build chairs, each machine has to be very very calibrated, very precise, very simplistic, right? Like a chair has legs. If you look at the leg, it's kind of stupid. You're not going to be like, "That's amazing." But the machines, if you're watching a factory for what they produce, you're like, "You got to be kidding me. That's all this huge machine does is produce this little tiny thing, but it's just very precise around and it's very measurable and calibrated around that little thing, right? So that's why when you guys are demoing, you're like, I don't see how great. And what I do see is scope creep from each of you because you're trying to make your demo more impressive. So you got to scope creep and add things. That's why we keep on reigning you guys back in being like, "No, no, no. Don't go do all that.
+
+
+
+
+00:25:28
+
+
+Evan Liang: Just focus on building a great le, right? Uh because we will stitch it all together." So if you build a great leg, you create a a great seat, right? The the the seat, not not the like, you know, instead of the whole chair, the seat itself, you build a great backside, we'll stitch it together with screws, but you need to be great at your process and make it very measurable. Many of your steps today are not measurable because what the AM leader is, he he's like, he may not know his accounts. He hands it over to an AM person. He just expects them to figure this out. And they aren't very methodical, unlike a factory floor. They're like an artisan. they're not very methodical about what they are doing. Uh and so for us making each step extremely measurable, concrete and deliverable is valuable because then we can overall actually build a manufacturing process that gives visibility to the AM at any point in time. They should be able to in our in our system pull up and know exactly where something is and have much more granular detail than they do today.
+
+
+
+
+00:26:29
+
+
+Evan Liang: And that is valuable for the longtail AM leader. That's what we would pitch to them is, hey, you got this black box. You got too many deals. You're always firefighting. You don't know what's going on. We're going to give you all this visibility into what it Now, some of this sounds like workflow and just process engineering. It's like why is AI? Well, because in order to make each of these steps measurable, you actually do need AI, right? Like in order to actually produce email, that's actually really like autoproducing, that's really hard without basic AI. Right? In order to access all these signals, AI makes that a lot easier, right? That's why this this stuff hadn't been previously automated. But we don't need um this is the opposite of how some people are building AI, which is like an LLM is like you can prompt it anything and it'll back an answer, right? But it doesn't actually break down the steps. So, we're doing the opposite of that.
+
+
+
+
+00:27:25
+
+
+Evan Liang: That's where our value is going to be around visibility. Let me pause there, see if there's any questions. agreement, disagreement, and and this would point to what you're looking for is like that overall dashboard is going to be we have to be very clear on each step and how to measure it. That's that's my question also. I kept missing the word measurable, measurable. Uh are you looking at just like the how well the outputs are doing or how well it's affecting the champion's ability to do their job? What do you mean by measurable? measurable in the sense that there's uh one of the things that I like about what you guys did was each of the steps is a deliverable. Okay. So yours says like the deliverable is an action plan. Deliverable is a story or a deck. Deliverable is an actual email. Deliverable is a buyer hub. Uh that was kind of a little bit of test. I actually like that a lot. Today these people aren't um they don't aren't that as processoriented.
+
+
+
+
+00:28:26
+
+
+Evan Liang: Most of them don't create a renewals deck. Majority of the time they don't create a renewals deck. But if you think about it, uh it's actually a good exercise that everything has goes through that process. The renewal, what the renewal deck really is the why of how I'm justifying my price. Yeah, you should do that for every deal. At least think through it. You may not have to deliver the deck, right? But you someone should think through that. They often don't, right? They're they're often just sending it and just like without so like a lot of times yeah they send they're just like they're really busy. They're just like I'll just send the renewal see if they renew. What you should do is research the company, research the people, justify it and then find out if they answer their questions for them. Yeah, they just skip all that. It's just this is why I'm saying it's a very haphazard process. It's like, oh, I'll just send the renewals.
+
+
+
+
+00:29:20
+
+
+Evan Liang: And so for enterprise deals, they do think through all these steps very carefully, the good ones. Um, so but that's why uh that's why what we want you guys to do is very much focused on what is that deliverable at each of these steps for each of you. And if we actually deliver that thing in a verifi verify someone can verify that we deliver that we actually built the rationale of that that then makes it a lot more this process a lot better. Yeah. So don't worry about stitching it together. Get the deliver right and then we'll figure out stitching. But we we will start talking about the stitching. Yeah. Because that's why I it's really important the value prop to the AM is really important because that determines how we're stitching. Yeah. So if we believe it's visibility, right? I'm giving you visibility. That actually changes something. So for example, Dean's um deck, right? Uh he delivers a deck that's good enough. It would be better if we could track if someone actually looked at the deck.
+
+
+
+
+00:30:20
+
+
+Evan Liang: Yeah. So this is where yours two things may actually slightly merge because uh actually there was have you guys heard of a program called Slides Share? Anyone? There was a period in when people were delivering programs called something called slides share that was actually a bunch of HTML pages for the slide. But what was good for the people who were delivering slides share is they could see how many times the buyers whoever they sent it to saw the deck, who they shared it with, how many times they viewed it, which pages they viewed it, how much time they spent on the deck, you know. So you could imagine where like I want to really measure engagement with the deck that uh Ding does. Maybe that sits on the that's the beginning of the buyer port portal, right? You click through it and then there's more information than that. But we would want to give the seller total visibility into they even open it. They didn't open it. That's one thing. Oh, they opened it five times.
+
+
+
+
+00:31:15
+
+
+Evan Liang: They sent it to seven people. Okay. Right. And then where else did they go? Well, they need their contract. They need some other things. Right? That that that becomes that that that gives us a value proposition to to the buyer. To clarify, it's visibility, but everything's automated. So, it's like not not like I'm waiting to send it. It's like no, they can see it was sent or they can see it was generated, see what it was. Okay. Yes, we want to move them along and stitching it together is actually part of the value right now. I could see this scenario I thought about this. We really offer visibility and like you guys build this great buyer hub. I could see like one of the enterprise sellers being like, "Hey, I want to send that. I'm going to control it and all the commission. I've already done all my research. Can I send that buyer hub link?" Yeah. So, we may have to make it a little bit flat.
+
+
+
+
+00:32:09
+
+
+Evan Liang: I don't think we would stop them, they would lose the value of the outcome because you're not getting it. But, um, embedding it so that they do it, it's not a bad thing because then if we actually can measure the enterprise, we it's easier for us to then go own the rest of the business. So, we're like, hey, look, you actually like these tools we measure. You don't actually need some person to be jumping between it. Yeah. So this is go ahead. Quick question. This is less less of a big picture thing, but I think you just said that you want the buyer hub to start with his slides. Is that correct? Or was that just an idea? That's an idea. That's one idea of hey, it would be interesting to measure the deck, right? Yeah. Uh now the flip side is depending on the vir what we really care about in your thing is delivering the story. Sometimes and this is where like sometimes a story is like hey they don't need a deck just send the quote right it could be don't send don't send a deck right uh but if you are sending a deck it would be nice to be able to measure the deck but it's an idea it's an idea towards measuring the measuring visibility but doesn't have to necessarily be that way helpful there okay so this is the hypothesis and theory uh and what I noticed.
+
+
+
+
+00:33:32
+
+
+Evan Liang: Yeah. Again, I'm willing to bet every customer we engage with, if we pitch, so Julia's going to turn this into a deck that we can test with customers and test like, hey, just like the top, does visibility matter to them? So far, my calls have just been market research. I didn't have anything to pitch them. So then they would turn to like, hey, Mr. AM leader, if we get rid of visibility, let's see how you react by stages, right? And my guess is different leaders will will gravitate to whatever stage their pain is. Yeah. Right. And then what we want to do is get them to be like, "Oh yeah, we'll solve that painoint for you. Is that painoint worth engaging with us on a design partnership, but by the way, I I we are subject to wheel. I'm just going to solve these other pain points that you don't know you have yet, right?" And moved you along into it and you actually want us to do it all. uh there's a flipping in the software where uh uh with in enterprise sales where you go from like hey I'm learning from you to like I'm the expert and you should learn from me and that's a key point in which you kind of can close the deals with with folks like I remember there was
+
+
+
+
+00:34:40
+
+
+Evan Liang: like um Ireel's a really big company and uh and leaned out in the early days their CTO was like I need you to like like I have this complex flowchart blah blah blah blah blah can your product inest test that flowchart and make that happen. And then uh and then it was a big it's a pretty big account for us. Uh and then Kelvin was like, "Yeah, we can do that. But your flowchart's kind of bunk. I can make the flowchart just look much more simpler like that and it'll do exactly what you did." And I was like, "Awesome. You're hired. Do that." Right? Like you can flip it on their heads and that they're around. So I think it's worth for us um what I'll do is uh like I said that's what Julian and I will put together the deck hone this value proposition right so we'll look at the overall dashboard but then uh if we're going to try to validate that but then that's where I'm going to try to simplify each of your products in this area.
+
+
+
+
+00:35:41
+
+
+Evan Liang: So like kind of like I think Erin your step is you're basically giving us account intelligence. Yeah. Right. Like hey what is going on with the company. Right. Right. Uh part where I really want you to focus I like the the thing is you're going to try to focus on the people. So I understand the account. Now I need to understand the people I'm going after. Who? What? When? Why? The who. Right. I need to figure out who I shall say that this part of your demo. It's like, hey, who is this person? And then I need to get them to engage with us. Yeah. That's the what and then when is like when do we trigger it? Sure. Yep. And then then uh how is like the tone and this and that. So like Yeah. But I I don't think that I I like what you're doing, but you're going to probably find out when you're just engaging with them, it's actually uh the tone is easier than you think.
+
+
+
+
+00:36:36
+
+
+Evan Liang: Yeah. It's just it's going to be like, "Hey, your renewal is coming due." Yeah, that's it. Hey, are should we get should we should are you the right person to like, "Hey, the renewals. Do you want to get this process started?" Got it. So, who's quite difficult because mostly come from external sources. Um like most companies have sub they have they have some information. So, so there's a there's a theory called buying groups. Yeah. So deep laugh these linda spent a whole bunch of time doing this mostly not done it's been difficult. So inside the company database MCP for each account they have a list of contacts perfect so that that you would start with most of them are dead or useless but uh actually this is where being longtail is really helpful. Enterprise account you could have 400 contacts in there. It's massive. Longtail they usually only have a few and that actually benefits us. Yeah. So, they only have a few, some of them are no longer at the company, blah blah blah.
+
+
+
+
+00:37:39
+
+
+Evan Liang: But you're just trying to cycle through the people. Yeah. To figure out who it is. You would do the internal cycling first and then you would go external. Sounds good. You know what I'm saying? Uh around it. There's a small data sets. Uh and I like how you thought it was you made it an orchart. Sometimes we can't figure that out. Yeah. Exactly. Yeah. You know, it's going to be a little bit. So who Dean is like kind of the like why like this ability to tell the story and you will need to knowing the account data and who will help you tell your story right uh why and that's the storytelling part of the art again it becomes the deliverable some sort of like story deck makes it a little bit easier and then um for you Cooper it's just like it's a little bit of how they're going to buy like what information they need. You are actually actually once he engages a key part of yours is who else they remember Scott said who else they send it to.
+
+
+
+
+00:38:40
+
+
+Evan Liang: Did they engage the CFO procurement all this other stuff? You want them to share that information and all this other stuff because uh that tells us how we can close the deal. So we know the champions the champions ready to engage but we also know other people have to engage now right and they need more different types of information and all this other stuff how they get engaged and all this stuff and then once you do that then we can negotiate and if you think about it if I know all these other steps yeah my handwriting is really what does it say about method how this why you get like project managers with good handwriting like that less people with better uh what was I going to say? Uh the negotiation, if you imagine like negotiating when you know all the account details, who the details, who else is involved in the company, what your own story is, you're going to be much better prepared to negotiate than if you just jump in there uh and do that. And then if you negotiate well, the closing process should be very very simple.
+
+
+
+
+00:39:41
+
+
+Evan Liang: Especially because in here you're gathering data around who are the signers, who are other people needs to get involved. capturing all that information makes it a lot easier to close. And sometimes uh people, like I said, they don't do this methodically, especially when you throw hundreds of accounts at someone. They would like to, but they just don't have the time. And that's where AI agents would really help. Imagine if we could make everything a true process because we're not constrained by the time of the people. Okay. So, if that helpful, then let's look at each of your uh processes around that. I believe this weaves the story in line with what Scott did in our latest calls. Uh so, let we'll work with you all to like hone your thing. This is why I'm just like, hey, don't worry about the MCP and data security. I want to we're still trying to tell the whole story first. Get the features done. Once we have the whole stories and we have a deck, uh Julia's hopefully having a deck by next week, then I can take that deck and start validating with account managers.
+
+
+
+
+00:40:49
+
+
+Evan Liang: Uh and we'll do that and then once we feel good about the whole story, then try to actually stitch together data and all this other stuff. So, we will definitely run this by uh AJ on Thursday. I I want to see what his reaction is around this stuff. Uh again, he's not going to be uh he'll be nice, but not uh he might be uh a little bit critical as well uh speakers around it. And then well he's going to claim that he does all this but um and then and then we we can then show him hey how and then what we're trying to impress them upon uh how you impress people around this is let's say visibility is you want to impress them on each step what the output they're going to get right like hey I'm gonna definitively tell you what stage they're at someone who's struggling here would be that would be valuable to me. I'm going to deliver a renewals autogenerated a renewals deck for you that explain it. So when we struggling there would be like oh that's what I really want.
+
+
+
+
+00:41:53
+
+
+Evan Liang: That's that John Lelay guy uh from um site tracker. That's what he really wanted. Right? Hey, I I'm having trouble getting in touch with people, right? You you you find the right person for me. That's really really valuable. And then folks who are very sophisticated be like, "Oh yeah, the buyers go dark on me. If I could actually see like what they're actually doing then, who else is I need to get involved?" That's extremely valuable. So we'll just like kind of the demo is again output and then the back end how to stitch it together. Uh very important, but probably later on tips. Cool. Sounds great. That's very helpful. Yes. No, but uh also watching you guys build and demo makes it makes it a lot helpful. This and it's like I said, we're doing uh a manufacturing process for those guys that might go into MSN. This is like breaking it down into we're trying to build a factory here instead of a from a a skills craft artistal trade.
+
+
+
+
+00:42:58
+
+
+Evan Liang: Yeah, AJ's very much an artistal trade guy. prides himself on how good he is at negoti but he does all this in his head to be clear like all of those like in terms of action items for us we just do you're just saying this yeah just we're gonna we're gonna let's let's be very clear around what you are delivering right uh yeah it's like especially part I think you you because you want to see the whole story you're thinking is starting to actually both of You have scope creep. Which two? Uh Aaron and right so I think you stop focusing on the injection and the output agent. Just really really focus on the champion agent and the language. Yes. Just don't those two things correct. Yeah. Yes. Yeah. Make sure that like and then exact. Let's be very clear on what that what that first. Yeah. the champion agent I think would be very helpful for the for them to see that is something that uh they don't uh outreach and sales loft are very like I sent mass emails they don't spend a lot of time thinking through who they sent it to yeah on and off that way do you think the champion agent might be difficult because you can't scrape LinkedIn yeah the champion agent is going to be very difficult I cuz I will have to see what he talked about was like the database of what were the one or
+
+
+
+
+00:44:33
+
+
+Evan Liang: two people they talking to. He said everybody has this BG thing. So the champion is is purely data driven. Yeah. Um then the other three agents like the the language agent which is how it drives and responds and it just that's quite simple. So, and I think that the nice way to do that is in any given contact, I'm going to assume you will be given at least one person to contact initially. It's very unlikely you have a renewal that you have no one to contact, right? So, if you think about it, the way you I would see yours is on the P who is like start with the initial champion just like you did and then you're going to first thing send them an email. Yes. And then you're going to find out are they engaged? Yes or no? Right. And then per your points like here are the backups from your database. Yes. And you're just going to cycle through them, right? Uh it's like I'm trying to this person doesn't engage, I'm going to tell you that they're not engaged, right?
+
+
+
+
+00:45:30
+
+
+Evan Liang: That's the visibility. then I'm going to number two and then I'm going to number three, right? And then it's like if these don't work then I'm going to escalate or hit LinkedIn or something of that sort. Yeah, that's that's the plan. But I think most companies that I mean long when we kind of put this on top of their systems is going to take all information CRM mostly most likely, right? Yeah. So CRM I mean hopefully they all have executive structure mentioned where they have account. No it's very messy. It's probably going to be very messy but like so then how do I mean so there's the so on the you don't have to like then there's a company called clay that's doing very very well. Yeah. GTM. Yeah. So all they do is they do a enrichment waterfall. Yeah. So what you would do is like, hey, I don't have anyone. Hit Clay and ask Clay, I need soand so person. Go crawl Zoom info, blah blah blah, and find me this person.
+
+
+
+
+00:46:28
+
+
+Evan Liang: Yeah. And then we'll try to hit that person. And then if it fails, then the the next step is like escalate to the manager. We can't find anyone. You may need to escalate to CSM. Someone needs to know that we are failing to this this deal is stuck at who? We can't identify who. Yeah. Right. And so there's no point in doing anything else if you can't deliver the message. I guess to his point though, if it's so data driven, what does he do right now like in building like you can't build much? I think I think it's important to validate this this this uh who waterfall be able to show to clients that this is this is what this module show the different scenarios and show how the system would work, I guess. and pretend like the data is there and then once it actually goes into production like whatever a year or when you get a first client and in like three or four months we have to recalibrate the entire to show how it might work now.
+
+
+
+
+00:47:27
+
+
+Evan Liang: Okay. Yeah. I don't know. I guess my one thing is if I were building that my concern would be how is the data currently structured? Like what assumptions can I make about the data to show this chart? Like do they have the name? Do they have the email or do they at least have those two things? Yes. So inside the database there's a there's an object called contacts that has name, email, you probably have tasks and stuff like that. So there's a way for you to show which who's engaged in and around that. So I can play with the MCP also and see if I can start doing that. Uh we can pull a few. Yeah, we can few accounts and we can see what it's around that. So yeah, so I wouldn't worry about hooking it up, but yes, it probably worth hitting the MCP uh and just seeing like some of the smaller accounts. But like I said, there is a person you can talk to.
+
+
+
+
+00:48:12
+
+
+Evan Liang: It's either someone who you've seen the most engagements with or blah blah blah blah. Yeah. Okay, cool. So I I'll this this I'll work with you guys on parallel around this area, but uh I think uh I think I'm kind of excited to to test that that out. So in the next week or so, first of all, of course, we have to send a speech next week. that's going to be interest. So that's that's probably a priority also. Number second is the AJ demo is happening next week. So for the ages demo, um I think it would be good to have some expectation of that. Like I know we did something yesterday. We've already moved on from that. We already built something a lot more progressive than that. So it' be great to understand like get a one-on-one next early next week to understand uh what are you looking at to show the AJ in terms of Yeah. So I want to validate a I want to validate the stages the visibility so around it and I would love to be able to uh demo like hey this is what we're thinking about for deliverables on each of these and you're doing the person I I'll set the context and lead it I'm happy to have you guys demo the individual things uh uh yeah so that you guys but then let's this time we'll be a little bit tighter in in terms of the story.
+
+
+
+
+00:49:26
+
+
+Evan Liang: Sounds good. So I think we'll just do one. Yeah. But then uh AJ is again he is friendly, right? So we're we're still uh so this is why this is why like these type of meetings and calls are so valuable. Yeah. or else we're just in a a second part I wanted to spend the last 10 minutes around is uh just talk a little bit about working style you know like working cadence and all this other stuff we've you guys got into day four congratulations uh uh love the speed that we're going at right so just curious like what have what in the first week because this is what's working well what's not working well in terms of operating cadences I mean it could be anything like man doing two standups a day is just exhausting for me or like hey this is actually good because I'm getting constant feedback and stuff like that being together is like just like let's open it up so that we uh can uh try to maximize and figure out uh going forward so I don't know the two standups are the best thing that happens every day agree it's even close yeah just to like refocus clarify get big picture talk to each other I think it's been Perfect.
+
+
+
+
+00:50:43
+
+
+Evan Liang: Any anyone disagree or I kind of disagree. I like it. Like me personally, I think like 101 ones are more helpful just because especially as we get into the weeds, like it's going to be like a lot of like small like I like need this kind of data, I need this kind of question that are specific that like I don't feel like it's appropriate to ask a standup. Like if I have a specific like I need this data issue, maybe we need to talk about it for like five minutes on whether I can get this data or not. Right? For example, like the whole like thing like figuring out, okay, 40, no, now it's five. What do those five look like? Can I get more examples of the five because I need to build a grammar like all of that I can't raise at a stand up at least. I think that well there because there are going to be questions later on that are like 15 minutes long on like this is the one issue that I need and need to understand.
+
+
+
+
+00:51:30
+
+
+Evan Liang: So, I don't know. My thought process was like one stand up and one and one 101 would be my preference, but also it's like that's Yeah, that's fine. I think there's some like repeated information that like I kind of zone out when we're talking about like your stage specifically because it's like I know as long as I get data to you and you will ask me for something specific, but like I don't need to know the exact needs of what you're doing. I think it's interesting, but like just on an efficiency level, I don't know how we would I think uh I like the two. Yeah, keeping it tight around what we what we're asking in the standup is key. There's some things that belong in standup, some things that actually belong more in one ons. Uh this AI speed thing is interesting. The the idea that you have one-on- ones with every single person every day. Uh the corporate way is actually the best practice is one-on-one once a week. But I also realized if we were to meet once a week on oneonone like would be stuck all the time.
+
+
+
+
+00:52:34
+
+
+Evan Liang: People would have gone crazy and then back from that place would take forever. Yeah. But I mean we're I love the speed we're moving but it does actually point to some really interesting dynamics. So, uh, and then there's going to be, uh, we will have to figure out how you guys can answer some of the questions from yourself. Even starting next week, there are going to be days that like I'm out of the office for meetings, uh, like I'm having lunch or coffee with like folks. So, we'll just have to figure that out. But for now, I I hear you, D. Let's try u two let's keep the two standups beginning, but we'll let's strive to try to make them efficient. So, if ideally we can get the standups down to 30 minutes, that would be ideal. Unless we have topics. Now, some of the standups are topic driven. We're presenting to someone. Julia's presenting, I was presenting an idea. Those should be longer, right? But then we'll try to figure out like, uh, let's play around with what each person asks and says.
+
+
+
+
+00:53:31
+
+
+Evan Liang: So, uh, corporate standups get really boring because what people go to their corporate, they want to almost tell you how busy I am. Let me update you on all the stuff. And then my my goal is to convince everyone at the table how busy it peran's point is boring as hell and they start repeating the same thing over and over again. So we'll try to make that a mission. Okay. Just one last note on that is it is nice to have a set time where like I need to have something ready. Um which yeah we haven't always been doing because we'll have something running mid meeting or whatever. like to to know that by 5:00 p.m. I should have something together that I can at least share a bit about as opposed to like yeah I you know hoping to get to it later today or something. Yeah, I think the the driving towards deadlines and everything of that sort has been good and so we'll try to keep keep that going. What about uh anything else in terms of working together, sitting together, quiet space?
+
+
+
+
+00:54:31
+
+
+Evan Liang: Do people feel like that's working or do you like there are some people like hey I need like two hours in a more quiet space away from folks stuff like that is anything around that I mean sometimes I don't like to sit down and focus myself so I just walk away when you come back at this point right yeah okay so let's we'll play around with like the amount of like hey concentration time versus together time I know you guys were figuring out for this week I think being all together was helpful so we can answer your question is really helpful but then that may change over time around itself opening to structures around some of that stuff around if people need blocks of time it'd probably be better if everyone had the block of time together right so that's the thing uh one thing I've just been think like I'm good to go either way is that post 5:00 pm stand up if it's like 6 we've been kind of like some days we leave at 6:40 some days we leave at 7 like It just it's a pretty small block to like get work done.
+
+
+
+
+00:55:34
+
+
+Evan Liang: And I'm wondering if it would just be better where we leave post that final standup under the assumption that like you go home and then once you're ready then you like could have a twohour block where you do it versus the like yeah 30 minutes then you're up you drive then you're back. It's like that's a good point of I mean yeah love folks thoughts on that. noted. Don't if you do that, I'd say move the stand up to like 5:30 then. Yeah. Yeah. Okay. I'd rather go straight to dinner. So, it's like move at 5:30 and if we're tight or 6, if we have stuff to talk about at 6:15 and then you go home, eat and then, you know, so there's some differences in working styles around that, right? Uh some people are like, "Hey, after I finish here, I want to have dinner and then maybe I'll jump online later on." In your case, some people eat dinner later. is like, "No, I want to finish. I want to do two hours and then I'm going to have dinner." So, I think I would actually I prefer that style um in the having I think it's just that like Yeah, there's an awkward block host 5 p.m. standup where Yeah, you have to almost stay like for a longer time in order to get something done. Um but if we're all like Yeah. So, we're going to move the stand up to 5:30 then. Okay, I like that. Okay. Uh lunchtime 30 minutes breaking around that time. That's working for folks. Yep. Y social. Oh yeah. Where are we having where's time to vote? Is that the same link? of the site of
+
+
+
+
+Transcription ended after 01:16:03
+
+
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.

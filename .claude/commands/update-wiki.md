@@ -2,6 +2,24 @@
 
 Fetch new transcripts from the Fireflies API and update the wiki.
 
+## Transcript archival convention (where processed transcripts live)
+
+```
+transcripts/
+  morning/      standups starting before 12:00 local → YYYY-MM-DD-standup-morning.<source>.txt
+  evening/      standups starting 12:00 or later     → YYYY-MM-DD-standup-evening.<source>.txt
+  <root>        all NON-standups (1:1s, demos, etc.)  → YYYY-MM-DD-<slug>.<source>.txt
+  _inbox/       raw auto-fetched native files awaiting processing (the Drive fetcher writes here)
+  _superseded/  redundant duplicate sources, kept for provenance — never read for signal
+```
+
+- `<source>` ∈ `fireflies | gemini | zoom | granola`. **Omit** the `.<source>` tag when a
+  meeting has only ONE source; add it only when 2+ sources exist for the same meeting.
+- **slot**: `morning` if the meeting starts before 12:00 local, else `evening`.
+- One meeting may have several files (one per source) sharing the same base name.
+- Name collisions: append `-2`, `-3`.
+- Always write archival files to this convention — never a flat ad-hoc name in root.
+
 ## Steps
 
 1. Read `wiki/log.md` to extract what has already been processed:
@@ -59,7 +77,11 @@ Fetch new transcripts from the Fireflies API and update the wiki.
 
    e. Extract signal per the rules in `CLAUDE.md`.
 
-   f. Save the reconstructed transcript to `transcripts/<YYYY-MM-DD>-<slug>.txt` for archival (slug = lowercase title, spaces → hyphens, max 40 chars). If that path already exists for a *different* transcript (e.g. two meetings the same day share a title), add a disambiguating suffix (e.g. `-evening`, `-2`) — NEVER overwrite an existing transcript file.
+   f. Save the reconstructed transcript for archival following the **Transcript archival
+      convention** above: standups → `morning/`|`evening/` as `YYYY-MM-DD-standup-<slot>.fireflies.txt`
+      (slot by start time); non-standups → root as `YYYY-MM-DD-<slug>.fireflies.txt` (slug =
+      lowercase title, spaces → hyphens, max 40 chars). Drop the `.fireflies` tag if this is the
+      meeting's only source. NEVER overwrite an existing transcript file — add `-2` on collision.
 
    g. For each relevant wiki page (people, advisors, projects):
       - If the page doesn't exist, create it using the template in `CLAUDE.md`
@@ -80,17 +102,23 @@ Fetch new transcripts from the Fireflies API and update the wiki.
    i. Update `wiki/index.md` if any new pages were created.
 
 4B. **Native-only meetings (Fireflies never captured them).** After the Fireflies list is done,
-    scan `transcripts/` for native transcript files — `*Notes by Gemini*`, `*- Transcript*`
-    (`.txt`/`.pdf`), and `*.transcript.vtt` (Zoom) — whose meeting is NOT yet in `wiki/log.md`.
-    Track these by filename (`gemini-file:` / `zoom-file:` lines), since they have no
-    fireflies-id. These are real meetings Fireflies missed entirely (e.g. an ad-hoc call with no
-    calendar invite, or a join the bot was never admitted to). Process each exactly like a
-    Fireflies meeting (steps 4b–4i): derive the date from the filename (Zoom `GMT` prefix is UTC —
-    convert to local), read content via the Read tool, extract signal, update wiki pages, and
-    append a log entry with `source: gemini` or `source: zoom` and a `gemini-file:`/`zoom-file:`
-    line naming the source file (no `fireflies-id`). This is what makes native transcripts a true
-    fallback path rather than a manual rescue — a missed/empty Fireflies capture no longer means a
-    lost meeting, as long as the native transcript file has landed in `transcripts/`.
+    scan for native transcript files the Fireflies pass didn't already consume — look in
+    `transcripts/_inbox/` (where the Drive fetcher drops raw files), in `transcripts/` root, and
+    RECURSIVELY in `morning/`/`evening/`. Recognize `*Notes by Gemini*`, `*- Transcript*`,
+    `*Gemini Export*` (`.txt`/`.pdf`) and `*.transcript.vtt` (Zoom). For each whose meeting is
+    NOT yet in `wiki/log.md`:
+      i.  **Canonicalize the file first** — rename/move it to its proper home per the Transcript
+          archival convention (standup → `morning/`|`evening/`; else root; with the right
+          `.<source>` tag). A raw `_inbox/` file must end up at its canonical path, not stay in
+          `_inbox/`. If a canonical file for that meeting+source already exists, this is a
+          duplicate source — move it to `_superseded/` instead of overwriting.
+      ii. Then process exactly like a Fireflies meeting (steps 4b–4i): derive the date (Zoom
+          `GMT` prefix is UTC — convert to local) and slot, read content via the Read tool,
+          extract signal, update wiki pages, and append a log entry with `source: gemini|zoom`
+          plus a `gemini-file:`/`zoom-file:` line naming the **canonical** path (no `fireflies-id`).
+    Apply the date-based dedup rule below so already-covered meetings aren't reprocessed. This is
+    what makes native transcripts a true fallback — a missed/empty Fireflies capture no longer
+    means a lost meeting, as long as the native file has landed in `transcripts/` (or `_inbox/`).
 
     **Dedup against already-covered meetings (critical — the auto-fetcher pulls a backlog).**
     A native file is "not yet processed" only if no log entry covers its MEETING — not merely if

@@ -1,0 +1,466 @@
+﻿📝 Notes
+Jun 19, 2026
+1 on 1
+Attachments 1 on 1
+Meeting records Transcript 
+
+
+
+
+Summary
+Meeting discussions focused on optimizing dashboard navigation and refining tracking methodology for account renewal management.
+
+Dashboard and Navigation Refinement
+Participants simplified the dashboard structure to a single scrollable list sorted by renewal urgency. They reached a decision to hide dashboard summaries upon selecting specific accounts to improve focus.
+
+Engagement and Document Tracking
+Stakeholders defined critical engagement metrics including conversation timing and general activity levels. The group agreed to expand contract history into a comprehensive document section for improved stakeholder access.
+
+Admin View and Privacy
+The team prioritized customizable admin features like seat utilization and document tracking. Concerns regarding meeting recording bot permissions led to a pause on implementing broad access due to privacy.
+
+
+
+
+Decisions
+Disagreements
+* Meeting Bot Access Permissions Automatic permissions for the meeting recording bot to join all company meetings are denied due to confidentiality concerns.
+
+
+Aligned
+* Account Dashboard Display Strategy The dashboard will display a simplified aggregate summary of accounts sorted by days to renewal, providing the ability to click into individual account views while hiding the aggregate information.
+* Documents Section Content Expansion The "Contracts" section will be expanded to a "Documents" section to include MSAs, product briefs, and other relevant files.
+* Document Change Tracking Method The interface will utilize "highlights" instead of red lines to indicate updates and changes within documents.
+
+
+We've updated the Decisions section using your feedback.
+Let us know what you think: Helpful or Not Helpful
+
+
+
+
+Next steps
+* [Cooper Tenney] Prototype Dashboard: Design a new account interface with a top level summary. Implement drill down functionality to view individual account details upon clicking.
+* [Cooper Tenney] Update Documents: Convert the contract history section into a comprehensive documents portal. Include non contract files such as product briefs.
+* [Cooper Tenney] Implement Scheduler: Research scheduling tools such as Book It or Calendly. Integrate a calendar picker for meeting requests.
+* [The group] Resolve Recording: Evaluate alternative solutions for meeting recording permissions. Establish a method for bot access that maintains participant privacy.
+
+
+
+
+Details
+* Demo Navigation and Configuration: Cooper Tenney presented the current demo, highlighting the renewals deck and a new configuration feature that allows users to toggle the utilization section on or off based on qualification agent recommendations (00:00:01).
+* Account Snapshot Dashboard: Cooper Tenney introduced a snapshot view designed to help identify overdue accounts and those nearing their renewal date (00:00:49). The discussion centered on prioritizing metrics, with a consensus that the primary sort order should be based on days to renewal to highlight urgency (00:01:30).
+* Engagement Tracking Methodology: The participants discussed strategies for tracking buyer engagement, referencing tools like Crazy Egg for heat maps and Qualified for real-time engagement monitoring (00:03:07). They established that the critical metrics for tracking engagement include the time since the last conversation, the timing of the last chat with the company, and the general level of activity (high, medium, or low) (00:04:21).
+* Dashboard User Experience Adjustments: Cooper Tenney and the participant discussed simplifying the dashboard by replacing the bucket-based organization with a single, scrollable list of accounts sorted by renewal urgency (00:06:04) (00:07:28). The participant requested that the engagement level—not engaged, somewhat engaged, or very engaged—be displayed directly alongside the account name, while keeping detailed qualification data hidden until the user clicks into a specific account (00:07:47).
+* Account View Navigation: The participant clarified the need to distinguish between the aggregate account list and the specific account view (00:09:08). Cooper Tenney noted that the current design, which keeps summary information visible while navigating into an account, caused confusion (00:09:46). They agreed that once a specific account is selected, the dashboard summaries should be hidden to allow focus on the account-level details (00:10:20).
+* Buyer-Side Document Management: The demo includes a contract history section, which the participants agreed could be expanded into a general document section containing MSAs, previous MSA versions, and product briefs (00:11:12). This modification would allow finance and other stakeholders to easily review document history and changes (00:11:39).
+* Redlines and Scheduling Features: Cooper Tenney transitioned from using redlines to using highlights to reduce complexity (00:12:23). Regarding scheduling, they discussed implementing a tool similar to Book It or Calendly to allow buyers to select available times for calls directly within the interface (00:12:45).
+* Admin-Side View Capabilities: Cooper Tenney showcased the admin view, which displays stakeholder engagement and whether documents have been opened by recipients (00:13:21). They discussed making features like seat utilization and document sections customizable, emphasizing the importance of highlighting the number of people engaged per account (00:13:43).
+* Implementation of Heat Maps: The participant suggested incorporating a heat map functionality to visualize which sections of a page a buyer spends the most time on (00:14:49). Cooper Tenney agreed that this, combined with engagement tracking, would provide actionable insights regarding buyer interest (00:15:36).
+* Meeting Recording Permissions: The participant addressed the issue of the meeting recording bot, which requested admin permissions to join all meetings within their domain (00:16:24). The participant expressed privacy concerns about the bot joining confidential meetings and requested exploring alternative solutions rather than granting broad access (00:16:40).
+
+
+
+
+You should review Gemini's notes to make sure they're accurate. Get tips and learn how Gemini takes notes
+How is the quality of these specific notes? Take a short survey to let us know your feedback, including how helpful the notes were for your needs.
+📖 Transcript
+Jun 19, 2026
+1 on 1 - Transcript
+00:00:01
+
+
+Cooper Tenney: That's what it is. Okay. Um, so let's start with kind of like what does your demo look like now and then we Yeah, totally. So it's, you know, kind of looking the same as it has. Yep. Um, okay. You added the renewals deck. I see. Yeah, I added this.
+
+
+
+
+00:00:16
+
+
+Cooper Tenney: So like I don't know. I don't really know how you want it to look, but this is at least like, you know, you can just click through. All right. No, that's I think it would be like uh Yeah. And then uh so then let's see this is all the same. I added this like you like click on these links.
+
+
+
+
+00:00:34
+
+
+Cooper Tenney: Okay. Um this utilization here obviously this is you know sometimes you want it or not. Yeah. So I added a feature where you can like so this is the configuration. So let's say you don't want utilization on it'll turn it off. Got it. Okay. And then if you go here it's gone.
+
+
+
+
+00:00:49
+
+
+Cooper Tenney: Okay. Um and that would be based on you know these recommendations from the qualification agent. Obviously, this is not real. Okay, nice. Uh, I added the snapshot that Scott recommended. So, you can click on all these boxes really quickly and see, okay, this one's overdue. Like, obviously that one's like, you know, really important.
+
+
+
+
+00:01:10
+
+
+Cooper Tenney: And then this is Uber is the one that we're on. And then this one is, you know, getting close to the window. We meanwhile like these ones have four opens and you know they're not even close to um I don't know this one this is like a little further out. So we can play around with the like how to sort these boxes I feel like.
+
+
+
+
+00:01:30
+
+
+Cooper Tenney: Yeah. So I would say uh like errands uh I think the the metrics here should be very less around their stages of their renewal. Is it less stages of do I care? Uh okay so the first metrics uh that that for the stages of renewal what all I care about is days to renewal right right so you'd probably sort it by days to renew uh like so closer versus further right so that's all you
+
+
+
+
+00:02:03
+
+
+Cooper Tenney: need versus uh uh uh so um and and it just it's one column that you'd sort it by so that tells you the urgency from there I think the other metrics is just like howing engaged they are like uh so have they opened anything like you know or they've really clicked on it and I think those are just the two dimensions you want how far is it from renewal and since our last engagement right or actually maybe that's the third
+
+
+
+
+00:02:31
+
+
+Cooper Tenney: one like when was the last time we had a conversation with them so for example like if we only got in touch with them 30 day at the 30-day mark and they're like 25 days from renewal well that's not it's been five days that's not too bad. What's bad is like we got in touch with them first at 90 days.
+
+
+
+
+00:02:49
+
+
+Cooper Tenney: They're 30 days from renewal. It's been 60 days. Yeah. And then the question is for that is like it's been 60 days. Have they engaged like have they opened this proposal? Have they looked at the proposal? And then it's almost like uh in there then it's sort of like hey what have they actually looked at?
+
+
+
+
+00:03:07
+
+
+Cooper Tenney: One way to do this is uh is um uh there used to be a software called Crazy Egg that would actually just give you a heat map. So uh and a heat map of like what within this they would actually show you the the buyer's thing and they show you where their their their mouse and clickers were in there.
+
+
+
+
+00:03:30
+
+
+Cooper Tenney: So, in some respects, that's like the really like u uh it's not invasive, but uh it kind of shows you uh like it gives you real-time information, and in some respects, since you're buyer page, it's actually pretty simple. That might be one way to do it. The other company called Qualified also did that. They technically originally they they migrated to Agentic and Salesforce just bought them for like a billion dollars.
+
+
+
+
+00:03:55
+
+
+Cooper Tenney: But really where they got their win uh their initial sales in the win was that when someone came to their website they would let you literally secretly spy on them. So if someone was clicking on your so like my uh former like so we had they were they were customer and partner uh and so my rev ops person would be like oh yeah I can see exactly when Evan comes onto the lean data website and exactly what he's clicking on like in real time.
+
+
+
+
+00:04:21
+
+
+Cooper Tenney: Yes. And they use that to um to inform their chatbot. In your case you're using it sort of for like analytics. So it's like hey Octa like when was when was the last time Octa engaged with the buyer? What did they click on? What did they say? Who did it?
+
+
+
+
+00:04:38
+
+
+Cooper Tenney: Yeah. In some respects. Yeah. So it's as much information on the engagement side as possible. But the highest level metric is when did we last chat when did they last chat with someone at lean data uh at lean data? When's the renewal due? Right? And in that intervening time what's the engagement look like?
+
+
+
+
+00:04:58
+
+
+Cooper Tenney: high, medium, low. I feel like I have all of that just maybe not like organized properly, right? So, I have like no activity in X days. That makes sense. Um, and then these are all sorted by like days to renewal. So, like that one's past renewal. This one's in 30 days.
+
+
+
+
+00:05:15
+
+
+Cooper Tenney: And then these are sorted descending. Don't worry about the past renewal thing. That's like that's probably like this thing. Yeah, that's a pretty edge case, right? For now. like it just raises questions like what it is. Uh the reason the your uh portfolio snapshot raises because then it's like again you're like are is this the dashboard for the entire product, right?
+
+
+
+
+00:05:36
+
+
+Cooper Tenney: I mean I was just trying to go and put implement Scott's recommendation. Okay. Because he he had said I wrote it down in my notes uh which is being mirrored to my iPad right now. Um, did he exactly say that? He said on the admin side quick snapshot dashboard that flags accounts that have done nothing and quick stats of account in each bucket.
+
+
+
+
+00:06:04
+
+
+Cooper Tenney: Um, which that's what I was trying to do here. So, but you said he's like Yeah, he's basically in like close doesn't make much sense, right? It's more like engaged or not. Yeah. So maybe we can condense this a little bit. Yes. I'd say I think it's again like days to renewals, right?
+
+
+
+
+00:06:26
+
+
+Cooper Tenney: And it's just like some metric on like some some like red, yellow, green on how engaged they are. Okay. Would you just have it be like one list or would you have it be something like this where you can click into like not engaged, somewhat engaged, very engaged? Maybe those three. Okay. But no, but I think the first step I would care about before I see those uh things is the tide.
+
+
+
+
+00:06:51
+
+
+Cooper Tenney: Okay. So, so I I it's it's reversed. You know what I'm saying? The status isn't as interesting to me as the first thing is how close they are to renewal. So So so the closer they are to renewal, the more I'd be worried that they're not engaged. Okay. So what do you think about this on the side here?
+
+
+
+
+00:07:09
+
+
+Cooper Tenney: Because this is has it sorted in one stack. This is like closest to like if you Yes. I I I would expect that there. This goes here. Yes. And then that this goes here and then you tell me their engagement. Okay. So should I like combine these on this side or should I just get rid of this?
+
+
+
+
+00:07:28
+
+
+Cooper Tenney: I think get rid of this and combine it there. Okay. Right. So then how would you like scroll between the accounts? You can scroll here. Okay. Yeah. So this is one long ass list. Okay. It's not it may not be that long because it's only the people who are in the buyer engagement stage.
+
+
+
+
+00:07:47
+
+
+Cooper Tenney: Remember there's a bunch of people who are past the buyer engage like you're not getting all accounts. Okay? If someone hasn't been qualified and there's been no outreach, they're not going to show up here. Okay? So, just to be clear, you want a snapshot like more simplified at the top and then it would go in order like Uber box like literally just in one.
+
+
+
+
+00:08:09
+
+
+Cooper Tenney: Yeah. And keep scrolling. Keep scrolling. And on the right hand side, you're telling me their engagement level. Okay. So, per line, I want to know Dropbox, right? Uh, and you've already you've already highlighted the order is is uh uh closest to renewal. And then I just want to know quickly engaged, not engaged, and then I can click in to see the ones that the ones that I would click in. I was like, 20 days out, not engaged.
+
+
+
+
+00:08:34
+
+
+Cooper Tenney: Okay, that's the one I want to go in see and see. So, do you still want any of this stuff in here? like like the from the qualification agent to justify this you don't want any at this point in time those agents have already told me that what I I just want to know is hey what was maybe if I click in I'd be like what was our last interaction right then I'd be like hey what's our last interaction how what are some of the scores of the thing and then and the fact that they're not the not engaged is the new information the other stuff I kind of I
+
+
+
+
+00:09:08
+
+
+Cooper Tenney: I know from the other agents or you could summarize it for me. Okay. Right. But I wouldn't I wouldn't put them into boxes. Okay. So, you don't care about the portal like the access log or do you uh or like the chat log? Uh now, are we looking at this in this seems like we're looking at it in aggregate across all the accounts or is this within one account?
+
+
+
+
+00:09:31
+
+
+Cooper Tenney: This is one account. Oh, let me see. Okay. So, this is so you've now double Oh, okay. Oh, so what was that? So, okay. These are the accounts and then this is the interior of HubSpot. Yeah. Yeah. Yeah. Okay. Uh so first let's get what this page looks like and then once we click in Yes.
+
+
+
+
+00:09:46
+
+
+Cooper Tenney: We we would we would we'd be happy to have more information. Okay. Okay. Sorry. I think it was just confusing because this scrolls away. Yes. Yeah. So, I thought I'm looking at this set of information for all accounts. Yeah. Yeah. Yeah. No, no.
+
+
+
+
+00:10:01
+
+
+Cooper Tenney: This should be a click away. I should be able to double click into that. Okay. So, cuz like if I go to Stripe, like this becomes Stripe and everything below it. Oh, okay. Okay. The fact that this is still up here. Yeah. It's confusing. Yes.
+
+
+
+
+00:10:20
+
+
+Cooper Tenney: The only reason I did that is because it takes up so much room. Um, I mean like now it doesn't take up as much room, but So you'd rather have this pinned and then be able to scroll within each. Yeah. So I would expect first I'm seeing a summary of accounts and once I click into an account, I'm only seeing the account.
+
+
+
+
+00:10:38
+
+
+Cooper Tenney: Okay. That's that was the part that's confusing. Okay. Um, then I'll try and design that. I'm having a little bit of trouble visualizing what you want that to look like, but um I can prototype it and then Okay. Yeah. I I think you're trying to you're you're you're trying to show both.
+
+
+
+
+00:10:57
+
+
+Cooper Tenney: Yeah. Right. So, for example, once we pick an account, I don't need to see this either. Right. Then I'm just focused on what I need to know about that account. Okay. Yeah. Sounds good. Okay. And then so on the buyer side, you feel pretty good.
+
+
+
+
+00:11:12
+
+
+Cooper Tenney: Go. Yeah. Yeah. Yeah. Contracts are documents. Click contract history. So the one thing here is we are showing contracts. Uh if we have like MSAs in here, this could become more about documents and contract history is one of the documents. You could see MSA maybe not the previous versions MSA, but we could see like MSA.
+
+
+
+
+00:11:39
+
+
+Cooper Tenney: This is where like product briefs or other in documents that they want could all be here. Okay, you can make it a little bit because right now MSA is right here. Okay, that's not bad. Thank you. Okay. So, you got MSA there because he wanted he what the other thing that Scott said is he wanted like let's say someone from finance to be able to click on this and be able to see what's changed.
+
+
+
+
+00:12:09
+
+
+Cooper Tenney: So like the price went up 5%. Okay. Here's what changed in the terms and here's the MSA that you can like just click on. Okay. But if we want to put it in here. No, that's okay. Excellence. So, you got this 34 days, 6,800. Here's the order form.
+
+
+
+
+00:12:23
+
+
+Cooper Tenney: Okay. And then what do we do with the red lines? Uh, I turned it to I changed it to highlights. Okay. To make it less confusing. And then it does the same thing where it shows like here's what's been changed, what's been updated, etc. That's not a bad term. Um, these are clickable for the like if you want to learn more about the next other products.
+
+
+
+
+00:12:45
+
+
+Cooper Tenney: Yep. I like that. And then this was another thing that he mentioned like schedule a call just like send a request. Um and then got I think that's everything on the buy side. Well, if you want to make that more fancy, go look up a product called Book It. Yes. Yeah.
+
+
+
+
+00:13:02
+
+
+Cooper Tenney: And it will what it will do is it'll show you a calendar so you can actually pick the times you're available to schedule a call. Okay. That that was what we meant. That's it's actually a a lean data. There's a number of products out there. It's you you've learned Countly. Yeah, it's basically Cali.
+
+
+
+
+00:13:21
+
+
+Cooper Tenney: So, uh Okay. Can I run a couple things? Sure, please. Okay, so on the admin side, I have um like the ability to see who they've sent the That's nice. Okay, that's nice. I like that. Um like plus one stakeholder view and then it shows like whether they've even clicked it with the green.
+
+
+
+
+00:13:43
+
+
+Cooper Tenney: That's really cool. Um, I think this is the right thing to have in the view because like so the idea was that it'll ingest the data from Aaron and these will be like turned on where they're meant to be automatically. Like for example, the utilization, that's the big one. The seats would be mostly off unless it's high utilization.
+
+
+
+
+00:14:06
+
+
+Cooper Tenney: But these are customizable. I don't know if you want that to be customizable or not. Um, you could even turn off the like deck like it just won't show if you go over to the buyer side. Like they wouldn't be able to see. I don't know why you'd want to do that. Maybe it's not done.
+
+
+
+
+00:14:20
+
+
+Cooper Tenney: No. Um, and then they could also see the contract history. Maybe we could turn this into the documents section as well and just have it mimic that. I don't know if that's useful. Yeah. Um, and then the same Well, this section is just repeated, but Yeah. Yeah. Yeah. Go back up.
+
+
+
+
+00:14:33
+
+
+Cooper Tenney: I don't know how much of this is useful. This I think is really cool. like in the engagement you can see like how engaged they are and if they've actually shared it with other people that's super cool. Uh so yeah I definitely want to have that be higher and in the engaged uh in the engaged sections.
+
+
+
+
+00:14:49
+
+
+Cooper Tenney: Okay. Yeah. Uh yeah you might be like engaged and number of people who can engage. So one person, three people, four people and then you have more of that detail. The only thing funky thing here is this is engagement and then there's this buyer view. Uh the other thing you could highlight that I was talking about qualify on top of this you could also show where what's because you've already done the sections which sections have they viewed the most you you make this the heat map right so this
+
+
+
+
+00:15:20
+
+
+Cooper Tenney: fire like this this fire view you could be like oh this one's where they spending all their time they're spending no time here they're spending a lot of time here you know what I'm saying that's kind of what that meant by that crazy egg it's it's a heat map of where the the person's spending a lot of time. Interesting.
+
+
+
+
+00:15:36
+
+
+Cooper Tenney: And between that, I think that that kind of gives you like a sense and it's more realistic. It's not as actionable. Uh what's really actionable is this and the the the the the the when they when they viewed this stuff. That's really really actionable. Yeah. Okay. You might be able to combine these two.
+
+
+
+
+00:15:56
+
+
+Cooper Tenney: Yeah. was going to say, yeah, you could just be like, here's all what each of these people have done and they've added them. Yeah. But I think I think that uh adding that that that view is uh that that that that that's huge for them. Cool. No, but I think you're in good shape to kind of figure out how to and yeah, this is one of those where uh yeah, getting this in front of buyers is the best way to sell is the best way to get feedback.
+
+
+
+
+00:16:24
+
+
+Cooper Tenney: Totally. Uh last thing about the the meet like the meeting recordings. Uh I don't even know where where I am. Um see how okay it ended up wanting to join. There's like the admin permission. I think I mentioned this. Yeah. I don't know how to do it on my end.
+
+
+
+
+00:16:40
+
+
+Cooper Tenney: I think it's your task to say allow like this bot to come in with all meetings with our domain or something like that. I'm not sure I want that. Oh, okay. because then that joined like some of my like confidential meetings and stuff like that. Oh, interesting. So, should we just find a different solution or should we just I don't know what I don't know if I I would enable that. So, we could either have this where we always allow it in or we may have to try different things. Okay. So, yeah.
+
+
+
+
+Transcription ended after 00:17:11
+
+
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.

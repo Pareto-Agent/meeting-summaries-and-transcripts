@@ -28,6 +28,9 @@ import urllib.request
 CRED_PATH = os.path.expanduser("~/.gdrive-fetch.json")
 HERE = os.path.dirname(os.path.abspath(__file__))
 TRANSCRIPTS_DIR = os.path.normpath(os.path.join(HERE, "..", "transcripts"))
+# Raw fetched files land in a staging inbox; /update-wiki canonicalizes them into
+# morning/ | evening/ | root per the archival convention. Keeps root clean.
+INBOX_DIR = os.path.join(TRANSCRIPTS_DIR, "_inbox")
 STATE_PATH = os.path.join(TRANSCRIPTS_DIR, ".drive-fetch-state.json")
 LOOKBACK_DAYS = int(os.environ.get("GEMINI_FETCH_LOOKBACK_DAYS", "30"))
 TOKEN_URL = "https://oauth2.googleapis.com/token"
@@ -141,16 +144,16 @@ def main():
     for d in docs:
         if d["id"] in state:
             continue
-        out = os.path.join(TRANSCRIPTS_DIR, safe_name(d["name"]) + ".txt")
+        out = os.path.join(INBOX_DIR, safe_name(d["name"]) + ".txt")
         if os.path.exists(out):
-            state.add(d["id"])  # already present from a manual drop; mark done
+            state.add(d["id"])  # already staged; mark done
             continue
         try:
             text = export_doc(token, d["id"])
         except Exception as e:
             log(f"export error for {d['name']!r} (skipped): {e}")
             continue
-        os.makedirs(TRANSCRIPTS_DIR, exist_ok=True)
+        os.makedirs(INBOX_DIR, exist_ok=True)
         with open(out, "w") as f:
             f.write(text)
         state.add(d["id"])

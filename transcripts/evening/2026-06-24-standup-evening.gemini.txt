@@ -1,0 +1,1049 @@
+﻿📝 Notes
+Jun 25, 2026
+Stand up
+Invited Aaron Rose Cooper Tenney Dean Liang Evan Liang Parth Goda Rajesh
+Attachments Stand up
+Meeting records Transcript 
+
+
+
+
+Summary
+The team refined demo strategies and finalized dashboard stability measures to ensure readiness for upcoming client presentations.
+
+Demo Strategy and Fidelity
+The group decided to utilize hardcoded JSON snapshots for 200 accounts to simulate dynamic pipeline movement. This approach avoids complex real-time agent communication while ensuring the presentation demonstrates functionality effectively.
+
+Dashboard Interface and Stability
+Participants implemented a code freeze to maintain system stability after resolving repository conflicts. Additionally, the team removed redundant text labels to improve visual clarity and navigation efficiency.
+
+Pipeline Logic and Efficiency
+Discussions established clear definitions for pipeline stages to standardize client engagement metrics. The team prioritized value-added work over cosmetic tasks to enhance overall operational efficiency.
+
+
+
+
+Decisions
+Needs Further Discussion
+* Demo flow logic needs alignment The team identified a lack of consensus on the long-term architecture for how deals should flow through stages, agreeing that further discussion is required to define the system logic.
+
+
+Aligned
+* Prioritization of real work principle The team established a core principle to prioritize high-impact "real work" that moves the business needle over "fake work" that does not contribute to tangible outcomes.
+* Random binary initialization for demo The team agreed to simulate the demo by randomly initializing binary progression/blocking statuses for accounts, rather than implementing complex inter-agent communication logic.
+* Off-cycle terminology adoption The team decided to rename the dashboard label from "Out of cycle" to "Off-cycle" to improve terminology clarity.
+* Deployment freeze on demo morning The team established a protocol to cease pushing new code updates on the morning of the demo to avoid system instability.
+
+
+We've updated the Decisions section using your feedback.
+Let us know what you think: Helpful or Not Helpful
+
+
+
+
+Next steps
+* [Unassigned] Rename Category: Change the label Out of cycle to Off cycle within the dashboard.
+* [Parth Goda Rajesh] Update Account Data: Configure 200 accounts with specific stories including binary stage block status and stage progression logic to ensure consistent demo behavior.
+* [Aaron Rose] Implement Filter: Develop an overall dashboard filter that remains active across all views and periods.
+* [Aaron Rose] Update Quarterly Data: Adjust the account data to reflect only 4 quarters in 2026 to ensure the system correctly handles future cycles.
+* [Dean Liang] Merge Account Page: Merge the account page code to ensure visual consistency across the interface.
+* [Parth Goda Rajesh] Clean Dashboard: Remove redundant labels and text from the overview dashboard to maximize available screen space.
+* [Parth Goda Rajesh] Restore Account Page: Revert recent changes to the account page to restore the lost progress bar and chart functionality. Ensure the standardized account structure is preserved.
+* [The group] Regroup Post Demo: Conduct a debrief session after the demo to analyze feedback from the client. Evaluate the next steps for development based on the results.
+
+
+
+
+Details
+* Meeting Audio Setup: The team discussed the optimal way to handle audio while in a shared room for a Google Meet or Zoom call. Evan Liang, Cooper Tenney, Aaron Rose, Dean Liang, and Parth Goda Rajesh agreed that to avoid feedback and audio quality issues, everyone should join the call unmuted but have their individual speakers turned off to allow the microphones to pick up the room audio naturally without system interference.
+* Demo UI Review: Dean Liang walked the team through the customer-facing demo design, which illustrates the output for each stage of the lifecycle: outreach, proposal, engagement, negotiation, and closing. The team discussed the need for visual distinctness between the demo interface and the actual product, suggesting color scheme adjustments to avoid customer confusion during the demo with AJ.
+* Definition of Productive Work: Evan Liang led a discussion on differentiating between "fake work" and value-added work. Evan Liang defined "fake work" as effort that does not move the business needle, such as overly fancy board presentations or unnecessary formatting, while "real work" involves direct client engagement and solving critical system issues. The team agreed that avoiding "fake work" is essential for team efficiency and preventing burnout.
+* Dashboard Pipeline Discrepancies: The team reviewed the renewals dashboard and identified a mismatch in deal counts across different stages such as outreach, qualification, and proposal. Aaron Rose explained that the funnel is date-based, meaning deals move automatically when reaching specific time thresholds. The team acknowledged that while these inconsistencies might not be immediately obvious to AJ during the demo, they represent an underlying issue in how the pipeline logic sums up the deals.
+* Funnel Logic and Data Integrity: Parth Goda Rajesh and Aaron Rose discussed the backend logic of how deals transition through the funnel stages. They identified a need for centralized data, suggesting the use of a JSON file to represent the status and cycle progress of 200 unique accounts, rather than relying on live, unmanaged data. Dean Liang emphasized that the demo currently lacks actual data flow, necessitating hardcoded snapshots to demonstrate functionality.
+* Demo Fidelity Strategy: The team debated the level of fidelity required for the demo, considering whether to build complex agent communication or simulate progress. They concluded that they would randomly initialize the state of account deals, such as being blocked at specific stages, in the JSON file to simulate movement as the dates are adjusted, avoiding the need for complex real-time inter-agent communication for this presentation.
+* Client Account Initialization: Parth Goda Rajesh, Aaron Rose, and Evan Liang planned the initialization of 200 client accounts for the demo. They decided to assign each account a specific narrative or "story" regarding its progress through the renewal stages, such as being blocked at outreach or moving through to proposal, to ensure that the system appears to function dynamically when the date slider is adjusted.
+* Dashboard UI and Code Management: Evan Liang and the team reviewed the updated dashboard interface to ensure visual consistency. They encountered minor bugs with filtering and deal counts but decided against major structural changes to avoid breaking the demo right before the meeting. The team established a policy to cease new code pushes until after the demo with AJ to maintain stability.
+* Pipeline Stage Definitions: Parth Goda Rajesh clarified the refined structure of the outreach funnel: monitoring, draft state, waiting for response, engaged, unreachable, and finally the proposal stage. This structure aims to clarify the trigger points for emails and the progression of deals based on client interaction or lack thereof.
+* Overview Dashboard Metrics and Filtering: Aaron Rose, Evan Liang, and Parth Goda Rajesh discussed the overall dashboard metrics, specifically the response rate of 23% and the need for a global filter that applies across the entire website when a user selects a specific period like Q3 2026. They noted that the account page layouts needed to remain standardized to provide a cohesive user experience.
+* UI Cleanup and Redundancy: Parth Goda Rajesh identified significant text redundancy on the dashboards, such as repetitive labeling for stages like "outreach" and "out-of-cycle." The team agreed to remove this clutter to improve readability and save space, as the repetitive text wasted screen real estate and made navigation less efficient.
+* Code Repository Conflict and Restoration: A technical conflict arose where the standardized account page layout was inadvertently overwritten due to overlapping code pushes. Dean Liang, Parth Goda Rajesh, and Aaron Rose worked together to identify the correct commit, revert the changes, and restore the centralized account page view. The team reaffirmed the policy of halting code pushes until after the upcoming demo to prevent further instability.
+
+
+
+
+You should review Gemini's notes to make sure they're accurate. Get tips and learn how Gemini takes notes
+How is the quality of these specific notes? Take a short survey to let us know your feedback, including how helpful the notes were for your needs.
+📖 Transcript
+Jun 25, 2026
+Stand up - Transcript
+00:00:01
+
+
+Evan Liang: If we have Google Meets that's able to sync a lot of audio in the room together then we should have a speaker issue and then it should be able to detect who said what the thing won't create a problem Google meets
+Cooper Tenney: So everyone can join the thing and we'll create a Google meet.
+Evan Liang: yeah so I think that if that's the case then fire can
+Cooper Tenney: So I think that instead of
+Evan Liang: still instead of like basically what it has to do has to read the
+Cooper Tenney: like and
+Evan Liang: transcript for
+Cooper Tenney: then uh it has to infer who's getting what task. Yeah. Sometimes wrong and it's very often wrong. So how do you merge? You just join it. It will detect that you're all in the same room. Oh, really?
+Evan Liang: I mean honestly if we all
+Cooper Tenney: Unmute. Oh,
+Evan Liang: just
+Cooper Tenney: I mean it's going to come in from every direction. Does that really
+Evan Liang: zoom can definitely not do
+Cooper Tenney: work?
+
+
+
+
+00:00:55
+
+
+Dean Liang: Uh I had the option
+Evan Liang: that kind of
+Dean Liang: to
+Evan Liang: cool or at least Yeah.
+Aaron Rose: orally. Yeah. Yeah.
+Evan Liang: Yeah.
+Aaron Rose: So, if you unmute then it pops up and says,
+Evan Liang: So It pops up each other and merge
+Dean Liang: pop audio.
+Aaron Rose: "Are you located with
+Dean Liang: Oh
+Evan Liang: audio.
+Aaron Rose: audio?" Yeah.
+Evan Liang: Uh that's me.
+Dean Liang: yeah.
+Evan Liang: Fireflies off I'm
+Parth Goda Rajesh: I'm unmuted. I'm talking
+Evan Liang: tell
+Dean Liang: Yeah. I don't know.
+Aaron Rose: But no, it seems in Zoom we all have audio.
+Parth Goda Rajesh: Zoom. We all had audio
+Aaron Rose: This thing would be massively feedback.
+Parth Goda Rajesh: on
+Evan Liang: No one has that.
+Dean Liang: How do I
+Aaron Rose: How do I join?
+Parth Goda Rajesh: Yeah.
+Aaron Rose: Yeah,
+Dean Liang: join?
+Parth Goda Rajesh: How could I not join you? Oh,
+Aaron Rose: you're right. I think everyone sounded audio.
+Parth Goda Rajesh: okay.
+
+
+
+
+00:02:02
+
+
+Aaron Rose: Okay,
+Parth Goda Rajesh: Merge audio.
+Aaron Rose: merge a like merge audio only matters if
+Parth Goda Rajesh: No, we should only like merge audio only matters if um there's someone else who's joining
+Aaron Rose: um there's someone else who's joining remotely.
+Parth Goda Rajesh: remote. Otherwise,
+Aaron Rose: Otherwise,
+Parth Goda Rajesh: in general,
+Aaron Rose: in general,
+Parth Goda Rajesh: everyone's audio should be off.
+Aaron Rose: everyone's audio should be off and we should just
+Parth Goda Rajesh: We should just be talking to a speaker like normal because it doesn't matter.
+Dean Liang: talking. It doesn't
+Parth Goda Rajesh: I wonder
+Aaron Rose: I wonder if it like detects who is whose voice is going and then it turns on that
+Parth Goda Rajesh: if
+Dean Liang: matter.
+Aaron Rose: person's microphone you're talking it goes to
+Parth Goda Rajesh: Yeah.
+Evan Liang: Well,
+Aaron Rose: yeah merge no I did not
+Parth Goda Rajesh: No, I didn't know.
+Aaron Rose: call oh yeah okay now it
+Parth Goda Rajesh: Oh, yeah.
+Aaron Rose: should fire but also it does make sense that in general if it's just a stand up and
+
+
+
+
+00:02:48
+
+
+Dean Liang: person. Everyone should just unmute and turn off your
+Aaron Rose: everyone's turn off your volume and unmute and
+Dean Liang: audio.
+Aaron Rose: then it's the same thing. Yeah, that's his picks up mine and mine picks up mine.
+Dean Liang: Accept that.
+Aaron Rose: But just pray that's the closest one. It doesn't look like anyone's audio is going or maybe is my audio going my my are
+Parth Goda Rajesh: screen is like it says that you three
+Aaron Rose: just flat.
+Parth Goda Rajesh: off
+Aaron Rose: Uh testing testing. No, that's because the merch audio is shaking. Can you talk? Yeah, I'm talking. Yeah. Okay. Deep. Hello. Yeah, it's it's getting from everybody. It's just like tweaking out. We'll just see how the transcript
+Dean Liang: Okay.
+Aaron Rose: looks.
+Dean Liang: What do we want
+Evan Liang: over uh today. Do we want to uh
+Dean Liang: to
+Evan Liang: de
+Aaron Rose: Start with your demo thing and then we can go to the overall dashboard or how do you
+
+
+
+
+00:03:44
+
+
+Evan Liang: I thought you were about to say do you want to start
+Aaron Rose: move?
+Dean Liang: do weird thing? Hell no. That's not
+Aaron Rose: Cool.
+Dean Liang: uh
+Aaron Rose: Okay. Trust me, it's not done yet. Um, okay. So, we're here. This is like basically
+Dean Liang: to help give another viewpoint on what the demo will look like from the customer's point of view. But basically, you have this thing where basically as I drag it across, it'll show the output for each stage. So, it shows the email once it's outreach, once it's in proposal,
+Aaron Rose: the presentation slide deck.
+Dean Liang: it shows engagement and show preview of the
+Aaron Rose: Move into buyer.
+Dean Liang: buyer engagement hub. Then moves to negotiation basically email change that we haven't build yet built yet and then closing. So this is going to be used in conjunction with the dashboard to sort of give in a demo for AJ. So Evan will be using both
+Aaron Rose: Yeah,
+Dean Liang: these very
+
+
+
+
+00:04:34
+
+
+Aaron Rose: I guess he has to decide which one how to use this totally get
+Dean Liang: intentional
+Aaron Rose: very confusing because they're going to wonder like okay so what's your product
+Cooper Tenney: I don't know.
+Aaron Rose: like
+Cooper Tenney: Maybe it's imagine this income combination.
+Dean Liang: the dashboard. I know no thank
+Aaron Rose: switching back and forth it's like a little hard what Can you like change the UI, your
+Dean Liang: you.
+Parth Goda Rajesh: Just to make it look very distinct,
+Aaron Rose: design?
+Parth Goda Rajesh: but just maybe the colors have to match that Colorado
+Aaron Rose: Then it's very distinct. So you're saying make it look different than our product? Yeah, just the color scheme. I don't think it matters so much. But if you're talking about how there might be confusion,
+Parth Goda Rajesh: this scroll up.
+Aaron Rose: does this do anything? Okay, not bad. It's not bad for asking. It's just like this, but like I didn't want it, so I believe. Yeah, that looks great.
+
+
+
+
+00:05:31
+
+
+Aaron Rose: No, thanks for putting together. Uh,
+Evan Liang: I know I think uh with these things uh we'll play by
+Aaron Rose: yeah, only try to make sure we're not cheesing them.
+Evan Liang: ear
+Aaron Rose: So, we may bounce back and forth, but it's it's nice to have that there. And we'll see how it goes.
+Evan Liang: uh on the other renewal dashboard. Uh so two thoughts before we dive into
+Aaron Rose: Right.
+Evan Liang: it
+Aaron Rose: One of the things I think uh companies do a poor job of
+Evan Liang: u is they create a lot what I call like fake work.
+Aaron Rose: so
+Evan Liang: A fake work is where you like end up working really really hard to do things that don't really matter.
+Aaron Rose: uh
+Evan Liang: Okay. Uh so there's that that's one extreme.
+Aaron Rose: one way of like herself
+Evan Liang: So one not like burning your the company is try to avoid creating fake work. So uh that's one of the thesis we have. The other one is hey some of the small details matter right and so as we go look at the renewal dashboard we want to figure out which one falls into which camp.
+
+
+
+
+00:06:29
+
+
+Evan Liang: So, as I say, like there are things like we're like, "Oh, if you do that, like, who cares? We're going to redo it later." Right? But there's other things that like uh you're like, "Hey, if we don't figure that out, we may miss something." Like, it's important to to figure that out. So, let's just think through and I just want to make sure people can call out. Actually, in general, anything you do, uh, I want to make sure people call like, "Hey, it's not like I don't want people to call fake work simply because they don't want to do it." Uh but it's like fake work like hey uh an example of fake work at like a lot of companies is just like I honestly believe in which it does not
+Aaron Rose: If any minute spent preparing for a board meeting, a material difference the business and you're asking people to go find numbers or do stuff that's like fake work.
+Evan Liang: make
+Aaron Rose: You know, there's a very strong function for what you do. uh doesn't serve that function like
+
+
+
+
+00:07:17
+
+
+Evan Liang: uh that that that that like uh and if you're doing that and it does the board members are there just write guidance and trying to decide whether the company's on the right track. So making your presentation extra fancy for the board doesn't help, you know, and that's it could create a lot of churn inside companies because people love people people love saying I'm working for the board and they're just like they'll just like literally spend all their time doing that because they think it's really really important and it's actually not versus like like I'm spending a lot of time working to try to land a client or help a client. Hey,
+Aaron Rose: There is no
+Evan Liang: which you should not be doing that.
+Aaron Rose: level
+Evan Liang: There's no fake work there. Like getting a client happy and stuff like that, that's real work. It moves the business needle.
+Aaron Rose: that make sense. So, as you think through some of the stuff that we're doing internally,
+Evan Liang: We're building decks. We're doing stuff. There could be times where it's like, hey, that seems like are we actually are we actually moving the needle?
+
+
+
+
+00:08:12
+
+
+Evan Liang: So that's just that's just a little perspective. Anyway, yeah,
+Aaron Rose: And I I think a lot of times when people at bigger companies work really really
+Evan Liang: like 90% of their jobs are like fake
+Aaron Rose: hard and that's where people end up wasting a lot of
+Evan Liang: work.
+Aaron Rose: time. So I think that
+Evan Liang: How companies can not have to work 996 but work very very fast. If you eliminate the fake work, which is 50% of people's time, then you could still go very very fast without burning yourself out. If you can't differentiate between fake work and real work, then you could work a hundred hours a week and and burn yourself. Like uh in investment banking, fake work is they make the 6 pm actually
+Aaron Rose: They used to make the junior analyst sit around all day doing nothing.
+Evan Liang: give them a project and that's why they didn't spend all night. But between 9 and 6 there,
+Aaron Rose: They were just sitting was in a car in New York
+Evan Liang: it still happens.
+
+
+
+
+00:09:04
+
+
+Evan Liang: I just caught a friend yesterday.
+Aaron Rose: doing KMT. He said, "What have you been up to? You've been so busy. I've been just been aligning logos at points. For the past two weeks, I've been staying up till 3:00 a.m. doing that. It's like, what else have you been doing? Doing like just sleeping and making sure everything looks good. I was like, okay. He's like,
+Parth Goda Rajesh: dressed up.
+Aaron Rose: I'm worish.
+Parth Goda Rajesh: I haven't met anybody in four weeks. to me.
+Evan Liang: Right. But then there's times where you have to like, hey, if uh if you got a if a if you got to get a client live next or let me put it,
+Parth Goda Rajesh: Oh.
+Evan Liang: if like a client's system is off every minute is like critical. The difference between getting someone back on in one hour and getting someone up in one day could be the literally the life and difference between your company being alive or not.
+Aaron Rose: company goes down for like a week and you're mission
+
+
+
+
+00:09:54
+
+
+Evan Liang: If you're you're dead, right?
+Aaron Rose: critical.
+Evan Liang: So that that anyways. Okay. So let's go look at the demo. Uh, I can pull it up and I
+Aaron Rose: I have this I'll pull you It's the issue when someone's cla mid
+Cooper Tenney: Was it was it
+Parth Goda Rajesh: Who push
+Aaron Rose: meeting
+Parth Goda Rajesh: left?
+Dean Liang: the push in like five minutes. I just like but I just had like 10 conflicts pop up because someone decided to change the internal clock. Was that you? Is that you? Okay. You're welcome. Because now it broke.
+Aaron Rose: so now my code which was referencing it was supposed to
+Dean Liang: Well, it should still
+Aaron Rose: anyways so overall Rain dashboard see the UI stuff. Uh the first thing I want to point out
+Evan Liang: is uh do we want to align around and this is like how much does it matter for the demo perspective is if I
+Aaron Rose: is
+Evan Liang: look at the overall numbers here like 119 12 22 9 11 12 and 15 right if I click into the so like if I look
+
+
+
+
+00:11:02
+
+
+Aaron Rose: the sections it should align to that. So works
+Evan Liang: at out of cycle there is uh 119 deals an out cycle. That works.
+Aaron Rose: right.
+Evan Liang: If you go to qualify, it's 65 of 77. That means there's 12 renewals. That works. If I go to outreach, there should have been Yeah, this does not match that, right? Uh proposal does not quite match that either. engagement those things where like from
+Aaron Rose: is 15 versus 11. So, this is one of
+Evan Liang: a demo perspective I don't think like I'm
+Aaron Rose: I don't think AJ's going to notice,
+Evan Liang: not because we're just going to click through
+Aaron Rose: right?
+Evan Liang: quickly
+Aaron Rose: But so this is one of those where like hey is there underlying other issue that we need to solve around that.
+Evan Liang: but that I did notice quickly.
+Aaron Rose: Um
+Evan Liang: Can I can I counter that point?
+Aaron Rose: sure because can you go back to your Yeah.
+Parth Goda Rajesh: Oh, I figure how you got those numbers.
+
+
+
+
+00:11:58
+
+
+Aaron Rose: So
+Parth Goda Rajesh: Outreach is 22 deals. Okay. Can you click on those 22 deals?
+Aaron Rose: these should add up to 22. Can you go back to the painter you saw?
+Parth Goda Rajesh: Where is that coming from?
+Aaron Rose: Oh, because the pipeline funnel is purely
+Parth Goda Rajesh: I think what's happening
+Aaron Rose: um date based.
+Parth Goda Rajesh: is
+Aaron Rose: So when you hit 90 days, any deal that was 90 days away that was in qualification at like 92 days has now moved in this funnel. And so I have at least for qualification hooked it up such that my date range will be in qualification and it leaves qualification when it passes 90 days. So each person maybe has a I don't think I think allies are different. But this was based on the point that everything moves automatically. So like it's all time based. You can flag. Yeah. But the person isn't manually approved. Just once they hit the date, it moves on. No, I completely agree.
+
+
+
+
+00:13:09
+
+
+Aaron Rose: It's all automatic.
+Parth Goda Rajesh: like I just think that what our numbers are reporting to each other have
+Aaron Rose: Logic of how that is summed up.
+Parth Goda Rajesh: different go to um
+Aaron Rose: It's all automatic. Like um if you
+Parth Goda Rajesh: outreach you will see that uh monitoring and I already have after unreachable it doesn't even have a section anymore because once it's beyond engaged or once you have it it goes straight to proposal. So it stops at engaged and unreachable. Yes. So, so our numbers like that's that's the logic there and that's why like I just think that like the windows and the sums they're all different and we had to centralize like 1% actually and Cooper were fine.
+Dean Liang: until we change the clock. The
+Aaron Rose: should be fine. The clock I think it's exactly the issue we said right before.
+Dean Liang: qual
+Aaron Rose: No, because I checked our numbers. our numbers. Yeah, there's like hour too is that we don't push ours out a day.
+
+
+
+
+00:13:59
+
+
+Dean Liang: is
+Aaron Rose: I don't at least I didn't tell it to do that because the thing with the clock is if you move it 10 days forward, any deal that was 10 days away from auto pushing should push. Um, so if you move it forward in my section at least, it like auto doesn't make sense. Leaves my part. It does. Wait, it totally does. If mine's not getting an email back, it should not push to the next section. Yeah, there's a little bit of that
+Evan Liang: People who never engage with outreach would never go to proposal. It's true. There needs to be
+Aaron Rose: if statement like if never engaged, right? And like if proposal not sent the buyer public. That's a good point. Okay, then we might need to rework the dashboard funnel. Yeah. D logic. So, so the logic is is tus 20. That's it.
+Parth Goda Rajesh: cycle is like most of the deals qualification is T minus 120 like from the
+
+
+
+
+00:14:54
+
+
+Aaron Rose: So,
+Parth Goda Rajesh: world and R is T minus 90.
+Aaron Rose: easy
+Dean Liang: No data is actually going between like through any that's why I was asking you about the JSON having the JSON
+Aaron Rose: fix.
+Parth Goda Rajesh: So,
+Dean Liang: for every single company randomly generate where is that company in the cycle what's their what's their progress in the
+Aaron Rose: That's the That's what the Oh,
+Dean Liang: cycle
+Aaron Rose: I see what you're saying. Like just literally fix it from this this like like it doesn't have to be real. Like just
+Dean Liang: like this is 73 days out. It is in this cycle.
+Aaron Rose: say
+Dean Liang: It is either engaged. They have not reached back yet. Like you can hardcode the data. Um there's no there's no data going through our thing right now. Everything is a front end. It's
+Aaron Rose: very easy to make it go through.
+Dean Liang: very
+Aaron Rose: Like ideally it does go I know but that's like a one prompt. I mean, it genuinely is like I know, but it's a demo.
+
+
+
+
+00:15:49
+
+
+Aaron Rose: Like just like that's I mean,
+Dean Liang: Yeah, but we don't
+Aaron Rose: I guess we could, but I think it's useful to make sure like for me, for example, in qualify, I wanted to make sure that my logic when all my accounts left qualify updated what the dashboard was. So, I needed to have the date changer to move it to the point where no more deals are in qualify. Like I don't know. Would we each have a button that says move all our deals out to make sure that the logic changes? Like that's don't move any
+Dean Liang: just have it fix where each deal is going to sit.
+Aaron Rose: deals.
+Dean Liang: No, but if we're doing the logic
+Aaron Rose: The dashboard changes once all deals have moved out.
+Dean Liang: that
+Aaron Rose: Right. That's what we were talking about in there where like a new thing comes up. We need someone to show that. We just give we're giving a step.
+Dean Liang: snapshot right now, how are
+Aaron Rose: You gonna test that feature works.
+
+
+
+
+00:16:45
+
+
+Dean Liang: you?
+Aaron Rose: We don't have to. We were just talking about how that's what we were going to do. I think that just want to
+Evan Liang: where we have to figure out like how what to what level the demo fidelity is it does it
+Aaron Rose: know is it
+Evan Liang: like or is it just a showpiece I'm just confused
+Aaron Rose: working where things are actually flowing through or how you're going to show something flow through. What you're saying time so I'm going to wait 3 days because you just benchmarked it to our current time. Nope. You click the date thing at the top and now you can add dates. My my worm conflicts. So when you click that now you can go forward in time. Oh my god. That means if we do this a
+Dean Liang: If we do this between our things, that's not just one problem.
+Aaron Rose: little it's it's only more than one
+Dean Liang: when something is unreal when it's engaged and not and then I have
+
+
+
+
+00:17:47
+
+
+Aaron Rose: to then communicate
+Dean Liang: Cooper's agent that's not one font it's a lot more
+Aaron Rose: to I don't know if
+Dean Liang: work
+Aaron Rose: we have time to set that all up before I think I have to stay here tonight and finish it if that's the case that's a lot more
+Dean Liang: then it's just like then it's not
+Aaron Rose: like a working thing whatsoever. Yeah. So, so I saw this.
+Evan Liang: I would say uh we've highlighted by going down this the highlighting this issue we've uncovered that we are not in agreement of how things move. Yes. So so that's that I don't need it for tomorrow morning. Okay. He's not going to we're not going to go to that level of depth, but that is something we should try to figure out is as we try to build the prototype, how do things flow and what do we think is going to work best longer term? Uh and again that kind of goes to if figuring out how something flows does that answer our question around like the product market fit of the application or do we learn something about the application or is it just hey it's a purely showpiece and that would determine how we would approach it.
+
+
+
+
+00:18:58
+
+
+Evan Liang: So I just I do
+Aaron Rose: We think if we randomly initialize some get stopped at Dean Sa stage, some get stopped at parts stage, it can still all be date based and just when you know we just add like a literally a oneline logic that says if it was randomly initialized to stop at par stage on X days from renewal. We're clicking through and then it stops and then you still have that functionality. Like I think ripping making it it's going to be enough. It's going to be more lo it's going to be the same amount of logic to make this idea now work than it is to just initialize them to get stopped randomly. Does that make sense? Like we we can hard code which ones get either one.
+Dean Liang: 's agent just pulls from a JSON like the JSON says this is what each of the accounts are doing in your sub agent. Two, we have to build something that like moves from agent to agent to communicate with each other. They're not communicating with each other right now, right?
+
+
+
+
+00:20:05
+
+
+Dean Liang: That no
+Aaron Rose: all we need if it's all just date based it moves through like to your point that sometimes things get stuck. Yeah. just randomly initialize in the like account itself because the account is just a JSON of a bunch of randomly initialized values. We just add a one thing in there that says it's going to get blocked when we get to this like it's just a one zero binary thing that says get blocked on the outreach step and then just when it gets to outreach it's not going to progress and it's going to get blocked. If it's that simple, then why don't you just like tell like all of the models to look at that thing? Wait, that is literally what you're saying is literally what I'm saying because it's okay. Your idea that it moves through is not what it actually does. The architecture is not that it actually moves through. All our agents are just reading the data and going for it. Yes. So, yeah. So, but it naturally moves through because your your agent just appears to of course it's not actually but it literally if you tick the day up one from 90 days to renewal it literally leaves my section says approved in my section and then populates in par section.
+
+
+
+
+00:21:22
+
+
+Aaron Rose: Yes,
+Cooper Tenney: Hey.
+Aaron Rose: I know that it's not actually moving through and actually passing stuff in but it is for all intents and purposes moving through. So I will I will give that a literally a 30 second try if it doesn't work. Yeah. Can you So let me just clarify what
+Parth Goda Rajesh: do is you're gonna first of all you're going to come up with you already had the 120 clients,
+Aaron Rose: you
+Parth Goda Rajesh: right? How many clients do you have? 200. 200 clients, right?
+Evan Liang: I'm going to give each of them
+Parth Goda Rajesh: like a story to follow through. Okay.
+Aaron Rose: going to stop an outreach. You're going to start a proposal. And that's how it's qual how that's how it's splitting into all these phases.
+Parth Goda Rajesh: You
+Aaron Rose: Is that understanding correct? Yes. Each one is just going to have binary. Does it get stopped at this stage? Does it get stopped at this stage?
+
+
+
+
+00:22:06
+
+
+Aaron Rose: It's going to be randomly initialized whether he's hard coding all of that to be hard. So, so he has 200 accounts like so let's say I'm going to look at a
+Parth Goda Rajesh: I'm going to look at three or four accounts here.
+Aaron Rose: random.
+Parth Goda Rajesh: Um
+Aaron Rose: So he's going to make like docu sign say okay you are your docu sign. This is what you going this on.
+Parth Goda Rajesh: this you're going to be qualification on this going to be out you stop by proposal you are wigs you will stop at outreach you're going to be blocked by champion
+Aaron Rose: You're going to be stopped at you're going to go through you're going to page the entire Yes.
+Parth Goda Rajesh: Netflix
+Aaron Rose: You're going to give each of them a story. Yes. So, no one touched their date logic. Okay. Until I exit. That's fine. And then for the demo purposes, could you give one account or like a few accounts the ability to how
+Parth Goda Rajesh: Okay.
+
+
+
+
+00:22:52
+
+
+Parth Goda Rajesh: So, for you he'll just go up and down the slider and
+Aaron Rose: Netflix moves from qualification at minus 20 -
+Parth Goda Rajesh: show
+Aaron Rose: 120 then - 90 - 30 and then closing four five. Right. And you don't even have to like that doesn't have to be part of the demo. I'm just saying like it it would work. It would be good. So, as a great example, if you click on the renewals dashboard, Evan, like at the top, um, click all periods. It's not right there. Uh, well, just click it and then click Q3, 2026. Now, if you click the as of June 22nd at the very top, um, very,
+Evan Liang: Yeah, take
+Aaron Rose: yes. And now if you like minus 10 or plus 10,
+Evan Liang: that.
+Aaron Rose: you'll literally you'll see the deals start cycling through. And if you do it by plus one, you'll see like individual deals move down the pipeline. And I just think that like I mean that's that's ultimately the system that we want to have.
+
+
+
+
+00:23:56
+
+
+Evan Liang: It's your own little simulator.
+Aaron Rose: You build.
+Evan Liang: Yes.
+Aaron Rose: Okay. Okay, I I'll just give it a try and if doesn't work,
+Evan Liang: Yeah.
+Aaron Rose: give it a try and make sure like if you're doing it, make sure it like works for all four stages. Like I don't think we should go in there and audit it because it's kind of like your sure process. So, so if if you are done with that classification of all those accounts and you go and see outreach as at the end of your storytelling has 22 deals, you go to the outreach dashboard, there should only be 22 deals across draft waiting for response engage unreachable. Yes. Okay. So, you're going to force my system to also make sure that the logic there works. Yes. And it maybe the like we could even click then you know or if you push it 200 days into the future. Yeah. when you go back to that quarter, you'll still have like 22 blocked or however many end up getting interesting
+
+
+
+
+00:24:52
+
+
+Evan Liang: is when you increment it,
+Aaron Rose: thing.
+Evan Liang: your your numbers do change.
+Aaron Rose: Yeah, that's right. That's why I'm like that's why I'm like we shouldn't rip everything.
+Evan Liang: Yeah.
+Aaron Rose: What was what was your you in line with with what he was doing? No, he he's just like if he does the JSON that's exactly what I said. if he my concern was he wasn't going to do the JSON he was going to have something else feed through every sub agent that communicates to the other but if they're all pulling from the same JSON that's what I was saying in the first place okay that's fine so yeah so basically he's going to redo the entire account to have basically not only the data but also the story on top of it where it's going to be in
+Parth Goda Rajesh: The story
+Aaron Rose: this demo where is it at this date where is it and how it's going to move on yeah I mean story makes it sound like it we're ripping a ton out and putting a ton in it's literally just randomly initialize a couple are going to get blocked Yeah.
+
+
+
+
+00:25:40
+
+
+Aaron Rose: And a couple are gonna not get a response at your stage. Yes. But I don't fix it. Let me see. Yeah. Yes. I think we are relying on All right. Well done. You guys
+Parth Goda Rajesh: same thing.
+Aaron Rose: uh
+Cooper Tenney: Another
+Aaron Rose: uh if I do it supposed to change the whole proposals change I don't think it I don't think I don't think it
+Evan Liang: all the way in. When I pulled,
+Aaron Rose: got
+Evan Liang: I didn't see a new update. Does look very
+Aaron Rose: on your Yeah, my looks like this.
+Evan Liang: different.
+Aaron Rose: Oh, yours exactly.
+Dean Liang: Are
+Aaron Rose: Oh, this is
+Evan Liang: the link local proposal,
+Dean Liang: you
+Evan Liang: right? U let me go back to GitHub.
+Aaron Rose: the
+Evan Liang: Oh, there we go. 22. There we go. Yeah, now it goes back. Okay. Oh, that looks very different. You should just click
+Aaron Rose: reset it.
+
+
+
+
+00:26:51
+
+
+Evan Liang: on
+Aaron Rose: twice. I don't know.
+Parth Goda Rajesh: My schedule has zero accounts.
+Aaron Rose: Uh uh maybe we'll
+Parth Goda Rajesh: The says, "All right, you good enough?" Uh-huh.
+Aaron Rose: be coming two three maybe. Oh, okay. Good. So, cool. Let's go and continue
+Evan Liang: on going through that. Uh yeah,
+Aaron Rose: on.
+Evan Liang: let's change out of cycle to offcycle. Someone could do that. That'd be great. Um sorry, I'll just like that that seems out of cycle is a word, but offcycle is actually uh better. Uh qualify. Okay. Then qualify is
+Aaron Rose: Uh it's because we're in the future quarter.
+Evan Liang: uh
+Aaron Rose: If you go back or just you can click on renewals dashboard. Dashboard. Yeah. Because I think all areas
+Dean Liang: world. There's
+Evan Liang: something broke. Back
+Aaron Rose: qualifications. No. Okay. Just click the Q4 20 uh middle is hooked up and then
+
+
+
+
+00:27:48
+
+
+Evan Liang: on
+Aaron Rose: the Q3. Make sure you leave that. Yeah. Okay. Do that. And then this one you
+Evan Liang: click on the. So I think what we did was hey when you click on any of these like draft pulls up uh a window modal that looks a lot like what Aaron has right and then you can click into one of these and it comes to the account page. That's it. And then just
+Aaron Rose: did an email. Okay. Okay. This looks okay.
+Evan Liang: check
+Aaron Rose: Step is is okay.
+Parth Goda Rajesh: Yeah, it's correct to entire outreach steps
+Aaron Rose: So it should only be So I change it.
+Parth Goda Rajesh: pages. It's no longer Sorry. Go ahead.
+Aaron Rose: Click click into the account again. Draft.
+Dean Liang: Well, any of them. Is that the new account page?
+Aaron Rose: Uh, I didn't that's not what my account page looks like. No, I said it doesn't make Wait,
+
+
+
+
+00:28:54
+
+
+Parth Goda Rajesh: I I've just built it for outreaches
+Aaron Rose: but the plan is to have that
+Dean Liang: Go to the Yes. So,
+Parth Goda Rajesh: and
+Dean Liang: I need to I need to merge my
+Aaron Rose: whatever looks like mine, right? Yeah. I thought that was so from now it's it's just simplified for the outreach as what had been asked. So now you figure out where to put
+Parth Goda Rajesh: you class. But I just want to say one thing that has changed. I've changed the entire structure of the the stages in and outreach. So it goes to the monitoring which is tminus
+Aaron Rose: at one t minus 190 goes to a draft state.
+Parth Goda Rajesh: 120
+Aaron Rose: So these are already drafted ready to go after the draft the email.
+Parth Goda Rajesh: up stage. It immedately sends out it's just a it's just a trigger.
+Aaron Rose: So then there's not a stage because happens in a
+Parth Goda Rajesh: It just trigger the email. What happens at that point is the trigger response.
+
+
+
+
+00:29:38
+
+
+Aaron Rose: microcond then then we're waiting for us.
+Parth Goda Rajesh: So that's the point. Are you sending it in
+Aaron Rose: 90 days or at 120. Uh we have the logic data.
+Parth Goda Rajesh: now?
+Aaron Rose: I don't I'm just talking about the stages.
+Parth Goda Rajesh: Is waiting in response. The moment we have the response, we are engaged. So if it is engaged as long as the person has not requested for a proposal, has request to move into money or negotiation. And then um if after waiting for response
+Aaron Rose: after a particular period of time you don't hear from them it becomes unreachable and then anytime after engage there is a uh an uh indication from the client that they want to move the proposal you can see the last stage is at proposal stage where
+Parth Goda Rajesh: Yeah. Push the T cut to D.
+Aaron Rose: Got it. Okay. Yeah. Cool.
+Evan Liang: proposal stage that's brand new.
+Aaron Rose: Um,
+Evan Liang: Let's see. Uh in proposal so uh okay in proposal
+
+
+
+
+00:30:33
+
+
+Aaron Rose: one more thing.
+Evan Liang: sorry
+Aaron Rose: Uh,
+Parth Goda Rajesh: Evan, can you go to the overview? I've done the two the outreach cycle and the
+Aaron Rose: dash that I'm not sure everybody else doing but like where we are.
+Parth Goda Rajesh: overall agent performance.
+Aaron Rose: almost 23%.
+Evan Liang: I think that's good.
+Aaron Rose: I like the response rate 30 escalators a
+Evan Liang: Yeah, that's a industry standard, right? Champion risks
+Aaron Rose: human forecast and one more thing is Eron like you see like on the corner there's Q2
+Evan Liang: caught.
+Parth Goda Rajesh: 026.
+Aaron Rose: do I think mine is isolated I think we need an overall filter like if he does
+Parth Goda Rajesh: Yes.
+Aaron Rose: all periods the entire website should be all per if he does that that filter is applied
+Parth Goda Rajesh: Quarter 23. Just ask your clock to make
+Aaron Rose: across the dash I think mine is like it's just working I
+Parth Goda Rajesh: like it's doing it.
+Aaron Rose: will hook up took up all the night. We all like we all need to push and need like for an hour Aaron works and nonetheless does.
+
+
+
+
+00:31:26
+
+
+Aaron Rose: I agree. And then he pushes and then we all get to start working again. Yeah. Great. Cool.
+Evan Liang: Uh, so these up here are not clickable,
+Aaron Rose: Proposal.
+Evan Liang: but the scheduled. Okay, then you got your account page somewhat similar. Um, wait, I think Dan and I did the same
+Cooper Tenney: Yes,
+Aaron Rose: This is what my account.
+Evan Liang: thing.
+Cooper Tenney: I think
+Aaron Rose: It's what Erin's used to look like before he updated it. That's what I I said to reference his. Yes, it is. Did I even update it? I feel like it looks pretty similar. Yours when you click fairly similar.
+Evan Liang: But it's pretty simple. I changed
+Aaron Rose: I think it looks the same. No, I definitely Mine is referencing your your design.
+Evan Liang: it.
+Aaron Rose: Yeah. And then like Well, I think both look different because you don't have the numbers at the top. Yeah. Okay. Okay.
+
+
+
+
+00:32:12
+
+
+Aaron Rose: So, it it's close enough for now. Yeah. Okay. Uh so you
+Evan Liang: get scheduled event around the different things. So we like the funnel.
+Aaron Rose: structure. So I I I like it. I'm just worried it's too similar to the overview. But maybe that's a good thing.
+Evan Liang: Oh,
+Aaron Rose: I think my response guys for proposal is it should look more like the qualifier outreach instead of the dual world dashboard where it should be like how many are in each stage like my my
+Parth Goda Rajesh: like outreach.
+Aaron Rose: my tabular form instead of the whole funnel that we have. I think this pipeline funnel should only be here. I don't know what you guys are you pointing to the overview one like overall pipeline funnel should be the only funnel diagram in the I was thinking although this looks really nice I like the colors yeah okay first included by
+Evan Liang: Okay.
+Aaron Rose: scenario renewal justify increase safe play
+Evan Liang: Concluded by competitive
+Aaron Rose: okay fair enough and then engagement But
+
+
+
+
+00:33:08
+
+
+Evan Liang: threat.
+Aaron Rose: okay, you have a slightly different funnel. Explain.
+Parth Goda Rajesh: similar to Five.
+Aaron Rose: It's Yeah. Um uh yeah. Yeah. It's just similar to the parts. I put the recent activity in this account page. So like you I mean no exactly where you were. Um you click into it, you can see like okay, these ones haven't engaged and therefore don't have recent activity. Got it. Um so it's just kind of all in one place now. Okay. Um and then I below it I put the u snapshot plus outcomes. So ideally you could try that.
+Cooper Tenney: When the clock moves, this will
+Aaron Rose: Um I'm not sure.
+Cooper Tenney: update
+Aaron Rose: I don't know if I trust thing. Okay. It looks like they went up. It does go up at
+Evan Liang: renewed.
+Aaron Rose: 0%.
+Evan Liang: Yeah. So promotion do go up.
+Aaron Rose: I guess
+Evan Liang: I was like the zero renewed
+
+
+
+
+00:34:15
+
+
+Aaron Rose: until it goes through negotiation, right? So maybe that's technically correct. Well,
+Evan Liang: you can know it pretend like
+Aaron Rose: you I'm going to say renew as
+Evan Liang: I do.
+Aaron Rose: percentage.
+Evan Liang: Yeah. Yeah. Yeah. I think go through there and if you
+Aaron Rose: Yeah, that's fine. Uh sorry if you increase the quarter thing uh
+Evan Liang: increase weight
+Aaron Rose: like the quarter selector uh like if you go to like a future quarter ideally the journey disappears. Okay.
+Evan Liang: Oh,
+Aaron Rose: Then oh you mean a pre
+Cooper Tenney: Maybe
+Evan Liang: seriously.
+Aaron Rose: Oh, wait. Maybe. No,
+Cooper Tenney: I
+Aaron Rose: sorry. I meant a previous. Oh, it's only working on it.
+Evan Liang: All periods. Well, well, when I was
+Aaron Rose: It would disappear. But see, there's only like two accounts in here for some reason. Whatever. Um, got it. It's a date thing. But the point is that hob is supposed to go away.
+
+
+
+
+00:35:20
+
+
+Aaron Rose: Got it. Erin, when you make your um accounts list, can you try to make sure that not like 119 of the accounts are not in off cycle. Can you make it the off cycle to be like a lot smaller than the other things? So I can show that we are in the middle of a cycle right now and then all the accounts are everywhere. We want more accounts into all of our things. Off cycle should not be the biggest but I feel like but it literally is the biggest because it's got three quarters in it. Maybe up. Okay. I can up it to like Yeah. Better than just having three. Yeah. That's true. Uh, actually one thing if we're going to do that, let's make multi-year.
+Evan Liang: make it only four quarters because you have this future system.
+Aaron Rose: This is a
+Evan Liang: You go back around.
+Aaron Rose: five
+Evan Liang: So actually just make it all 2026 and then you could have Q1 which is
+
+
+
+
+00:36:12
+
+
+Aaron Rose: night,
+Evan Liang: in
+Aaron Rose: right? Q1, Q2. So you have a Yeah. And then so we're just halfway through this current year. Uh, and then you can have future multi-year.
+Evan Liang: You could just forget about it.
+Aaron Rose: This is like Yeah.
+Evan Liang: But okay.
+Aaron Rose: you go back through Q2 2007 that's a little bit bumpy. Cool.
+Evan Liang: uh things moving through makes sense. Uh it's great. And then Dean has the uh has the demo stuff. So, let's fix that uh around it. And then let's uh let's we'll see tomorrow morning how AJ kind
+Aaron Rose: Does he grock uh does he understand or that's what you guys going to learn this
+Evan Liang: of
+Aaron Rose: summer gro does he understand like uh how this goes and what is his reaction to this and is this fulfilling kind of what he thinks of the thing which is like like I said I'm going to tee it up by talking about the fact that Hey, he told us he wants visibility and look at these uh these automations we have at each step.
+
+
+
+
+00:37:12
+
+
+Aaron Rose: Like what is his opinions around that? Is this doing what he thought it would be doing? So, um none of this is live, but we're just trying to see if he he wants to help us build it. Can I add a a design comment to what I'm saying? If you look at all your
+Parth Goda Rajesh: Um, Claude has u had a tendency to like just repeat itself for no reason. Like if you go back to the sorry,
+Aaron Rose: accounts
+Parth Goda Rajesh: can you go back to the out of out of cycle page? Yeah, it says dashboard out of cycle out of cycle renewals beyond the next point 180 deals all monitoring 190 deals. So it's just repeating and you're taking up a quarter of the space for nothing. Now you're you're
+Aaron Rose: uh Claude and all these things likes to repeat itself on slides and all this other stuff. So, uh, that that you're you're absolutely right. It's worth us trying to rip those out.
+
+
+
+
+00:38:03
+
+
+Aaron Rose: Same thing if you have proposal stage. You have 4 seconds
+Parth Goda Rajesh: in proposal 47 accounts.
+Aaron Rose: proposal.
+Parth Goda Rajesh: Then you go to engagement. You have engagement and engaging. What is engaging? Okay, that's the
+Aaron Rose: It's like buyer hub is up,
+Parth Goda Rajesh: that's
+Aaron Rose: but they then you can just say live instead of engaging. So, if you look at you look at my
+Parth Goda Rajesh: like 30 minutes just telling God to like stop giving me nonsense. for no reason. Now it's just save out.
+Aaron Rose: That's a great feedback. You're absolutely right. Yeah. So, do like honestly go through every centimeter of your dashboard and see what that's unnecessary. Like you don't type it out, but like go on your phone be
+Parth Goda Rajesh: Okay, I'm on the overview dashboard.
+Aaron Rose: like
+Parth Goda Rajesh: It says autocle and then autocycle. Like there's no point back. Just
+Aaron Rose: Yeah.
+
+
+
+
+00:38:47
+
+
+Aaron Rose: You don't need to say dashboard out of cycle.
+Parth Goda Rajesh: simply
+Aaron Rose: It's already up there. tell like to move things around cuz like if you look at all dashes people
+Parth Goda Rajesh: so much space wasted scrolling to get there.
+Aaron Rose: just point if he's doing a demo he's wasting time scrolling to get to a point he's wasting demo time one thing really quickly this is very unrelated could you just click into like an account that's all the way past um that's somewhere in negotiation or closing I mean you can't find them
+Parth Goda Rajesh: What? fight around the attack.
+Aaron Rose: dashboard. Why? I just want to make sure the account streamline works like when you use the like on the third level, you know. Let's do what happened.
+Evan Liang: What's
+Aaron Rose: See, this is exactly what I was saying. Yeah, my account page went away.
+Evan Liang: Oh
+Aaron Rose: This looks like parts.
+Parth Goda Rajesh: Yeah. But when I
+Aaron Rose: I made the account page to be like standard across all of the account pages.
+
+
+
+
+00:40:05
+
+
+Evan Liang: pages now.
+Aaron Rose: We have two accounts.
+Evan Liang: Maybe cross reference it. We only have one and
+Aaron Rose: Did you ask?
+Parth Goda Rajesh: Huh? No. No. So on.
+Aaron Rose: Have you pulled? Yeah. Like recently? Yeah, I just pushed so I had to pull. Mine is gone though. And I just pulled. He pulled just now. Yeah, yours is now. Yours now. Dean doesn't have that thing. What?
+Evan Liang: Just killed everything.
+Aaron Rose: Who killed what? No, mine.
+Parth Goda Rajesh: Mine did not even push anything. Why is still asking
+Aaron Rose: So, I haven't pushed anything in a while.
+Parth Goda Rajesh: comments?
+Aaron Rose: Who pushed us? Just check. Was he I didn't push last question. I don't have anything new coming in. You pushed most recently. I pushed. Yes. So I killed it. Yeah. What did I kill?
+Parth Goda Rajesh: was I'm sure we can
+
+
+
+
+00:41:05
+
+
+Aaron Rose: My last claude to
+Parth Goda Rajesh: just
+Aaron Rose: revert that one part. Um, let's give you up. Yeah, you're going to fix the uh kind of thing. Uh, you'll Oh, you should
+Evan Liang: go first part to undo and not lose the last account page.
+Aaron Rose: probably
+Evan Liang: Right. So, let's have that go first and then uh I think you go next, right? I think I can do the eight.
+Aaron Rose: stop if everyone just sticks to like visual changes. No, just just they're different. Okay, fine. I mean, that's limiting you guys. If you tell it, change the wording on my page. That's not going to mess up the date. Like, just take an hour and do it. Like, it's fine. But that's that's taking your hour. Go for it. I'll eat dinner. You can do it.
+Dean Liang: Should you
+Aaron Rose: I also need to eat dinner. We might eat dinner at the same time.
+
+
+
+
+00:42:01
+
+
+Aaron Rose: At the same time, I run the prompt. Yeah. Yeah. Yeah. You'll be fine. You should. Okay. Okay. I'll do that. Well, I think uh given where we are 24 hours ago, I think we have a working demo uh front end and uh yeah,
+Evan Liang: We understand it's it's it's be a good session with
+Aaron Rose: let's I think this
+Evan Liang: uh with AJ.
+Aaron Rose: will
+Evan Liang: We're going to get some good solid feedback and then we'll regroup afterwards. So I think at this point let's just fix these two things.
+Aaron Rose: uh I
+Evan Liang: think we want to uh the one thing you don't want to do with the demo gods is just continue to tweak everything because that will actually create more problems. Is there a cut
+Parth Goda Rajesh: Okay, after this point, nobody Achieve it.
+Evan Liang: off
+Aaron Rose: But then if you keep this like should we even bother to work tomorrow morning before the demo? Yeah. It's probably not worth probably not wording changes should be fine though.
+
+
+
+
+00:42:49
+
+
+Aaron Rose: Yeah. So you get like 30 minutes then 9:30 that my pushes often take like 10 minutes but try and get all the merges if we do that. Yeah, I think uh let's play this by uh in in more stable software companies
+Evan Liang: where they're like there's like set windows like every two weeks that you actually merge code and push.
+Aaron Rose: this
+Evan Liang: Yeah. Right. So environment too much,
+Aaron Rose: uh yes I agree let's tomorrow morning let's not try to push things into the
+Evan Liang: right? To to do things.
+Aaron Rose: de
+Evan Liang: Instead, there are other things you guys can work on like take a step back, think about internal projects, think about like do validation and stuff like that.
+Aaron Rose: hey what we're trying to
+Evan Liang: It doesn't have to be uh encode every like hour is
+Aaron Rose: pushing everything. Pushing
+Evan Liang: not necessarily
+Aaron Rose: best practice.
+Evan Liang: Boy.
+Aaron Rose: Yeah. Okay. That work. Let me know if you can figure out the account thing.
+
+
+
+
+00:43:47
+
+
+Aaron Rose: Okay. What what happened? Could you tell me one of them? Okay.
+Parth Goda Rajesh: Remember how
+Aaron Rose: So you were just saying at the beginning of this meeting how you just changed your thing to make it
+Parth Goda Rajesh: you
+Aaron Rose: more streamlined or whatever on the account side of the outreach. So if you could click into an account that's in outreach. So you told it okay was it not you're like okay make it look
+Evan Liang: Yeah. Okay. So you
+Aaron Rose: like this. Um, yeah. So, for your side, but when I created this account thing that was going to be standardized, remember we drew the diagram in there and was like, "Okay, it's going to go out here, but it's all going to come back to the same page." Yeah. I built that logic, which means that when you change the account page on your outreach thing across all the account
+Cooper Tenney: It propagated. painted
+Aaron Rose: page because there's only one account page. So, you changed the account page, not your account page.
+
+
+
+
+00:44:36
+
+
+Aaron Rose: So, you're able to change like your section of the account page, but not block header like Yeah. Like, see how see how it doesn't exist on mine anymore. Tell your claud whatever you did um individual account
+Dean Liang: to
+Aaron Rose: page.
+Dean Liang: the
+Aaron Rose: Undo that. Okay. But like be careful though because it might undo his outreach portion of the account. You have to say like the That's fine. progress undo that and pushes and then you could just do whatever back again. That's true. We just need that code back. We need we need remember the progress bar that you could click across. Account tx rework account page in parallel.
+Parth Goda Rajesh: I see a teammate having
+Aaron Rose: Okay, there's a conflict and
+Parth Goda Rajesh: keeping
+Dean Liang: Chling.
+Aaron Rose: he's like, "All right, whatever.
+Parth Goda Rajesh: like screw don't do that.
+Aaron Rose: Whoever
+Parth Goda Rajesh: undo that. Yeah, I do
+Aaron Rose: please. Okay. Um, is it back now?
+
+
+
+
+00:45:36
+
+
+Parth Goda Rajesh: that.
+Aaron Rose: Is this what you what you want? Yes.
+Dean Liang: We need that. We need that, please.
+Aaron Rose: Mine is built on that. I'm just going to say undo all the which is like most of the
+Parth Goda Rajesh: We talked about on it.
+Aaron Rose: work I did the last time.
+Parth Goda Rajesh: Just tell
+Aaron Rose: Tell it tell it to push it and then just tell it. Okay, now we have to like adapt. You don't have to like say like delete permanently forever. Just be like get it back. Yeah, because that all is supposed to be standardized across remember.
+Dean Liang: Is it all goes down to that? Yeah, it just that this right? Yes.
+Aaron Rose: Yes. So you just want that chart. Yes. Yes. Okay. is that I respectly asked you to remove this chart was
+Parth Goda Rajesh: It's like I'm already in outreach. I don't need to know it's in outreach.
+
+
+
+
+00:46:33
+
+
+Parth Goda Rajesh: Like doesn't make sense to me. So my chart what I did was like in my outreach the only time chart it showed was within outreach where is it?
+Aaron Rose: So the problem is this is a centralized account page. So once they go here, they need to be able to navigate the other stuff. Also, I got rid of the like secondary header bar. Remember it was like like when you go to when you go to this when you're when you're here, this bar exists. But then when you go into here now it's this far. I don't know if that's confusing. But no, I think it was confusing beforehand. Although now you can't get to the main pages, but I don't know if you mean the main page like you could and then Yes. I mean it's that's probably better because it was confusing before because when I was trying to do I was getting confused. I kept clicking the top. I was trying to go back here and then I'd lose where I was.
+
+
+
+
+00:47:26
+
+
+Aaron Rose: So that's probably the best move. Yeah. Crazy how I hope you didn't undo too much. I could just like I didn't know that that that tab was so important.
+Parth Goda Rajesh: Nice. Thank
+Aaron Rose: But we can rebuild it. It's not like it's not that difficult.
+Parth Goda Rajesh: you.
+Aaron Rose: Yeah. Yeah. I'm just saying like before the demo like we should have something that works and that currently work. Yeah. Yeah. I hope your cloud shouldn't delete it. Your cloud should just It went back. I said go back to two commits. Oh, to go back to pushes and then I had to like think about it again.
+Parth Goda Rajesh: now. Like
+Aaron Rose: Oh, okay.
+Parth Goda Rajesh: whatever.
+Dean Liang: I'm pulling. Please,
+Aaron Rose: I'm sorry.
+Dean Liang: please don't pull. Bang. It's back.
+Aaron Rose: What I as Yes. Let's see. Uh, yeah. Moment of truth. Let's actually show someone
+Evan Liang: Are we going to be on the
+Dean Liang: flies on the wall.
+Aaron Rose: just maybe not on the call.
+Evan Liang: call?
+Dean Liang: Uh the room uh you guys will be in the same
+Aaron Rose: Are we not on the call?
+Evan Liang: But you guys are welcome to sh.
+Dean Liang: room.
+Evan Liang: I'll tell them. Yeah.
+Aaron Rose: Okay. So, at like everyone, you've got your time right now. one hour ago. Go one hour right now. No, I'm gonna decide when he wants to do it. You can just ask. Well, no. I I mean, I will be able to, but Well, then I have to I have to stay here for like go home. I was joking. I was like, uh, have a deep bullying. Stay in the office. I don't know what a harassment is yet. There we go. Everyone stay away from No cross.
+
+
+
+
+Transcription ended after 00:52:37
+
+
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.

@@ -1,0 +1,525 @@
+﻿📝 Notes
+Jun 24, 2026
+Stand up
+Invited Aaron Rose Cooper Tenney Dean Liang Evan Liang Parth Goda Rajesh
+Attachments Stand up
+Meeting records Transcript Recording 
+
+
+
+
+Summary
+Dashboard architecture review and technical standardization efforts merged with planned demonstration strategies for upcoming stakeholder pitches.
+
+Dashboard and Architecture Standards
+Updates are required for stage metrics to ensure data accuracy. The team finalized using a centralized TypeScript codebase for scalability.
+
+Product Visualization Decision
+The team decided to generate an artificial intelligence artifact to visualize the product architecture for stakeholder presentations.
+
+Demo and Sales Strategy
+Upcoming demonstrations will highlight end-to-end functionality to address specific customer churn pain points. Future efforts will focus on validating value propositions for revenue leaders.
+
+
+
+
+Decisions
+Needs Further Discussion
+* Demo narrative structure discussion deferred The team agreed to defer the discussion on the demo's narrative structure and flow until the next stand-up meeting.
+
+
+Aligned
+* Parth's dashboard code structure selected The team decided to adopt Parth's dashboard structure as the primary codebase due to its superior organization and ease of merging.
+* Product architecture diagram request initialized The team decided to generate a product architecture diagram using Claude to visualize data models and storage.
+* Demo practice feedback session scheduled The team agreed to conduct a practice run of the demo at the end of the following day to provide feedback on functionality.
+
+
+We've updated the Decisions section using your feedback.
+Let us know what you think: Helpful or Not Helpful
+
+
+
+
+Next steps
+* [The group] Add Time Filter: Incorporate a dropdown menu to control data by specific time frames.
+* [Evan Liang] Compare Implementations: Conduct research on the lines of code and structure of the dashboard versions.
+* [The group] Create Architecture Diagram: Utilize Claude to print a visual representation of the product layout.
+* [The group] Refine Demo: Improve the flow and narrative for the upcoming presentation.
+* [The group] Connect Dashboard Layers: Program specific linkages between individual stages to create a cohesive narrative.
+* [The group] Discuss Linking Strategy: Review the plan for connecting presentation stages during the next stand-up meeting.
+* [Evan Liang] Share Demo Details: Distribute information about the upcoming event to the team.
+* [The group] Review Presentation: Run through the presentation to identify missing functionality and gain peer insight.
+* [The group] Tailor Sales Pitch: Modify the product feature language to emphasize value propositions for renewal leaders.
+
+
+
+
+Details
+* Dashboard Monitoring and Interface Structure: Evan Liang reviewed the status of the project dashboard, noting that the overview page requires updates to accurately reflect stage metrics, as current numbers appear inconsistent (00:01:33). The team discussed the structure of individual stage views, including qualification and outreach, noting that account pages have been standardized for consistency (00:01:58). Participants identified a need for a drop-down control to filter data by specific timeframes, such as quarters, to allow for more granular monitoring and analysis (00:02:30).
+* Dashboard Functionality and Scalability: The team reviewed the middle layer of the application, specifically the qualification tab, which allows for reviewing and approving actions (00:03:34). The platform is designed to allow users to click into specific accounts to view stage-specific dashboards, ensuring a consistent interface throughout the platform (00:03:48). To ensure scalability, the project utilizes a centralized TypeScript codebase, allowing individual team members to edit their respective sections within the application independently (00:04:08) (00:04:48).
+* Codebase Selection and Architecture: Regarding the technical implementation, the team discussed the current merged codebase and options for moving forward (00:05:12). Evan Liang suggested using artificial intelligence to analyze the codebase, specifically to determine lines of code and overall quality, emphasizing that cleaner, less complex code is preferred (00:05:52). The team decided to proceed with the current structure while requesting that an artificial intelligence artifact be generated to visualize the product architecture, including data models and storage, to facilitate easier editing and stakeholder presentation (00:07:49).
+* Demo Strategy and Logistics: Evan Liang outlined the plan for the upcoming demonstration scheduled for Thursday with AJ. The presentation will feature a cohesive narrative, with Evan Liang providing the voiceover while a team member navigates the demonstration (00:09:01). The demo will showcase a linear flow from monitoring and qualification to outreach, proposal, and buyer evaluation, designed to demonstrate the platform's end-to-end functionality rather than just front-end design (00:10:15) (00:10:50).
+* Meeting and Presentation Scheduling: The team discussed scheduling for the following day, noting that the morning stand-up will be reserved for a presentation by Julia. A separate evening session will be dedicated to running through the product demonstration to gather feedback and ensure the team is prepared for the customer presentation (00:12:01) (00:13:33). The team plans to gather in a single physical conference room to conduct the demonstration for AJ, as this provides a more effective environment for collaborative presentations (00:13:08).
+* Sales Pitch Content and Strategy: Evan Liang summarized the core sales pitch, which addresses the primary pain point of renewal leaders at business-to-business software-as-a-service companies who face scrutiny over unexpected customer churn (00:14:23). The pitch introduces the Paro agent, which aims to provide enterprise-grade renewal motions at commercial scale without requiring additional headcount (00:15:22). The content will be refined to translate high-level sales deck concepts into concrete product features, specifically highlighting how each stage—from qualification to closing—solves visibility and confidence issues for renewal leaders (00:15:40).
+* Stakeholder Value Propositions: The team discussed tailoring the presentation for different stakeholders, specifically the Chief Revenue Officer and the Renewal Leader (00:16:43) (00:17:28). While the Chief Revenue Officer is primarily interested in high-level outcomes such as headcount reduction and operational reliability, the Renewal Leader requires a more detailed understanding of the product to mitigate risk (00:17:54). Future efforts will focus on validating this market approach by testing how renewal leaders react to the platform's specific capabilities during upcoming demonstrations (00:18:46).
+
+
+
+
+You should review Gemini's notes to make sure they're accurate. Get tips and learn how Gemini takes notes
+How is the quality of these specific notes? Take a short survey to let us know your feedback, including how helpful the notes were for your needs.
+📖 Transcript
+Jun 24, 2026
+Stand up - Transcript
+00:00:00
+
+
+Evan Liang: the UK version is like imagine all the cringiness collapsed into like one single season of eight episodes. That's a UK one. It's only a single season of that's it. That's only single season. Oh, wow. They quit for a while in the US. All right. Okay, cool. Uh back.
+
+
+
+
+00:00:18
+
+
+Evan Liang: Oh, should I just go? No, let's let's let's it's easier to let's do that. But thank you very much. And I apologize I didn't hit record. So I'm recording this. Oh yeah. Yeah, Firefly. So it doesn't matter. antra. Okay. Um, so to to start off with the what what this is and what this isn't is Cooper when in 14 minutes we'll have the main dashboard and like the centralized look at everything.
+
+
+
+
+00:00:52
+
+
+Evan Liang: Um, but this is really good. I'm sad I can't show it. You can show it, right? You just can't merge it. No, it's not rendering. It doesn't even render. Well, you can't even Okay. Got it. Okay. So, so start off the Where's the top of the So, wait.
+
+
+
+
+00:01:15
+
+
+Evan Liang: Low key. I do have it. Do you want to I can show that. No, no, show the top. I want to see like the top of your dashboard. What? What that looks like? The top? What do you mean the top? Oh, I see. Let's just just because that will be helpful.
+
+
+
+
+00:01:33
+
+
+Evan Liang: Okay. Got it. Okay. The top view. Fair enough. Okay. So, the top view come here. Overview monitoring. It is not quite updated. Um because like you can see the number is the numbers are a little bit off. That's one through six instead of one through seven.
+
+
+
+
+00:01:58
+
+
+Evan Liang: Okay. Um and then the like it was was better structured because this looks like overview is one of the stages which it obviously isn't. Got it. Um but if you click into each of these stages you get to like qualification. None of it's loaded in on my but outreach. Okay. Okay.
+
+
+
+
+00:02:15
+
+
+Evan Liang: So these are okay. So these are the individual dashboards. Nice. Okay. The accounts are standardized. Okay. Um, this is what the account page looks like. I made this look a lot better. Um, like today, these were all redundant and all that stuff. Yep. But, uh, yeah.
+
+
+
+
+00:02:30
+
+
+Evan Liang: So, this is press data and then qualify, outreach, proposal, buyer, and then these aren't built yet. Yep. These aren't build yet. Okay, makes sense. And then go back to the main overview. Uh, the one thing you'll probably need is a drop down for like controlling it by time. controlling it as time.
+
+
+
+
+00:02:51
+
+
+Evan Liang: So like uh the key part of the my demo was just like hey all time frame Q2 Q3 Q4 change. Yeah that that that makes a huge difference because when you look at all it's be yeah it's going to be all monitoring right uh and then yeah that that people are like oh now I can really drill here. Okay got it.
+
+
+
+
+00:03:10
+
+
+Evan Liang: Okay so that's okay. So you built that okay dashboard. Okay that okay fair enough. Okay, sure. I mean, it's pretty similar. Um, but so yeah, there there is that dashboard. It's just not implemented. And then these are like the individual views. Got it. So you've implemented the sub subp parts of the dashboard.
+
+
+
+
+00:03:34
+
+
+Evan Liang: Okay. But just not the high. Okay. And we do have the like middle layer like Yes. So like the idea here is this is the qualification tab. You can you can view you can approve stuff. You can do all this. Yep. You can click in and I have like a couple iterations of it.
+
+
+
+
+00:03:48
+
+
+Evan Liang: Um, but you could click into like, okay, these are the upsell accounts. Got it. And if you click into this account, it's going to take you to this account's dashboard where you can see at every stage stage what's what to do. Got it. I would call that because they're calling it a dashboard. Yeah.
+
+
+
+
+00:04:08
+
+
+Evan Liang: This is the account. No, I don't know why I just Yeah. So, that's the account. Okay. Got it. But it always looks the same. Yeah. And the main the main thing is like it should be really easy for us to edit because everyone's own part is in a separate folder.
+
+
+
+
+00:04:26
+
+
+Evan Liang: So like I can edit the qualify stuff. That's why I put most of my time into is like making sure all the features that I wanted were in this and like these generate live and this actually searches. Yep. Um and you can you know you can flag something for review and in the main dashboard you can yeah approve or you can do all this stuff.
+
+
+
+
+00:04:48
+
+
+Evan Liang: Um and everyone like can now add in their own part. So proposal like I think Dean has been working in this. Yeah. Um but he and so like you can edit the stuff. Yeah. Yeah. Um but the idea is that it's all like one coding language. It's all a centralized typecript.
+
+
+
+
+00:05:12
+
+
+Evan Liang: It's all look all centralized and it should be just because it should be a little bit more scalable. People can poke it. What's been your experience merging into Aaron's versus parts. I didn't merge in the products. He just took mine. Oh, got it. So, I have no idea. Honestly, I feel like we have to ask which one's better.
+
+
+
+
+00:05:35
+
+
+Evan Liang: I have like no idea. Oh, got it. We can only verify with UI right now. I don't think any of us know back well enough to figure it out. All right. I just think because be very honest because it was built with the back end in mind. Yeah, it should be better actually.
+
+
+
+
+00:05:52
+
+
+Evan Liang: Yeah. I mean, let's we should ask Claude and also I what what I would also want to know is the the the weight of each dashboard like yeah lines of code and actually in my mind less is better because it's cleaner. So, but uh Claude search on GitHub say I think Claude should be able to answer that.
+
+
+
+
+00:06:13
+
+
+Evan Liang: That should be very quant I think that's more quantifiable than Cloud. Which one is better? I I think you're going to get a muddled answer. Let's I'll have a deep research. Okay. Okay. But no, Erin, good job on like pulling that up from the How was What's the process? How do you feel about the process of like building something from the from the ground up?
+
+
+
+
+00:06:35
+
+
+Evan Liang: That's what it's best at. Yeah. Because like when it doesn't have things it has to hook into, it's like it can just generate all that. Yeah. Um there is work to be done on like Yeah. because it made some things simple. Now you have to add you have to choose what features you add.
+
+
+
+
+00:06:53
+
+
+Evan Liang: But that has been easier I found. I but I also haven't done the cutting down process. So I don't Yeah. What did you find? Yeah. This is the man of the gone through war and back. I mean that may just answer our question like that like like changing is hard, right?
+
+
+
+
+00:07:14
+
+
+Evan Liang: Yeah. like just incorporating his also took like half an hour. Um, and I think going with going with parents is the right way to do it. I I'm sorry I waste the tokens on this, but it's No, no, no, no. It's fine. No sense. It it does look like it's together.
+
+
+
+
+00:07:30
+
+
+Evan Liang: My UI is not as strong because it's literally like, let me figure out the functionalities first, then let me figure out the UI and then let me start doing this. And every time it's incorporating these, it wasn't a clean merge. It took like a lot of conflict management. So I think we should go with parents but uh we just be making sure that the functionality is all.
+
+
+
+
+00:07:49
+
+
+Evan Liang: Yeah. So let's let's break it. And then Claude does have like the abil it did a good job of just like I don't know creeping everything in its different lane and allowing us to edit. Okay. One other thing I'd love have Claude do is have it print out what it thinks the product architecture is in a diagram.
+
+
+
+
+00:08:07
+
+
+Evan Liang: You know I had it make an artifact for me. That'd be great. Okay. Yeah. Yeah. I like that. I like to look at that artifact because that that that uh is an artifact that we can uh um show folks and also we can it's an important part of like editing like what we like what we don't like.
+
+
+
+
+00:08:24
+
+
+Evan Liang: Fireflies that task is going to cooperate though or where that account it's in the pipeline. So like there's the dashboard and you click onto one of these stages. Now you're in the stage dashboard. This is I mean this is all updated and then there's the account page. It kind of knows what it kind of knows.
+
+
+
+
+00:08:47
+
+
+Evan Liang: But maybe I want the the total architecture, right? Uh like also including like where the data models are, where the data is stored, you know. Yeah. That was more like a mental model. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Like a product architecture thing.
+
+
+
+
+00:09:01
+
+
+Evan Liang: Okay. Cool. So then uh with that then let's once Cooper is out of uh jail uh usage jail in about six minutes then we can merge it and then tomorrow hopefully let's try to uh tighten up the demo a little bit uh and then on Thursday uh for AJ I will give the context right uh and then maybe have one of you guys drive the demo but we won't kind of go bounce around just to be a little bit more tight around we won't bounce around we won't bounce around so so someone's got
+
+
+
+
+00:09:31
+
+
+Evan Liang: to know it Yeah. Yeah. So, so I I will do the majority of the voice over so that someone is just navigating through the demo, but I'll do the voice over. I see. So, you still the one leading, right? Correct. Yes. Yeah. Okay. So, each person then should if we pull my stuff should tell it tell Claude hook into like the next person's layer.
+
+
+
+
+00:09:53
+
+
+Evan Liang: What? The Doesn't your demo do that way? No, all the infrastructure is there, but you just have to like like for your thing after you make your changes, you just have to tell it how you want like because my thing is ready. You press the button and it would send your thing stuff. You just have to decide what you want.
+
+
+
+
+00:10:15
+
+
+Evan Liang: So like each person needs to Are we already linking it? Well, for the demo that would be Are we going to link the demo or are we just going to show the UI? Uh oh, no. We're kind of we're not really pushing data between just showing the UI front end. Okay. Like so that should work.
+
+
+
+
+00:10:30
+
+
+Evan Liang: I'm just saying like if I if on my dashboard I press approve plan and then it like auto takes you to pars page. Yeah. And it I don't that seems Yeah. That seems like it would be helpful demo wise to just show like the path of I think what he's he's saying is like he wants to make sure that it's a narrative from one to four.
+
+
+
+
+00:10:50
+
+
+Evan Liang: Got So there that's supposedly there should be at the start it should be like basically an account at the monitoring stage and then then he goes through qualification it shows that okay monitoring the new strategy it clicks to outreach outreach comes up with a message that's on the signals on the qualification strategy once it goes through there's a response like we can come demo response it says yeah sounds good send me a proposal we move to deans it collects collects the strategy, collects the response,
+
+
+
+
+00:11:22
+
+
+Evan Liang: it collects the signals, calls to the deck, the logic link that links to the buyer. Yeah. Yeah. So, and then next thing is it goes next next demo is go straight to buyer hub, but I guess the the the buyer will look at the deck in the middle and then once he starts clicking around it says and then then you go to the uh admin side and see like okay, the buyer make it work.
+
+
+
+
+00:11:46
+
+
+Evan Liang: Yeah. And then you don't even honestly you would have ask us to clip because you can click through all of this. Right. Right. Right. Okay. We could discuss this at the stand up tomorrow. Yeah. That's that's a I think that's a good like pretty cool goal to do I do by tomorrow.
+
+
+
+
+00:12:01
+
+
+Evan Liang: Yeah. Yeah. So first off the stand up tomorrow in the morning is Julia presenting. So we don't have time for that. So it' be at evening tomorrow. Juliet her presentation will be pretty short. Uh this pitch. Yeah. It's just basically the pitch what she showed me.
+
+
+
+
+00:12:16
+
+
+Evan Liang: I don't know if she'll have a deck, but I can like already walk you guys through like roughly some of her her outline on the pitch. Okay, there's that. And also, you need to share AJ's demo. Are we gonna be there now? Yeah, you guys are welcome to show. I had no idea when the demo was.
+
+
+
+
+00:12:34
+
+
+Evan Liang: Oh, got it. Okay, I knew it was Thursday. Yeah. Yeah, I can see your calendar, so I figured Yeah, I told all of them that you can go to Gcal to see people calendar on the Yeah. Yeah. Uh also are we doing the new and meeting or is this just me and you?
+
+
+
+
+00:12:49
+
+
+Evan Liang: It's just me and you. Okay. So me again live. Uh you can join this one as a separate thing. Yeah. You do try try which one are you? Yeah. And then the uh Yeah. Let me see. Do I add all you guys? Well, probably what we'll do is this.
+
+
+
+
+00:13:08
+
+
+Evan Liang: Uh on that call, we'll just all get into the same conference room, right? Uh, so I'll send you a calendar invite that's like, "Hey, AJ demo." And then you guys can all join us. We'll just all go to a single conference room and do it together. It's actually easier to have fewer people. Like if you guys are in the physical room, it's actually a little bit less.
+
+
+
+
+00:13:33
+
+
+Evan Liang: So, like for today's call with Franco, Parth joined was in the physical room, but Hannah was also in the physical room, but it was just a one-on-one video chat like spies. It's what we used to do pre-COVID. So, maybe on like end of tomorrow like this session itself. Yes. Maybe what we could do is maybe you could run through thing and show us and we give you feedback on like this is what you missed out on this functionality you missed out on.
+
+
+
+
+00:14:07
+
+
+Evan Liang: That'd be awesome. Yeah. Then we'll let you like Oh, we'll get feedback. Please to see if I can actually if I can actually all the way through. Awesome. We're back. No. Good. Yeah. Cool. Uh but overall, uh good job to both of you guys.
+
+
+
+
+00:14:23
+
+
+Evan Liang: That that was uh that was not easy to figure out how to like start pulling all these things together. And then yeah, on Juliet's demo, it's it's basically an appeal to like I'll just read at the high level. Uh we've talked to renewal leaders at B2B SAS companies of all sizes, ranging from trillion dollar companies to late start sharp and it's clear that it's there one thing they hate more than churn.
+
+
+
+
+00:14:44
+
+
+Evan Liang: It's being blindsided by it. Uh there's nothing worse than sitting in churn reviews with your sales leader and peers tracking the renewal pipeline week over week only to have a bunch of deals that look green fall apart at the end of the quarter. That's when the questions execs start pouring in. Did you look at this? Did you look at that?
+
+
+
+
+00:14:59
+
+
+Evan Liang: Did you look at this? The the pressure to deliver is intense and only getting more so in today's environment where every tick up or down or NR is intensely scrutinized. With this kind of pressure, every deal matters, not just your big whales. The problem is as you go down into the longtail of SMB and midm market counts where reps are stretched across hundreds or thousands of customers, you have even less visibility and confidence about where things are headed.
+
+
+
+
+00:15:22
+
+
+Evan Liang: And while each deal may be small, in aggregate they can make up anywhere from 20 to 50% of your overall business. What if you had a way to run enterprisegrade renewal motion at commercial scale without the need for additional head? Imagine a world where you can you have confidence, visibility, and better outcomes. Introducing Paro agent.
+
+
+
+
+00:15:40
+
+
+Evan Liang: Unlike other solutions, we uh allow you to work seamlessly. our approach and um blah blah blah. Sub agents specializ in each step, synthesizing customer history and company information to be to define produce clearly defined outputs for each stage that move the deal forward from qualification to outreach, proposal, buyer evaluation, negotiation, closing, detailed inputs, outputs by stage and we go walk through each of these.
+
+
+
+
+00:16:05
+
+
+Evan Liang: So it's basically turning that like highlevel sales pitch deck into like product features. Um actually part you did actually decent job in your when you thought you had to make a deck into starting top product. That's the goal of this next deck is to kind of go through the product features and just but turn into language that the renewals leader would care about.
+
+
+
+
+00:16:26
+
+
+Evan Liang: So you have to say that again. So we want to make each of your things we have to talk to the renewals leader about why they should care and why they what what each of each stage matters and how this overall product testing the visibility around it. Can I ask a quick question? Please do.
+
+
+
+
+00:16:43
+
+
+Evan Liang: So can I like an overall structure standpoint? We have the CRO as it goes straight to account like account manager leader DM leader or whatever. Yeah. So usually uh yes the CRO has multiple teams underneath him. So like one of his most important teams would be like enterprise new business. So those are the guys selling mega million-dollar deals, right?
+
+
+
+
+00:17:06
+
+
+Evan Liang: Then he might have like a commercial sales leader, new business, and then he has like an account management team, right? Uh and yes, that person reports up roughly into the CRO somewhere up in there. And that's the person we are pitching like so AJ, oh sorry, sorry, maybe an easier way. Brian Briquette, right, is like the chief sales officer, CRO of Lane Data.
+
+
+
+
+00:17:28
+
+
+Evan Liang: He has multiple reports. AJ reports up to Brian and he manages the commercial accounts, the the smaller accounts for lean data for all their rentals. So the first pit is directed at top guy and the second one's projected. Yes. So the first pitch is to the top guy to be like, "Hey, he has the budget why you should want this." But then he's going to usually go to like
+
+
+
+
+00:17:54
+
+
+Evan Liang: uh to to his like, "Okay, great. talk to my renewals leader, make sure he's on board and he says he wants to do this project. And so they have slightly different value propositions, right? The CRO is not going to want to see the product. That's why everybody's like, "Okay, I understand what you're doing. You're helping me take out headcount.
+
+
+
+
+00:18:12
+
+
+Evan Liang: You're going to deliver outcomes. Great. Go talk to this guy and figure that." Franco's role is he is head of RevOps. RevOps usually helps the CRO make decisions around technology. He's like an adviser. It can be or or or he can also just be tell do whatever when the CRO says jumps he says how high right so it depends they're an they're an adviser but not a direct whereas the AJ the renewal man he actually is in charge of these accounts like he has a number tied
+
+
+
+
+00:18:46
+
+
+Evan Liang: to it and all that other stuff so that's why he's key but uh as you saw with some of the other calls we had like we got the CR they're like yeah this sounds great I would definitely renewals leaders like they're like kind of skeptical like what's in it for me to like risk my neck to do this. So that's why they want to see like what does this do?
+
+
+
+
+00:19:06
+
+
+Evan Liang: And now we're doing that validation market. We're like hey how does the product what does the renewal leader react to around this? Did they gravitate towards to this to say like oh yeah I can really see how this is better than what I do today. You have to kind of get to that stage. I think they did the drone thing outside. Cool. But okay. So, yeah, that's why we get to ask this next. Yeah. Awesome. Thanks, guys. Think we're uh tomorrow back on the You guys get to go back on the build track.
+
+
+
+
+Transcription ended after 00:23:45
+
+
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.

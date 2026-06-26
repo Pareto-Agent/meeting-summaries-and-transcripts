@@ -1,0 +1,118 @@
+﻿Here is the transcript for the requested period (1:00:00 - 1:15:00):
+* 1:00:00 Juliet Lo: "Okay. All right. Okay. So, just to give you a sense of what customers say is challenging about the process of renewals, really it's just that long tail."
+* 1:00:16 Juliet Lo: "You might have half of your account base in the SMB and mid-market segments and they only account for 10-15% of your revenue. And so it's just a lot less efficient to try to cover a lot more accounts."
+* 1:00:32 Juliet Lo: "And if you were to do things by the books, running through a process for $5,000 contracts, it's not very cost-effective and it's impossible to just throw more bodies at it because it just doesn't scale that way."
+* 1:00:48 Juliet Lo: "So, impossible to fully cover SMB, which means it's sloppy, things get missed. You may not see that a customer is at risk of churning until it's too late."
+* 1:01:00 Juliet Lo: "You just don't get that signal early enough ahead of the renewal to do something about it. Or you might just sort of take the path of least resistance."
+* 1:01:08 Juliet Lo: "So instead of trying to gun for that price increase or gun to sort of capture those extra seats that you know they're using or sell them something new, you might just say, 'Hey, let's just keep things the same. Let me just send you the same contract.'"
+* 1:01:24 Juliet Lo: "And so you're just kind of you're not really optimizing the opportunity that could be there. There could be issues with rep performance."
+* 1:01:36 Juliet Lo: "There is decent amount of turnover among renewals managers where the good ones get promoted up and the bad ones kind of leave and so you just don't have like a consistent team necessarily in place to execution consistent."
+* 1:01:56 Juliet Lo: "And then finally again as I mentioned earlier with sort of that environment full of pressure due to AI and tech consolidation, this makes companies want to look for a more efficient solution, right?"
+* 1:02:08 Juliet Lo: "Because they know they can't continue to throw bodies at this. So, can they automate, can they outsource to a team in India? And funnily enough, one of the customers we talked to had done that and had actually seen an improvement in performance, which how there's a lot of room for improvement in how things are done today."
+* 1:02:32 Juliet Lo: "Any reactions? Is this surprising to you? Does this all make sense? Super. Yeah."
+* 1:02:44 Cooper Tenney: "Uh, can you just clarify what it means to cover the long tail?"
+* 1:02:52 Juliet Lo: "Yeah. Glad you asked because it is sort of again we're so steeped in this. So, thank you for that. Um, so I think it sort of goes back to this idea of the distribution curve, right?"
+* 1:03:04 Juliet Lo: "Where there's like uh long tails at each either extreme, but essentially—and maybe the next slide will actually kind of land the point. It's the 80/20 rule."
+* 1:03:20 Juliet Lo: "Have you all heard of the 80/20 rule or Pareto principle? Some, not everyone. So, uh this is a long time ago. I don't know when of it, maybe 1800s, 1900s, there was an Italian economist who observed that 80% of the land in Italy was owned by 20% of, uh, the elite, the people there."
+* 1:03:44 Juliet Lo: "And so um he kind of like that finding and kind of looked across and realized that that was generally true of most things that 80% of the outcomes that are driven usually come from like a small percentage of customers in our case but it could be like inputs generally."
+* 1:04:08 Juliet Lo: "So the idea behind sort of the long tail is you know if you have a thousand accounts, you know the top 200 accounts will drive 80% of your revenue or profits and the long tail of accounts under that."
+* 1:04:20 Juliet Lo: "The middle-sized companies, the small companies, you know they might comprise like the vast majority of customers you have but they only contribute a tiny bit of revenue. Does that make sense?"
+* 1:04:36 Evan Liang: "So that's called the long tail. Like at Lean Data for example, the bottom 200 accounts drive only 2% of the ARR."
+* 1:04:44 Evan Liang: "Now the flip side is you don't necessarily want to walk away from that because if you're trying to grow the business, walking away from 2% of your revenue is a bit painful because that's 2% you have to make up."
+* 1:04:56 Evan Liang: "But uh having this—having devoting 20% of your company resources to those 200 doesn't make sense. So that's the quandary."
+* 1:05:08 Juliet Lo: "Yeah. Yeah. So, the top 20% accounts that accounts for the vast majority of your profits and growth at companies, you know, companies dedicate a ton of resources."
+* 1:05:20 Juliet Lo: "So that team I just laid out—the account manager, the CSM, support, renewal, social—like they get the full team. They get the white glove treatment."
+* 1:05:28 Juliet Lo: "They get like the personalized service because we want to keep those customers happy because if they renew, then like we're doing really well."
+* 1:05:36 Juliet Lo: "But then the other 80% of accounts, right, they're going to get a much thinner set of resources. They won't have the account manager."
+* 1:05:44 Juliet Lo: "They'll have a pooled CSM resource where again they don't have someone dedicated to them, but they're calling in and they get kind of routed to whoever's in the pool up next."
+* 1:05:52 Juliet Lo: "And then the renewal specialist will just try to like get through as many of those renewals as possible. It won't be a strategic conversation, but it's basically creating a paperwork and shuffling through a process as quickly as possible. It's very transactional."
+* 1:06:12 Juliet Lo: "So that was exactly—Oh, go ahead Evan. Were you going to say something? Okay."
+* 1:06:16 Juliet Lo: "So the Pareto principle is actually ironically also what we were really set up to do which is to help them address that long tail and treat them as if they were that enterprise."
+* 1:06:28 Juliet Lo: "Give them that white glove service. Give them the personalized touch. Make sure we're optimizing every opportunity we can to keep that business and to grow it."
+* 1:06:40 Juliet Lo: "So, um, more to life in a sales pitch, but feel free to weigh in if any of this is confusing. So, I feel like we just, it was kind of a quick turn towards—"
+* 1:06:56 Juliet Lo: "Um, I'm going to give the sales pitch, but before I do that, I just want to kind of lay out the outlines of it so you know the context."
+* 1:07:04 Juliet Lo: "So we're targeting companies—B2B SAS companies initially with annual recurring revenue of 30 million and above."
+* 1:07:12 Juliet Lo: "We have—we find that companies that are too young too early they don't have enough of an established customer base to really feel this problem deeply."
+* 1:07:20 Juliet Lo: "I mean they could probably handle the 10 renewals that come up a year. So um but what at you know 20-30 million it starts to become painful and it starts to become meaningful for them um that this existing base is something that really their business."
+* 1:07:36 Juliet Lo: "It just can't—it can't all just be anymore. They've got to keep the base happy. Got to find a scalable way to address it."
+* 1:07:44 Juliet Lo: "And this is where um this is where a solution like Pareto and then we're targeting the CRO as I mentioned um they're the decision maker and then we are defining our product category as a B2B renewals agent to help them um address that coverage gap and grow the business."
+* 1:08:04 Juliet Lo: "And the problem we're trying to solve is um their inability to cover their accounts in the SMB and mid-market segments means that they're leaving money on the table each time there's a renewal."
+* 1:08:16 Juliet Lo: "And so the value that Pareto will bring is that we will help them unlock that hidden growth from their renewals base by making sure they can cover those accounts."
+* 1:08:28 Juliet Lo: "But to do so without adding extra people because again adding extra headcount doesn't actually solve problem, right? They're just kind of throwing good money out—or spending good money after really small accounts."
+* 1:08:44 Juliet Lo: "So you just can't scale one-on-one there. Questions, reactions. This all track anything good."
+* 1:09:00 Juliet Lo: "Okay. All right. Okay. So, we'll go over—"
+* 1:09:08 Evan Liang: "And before before she jumps in, I will give this uh stealing a little bit of thunder for later on. One of the areas that we want you to build expertise is how to pitch."
+* 1:09:16 Evan Liang: "So, we do want you to be able to pitch Pareto or at least get to an elevator pitch so you could explain to people what you do. You have plenty of practice with the people at StartX that you meet. So, you're going to be expected to do that."
+* 1:09:28 Evan Liang: "And at the end of the StartX presentation, there is a—there's a demo day with tables and we'll—we will staff you guys at those tables. So, you will have to pitch Pareto to uh other Adobe VCs there and other people and we would want you guys to be able to give that pitch."
+* 1:09:48 Evan Liang: "Um this is something that uh it's good learning and we want you to get comfortable with. So as you pay attention to the presentation you will not be giving this full pitch uh but you will have to take bits and pieces."
+* 1:09:56 Evan Liang: "So uh just wanted to emphasize that there's sort of a test at the end. It's not just a—just an informative session."
+* 1:10:08 Juliet Lo: "Yes, I found um an event like you end up being representative of the company and you're just no matter what role you're in, you are a seller, you're a marketer."
+* 1:10:20 Juliet Lo: "So yeah, everyone has kind of internal pitch but give it to you the full version. Um as you give it more, you know, you talk to your friends, your family, each customer like you're point where you're—but as long as the essence stays, I think that's um hit your number four with love."
+* 1:10:44 Juliet Lo: "Uh we're here to help see hidden revenue growth buried in their renewals without having to hire extra people."
+* 1:10:52 Juliet Lo: "And so um the one thing we know about SAS companies today is—"
+* 1:10:56 Evan Liang: "I don't know if you're uh you're like in like full screen or something. Uh so I don't know if the slides are advancing."
+* 1:11:08 Juliet Lo: "facing my—just that makes it easier. Okay. Okay. Cool. So uh today's environment is extremely tough for SAS companies."
+* 1:11:20 Juliet Lo: "You're seeing headwinds from the rise of Gen AI and your customers trying to figure out what to do with that. You're also facing customers who are tightening their budgets and consolidating your stacks."
+* 1:11:32 Juliet Lo: "And so really, if you want to grow, the number one rule of growth is to keep what you have and build on that."
+* 1:11:44 Juliet Lo: "So um when we talk to customers like you most of them follow an 80/20 approach to their renewals where the top accounts you know there's majors, there's strategics, the enterprises, they get great white glove service and coverage."
+* 1:11:56 Juliet Lo: "But as you move down the pyramid, that coverage thins out precipitously and customers there are sharing resources or they're even relegated to a fully automated experience that doesn't feel personalized nor does it meet their need."
+* 1:12:12 Juliet Lo: "And so if you can imagine from the customer's perspective, that experience seriously downgrades um in the SMB and mid-market longtail."
+* 1:12:20 Juliet Lo: "So what SAS companies are essentially doing is they're trading off results in the customer experience for efficiency. And that happens in a vast majority of their accounts."
+* 1:12:36 Juliet Lo: "And this inevitably leads to leaving lots of money on the table. You have customers who churn and it shouldn't be a surprise, but nobody was there to catch them and catch the signs early enough to prevent that."
+* 1:12:52 Juliet Lo: "You have um you know renewal specialists just sort of routinely missing opportunities to grow the business there because they're taking that path of least resistance."
+* 1:13:04 Juliet Lo: "Um there's pretty poor pricing execution where these reps don't feel like it's worth their time to negotiate on pricing with these such with such small accounts. But obviously in aggregate that adds up to big numbers."
+* 1:13:20 Juliet Lo: "Or they're not moving existing customers to your new pricing models. Excuse me. For example, consumption-based pricing fast enough."
+* 1:13:36 Juliet Lo: "And of course, all of this is exacerbated by the variance in how your reps perform. Wow. I'm going to take a minute. One second."
+* 1:13:56 Juliet Lo: "Okay. So, and with inconsistent execution, you're going to see inconsistent results. Imagine if you didn't have to make the trade-off between results and efficiency."
+* 1:14:08 Juliet Lo: "And you could actually capture five to 10 extra points of growth in your renewal space without having to hire extra people. How much easier would it be for you to hit your numbers if you could tap into this?"
+* 1:14:28 Juliet Lo: "And that's exactly the idea behind Pareto, the industry's first autonomous B2B renewals agent. Pareto will—is designed to intelligently drive your renewals process end to end."
+* 1:14:44 Juliet Lo: "And like our competitor and like solutions out there, we're not just automating email cadences or tracking customer signals, but we're actually driving the transaction to close without needing a human in the loop."
+* 1:14:56 Juliet Lo: "And giving your customers that white glove experience um even the ones down that long tail. And what this means is—"
+
+
+
+
+Sources:
+* Pareto Agent Onboarding: Understanding Our Ideal Customer (ICP) - 2026/06/12 10:58 PDT - Recording
+
+
+The following is the transcript for the period of 1:15:00 to 1:20:00:
+* 1:15:00 Juliet Lo: "...your team is free to redirect their efforts to where it really matters—to those majors and strategics and enterprise accounts that really move the needle on your business, while Pareto handles the rest."
+* 1:15:17 Juliet Lo: "Pareto will work seamlessly alongside your account team, however it's organized, whether you're using humans or agents or a mix of both."
+* 1:15:32 Juliet Lo: "We can easily work within a model, and what makes us different is a combination of go-to-market expertise and process engineering where we use forward-deployed engineers to embed deeply in your business."
+* 1:15:48 Juliet Lo: "Really understand your go-to-business model, your customer signals, the rep's behaviors, plays that have worked well, plays that haven't, and sort of tailor our agents and train our agents against that."
+* 1:16:00 Juliet Lo: "And as our agents process more of your renewal deals, they'll learn and improve on their own with the ultimate result being an agent that thinks and acts like your best sales rep."
+* 1:16:16 Juliet Lo: "Oh, I'm okay. Poor—thank you. Sorry. Went to my college reunion last weekend and I've been recovering since. I think I had too good of a time there."
+* 1:16:24 Juliet Lo: "Anyway, Pareto uses a three-level maturity model to train our agents. So, starting out, we really will kind of train them to have the foundational standards."
+* 1:16:40 Juliet Lo: "So if you think about leaders in their industry—for example, Ritz Carlton Hotel—they have a gold standard playbook that ensures a great experience every time."
+* 1:16:48 Juliet Lo: "We're going to learn what works for your business and we're going to develop those playbooks with you if you don't have them already. And we'll make sure that your customers get that consistent gold standard experience."
+* 1:17:00 Juliet Lo: "And then again, as I mentioned, as we process more deals, we're going to learn what works, what doesn't, and use that data to really clone the way your top rep acts and do it at scale so that every account gets that treatment."
+* 1:17:16 Juliet Lo: "And finally, we'll get to a point where we can intelligently improve on our own. Every deal becomes an A/B test, and this will help us sort of compound that performance over time."
+* 1:17:28 Juliet Lo: "So, it's a three-step maturity model. As I mentioned, not only is Pareto incredibly effective, it's also incredibly cost-effective."
+* 1:17:40 Juliet Lo: "We really believe that our success should be tied to yours. So, you only pay for results that we drive with our outcome-based pricing."
+* 1:17:48 Juliet Lo: "We're incredibly inexpensive compared to a fully loaded sales rep and you don't have to deal with the recruiting and the ramping and the hiring pieces of it."
+* 1:17:56 Juliet Lo: "And then because of these things, you can scale infinitely across hundreds and thousands of accounts without having to add that additional headcount."
+* 1:18:08 Juliet Lo: "There's different ways to get started with this. You can get started by using us to renew and cover accounts that no one's touching today. And that's all pure incremental upside because they're driving results that aren't happening."
+* 1:18:24 Juliet Lo: "You can actually use us to run a pilot and a test against your sales reps. So carve out a book of business for us to run and compare that against the performance of your reps."
+* 1:18:40 Juliet Lo: "And finally, you can use this—so, as you see churn in your reps, you can use this to just backfill. Instead of hiring the next rep, you can actually use Pareto to backfill and take over that book of business quickly."
+* 1:18:56 Juliet Lo: "We can implement Pareto in a matter of weeks and it's just sort of a pretty straightforward process where first we'll go in, we'll assess your data, we'll understand how well you're doing renewals, and establish a baseline that we need to meet or beat."
+* 1:19:08 Juliet Lo: "And then we'll conduct deep-dive interviews with your experts to really understand your go-to-market strategy, the rules of engagement, your different policies, etc."
+* 1:19:20 Juliet Lo: "We'll translate all of that into playbooks, as I mentioned, and use those playbooks to train our agents."
+* 1:19:28 Juliet Lo: "And finally, we'll report out everything to you: the results, the outcomes that we drive, and how well our agents adhere to your playbooks and your policies."
+* 1:19:36 Juliet Lo: "So, if all of this sounds interesting to you, I would love to talk to you more about our technology, how it works, and what the implementation process looks like. And that is it."
+* 1:19:52 Evan Liang: "Good job. Especially with that cough."
+* 1:19:56 Juliet Lo: "Um, for the pitch—I'm sorry. 
+* 1:20:00 Juliet Lo: "...reactions he's gotten. He obviously doesn't run through a pitch because he's not a sales rep. He gives his sort of founder's version of it, but yeah, I'd love for Evan, you to kind of share with the crew what people say."1
+* 1:20:20 Evan Liang: "Yeah. Yeah. So, I think generally speaking, I think I have a pretty tight and do a pretty tight elevator pitch. And generally, I think people do grok it fairly quickly. Especially as relative to as a comparison point my last company, Lean Data."2
+* 1:20:31 Evan Liang: "So, and I mentioned that previously yesterday—I think this pitch resonates a lot more and people grok it very much more quickly. For example, if I went to one networking event, I can pick up five or six contacts pretty easily who are just like, 'Yeah, I have that problem.'"3
+* 1:20:47 Evan Liang: "A number of them have followed up and stuff like that. So, now to be fair, we're not actually truly in pitch mode. The best definition of whether a pitch works is whether they sign and pay you money."4
+* 1:20:56 Evan Liang: "Since we don't have a product yet, I can't go all that way. I can only base on my gut of people's reactions and do—are we getting follow-up? I mean, I guess the first one is the first part of a pitch that matters is: can someone understand your concept in the first like minute or two?"5
+* 1:21:11 Evan Liang: "That's what they call the elevator pitch in two senses: can you explain what you do? By the way, for those who know my previous company, Lean Data, I could not do that. I actually got there after 10 or 12 years."6
+* 1:21:23 Evan Liang: "But if you actually pulled 60 or 80% of the people at Lean Data, they could not do that. And so that was a much more challenging thing to do. So, Pareto one resonates very quickly."7
+* 1:21:36 Evan Liang: "To tell you, I've shortened my elevator pitch to basically say: 'We're building an autonomous agent to do B2B sales negotiations starting with long-tail renewals.' One sentence. That's what I describe what we do."8
+* 1:21:52 Evan Liang: "And for most people who are in the space, they get that. For folks who aren't in the space, I would just be like, 'Hey, we're building an AI agent. Ever heard of AI? For B2B sales negotiations.' That's it."9
+* 1:22:04 Evan Liang: "And that's probably good enough for the layman to like, 'Okay, I understand what negotiations are. I know what AI agents are. I know what space you are in,' right? So that's the first part: people do resonate and people are able to refer us to people who have their pain points."10
+* 1:22:20 Evan Liang: "So I have heard from various folks that, 'Yeah, we have that problem.' The best calls we had, it was like midway through—I think Juliet, you and I were maybe on like the third slide or maybe describing it verbally—and they were like, 'Oh, I get your name: Pareto. Cover the long tail.'"11
+* 1:22:33 Evan Liang: "Literally two folks who said that. Like, 'Yeah, that's awesome.' And then the other was with VCs and stuff like that. I actually just got on a call with—we're not fundraising—but I got a VC and he was like, 'Yeah, this is actually a good idea.'"12
+* 1:22:52 Evan Liang: "It was actually with a CTO candidate; that guy was like, 'This makes sense. The hard part is: can you execute?' So it's not that the concept makes sense; it's how would you execute and how would you do that. 
+*
