@@ -1,0 +1,661 @@
+Evan Liang: Oh no, maybe they were using that for like almost like a presentation laptop.
+Evan Liang: People have that.
+Evan Liang: From IQ surgery.
+Evan Liang: So first thing, the most useful about standups is that we as a group can identify the key issue we need to work on as a company.
+Evan Liang: Right.
+Evan Liang: And try to address that.
+Evan Liang: So these meetings coming together, that's like you could take away all the structures and everything of that sort.
+Evan Liang: That's kind of the goal of a standup.
+Evan Liang: Right.
+Evan Liang: And so for me looking at it is the key issue we are having is like, hey, how do we keep people working together seamlessly in a world where you guys are starting to have, starting to step on each other's toes and kind of put you there?
+Evan Liang: This is kind of a natural state of Robin.
+Evan Liang: So what you guys are doing, there's a theory of like group dynamics that people put out there.
+Evan Liang: There's like kind of like five stages of groups and you guys are moving through these stages at a very, very high rate.
+Evan Liang: So let me explain.
+Evan Liang: But this is normal in the AI world, I think this is totally normal.
+Evan Liang: But if you were to learn this in business school, there's frameworks around this.
+Evan Liang: This usually happens over like weeks, if not months or if not quarters or if not years.
+Evan Liang: So the five stages, the first stage is forming.
+Evan Liang: When a group first comes together, they're forming together.
+Evan Liang: The next stage they call storming.
+Evan Liang: When people start realizing that the potential and there's a little bit of conflict.
+Evan Liang: Then there's something called norming which you figure out how to actually work together.
+Evan Liang: Then it's like performing like the stages around it.
+Evan Liang: So you guys are kind of in like the storming stage.
+Evan Liang: You guys went from forming in like the first week and storming is like the second week.
+Evan Liang: So there's like naturally some conflict.
+Evan Liang: Until we can figure out the standard operating procedures, how to work together.
+Evan Liang: That becomes the norming phase.
+Evan Liang: And then the goal is if you do well in norming phase and not all groups get through every stage, if you get well in norming phase, then you are become a high performance culture.
+Evan Liang: Adjourning is the last one.
+Evan Liang: But that's like where the group like tails off.
+Evan Liang: And that's most people don't talk about that stage around it.
+Evan Liang: So that's the first thing to understand is what is this is normal.
+Evan Liang: My job is to try to figure out, hey, how do we figure out some of the centralized conflict around different things and talk to most of you guys in our one on ones around this.
+Evan Liang: But in the AI world, I think if we want to have a high performance team And a high performance culture, one of the key bedrocks of that is autonomy to feel like you own what you're working on.
+Evan Liang: And, and the feeling of getting blocked by someone else is very infuriating because you're so used to typing something to Claude and Claude spits out the results very quickly.
+Evan Liang: So the idea that you can't do that because someone else is blocking for you for an hour or two hours is very infuriating and that makes it feel less high performance.
+Evan Liang: You feel like you're wasting time and this is just on steroids.
+Evan Liang: Like this has always been the case.
+Evan Liang: But in enterprise companies, usually when people say they're blocked and they're like they're blocked for a week.
+Evan Liang: Yeah.
+Evan Liang: So you can validate this, right?
+Evan Liang: In big companies, literally you're just like going there and you're like, oh, I need XYZ from this other person.
+Evan Liang: And you can't.
+Evan Liang: It's not like you don't do work, but you can't move that project theme along for a week.
+Evan Liang: You have to wait a week for that to complete.
+Evan Liang: You guys are waiting hours and that's very frustrating.
+Evan Liang: And this is not just us.
+Evan Liang: It's not unique to our setup.
+Evan Liang: I was hearing that from other, other startup companies in this AI native world.
+Evan Liang: So the takeaway, as I mentioned to a few of you, was that this other company who's a little further ahead of us and had some senior engineers like, hey, I've been getting advice not to be a multi product company because the old theory used to be if you have multiple products, you're not focused and you're likely to fail.
+Evan Liang: But he was like, all my advisors is telling me not to do this.
+Evan Liang: And then I met with my investor who's also an advisor.
+Evan Liang: So he was like, yeah, that's what people thought six months ago, but that's not what people think now.
+Evan Liang: And he was like, the reason is in the, in the six months ago we used to have like one product.
+Evan Liang: You have 20 or 30 people working on it.
+Evan Liang: Now you can have a much smaller team.
+Evan Liang: And so being multi product is not actually as extreme.
+Evan Liang: And he was like.
+Evan Liang: And actually we are even more extreme because what we've noticed is we have two products and every time we have one senior engineer on both products or one engineer on both product, every time we add another person, it slows down and it becomes extremely frustrating just adding one more person onto the same product because he's like, our person can do 10 cloud code instead and move very fast.
+Evan Liang: You add another person, you have to Coordinate, there's conflicts, blah, blah, blah.
+Evan Liang: And he's like, we tried a senior hire with them, failed.
+Evan Liang: We tried a junior hire with them, failed.
+Evan Liang: We tried an intern hire, fail.
+Evan Liang: We've just decided adding a second person sucks.
+Evan Liang: And so we'd rather have one person own them entire product.
+Evan Liang: Now, I don't know that scales or not, but it does point to this interesting insight that coordinating between people is actually worse with multiple people are touching the same cloud code.
+Evan Liang: So with that, what I thought of was, hey, let's take a step back.
+Evan Liang: We actually had interestingly designed a very good system when we first came in, which was each of you guys don't paretoagent.
+Evan Liang: You didn't have to pass data between the agents.
+Evan Liang: You could just show your prototypes.
+Evan Liang: And that worked really well for about a week once we started merging it.
+Evan Liang: You guys did a good job of merging it.
+Evan Liang: But then all of a sudden that means you guys are all working on the same product.
+Evan Liang: And that's extremely frustrating.
+Evan Liang: It's not even two people.
+Evan Liang: You have four people working on the same project.
+Evan Liang: So the number of collisions is massive.
+Evan Liang: So one way to solve this is if I want you guys to stay on a high performing culture, I need to give you guys back autonomy.
+Evan Liang: And so that's what I spent last night this morning thinking about is how do I give you guys autonomy again?
+Evan Liang: And I do feel we can carve out new projects around that.
+Evan Liang: So for example, one project is now that is that what we really build is a prototype.
+Evan Liang: It's a front end prototype.
+Evan Liang: It's not.
+Evan Liang: It will never be a functional thing, but it's useful because I can demo people like AJ and other folks like that.
+Evan Liang: So that front end prototype should be now one project.
+Evan Liang: Iterations on that should be owned by a single person.
+Evan Liang: Whatever we iterate now, there's more work than just like fixing the ui because there's still a negotiation model and a close model.
+Evan Liang: We never added those, right?
+Evan Liang: We were like, let's do that.
+Evan Liang: So that work stream is actually a pretty big strength, right?
+Evan Liang: So one person should know that.
+Evan Liang: I think taking Lean Data's data and like qualifying them and actually putting categories, that's one project now that does and that's divorced from the prototype.
+Evan Liang: Eventually it will be one product, but from a prototype and a thing, these do not need to be, they should not be merged in the short term because then I'll create a conflict.
+Evan Liang: Analyzing the emails, creating those templates and you know, and actually figuring out the flow of the champions using real data.
+Evan Liang: That's another project, right?
+Evan Liang: The Fourth project is a little bit around like we do need it.
+Evan Liang: Once we are trying to pump out results with AI, we need to validate it.
+Evan Liang: So it's like QA testing but what they call eval systems.
+Evan Liang: And if you read the literature this week, that's the single most important thing to do, the eval system.
+Evan Liang: And per the call that Partha and I will share this with the, with the lean data guy.
+Evan Liang: He thinks as long as you have a great eval system, you don't even need to figure out stages or steps.
+Evan Liang: It's like he putting complete faith into his eval system to figure out everything.
+Evan Liang: Yes.
+Parth Goda Rajesh: We're going to test that theory.
+Parth Goda Rajesh: I mean two ways of course.
+Parth Goda Rajesh: Wait for him to get back to us and how he worked out or we just do ourselves and figure out ourselves what is the best eval situation for us.
+Evan Liang: Yeah.
+Evan Liang: So I think figuring out the E or in talking to Dean he was like actually we talked about this.
+Evan Liang: What is the product architecture for the final product is something we need to research and figure out.
+Evan Liang: And potentially that's where I do have set up times with some of our technical folks because we don't know what we don't know there.
+Evan Liang: Right.
+Evan Liang: So that would be the fourth major project.
+Evan Liang: Now there are also side projects off of this which would not be.
+Evan Liang: Well, one side project is figuring out the sales pitch.
+Evan Liang: So putting it into the design format but iterating on it while Juliet's gone.
+Evan Liang: But then now from a design perspective, the old sales pitch that you guys practice on is also out of wax.
+Evan Liang: And what belongs in that sales pitch and what doesn't?
+Evan Liang: Like, do we combine these two pitches?
+Evan Liang: Are they separate pitches?
+Evan Liang: What is in each pitch?
+Evan Liang: Like I want to make work, I want to make progress in that in the next week because that is something I will be going back and re pitching people that we did market research on.
+Evan Liang: So we'll find out.
+Evan Liang: Find out first if they'll take the call, but the second if they do, I want to pitch them, which I didn't do the first time through.
+Evan Liang: So that's one project.
+Evan Liang: This.
+Evan Liang: How do we work on standups?
+Evan Liang: Coordination is another project.
+Evan Liang: Certainly how we record the stand ups and next steps.
+Evan Liang: It's kind of part of that lunch project continues.
+Evan Liang: Will it finish by the end of summer?
+Evan Liang: So there's these side projects.
+Evan Liang: So I think what we want to, I want to end this session with is hey, let's assign the major projects.
+Evan Liang: Agree.
+Evan Liang: Just like the agents who is doing each of these major projects.
+Evan Liang: And then also if there are side Projects.
+Evan Liang: Who wants to pick those up?
+Evan Liang: Right.
+Evan Liang: I think everyone can do one major, one minor, right.
+Evan Liang: Or, or two minors or something like that.
+Evan Liang: But that, that would be helpful around the thing.
+Evan Liang: So let's first try to drive towards that.
+Evan Liang: Let's see like prototyping.
+Evan Liang: Who, like, who wants.
+Evan Liang: Who wants to do the prototyping?
+Evan Liang: Can I ask one quick question?
+Evan Liang: It sounds like we have five projects.
+Cooper Tenney: Email, we have qualification, we have prototype, we have architecture and we have eval.
+Evan Liang: Architecture and eval could be one.
+Parth Goda Rajesh: Okay.
+Evan Liang: Yeah.
+Parth Goda Rajesh: I think I was the one who put my hand up for prototyping.
+Parth Goda Rajesh: Right.
+Parth Goda Rajesh: Am I the only one who did that?
+Parth Goda Rajesh: Okay, cool.
+Parth Goda Rajesh: This is like doing that Excel thing Evan gave us on the first day.
+Parth Goda Rajesh: I think we all, instead of fighting, we all just perfectly sliced the pizza.
+Evan Liang: So I think maybe I'll.
+Evan Liang: I'll throw out the potential and see if anyone feels that they need to switch or something of that sort.
+Evan Liang: So one thing is part because he, he's interested in the demoing capability and everything will own the prototype.
+Evan Liang: Right.
+Evan Liang: So we'll hand it over.
+Evan Liang: Aaron's already working on qualification.
+Evan Liang: Cooper's working on the outreach and email stuff.
+Evan Liang: And then Dean will learn how to get do product architecture and eval.
+Evan Liang: But it's also area thing that bothers him a lot.
+Evan Liang: A bit too.
+Parth Goda Rajesh: Figure it out.
+Cooper Tenney: We're gonna mess up the data.
+Parth Goda Rajesh: What's going on?
+Evan Liang: I mean, side project.
+Evan Liang: Dean, do you want to own the engineering sprints and standups?
+Evan Liang: Yeah.
+Evan Liang: Because I already have the cold digest thing which I need to figure out whether I even want to still have because this thing is like dying.
+Evan Liang: But it's okay.
+Parth Goda Rajesh: Yeah.
+Parth Goda Rajesh: I think that's the program because when I brought it up I. I felt resistance because you know, it was going to slow us things down and also put unnecessary reporting when we're not at that level.
+Evan Liang: Yeah.
+Parth Goda Rajesh: So what you feel is the most comfortable at this point?
+Evan Liang: I can think about it.
+Evan Liang: Yeah.
+Evan Liang: Why don't you on that the other one website logo.
+Evan Liang: Okay.
+Cooper Tenney: I think I was already on that.
+Parth Goda Rajesh: Track, but I'll stick with that in hand because the sales speech starts first and the demo is a half an hour.
+Parth Goda Rajesh: So I'm taking sales pitch.
+Evan Liang: Okay.
+Evan Liang: And then pgodarajesh.
+Evan Liang: Okay.
+Evan Liang: Is there a last side project with a lunch breaker?
+Parth Goda Rajesh: Maybe you can give him the.
+Parth Goda Rajesh: The scrum thing and you can keep focusing on lunch.
+Evan Liang: I don't think he cares.
+Evan Liang: If it was up to him, he'd scrap it.
+Evan Liang: Why don't we figure it out?
+Evan Liang: Okay.
+Evan Liang: Qualification will take some time.
+Evan Liang: Sure, that's fine.
+Evan Liang: Pricing on Top of that, it'll be a chunk.
+Evan Liang: Actually, you know what he has to figure out on top of that data hub, like how to get more of the data.
+Evan Liang: Well, for example, in order for buyer engagement to work, right now he's just pulling the data.
+Evan Liang: To do qualification, we need to pull contracts data.
+Evan Liang: We have actually full physical contracts.
+Evan Liang: Shouldn't that be my step on each other's styles around that?
+Evan Liang: Oh yeah, maybe.
+Evan Liang: Should that be a part of the.
+Evan Liang: But he, I think he right now is only thinking about what he needs for his stuff, not what everyone else needs for the other steps.
+Evan Liang: There's only a few other things.
+Evan Liang: It's like contracts, emails and other things like that.
+Parth Goda Rajesh: Right.
+Evan Liang: Once we have.
+Evan Liang: I looked into actually pulling the PDFs and we need like a different link.
+Evan Liang: Like there's some other way to that we have to pull them.
+Evan Liang: We can't pull them through the ocp, but I mean it seems like it's just like a one.
+Evan Liang: I don't know, like the MCP points to them, but you have, you can't download them really.
+Evan Liang: You know, they're there but you can't get them.
+Evan Liang: Fascinating.
+Evan Liang: Okay, so like I said, the, the overall, how do you actually integrate and pull data?
+Evan Liang: I'm saying like if you do like qualification and you're pricing, pricing and you're doing all the modeling, like that's like gonna be a hefty bit.
+Evan Liang: Yeah.
+Evan Liang: I mean the question is, do we want to even do real modeling for the time being?
+Evan Liang: Which I think the moment.
+Evan Liang: No.
+Evan Liang: Where it's like.
+Evan Liang: But if you're a simple rules.
+Evan Liang: I am not concerned that more projects will not appear in the next like hours or days.
+Evan Liang: So it's fine.
+Evan Liang: So.
+Evan Liang: But I hopefully that.
+Evan Liang: Yeah, so.
+Evan Liang: But hopefully that will get your thing.
+Evan Liang: And then I, I think one thing we want from a culture, again, I give you that like group formation thing.
+Evan Liang: Because one of our goals we need still to be driving towards is kind of like high performance.
+Evan Liang: Right.
+Evan Liang: How do we make sure we're driving to high performance?
+Evan Liang: I appreciate the feedback.
+Evan Liang: Like continue it on to understand, hey, what is blocking you?
+Evan Liang: So like high performance.
+Evan Liang: In my mind, you need autonomy.
+Evan Liang: You need to have respect for your colleagues or be able to like, hey, agree to disagree.
+Evan Liang: How do you resolve issues?
+Evan Liang: Right.
+Evan Liang: And you need to feel that, hey, like, like we said, we talked a lot about the peers.
+Evan Liang: Like if you're in a group of peers that are driving you, you're going to be more high performing.
+Evan Liang: If you feel like you're out in front and everyone is holding you back that's feel different.
+Evan Liang: And a part of that is like the camaraderie, the team culture, but also the respect for each other.
+Evan Liang: So those are things that we got to continue to work on and figure out.
+Evan Liang: And those.
+Evan Liang: That that's important.
+Evan Liang: And then yeah, you got to see like tangible results actually of all those.
+Evan Liang: I feel like you guys are seeing that.
+Evan Liang: By the way, I'll give you guys this feedback around like what you guys built around the prototype.
+Evan Liang: So Hannah missed a bunch of calls yesterday, but she was on the neighborhood and I showed her the demo and she was pretty impressed.
+Evan Liang: She like, she was like, I'm almost crying seeing how much, how, how good this is compared to what we spent time with Maritzo building.
+Evan Liang: Okay.
+Evan Liang: So.
+Evan Liang: So she was like, yeah, so.
+Parth Goda Rajesh: Yeah.
+Evan Liang: So I just.
+Evan Liang: And I think Juliet is not an easy critic.
+Evan Liang: By the way.
+Evan Liang: Like, one of the things I love about Juliet is that the joke she will call my and she'll be like, yeah, that's.
+Evan Liang: Holy crap, Evan.
+Evan Liang: So the fact that she thinks you guys are doing a good job, that is not being like, like just like, hey, it's your regular price.
+Evan Liang: So you guys did pull together a great prototype.
+Evan Liang: We want to continue than that.
+Evan Liang: So feeling like your, your output matters and all that stuff is.
+Evan Liang: Is really important around that.
+Evan Liang: But yeah.
+Evan Liang: So let's keep up being transparent.
+Evan Liang: I think I've identified the root cause issue.
+Evan Liang: Let's see if this fixes.
+Evan Liang: It fixes some things.
+Evan Liang: But what you guys are feeling is slightly normal, but like, hey, let's continue going at.
+Evan Liang: At the speed we want.
+Evan Liang: And then as far as high performance, the other part that we had that we talked about was a little bit.
+Evan Liang: Yeah, I just noticed it in my.
+Evan Liang: Oh, got.
+Parth Goda Rajesh: Was like five or four days ago.
+Parth Goda Rajesh: We had this.
+Parth Goda Rajesh: Right.
+Evan Liang: Two days ago.
+Parth Goda Rajesh: A week ago, but it was like two days ago.
+Parth Goda Rajesh: Okay.
+Evan Liang: We gotta like process outcomes.
+Parth Goda Rajesh: Yeah.
+Evan Liang: The other thing about high performance, and this is going to come up with a few of you, you all that you were asking me questions is ultimately kind of respect and trust is.
+Evan Liang: Is.
+Evan Liang: Is really, really key.
+Evan Liang: So you want to build a thing where, hey, you trust your colleagues are going to get their work done.
+Evan Liang: And that's the feeling that you want to have.
+Evan Liang: As part of trust is the fact that, hey, we trust.
+Evan Liang: If we trust you to get things done, you should also have freedom and control somewhat over your schedules to some extent.
+Evan Liang: Right.
+Evan Liang: Why we do five days a week in the office is so that we are actively collaborating and not block blocking each other.
+Evan Liang: But it's not like Minute by minute.
+Evan Liang: So one of the things that I've always really valued in my career is, like, I'm, like, really responsive 24 7.
+Evan Liang: People who work with me know that if they need me, I'll be there no matter what to get things done.
+Evan Liang: But the flip side of that is I've always also valued, like, if I got to take something for my kids or family in the middle of the day and doesn't block the company, I have the full right to do that.
+Evan Liang: And that is a freedom that I've always appreciated, enjoyed.
+Evan Liang: Dean knows this because the only times I've ever really had to step out of meetings was when he was a kid and his carpool broke down.
+Evan Liang: I would literally step out of meetings and be like, I gotta figure this out or else my kid's stuck in the middle of nowhere, right?
+Evan Liang: So this is also why he liked to.
+Evan Liang: Even to this day, like, will just be like, I need this dad.
+Evan Liang: And he, like, expects it done, like, 24 7.
+Evan Liang: I was like.
+Evan Liang: Like, there was a period where I was like, dude, like, you can't, like, get, like, an order.
+Evan Liang: It's like the middle of the day.
+Evan Liang: You'll be like, I need this, like, drop to do it.
+Evan Liang: I'm like, I'm actually doing something else that's slightly more important.
+Evan Liang: Like, the only thing that got there was, like, when we were dealing with his sister's thing, we're like, dean, your sister's going through a hard surgery, and we're dealing with that.
+Evan Liang: And you need, like, travel planning from Cancun.
+Evan Liang: But, like, one of these is a little bit more important than the other.
+Parth Goda Rajesh: It's a very sun thing.
+Parth Goda Rajesh: I. I see myself doing that when I was a kid, too.
+Evan Liang: But so.
+Evan Liang: But my point there is, like, hey, we want to treat you guys as adults.
+Evan Liang: You guys are high performing so far.
+Evan Liang: So if you guys do need to step out for lunch to go do something, not a big deal, give people heads up.
+Evan Liang: So people know, like, if you start spearing where the limits are is like, hey, if we can't find you and you start blocking and you're always gone, that is a different matter.
+Evan Liang: But if you're gone for an hour or two and get your stuff done, that's perfectly okay.
+Evan Liang: So hopefully that's something I wanted.
+Evan Liang: It's a very hard thing I've had to try to do.
+Evan Liang: It's a fine line like my previous company, where, like, people, like, they asked me, can they do something?
+Evan Liang: I'm like, sure, I don't care.
+Evan Liang: But then at the same time, it works when people are high performing.
+Evan Liang: When people aren't, then it becomes like.
+Evan Liang: Like you can see how like it could be also very annoying if you can never find the person.
+Evan Liang: So that's the balance.
+Evan Liang: We have been so good so far.
+Evan Liang: No, absolutely.
+Evan Liang: One day we know.
+Evan Liang: Absolutely.
+Evan Liang: Showing up.
+Evan Liang: Yeah.
+Evan Liang: So that's where.
+Evan Liang: Yeah.
+Evan Liang: And so each of you, that's what you want to hold.
+Evan Liang: That's how you hold yourselves accountable.
+Evan Liang: Right.
+Evan Liang: If you feel like everyone is.
+Evan Liang: Is there and you like generally get all your stuff done, you should not care if they're gone for an hour.
+Evan Liang: But if it becomes a point where it's like blocking you, then that becomes.
+Evan Liang: That's different cultural conversation.
+Evan Liang: So let's try to figure that out.
+Evan Liang: So.
+Evan Liang: And then in terms of stand up, just so folks, that's why the calendar system being open is really good.
+Evan Liang: Right.
+Evan Liang: Is that we can see each other where it is.
+Cooper Tenney: So.
+Evan Liang: Yeah.
+Evan Liang: So I'll go first on this from a standpoint.
+Evan Liang: I have a lunch with.
+Evan Liang: And I'm over Simon Kutcher.
+Evan Liang: I am meeting Hendrix Bl brother who is an engineer.
+Evan Liang: So he recommended.
+Evan Liang: Supposedly done some AI thing.
+Evan Liang: We're a little skeptical, but we'll see.
+Evan Liang: It's Hendrick's older brother.
+Evan Liang: And then I have a advisor meeting our official advisor who works at bmc.
+Evan Liang: I have to rush back here to get to that call.
+Evan Liang: So from probably like 11:30 to 3, I'm basically bouncing around the Valley, going to meetings and taking calls.
+Evan Liang: So you're going to see me disappear for that time frame.
+Parth Goda Rajesh: So.
+Evan Liang: But yeah.
+Evan Liang: Anyone else?
+Evan Liang: Like, I know some.
+Evan Liang: Yeah.
+Evan Liang: Yeah, I'll be out.
+Evan Liang: I'll probably leave after the stand up.
+Evan Liang: Like the Caltrain.
+Evan Liang: Take Caltrain up, be there for like an hour and come back.
+Evan Liang: So should be back before three, but perfect.
+Cooper Tenney: I'm gonna go into Palo Alto High School to talk to their athletic director for club baseball for like 30 minutes, probably around lunch.
+Cooper Tenney: So whatever you guys are doing, just text me and I'll like say, like.
+Evan Liang: I said, you will have lunch with them.
+Evan Liang: And then you either.
+Cooper Tenney: I'll do lunch.
+Evan Liang: Like one of the.
+Cooper Tenney: I'll coordinate something either before or after.
+Evan Liang: It doesn't matter if it's 30 minutes, you can have lunch together and.
+Cooper Tenney: Yeah.
+Evan Liang: And then just go take care of.
+Evan Liang: I guess I was thinking it would.
+Cooper Tenney: Be over lunch and I'd miss it.
+Evan Liang: Yeah.
+Evan Liang: But I don't think.
+Evan Liang: Yeah, I think actually I think it'd probably like.
+Evan Liang: If you talk to them, I think they would rather have lunch with you and then have you disappear for 30 minutes than not have lunch with you.
+Evan Liang: Like that's actually more noticeable.
+Evan Liang: It's ironically the other way.
+Evan Liang: Yeah, fair enough.
+Evan Liang: So awesome.
+Evan Liang: So you guys, the three of you.
+Parth Goda Rajesh: I feel like I want to make plans.
+Evan Liang: Left while the parents went out and did.
+Evan Liang: I'm like what am I doing working.
+Parth Goda Rajesh: I asked it.
+Evan Liang: But that's a good thing.
+Evan Liang: There's going to be something else later on.
+Parth Goda Rajesh: I guess I'll head to the bank and figure out what's going on in my credit card situation.
+Parth Goda Rajesh: But I already have an appointment Tomorrow morning at 9am I should have just done it today.
+Evan Liang: Okay.
+Evan Liang: It is for you.
+Evan Liang: I wish the bank was open earlier.
+Evan Liang: So going to the bank is extremely painful.
+Evan Liang: Those guys are so.
+Evan Liang: Those guys are so old school.
+Parth Goda Rajesh: I don't know how institution.
+Evan Liang: Well that's the opposite of a high performing culture.
+Parth Goda Rajesh: Oh, how come you haven't fix it in decades at this point?
+Parth Goda Rajesh: Like it's been who's gonna fix it?
+Parth Goda Rajesh: Yeah.
+Parth Goda Rajesh: All right.
+Parth Goda Rajesh: I'm stepping on this company.
+Parth Goda Rajesh: I'm not.
+Parth Goda Rajesh: I don't even bother.
+Evan Liang: There's like incentive.
+Evan Liang: Like well wait a second.
+Evan Liang: Like you're from India.
+Evan Liang: India is like I'm from Singapore.
+Parth Goda Rajesh: Oh.
+Evan Liang: Singapore is efficient but like, like Indian democratic.
+Evan Liang: Some of those are awful.
+Evan Liang: Like they can't build a road.
+Parth Goda Rajesh: I'm not comparing you to India.
+Parth Goda Rajesh: India is like a different conversation.
+Parth Goda Rajesh: India is like mostly corruption is the one is a big issue here.
+Parth Goda Rajesh: Is just is is like how slow everything is and how everything like just takes your time.
+Parth Goda Rajesh: In Singapore it's like just online submit a form and you get a passport in two days.
+Parth Goda Rajesh: That's it.
+Evan Liang: Well like I don't know.
+Evan Liang: Singapore's sort of like this because it used to be authoritarian but China is very, very efficient.
+Parth Goda Rajesh: Yeah.
+Evan Liang: But it's because it's.
+Evan Liang: You have no choice as a citizen.
+Parth Goda Rajesh: Yeah.
+Evan Liang: You know they're like, they can build like bridges and roads like tomorrow but they'll just like it's beyond eminent domain.
+Evan Liang: They're just like boop.
+Evan Liang: They trample your rights.
+Parth Goda Rajesh: Yeah.
+Cooper Tenney: Right.
+Evan Liang: India, everyone has is true democracy.
+Parth Goda Rajesh: Yeah.
+Evan Liang: Which means like a road requires the buy off of every single town and hence corruption.
+Evan Liang: Because like I don't know if you know like to build like a road through like a highway.
+Evan Liang: Every town has to get bought off and approve it.
+Evan Liang: Yeah.
+Evan Liang: So it doesn't ever get done because it's so hard.
+Evan Liang: So it's the op.
+Evan Liang: India and China are the opposite forms of government.
+Evan Liang: So anyways.
+Evan Liang: Okay.
+Evan Liang: Is there anything else blockers within these projects that you guys need from other folks.
+Parth Goda Rajesh: Or I would love for you to take a look at the slide deck that I made sure yesterday and then the feedback on that would be applied onto the original pitch deck and then.
+Evan Liang: Yeah, so what I'd love for you to do for something like that.
+Evan Liang: I am email centric, so email it to me.
+Evan Liang: Even if like you like I have access, just send me an email with the link again and so make it easy from for me to do it and it will bother me and it probably will not get done until later tonight.
+Evan Liang: Yeah, yeah, but I will.
+Evan Liang: This will be something.
+Evan Liang: Let me.
+Evan Liang: But by this weekend you will have feedback.
+Parth Goda Rajesh: Sounds good.
+Cooper Tenney: That's good feedback to know because like I feel like for a lot of times like I would just wait over there until you had like a moment and tell you.
+Cooper Tenney: But yeah, I'll email next time I. Yeah.
+Evan Liang: So if you're like blocked on something especially, especially weekend work, especially over a weekend.
+Evan Liang: Because my inbox here, that makes me highly responsive but it's also my to do list so something in my email will actually bother me versus like slack.
+Evan Liang: Does not like Slack.
+Evan Liang: I just browse.
+Evan Liang: Not that we have slack, right?
+Evan Liang: But like Google Chat.
+Parth Goda Rajesh: You just browse to Google Chat.
+Evan Liang: Yeah, Google Chat.
+Evan Liang: I'm actually very late on the Google Chat if you guys have noticed.
+Evan Liang: That's why I keep on missing the lunches because.
+Evan Liang: Because I'm like, oh, I like think of chatting.
+Evan Liang: Chatting lesson.
+Evan Liang: You're like, oh, you already sent it out.
+Evan Liang: I'm like, huh?
+Parth Goda Rajesh: I'm like, oh, we're all more chat friendly.
+Evan Liang: Like, no, no, you are.
+Evan Liang: Your generation is definitely more like chat or slack.
+Evan Liang: When you guys get into workplace, you'll find slack is so dominant, people expect you to slack and respond.
+Evan Liang: I think my slack at Lead data still says this.
+Evan Liang: I'm just like, I am not slack first.
+Evan Liang: So if you really need me, fucking email me.
+Evan Liang: I will not respond because people will just slack me and be like two days later.
+Evan Liang: It's like, hey.
+Evan Liang: But I guess because they like on the rust, they're blocked.
+Evan Liang: They're just like, they just don't get their.
+Evan Liang: They stop doing stuff.
+Evan Liang: So they're just like, oh, I guess it's not that important to you.
+Evan Liang: And I'm like, what are you talking about?
+Evan Liang: Like, I was like, oh, it's in slack.
+Evan Liang: And I'm like, yeah, no, that's not okay for you to just have ended there.
+Evan Liang: So.
+Evan Liang: And by the way, that is a generation of current CEOs.
+Evan Liang: My like currency hates slack too.
+Evan Liang: And I'll give you this one insight the reason is, besides being old school, we have to be email centric is we have external constituents, investors and customers who aren't on slack.
+Evan Liang: And so it's not okay for us not to be responsive to them.
+Evan Liang: So like if a board member emails, like you gotta respond like the difference between like two hours and like two days.
+Evan Liang: Two days, the guy could be like extremely pissed.
+Evan Liang: Right.
+Evan Liang: You've just created a crisis.
+Evan Liang: So we have to check our emails.
+Evan Liang: And so since.
+Evan Liang: And it's the human brain can only probably take one communication medium as their main one.
+Evan Liang: So as you guys go into the workplace, you're gonna find out your upper lings are email centric.
+Evan Liang: And I hear a lot from your generation, like why there's emails, like for my parents it's like, but you might have to adjust, probably be like five to 10 years and then it'll switch to a different medium.
+Evan Liang: But just, just FYI, I've talked to a lot of my colleagues and we're just like.
+Evan Liang: Or sales leaders are the same way.
+Evan Liang: Sales leaders are email centric because their customers email them.
+Evan Liang: So anyways,.
+Evan Liang: Yeah, so Ian, and this is probably a conversation for everyone on the architecture thing.
+Evan Liang: What my architecture, Is that how everything is going to hook up or just how we want?
+Evan Liang: Like, is that just the security question?
+Evan Liang: Because if I do anything with pricing, I'm going to have to take into account what like outreach is going to feed into and what all that is going to feed into.
+Evan Liang: And I don't know if that's like a question for everyone to answer or that's.
+Evan Liang: I think just focus on pricing just for yours and then worry about wiring and other inputs later.
+Evan Liang: I think for me, how I think about it is I am just going to be studying for the next week on moving from oh, respectfully, summary statistics as you put it, to no, my goal is when we think about actually building a thing, I know what all the layers mean.
+Evan Liang: That zoom meeting that we all joined and had no idea what the hell was going on.
+Evan Liang: My goal is to get to the level where I understand what they're talking about.
+Evan Liang: Like about here are the different tools, here are the different ways you do it, like hooking up the sub agents inside and like worrying about emails, all that.
+Evan Liang: I think that yeah, I can't do evals if I don't understand everything that's going on.
+Evan Liang: So I might as well just learn everything from scratch.
+Evan Liang: Yeah, there's a question now and there's this debate right now and this is a real time thing of like product management and engineering.
+Evan Liang: Are Merging.
+Evan Liang: If you need one person to own a product end to end.
+Evan Liang: Right.
+Evan Liang: Is it the product people who are going to or the engineering becomes abstracted enough that it's better to have product skills and that that person owns the product end and then.
+Evan Liang: Or is it too technical like per your point that that that call was a good test or is it like a product person is like never going to get there and it's better to teach a technical person how to understand the product requirements and go the other way because they can iterate and get feedback easier.
+Evan Liang: That's an ongoing debate.
+Evan Liang: But like if you think about extreme ownership, like has to someone we have to resolve that because if it's better for like one person to own that, then stack.
+Evan Liang: Who is that and what's that profile?
+Evan Liang: So I don't know.
+Evan Liang: That's fascinating there.
+Evan Liang: I'd be fascinated to see if you can get to that level.
+Evan Liang: It's an ambitious goal.
+Evan Liang: It's very ambitious to try that.
+Evan Liang: Some of the other people, like at some point in time I zoned out and by the way for me personally, like there is a like so I'll tell you where I shifted a little bit.
+Evan Liang: So when you guys first came on board I, I was actually going to take an paretoagent and go with you because I thought I needed to lead by example.
+Evan Liang: But you guys went fast enough that I realized that I was like I wasn't going to be able to lead you guys.
+Evan Liang: I was like hey, I'm gonna go fall into a coordinator role instead.
+Evan Liang: So that perspective I was just like.
+Evan Liang: And like I said I think I can help with specs and overall but I can't go.
+Evan Liang: I don't think it's worth it for me to learn lower than that.
+Evan Liang: And so that, that was a, that was a little bit of a shift.
+Evan Liang: I was going to try to take the negotiation.
+Evan Liang: I just didn't want one of you guys to take it.
+Evan Liang: So it's kind of a lead by example.
+Evan Liang: But anyway, so each of us, each role needs to figure out their limitations and what, what's their bounds around it?
+Evan Liang: So that's where I was like, hey that's not low level.
+Evan Liang: But by the way, I'll give you guys also this insight.
+Evan Liang: Do you guys have any idea what my job is supposed to be or what I should be focused on and what, where.
+Evan Liang: Where I should be adding value or not organization just to try they like as a CEO, like what is the CEO's job?
+Evan Liang: Are we guessing or recommending?
+Evan Liang: Both.
+Evan Liang: I'm just curious.
+Evan Liang: I'll give You?
+Evan Liang: My, my.
+Evan Liang: My thesis based on it.
+Evan Liang: But I'm just curious, like, but by the way, most people in companies don't know, so.
+Cooper Tenney: At least for me, it feels like it's inspiring to see, like, someone who cares so much and, like, they're always there for you.
+Cooper Tenney: It's not that you're like, babysitting or anything.
+Cooper Tenney: Like, you're always trying to push us forward, but also, like, support us.
+Evan Liang: I think that.
+Evan Liang: We, we feel very free to just work.
+Evan Liang: And then it's like we have the design partner set up and we have all this, all this stuff set up and we have like, the feedback coming in.
+Evan Liang: It's like if we all had to manage that or something, we would just, like, it would take away so much from the work.
+Evan Liang: I feel like we're just.
+Evan Liang: Yeah.
+Cooper Tenney: Giving us, like, directions to go in.
+Cooper Tenney: Like, okay, well, you need to be done by here because we're moving in this direction once that demo is done.
+Evan Liang: I think that's also.
+Parth Goda Rajesh: Yeah.
+Parth Goda Rajesh: Like a shepherd.
+Evan Liang: What's the business?
+Parth Goda Rajesh: What are you trying to do?
+Parth Goda Rajesh: If I boil it down, it's trying to keep the lights on and make sure that whatever we're doing is also helping you do that.
+Parth Goda Rajesh: So it's facilitating.
+Parth Goda Rajesh: Yeah.
+Parth Goda Rajesh: Shepherd.
+Evan Liang: So we're the sheep.
+Parth Goda Rajesh: Yeah.
+Evan Liang: Not wolves.
+Evan Liang: Sheep.
+Parth Goda Rajesh: Sheep.
+Parth Goda Rajesh: Fair.
+Evan Liang: I don't have any more to anything.
+Cooper Tenney: More to add to that.
+Evan Liang: I think that there's a bit more also that, like, part of this whole thing about, like, lights on, like, there's also the externally facing part.
+Evan Liang: Right.
+Evan Liang: I think that.
+Evan Liang: Yeah, sure.
+Evan Liang: And I don't mean like sales calls and stuff, because, like, sure, you're taking care of that.
+Evan Liang: Whether that's really in CEO's role, I don't think it depends on the stage of the company.
+Evan Liang: But, like, there's also the board, fundraising, all that stuff.
+Evan Liang: Right.
+Evan Liang: That I think also matters a lot.
+Evan Liang: But I think your role is expanded right now because we're small.
+Evan Liang: So the way I would try to characterize, and it's not a textbook, I think it's just like, hey, whatever is the most critical issue.
+Evan Liang: So one, identifying what's the most critical issue at the company.
+Evan Liang: Whether, like, keeping lights on, is it funding, is it sales, is it hiring?
+Evan Liang: Whatever it is, being able to identify that and then being able to have the bandwidth to prioritize and delegate the resources in order to drive towards that.
+Evan Liang: Because of that, the nature of the job is very up and down.
+Evan Liang: If, ideally, if everything's running perfectly smoothly at a company, the CEO has nothing to do.
+Evan Liang: That's the Goal.
+Evan Liang: But per the point, if there's a crisis, having the ability to see the crisis and rally and just go resolve it as quickly as possible and drive all initiatives to it.
+Evan Liang: Because of that, you don't actually want to be tied too much to anything that's like, ongoing.
+Evan Liang: You have to be able to float.
+Evan Liang: Does that make sense?
+Evan Liang: Because if you can't float, so sometimes when CEOs and founders are so proud of themselves being super busy all the time, it's actually bad because if a crisis comes, they can't actually adjust.
+Evan Liang: You actually have to have.
+Evan Liang: You have to be the cushion for everyone because if anything comes up, you have to be able to absorb it and be able to pop in wherever it needed.
+Evan Liang: So that's, that's the interesting part of it.
+Evan Liang: So that's like where I draw, like, hey, the critical path is figuring out organizationally what you guys need.
+Evan Liang: I need to be able to, to rally to that and figure that out.
+Evan Liang: Whatever the key problem is, I've got to be able to do that.
+Evan Liang: So it just.
+Evan Liang: The nature changes if we're running out of money.
+Evan Liang: You gotta be able to focus on that.
+Evan Liang: Right.
+Evan Liang: If hiring is a key thing.
+Evan Liang: And so for me, like, where you're saying, like, making sure you guys are aligned is really, really critical, especially in this role because, like, misalignments can propagate.
+Evan Liang: But technically speaking, also figuring out the cto, like, I really only have two tasks.
+Evan Liang: Making sure you guys are productive and we're getting what we need.
+Evan Liang: And figuring out the CTO because we have fundraising sales is somewhat.
+Evan Liang: But it's also not, like, critical.
+Evan Liang: But those would probably be the two things.
+Parth Goda Rajesh: So.
+Evan Liang: But anyway, so awesome.
+Evan Liang: Anything else that we need to cover?
+Parth Goda Rajesh: Good.
+Parth Goda Rajesh: Nothing else.
+Evan Liang: No, for now.
+Evan Liang: Good.
+Evan Liang: Thank you.
+Evan Liang: The one thing I do appreciate, in order for me to do my job, I appreciate that you guys are transparent around your feedback and what's.
+Evan Liang: What's not working and stuff like that.
+Evan Liang: So.
+Evan Liang: Yeah, that is really good.
+Evan Liang: It's the reason CEOs jobs are.
+Evan Liang: Or they're not as effective as.
+Evan Liang: Or the job becomes harder.
+Evan Liang: Not as effective as you get bigger people bullshit you and you Actually takes you a long time to figure out what's wrong.
+Evan Liang: It's.
+Evan Liang: It's actually like, yeah, it's is.
+Evan Liang: People would be shocked.
+Evan Liang: They're like, how do you not know that?
+Parth Goda Rajesh: Money.
+Evan Liang: How the fuck am I supposed to know that?
+Evan Liang: That's like three layers deep.
+Evan Liang: And if everyone's bullshitting me, like, the manager doesn't say something.
+Evan Liang: Everyone, that the layers create it.
+Evan Liang: It's actually really hard to get the truth from folks because they think their job is to.
+Evan Liang: They actually think the office's job.
+Evan Liang: They think their job is to take work off the CEO's plate and tell the CEO everything's going well.
+Evan Liang: Ironically, it helps in the short term, but the long term, it actually makes it.
+Evan Liang: It makes it worse.
+Parth Goda Rajesh: Awesome.
+Evan Liang: All right, thank you, Isaac.

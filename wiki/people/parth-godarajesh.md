@@ -1,11 +1,13 @@
 # Parth Godarajesh
 **Role:** Team Member, Pareto Agent
-**Last updated:** 2026-06-25
+**Last updated:** 2026-06-26
 
 ## Current Focus
-Language/voice agent and agent orchestration. Proposed (per Evan, 2026-06-22) to take the **unified dashboard** top-level + per-stage views as part of the dashboard consolidation. Moving the product away from a co-pilot / human-in-the-loop interaction model toward showing what the AI is doing autonomously.
+**Owns the front-end prototype workstream** (as of the 2026-06-26 re-org) — the demo app shown to AJ and others: iterate the UI and add the still-missing **negotiation** and **close** models. Picked up **sales pitch deck** iteration as a side project. (Previously: language/voice agent + agent orchestration + the unified-dashboard top-level/per-stage views.)
 
 ## Open Tasks
+- [ ] Own + iterate the front-end prototype; add the missing negotiation & close models (2026-06-26 re-org)
+- [ ] Iterate the sales pitch deck (side project); email Evan the deck link so he can give feedback by the weekend (2026-06-26 standup)
 - [x] ~~Prepare agent demos for AJ call on 2026-06-25~~ — occurred
 - [ ] Configure 200 demo accounts in JSON with hardcoded "stories" (binary blocked/not-blocked per stage, date-progression logic) (June 24 evening standup)
 - [ ] Clean dashboard: remove redundant text labels (e.g. "outreach outreach" repetition) to maximize screen space (June 24 evening standup)
@@ -14,6 +16,7 @@ Language/voice agent and agent orchestration. Proposed (per Evan, 2026-06-22) to
 - [ ] Build a single-page "new agent" creation/onboarding flow (upload emails → detected characteristics → pick from ~3 voice options → adjust settings → create)
 
 ## Notes
+- **2026-06-26 standup (work re-org):** Volunteered for / was assigned the front-end **prototype** workstream ("interested in the demoing capability") — single-owner going forward, decoupled from the real-data workstreams. Also took **sales pitch** iteration. Quipped the team "perfectly sliced the pizza" on project assignment. Will pair with Evan on testing the eval-system theory from the LeanData contact (whether a strong eval system removes the need to hand-define stages).
 - 6 micro-agents: (1) ingestion (Aaron's input), (2) proposal output (Dean's output), (3) language style, (4) drafter, (5) response agent (sentiment/buy signals/intent), (6) champion finder (stakeholder map, champion research)
 - Response agent demo: analyzes customer sentiment, detects buy signals and intent, scores them
 - Champion finder demo: builds stakeholder map, identifies best contact among champion options, handles "departed champion" re-engagement scenarios

@@ -1,11 +1,12 @@
 # Dean Liang
 **Role:** Team Member, Pareto Agent
-**Last updated:** 2026-06-25
+**Last updated:** 2026-06-26
 
 ## Current Focus
-Storytelling / renewal deck module: generating the narrative and renewal deck for each account given account intelligence and context. Now building a drag-and-drop, configurable deck editor backed by a block library, so the deck can be edited in the browser (intended for the forward-deployed engineer to adjust decks).
+**Owns the product-architecture + eval-systems workstream** (as of the 2026-06-26 re-org) — define the architecture for the real (post-prototype) product and build the eval/QA system that validates AI outputs (called the single most important thing to get right). Will ramp up on the underlying stack ("learn everything from scratch") so he can design evals; Evan is arranging time with technical advisors. (Previously: renewal deck / storytelling module + configurable deck editor.)
 
 ## Open Tasks
+- [ ] Own product architecture + build the AI-output eval/QA system; ramp on the stack and meet the technical advisors Evan is lining up (2026-06-26 re-org)
 - [x] ~~Prepare renewal deck module demo for AJ call on 2026-06-25~~ — occurred; Dean showed the customer-facing demo design at June 24 evening standup
 - [ ] Work on pricing engine in a separate local environment (not main demo repo) to avoid breaking the dashboard for 1-2 days (June 25 evening standup)
 - [ ] Think through product architecture — shared components, data flow between stages, how real LeanData data will integrate (Evan asked, June 25 evening standup)
@@ -13,6 +14,7 @@ Storytelling / renewal deck module: generating the narrative and renewal deck fo
 - [ ] Merge account page code to ensure visual consistency across the interface (June 24 evening standup)
 
 ## Notes
+- **2026-06-26 standup (work re-org):** Moved from the renewal-deck module to owning **product architecture + eval systems** (architecture and eval merged into one workstream). Plans to learn the full stack so he can build evals properly; Evan noted this is an ambitious stretch and is setting up time with technical folks ("we don't know what we don't know"). Ties to the open product-management-vs-engineering ownership debate Evan raised (who should own a product end-to-end).
 - Module deliverable: renewal story/deck — the "why" of how to justify renewal pricing for each account
 - Preference: 1:1 meetings for technical/data-specific questions (raised in standup working-cadence discussion)
 - **2026-06-25 standup (evening, post-AJ-demo):** Working on UI small things + building a configurable timeline slider for follow-up and escalation timing. Raised the pricing engine question: unifying how each sub-agent classifies/prices an account would require breaking the demo environment for 1-2 days. Evan suggested working on it locally/separately. Evan asked Dean to think through product architecture (shared components, cross-stage data flow) as real LeanData data integration approaches.

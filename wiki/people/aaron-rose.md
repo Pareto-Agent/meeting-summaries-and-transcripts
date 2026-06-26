@@ -1,11 +1,12 @@
 # Aaron Rose
 **Role:** Team Member, Pareto Agent
-**Last updated:** 2026-06-25
+**Last updated:** 2026-06-26
 
 ## Current Focus
-Account intelligence module: identifying who to contact (who/what/when), org chart construction, and champion identification from CRM data.
+**Owns the qualification workstream** (confirmed in the 2026-06-26 re-org) — LeanData data → qualify/categorize accounts; pricing/modeling to follow. Continues account-intelligence work (who to contact, org chart, champion identification).
 
 ## Open Tasks
+- [ ] Broaden the data pull to serve all workstreams, not just qualification — contracts and emails are needed downstream; resolve how to fetch full contract PDFs (MCP points to them but can't download them) (2026-06-26 standup)
 - [x] ~~Prepare module demo for AJ call on 2026-06-25~~ — occurred
 - [ ] Validate qualification rules with Evan — are churn-risk and upsell classifications correct? (June 25 evening standup)
 - [ ] Build standup scrum board displaying team daily tasks; link to Dropbox transcript folder for eventual automation (June 25 evening standup)
@@ -14,6 +15,7 @@ Account intelligence module: identifying who to contact (who/what/when), org cha
 - [ ] Update account data to reflect only 4 quarters of 2026 (not multi-year) (June 24 evening standup)
 
 ## Notes
+- **2026-06-26 standup (work re-org):** Qualification confirmed as Aaron's single-owner workstream (decoupled from the prototype). Evan flagged that Aaron currently pulls only what qualification needs — the data layer should also pull contracts (physical PDFs) and emails for the other workstreams; contract PDFs can't currently be downloaded through the LeanData MCP.
 - Module deliverable: account intelligence — given an account, identify who to contact, when, and what to say
 - Approach: start with existing CRM contacts, cycle through for engagement, escalate to external enrichment (e.g. Clay) if needed
 - Long-tail accounts typically only have a few contacts in CRM (less messy than enterprise)
