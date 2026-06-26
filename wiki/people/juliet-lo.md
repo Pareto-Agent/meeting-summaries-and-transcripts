@@ -12,6 +12,12 @@ Building the design partner pitch deck targeting renewals leaders — a pitch/sa
 
 ## Notes
 - Email: jlo@paretoagent.ai
+- **2026-06-12 — Onboarding / ICP training (Gemini export; pre-Granola; transcript excerpt from ~1:00:00 of longer recording):** Led the team through the full Pareto ICP and pitch walkthrough.
+  - **Target company profile:** B2B SaaS companies with $30M+ ARR (the June 19 standup later set $10M+ as the floor — attribute each to its source; no confirmed pivot). Buyer = CRO; internal sponsor = renewals leader.
+  - **Pitch hook:** "5–10 extra points of growth in your renewal space without hiring extra people." Framing: the 80% "tail" accounts don't generate enough individual ARR to justify an AM, but they matter collectively — the Pareto agent covers them at scale.
+  - **Three-step agent maturity model:** (1) Foundational standards — a baseline renewal process every account runs through; (2) Clone the top rep — identify the highest-performing behaviors and replicate them across the book; (3) Continuous self-improvement — the agent learns and refines from outcomes over time.
+  - **Pricing model:** Outcome-based — pay for results driven, not per account handled. Aligned with Evan's June 24 confirmation.
+  - **Three GTM entry paths:** (a) Cover untouched accounts — AMs with spans too large to service all of them; (b) A/B pilot against human reps; (c) Backfill churned rep headcount.
 - **2026-06-17 morning standup (Granola notes; pre-Fireflies):** First substantive product feedback session on record. Attended the team's research presentation; all four in-room team members presented module research and Juliet gave structured feedback on each.
   - **Qualification (Aaron):** Expand signals beyond usage data — add open support tickets, external company news, CRM call history; LLM should read conversation history and surface direct quotes (goal: meet or exceed judgment of an average rep); churn model should be flexible (customer's own or out-of-the-box); 14-day usage drop window likely too short; compare to list price or deal pricing rather than median; "high sell potential" = binary flag, not a hard price recommendation.
   - **Outreach (Parth):** Liked the branching path logic and language profiling; wants to dig into further detail.

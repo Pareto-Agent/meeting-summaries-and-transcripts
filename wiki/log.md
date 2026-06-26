@@ -20,11 +20,16 @@
 
 ## 2026-06-19 — Cooper X Dean
 - fireflies-id: 01KVGY6TPQNKT4XRKKWD19QJBD
-- Pages updated: none
-- Summary: Playful 1:1 between Cooper and Dean with clearly fabricated action items (DoorDash deliveries, rocks, car); no substantive signal extracted.
+- gemini-file: 2026-06-19-1on1-cooper-dean.gemini.txt
+- source: fireflies+gemini-fallback
+- Caveat: Fireflies captured a brief joking/test recording (fabricated DoorDash/rocks/car content); substantive content comes from the Gemini export. Gemini attributed all speech to "Cooper Tenney" — transcript is clearly multi-speaker; the reviewer's directives are mislabeled as Cooper. Attribution kept thin; design decisions captured at project level.
+- Pages updated: wiki/people/cooper-tenney.md, wiki/projects/renewal-platform.md
+- Summary: Buyer hub design review between Cooper and a team member (Dean per filename; attribution unreliable). Key buyer hub decisions: single scrollable account list sorted by days to renewal; engagement level per account row; hide aggregate summary on drill-down; expand "Contracts" → "Documents" (MSAs, product briefs, previous versions); highlights instead of redlines for change tracking; BookIt/Calendly-style meeting scheduler in buyer interface; admin view tracks stakeholder engagement + doc-open status; section-level heat map (Crazy Egg style) discussed. Privacy concern: declined Fireflies bot request for domain-level meeting access.
 
 ## 2026-06-19 — Team mentorship/working session (16:20, "Untitled")
 - fireflies-id: 01KVH2ZJA9VPJGJSX5N8Q2HZBQ
+- gemini-file: 2026-06-19-team-mentorship-session.gemini.txt
+- source: fireflies+gemini-companion
 - Pages updated: wiki/people/evan-liang.md, wiki/projects/renewal-platform.md
 - Caveat: Fireflies attributed ALL speech to a single speaker (Evan Liang); content indicates a group session led by Evan with team present. Attribution beyond Evan's own founder-voice commentary is unreliable, so extraction was kept thin and additive.
 - Summary: Evan delivered operating philosophy (bureaucracy as a function of headcount; "fake work"; AI-native speed) plus a few actionables — next-week goal to coordinate more while keeping velocity, plan to bring in external evaluators and trial demos instead of code reviews, his commitment to read GitHub specs (incl. previous CTO's spec) over the weekend, and a tentative Jesse meeting targeting next Thursday (~2026-06-25). No new pages.
@@ -127,6 +132,20 @@
 - Note: Filename says 2026-06-17 but Gemini header says "Jun 18, 2026" — content confirms this is the evening standup the night before the June 19 Scott Golden prototype review. Recording-only export (no full transcript), Gemini summary notes only. Pre-Fireflies (Fireflies set up June 19).
 - Pages updated: wiki/projects/renewal-platform.md, wiki/people/evan-liang.md, wiki/people/dean-liang.md, wiki/people/cooper-tenney.md, wiki/people/aaron-rose.md, wiki/people/parth-godarajesh.md
 - Summary: Evening standup preparing for June 19 Scott Golden prototype review; Evan demoed the automated slide-generation tool (signals → "blocks" → assembled deck); key decisions: demo flow = show PowerPoint output first then explain blocks; buyer hub terminology = "products/SKUs" not "utilization"; dashboard inputs to main view, content to sidebar; use ARR < $10k for demo data; Luncher internal tool deprioritized.
+
+## 2026-06-12 — Pareto Agent Onboarding: Understanding Our ICP
+- gemini-file: 2026-06-12-pareto-onboarding-icp.gemini.txt
+- source: gemini
+- Note: File was originally named "2026-06-21-juliet-renewals-deepdive.gemini.txt" on disk (mislabeled — likely the date it was added to Dropbox); actual recording date is 2026/06/12 per Gemini source metadata ("Pareto Agent Onboarding: Understanding Our Ideal Customer (ICP) - 2026/06/12 10:58 PDT - Recording"). Pre-Granola/pre-Fireflies. Transcript excerpt starts at 1:00:00 of a longer session.
+- Pages updated: wiki/people/juliet-lo.md, wiki/people/evan-liang.md, wiki/projects/renewal-platform.md
+- Summary: Juliet Lo's full ICP training and pitch walkthrough for the team (~22 min excerpt). Key content: renewals long-tail / 80-20 Pareto principle; target = B2B SaaS $30M+ ARR (vs. $10M+ in June 19 standup — attribute to source; no confirmed pivot), buyer = CRO; three-step agent maturity model (foundational standards → clone top rep → continuous self-improvement); outcome-based pricing; three GTM entry paths. Evan: pitch resonates much faster than LeanData's ever did. StartX demo day announced: team will staff tables and pitch independently.
+
+## 2026-06-24 — Dashboard Optimization (13:32 PDT)
+- gemini-file: 2026-06-24-dashboard-optimization.gemini.txt
+- source: gemini
+- Note: Working session between morning standup (~10:00 PDT) and pre-AJ-demo evening standup (~17:30 PDT) on June 24. Gemini attributed all speech to "Cooper Tenney"; transcript is clearly multi-speaker. This is a separate session from the Juliet demo (morning, logged above) and the pre-AJ-demo run-through (evening, logged above).
+- Pages updated: wiki/projects/renewal-platform.md
+- Summary: Team aligned on dashboard information hierarchy standard ("process first, status second") — top of any stage view = process stages, secondary = outcome/status stages. Additional decisions: remove redundant high-level metrics from sub-pages; remove "Overview" header from main dashboard; format GDR in brackets; standardize fonts (~5 variants → one) and plot/box layouts across all views. Filter persistence (maintain selected period when navigating) discussed — related to Aaron's evening standup global-filter item.
 
 ## 2026-06-25 — Stand up (evening, post-AJ-demo)
 - fireflies-id: 01KVGJHWTK0QMV94GVWR34JV0Z
