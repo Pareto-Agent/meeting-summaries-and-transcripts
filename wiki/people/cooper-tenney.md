@@ -15,13 +15,16 @@ Owning the **account page** within the new unified dashboard (per Evan's propose
 - [ ] Send Hannah the discount/free paintball tickets for the off-site (2026-06-22)
 - [ ] Build the centralized account page for the unified dashboard (the per-account view the various stage dashboards drill into)
 - [ ] Continue MCP integration for real data querying
-- [x] ~~Prepare buyer hub + account page demo for AJ call on 2026-06-25~~ — demo day
+- [x] ~~Prepare buyer hub + account page demo for AJ call on 2026-06-25~~ — occurred
+- [ ] 1:1 with Evan (June 26) to review LeanData email data metadata and determine categorization strategy before ingestion
 - [ ] Pull LeanData bottom 200 accounts by rep ownership (provide the two rep names); review data dictionary fields — by end of week 2026-06-25
+- [ ] Standardize transcript file naming and folder structure in Dropbox (date-based names, morning/evening subfolders)
 - [ ] Write script for each team member to pull LeanData data locally (data must not be stored on GitHub)
 - [ ] Consolidate outreach module settings: combine tabs 1, 2, 3 into a single settings icon
 - [ ] Email ingestion module: ingest and analyze existing customer emails to derive scenario-based email corpus (waiting to be unblocked; working with Claude on approach)
 
 ## Notes
+- **2026-06-25 standup (evening, post-AJ-demo):** Set up Gemini backup for transcription (alongside Fireflies). Reported 4800 outgoing emails from 2 LeanData reps to 360 accounts over 1 year (~17k total artifacts including calls and calendar invites). Email data not yet fully categorized; 1:1 with Evan planned June 26 to review metadata and segmentation options. Committed to standardizing transcript file names and folder structure in Dropbox.
 - Module deliverable: buyer hub — once champion engages, track who else gets involved, what information they need, buyer engagement signals
 - Idea discussed: SlideShare-style deck tracking (which pages viewed, how many times, who it was forwarded to)
 - Updated design scheme to align more closely with Evan's design

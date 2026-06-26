@@ -1,20 +1,25 @@
 # Aaron Rose
 **Role:** Team Member, Pareto Agent
-**Last updated:** 2026-06-23
+**Last updated:** 2026-06-25
 
 ## Current Focus
 Account intelligence module: identifying who to contact (who/what/when), org chart construction, and champion identification from CRM data.
 
 ## Open Tasks
-- [ ] Hook account-intelligence module into adjacent stage for AJ demo narrative flow (2026-06-23 standup)
-- [ ] Scope down to core champion agent + people research; avoid scope creep into ingestion/output (per Evan direction, 2026-06-19)
-- [ ] Prepare module demo for AJ call on 2026-06-25
+- [x] ~~Prepare module demo for AJ call on 2026-06-25~~ — occurred
+- [ ] Validate qualification rules with Evan — are churn-risk and upsell classifications correct? (June 25 evening standup)
+- [ ] Build standup scrum board displaying team daily tasks; link to Dropbox transcript folder for eventual automation (June 25 evening standup)
+- [ ] Send updated slide deck to Evan for feedback before next market research call (June 25 evening standup)
+- [ ] Implement global filter across entire dashboard website — selected period applies to all views simultaneously (June 24 evening standup)
+- [ ] Update account data to reflect only 4 quarters of 2026 (not multi-year) (June 24 evening standup)
 
 ## Notes
 - Module deliverable: account intelligence — given an account, identify who to contact, when, and what to say
 - Approach: start with existing CRM contacts, cycle through for engagement, escalate to external enrichment (e.g. Clay) if needed
 - Long-tail accounts typically only have a few contacts in CRM (less messy than enterprise)
 - Working with MCP data source
+- **2026-06-25 standup (evening, post-AJ-demo):** Proposed a structured standup format: "Today, this is what I worked on. This is what I'm working on. This is what's blocking me." — displayed on a visual dashboard artifact. Plans to build a scrum board linked to Dropbox transcripts folder; estimates 1-2 weeks to automate. Reported qualification module is working end-to-end (downloads emails/calls from LeanData, combs through for upsell/churn signals); next step is rule validation with Evan. Worked on slides today (not code). Sent updated deck for Evan's feedback.
+- **2026-06-24 standup (evening, pre-AJ-demo):** Tasked with implementing a global dashboard filter and updating data to 4 quarters 2026 only.
 - **2026-06-22 standup:** Evan noted Aaron's account-intelligence/qualification work will surface in the unified dashboard at the qualification / qualified stages, and that team members would work closely with Aaron on the key status breakdowns and accounts under each stage — one of the areas where the modules start unifying. (Speaker attribution in this transcript was unreliable; only items Evan explicitly tied to Aaron are recorded here.)
 - **2026-06-22 standup (evening):** Tapped by Dean/Evan to co-lead the clean-sheet rebuild of the combined dashboard. (Speaker attribution in this transcript is unreliable; only items explicitly assigned to Aaron are recorded.)
 - **2026-06-23 Pitch Contest:** Gave the most concise elevator pitch (~15 seconds, well within the 30-second limit); framed the value prop around the push-pull tradeoff on rep time. Went last among the in-room group.

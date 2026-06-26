@@ -1,18 +1,18 @@
 # Evan Liang
 **Role:** Co-founder / CEO, Pareto Agent (standup leader, product strategy)
-**Last updated:** 2026-06-24
+**Last updated:** 2026-06-25
 
 ## Current Focus
 Leading product strategy and overall agent architecture. Drove the 2026-06-22 pivot to a single unified dashboard + centralized account page for the [Renewal Platform](../projects/renewal-platform.md). Coordinating external advisor calls and customer research.
 
 ## Open Tasks
-- [ ] Lead AJ demo (2026-06-25): voiceover/narration while one team member drives navigation; all team in one conference room
-- [ ] Add time-frame dropdown (Q2/Q3/Q4/All) to the top-level overview dashboard before AJ demo (2026-06-23 standup)
+- [x] ~~Lead AJ demo (2026-06-25)~~ — occurred; Evan led voiceover while team gathered in one conference room
+- [x] ~~Add time-frame dropdown (Q2/Q3/Q4/All) to overview dashboard before AJ demo~~ — implemented
+- [ ] Re-engage market research contacts next week to validate the slide deck and product demos (June 25 evening standup)
+- [ ] 1:1 with Cooper (June 26) to review LeanData email data metadata and determine categorization strategy
 - [ ] Send "output stuff" (stage automation outputs showcase) to Juliet for use as placeholder slides in pitch deck (2026-06-24 standup)
 - [ ] Send Pareto Agent color/design template to Juliet so she can apply it to her pitch deck slides via Claude (2026-06-24 standup)
-- [ ] Set up a call with the LeanData (LD) team about their data dictionary, as reference for the proposed data dictionary module (2026-06-22)
 - [ ] Continue calibrating 6 micro-agents (language style, drafter, response agent, champion finder, ingestion, proposal)
-- [ ] (Tentative) Set up a meeting with Jesse — hoping for Thursday (~2026-06-25)
 - [ ] Find external people to evaluate whether the team is building things correctly; trial some sessions as demos instead of code reviews
 
 ## Notes
@@ -40,4 +40,5 @@ Leading product strategy and overall agent architecture. Drove the 2026-06-22 pi
 - **2026-06-23 Pitch Contest:** Organized and facilitated an internal pitch contest (30-sec elevator + 5-min sales pitch, order by spin wheel) for the full team including remote participants Juliet Lo and H. Fong. This is the "sales pitch instead of standup" day referenced in the 06-22 evening standup.
 - **2026-06-24 morning session:** Ran a full end-to-end demo of the Combined Dashboard for Juliet Lo (remote). Juliet gave very positive feedback. Facilitated a discussion on demo strategy (single-deal walkthrough > time-slider animation), approval/auto-send flow, design partnership structure, and pilot timeline (≥12 weeks). Reviewed Juliet's design partner pitch deck and gave feedback (add a "process you can stand by" punch line, incorporate "green churn," add a before/after or staged-timeline slide; suggested matching Pareto's color template). Explained the "context-as-moat" thesis: having full context across all renewal stages makes negotiation tractable and is the differentiator vs. point solutions.
 - **2026-06-23 standup (evening):** Reviewed Aaron's overnight rebuilt combined dashboard vs. Cooper's "parents" build. Team agreed to go with Cooper's architecture; Evan facilitated the decision. Laid out the AJ demo plan: Evan leads voiceover, one person drives, all in one conference room; tighter narrative flow (no bouncing). Read Juliet's pitch outline aloud to the team as the framing for how to talk to renewals leaders. Also relayed context on Lean Data org structure: Brian Burkett = CSO/CRO; AJ reports to Brian and manages commercial renewals (the skeptical end-user persona); Franco = Head of RevOps (tech advisor to CRO, not a direct report). Call with Franco + Parth happened earlier that day. Emphasized that the CRO won't want to see the product — he buys on ROI/headcount; AJ is the one who needs to be convinced at the product level.
+- **2026-06-25 standup (evening, post-AJ-demo):** Discussed phase 2 plan — ~1-2 weeks to understand LeanData data (firmographic breakdown first: distribution by Q, avg deal size), then run qualification on real data for AJ to interact with, then outreach email drafts, then proposal. Reaffirmed that the current prototype is a UI validation tool; real-data work will require a rebuild with different module structures. External meetings June 26 11:30am–3pm (external lunch + coffees). Emphasized that people stepping out for errands is fine as long as they're responsible and available — "it only becomes a problem when you can't find people and you're blocked."
 - **2026-06-22 standup:** Pitched the unified dashboard vision (single dashboard across the book of business + centralized account page); proposed a cross-functional split (Parth on the dashboard piece, Cooper on the account page). Argued the agentic CRM needs far less manual input than Salesforce-style CRMs because automations move deals between stages. Held a stance (while calling it a "fair risk factor") that the product should not be designed assuming a human AM in the loop — the forward-deployed engineer is the human who onboards/tunes. Floated once-a-day weekend standups (~1pm, opt-in).

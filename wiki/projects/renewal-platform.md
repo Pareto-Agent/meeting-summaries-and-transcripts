@@ -50,6 +50,15 @@ On the morning of **2026-06-24**, Evan ran a full end-to-end demo of the Combine
 - [x] ~~Team: 1:1s with Evan early week of 2026-06-23 to align on AJ demo plan~~ — at least Cooper's 1:1 with Evan happened by 2026-06-22 (referenced in standup)
 - [ ] ~~Parth: scope down to champion agent + language agent only~~ — superseded 2026-06-22: Evan proposed Parth take the unified dashboard (top-level + per-stage) piece; language/voice agent remains active
 - [x] ~~Dean + Aaron: start the parallel clean-sheet combined dashboard~~ — superseded 2026-06-23: team went with Cooper's "parents" architecture as the primary codebase; Aaron's parallel build was a valuable prototype but not the path forward
+- [ ] **Unassigned:** Rename "Out of cycle" to "Off cycle" in the dashboard (June 24 evening standup)
+- [ ] **Parth:** Configure 200 demo accounts in JSON with hardcoded "stories" — binary blocked/not-blocked per stage, so the date slider demonstrates pipeline movement (June 24 evening standup)
+- [ ] **Aaron:** Implement global filter across entire dashboard website — selected period (e.g. Q3 2026) applies to all views simultaneously (June 24 evening standup)
+- [ ] **Aaron:** Update account data to reflect only 4 quarters of 2026, not multi-year (June 24 evening standup)
+- [ ] **Dean:** Work on pricing engine in a separate local environment or new folder — would break the demo environment for 1-2 days if done in the main repo (June 25 evening standup)
+- [ ] **Dean:** Think through product architecture — shared components, data flow between stages, how real LeanData data will flow through each module (June 25 evening standup)
+- [ ] **Aaron:** Build standup scrum board displaying team daily tasks; link to Dropbox transcript folder for eventual automation (June 25 evening standup)
+- [ ] **Cooper:** Standardize transcript file naming and folder structure in Dropbox (date-based names, morning/evening subfolders) (June 25 evening standup)
+- [ ] **Cooper + Evan:** June 26 1:1 to review LeanData email data metadata and determine categorization strategy before ingestion
 
 ## Decision Log
 ### 2026-06-25 — Standup
@@ -75,6 +84,22 @@ On the morning of **2026-06-24**, Evan ran a full end-to-end demo of the Combine
 ### 2026-06-25 — Standup
 - **Decision:** Outreach contact sequencing is rule-based: send to first account contact → if no response after 1 week, send follow-up → after ~3 weeks MIA, escalate to find alternate contact. Every account has ~3 contacts. For demo purposes, only need a UI showing this journey with configurable timers — no ZoomInfo integration yet.
 - **Rationale:** AJ's biggest fear is a contact going MIA for 20–30 days with no structured follow-up. Rule-based timers are more consistent than relying on AMs to manually remember. The agent is more reliable than a human who gets distracted.
+
+### 2026-06-25 — Stand up (evening, post-AJ-demo)
+- **Decision:** Current prototype = front-end UI validation tool with synthetic data; real LeanData data integration will require a separate rebuild with different module architecture. The demo environment will remain intact for external demos.
+- **Rationale:** Evan: "What we just built was a front-end UI prototype to validate — is this the type of functionality someone wants with phony data?" Mixing real data into the prototype creates structural conflicts (different data models, security constraints, pricing engine complexity). Cleaner to build production modules fresh with the correct architecture than to retrofit the prototype.
+
+### 2026-06-25 — Stand up (evening, post-AJ-demo)
+- **Decision:** Phase 2 sequence: ~1-2 weeks to understand LeanData data → qualification running on real data (AJ can interact) → outreach email drafts (~1 week later) → proposal → buyer engagement (needs security architecture guidance).
+- **Rationale:** Staged approach lets AJ interact with each phase incrementally, building confidence. Firmographic analysis (distribution by Q, avg deal size, unique contacts) comes first — Evan: "What are we trying to categorize?" before running qualification.
+
+### 2026-06-24 — Stand up (evening, pre-AJ-demo)
+- **Decision:** Demo data approach: hardcode 200 accounts in a JSON file with a "story" — binary flags for blocked/not-blocked at each stage, with stage progression determined by date offset. No complex real-time agent communication between sub-modules needed for the demo.
+- **Rationale:** The date slider already causes deals to move between stages based on time logic. Adding a one-bit "blocked at this stage" flag per account produces realistic pipeline spread without requiring actual inter-agent messaging — fast to implement and sufficient to demonstrate the product.
+
+### 2026-06-24 — Stand up (evening, pre-AJ-demo)
+- **Decision:** Code freeze: no new code pushes on the morning of the AJ demo. Wording/UI changes only; no structural changes.
+- **Rationale:** Last-minute structural changes risk breaking the entire dashboard right before the demo. Small visual tweaks are acceptable; new features create merge conflicts and instability.
 
 ### 2026-06-24 — Product Demo / Strategy Session (Juliet Lo)
 - **Decision:** Frame the product as **"telemetry"** rather than a "dashboard." Stages are populated automatically by agents, not by humans manually entering data into a CRM.
@@ -151,6 +176,18 @@ On the morning of **2026-06-24**, Evan ran a full end-to-end demo of the Combine
 - **Decision:** Buyer portal ROI calculator: buyer inputs (headcount, usage assumptions, etc.) are configurable; proposed pricing is fixed. No self-serve pricing exploration.
 - **Rationale:** Buyers need to stress-test the value story; pricing decisions remain the seller's domain.
 
+### 2026-06-18 — Stand up (evening, initial prototype review)
+- **Decision:** Demo flow: present the generated PowerPoint output first, then walk through the block system and customization logic.
+- **Rationale:** Showing the polished output creates impact and frames the "how" as a feature, not overhead. Explaining blocks first risks losing the audience before they see the value.
+
+### 2026-06-18 — Stand up (evening, initial prototype review)
+- **Decision:** Buyer hub product terminology: use "products" or "SKUs" (what the client is using/buying), not "utilization."
+- **Rationale:** "Utilization" is vague; "products/SKUs" maps directly to what buyers recognize and care about renewing.
+
+### 2026-06-18 — Stand up (evening, initial prototype review)
+- **Decision:** Dashboard UI layout: move input controls (rationale, signals) to the main view; shift supplementary content/info to the sidebar. Centralizes user control.
+- **Rationale:** Users interact with inputs primarily; putting them front and center reduces friction and clarifies the workflow.
+
 ### 2026-06-16 — Morning Standup
 - **Decision:** Assign pipeline modules: Aaron → Qualification, Parth → Outreach, Dean → Proposal, Cooper → Buyer Evaluation. Negotiation stage excluded from scope.
 - **Rationale:** Each team member owns one renewal stage end-to-end. Negotiation excluded — too many edge cases for v1.
@@ -160,6 +197,10 @@ On the morning of **2026-06-24**, Evan ran a full end-to-end demo of the Combine
 - **Rationale:** Replit spins up a live site + database quickly but is hard to redirect once set on an approach; Claude Code is easier to iterate and change direction in, and feeds into GitHub.
 
 ## Notes
+- **Post-AJ-demo (2026-06-25):** AJ demo occurred on June 25 with Evan leading voiceover and the team in one conference room. AJ may believe the demo environment is something he can access and play with — clarification needed at next interaction.
+- **LeanData email data volume (Cooper, 2026-06-25 evening):** 2 reps have sent ~4,800 outgoing emails to ~360 accounts over 1 year (~17k total artifacts including calls and calendar invites). Data is structured (emails belong to specific accounts). Next step before ingestion: firmographic analysis — distribution by quarter, avg deal size, unique contacts.
+- **Phase 2 architecture (Evan, 2026-06-25 evening):** Demo prototype will continue to be used for external demos with synthetic data. Real-data work per module will be done in separate local environments. Once modules are proven with real data, a production rebuild with the correct architecture will happen — qualification may transfer; outreach, pricing, and later stages need different structures built fresh.
+- **Slide generation tool (Evan, 2026-06-18 evening standup):** Automated deck-generation tool using account signals (posture: flat/up-sell/down-sell, tenure, health metrics) to assemble slides from "blocks" — categorized slide types treated as puzzle pieces assembled per scenario. Inputs/rationale moved to main view, content preview to sidebar (UI layout decision, June 18 standup).
 - **LeanData data pipeline (2026-06-25):** LeanData has already sent their company-specific data dictionary. Next step: identify the bottom 200 accounts by rep ownership (Cooper to provide two rep names), review the data dictionary to select the right fields, then pull data locally via script (not in GitHub). Goal: begin data analysis by start of next week.
 - **Outreach email system — two tracks (2026-06-25):** (1) Demo track: improve outreach demo to show champion journey / contact-sequencing UI with configurable timers (immediate); (2) Product track: build actual email generation and contact sequencing product once LeanData data is available. First proof point with AJ: he likes the initial draft email.
 - **Data dictionary is a live blocker for agents (Cooper, 2026-06-25):** One of the biggest stumbling blocks to agents going live right now is pulling the wrong data. Without a data dictionary, every agent re-derives field meanings. LeanData having one pre-built is a significant advantage. Cooper expects someone in the market will solve this problem broadly within ~3 months.

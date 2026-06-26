@@ -1,0 +1,572 @@
+﻿📝 Notes
+Jun 26, 2026
+Stand up
+Invited Aaron Rose Cooper Tenney Dean Liang Evan Liang Parth Goda Rajesh
+Attachments Stand up
+Meeting records Transcript 
+
+
+
+
+Summary
+Meeting discussions addressed operational efficiency, technical architectural separation, and development strategy for ongoing project workflows.
+
+Operational and Process Improvements
+Participants implemented standardized naming conventions for documentation to enhance AI task retrieval. The team decided to create a dedicated scrum board to better track workflow progress.
+
+Technical Architecture Adjustments
+Team members agreed to separate development environments by moving testing away from the existing demo code. This strategy preserves the integrity of prototypes used during external stakeholder presentations.
+
+Strategic Data Management
+The team concluded that sensitive client data must remain in local folders rather than GitHub repositories. This approach secures client information while maintaining the current code repository structure.
+
+
+
+
+Decisions
+Aligned
+* Standup meeting format established Standups will follow a standard format where team members explicitly state their past accomplishments, current tasks, and blockers, with the goal of eventually automating the reporting process.
+* Deck review timeline defined The presentation deck will be circulated by tonight or tomorrow morning to ensure the team can provide feedback prior to the next call.
+* Meeting notes retrieval method The team will utilize the Dropbox folder structure to retrieve the most recent standup notes rather than querying Fireflies directly.
+* Data segmentation meeting scheduled The team will meet tomorrow to collectively review the data file and determine the strategy for segmenting it.
+* Deliverable update announcement policy Team members are required to announce any changes to their planned deliverables to the rest of the group to ensure alignment throughout the day.
+* Pricing engine sandbox development The pricing engine will be developed in a separate demo sandbox environment and a new folder structure to ensure existing production demo functionality remains intact.
+* Morning meeting schedule adjusted The team meetings are rescheduled to 9:00 AM to 9:30 AM for the following day to accommodate external appointments.
+
+
+We've updated the Decisions section using your feedback.
+Let us know what you think: Helpful or Not Helpful
+
+
+
+
+Next steps
+* [Aaron Rose] Send Deck: Deliver the presentation deck to Parth for review. Ensure receipt by tomorrow morning to allow feedback preparation for the next meeting.
+* [Parth Goda Rajesh] Standardize Filenames: Organize meeting transcript files into a standardized folder structure. Implement automated naming conventions to improve accessibility.
+* [Parth Goda Rajesh] Create Scrum Board: Develop a team scrum board to monitor daily tasks and progress. Use this tool to improve task alignment across the group.
+* [Evan Liang, Aaron Rose] Segment Data: Evaluate the data file to define segmentation strategies. Coordinate to categorize account information before final system ingestion.
+* [Aaron Rose] Curate Accounts: Compile a curated list of accounts for analysis. Document key account characteristics to assist in the classification process.
+* [Aaron Rose] Obtain Visa: Apply for a Chinese visa to prepare for upcoming travel. Secure the documentation as soon as possible.
+
+
+
+
+Details
+* Meeting Protocol and Recording Tools: Cooper Tenney and Evan Liang addressed technical issues regarding the current meeting setup, comparing the effectiveness of Fireflies and Gemini as recording tools. To ensure accurate voice tracking, the participants agreed that everyone should remain muted and use the "merge audio" feature when possible.
+* Standup Process and Automation: Parth Goda Rajesh and Aaron Rose discussed the redundancy of their current daily standup meetings. They reached a consensus that while daily check-ins are currently necessary to align on tasks and blockers, the team should aim to automate this process in the coming weeks by tracking progress through shared documents rather than repeating updates verbally (00:01:54).
+* Slide Deck Updates and Market Research: Aaron Rose reported that the slide deck requires additional work during Juliet’s absence. The team agreed that the next step is to utilize the deck to validate market research and demos, with Aaron Rose planning to circulate the latest version for team feedback by the following day (00:03:30).
+* Scrum Board and Documentation Standards: To better track workflow, the team decided to establish a scrum board. Parth Goda Rajesh and Cooper Tenney agreed to implement standardized naming conventions for transcripts and meeting notes in the shared Dropbox folder, which will enable the AI to retrieve task information more reliably (00:04:59).
+* Email Data Ingestion: Cooper Tenney provided an update on the email ingestion project, noting that the team has processed approximately 4,800 emails across 360 accounts. Aaron Rose and Evan Liang scheduled a meeting for the following day to examine the data file and determine appropriate segmentation and categorization strategies (00:06:51) (00:11:52).
+* Qualification Logic and Account Analysis: Aaron Rose requested assistance in validating the current qualification rule set to ensure it accurately identifies accounts needing attention, such as those at risk or candidates for upsell. Evan Liang advised the team to analyze the broader account universe first—including quarterly breakdowns and average account size—before finalizing the categorization process (00:09:00).
+* Team Coordination and Communication: Dean Liang reported experiencing merge conflicts while building UI elements and a slider timeline, highlighting the need for better communication. The team discussed the importance of "staying in their lane" and ensuring that team members announce when they take on new deliverables to avoid overlapping work or conflicts (00:12:58).
+* Pricing Engine Architecture: Dean Liang raised the possibility of unifying the pricing engine across different agents, which would likely cause temporary disruptions to the workflow. Aaron Rose advised that before making such architectural changes, the team must first clarify the overall product flow and how the various stages of the customer journey, such as outreach and proposals, interact with one another (00:14:46).
+* Development Strategy and Architecture: Aaron Rose emphasized the need for a deliberate approach to product architecture. The group agreed to separate their development environments, moving away from using the existing demo code for backend data testing to avoid compromising the prototype used for external stakeholder presentations. They decided to create a new, separate workspace for testing new modules (00:16:24).
+* Technical Workflow and Repository Management: Aaron Rose and the team discussed the best practices for managing their code and data. They concluded that they should maintain the current repository structure while moving data-heavy testing to local folders to avoid pushing sensitive client data to GitHub. They will continue to use the current demo environment for external meetings while developing new features in separate folders (00:20:24).
+* Project Roadmap and Stakeholder Presentations: Aaron Rose outlined the project timeline, noting that the team is currently in the second phase of the summer, which involves processing real client data. The team plans to focus on perfecting qualification over the next week or two before moving on to the email outreach and proposal stages, with the goal of preparing the work for a future presentation to AJ (00:23:35).
+* Scheduling and Team Culture: Aaron Rose scheduled a morning sync for the following day from 9:00 AM to 9:30 AM due to upcoming external meetings. The team discussed their culture of responsiveness, agreeing that while they prioritize availability, it is acceptable for team members to step away for personal errands as long as they communicate their status to prevent blocking other team members (00:26:30).
+
+
+
+
+You should review Gemini's notes to make sure they're accurate. Get tips and learn how Gemini takes notes
+How is the quality of these specific notes? Take a short survey to let us know your feedback, including how helpful the notes were for your needs.
+📖 Transcript
+Jun 26, 2026
+Stand up - Transcript
+00:00:01
+
+
+Cooper Tenney: because I think as we're moving into more technical stuff and we're all on the same forward, we're stepping on each toes a little bit. Yep. Um like today itself like I was supposed to walk on the deck and then like in the afternoon Cooper's like, "Yo, I did fit today." Yeah, that was I was like, "Thanks." And I just
+Evan Liang: like a little bit more.
+Cooper Tenney: like
+Evan Liang: I think you just put in the CL code and just ask it to custom.
+Cooper Tenney: if you want to see a screen share that's the only reason plus fireflies I think I figured out and I'm having a Gemini backup like the Gemini transcription will be if fireflies doesn't work that should be the fail. So we should join Yeah. We should join. It doesn't matter if we as long as someone's unmuted right now. It will track whose voice is. In theory, it will ideally we'll see. We'll see which Gemini which Fireflies or Geminis is better. Okay.
+
+
+
+
+00:01:08
+
+
+Cooper Tenney: Do we on mute or do we keep it muted?
+Parth Goda Rajesh: muted. Uh you could unmute and just
+Cooper Tenney: Merge audio. Yeah, I think that has to give me an option to merge audio.
+Parth Goda Rajesh: can just assume. Oh, okay. I'm much audio. I'll invite you
+Cooper Tenney: unmute though.
+Parth Goda Rajesh: to
+Cooper Tenney: I didn't get it by
+Evan Liang: Is that because I'm the host? Uh, you're you're
+Cooper Tenney: Yeah. All right,
+Parth Goda Rajesh: I'm merged.
+Cooper Tenney: we're all muted.
+Evan Liang: already
+Parth Goda Rajesh: Cool. Yeah. I don't know.
+Cooper Tenney: Standup should probably be like what you're going to tackle and what you have thoughts of tackling. I mean, that gets a little bit in the weeds because like there's maybe small things, but like I think in the morning
+Parth Goda Rajesh: was like, "Okay, we're going to do this. We're going to do this. We're going to do this." We all discussed it and we just walked out of the room and there was like at the
+
+
+
+
+00:01:54
+
+
+Parth Goda Rajesh: utmost faith utmost faith in Firefly AI and then notion circle to kind of build it out. But I don't think we're that delicious in tech task given out and stuff like that also.
+Aaron Rose: in the notion
+Parth Goda Rajesh: So I think a standard would be quite redundant.
+Aaron Rose: but I think at this point we need okay today this is what I worked on this is what I'm working on visual
+Parth Goda Rajesh: This is what's blocking me and then having that like on effect at the start of day would be great. I think maybe a one or two weeks we might be able to automate it by just the way we're talking and
+Aaron Rose: We're talking like it's like on the screen auto
+Parth Goda Rajesh: like okay part's going to work on the deck part's going to work on outreach and
+Aaron Rose: updating.
+Parth Goda Rajesh: he's going to help out with the championing agent all the AI things.
+Aaron Rose: Um, for now maybe we'll do the the old school pool, but maybe in a few weeks we automate it.
+
+
+
+
+00:02:40
+
+
+Aaron Rose: Yeah, I mean I think I think that's a good idea. Maybe potentially with the automation it might be worth pull up what people committed to as next steps and if we share that as a document for the next one that may save a lot of time is everyone comes in being like okay this is what we said we people were going to do they do those yes or no
+Evan Liang: Oh,
+Aaron Rose: right
+Evan Liang: and that might be a lot faster than having everyone just kind of repeated. We need someone to take charge on that. Uh, that would be
+Aaron Rose: yeah since it was meeting the slides I didn't do much slides. I guess I'll take this up again. I won't do that. Sorry. So, I'll use the agile to
+Parth Goda Rajesh: with I don't know I don't know how I'm thinking about it but for now just a dashboard and every monitoring center maybe I could just display
+Aaron Rose: maybe
+Parth Goda Rajesh: a dashboard and try to find a way to use Firefly AI or just I mean
+
+
+
+
+00:03:30
+
+
+Aaron Rose: slowly just type in but like
+Parth Goda Rajesh: maybe I'm hoping a day or two it's automated well then you can Sorry.
+Aaron Rose: I'm on the slides. uh there he just put them into the right visuals, right? I think there's still a lot of work on the slides to work on while Juliet's gone.
+Evan Liang: Especially
+Aaron Rose: So, for example, like the later part of the slides just or cloud design just made it like
+Evan Liang: when she goes to the product piece
+Aaron Rose: Oh, I fixed that already. Oh, okay.
+Evan Liang: club.
+Aaron Rose: You added like So, what happened was I added a screen. I know what what day out is going to be and then what is
+Parth Goda Rajesh: Oh, yeah.
+Aaron Rose: it like an
+Parth Goda Rajesh: literally all I did was
+Cooper Tenney: 5 minute session.
+Aaron Rose: hour work I was
+Evan Liang: What Cooper did was just put the
+Aaron Rose: like he's like I was like temp I put some of my
+Evan Liang: slides
+Aaron Rose: MBA degree to
+Parth Goda Rajesh: Um,
+
+
+
+
+00:04:18
+
+
+Aaron Rose: you for
+Parth Goda Rajesh: I think this. So, yeah. Okay, that's great.
+Evan Liang: uh because I think uh next steps was to take that slide to go back to some people we did market research.
+Aaron Rose: with see if I can re-engage them to go validate the slide and the demos. That's that's what I want to do next week. So, okay. So, one of the Let me send you this deck.
+Parth Goda Rajesh: channel
+Aaron Rose: Maybe by tonight or tomorrow morning if you have any feedback,
+Parth Goda Rajesh: and then I'll update
+Aaron Rose: you can let me know so you can be ready for the next call.
+Parth Goda Rajesh: it.
+Aaron Rose: Sounds good. Uh the call won't happen till I so All right, perfect. So we have tomorrow for Friday or
+Parth Goda Rajesh: I don't try to schedule something.
+Aaron Rose: on a Thursday. So okay. Okay. Oh yeah. So actually on me for a scrum board so we can all know what
+
+
+
+
+00:04:59
+
+
+Parth Goda Rajesh: Fireflies for me to create a a scrum.
+Aaron Rose: we're working on.
+Parth Goda Rajesh: Well, so what I've been working
+Cooper Tenney: on is that my a folder in the Dropbox.
+Aaron Rose: Fireflies will pull it
+Cooper Tenney: So, if you can just directly reference that Dropbox folder.
+Aaron Rose: into
+Cooper Tenney: Yeah, that'd be great. Um, it's I don't know if you can pull it up right now. It's in the team folder. You go to Yeah, team folder, meeting notes, transcripts. It's in the transcript stuff.
+Parth Goda Rajesh: nodes transcript.
+Aaron Rose: That's where all the Firefly stuff drops. Yeah. So then what what I have to do is link my to this.
+Parth Goda Rajesh: I had to probably find a way to link
+Aaron Rose: Hopefully you can just like go into that folder than trying to link
+Cooper Tenney: Find the most recent standup and use that data rather easier than trying to
+Aaron Rose: Fireflies directly. Okay. I feel like that's way easier.
+Cooper Tenney: query. You want to see just in this everything's living
+
+
+
+
+00:05:55
+
+
+Parth Goda Rajesh: unstandardized like how would I know which file is the one that I want to go into cuz some of them say stand up 10:17 some says 10:16 morning stand up some say stand up 260624 959 I think they all have the date on
+Cooper Tenney: You could just like have your claw like judge which one's the most recent one and then you could audit it maybe. I don't know. I can also tell my thing to standardize the names. Yeah, can we stand the names and
+Aaron Rose: and have it like a folder structure because since we have two links every day, we
+Parth Goda Rajesh: like a daily folder and folder we have a morning and night file.
+Aaron Rose: can
+Parth Goda Rajesh: Right now everything is just into this. That's just helps clear a bit of clean up. I think kind of auto make it right. I'm going to try. Okay,
+Cooper Tenney: That's all
+Parth Goda Rajesh: cool.
+Cooper Tenney: my
+Aaron Rose: um I can
+Cooper Tenney: I've been working on the email ingestion piece.
+
+
+
+
+00:06:51
+
+
+Aaron Rose: go
+Cooper Tenney: Um,
+Aaron Rose: yeah I don't know it's it's going haven't really made like I don't know substantive
+Cooper Tenney: it's
+Aaron Rose: like okay yes it's working no it's
+Cooper Tenney: working, but it's like flipping in that direction. I think it's going to take a
+Aaron Rose: I do. Yeah.
+Cooper Tenney: while.
+Aaron Rose: I pulled I used his Yeah, you guys pulled out um a lot.
+Cooper Tenney: Uh, I could ask it exactly how many like hundreds.
+Aaron Rose: I think there were like 50,000 total in the two not that we pulled but like not not emails specifically artifacts of like emails there are calls there are like calendar invites for just the two sales reps. Okay. Just like yeah so many things. They're pulling all their things. And then are have you uh before you ingest it, have you like categorized it or like categorized first outreach type of outreach but
+Evan Liang: like you can categorize emails by making sure that's
+Aaron Rose: then also like uh this is where the qualification is going to help is like when we have a qualification when we qualify
+
+
+
+
+00:08:06
+
+
+Evan Liang: which email belongs to that qualification status, right?
+Aaron Rose: that's organizing by itself it it's doing some of that. I think I can maybe have a one
+Cooper Tenney: with you. You can tell me exactly what you'd like to categorize
+Aaron Rose: because I I mean this is a little bit out of my expertise.
+Cooper Tenney: by.
+Aaron Rose: Okay. So, so okay. So, so you're left on like
+Evan Liang: Hey, we probably uh sometime uh probably tomorrow we should sit down and
+Aaron Rose: hey try to look at the the data file and try to figure out how to actually like uh segment it.
+Evan Liang: try
+Aaron Rose: Yeah, I agree. And I've been asking Claude what it thinks it should
+Cooper Tenney: we should do it then like saying okay that doesn't make any sense or that does make sense because it knows like some industry best practices just by how it's built so it has some structure it's not just like nothing okay but I'm sure you're
+Aaron Rose: opinion will be yeah it'd be great tomorrow let's look through the that what what what comes with the emails and
+
+
+
+
+00:09:00
+
+
+Evan Liang: How to
+Aaron Rose: what what choices we have but then we should look at it uh together before just feeding in for just
+Evan Liang: up?
+Aaron Rose: a okay yeah I'm same way. I I think I've made like all my stuff works now for qualification. But so like the last bit that was taking a long time was downloading the emails and the calls and then combing through them to check have they ever said we want an upsell, we are on the brink of leaving all that. And so that is like working in that it pulls those. But now what I need to do is like the the validation I guess which I think you would be very helpful for like are these rules correct? because it it sorts it does everything right now with the current rule set and the current you know looking at the quotes and all that but I don't know if it's doing it correctly as in should this account be sure risk should it be an upsell you know it looks like it maybe from the data like oh it's using a lot of seats but I don't know if that's what your opinion would be on that account specifically so what would be helpful so again
+
+
+
+
+00:10:15
+
+
+Evan Liang: So you're a little bit uh yeah go away for like two hours and blocking everyone. Uh so
+Aaron Rose: That's a good thing. I was going to joke when I first came. I was like, "Hey,
+Evan Liang: I just went to a couple Starbucks things.
+Aaron Rose: I a couple weeks." Uh,
+Evan Liang: This is the longest you see me in a couple weeks.
+Aaron Rose: but
+Evan Liang: Uh yeah, let's make sure to find time.
+Aaron Rose: uh
+Evan Liang: What would be helpful for me is to start with the set of like hey here are the set of accounts that we're going
+Aaron Rose: go analyze. Yep. Right. Is that 200? Is it 400? How many did you pull down from them?
+Evan Liang: to
+Aaron Rose: Right. uh and then give me some characteristics of that stuff because I'd like to start with like per our dashboard like how many are in Q1, Q2, Q3, Q4. Yeah. Right. What's the average size of it? So I like some graphic information on the on the accounts first.
+
+
+
+
+00:10:58
+
+
+Aaron Rose: Okay. Before categorize.
+Evan Liang: start to
+Aaron Rose: So I just want the universe because Brandon and Drew also do work on some larger accounts. I just saw saw him close like a 40,000 account dollar account this morning uh across the feed.
+Evan Liang: That's probably going to be outside
+Aaron Rose: And so a long tail. Mhm. Yeah. So anyways, yeah.
+Evan Liang: though.
+Aaron Rose: I I'll curate a list and Yeah. So So So the first step I'm just like what am I what is before we even try to categorize what are we trying to c Yeah. So and then maybe we could we might shrink that down before running through qualification. Okay. Yeah. Sounds good. Really quick before Dean goes,
+Cooper Tenney: have 4,800 email
+Aaron Rose: I emails across. Okay. Like only going out. Okay. They've sent. Okay. There were like 17,000 or something like that.
+Cooper Tenney: 4,800.
+Aaron Rose: And then what uh what time frame?
+
+
+
+
+00:11:52
+
+
+Aaron Rose: I don't know. Okay. So, it'd be nice to know like is it 4,800 that they've sent all time? This is this company has been on 10 years. Is it like uh and then across how many accounts? It's going to take some serious tokens to not only do that stuff the
+Parth Goda Rajesh: like data scientist stuff but like also sentiment analysis. What stage of
+Aaron Rose: renewal was this accounted all that I think it's it's mostly not LLM it's mostly like codebased code based and it's it's structured already. Okay. So, so those emails belong to an account. Yeah. So, it should be pretty like as long as we capture the structure and the metadata, it should be pretty straightforward. Yeah. It's a year. It's one year. Okay. That's awesome. Good. So, they've sent 4,800 to how many accounts and then nine help emails? 30 uh 360 accounts? 360 accounts across how many people? un you need people.
+
+
+
+
+00:12:58
+
+
+Aaron Rose: Well, it depends if they're multi-threading. True. This is where it's like, hey, now we get a picture of this marketing. It's great because then that kind of helps us.
+Parth Goda Rajesh: without kind
+Aaron Rose: Absolutely. That's so good. Yeah. So, staring at that was a task, not a answer. Um, okay. What I was working on is a lot of like a lot of it is just
+Dean Liang: like small UI things. Um, and then also I was building out the timeline of like here you get to personalize when it follows up, when it escalates, etc., etc. So, building out like a slider timeline. It just crashed. So, yeah, I've got to figure that out. is because of merge conflicts. I think two parts point. I'm not entire
+Aaron Rose: honestly convinced whether we need a scrum. I think it's just like at some point I do agree though like hey everyone did have a deliverable at the start of the day maybe either stick to it or if you do decide to take another deliverable
+
+
+
+
+00:13:59
+
+
+Dean Liang: Well,
+Aaron Rose: you have to announce it to the team which sure maybe that seems like it takes a
+Dean Liang: you I think if we're all working at the same desk,
+Aaron Rose: bit like for example like when I started doing the
+Dean Liang: it's not the biggest desk in the
+Aaron Rose: combined UI I was like hey is anyone going to do this if not I can get started on this right like that's not a crazy ask right I think If everyone
+Dean Liang: tell just by have you guys all take out your earbuds and say yes or no,
+Aaron Rose: says I'm down to do the scrum just test out but I think the main thing is
+Dean Liang: right?
+Aaron Rose: like if you have a task like make sure we have it aligned at the at the end of like the morning
+Dean Liang: Say
+Aaron Rose: meeting and then just like stay in your lane a bit like I think we were able to go elsewhere because we were stuck in our sub agents and that's no longer the reality. So you just have to it's just a discipline thing which is fine and I think yeah the scrum thing will definitely help help a bit with that.
+
+
+
+
+00:14:46
+
+
+Dean Liang: Yeah. So because now I am working across multiple agents so I have to be cognizant of who's doing what. So if we don't stay in our lane, I just had a merge conflict,
+Aaron Rose: right now. I'm going to figure out what it was.
+Dean Liang: right? But like that can't be part of the normal cadence to keep on having
+Aaron Rose: Conflicts even though Claude can kind of figure it out.
+Dean Liang: merge.
+Aaron Rose: Um
+Dean Liang: But it's cloud can I just like but at some point it's going to make a decision and I think it's better if you know exactly what's going on. like avoid it in the first place figure
+Aaron Rose: Um So yeah, I was doing that. Uh another question that I have to figure
+Dean Liang: out is should I even like I was scoping out work for the pricing engine because right now we're not doing that at all. Every single agent has a different every single agent that services a price or classifies an account has a different way of doing it right now and I can unify that.
+
+
+
+
+00:15:32
+
+
+Dean Liang: But if I do unify that, it's probably going to break everything for like a day or two.
+Aaron Rose: Because like the complexity of the thing is like okay I need a pricing engine that every single a like we should stop calling agent. Every single part pulls from but then every single part also then has to give it information that then dictates what the next part might see. But then we also then have to get into the idea of we haven't actually like cemented a flow per se like okay outreach outreach outreach then proposal but then if they respond to the proposal then that's technically is that handled by outreach and where does does it then influence how the buyer hub looks like right
+Dean Liang: Does that signal then Go.
+Aaron Rose: that whole thing we've never had we haven't had to deal with yet and it's just like is this outside of scope for for demo and like if I do build this out with this complexity my thing would be
+Dean Liang: Well, there's two options. Well, Aaron was like, "Okay, we'll work it." But at some point
+
+
+
+
+00:16:24
+
+
+Aaron Rose: work with it in like a demo sandbox. So if things break, it doesn't matter just start building the actual version.
+Dean Liang: it's also
+Aaron Rose: Yeah. So I'd say this uh probably the bigger thing first is we need to understand the architecture of this thing. So uh it was very deliberate early on to put you guys on four different stages uh and so that you guys wouldn't clash. So I was trying to make it easier for you guys to go faster. uh fortunately unfortunately we decided that part of the value proposition was the dashboard stitching it together. So we brought you guys together and we've created this. So as we brought this together I think maybe if you want to take a and try to
+Evan Liang: like take a step
+Aaron Rose: think through the product architecture and like what are the shared components what are the things how do we think about this uh as we kind of feed uh uh LD's data through we're going to have to start thinking about how this stuff goes.
+
+
+
+
+00:17:17
+
+
+Aaron Rose: It doesn't have to be complete in the sense that uh again the uh the way we've set up the design partnership with lean networkation and close.
+Evan Liang: Trying to get them to a certain stage prior to negotiate.
+Aaron Rose: So it doesn't have to be that the architecture still will probably doesn't that's still simpler but when we add negotiation close then the complexity really raises you know so one thing though is like do we even want to pass data through what we have my instinct is no like what we have right now I don't think lean data data should go
+Dean Liang: like it's not ready.
+Aaron Rose: through clarify my point and
+Dean Liang: Can I
+Aaron Rose: stuff on this I think the idea behind what I said where we use this as the demo for or like we use this as a testing bed for what we do is just purely like for me for qualification right now it's nice that I like I want to try to pass in real lean data data to see is my thing calibrated and I agree that once we actually get the pricing engine and we we agree on the architecture we're going to need to do a full rebuild once again and build it from the ground up saying this is what you have to keep in mind for the architecture.
+
+
+
+
+00:18:29
+
+
+Aaron Rose: So build it, you know, use that as a reference, but build it to work with this. But just for testing purposes, like it would if we don't test this pricing engine, we don't think about the, you know, the architecture for we don't realize, oh yeah, actually plugging in synthetic data when we, you know, when we pass it through outreach and then we fake an email, then it messes up. like we're going to just we're going to build that into the next full iteration and it's still going to break there because we didn't test it there and then we're going to have to build another iteration. Yes.
+Evan Liang: What we just built
+Aaron Rose: The way the way I think about a front-end UI prototype to validate kind of is
+Evan Liang: was
+Aaron Rose: this the type of functionality someone wants with phony data right uh once we are using ling data thing like so for yours you should probably build your
+Evan Liang: data analysis outside of as providers.
+Aaron Rose: uh because that's like a data
+Evan Liang: So,
+Aaron Rose: analysis tool once and create the emails we're probably going to have
+
+
+
+
+00:19:27
+
+
+Evan Liang: we have that and we can understand.
+Aaron Rose: to rebuild with different strate kind of structures because that we actually have different types of modules, right? Qualification because it's quite similar,
+Evan Liang: It could fit into this
+Aaron Rose: but like the outreach emails, pricing, some of the other later stages stuff will be probably have to be rebuilt into we have to rethink the architecture and rebuild it because we're actually flowing. So, so what does that mean for me?
+Cooper Tenney: We have to like take it out of GitHub and put it in a new folder or
+Aaron Rose: It might you shouldn't be in the GitHub with this data. That's what we agreed. Yeah. Yeah. Yeah. With the code for this. It's it's in like canonical data. I I set up the documentation such that if your claw read it, which it should have given the prompt I give it. Yeah. It's it's going to ignore like it's not going to push. Yeah. Nothing is ignore data.
+
+
+
+
+00:20:24
+
+
+Aaron Rose: Yeah. But yes. Uh do we uh so you this is where if someone knows the terminology here either information systems or so on is it do we create a new branch here or do we create a new folder what's the best what's the
+Evan Liang: Wait
+Aaron Rose: best and like potentially coding on a separate thing
+Evan Liang: a
+Aaron Rose: um when you when it's a different branches like you guys are working on something that might overlap you just making a quick snapshot of it working on it and merging it together.
+Evan Liang: minute.
+Aaron Rose: So making a clone teaching it something else and then putting the clone back into the same human being and the same human being understands whatever we taught the clone. I think what he's doing is just a complete different like so we put it in a new repo or just just a new folder a new folder within the Yeah, of course. Does that you look confused? Oh new folder. Do you want it still pushed into GitHub? I guess that Yeah, you still want it in GitHub.
+
+
+
+
+00:21:16
+
+
+Aaron Rose: Yeah, you still want GitHub. What is the risk that we're looking at for GitHub? The data. Don't put the data in GitHub. No, no, no. Yeah. Yeah. His code get the data is
+Evan Liang: help push
+Aaron Rose: not and the the dash or whatever.
+Cooper Tenney: It's just the
+Evan Liang: the
+Aaron Rose: He's probably going to build some.
+Parth Goda Rajesh: UI elements on top of it. That's going to be for the pricing.
+Cooper Tenney: logic.
+Aaron Rose: I might just I don't I might just make a copy of the dashboard as is and take it outside to my local machine because my my own issue is if I do
+Dean Liang: pricing agent.
+Aaron Rose: the demo no one would be able to touch it for the next two
+Dean Liang: I think you if I did it on the actual
+Aaron Rose: days. No, agree. Because that's to tear down everything. So I think some of this as we are building stuff that's production and we're analyzing it.
+
+
+
+
+00:21:57
+
+
+Aaron Rose: I think it's worth taking it off and then now we're again dividing it up. Yep. Does that make sense? We're dividing it up,
+Evan Liang: until you figure it out and make the mechanics work.
+Aaron Rose: allowing you to rebuild again with
+Evan Liang: And then we'll probably have to
+Aaron Rose: the new modules, and you'd want that anyway, right? rather
+Evan Liang: going back through the prototype like guess what? We have a new data model. switch this out and put this one in. That's not as efficient. You might as well be like, "Here's the new data model. Here's where the data sits." And actually, you can't use it on the new prototype because the data is locally anyway. So, whereas it's a madeup data model, it's probably sitting
+Aaron Rose: or in uh in the cloud, right? So, yeah.
+Evan Liang: some
+Aaron Rose: So, that that probably answers that question. Do you want to tackle that since you did it last time? Tackle what? The I mean, I guess we're not ready for that when when the time comes.
+
+
+
+
+00:22:45
+
+
+Cooper Tenney: I'm not ready for
+Aaron Rose: Oh, when we merge it, sure.
+Cooper Tenney: that.
+Aaron Rose: But yeah, I think for now it's just yeah, we we still use what we built if it can be useful because like there's already, you know, the synthetic data in there like we don't have to recreate the synthetic data to test our stuff. We're not throwing away what we that so so don't
+Evan Liang: We'll still be demoing out of there
+Aaron Rose: completely break it because that will still be the demo environment I will be using to talk to other folks.
+Evan Liang: some iterations as
+Aaron Rose: We will still make testing like little functionality on the front end there.
+Evan Liang: we're
+Aaron Rose: Yes. Just we're not going to be using that for any of the backend work that we are now trying to actually commercial not commercialize but you know when does the like what's the timeline on that? How close
+Cooper Tenney: Look at that. Uh I I think
+Aaron Rose: are in
+Evan Liang: We're spending at least a week or two weeks.
+
+
+
+
+00:23:35
+
+
+Cooper Tenney: it's
+Aaron Rose: today's world scale? Like at least a full week trying to understand this data at the minimum. Yeah. Like we had talked about this being phase two of the summer where we're like actually putting client data through. Phase two starts second week of the second summer.
+Evan Liang: Only
+Aaron Rose: This will be two phases of the second phase. I thought it might take three times as long. Yeah. Yes. Yes. Getting this right is now at some point emails to a certain stage,
+Evan Liang: time will do it
+Aaron Rose: right? And then we'll be presenting them to AJ,
+Evan Liang: again.
+Aaron Rose: right? And he'll be looking at the show. He'll rip it apart at that point in time and then add some other changes. I can do another presentation. I got it.
+Parth Goda Rajesh: him go in and play around with it because I think he asked for excess.
+Aaron Rose: what he saw was something he can actually go access and play around with.
+
+
+
+
+00:24:36
+
+
+Aaron Rose: So yeah, yeah. Yeah. I think the next I I think the next stage is uh the next thing is we're going to try to get the qualification stuff right. He can probably play around that with the real data set and be like all we're doing here is qualification. Yeah. Right. Then we're parallething and then like a week or two weeks later, this is probably after we get back, we'll we'll tackle the outreach in emails. Sounds good. You know, and then that's just drafting the initial email. Then there's like the flow of what other emails it sends. Yeah. So I think that's like three calls later. Yeah. Then you're doing the actually the proposal phase will probably be the proposal phase will probably be faster. Yeah. and buyer engagement will be uh after that he has less interest and we have we need someone
+Evan Liang: figure out like
+Aaron Rose: to tell us how to architect that thing securely I
+Evan Liang: keep thinking
+
+
+
+
+00:25:27
+
+
+Aaron Rose: think are going to take longer than they actually do I think it might yeah because like
+Evan Liang: things
+Aaron Rose: once claude understands the data then it just can manipulate that you but at this point you have to understand fully what do well yeah absolutely I mean you're going to understand that because instead of you know you having to put in the Excel and graph it out and stuff. Claw just makes the graph for you and then you read it. And I think summary statistics the Neil conversation also highlights that you know uh it's up to your risk tolerance with AI you can have slow risk tolerance like uh and you can just go very very fast or hey if you want to take the time to truly understand it it could take a lot longer. So u and we'll we can use judgment to figure out uh and adjust going faster or slower. So awesome. Cool. Anything else? So I think the key thing is uh just so you guys know tomorrow I have an external lunch meeting uh and two uh and a coffee uh and something else.
+
+
+
+
+00:26:30
+
+
+Aaron Rose: So I will be gone from like till like 3, but I'll be back. So let's have the meetings like first thing in the morning like 900 to 9:30.
+Evan Liang: 11:30
+Aaron Rose: Uh so I get you guys off and then uh then you then we'll do the standup. uh I'll go to my meetings, come back, and then we have the afternoon to kind of kind of set priorities. And I think that's uh the afternoon stay up is pretty important to set the priorities for like, hey, because then we got the weekend. So, it should be pretty crystal clear what folks are working on. So, I need to get my Chinese visa um at some point soon, like ideally not a couple weeks down the line. Would it work to like I can still work on cow train? Sure. after you leave. So like be here in the morning, go grab it, come back. Yeah. Okay. Yeah. Yeah. And I think I talked to Cooper about you know what we want
+Evan Liang: this I think uh what we set a set of uh I mean what's important
+Aaron Rose: is from a cultural perspective is that people are responsive and
+Evan Liang: for
+Aaron Rose: available. But once we have that culture step, if code of that sort,
+Evan Liang: know that they're achieving their things and you need to step out to run an error
+Aaron Rose: you should, you know, that that that should just be totally acceptable and we should have folks be okay doing that. So uh so and hey if people can figure it out or aware uh
+Evan Liang: out and just make sure people problem when uh that
+Aaron Rose: it only becomes a problem
+Evan Liang: get becomes where it becomes a problem where you can't find people anymore and then you're blocked. That's when it becomes an issue.
+Aaron Rose: I will block you but I will have to step out that's also for today. So yeah, awesome. Cool. Thanks, Roger.
+Evan Liang: What's yours?
+Parth Goda Rajesh: I don't Oh.
+Cooper Tenney: Maybe
+
+
+
+
+Transcription ended after 00:30:35
+
+
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.

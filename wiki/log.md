@@ -4,6 +4,7 @@
 
 ## 2026-06-19 — stand up
 - fireflies-id: 01KVEPVF5M6NPRKQ95HPNQMP8Y
+- gemini-file: morning/2026-06-19-standup-morning.gemini.txt
 - Pages updated: wiki/people/evan-liang.md, wiki/people/aaron-rose.md, wiki/people/dean-liang.md, wiki/people/parth-godarajesh.md, wiki/people/cooper-tenney.md, wiki/advisors/scott.md, wiki/advisors/aj.md, wiki/projects/renewal-platform.md
 - Summary: First substantive team standup (5 participants); Evan presented product strategy (autonomous agent, AM leader ICP, visibility value prop), team gave module updates, key decision to keep using dummy data for another week, AJ demo planned for 2026-06-25.
 
@@ -43,6 +44,7 @@
 - fireflies-id: 01KVGJHWTACHX74Q4WV7TRQ44P
 - Pages updated: wiki/projects/renewal-platform.md, wiki/people/cooper-tenney.md, wiki/people/dean-liang.md, wiki/people/evan-liang.md, wiki/people/aaron-rose.md, wiki/people/parth-godarajesh.md
 - Transcript: transcripts/2026-06-22-stand-up-evening.txt
+- gemini-file: evening/2026-06-22-standup-evening.gemini.txt
 - Correction: An automated run on 2026-06-23 wrongly logged this as a DUPLICATE of the morning standup (01KVEPX2QG4AVYFRGBDAT1W5TF). It is a distinct **evening** standup — the API `date` (1782174600000 = 17:30) differs from the morning standup's (1782144000000), and the content is entirely different (the four-build merge had already happened). Reprocessed in full.
 - Caveat: Fireflies labeled speakers only as Cooper/Evan/Dean and diarization is unreliable; Aaron + Parth attended (per the participants list) but are largely unattributed in the text, so only items explicitly tied to them were recorded. Some lines attributed to "Cooper" are clearly other speakers.
 - Summary: Evening standup after day one of the unified-dashboard build — Parth/Evan had merged all four builds into a working "Combined Dashboard" (~35–40% on UI); team adopted a git-branch collaboration model, decided to standardize on one fake-company corpus (Cooper to produce a JSON), and spun up a parallel clean-sheet rebuild (Dean + Aaron). Also: no standup tomorrow (sales pitch instead) and the off-site will be paintball.
@@ -56,6 +58,7 @@
 - fireflies-id: 01KVGJHWTKHCN4PX5JYHFBCZV6
 - Pages updated: wiki/projects/renewal-platform.md, wiki/people/evan-liang.md, wiki/people/cooper-tenney.md, wiki/people/aaron-rose.md, wiki/people/dean-liang.md, wiki/people/parth-godarajesh.md, wiki/advisors/aj.md
 - Transcript: transcripts/2026-06-23-stand-up.txt
+- gemini-file: evening/2026-06-23-standup-evening.gemini.txt
 - Caveat: Fireflies attributed ALL speech to "Evan Liang"; the conversation is clearly multi-speaker. Attribution re-assessed from content and known module ownership. Aaron's voice is reliably identifiable from context (he was the one demoing his own build and advocating for Cooper's architecture). Other lines (Cooper/Dean/Parth questions) are preserved at project level without individual attribution.
 - Summary: Evening standup; Aaron demoed his overnight rebuilt combined dashboard (voice agent live, Dean's proposal work integrated, pushed to `main`); team decided to go with Cooper's "parents" architecture as the primary codebase; AJ demo format locked (Evan voiceover + one driver + all team in one conference room on 2026-06-25); Evan read Juliet's pitch outline to the team; detailed context on Lean Data org (AJ → Brian Burkett; Franco = RevOps advisor).
 
@@ -71,16 +74,20 @@
 - Note: This is the "sales pitch instead of standup" session referenced in the 06-22 evening standup. Format: 30-sec elevator + 5-min pitch, order by spin wheel (Cooper → Parth → Dean → Aaron; Juliet Lo and H. Fong were remote and set to go after but the recording ended before their turns). Parth gave his pitch using his own AI-generated slides instead of the shared team deck; plans to redo.
 - Summary: Internal pitch-practice session (~39 min); all four in-room team members pitched Pareto Agent; introduced two new remote team members (Juliet Lo, H. Fong) whose pitches were not captured before the recording ended.
 
-## 2026-06-24 — Stand Up (evening)
+## 2026-06-24 — Stand Up (evening, pre-AJ-demo run-through)
 - fireflies-id: 01KVGJHWTCTYAYBVRR05DYBR6Y
-- Pages updated: none
-- Transcript: transcripts/2026-06-24-stand-up-evening.txt
-- Note: Fireflies API returned null sentences; no companion Gemini notes file found. This was the pre-AJ-demo run-through standup (all five core team members, ~50 min). No wiki signal could be extracted — stub archived to prevent reprocessing.
-- Summary: Evening standup the night before the AJ demo (2026-06-25); transcript content unavailable from Fireflies API.
+- gemini-file: evening/2026-06-24-standup-evening.gemini.txt
+- gemini-file: _superseded/Stand up - 2026-06-25 17-29 PDT - Notes by Gemini.txt
+- source: fireflies+gemini-fallback
+- Transcript: transcripts/evening/2026-06-24-standup-evening.fireflies.txt
+- Caveat: Fireflies returned null sentences; content sourced from Gemini notes files. The full-transcript Gemini export was misdated by Google to "Jun 25, 2026" — actual meeting was June 24 ~17:30 PDT (the night before AJ demo). That export moved to _superseded/ since the canonical path already existed with the summary export.
+- Pages updated: wiki/projects/renewal-platform.md, wiki/people/parth-godarajesh.md, wiki/people/aaron-rose.md, wiki/people/dean-liang.md, wiki/people/evan-liang.md, wiki/people/cooper-tenney.md
+- Summary: Pre-AJ-demo run-through (~50 min); team reviewed the combined dashboard; key decisions: hardcode 200 accounts with binary JSON "stories" (blocked/not blocked per stage) for demo; code freeze — no pushes on demo morning; rename "Out of cycle" to "Off cycle"; Dean showed customer-facing demo design; Parth to configure 200 accounts + clean dashboard labels + restore account page; Aaron to implement global filter + 4-quarters-2026-only data; demo flow logic still lacks long-term consensus.
 
 ## 2026-06-25 — Standup - Juliet 2nd pitch
 - fireflies-id: 01KVX0MGXE44DPABCMFFZQTYYE
 - gemini-file: Meeting started 2026_06_25 10_13 PDT - Notes by Gemini.pdf
+- gemini-file: morning/2026-06-25-standup-morning.gemini.txt
 - source: fireflies+gemini-fallback
 - Pages updated: wiki/projects/renewal-platform.md, wiki/people/cooper-tenney.md, wiki/advisors/aj.md
 - Transcript: transcripts/2026-06-25-standup-juliet-2nd-pitch.txt
@@ -89,6 +96,7 @@
 
 ## 2026-06-24 — Stand Up (morning, product demo + pitch deck review with Juliet Lo)
 - fireflies-id: 01KVGD1E8SSW4C7FD85R3D3BCW
+- gemini-file: morning/2026-06-24-standup-morning.gemini.txt
 - Pages updated: wiki/projects/renewal-platform.md, wiki/people/juliet-lo.md, wiki/people/evan-liang.md, wiki/people/cooper-tenney.md
 - Transcript: transcripts/Stand Up  - 2026_06_24 09_59 PDT - Notes by Gemini.txt
 - Note: Fireflies returned null sentences for this transcript; content sourced from the Gemini notes file already present in transcripts/. Participants per Fireflies API: arose, ctenney, dliang, eliang, jlo, pgodarajesh — though the transcript only captures Evan and Juliet as active speakers; Cooper asked a question via text chat (relayed by Evan). Meeting classified as a product demo / strategy session rather than a traditional standup: Evan demoed the Combined Dashboard end-to-end for Juliet, then Juliet presented her design partner pitch deck.
@@ -96,6 +104,7 @@
 
 ## 2026-06-16 — 10.16 morning stand up (module assignments + tooling)
 - source: granola — transcripts/10.16 morning stand up.html
+- gemini-file: morning/2026-06-16-standup-morning.gemini.txt
 - Note: Pre-Fireflies transcript (Fireflies set up June 19); sourced from Granola HTML export. No fireflies-id.
 - Pages updated: wiki/projects/renewal-platform.md, wiki/people/evan-liang.md, wiki/people/aaron-rose.md, wiki/people/parth-godarajesh.md, wiki/people/dean-liang.md, wiki/people/cooper-tenney.md, wiki/people/h-fong.md, wiki/advisors/scott.md
 - Summary: First substantive recorded standup (pre-Fireflies); module assignments made (Aaron→Qualification, Parth→Outreach, Dean→Proposal, Cooper→Buyer Evaluation; Negotiation out of scope); Aaron led a Claude Code best practices walkthrough; Replit vs. Claude Code tooling discussion; MCP vs. API tradeoffs; Scott Golden named as informal advisor for a Thursday prototype review (June 19).
@@ -111,3 +120,17 @@
 - Note: Pre-Fireflies; no fireflies-id.
 - Pages updated: wiki/projects/renewal-platform.md, wiki/people/juliet-lo.md, wiki/people/aaron-rose.md, wiki/people/parth-godarajesh.md, wiki/people/dean-liang.md, wiki/people/cooper-tenney.md, wiki/people/evan-liang.md
 - Summary: Team presented per-module research to Juliet Lo; Juliet gave structured feedback on Qualification (expand signals, flexible churn model), Outreach (liked branching logic + language profiling), Proposal (value story critical, modular slides), and Buyer Portal (hub + deck connectivity, ROI calculator scope); strategic principles confirmed (keep v1 simple, work within seller systems, variance is the enemy of multi-step automation); Rol at Guard Square cited as long-term pricing direction.
+
+## 2026-06-18 — stand up - initial prototype (evening)
+- gemini-file: evening/2026-06-17-standup-evening.gemini.txt
+- source: gemini
+- Note: Filename says 2026-06-17 but Gemini header says "Jun 18, 2026" — content confirms this is the evening standup the night before the June 19 Scott Golden prototype review. Recording-only export (no full transcript), Gemini summary notes only. Pre-Fireflies (Fireflies set up June 19).
+- Pages updated: wiki/projects/renewal-platform.md, wiki/people/evan-liang.md, wiki/people/dean-liang.md, wiki/people/cooper-tenney.md, wiki/people/aaron-rose.md, wiki/people/parth-godarajesh.md
+- Summary: Evening standup preparing for June 19 Scott Golden prototype review; Evan demoed the automated slide-generation tool (signals → "blocks" → assembled deck); key decisions: demo flow = show PowerPoint output first then explain blocks; buyer hub terminology = "products/SKUs" not "utilization"; dashboard inputs to main view, content to sidebar; use ARR < $10k for demo data; Luncher internal tool deprioritized.
+
+## 2026-06-25 — Stand up (evening, post-AJ-demo)
+- fireflies-id: 01KVGJHWTK0QMV94GVWR34JV0Z
+- source: fireflies
+- Transcript: transcripts/evening/2026-06-25-standup-evening.fireflies.txt
+- Pages updated: wiki/projects/renewal-platform.md, wiki/people/cooper-tenney.md, wiki/people/evan-liang.md, wiki/people/aaron-rose.md, wiki/people/dean-liang.md, wiki/people/parth-godarajesh.md
+- Summary: Post-AJ-demo evening standup; Cooper reports 4800 outgoing emails from 2 LeanData reps across 360 accounts (1 year of data); team adopts "worked on / working on / blocking" standup format; Aaron proposes Dropbox-linked scrum board; Evan plans to re-engage market research contacts next week to validate slide deck; Dean working on UI and timeline slider (follow-up/escalation timers); architecture discussion: current prototype = UI validation with synthetic data, real LeanData integration will require rebuild; Cooper-Evan 1:1 planned June 26 for email data categorization strategy.
