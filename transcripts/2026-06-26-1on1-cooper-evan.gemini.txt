@@ -1,0 +1,337 @@
+﻿📝 Notes
+Jun 26, 2026
+1 on 1
+Attachments 1 on 1
+Meeting records Transcript 
+
+
+
+
+Summary
+Data ingestion review and segmentation strategy refinement enabled the team to establish foundational analysis frameworks for templates.
+
+Initial Data Structuring Review
+The team reviewed 48,000 processed emails for structural integrity. Establishing clear data linkages between accounts and communications remains the primary prerequisite for accurate modeling.
+
+Segmentation and Metric Integration
+The primary decision made was to use mock qualifications to stress-test data structures pending final external metrics. Segmenting emails by account type facilitates the creation of targeted decision trees.
+
+Temporal Analysis and Strategy
+The team will apply Python-based grouping to identify cadence inefficiencies and communication timing gaps. Thorough validation of these data segments must occur before initiating template generation.
+
+
+
+
+Decisions
+Aligned
+* Email analysis strategy prioritized The team will prioritize the validation, segmentation, and consistency analysis of the email dataset before feeding it into the AI model for template generation.
+
+
+We've updated the Decisions section using your feedback.
+Let us know what you think: Helpful or Not Helpful
+
+
+
+
+Next steps
+* [AJ] Check data fields: Inspect the JSON email dataset to determine if the account name field exists.
+* [AJ] Document segmentation theories: Write down proposed methods for grouping and classifying the email data to share for review.
+* [AJ] Analyze email dataset: Group the collected emails by account and contact to assess data quality and identify consistent segments.
+* [Cooper Tenney] Validate segmentation plans: Review and provide feedback on the proposed grouping theories once they are submitted for validation.
+
+
+
+
+Details
+* Data Ingestion and Initial Review: Cooper Tenney discusses the ingestion of approximately 48,000 emails, which are currently stored in a JSON format. While duplicate and junk emails have already been filtered out, Cooper Tenney emphasizes the need to understand the structural relationships within the data before attempting to use Claude for further analysis (00:00:22). They stress the importance of identifying the specific columns, data organization, and linkages between accounts and emails before proceeding with any data-driven modeling (00:05:20).
+* Data Segmentation and Account Patterns: To effectively analyze the dataset, Cooper Tenney suggests segmenting the emails to identify patterns in account and contact distribution (00:02:02). They want to determine the consistency of the data, specifically looking for outliers regarding the number of emails per account and the number of contacts reached (00:02:54). This segmentation is presented as a critical first step to ensure the quality of the dataset and to avoid using "garbage" data for future training processes (00:06:02).
+* Incorporating Account Demographics and Qualifications: Cooper Tenney highlights the necessity of layering in external business qualifications, such as Annual Recurring Revenue (ARR), renewal status, and deal outcomes (e.g., closed-won or closed-lost) to improve analysis. They explain that accounts with different characteristics, such as high versus low ARR, will behave differently, and therefore, the emails associated with them should be categorized distinctly (00:03:37) (00:05:01). While these specific qualifications are currently pending, Cooper Tenney suggests that using temporary, mock qualifications to stress-test the data structure is a viable interim step until Aaron’s formal qualifications are available (00:11:58).
+* Developing a Decision Tree for Templates: By segmenting data based on specific account types, such as down-sell scenarios, Cooper Tenney proposes identifying commonalities among the emails to establish a canonical template (00:07:05). The objective is to build a decision tree that allows for the creation of content that aligns with specific, qualified account paths rather than relying on generalized scenarios (00:07:58). This process involves identifying a set of emails that fulfill a specific scenario and assessing their consistency before feeding them into Claude to generate templates (00:07:32) (00:12:58).
+* Temporal and Sequential Email Analysis: Beyond content, Cooper Tenney identifies the importance of analyzing the time series and cadence of the emails (00:08:38). They emphasize the need to examine the sequence of communication, such as the timing of the first versus the second email, and the delay before contacting the next person within an account (00:09:04). Cooper Tenney suggests this analysis could reveal inefficiencies, such as instances where 20-day delays between outreach efforts result in lost opportunities (00:10:12).
+* Technical Strategy for Data Grouping: To execute the planned analysis, Cooper Tenney discusses the use of Python libraries to perform grouping operations by account or other attributes (00:11:00). This approach allows for a programmatic way to validate theories regarding data segmentation (00:11:32). Cooper Tenney invites further input on these grouping theories to ensure the strategy is sound before moving forward with full-scale template generation (00:12:27).
+* Project Performance Feedback: Concluding the discussion, Cooper Tenney provides positive feedback regarding the project's progress. They note that the team, including Juliet and Hannah, has been impressed by the speed and thoughtfulness demonstrated in getting up to speed on the project. Cooper Tenney acknowledges the value of taking a step back to thoroughly understand the data structure before proceeding with the next phase (00:13:16).
+
+
+
+
+You should review Gemini's notes to make sure they're accurate. Get tips and learn how Gemini takes notes
+How is the quality of these specific notes? Take a short survey to let us know your feedback, including how helpful the notes were for your needs.
+📖 Transcript
+Jun 26, 2026
+1 on 1 - Transcript
+00:00:00
+
+
+Cooper Tenney: we're recording everything, I should have last night I should have sent both of you 101 calendar invites in order to have the recordings probably. Okay, done. Um, okay. So, it's there's nothing there's nothing to show right now. It's just like what am I doing? Um, so basically I've gotten the I used the MCP.
+
+
+
+
+00:00:22
+
+
+Cooper Tenney: I ingested about 4,800 emails or no, I ingested like 48,000 emails. But a lot of that was kind of junk, duplicates, incoming emails. Can you show me where where is it stored or how what kind of format are you? So I have it in a JSON. Okay. Um let's see. It should be see if I can find it here and then here maybe.
+
+
+
+
+00:00:56
+
+
+Cooper Tenney: I can't remember where it is. So, and then if it's in JSON, how are you analyzing it? What do you mean? Okay. So, uh, so there's, hey, we're going to use these emails to do something with it. But I think the first step and you've sort of done some of this right is we should understand what we have and like segment and classify it and and you know be able and maybe because JSON with claude is good enough but it's what I want to know is like I
+
+
+
+
+00:01:28
+
+
+Cooper Tenney: actually want to make sure what we have here is like golden training like training data. Yeah. Right. So, so, so the first step in my mind in your process is like I ask you a few questions like which are the accounts, where's the email, like uh I'm still of the old school world and I'll fully admit this.
+
+
+
+
+00:01:45
+
+
+Cooper Tenney: I'm a I'm a I'm probably like your dad. We're spreadsheet junkies. Like when we think of things, we put everything into Excel. Some people think in PowerPoint, some people think in Word, some people think in spreadsheets. So, in my world like of spreadsheets, right, this is the old world. It doesn't have to be I'm not suggesting you put it into spreadsheet.
+
+
+
+
+00:02:02
+
+
+Cooper Tenney: like we're trying to think through the structure of it like the structure of what you've downloaded is important like how is it tied to the accounts how is it tied to people right so uh if you think about it like what I'm trying to analyze before we speed this in like I'm trying to analyze the categories of like hey that's why I asked you like so you have 48,000 emails right and it sounds like you've already duped the emails and then gotten them out the threads and stuff like But like key things I would want to know is how many emails are tied to
+
+
+
+
+00:02:36
+
+
+Cooper Tenney: which accounts, right? So you have number of accounts, right? And then it it'd be nice to know like of these accounts like things like and I'm not just doing this for vanity. I'm trying to find patterns here. Like does do all the accounts one account have a thousand emails and one account has one?
+
+
+
+
+00:02:54
+
+
+Cooper Tenney: Is there like a spread of them? Two of the distribution. Yes. So that that's one thing. It gives me an extra of these accounts. Does that make sense? Yeah. Yeah. So that that'd be one. And then within the accounts that's on the per email basis, we'd also want to know person or contacts, right?
+
+
+
+
+00:03:15
+
+
+Cooper Tenney: So on these on these accounts, how many contacts do did they actually reach out to? Right? So again, it's the texture like we want to know is one account have 400 people or one account have x number of people, right? Uh so that gives us a sense of like like is there outliers in terms of the data set or are they fairly consistent around some of that stuff.
+
+
+
+
+00:03:37
+
+
+Cooper Tenney: So those would be some things is just simply how they're stitched together. The other aspect is what we want to know about the accounts is uh what do we know about these accounts? And so, for example, like, hey, what's the AR? We might say some of them aren't interested. Like, for example, um like like I told you, if some of these accounts have like a $40,000 AR, they're going to behave very differently than an account that has $5,000 AR, right?
+
+
+
+
+00:04:08
+
+
+Cooper Tenney: So, what are the other demographics of the accounts? Certainly, Aeron's data or or or certain things like what kind of um so there's two points. It's on the account. uh we know how it's qualified, right? So like a downell account versus an upsell account may look very different or certainly we're going to analyze those emails differently.
+
+
+
+
+00:04:32
+
+
+Cooper Tenney: Okay. Uh the other part is some of your accounts uh you uh are going to be in process so the renewal is coming up. Mhm. Others of them are closed one or closed lost, right? Because you grabbed for the past year, so we're halfway through the year. Some of them. So these like these are different because these are like hey we could use this as training data set.
+
+
+
+
+00:05:01
+
+
+Cooper Tenney: So if this is qualified and it's closed one we may treat that email different. So I I I give you this not to say like go run all these different analysis. I'm trying to figure out can we run these analyses and segment this data this way and what do I know about these uh accounts and these people and all this other stuff.
+
+
+
+
+00:05:20
+
+
+Cooper Tenney: Uh yeah, I'm sure we can. I'm not sure how to get the account like name. I don't think that was a field. Oh, really? I could be wrong. Um, but I didn't see it. I can look again, though. Okay. So, so, so like in the Excel world, what I'm basically asking you in in the finance world, right, is you have a data set like email 100, 1,200.
+
+
+
+
+00:05:47
+
+
+Cooper Tenney: I think I'm making up a name, right? I'm asking you for what are my columns? Well, can I actually see it? How are they all linked together? Yeah. So, like that would be my first step to be like that's what am I looking at? Yeah. What am I looking at?
+
+
+
+
+00:06:02
+
+
+Cooper Tenney: And then how can I and then me and you should be like after we look at it, let's go see if there's anything wonky here to see is this this data set good? Yeah. There's no point in working on a crappy data set, right? And then do we have to shrink it down? Like you you went from a big number to 48,000.
+
+
+
+
+00:06:23
+
+
+Cooper Tenney: I'm trying to shrink this down. Is this the right 48,000 or is it like I don't know 30,000 that we really really value? Like what's that data set? Because if you throw garbage into cloud, we're just going to get garbage out. So that would be my first step is trying to understand the nature of your data.
+
+
+
+
+00:06:42
+
+
+Cooper Tenney: Maybe putting it in Excel or whatever format you have, right? some way for data analysis. Uh I think you guys probably is is this taught like in data science or something like like there's got to be a step of just like cleaning or understanding your data or Yeah. Okay. So that's what I want us to first do is I want to feel really confident about the data we have, right?
+
+
+
+
+00:07:05
+
+
+Cooper Tenney: uh if we have to go in and look at a few emails or stuff like that, I'm happy to do it because then we what we want to do is be able to seg come up with a segmentation scheme for the data and then what we would hope is that for example for um a small account um that is um small account that like we say in a scenario that Aaron comes up with let's say it's a downell account,
+
+
+
+
+00:07:32
+
+
+Cooper Tenney: right? I want to look at all the emails that fulfill that. Is it like I don't know about well 400 emails that fulfill here and then what we want to understand is are these fairly similar. Yeah. Because if they are boom we have a template. We feed the those 400 into client like create us the template for the canonical email that is that scenario for that type of customer.
+
+
+
+
+00:07:58
+
+
+Cooper Tenney: And would that be downell for like all ARR or what if we found like okay down cell below this like then there's like a decision tree that we're starting to build. Okay. Yes. That's where Aaron Aeron's going to give us the qualification. So then we can kind of follow a path and end up at the right spot.
+
+
+
+
+00:08:19
+
+
+Cooper Tenney: Yes. Okay. If we started just with your project without having Aaron's qualification possible we just keep on making up scenarios. You know what I'm saying? So that's where you guys interact is like Aaron gives you the qualification right and says like oh here are this thing then you want to segment it that way but before I we we do that I need to understand like what is it that we
+
+
+
+
+00:08:38
+
+
+Cooper Tenney: have yeah right and then so that's why these account names is critical yeah that we can tie it to that and then but also what you have that Aaron doesn't have is people like that's why I said I need to know like are we sending it to one person oh and then on the other dimension that's really important is uh time between emails or uh so let's say the account starts their renewal.
+
+
+
+
+00:09:04
+
+
+Cooper Tenney: Oh, days left for them. Yeah. Like do they have some sort of time series like we want to know like what we're trying to figure out is that first email sent to that first person of the 48,000. How many of those are that versus like what is we will analyze and what's interesting is what's the second email they sent which is different.
+
+
+
+
+00:09:23
+
+
+Cooper Tenney: they're going to probably send like I could imagine in your data set uh this my theory is like there's the first email guy doesn't respond what's the second email you send it's the third when do you go to the next person yeah right so and that's well that logic is more built for that champion finder right but the question is what is the content of that email is more for me yes okay yeah and then you to to keep you autonomous you may end up owning the champion fighter job
+
+
+
+
+00:09:51
+
+
+Cooper Tenney: Okay. Like or there's two intermixed. Yeah. Yeah, totally makes sense. Okay. So, because uh if you have an email data set, you can figure out the content and then the time series would tell us like this is what they would draw the slider is when are they hitting the next person? Uh right.
+
+
+
+
+00:10:12
+
+
+Cooper Tenney: And then you would we could probably analyze and say like actually ideally you should be hitting the next person 10 days. Hey AJ, did you know you guys are actually waiting 20 days in some cases to do this? That's a waste of you you've lost 10 days. Makes sense. So for this structure where you say email 1,13 or 11,3 that you want like data for each email or do you want data for each account or both?
+
+
+
+
+00:10:43
+
+
+Cooper Tenney: Uh so we need that's what I need to kind of fix. Like I I'm leaving a little bit as an open-ended question to you. I I imagine each email you pulled individual emails. Yeah. Does that make sense? So each email has certain things that are attached to it. That's my one that's next door.
+
+
+
+
+00:11:00
+
+
+Cooper Tenney: Oh, whatever. The next door building is really funky. It's like got some serious industrial things going on. That that one. Yeah. Smoke building. That's not us. That's that's one. Uh I mean it would be in our ears I so I'm just trying to figure out like so when I said this is just like if you took an email I like hey what are the attributes of that email totally and there are ways in like um Python like using a
+
+
+
+
+00:11:32
+
+
+Cooper Tenney: library in data science to like group by account like there's very simple like basic commands that you can like okay you have all the emails but group by the account and you can easily see the distribute it's like literally one line of code awesome that that that that that's another way we're looking for kind of the grouping the segmentations uh that uh that works right but the one thing you definitely know is eventually the qualifications will come in. Yeah, that'll be helpful.
+
+
+
+
+00:11:58
+
+
+Cooper Tenney: Yeah, I feel like because it'd be easier if we could just start with like fake qualifications. You could. But well, can we? Uh I mean I think for now you could use some basic qualifications to stress test what you have. Okay. Like can you cut it this way? But you're right eventually we have to get the qualifications from error and that will be a pass invalid.
+
+
+
+
+00:12:27
+
+
+Cooper Tenney: But in the meantime what I need to know from you is what what else can I group by? Right. And I'm happy to uh if you write down like hey here are my theories of it. I'm happy to validate for you these make sense or what you're missing and what's not. So so I think today just focus on the groupings of the emails uh and we'll worry about like once we feel good about that then we can worry about feeding it into uh claude to be like what's is there a template?
+
+
+
+
+00:12:58
+
+
+Cooper Tenney: Mhm. And actually before I feed it in, I'd be like, "Hey, Claude, take all these emails. Are they how consistent are they?" Like some measure of consistency. Yeah. Yeah. Totally makes sense. I think I was getting slightly ahead of myself yesterday. Yeah. No, it's okay. It's really cool.
+
+
+
+
+00:13:16
+
+
+Cooper Tenney: Anything else? Uh, no. Makes sense. Awesome. Good plan. One big uh piece of feedback for you uh by the way is uh uh amongst Juliet Hannah and I uh we think uh you you have uh we've been impressed by kind of how how you've come up to speed. we weren't sure initially like uh the other two had spent more time with the project areas right experience in B2B but uh I'm I'm starting to have an understanding of kind of your strengths uh you're you're very thoughtful and uh like u in terms of how you're thinking but because of that you you actually can you take time to take a step back to understand something before going forward so and it's very accurate I'd say thank you no wrong so yeah know keep it I'll answer.
+
+
+
+
+Transcription ended after 00:16:37
+
+
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.

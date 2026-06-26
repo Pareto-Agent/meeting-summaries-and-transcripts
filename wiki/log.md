@@ -157,7 +157,8 @@
 
 ## 2026-06-26 — 1:1 Cooper × Evan (outreach email-corpus strategy)
 - fireflies-id: 01KW2ATZG5TXZAYAQT46WHEHTM
-- source: fireflies
+- gemini-file: 2026-06-26-1on1-cooper-evan.gemini.txt
+- source: fireflies+gemini-companion
 - Transcript: transcripts/2026-06-26-1on1-cooper-evan.fireflies.txt
 - Caveat: Fireflies attributed ALL speech to "Cooper Tenney"; it was a two-person 1:1 (Cooper + Evan, confirmed by Cooper). Evan was coaching Cooper, so the methodology guidance and the closing developmental feedback are Evan's, not Cooper's. Attribution assigned by content.
 - Pages updated: wiki/projects/renewal-platform.md, wiki/people/cooper-tenney.md, wiki/people/evan-liang.md
