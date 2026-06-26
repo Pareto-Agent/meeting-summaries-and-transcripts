@@ -154,3 +154,11 @@
 - Transcript: transcripts/evening/2026-06-25-standup-evening.fireflies.txt
 - Pages updated: wiki/projects/renewal-platform.md, wiki/people/cooper-tenney.md, wiki/people/evan-liang.md, wiki/people/aaron-rose.md, wiki/people/dean-liang.md, wiki/people/parth-godarajesh.md
 - Summary: Post-AJ-demo evening standup; Cooper reports 4800 outgoing emails from 2 LeanData reps across 360 accounts (1 year of data); team adopts "worked on / working on / blocking" standup format; Aaron proposes Dropbox-linked scrum board; Evan plans to re-engage market research contacts next week to validate slide deck; Dean working on UI and timeline slider (follow-up/escalation timers); architecture discussion: current prototype = UI validation with synthetic data, real LeanData integration will require rebuild; Cooper-Evan 1:1 planned June 26 for email data categorization strategy.
+
+## 2026-06-26 — 1:1 Cooper × Evan (outreach email-corpus strategy)
+- fireflies-id: 01KW2ATZG5TXZAYAQT46WHEHTM
+- source: fireflies
+- Transcript: transcripts/2026-06-26-1on1-cooper-evan.fireflies.txt
+- Caveat: Fireflies attributed ALL speech to "Cooper Tenney"; it was a two-person 1:1 (Cooper + Evan, confirmed by Cooper). Evan was coaching Cooper, so the methodology guidance and the closing developmental feedback are Evan's, not Cooper's. Attribution assigned by content.
+- Pages updated: wiki/projects/renewal-platform.md, wiki/people/cooper-tenney.md, wiki/people/evan-liang.md
+- Summary: Evan coached Cooper on turning the pulled LeanData email data into an outreach training corpus — understand the data structure (tie account names to emails, currently missing), validate/clean it, then segment (by ARR, qualification type, renewal status, contact, inter-email timing) and derive per-scenario templates with Claude only once each cluster is shown consistent. Interim: use placeholder qualifications until Aaron's real output lands; group emails by account in pandas. Evan also gave Cooper positive developmental feedback (with Juliet and Hannah) on his ramp-up and analytical thoroughness.

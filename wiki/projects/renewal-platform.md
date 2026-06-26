@@ -1,7 +1,7 @@
 # Renewal Platform
 **Status:** Active
 **Owner:** Evan Liang
-**Last updated:** 2026-06-25
+**Last updated:** 2026-06-26
 
 ## Goal
 Build an autonomous AI agent system that replaces Account Managers for long-tail renewals — giving AM leaders full visibility into each step of the renewal process.
@@ -58,9 +58,17 @@ On the morning of **2026-06-24**, Evan ran a full end-to-end demo of the Combine
 - [ ] **Dean:** Think through product architecture — shared components, data flow between stages, how real LeanData data will flow through each module (June 25 evening standup)
 - [ ] **Aaron:** Build standup scrum board displaying team daily tasks; link to Dropbox transcript folder for eventual automation (June 25 evening standup)
 - [ ] **Cooper:** Standardize transcript file naming and folder structure in Dropbox (date-based names, morning/evening subfolders) (June 25 evening standup)
-- [ ] **Cooper + Evan:** June 26 1:1 to review LeanData email data metadata and determine categorization strategy before ingestion
+- [x] ~~**Cooper + Evan:** June 26 1:1 to review LeanData email data metadata and determine categorization strategy before ingestion~~ — held 2026-06-26 (see Decision Log)
+- [ ] **Cooper:** Write down email-corpus segmentation theories (group-by dimensions) for Evan to validate; group the pulled emails by account in pandas as a first pass (2026-06-26 1:1)
+- [ ] **Cooper:** Tie account names to each pulled email — account name appears to be missing from the export and is needed to link emails to accounts/qualifications (2026-06-26 1:1)
 
 ## Decision Log
+### 2026-06-26 — Cooper × Evan 1:1 (outreach email-corpus strategy)
+- **Decision:** Before generating outreach emails, validate and segment the pulled LeanData email data rather than feeding it to the LLM raw. Sequence: (1) understand the data structure — columns, and how emails link to accounts/contacts (account name must be tied to each email; it appears missing from the current export); (2) assess data quality and trim to the high-value subset ("garbage in → garbage out"); (3) segment, then for each segment gather its emails, measure cluster consistency, and only then have Claude derive a canonical/template email per scenario.
+- **Segmentation dimensions:** account ARR size (a $5k account behaves differently from a $40k one); qualification type (upsell/downsell — supplied by Aaron's qualification module); renewal status (in-process vs closed-won/closed-lost, the latter usable as labeled training data); recipient/contact; and time-series (gap between 1st/2nd/3rd email and when to move to the next contact — feeds the champion-finder). Assemble into a decision tree (e.g. downsell below an ARR threshold → a specific template).
+- **Interim:** use basic/placeholder qualifications to stress-test segmentation until Aaron's real qualification output is available; group emails by account in pandas first. Champion-finder may end up owned alongside this work.
+- **Rationale:** Customers want emails in their own voice, so templates must be derived from real, well-understood, consistent email clusters — not generated from scratch. Cleaning and segmenting first prevents training on noise. Extends the 2026-06-25 outreach-email-generation decision (analyze existing emails → scenario corpus → reverse tone classification).
+
 ### 2026-06-25 — Standup
 - **Decision:** Use AJ's LeanData accounts as the training corpus for outreach email generation.
 - **Rationale:** AJ's accounts are the first real-data test case; emails trained on his book of business will surface what the modules need to prove before going live.

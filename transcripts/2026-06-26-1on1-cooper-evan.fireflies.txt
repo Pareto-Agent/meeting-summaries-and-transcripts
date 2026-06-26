@@ -1,0 +1,193 @@
+Cooper Tenney: Is we might say some of them aren't interested.
+Cooper Tenney: Like for example, like, like I told you, if some of these accounts have like a $40,000 AR, they're going to behave very differently than an account that has $5,000 ar.
+Cooper Tenney: Right.
+Cooper Tenney: So what are the other demographics of the accounts?
+Cooper Tenney: Certainly Aaron's data or, or certain things.
+Cooper Tenney: Like what kind of.
+Cooper Tenney: So there's two points.
+Cooper Tenney: It's on the account, we know how it's qualified.
+Cooper Tenney: Right.
+Cooper Tenney: So like a downsell account versus an upsell account may look very different or certainly we're going to analyze those emails differently.
+Cooper Tenney: Okay.
+Cooper Tenney: The other part is some of your accounts, you are going to be in process.
+Cooper Tenney: So the renewal is coming up.
+Cooper Tenney: Others of them are closed one or closed lost.
+Cooper Tenney: Right.
+Cooper Tenney: Because you grabbed for the past year.
+Cooper Tenney: So we're halfway through the year.
+Cooper Tenney: Some of them.
+Cooper Tenney: So these like, these are different because these are like, hey, we could use this as training data set.
+Cooper Tenney: So if this is qualified and it's closed one, we may treat that email different.
+Cooper Tenney: So I give you this not to say like go run all these different analysis.
+Cooper Tenney: I'm trying to figure out can we run these analyses and segment this data this way?
+Cooper Tenney: And what do I know about these accounts and these people and all this other stuff.
+Cooper Tenney: Yeah, I'm sure we can.
+Cooper Tenney: I'm not sure how to get the account, like name.
+Cooper Tenney: I don't think that was a field.
+Cooper Tenney: Oh really?
+Cooper Tenney: I could be wrong, but I didn't see it.
+Cooper Tenney: I can look again though.
+Cooper Tenney: Okay, so like in the Excel world, what I'm basically asking you in the finance world, right, is you have a data set, like email 100, 1200.
+Cooper Tenney: I think I'm making up a name.
+Cooper Tenney: Right.
+Cooper Tenney: I'm asking you for what are my columns?
+Cooper Tenney: What can I actually see it?
+Cooper Tenney: How are they all linked together?
+Cooper Tenney: Yeah, so like that'd be my first step to be like, what am I looking at?
+Cooper Tenney: Yeah, what am I looking at?
+Cooper Tenney: And then how can I.
+Cooper Tenney: And then me and you should be like, after we look at it, let's go see if there's anything wonky here to see.
+Cooper Tenney: Is this, this data set good?
+Cooper Tenney: Yeah.
+Cooper Tenney: There's no point in working on a crappy data set.
+Cooper Tenney: Right.
+Cooper Tenney: And then do we have to shrink it down?
+Cooper Tenney: Like you, you went from a big number to 40, 000.
+Cooper Tenney: I'm trying to shrink this down.
+Cooper Tenney: Is this the right 48, 000 or is it like, I don't know, 30, 000 that we've really, really value?
+Cooper Tenney: Like what's that?
+Cooper Tenney: Yeah, that's that.
+Cooper Tenney: Because if you throw garbage into Claude, we're just going to get garbage out.
+Cooper Tenney: So that would be my first step is trying to understand the nature of your data.
+Cooper Tenney: Maybe putting in an Excel or whatever format you have.
+Cooper Tenney: Right.
+Cooper Tenney: But some way for data analysis.
+Cooper Tenney: I think you guys probably.
+Cooper Tenney: Is this taught like a data science or something like, like there's got to be a step of just like cleaning or understanding your data or.
+Cooper Tenney: Yeah.
+Cooper Tenney: Okay, so that's what I want us to first do is I want to feel really confident about the data we have.
+Cooper Tenney: Right.
+Cooper Tenney: If we have to go in and look at a few emails or stuff like that, I'm happy to do it because then what we want to do is be able to come up with a segmentation scheme for the data.
+Cooper Tenney: And then what we would hope is that for example, for a small account that is small account that like we say in a scenario that Aaron comes up with, let's say it's a downsell account.
+Cooper Tenney: Right.
+Cooper Tenney: I want to look at all the emails that fulfill that.
+Cooper Tenney: Is it like, I don't know, 400 emails that fulfill here.
+Cooper Tenney: And then what we want to understand is are these fairly similar?
+Cooper Tenney: Yeah.
+Cooper Tenney: Because if they are, boom, we have a template.
+Cooper Tenney: We feed those 400 to cloud be like create the template or the canonical email that is that scenario for that type of customer.
+Cooper Tenney: And would that be downsell for like all ARR or what if we found like, okay, down sell below this.
+Cooper Tenney: Like then there's like a decision tree that we're starting to build.
+Cooper Tenney: Okay.
+Cooper Tenney: Yes.
+Cooper Tenney: That's where Aaron, Aaron's going to give us the qualification.
+Cooper Tenney: So then we can kind of follow a path and end up at the right spot.
+Cooper Tenney: Yes.
+Cooper Tenney: Okay.
+Cooper Tenney: If we started just with your project without having Aaron's qualifications, we just keep on making up scenarios.
+Cooper Tenney: You know what I'm saying?
+Cooper Tenney: Yeah.
+Cooper Tenney: So that's where you guys interact is like Aaron gives you the qualification.
+Cooper Tenney: Right?
+Cooper Tenney: Yeah.
+Cooper Tenney: And says like, oh, here are this thing.
+Cooper Tenney: Then you want to segment it that way.
+Cooper Tenney: But before I, we.
+Cooper Tenney: We do that, I need to understand like what is it that we have?
+Cooper Tenney: Yeah.
+Cooper Tenney: Right.
+Cooper Tenney: And then.
+Cooper Tenney: So that's why these account names is critical.
+Cooper Tenney: Yeah.
+Cooper Tenney: That we could tie to that.
+Cooper Tenney: And then.
+Cooper Tenney: But also what you have that Aaron doesn't have is people.
+Cooper Tenney: Like that's why I said I need to know, like are we sending it to one person?
+Cooper Tenney: Oh, and then on the other dimension that's really important is time between emails or so let's say the account starts their renewal.
+Cooper Tenney: Oh, days left.
+Cooper Tenney: Yeah.
+Cooper Tenney: Like do they have some sort of time series like we want to know like what we're trying to figure out is that first email sent to that first person of the 48,000.
+Cooper Tenney: How many of those are that versus like what is.
+Cooper Tenney: We will analyze.
+Cooper Tenney: And what's interesting is what's the second email they sent, which is different.
+Cooper Tenney: They're going to probably send like I could imagine in your data set.
+Cooper Tenney: This is my theory is like there's the first email, guy doesn't respond.
+Cooper Tenney: What's the second email?
+Cooper Tenney: You said what's the third email?
+Cooper Tenney: When do you go to the next person?
+Cooper Tenney: Yeah.
+Cooper Tenney: Right.
+Cooper Tenney: So, and that's.
+Cooper Tenney: Well, that logic is more built for that champion finder.
+Cooper Tenney: Right.
+Cooper Tenney: But the question is what is the content of that email?
+Cooper Tenney: It's more for me.
+Cooper Tenney: Yes.
+Cooper Tenney: Yeah.
+Cooper Tenney: And then you, to, to keep you autonomous, you may end up owning the champion fighter too.
+Cooper Tenney: Okay.
+Cooper Tenney: Or there's two intermixed.
+Cooper Tenney: Yeah, yeah, totally makes sense.
+Cooper Tenney: Okay, so because if you have an email data set, you can figure out the content and then the time series would tell us like this is what they would draw the slider is when are they hitting the next person.
+Cooper Tenney: Right.
+Cooper Tenney: And then you, we could probably analyze and say like actually ideally you should be hitting the next person.
+Cooper Tenney: 10 Days.
+Cooper Tenney: Hey AJ, did you know you guys are actually waiting 20 days in some cases to do this?
+Cooper Tenney: That's a waste of you.
+Cooper Tenney: You've lost 10 days.
+Cooper Tenney: Makes sense.
+Cooper Tenney: So for this structure where you say email 11 or 10, 13, that you want like data for each email or do you want data for each account or both.
+Cooper Tenney: So we need, that's what I need to kind of fix.
+Cooper Tenney: Like I, I'm leaving a little bit as an open ended question to you.
+Cooper Tenney: I, I imagine each email you pulled individual emails.
+Cooper Tenney: Does that make sense?
+Cooper Tenney: So each email has certain things that are attached to it.
+Cooper Tenney: That's my one.
+Cooper Tenney: It's next door.
+Cooper Tenney: Oh, whatever.
+Cooper Tenney: Next door building is really funky.
+Cooper Tenney: It's like got some serious industrial things going on.
+Cooper Tenney: That, that one.
+Cooper Tenney: Yeah, that's not us.
+Cooper Tenney: That's, that's definitely, I mean it would be in our ears.
+Cooper Tenney: So I'm just trying to figure out like, so when I said this, it's just like if you took an email like hey, what are the attributes of that email?
+Cooper Tenney: Totally.
+Cooper Tenney: And there are ways in like Python, like using a library and data science to like group by account.
+Cooper Tenney: Like there's very simple like basic commands.
+Cooper Tenney: Yeah.
+Cooper Tenney: And like okay, you have all the emails but group by the account.
+Cooper Tenney: And you can easily see the distribute.
+Cooper Tenney: It's like literally one line of code.
+Cooper Tenney: Awesome.
+Cooper Tenney: That's another way we're looking for kind of the grouping, the segmentations that.
+Cooper Tenney: That works.
+Cooper Tenney: Right.
+Cooper Tenney: The one thing you definitely know is eventually the qualifications will come in.
+Cooper Tenney: Yeah, that'll be helpful.
+Cooper Tenney: Yeah, I feel like.
+Cooper Tenney: Because it'd be easier if we could just start with like fake qualifications.
+Cooper Tenney: You could, but.
+Cooper Tenney: Well can we.
+Cooper Tenney: I mean I think for now you could use some basic qualifications to stress test what you have.
+Cooper Tenney: Okay.
+Cooper Tenney: Like can you cut it this way?
+Cooper Tenney: But you're right, eventually we have to get the qualifications from Aaron and that will be a past in value.
+Cooper Tenney: But in the meantime what I need to know from you is what, what else can I group by?
+Cooper Tenney: Right.
+Cooper Tenney: And I'm happy to.
+Cooper Tenney: If you write down like, hey, here are my theories of it, I'm happy to validate for you.
+Cooper Tenney: These make sense or what you're missing, what.
+Cooper Tenney: What's not.
+Cooper Tenney: So.
+Cooper Tenney: So I think today just focus on the groupings of the emails and we'll worry about like once we feel good about that, then we can worry about feeding it into Claude to be like what's.
+Cooper Tenney: Is there a template?
+Cooper Tenney: And actually before I feed it in I'd be like, hey Claude, take all these emails.
+Cooper Tenney: Are they, how consistent are they?
+Cooper Tenney: Like some measure of consistency.
+Cooper Tenney: Yeah, yeah, totally makes sense.
+Cooper Tenney: I think I was getting slightly ahead of myself yesterday.
+Cooper Tenney: That's okay.
+Cooper Tenney: Cool.
+Cooper Tenney: Anything else?
+Cooper Tenney: No, makes sense.
+Cooper Tenney: One big piece of feedback for you by the way, is amongst Juliet, Hannah and I, we think you have.
+Cooper Tenney: We've been impressed by kind of how you've come up to speed.
+Cooper Tenney: We weren't sure initially like the other two had spent more time with the project areas.
+Cooper Tenney: Right.
+Cooper Tenney: Experience at B2B but I'm starting to have an understanding of kind of your strengths.
+Cooper Tenney: You're.
+Cooper Tenney: You're very thoughtful and like in terms of how you're thinking but because of that you actually can you take the time to take a step back to understand something before going forward.
+Cooper Tenney: So that is very accurate, I'd say.
+Cooper Tenney: Thank you.
+Cooper Tenney: No, no, no problem.
+Cooper Tenney: So yeah.

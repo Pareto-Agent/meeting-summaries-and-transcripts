@@ -1,6 +1,6 @@
 # Cooper Tenney
 **Role:** Co-founder / Team Member, Pareto Agent
-**Last updated:** 2026-06-25
+**Last updated:** 2026-06-26
 
 ## Current Focus
 Buyer hub module: tracking how buyers engage with renewal materials, identifying who else gets involved in the buying process (CFO, procurement, etc.), and gathering engagement signals for the AM leader. As of the 2026-06-22 evening standup, **leading the centralized account-page integration** for the merged Combined Dashboard.
@@ -16,7 +16,9 @@ Owning the **account page** within the new unified dashboard (per Evan's propose
 - [ ] Build the centralized account page for the unified dashboard (the per-account view the various stage dashboards drill into)
 - [ ] Continue MCP integration for real data querying
 - [x] ~~Prepare buyer hub + account page demo for AJ call on 2026-06-25~~ — occurred
-- [ ] 1:1 with Evan (June 26) to review LeanData email data metadata and determine categorization strategy before ingestion
+- [x] ~~1:1 with Evan (June 26) to review LeanData email data metadata and determine categorization strategy before ingestion~~ — held 2026-06-26
+- [ ] Write down email-corpus segmentation theories for Evan to validate; group the pulled emails by account in pandas (2026-06-26 1:1 with Evan)
+- [ ] Tie account names to each pulled email (missing from the export; needed to link emails ↔ accounts/qualifications) (2026-06-26 1:1)
 - [ ] Pull LeanData bottom 200 accounts by rep ownership (provide the two rep names); review data dictionary fields — by end of week 2026-06-25
 - [ ] Standardize transcript file naming and folder structure in Dropbox (date-based names, morning/evening subfolders)
 - [ ] Write script for each team member to pull LeanData data locally (data must not be stored on GitHub)
@@ -24,6 +26,7 @@ Owning the **account page** within the new unified dashboard (per Evan's propose
 - [ ] Email ingestion module: ingest and analyze existing customer emails to derive scenario-based email corpus (waiting to be unblocked; working with Claude on approach)
 
 ## Notes
+- **2026-06-26 1:1 with Evan (email-corpus strategy):** Evan coached Cooper on a data-analysis approach for the pulled LeanData emails — understand the data structure first (tie account names to emails, currently missing), validate/clean it, then segment (by ARR, qualification type, renewal status, contact, and inter-email timing) before deriving per-scenario templates with Claude. Cooper's near-term step: write down segmentation theories for Evan to validate and group emails by account in pandas. Evan also relayed positive developmental feedback (from himself, Juliet, and Hannah): impressed by how quickly Cooper came up to speed despite less prior B2B experience; his strength is being thoughtful and taking a step back to fully understand before moving forward.
 - **2026-06-25 standup (evening, post-AJ-demo):** Set up Gemini backup for transcription (alongside Fireflies). Reported 4800 outgoing emails from 2 LeanData reps to 360 accounts over 1 year (~17k total artifacts including calls and calendar invites). Email data not yet fully categorized; 1:1 with Evan planned June 26 to review metadata and segmentation options. Committed to standardizing transcript file names and folder structure in Dropbox.
 - Module deliverable: buyer hub — once champion engages, track who else gets involved, what information they need, buyer engagement signals
 - Idea discussed: SlideShare-style deck tracking (which pages viewed, how many times, who it was forwarded to)

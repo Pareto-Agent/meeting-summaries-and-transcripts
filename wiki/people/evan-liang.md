@@ -1,6 +1,6 @@
 # Evan Liang
 **Role:** Co-founder / CEO, Pareto Agent (standup leader, product strategy)
-**Last updated:** 2026-06-25
+**Last updated:** 2026-06-26
 
 ## Current Focus
 Leading product strategy and overall agent architecture. Drove the 2026-06-22 pivot to a single unified dashboard + centralized account page for the [Renewal Platform](../projects/renewal-platform.md). Coordinating external advisor calls and customer research.
@@ -9,13 +9,14 @@ Leading product strategy and overall agent architecture. Drove the 2026-06-22 pi
 - [x] ~~Lead AJ demo (2026-06-25)~~ — occurred; Evan led voiceover while team gathered in one conference room
 - [x] ~~Add time-frame dropdown (Q2/Q3/Q4/All) to overview dashboard before AJ demo~~ — implemented
 - [ ] Re-engage market research contacts next week to validate the slide deck and product demos (June 25 evening standup)
-- [ ] 1:1 with Cooper (June 26) to review LeanData email data metadata and determine categorization strategy
+- [x] ~~1:1 with Cooper (June 26) to review LeanData email data metadata and determine categorization strategy~~ — held 2026-06-26; coached Cooper on the data-analysis/segmentation approach (see Notes)
 - [ ] Send "output stuff" (stage automation outputs showcase) to Juliet for use as placeholder slides in pitch deck (2026-06-24 standup)
 - [ ] Send Pareto Agent color/design template to Juliet so she can apply it to her pitch deck slides via Claude (2026-06-24 standup)
 - [ ] Continue calibrating 6 micro-agents (language style, drafter, response agent, champion finder, ingestion, proposal)
 - [ ] Find external people to evaluate whether the team is building things correctly; trial some sessions as demos instead of code reviews
 
 ## Notes
+- **2026-06-26 1:1 with Cooper:** Coached Cooper on a data-analysis methodology for the pulled LeanData email corpus — understand the structure → clean → segment → template — emphasizing "garbage in, garbage out" and grouping emails by account in pandas before involving the LLM. Stressed tying account names to emails and using qualification type / renewal status / inter-email timing as segmentation dimensions. Relayed positive feedback (shared with Juliet and Hannah) on Cooper's ramp-up and analytical thoroughness.
 - Runs two standups per day (morning + afternoon); afternoon standup moving to 5:30pm
 - Strategic decision: keep using dummy data for at least another week; don't stitch modules together until each module's deliverable is well-defined
 - Product direction: **autonomous agent**, not a co-pilot — long-term goal is to replace AMs, not assist them
