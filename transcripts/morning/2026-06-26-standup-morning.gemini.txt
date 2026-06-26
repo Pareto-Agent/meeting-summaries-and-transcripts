@@ -1,0 +1,573 @@
+﻿📝 Notes
+Jun 26, 2026
+Stand up
+Invited Aaron Rose Parth Goda Rajesh Dean Liang Cooper Tenney Evan Liang
+Attachments Stand up
+Meeting records Transcript 
+
+
+
+
+Summary
+Team restructures into individual project ownership via defined workflows to streamline operations and increase productivity.
+
+Team Dynamics and Structure
+The team recognized they are in the storming phase of group development. Individual autonomy was prioritized by assigning specific project ownership to eliminate coordination bottlenecks.
+
+Project Scope and Workflow
+Work was divided into 4 distinct projects including front-end, data, outreach, and evaluation systems. The team finalized a decision to split these projects to avoid dependencies.
+
+Operational Standards and Logistics
+Team members gained scheduling flexibility for personal tasks provided they maintain transparency. Communication standards were set to prioritize email for all external and internal feedback.
+
+
+
+
+Decisions
+Aligned
+* Major project ownership structure established The team assigned ownership of four distinct major project workstreams—prototyping, qualification, outreach/email, and architecture/eval—to specific individuals to restore autonomy and reduce collaboration collisions.
+* Formal scrum and reporting process removed The team decided to remove formal scrum processes and reporting requirements in favor of individual autonomy.
+* Flexible office and appointment policy adopted The team established that flexible scheduling for lunch and personal appointments is permitted provided work is completed and absence is communicated to the group.
+* Email-centric communication protocol confirmed The company adopted an email-first communication standard to ensure consistent responsiveness to external constituents and to align with leadership preferences.
+
+
+We've updated the Decisions section using your feedback.
+Let us know what you think: Helpful or Not Helpful
+
+
+
+
+Next steps
+* [Parth Goda Rajesh] Own Prototype: Manage the front-end prototype and all subsequent iterations.
+* [Cooper Tenney] Lead Outreach: Lead the outreach and email work stream.
+* [Dean Liang] Research Architecture: Research and develop the product architecture and evaluation system.
+* [Dean Liang] Manage Sprints: Oversee engineering sprints and coordinate team standups.
+* [Evan Liang] Review Deck: Provide feedback on the revised slide deck by this weekend.
+
+
+
+
+Details
+* Standup Meetings and Group Dynamics: Evan Liang explains that the purpose of standup meetings is to identify key company issues and allow the team to work together seamlessly. They introduce a framework regarding the five stages of group development, noting that the team is currently in the "storming" stage, characterized by a high rate of change and some natural conflict (00:01:34). Evan Liang emphasizes that this is a normal phase for high-performing AI teams and that the ultimate goal is to reach the "norming" and "performing" stages (00:02:39).
+* Autonomy and Organizational Structure: Evan Liang identifies that relying on multiple people for a single product leads to coordination issues and creates frustrating bottlenecks for the team. To maintain a high-performance culture, Evan Liang proposes returning autonomy to individuals by allowing them to own specific projects rather than having everyone touch the same code or prototype simultaneously (00:03:31) (00:06:34).
+* Project Restructuring and Scope: The team agrees to split their work into four distinct projects to reduce collisions: maintaining the front-end prototype, managing lean data qualification, analyzing email and outreach flows, and developing an eval system for QA testing. These projects will remain separate in the short term to avoid creating further conflict or coordination dependencies (00:07:27).
+* Assignment of Major Projects: The team assigns ownership for the four identified projects. Parth Goda Rajesh commits to owning the front-end prototype. Aaron (implied by previous context as working on qualification) retains ownership of the qualification project. Cooper Tenney takes responsibility for the outreach and email work. Dean Liang is assigned to research and develop the product architecture and eval systems (00:11:44).
+* Data Access and Technical Challenges: During the project planning discussion, the team notes difficulties regarding the current data infrastructure. Specifically, they require better access to physical contracts, which are currently difficult to download or integrate into the system for qualification purposes, creating a technical roadblock for the data-related work (00:13:37).
+* Team Culture and Performance Feedback: Evan Liang emphasizes that trust and respect are bedrock principles of their high-performance culture. Evan Liang shares positive feedback regarding the front-end prototype, noting that an external partner, Juliet, was very impressed with the work and compared it favorably to previous, less effective projects (00:15:50).
+* Flexibility and Work Scheduling: The team establishes a consensus regarding scheduling autonomy. They agree that as long as team members are transparent about their whereabouts, do not block others, and ensure their work is completed, it is acceptable to step out for personal appointments or errands. Evan Liang highlights that this flexibility is a component of treating the team as adults (00:18:44) (00:20:43).
+* Standup Schedule and Logistics: The group discusses individual schedules for the day. Evan Liang plans to be out of the office from approximately 11:30 to 3:00 for meetings with advisors and engineers. Cooper Tenney plans to visit Palo Alto High School for an athletic director meeting, and Parth Goda Rajesh discusses an upcoming bank appointment. The team agrees to coordinate lunch to ensure these departures do not disrupt collaboration (00:21:37).
+* Communication Preferences: Evan Liang clarifies that they are "email-centric" and requests that the team use email for important feedback and updates rather than Slack or Google Chat. Evan Liang explains that this is necessary because external constituents like investors and customers rely on email, and the team needs to remain responsive to avoid creating crises with these stakeholders (00:27:05).
+* Technical Architecture Integration: The team discusses the need for a unified technical architecture. Dean Liang plans to spend the next week studying how to move from summary statistics to a more robust architectural model, including how various inputs like pricing and outreach will hook into the final product (00:29:09).
+* The Role of the CEO: Evan Liang defines the role of the CEO, explaining that it is not about fixed tasks but rather about identifying the most critical issues at the company—whether funding, sales, or hiring—and delegating resources accordingly. Evan Liang describes the CEO's responsibility as acting as a flexible "cushion" who can resolve crises and align the team, rather than getting tied down to low-level, ongoing execution (00:34:56).
+
+
+
+
+You should review Gemini's notes to make sure they're accurate. Get tips and learn how Gemini takes notes
+How is the quality of these specific notes? Take a short survey to let us know your feedback, including how helpful the notes were for your needs.
+📖 Transcript
+Jun 26, 2026
+Stand up - Transcript
+00:00:00
+
+
+Cooper Tenney: Yeah. Like, okay, if I'm quite literally all I'm doing is researching how to architect architect the eval, I might as well just learn how to architect the entire because we also have no one who knows how to do that. Correct. To be technical. Okay, we got we got this. Good for you. It's like eating healthy. Telling me to eat. No, no. Claude is like your junk food. Okay. Like learning how to do it yourself. actually crunch without like needing a better
+Evan Liang: Yeah, probably should know.
+Cooper Tenney: process. It's true. Also, it says our audio is merged. So, if you unmute as well, should it shouldn't give any feedback.
+Evan Liang: Uh, your microphone's turn another
+Cooper Tenney: water. I don't know if he's going to figure out that we're in here.
+Evan Liang: lot of funky noise this one.
+Cooper Tenney: I'm guessing
+Evan Liang: Yeah.
+Cooper Tenney: fireflies.
+Evan Liang: Makes me feel good that this place is like pretty secure.
+
+
+
+
+00:01:34
+
+
+Evan Liang: People feel very confident about the security in this place. Yeah. Which place? Someone maybe they were using that for like a almost like a presentation laptop. People have that.
+Dean Liang: from. So uh first thing the most useful
+Evan Liang: Standups is that we as a group can identify the key issue we need to work on as a company,
+Dean Liang: thing
+Evan Liang: right? And try to address that. So these meetings coming together that's like you could take away all the structures and everything of that sort. That's kind of the goal of a standup right and so for me looking at it is uh the key issue we are having is like hey how do we keep people working together uh seamlessly in a world where you guys are starting to have com starting to step on each other's toes and kind of uh butcher that this is kind of a natural state around it. So what what you guys are doing there's a theory of like group dynamics that people put out there.
+
+
+
+
+00:02:39
+
+
+Evan Liang: Uh there's like kind of like five stages of groups and you guys are moving through these stages at a very very high rate. So let me explain but this is normal in the AI world I think this is totally normal but if you were to learn this in business school there's frameworks around this. This usually happens over like weeks if not months. Uh so or if not quarters or not years. So the five stages, the first stage is forming. When a group first comes together, they're forming together. The next stage they call storming. When people start realizing the the the potential and there's a little bit of conflict. Then there's something called norming, which you figure out how to actually work together. Then it's like performing like the stages around it. So you guys are kind of in like the storming stage because went from forming in like the first week and storming is like the second week. So there's like naturally some conflict until we can figure out the standard operating procedures how to work together.
+
+
+
+
+00:03:31
+
+
+Evan Liang: Uh that becomes the norming phase and then the goal is if you do well in norming phase and not all groups get through every stage. If you get well in norming phase then you are become a high performance culture adjouring is the last one but that's like where the group like tails off and that's and most people don't talk about that stage uh around it. So that's the first thing to understand is what uh is uh this is normal. uh my job is to try to figure out hey how do we figure out some of the centralized conflict around different things and um talked to most of you guys in our our 101's around this but uh in the AI world I think in if we want to have a high performance team and a high performance culture one of the key bedrocks of that is autonomy to feel like you own what you're working on and the feeling of getting blocked by someone else is very infuriating because you're so used to typing someone into Claude and Claude spits out the results very quickly.
+
+
+
+
+00:04:32
+
+
+Evan Liang: So the idea that you can't do that because someone else is blocking for you for an hour or two hours is very infuriating and that makes it feel less high performance. You feel like you're wasting time. Uh and this is just on stero like this has always been the case but in enterprise companies usually when people say they're blocked and they're it's like they're blocked for a week. So, uh you can validate this, right? in big companies. Literally, you're just like go in there and you're like, "Oh, I need XYZ from this other person and you can't you it's not like you don't do work, but you can't move that project theme along for a week. You have to wait a week for that to complete." You guys like are waiting hours and that's very frustrating. And this is not just us. Uh it's not unique to our our setup. I was hearing that from other uh other startup companies in this AI data world. So the takeaway as I mentioned to a few of you was that um this other company who's a little further ahead of us and had some senior engineers like hey I've been getting advice not to be a multi-product company because the the old theory used to be if you have multiple products you're not focused and you're likely to fail.
+
+
+
+
+00:05:44
+
+
+Evan Liang: Uh but that he was like all my adviserss are telling me not to do this and then I met with my investor who's also an adviser. Sorry. He was like, "Yeah, that's what people thought six months ago, but that's not what people think now." And he was like, "The reason is in the in the six months ago, we used to have like one product, you have 20 or 30 people working on it. Now you can have a much smaller team and so being multi-product is not actually as extreme." And he was like and actually we are even more extreme because what we've noticed is we have two products and every time we have one senior engineer on both products or one engineer on both product every time we add another person it slows down and it becomes extremely frustrating just adding one more person onto the same product because he's like our person can do 10 claw coding settings just and move very really fast. You add another person you have to coordinate there's conflicts blah blah blah and he's like we tried a senior hire with them failed.
+
+
+
+
+00:06:34
+
+
+Evan Liang: We tried a junior high with them, failed. We tried an intern, fail. We've just decided adding a second person sucks. And so we'd rather have one person own an entire product. Now, I don't know that scales or not, but it does point to this interesting insight that coordinating between people is is actually worse with if people multiple people are touching the same cloud code. So with that my my what I thought of was hey let's take a step back. We actually had interestingly designed a very good system when we first came in which was each of you guys don't agent. You didn't have to pass data between the agents and you could just show your prototypes and that worked really well for about a week. Once we started merging it you guys did a good job of merging it but then all of a sudden that means you guys are all working on the same product and that's extremely frustrating. It's not even two people. You have four people working on the same project.
+
+
+
+
+00:07:27
+
+
+Evan Liang: So the number of collisions is massive. So one way to solve this is if I want you guys to stay on a high performing culture, I need to give you guys back autonomy. And so that's what I spent last night this morning thinking about is how do I give you guys autonomy again? And I do feel we can carve out new projects around that. So for example, one project is now that is that pro what we really built is a prototype. It's a front-end prototype. It's not it will never be a functional thing, but it is useful because I can demo people like AJ and other folks like that. So that front-end prototype should be now one project. Iterations on that should be owned by a single person. Whatever we iterate. Now there's more work than just like fixing the UI because there's still a negotiation model and a close model. We never added those, right? We were like, let's do that. So that work stream is actually a pretty big stream, right?
+
+
+
+
+00:08:21
+
+
+Evan Liang: So one person should know that I think taking lean data as data and like qualifying them and actually putting categories that's one project. Now that does and that's divorced from the prototype. Eventually it will be one product but from a prototype and a thing these do not need to be they should not be merged in the short term because then I'll create a conflict. uh analyzing the emails, creating those templates and you know and actually figuring out the flow of the champions using real data that's another project right uh the fourth project is a little bit around like eval like we do need it once we are trying to pump out results with AI we need to validate it so it's like QA testing but what they call eval systems and if you read the literature this week that's the single most important thing to the eval system. Uh, and per the call that Parth and I will share this with the with the the lean data guy, he thinks as long as you have a great eval system, you don't even need to figure out stages or steps.
+
+
+
+
+00:09:27
+
+
+Evan Liang: like he he putting complete faith into his eal system to figure out everything. Yes.
+Cooper Tenney: We're going to test that theory. I
+Parth Goda Rajesh: wait for him to get back to us how it worked out or we just do ourselves and figure it out for ourselves what is the best situation for us.
+Cooper Tenney: mean,
+Parth Goda Rajesh: Yeah.
+Evan Liang: or in talking to Dean he was like actually we talked about this what is the product architecture for the final product is something we need to research and figure out and uh potentially that's where I do have uh setup times with some of our uh technical folks because we don't know what you don't know there right so uh that would be the fourth major project now there are also side projects off of this which which would not be well one side project is figuring out the sales pitch uh so we uh putting it into the design format but iterating on it while Juliet's gone but then now from a design perspective the old sales pitch that you guys practice on is also out of wax and what belongs in that sales pitch and what doesn't like do we combine these two pitches are they separate pitches what is in each pitch like I want to make uh work I want to make progress in that in the next week because um that is something I I will be
+
+
+
+
+00:10:41
+
+
+Evan Liang: going back and repitching people that we did market research on. Um so we'll find out uh we'll find out first if they'll take the call but then second if they do I want to pitch them. Um which I didn't do the first time through. So that's one project. This how do we work on standups? Coordination is another project. Certainly how we record the standups and next steps. It's kind of part of that lunch project continues.
+Cooper Tenney: by the end
+Evan Liang: So there's there's these side projects.
+Cooper Tenney: of
+Evan Liang: So I think what we want to I want to end this session with is hey let's assign the major projects agree just like the agents who is doing each of these major projects and then also uh if there are side projects who wants to pick those up right I think everyone can do one major one minor right or or two minors or stuff like that but that that would be helpful around uh the thing so let's first try to drive towards that uh let's see like uh prototyping Who like who wants who wants to do the prototyping?
+
+
+
+
+00:11:44
+
+
+Evan Liang: Can I ask one quick question? Sounds like we
+Cooper Tenney: five projects. Um, email,
+Evan Liang: have
+Cooper Tenney: we have qualification, we have prototype, we have architecture, and we have eval architecture and evalu
+Evan Liang: Okay.
+Parth Goda Rajesh: Oh, I was think I was the one who put my hand up for prototyping,
+Evan Liang: Yeah.
+Parth Goda Rajesh: right? Am I the only one who did that? Okay, cool. So, this is like doing that Excel thing Evan gave us on the first day. I think we all instead of fighting, we all just perfectly slice the pizza.
+Evan Liang: I'll throw out the potential and see if anyone feels that that they need to switch or something of that sort. So, one thing is uh part because he he's interested in the demoing capability and everything will own the prototype, right? So, we'll hand it over. Aaron's already working on qualification. Uh Cooper is working on the uh outreach and email stuff and then Dean will learn how to do product architecture and eval.
+
+
+
+
+00:12:38
+
+
+Evan Liang: It's also area thing that bothers him a lot a bit too.
+Parth Goda Rajesh: figure it out. We're gonna mess up the data.
+Cooper Tenney: I messages like
+Parth Goda Rajesh: What's going on
+Evan Liang: Dean,
+Parth Goda Rajesh: project?
+Evan Liang: do you want to own the engineering sprints and standups? I can do that. Yeah, because I
+Dean Liang: I have the cold digest thing which I need to figure out whether I even want to still have because this thing is like dying but it's
+Evan Liang: already
+Dean Liang: okay. Yeah, I think that's the photo because when
+Parth Goda Rajesh: up. I I felt distance because you know it was going to slow us things down and also put unnecessarily reporting when we're not at that level. So what you feel is the most comfortable at this think about it.
+Dean Liang: Hey,
+Parth Goda Rajesh: Yeah.
+Dean Liang: what are you on That
+Evan Liang: another one website logo. Uh, okay. I think I was already on that track.
+Cooper Tenney: The sales and demo work in
+
+
+
+
+00:13:37
+
+
+Parth Goda Rajesh: speech less than a half an hour.
+Cooper Tenney: hand
+Parth Goda Rajesh: So
+Evan Liang: Okay. Is there a lunch
+Cooper Tenney: side
+Evan Liang: bigger
+Dean Liang: Give him
+Parth Goda Rajesh: the scrump thing and you can keep focusing on lunch.
+Dean Liang: the
+Evan Liang: maybe?
+Parth Goda Rajesh: I don't think he
+Dean Liang: If it was up to him, he'd scrap Why don't we figure it out?
+Parth Goda Rajesh: cares.
+Evan Liang: Yeah.
+Dean Liang: Okay.
+Evan Liang: Uh or qualification will take some time. Sure, that's fine.
+Dean Liang: On top of that, it'll be a chunk. Actually, you know what? He has to
+Evan Liang: On top of that data hub,
+Dean Liang: figure
+Evan Liang: like how to get more of the data. Well, for example, like in order for buyer engagement to work, right now he's just pulling the data to do qualification. We need to pull contracts data. We actually full physical contracts. Shouldn't that be around?
+Dean Liang: each
+Evan Liang: Oh, yeah. Maybe that. Shouldn't that be a part of the view?
+
+
+
+
+00:14:34
+
+
+Dean Liang: othering
+Evan Liang: But he I think he right now is only thinking about what he needs for his stuff, not what everyone else needs for the other steps. There's only a few other things. It's like contracts, emails, and other things like that. Right. Once we have I I looked into actually like there's some
+Dean Liang: the PDFs and we need like a different link that we have to pull them.
+Evan Liang: other way to
+Dean Liang: We can't pull them through. But I mean, it seems like it's just like a one I don't like the NCB
+Parth Goda Rajesh: to them, but you have you can't download them really. Without
+Dean Liang: point.
+Cooper Tenney: You know they're there, but you
+Evan Liang: Fascinating. Okay. So, like I said, the overall how do you actually integrate and pull data? I'm saying like
+Dean Liang: If you do like qualification and you do pricing pricing and you're doing all modeling like that's like gonna be a heavy I mean the question is do we want to even do real modeling for the time being which I think the moment no it's like but if you're the simple rules
+
+
+
+
+00:15:50
+
+
+Evan Liang: I am not concerned that more projects will appear in the next like hours or days. So it's fine. So uh but I hopefully that yeah so but hopefully that will get thing and then I I I think one thing we want from a culture again I give you that uh like group formation thing because one of our goals we need still to be driving towards is kind of like high performance right how do we make sure we're driving high performance I appreciate the feedback like continuing on uh to understand hey what is blocking you so like high performance In my mind, you need autonomy. Uh you need to have respect for your colleagues or be able to like hey agree to disagree. How do you resolve issues, right? And you need to feel that hey like like we said we talked a lot about the peers like if you're in a group of peers that are driving you you're going to be more high performant. If you feel like you're out in front and everyone is holding you back that's going to feel different.
+
+
+
+
+00:16:48
+
+
+Evan Liang: And a part of that is like the camaraderie the team culture but also the respect for each other. So those are things that we got to continue to work on and figure out and those that that's important. Uh and then yeah, you guys see like tangible results. Actually, of all those, I feel like you guys are seeing that. By the way, I'll give you guys this feedback around like what you guys built around the prototype. Uh so Pana missed a bunch of calls yesterday, but she was on the neighborhood and I showed her the demo and she was pretty impressed. She like she was like, I'm almost crying seeing how much how how good this is compared to what we spent time with Meridio building. Okay. So, so she was just like, "Yeah, and I think Juliet is not an easy critic, by the way.
+Dean Liang: So
+Evan Liang: Like, one of the things I love about Juliet is that uh this is a joke. She will call my b******* and she'll be like, "Yeah, that's total crap, Evan." So,
+
+
+
+
+00:17:43
+
+
+Evan Liang: the fact that she thinks you guys are doing a good job, that is not being uh uh like like just like, "Hey, your regular price." So you guys did pull together a great prototype. We want to continue on that. So feeling like your your output matters and all that stuff is is is really important about that. But yeah, so let's keep up being transparent. Um I think I've identified the root cause issue. Let's see if this fixes it fixes some things. But uh what you guys are feeling is slightly normal, but like hey, let's continue uh going at at the speed we want. Um, and then clar high performance. The other part that we had that we talked about was a little like
+Dean Liang: four
+Parth Goda Rajesh: when we had this right two days
+Dean Liang: days
+Evan Liang: five.
+Parth Goda Rajesh: ago a week ago but it was like two days ago that
+Dean Liang: when we're like, "Okay, we got to like process outcomes." Yeah. The other thing about high performance
+
+
+
+
+00:18:44
+
+
+Evan Liang: uh and this is going to come up with a few of you uh you all that you were asking me questions is ultimately kind of respect and trust is is is really really key. So you want to build a a thing where hey you trust your colleagues are going to get their work done and that's the feeling that you want to have as part of trust is the fact that hey we trust if we trust you to get things done you should also have freedom and control somewhat over your schedules to some extent right uh why we do five days a week in the office is so that we are actively collaborating and not blocking each other but it's not like minuteby minute so uh one of the things that I've always really valid in my career is like I'm like really responsive 24/7. People who work with me know that if they need me, I'll be there no matter what to get things done. But the flip side of that is I've always validated, enjoyed. Uh Dean knows this because the only times I've ever really had to step out of meetings was when he was a kid and his car poolool broke down.
+
+
+
+
+00:19:51
+
+
+Evan Liang: I would literally step out of meetings and be like, I gotta figure this out or else my kid's stuck in the middle of nowhere, right? So, uh this is also why he like to even to this day like will just be like I need this dad and he like expects it done like 247 I was like like there was a period where I was like dude like it's like an order it's like the middle of the day you be like I need this and like things like drop to do it. like I'm actually doing something else that's slightly more important. Like the only thing that got there was like when we're dealing with his sister's thing. We're like de your sister's going through heart surgery and we're dealing with that and you need like travel planning from Cancun. We're like one of these is a little bit more important than the other. It's a very thing I I see but there is
+Parth Goda Rajesh: So my
+Evan Liang: like hey we want to treat you guys as adults.
+
+
+
+
+00:20:43
+
+
+Evan Liang: you guys that are high performing so far. So, if you guys do need to step out for lunch to go do something, not a big deal. Give people heads up so people know like if you start disappearing where the limits are is like, hey, if we can't find you and you start blocking and you're always gone, that is a different matter. But if you're gone for an hour or two uh and get your stuff done, that's perfectly okay. So, hopefully that's something I wanted down. It's a very hard thing I've had to try to do. Uh it's a fine line. Uh like my previous company where like people like they ask me can they do something? I'm like sure I don't care. But then at the same time it works when people are high performing. When people aren't then it becomes like a like a you can see how like it could be also very annoying if you can never find the person. So that's the balance we have. So we've been so good so far.
+
+
+
+
+00:21:37
+
+
+Evan Liang: No. Absolutely. Not one day if we No. No, absolutely. Not showing up. Yeah. Yeah. So that's where Yeah. And so each of you that's what you want to hold that's how you hold yourselves accountable, right? If you feel like everyone is is there and you like generally get all your stuff done, you should not care if they're gone for an hour. But if it becomes a point where it's like blocking you, then that becomes a that's a different cultural conversation. So let's let's try to figure that out. So u and then on terms of standup uh just so folks that's why the calendar system being open is really good right is that we can see each other where is so yeah so I'll go first on the from a stand for I have a lunch with I'm Simon pitcher I am meeting Hendrick's brother who is a engineer so he recommend supposedly done some AI thing we're a little skeptical but we'll see it's Hendrick's older brother uh and Then I have a advisor meeting, our official adviser who works at BMC.
+
+
+
+
+00:22:39
+
+
+Evan Liang: Uh I have to rush back here to get to that call. So from probably like 11:30 to 3, I'm basically uh bouncing around the valley going to meetings and uh taking calls. So you you're going to see me disappear for that time frame. Um so but yeah, uh anyone else uh like I know some Yeah. Yeah. I will be out. I'll probably leave after the stand up bike to Calra and take Cal Train up be there for like an hour and come back. So should be back before 3, but
+Dean Liang: Um,
+Evan Liang: perfect.
+Cooper Tenney: I'm going to go into Palo Alto High School to talk to their athletic director for club baseball for like
+Dean Liang: I'm
+Cooper Tenney: 30 minutes. Uh probably around lunch. So, whatever you guys are doing, just text me and I'll like say like you
+Evan Liang: We'll have lunch with them and then you either I'll do
+Cooper Tenney: will like one of the I'll coordinate
+Evan Liang: lunch and
+Cooper Tenney: something either before or after.
+
+
+
+
+00:23:33
+
+
+Cooper Tenney: It doesn't matter what if it's 30 minutes. If you
+Evan Liang: have lunch together and then and just go take care of
+Cooper Tenney: can I said, "Yeah,
+Evan Liang: over actually I think like if you talk to
+Cooper Tenney: but I Yeah.
+Evan Liang: them I think they would rather have lunch with you and then have you disappear for 30 minutes than not have lunch with you. Like that's actually more noticeable ironically the other way. Yeah. So awesome. So you guys feel
+Parth Goda Rajesh: Thanks.
+Evan Liang: like
+Dean Liang: left. All the parents went out and did s***.
+Parth Goda Rajesh: We're like the two kids working.
+Dean Liang: I'm like, what am I doing?
+Parth Goda Rajesh: I I That's a good thing.
+Evan Liang: something else later on. I guess I'll head to the bank and figure out what's
+Parth Goda Rajesh: No, my credit card situation,
+Evan Liang: good.
+Parth Goda Rajesh: but I already have an appointment tomorrow morning at 9:00 a.m. I should have just done it
+Evan Liang: Okay. Uh
+
+
+
+
+00:24:22
+
+
+Parth Goda Rajesh: today.
+Dean Liang: It is for
+Evan Liang: was open earlier.
+Dean Liang: you.
+Evan Liang: So going to the bank is extremely painful. Those guys are so f****** those guys are so old school.
+Dean Liang: I don't know how bad this
+Parth Goda Rajesh: institution. Well, that's the opposite behind this point like
+Evan Liang: How come you fix it in decades?
+Parth Goda Rajesh: it's been who's going to fix it.
+Cooper Tenney: Yeah.
+Parth Goda Rajesh: Stepping out is coming. I don't know. There's like incentive. Well, wait a minute.
+Evan Liang: If you're from India,
+Parth Goda Rajesh: Like,
+Evan Liang: India is like Singapore. Oh, Singapore is bishop.
+Parth Goda Rajesh: but like like Indian Democratic
+Evan Liang: Some of those are awful. like they can't build a road. I'm not comparing it
+Dean Liang: No
+Parth Goda Rajesh: I think it's like a different conversation.
+Evan Liang: to
+Parth Goda Rajesh: India is like mostly corruption is the one is the big issue here is just is is like how
+
+
+
+
+00:25:16
+
+
+Dean Liang: problem.
+Parth Goda Rajesh: slow everything is and how everything like just takes your time. In Singapore it's like just online submit a form and you get a passport in two days that's it. Well, like I know Singapore sort
+Evan Liang: like this because it used to be authoritarian, but China is very very efficient. Yeah. But it's because it's you have no choice as a citizen. Yeah. you know, they'll like they can build like bridges and roads like tomorrow, but they'll just like it's beyond eminent domain. They're just like f****** boop. They trample your rights, right? Uh India, everyone has is true democracy. Yeah. Which means like a road requires the buy off of every single town and hence corruption because like I don't know if you know like to build like a road through like a highway, every town has to get bought off and approve it. Yeah. So it doesn't ever get done because it's so hard. So it's the o India and China are the opposite forms of government.
+
+
+
+
+00:26:17
+
+
+Evan Liang: Um so anyways, okay. Uh, is there anything else blockers within these project that you guys need from other folks or I would love for you to take a
+Parth Goda Rajesh: at the slide deck that I have made sure yesterday.
+Evan Liang: look
+Parth Goda Rajesh: Um and then the feedback on that would be applied onto the original pitch deck. Um and then uh yeah. So that's what I'd love for you to
+Evan Liang: for something like that. Uh I am email centric. So email it to me.
+Parth Goda Rajesh: do.
+Evan Liang: Even if like you like I have access just send me an email with the link again and so make it easy from for me to do it. Uh and it will bother me and it probably will not get done until uh later tonight. Yeah. Yeah. But I will uh let me but by this weekend you will have feedback.
+Parth Goda Rajesh: This will be something
+Evan Liang: Sounds good. That's good feedback to know because I
+
+
+
+
+00:27:05
+
+
+Cooper Tenney: I feel like for a lot of times like I would just wait over there until you had like a moment and tell you but
+Evan Liang: especially
+Cooper Tenney: yeah I'll email next time I Yeah. So if you're like blocked on something, is.
+Evan Liang: especially weekend work uh especially over a weekend uh because my inbox here that makes me highly responsive but it's also my to-do list so something in my email will actually bother me uh versus like Slack does not like Slack I just browse not that we have Slack right but like um Google chat you just
+Parth Goda Rajesh: Yeah, Google.
+Evan Liang: brought like Google chat if you guys have noticed like that's why I keep on missing the
+Parth Goda Rajesh: I'm actually very late on
+Evan Liang: lunches because I'm like oh I like think of chat chatting lesson and you're like oh you already sent it out I'm like huh I'm like oh we're all chat or Slack when you guys get
+Parth Goda Rajesh: you. Your generation is definitely more like
+Evan Liang: into workplace you'll find Slack is so dominant people expect you to slack and respond I think my Slack I leaned out of still says this I'm just like I am not Slack first.
+
+
+
+
+00:28:06
+
+
+Evan Liang: So if you really need me, f****** email me. I will not resp people will just slack me and be like two days later. It's like, "Hey, Emma, I guess because they like on their blog. They're just like they just don't get their just they stop doing stuff." So they're just like, "Oh, I guess it's not that important to you." And I'm like, "What are you talking about?" Like I was like, "Oh, it's in Slack." I'm like, "Yeah, no, that's not okay for you to just have ended there." Yeah. So, and by the way, that is a a generation of current CEOs. My like current CEO hates Slack too. Uh, and I'll give you this one insight. The reason is uh besides being old school, we have to be email centric is the our we have external constituents, investors and customers who aren't on Slack. And so, it's not okay for us not to be responsive to them. So like if a board member emails like you got to respond like the difference between like two hours and like two days two days the guy could be like extremely pissed, right?
+
+
+
+
+00:29:09
+
+
+Evan Liang: You've just created a crisis. So we have to check our emails. And so since and it's the human brain can only probably take one communication medium as their main one. So as you guys go into the workplace, you're going to find out your upper lings are email centric. And I I I I I hear a lot from your generation like why? So also emails like for my parents it's like but you might have to adjust probably be like 5 to 10 years and then it'll switch to a different medium but just just FYI I've talked to a lot of my colleagues and we're just like or sales leaders are the same way. Sales leaders are email centric because their customers email them. So any questions quick? Yeah. So Ian and this is probably a conversation for
+Parth Goda Rajesh: on the architecture.
+Evan Liang: everyone
+Parth Goda Rajesh: What architecture is that? How everything's going to hook
+Dean Liang: or just how we want
+Parth Goda Rajesh: up.
+Cooper Tenney: Is that just the Street.
+
+
+
+
+00:30:07
+
+
+Evan Liang: because if I do anything with pricing, I'm going to have to like outreach is going to feed
+Parth Goda Rajesh: Take into account what
+Evan Liang: into and what all that is going to feed into.
+Dean Liang: and I don't know if that's like a question for
+Parth Goda Rajesh: everyone to answer.
+Dean Liang: every the pricing just for
+Parth Goda Rajesh: I think just
+Dean Liang: yours and then worry about wiring other inputs later.
+Parth Goda Rajesh: focus
+Dean Liang: I think for me how I think about it is I am just going to be studying for the next week on like moving from like oh like a summary statistics as you put it right to like no my goal is if you when we think about actually building things I know what all the layers mean like that Zoom meeting that we all joined had no idea what the hell was going on. My goal is to get to the level where I understand what that what they're talking about. Like uh here are the different tools, here are different ways you do it. Like hooking up the sub agents inside and like worrying about emails, all that.
+
+
+
+
+00:31:03
+
+
+Dean Liang: I think that yeah, I can't do emails if I understand everything that's going on. So, I might as well just learn everything from scratch. Yeah, there's a
+Evan Liang: Now uh and there's this debate right now and this this is a real time thing of like product management and engineering are merging.
+Dean Liang: question.
+Evan Liang: If you need one person to own a product end to end, right? Is it the product people who are going to or the engineering becomes abstracted enough that it's better to have product skills and that that person owns the product end or is it too technical like per your point that that that call was a good test or is it like a product person is like never going to get there and it's better to teach a technical person how to understand the product requirements and go the other way because they can iterate and get feedback easier. That's an ongoing debate. But like if you think about extreme ownership like has to someone we have to resolve that because if it's better for like one person to own that net stack who is that and what's that profile?
+
+
+
+
+00:32:01
+
+
+Evan Liang: So I don't know that's that's fascinating. I'd be fascinated to see if you can get to that level. It's ambitious.
+Dean Liang: It's very ambitious to try that other
+Evan Liang: Well like at some point in time I zoned out. Uh and uh by the way,
+Dean Liang: people.
+Evan Liang: for me personally, like there is a like uh so I'll tell you where I I shifted a little bit. So when you guys first came on board, I I was actually going to take an agent and go with you because I thought I needed to lead by example, but you guys went fast enough that I realized that I was like I wasn't going to be able to lead you guys. So I was like, "Hey, I'm going to go fall into a coordinator role uh instead." Uh, so that perspective I was just like and like I said, I think I can help with specs and overall, but I can't go low. I don't think it's worth it for me to learn lower than that. Uh, and so that that was a that was a little bit of a shift in I was going to try to take the negotiation agents.
+
+
+
+
+00:33:02
+
+
+Evan Liang: I just didn't want one of you guys to take it. So uh so so it's kind of a lead by example but anyway so each of us each role needs to figure out their limitations and what what's their bounds around it. So that's where I was like hey that's not low level but by the way uh I'll give you guys also this insight. Do you guys have any idea what my job is supposed to be or what I should be focused on and what where where I should be adding value or not organization like as a
+Cooper Tenney: just to try the
+Evan Liang: CEO like what is the CEO's job are we guessing or recommend I'll give you my my my thesis uh based on it but I'm just
+Parth Goda Rajesh: I'm curious.
+Evan Liang: curious like uh by the way most people in companies don't know so at least for me it feels like
+Cooper Tenney: Like it's inspiring to see like someone who cares so much and like they're always there for you. It's not that you're like babysitting or anything, but like you're always trying to push us forward but also like support us.
+
+
+
+
+00:34:04
+
+
+Evan Liang: I think that we we feel very free to just work and then it's like we have it's
+Dean Liang: the design partner set up and we have all this all these stuff set up and we have like the feedback
+Evan Liang: like
+Dean Liang: if we all have to manage that or
+Parth Goda Rajesh: We would just like it would take away so
+Dean Liang: something.
+Evan Liang: from the work. I feel
+Dean Liang: We're just Yeah.
+Parth Goda Rajesh: much
+Cooper Tenney: Yeah.
+Evan Liang: like
+Cooper Tenney: Giving us like directions to go in like, "Okay, well, you need to be done by here because we're moving in this direction once that demo is done." I think that's also Yeah. Like a ship. Mhm.
+Parth Goda Rajesh: the business. What was the business going? What are you trying to do? Um, if I boil it down, it's trying to keep the lights on and make sure that that whatever we're doing is also helping you do that. So, it's facilitating. Yeah.
+
+
+
+
+00:34:56
+
+
+Parth Goda Rajesh: Shepherds over the sheep.
+Dean Liang: Yeah, the wolves sheep. I don't have any more to anything more to add to that.
+Cooper Tenney: Uh
+Dean Liang: I think that there's a bit more also the like part of this whole thing about like lights on like there's also the externally facing part. Yeah. Right. I think that Yeah. Sure. And I don't mean like sales calls and stuff because like sure you're taking care of that. Whether that's really in the CEO's role, I don't think it depends on the stage of the company, but like there's also the board, fundraising, all that stuff, right? That I think also matters a lot. But I think your role is expanded right now because we're small. Yeah. So the way I would
+Evan Liang: characterize it is not a textbook.
+Dean Liang: try
+Evan Liang: I think it's just like hey whatever is the most critical issue at the so one identify what's the most critical issue at the company whether like keeping lights on is it funding is it sales is it hiring whatever it is being able to identify that and then being able to have the bandwidth to prioritize it and delegate the resources in order to drive towards that.
+
+
+
+
+00:35:57
+
+
+Evan Liang: Uh because of that the nature of the job is very up and down. If ideally if everything's running perfectly smoothly at a company, the CEO has nothing to do. That's the goal. But per the point, if there's a crisis, having the ability to see the crisis and rally and just go resolve it as quickly as possible uh and drive all initiatives to it. Because of that, you don't actually want to be tied too much to anything that's like ongoing to you have to be able to float. Does that make sense? Because if you can't float and so sometimes when CEOs and founders are so proud of themselves being super busy all the time, it's actually bad because if a crisis comes, they can't they can't actually adjust. You actually have to have you have to be the cushion for everyone because if anything comes up, you have to be able to absorb it and be able to pop in wherever it needed. So that's that's the interesting part of it. So that's like where I was like, "Hey, if the critical path is figuring out organizationally what you guys need, I need to be able to to rally to that and figure that out. Whatever the key problem is,
+
+
+
+
+00:37:06
+
+
+Evan Liang: I've got to be able to do that." So it just the nature changes. If we're running out of money, you've got to be able to focus on that, right? If uh hiring is is a key thing. And so for me like where you're saying like making sure you guys are aligned is really really critical especially in this role because like misalignments can can propagate but technically speaking also figuring out the CTO like I really only have two tasks making sure you guys are productive and we're get getting what we need and figuring out the CTO because we have fundraising sales is somewhat but it's also not like the mission critical but those would probably be the two things. So, but anyway, so awesome. Anything else that we need to cover? Good. Nothing else. Nothing else.
+Parth Goda Rajesh: Okay, thank you. The one thing I do.
+Evan Liang: Appreciate in order for me to do my job. I appreciate that you guys are transparent around your feedback and what's uh what's not working and stuff like that. So, uh that is uh really good. Uh it's uh the the the reason CEO's jobs uh or they're not as effective as you or it's the job becomes harder or not as effective as you get bigger, people b******* you and you actually takes you a long time to figure out what's wrong. It's it's actually like uh yeah it's it's people would be shocked. They're like how do you not know that? Like how the f*** am I supposed to know that? that's like three layers deep. And if everyone's b*********** me, like the manager doesn't say so everyone that the layers created, it's actually really hard to get the truth from folks because they think their job is to they actually think the office's job. They think their job is to take work off the CEO's plate and tell the CEO everything's going well. Ironically, it helps in the short term, but the long term it actually uh makes it it makes it worse. So awesome. Thank you.
+
+
+
+
+Transcription ended after 00:41:21
+
+
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.

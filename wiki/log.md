@@ -166,8 +166,9 @@
 
 ## 2026-06-26 — Stand up (morning, work re-org into autonomous workstreams)
 - fireflies-id: 01KW0EN2N67C6S6A052RXRDEAA
-- source: fireflies
+- gemini-file: morning/2026-06-26-standup-morning.gemini.txt
+- source: fireflies+gemini-companion
 - Transcript: transcripts/morning/2026-06-26-standup-morning.fireflies.txt
-- Caveat: Fireflies attributed ~570 of 661 turns to "Evan Liang" (who did lead most of this culture-heavy standup) but did separate some Parth (72) and Cooper (19) turns. No Gemini companion yet. Attribution beyond Evan refined by content.
+- Caveat: Fireflies attributed ~570 of 661 turns to "Evan Liang" (who did lead most of this culture-heavy standup) but did separate some Parth (72) and Cooper (19) turns. Gemini companion arrived post-processing — provides better multi-speaker diarization (clearly shows Cooper, Evan, Parth, Dean) and corroborates the Fireflies-based extraction; no new substantive signal requiring wiki updates.
 - Pages updated: wiki/projects/renewal-platform.md, wiki/people/parth-godarajesh.md, wiki/people/aaron-rose.md, wiki/people/dean-liang.md, wiki/people/cooper-tenney.md, wiki/people/evan-liang.md
 - Summary: Evan diagnosed the team as in Tuckman "storming" and re-organized the merged product into autonomous single-owner workstreams — Parth→prototype (add negotiation+close models), Aaron→qualification, Cooper→email/outreach, Dean→architecture+eval; side projects: Parth→sales pitch, Cooper→website/logo; scrum board + Luncher deprioritized. Rationale: four people on one codebase causes collisions; "one person owns the entire product." Eval systems flagged as the single most important thing (LeanData contact believes a strong eval system removes the need to hand-define stages). Blocker: contract PDFs can't be pulled through the LeanData MCP, and the data layer must serve all workstreams, not just qualification. Norms: email Evan (not chat) to unblock him; schedule freedom with responsibility. Evan shared his CEO-role thesis (find the critical issue, stay floatable) and named hiring a CTO as a top priority. Positive: Hannah & Juliet impressed by the prototype.
