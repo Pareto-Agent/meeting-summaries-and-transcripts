@@ -61,10 +61,27 @@ transcripts/
         strip `WEBVTT`, cue numbers, and `HH:MM:SS.mmm --> ...` timing lines; keep the spoken
         text (Zoom VTT lines are often `Speaker Name: text`).
 
-      Read the companion via the Read tool (it handles `.txt`, `.pdf`, and `.vtt`). Prefer a
-      complete native transcript over a partial Fireflies pull. In the log entry record
-      `source: fireflies+<gemini|zoom>-fallback`. If NO companion file exists, log the meeting
-      as a stub (`Pages updated: none`, note "transcript unavailable") so it isn't reprocessed.
+      Read the companion via the Read tool (it handles `.txt`, `.pdf`, and `.vtt`). In the log
+      entry record `source: fireflies+<gemini|zoom>-fallback`. If NO companion file exists, log
+      the meeting as a stub (`Pages updated: none`, note "transcript unavailable") so it isn't
+      reprocessed.
+
+      **Choosing which source to extract signal from (when a meeting has BOTH a Fireflies and a
+      native transcript).** A blind quality test (2026-06-26) found neither tool is reliably
+      better — they fail differently, by meeting type:
+      - **Diarization (who said what):** Gemini diarizes by Meet audio-stream, so it is excellent
+        for **remote** meetings (each person on their own connection) but collapses every line
+        onto the host/organizer for **in-room** meetings (one shared mic). Fireflies diarizes
+        acoustically, so it *sometimes* recovers in-room speakers but is inconsistent.
+      - **Rule of thumb:** pick the transcript that actually shows **multiple distinct speakers**
+        for attribution — check each source's speaker labels and prefer the one that isn't
+        collapsed to a single name. For a **remote** meeting that's usually **Gemini**; for an
+        **in-room** standup it's often **Fireflies** (when Gemini shows only the host). If BOTH
+        collapse to one speaker, say so in the entry's Caveat and keep attribution thin /
+        project-level. Cross-check proper nouns (names, companies) between the two — Gemini
+        occasionally garbles them, Fireflies fragments and sometimes cuts off early.
+      - Gemini files also bundle an AI summary + decisions + action-items; use those to
+        corroborate extracted signal, but verify against the raw transcript before relying on them.
 
    b. Identify the meeting type from content:
       - **Standup**: multiple participants each giving short updates, blockers, what they're working on
