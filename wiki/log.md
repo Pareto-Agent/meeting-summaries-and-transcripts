@@ -80,6 +80,8 @@
 
 ## 2026-06-25 — Standup - Juliet 2nd pitch
 - fireflies-id: 01KVX0MGXE44DPABCMFFZQTYYE
+- gemini-file: Meeting started 2026_06_25 10_13 PDT - Notes by Gemini.pdf
+- source: fireflies+gemini-fallback
 - Pages updated: wiki/projects/renewal-platform.md, wiki/people/cooper-tenney.md, wiki/advisors/aj.md
 - Transcript: transcripts/2026-06-25-standup-juliet-2nd-pitch.txt
 - Note: Fireflies returned null sentences; content sourced from Gemini notes PDF in transcripts/. Gemini attributed all speech to "Cooper Tenney" — conversation is clearly multi-speaker; attribution kept thin. All 7 team members listed as participants (jlo, eliang, arose, ctenney, dliang, hfong, pgodarajesh). Title references "Juliet 2nd pitch" but the captured content is a post-AJ-demo standup focused on LeanData data pipeline and outreach email strategy.
